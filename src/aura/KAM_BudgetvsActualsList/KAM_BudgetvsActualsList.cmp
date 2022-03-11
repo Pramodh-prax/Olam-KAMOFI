@@ -1,0 +1,71 @@
+<aura:component controller="KAM_BudgetActualsCntl" extends="c:KAM_Util"
+    implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction"
+    access="global">
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="BudgetvsActuals" type="List" />
+    <aura:attribute name="BudgetvsActual" type="object" />
+    <aura:attribute name="ListNumber" type="Integer" default="3" />
+    <aura:attribute name="addBudgetModal" type="Aura.Component" />
+    <aura:attribute name="newBudgetModal" type="Aura.Component" />
+    <aura:attribute name="sortDir" type="String" default="asc" />
+    <aura:attribute type="User" name="UserBU" />
+    <aura:attribute type="list" name="AccountTeams" />
+
+    <aura:handler name="budgetUpdated" event="c:KAM_BudgetUpdated" action="{!c.doInit}" />
+    <aura:handler event="force:refreshView" action="{!c.doInit}" />
+
+    
+        <lightning:card variant="Narrow" title="Budgets" iconName="standard:article" footer="">
+            <aura:set attribute="actions">
+                <lightning:buttonIcon iconName="utility:sort"  alternativeText="Sort by year" title="Sort by year" onclick="{! c.handleSortClick }" disabled="{!empty (v.BudgetvsActuals)}"/>
+                <aura:iteration items="{!v.AccountTeams}" var="acctTeams" indexVar="index">
+                <aura:if isTrue="{!v.UserBU.Id==acctTeams.User__c}">
+                <lightning:button label="New" onclick="{!c.createBudgetvsActuals}" />
+                </aura:if>
+                 </aura:iteration> 
+            </aura:set>
+            <br />
+            <aura:iteration items="{!v.BudgetvsActuals}" var="budvsactuals" indexVar="index" end="{!v.ListNumber}">
+
+                <p class="slds-p-horizontal_small">
+                    <a href="javascript:void(0)" onclick="{!c.showBudgetvsActuals}">
+                        <div data-id="{!budvsactuals.Id}" style="font-size:15px;">{!budvsactuals.Name}</div>
+                    </a>
+                </p>
+                <div class="slds-p-horizontal_x-small">
+                    <lightning:recordViewForm recordId="{!budvsactuals.Id}" objectApiName="Budget_vs_Actuals__c">
+
+                        <div class="slds-grid">
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning:outputField fieldName="Start_date__c" />
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning:outputField fieldName="End_Date__c" />
+                            </div>
+                        </div>
+                        <div class="slds-grid">
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning:outputField fieldName="Business_Unit__c" />
+                            </div>
+                        </div>
+    
+                    </lightning:recordViewForm><br />
+                </div>
+            </aura:iteration>
+            <aura:set attribute="footer">
+
+                <aura:if isTrue="{!not(empty(v.BudgetvsActuals))}">
+
+                    <lightning:button variant="base" label="View All" title="View All Action"
+                        onclick="{! c.viewRelatedList }" />
+
+                </aura:if>
+
+            </aura:set>
+        </lightning:card>
+
+    
+    {!v.addBudgetModal}
+    {!v.newBudgetModal}
+</aura:component>

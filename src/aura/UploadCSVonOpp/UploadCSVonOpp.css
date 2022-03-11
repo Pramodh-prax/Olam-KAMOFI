@@ -1,0 +1,17 @@
+.THIS.slds-spinner_container {  
+  z-index: 10000;
+  position: fixed;   
+}
+
+.THIS .slds-is-low {
+    background-color: green!important;
+}
+.THIS .slds-is-medium{
+    background-color: yellow!important;
+}
+.THIS .slds-is-high{
+    background-color: orange!important;
+}
+.THIS .slds-is-critical{
+    background-color: red!important;
+}

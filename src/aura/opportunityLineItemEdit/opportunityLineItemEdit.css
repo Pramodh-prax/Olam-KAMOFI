@@ -1,0 +1,22 @@
+.THIS .inputFieldWidth {
+    width:85%;
+}
+.THIS .btn-edit {
+    display : block;
+    opacity: 0.0;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+.THIS .slds-cell-edit:hover .btn-edit{
+    display : block;
+    opacity: 1.0;
+}
+.THIS .lookup-container {
+    width : 250px;
+} 
+.THIS .ship-month-container {
+    min-width : 140px;
+}

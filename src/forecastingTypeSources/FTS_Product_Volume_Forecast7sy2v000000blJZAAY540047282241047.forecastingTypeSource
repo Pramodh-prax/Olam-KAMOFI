@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ForecastingTypeSource xmlns="http://soap.sforce.com/2006/04/metadata">
+    <forecastingSourceDefinition>FSD_Opportunity032205362503589</forecastingSourceDefinition>
+    <forecastingType>Product_Volume_Forecast</forecastingType>
+    <masterLabel>FTS_Product_Volume_Forecast7sy2v000000blJZAAY540047282241047</masterLabel>
+    <parentSourceDefinition>FSD_OpportunityLineItem494975526531950</parentSourceDefinition>
+    <relationField>OpportunityLineItem.OpportunityId</relationField>
+    <sourceGroup>1</sourceGroup>
+</ForecastingTypeSource>

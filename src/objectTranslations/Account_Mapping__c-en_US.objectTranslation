@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Account Mapping</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Account Mappings</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Note --></label>
+        <name>Note__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Account ID --></label>
+        <name>SAP_Account_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Applied</masterLabel>
+            <translation><!-- Applied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Skipped</masterLabel>
+            <translation><!-- Skipped --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

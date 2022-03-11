@@ -1,0 +1,12 @@
+<aura:component>
+    <aura:attribute name="membersJSON" type="String" default=''/>
+    <aura:attribute name="members" type="List"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <aura:iteration items="{!v.members}" var="member">
+        <span>
+            <lightning:badge label="{!member}" class="memebr-tile"/>
+        </span>
+    </aura:iteration>
+</aura:component>

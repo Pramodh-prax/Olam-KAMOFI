@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sales Area</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sales Areas</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+        <relationshipLabel><!-- Sales Areas --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Credit Limit --></label>
+        <name>Credit_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Distribution Channel --></label>
+        <name>Distribution_Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Division --></label>
+        <name>Division__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inco Terms --></label>
+        <name>Inco_Terms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Org --></label>
+        <name>Sales_Org__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Conditions --></label>
+        <name>Shipping_Conditions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Terms of Payment --></label>
+        <name>Terms_of_Payment__c</name>
+    </fields>
+    <fields>
+        <label><!-- To Delete --></label>
+        <name>To_Delete__c</name>
+    </fields>
+    <layouts>
+        <layout>Olam Sales Area Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Details --></label>
+            <section>Details</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

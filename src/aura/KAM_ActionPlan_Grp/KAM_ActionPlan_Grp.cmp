@@ -1,0 +1,145 @@
+<aura:component extends="c:KAM_AccountPlanOverviewBase" access="global" controller="KAM_ActionPlanGrpCntl">
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="opportunitiesByCategories" type="Object"/>
+    <aura:attribute name="sectionComments" type="Object"/>
+    <aura:attribute name="accounts" type="List" />
+    <aura:attribute name="namesMap" type="Object" />
+    <aura:attribute name="labels" type="Object" />
+    <aura:attribute name="contentDocumentId" type="String"/>
+    <aura:attribute name="selectedUnitOfMeasure" type="String" />
+    <aura:attribute name="previouslySelectedUnitOfMeasure" type="String" />
+    <aura:attribute name="options" type="List" default="[]"/>
+    <aura:attribute name="result" type="String"/>
+    <aura:attribute name="isUnitOfMeasureDisabled" type="Boolean" default="true"/>
+    <aura:handler name="saveCommentEvent" event="c:KAM_ActionPlanSectionCommentsSaveEvent"
+    action="{!c.handleCommentSaveEvent}"/>
+
+    <div class="account-over-view-container" aura:id="item-container">
+        <lightning:layout aura:id="item-wrapper" multipleRows="true" horizontalAlign="center" verticalAlign="center"
+            class="accountoverview-detail__closed">
+            <lightning:layoutItem size="12"
+                class="tit-desc-container slds-order_1  slds-small-order_1 slds-medium-order_1 slds-large-order_1"
+                smallDeviceSize="12" mediumDeviceSize="8" largeDeviceSize="8">
+                <lightning:layout multipleRows="true" horizontalAlign="center" verticalAlign="center" class="">
+                    <lightning:layoutItem size="12" class="title-text" smallDeviceSize="12" mediumDeviceSize="12"
+                        largeDeviceSize="12">
+                        <span>{!v.sectionData.compDetail.Title__c}</span>
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="12" class="desc-text" smallDeviceSize="12" mediumDeviceSize="12"
+                        largeDeviceSize="12">
+                        <span>{!v.sectionData.Description__c}</span>
+                    </lightning:layoutItem>
+                </lightning:layout>
+            </lightning:layoutItem>
+            <lightning:layoutItem size="4"
+                class="slds-order_3 slds-small-order_3 slds-medium-order_3 slds-large-order_3 account-over-view__header-control-container"
+                smallDeviceSize="4" mediumDeviceSize="4" largeDeviceSize="4">
+                <div class="accountoverview-detail__header-control">
+                    <a href="javascript:void(0)" onclick="{!c.toggleDetailContent}"
+                        class="accountoverview-detail__operator-cta"></a>
+                </div>
+            </lightning:layoutItem>
+            <lightning:layoutItem size="12"
+                class="slds-order_4 slds-small-order_4 slds-medium-order_4 slds-large-order_4 accountoverview__detail-content"
+                smallDeviceSize="12" mediumDeviceSize="12" largeDeviceSize="12">
+                <div class="slds-form--compound">
+                    <div>
+                        <lightning:layout multipleRows="true" horizontalAlign="center" verticalAlign="center"
+                            class="">
+                            <lightning:layoutItem size="12" class="slds-m-bottom_large" smallDeviceSize="12" mediumDeviceSize="12"
+                            largeDeviceSize="12">
+                                <div>
+                                    <h2 class="heading">{!v.labels.salesActionPlan}</h2>
+                                </div>
+                                <div class="unit-of-measure-container">
+                                    <div class="unit-of-measure-label">
+                                        <span>{!$Label.c.KAM_UOM_Label}</span>
+                                    </div>
+                                    <div>
+                                    	<lightning:combobox class="unit-of-measure-combo-box" name="unitOfMeasure" label="{!$Label.c.KAM_UOM_Label}" variant="label-hidden" value="{!v.selectedUnitOfMeasure}"
+                                        placeholder="{!$Label.c.KAM_UOM_Place_Holder}" options="{! v.options }" onchange="{! c.handleOnUnitOfMeasureChange }" disabled="{!v.isUnitOfMeasureDisabled}" />
+                                    </div>
+                                </div>
+                                <aura:if isTrue="{!v.opportunitiesByCategories}">
+                                    <c:KAM_DevelopDefendGainOppTable_Grp items="{!v.opportunitiesByCategories}" namesMap="{!v.namesMap}"></c:KAM_DevelopDefendGainOppTable_Grp>
+                                    <!-- <c:KAM_DevelopDefendGainOppTable items="{!v.opportunitiesByCategories}"></c:KAM_DevelopDefendGainOppTable> -->
+                                </aura:if>
+                                <div class="comments-container">
+                                    <c:KAM_ActionPlanSectionComments 
+                                        aura:id="sectionCommentsComp"
+                                        identifier="{!v.sectionComments.salesActionPlan.key}" 
+                                        comments="{!v.sectionComments.salesActionPlan.comments}">
+                                    </c:KAM_ActionPlanSectionComments>
+                                </div>
+                            </lightning:layoutItem>
+
+                            <lightning:layoutItem size="12" class="slds-m-bottom_large" smallDeviceSize="12" mediumDeviceSize="12"
+                                largeDeviceSize="12">
+                                <div>
+                                    <h2 class="heading">{!v.labels.developActionPlan}</h2>
+                                </div>
+                                <aura:if isTrue="{!!v.isLoading}">
+                                    <!--
+                                        Note : This component will only display Open Defend Develop Opportunities
+                                        Gain Opportunities not displayed
+                                        Don't get confused by the component name KAM_OpenDefendDevelopGainOppTable
+                                    -->
+                                    <c:KAM_OpenDevelopDefendGainOppTable accountPlan="{!v.sectionData.accountPlan}" accounts="{!v.accounts}" displayType="group"></c:KAM_OpenDevelopDefendGainOppTable>
+                                </aura:if>
+                                <div class="comments-container">
+                                    <c:KAM_ActionPlanSectionComments 
+                                        aura:id="sectionCommentsComp"
+                                        identifier="{!v.sectionComments.developmentActionPlan.key}" 
+                                        comments="{!v.sectionComments.developmentActionPlan.comments}">
+                                    </c:KAM_ActionPlanSectionComments>
+                                </div>
+                            </lightning:layoutItem>
+
+                            <lightning:layoutItem size="12" class="slds-m-bottom_large" smallDeviceSize="12" mediumDeviceSize="12"
+                                largeDeviceSize="12">
+                                <div>
+                                    <h2 class="heading">{!v.labels.PresentActionPlan}</h2>
+                                </div>
+                               
+                                <aura:if isTrue="{!!v.isLoading}">
+                                    <c:KAM_ServicePresentOppComp accountPlan="{!v.sectionData.accountPlan}" accounts="{!v.accounts}" displayType="group"></c:KAM_ServicePresentOppComp>
+                                </aura:if>
+                                <div class="comments-container">
+                                    <c:KAM_ActionPlanSectionComments
+                                        aura:id="sectionCommentsComp" 
+                                        identifier="{!v.sectionComments.serviceAndPresentActionPlan.key}" 
+                                        comments="{!v.sectionComments.serviceAndPresentActionPlan.comments}">
+                                    </c:KAM_ActionPlanSectionComments>
+                                </div>
+                           </lightning:layoutItem>
+                           <lightning:layoutItem size="12" class="slds-m-bottom_large" smallDeviceSize="12" mediumDeviceSize="12"
+                                largeDeviceSize="12">
+                                <div>
+                                    <h2 class="heading">{!v.labels.serviceActionPlan}</h2>
+                                </div>
+                               
+                                <aura:if isTrue="{!!v.isLoading}">
+                                    <c:KAM_ServiceOppComp accountPlan="{!v.sectionData.accountPlan}" accounts="{!v.accounts}" displayType="group"></c:KAM_ServiceOppComp>
+                                </aura:if>
+                                <div class="comments-container">
+                                    <c:KAM_ActionPlanSectionComments
+                                        aura:id="sectionCommentsComp" 
+                                        identifier="{!v.sectionComments.serviceActionPlan.key}" 
+                                        comments="{!v.sectionComments.serviceActionPlan.comments}">
+                                    </c:KAM_ActionPlanSectionComments>
+                                </div>
+                           </lightning:layoutItem>
+                        </lightning:layout>
+                        <aura:if isTrue="{!!v.isLoading}">
+                            
+                        </aura:if>
+                    </div>
+                    <aura:if isTrue="{!v.isLoading}">
+                        <c:KAM_LoadingDots />
+                    </aura:if>
+                </div>
+            </lightning:layoutItem>
+        </lightning:layout>
+    </div>
+</aura:component>

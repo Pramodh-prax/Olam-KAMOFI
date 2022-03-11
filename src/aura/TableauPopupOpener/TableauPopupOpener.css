@@ -1,0 +1,21 @@
+.THIS {
+    
+}
+
+.THIS.white {
+    background-color: white;
+}
+
+.THIS .red {
+    background-color: red;
+}
+
+.THIS .custom-button-css {
+    background-color: blue;
+    float: right;
+    z-index: 100;
+}
+
+.THIS .green {
+    background-color: green;
+}

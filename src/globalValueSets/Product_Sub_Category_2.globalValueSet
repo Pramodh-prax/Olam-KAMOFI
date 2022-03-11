@@ -1,0 +1,1873 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>#640 Colored</fullName>
+        <default>false</default>
+        <label>#640 Colored</label>
+    </customValue>
+    <customValue>
+        <fullName>#640 Whites</fullName>
+        <default>false</default>
+        <label>#640 Whites</label>
+    </customValue>
+    <customValue>
+        <fullName>100#</fullName>
+        <default>false</default>
+        <label>100#</label>
+    </customValue>
+    <customValue>
+        <fullName>200#</fullName>
+        <default>false</default>
+        <label>200#</label>
+    </customValue>
+    <customValue>
+        <fullName>40#</fullName>
+        <default>false</default>
+        <label>40#</label>
+    </customValue>
+    <customValue>
+        <fullName>40# Block</fullName>
+        <default>false</default>
+        <label>40# Block</label>
+    </customValue>
+    <customValue>
+        <fullName>40#Colby Jack</fullName>
+        <default>false</default>
+        <label>40#Colby Jack</label>
+    </customValue>
+    <customValue>
+        <fullName>40# colored</fullName>
+        <default>false</default>
+        <label>40# colored</label>
+    </customValue>
+    <customValue>
+        <fullName>40#Monterey Jack</fullName>
+        <default>false</default>
+        <label>40#Monterey Jack</label>
+    </customValue>
+    <customValue>
+        <fullName>40# Pepper Jack</fullName>
+        <default>false</default>
+        <label>40# Pepper Jack</label>
+    </customValue>
+    <customValue>
+        <fullName>40# White</fullName>
+        <default>false</default>
+        <label>40# White</label>
+    </customValue>
+    <customValue>
+        <fullName>500# Barrel</fullName>
+        <default>false</default>
+        <label>500# Barrel</label>
+    </customValue>
+    <customValue>
+        <fullName>500# White</fullName>
+        <default>false</default>
+        <label>500# White</label>
+    </customValue>
+    <customValue>
+        <fullName>60-80#</fullName>
+        <default>false</default>
+        <label>60-80#</label>
+    </customValue>
+    <customValue>
+        <fullName>70%</fullName>
+        <default>false</default>
+        <label>70%</label>
+    </customValue>
+    <customValue>
+        <fullName>72.5% unsalted</fullName>
+        <default>false</default>
+        <label>72.5% unsalted</label>
+    </customValue>
+    <customValue>
+        <fullName>80%</fullName>
+        <default>false</default>
+        <label>80%</label>
+    </customValue>
+    <customValue>
+        <fullName>80% salted</fullName>
+        <default>false</default>
+        <label>80% salted</label>
+    </customValue>
+    <customValue>
+        <fullName>80% unsalted</fullName>
+        <default>false</default>
+        <label>80% unsalted</label>
+    </customValue>
+    <customValue>
+        <fullName>82.5% unsalted</fullName>
+        <default>false</default>
+        <label>82.5% unsalted</label>
+    </customValue>
+    <customValue>
+        <fullName>82% unsalted</fullName>
+        <default>false</default>
+        <label>82% unsalted</label>
+    </customValue>
+    <customValue>
+        <fullName>AA InShell</fullName>
+        <default>false</default>
+        <label>AA InShell</label>
+    </customValue>
+    <customValue>
+        <fullName>Akcakoca InShell</fullName>
+        <default>false</default>
+        <label>Akcakoca InShell</label>
+    </customValue>
+    <customValue>
+        <fullName>Akcakoca Kernel</fullName>
+        <default>false</default>
+        <label>Akcakoca Kernel</label>
+    </customValue>
+    <customValue>
+        <fullName>Akcakoca Natural</fullName>
+        <default>false</default>
+        <label>Akcakoca Natural</label>
+    </customValue>
+    <customValue>
+        <fullName>Aldrich Extra No. 1</fullName>
+        <default>false</default>
+        <label>Aldrich Extra No. 1</label>
+    </customValue>
+    <customValue>
+        <fullName>Aldrich InShell</fullName>
+        <default>false</default>
+        <label>Aldrich InShell</label>
+    </customValue>
+    <customValue>
+        <fullName>Aldrich Kernel</fullName>
+        <default>false</default>
+        <label>Aldrich Kernel</label>
+    </customValue>
+    <customValue>
+        <fullName>Aldrich Pieces</fullName>
+        <default>false</default>
+        <label>Aldrich Pieces</label>
+    </customValue>
+    <customValue>
+        <fullName>Aldrich Select Sheller Run</fullName>
+        <default>false</default>
+        <label>Aldrich Select Sheller Run</label>
+    </customValue>
+    <customValue>
+        <fullName>Aldrich Supreme</fullName>
+        <default>false</default>
+        <label>Aldrich Supreme</label>
+    </customValue>
+    <customValue>
+        <fullName>Aldrich Whole &amp; Broken</fullName>
+        <default>false</default>
+        <label>Aldrich Whole &amp; Broken</label>
+    </customValue>
+    <customValue>
+        <fullName>Almond Pieces</fullName>
+        <default>false</default>
+        <label>Almond Pieces</label>
+    </customValue>
+    <customValue>
+        <fullName>Amaranth Grain</fullName>
+        <default>false</default>
+        <label>Amaranth Grain</label>
+    </customValue>
+    <customValue>
+        <fullName>Analogue</fullName>
+        <default>false</default>
+        <label>Analogue</label>
+    </customValue>
+    <customValue>
+        <fullName>Artificially Open InShell</fullName>
+        <default>false</default>
+        <label>Artificially Open InShell</label>
+    </customValue>
+    <customValue>
+        <fullName>Avalon InShell</fullName>
+        <default>false</default>
+        <label>Avalon InShell</label>
+    </customValue>
+    <customValue>
+        <fullName>Black Chia</fullName>
+        <default>false</default>
+        <label>Black Chia</label>
+    </customValue>
+    <customValue>
+        <fullName>Black Pepper</fullName>
+        <default>false</default>
+        <label>Black Pepper</label>
+    </customValue>
+    <customValue>
+        <fullName>Black Quinoa</fullName>
+        <default>false</default>
+        <label>Black Quinoa</label>
+    </customValue>
+    <customValue>
+        <fullName>Blanched</fullName>
+        <default>false</default>
+        <label>Blanched</label>
+    </customValue>
+    <customValue>
+        <fullName>Blanched Diced</fullName>
+        <default>false</default>
+        <label>Blanched Diced</label>
+    </customValue>
+    <customValue>
+        <fullName>Blanched Flakes</fullName>
+        <default>false</default>
+        <label>Blanched Flakes</label>
+    </customValue>
+    <customValue>
+        <fullName>Blanched Meal</fullName>
+        <default>false</default>
+        <label>Blanched Meal</label>
+    </customValue>
+    <customValue>
+        <fullName>Blanched Paste</fullName>
+        <default>false</default>
+        <label>Blanched Paste</label>
+    </customValue>
+    <customValue>
+        <fullName>Blanched Pieces</fullName>
+        <default>false</default>
+        <label>Blanched Pieces</label>
+    </customValue>
+    <customValue>
+        <fullName>Blanched Powder</fullName>
+        <default>false</default>
+        <label>Blanched Powder</label>
+    </customValue>
+    <customValue>
+        <fullName>Blanched Protein Powder</fullName>
+        <default>false</default>
+        <label>Blanched Protein Powder</label>
+    </customValue>
+    <customValue>
+        <fullName>Blanched Sliced</fullName>
+        <default>false</default>
+        <label>Blanched Sliced</label>
+    </customValue>
+    <customValue>
+        <fullName>Blanched Slivered</fullName>
+        <default>false</default>
+        <label>Blanched Slivered</label>
+    </customValue>
+    <customValue>
+        <fullName>Blanched Splits</fullName>
+        <default>false</default>
+        <label>Blanched Splits</label>
+    </customValue>
+    <customValue>
+        <fullName>Blanched Whole</fullName>
+        <default>false</default>
+        <label>Blanched Whole</label>
+    </customValue>
+    <customValue>
+        <fullName>Blanched Wholes</fullName>
+        <default>false</default>
+        <label>Blanched Wholes</label>
+    </customValue>
+    <customValue>
+        <fullName>Blanched Wholes &amp; Broken</fullName>
+        <default>false</default>
+        <label>Blanched Wholes &amp; Broken</label>
+    </customValue>
+    <customValue>
+        <fullName>Butte/Padre Kernel</fullName>
+        <default>false</default>
+        <label>Butte/Padre Kernel</label>
+    </customValue>
+    <customValue>
+        <fullName>Butte/Padre Select Sheller Run</fullName>
+        <default>false</default>
+        <label>Butte/Padre Select Sheller Run</label>
+    </customValue>
+    <customValue>
+        <fullName>Butte/Padre Supreme</fullName>
+        <default>false</default>
+        <label>Butte/Padre Supreme</label>
+    </customValue>
+    <customValue>
+        <fullName>Butte InShell</fullName>
+        <default>false</default>
+        <label>Butte InShell</label>
+    </customValue>
+    <customValue>
+        <fullName>Butte Kernel</fullName>
+        <default>false</default>
+        <label>Butte Kernel</label>
+    </customValue>
+    <customValue>
+        <fullName>Butte Padre Kernel</fullName>
+        <default>false</default>
+        <label>Butte Padre Kernel</label>
+    </customValue>
+    <customValue>
+        <fullName>Butter</fullName>
+        <default>false</default>
+        <label>Butter</label>
+    </customValue>
+    <customValue>
+        <fullName>Butte Select Sheller Run</fullName>
+        <default>false</default>
+        <label>Butte Select Sheller Run</label>
+    </customValue>
+    <customValue>
+        <fullName>California Extra No. 1</fullName>
+        <default>false</default>
+        <label>California Extra No. 1</label>
+    </customValue>
+    <customValue>
+        <fullName>California Select Sheller Run</fullName>
+        <default>false</default>
+        <label>California Select Sheller Run</label>
+    </customValue>
+    <customValue>
+        <fullName>California STD</fullName>
+        <default>false</default>
+        <label>California STD</label>
+    </customValue>
+    <customValue>
+        <fullName>California Supreme</fullName>
+        <default>false</default>
+        <label>California Supreme</label>
+    </customValue>
+    <customValue>
+        <fullName>California Type Select Sheller Run</fullName>
+        <default>false</default>
+        <label>California Type Select Sheller Run</label>
+    </customValue>
+    <customValue>
+        <fullName>Capsicums</fullName>
+        <default>false</default>
+        <label>Capsicums</label>
+    </customValue>
+    <customValue>
+        <fullName>Carmel Blanched</fullName>
+        <default>false</default>
+        <label>Carmel Blanched</label>
+    </customValue>
+    <customValue>
+        <fullName>Carmel Extra No. 1</fullName>
+        <default>false</default>
+        <label>Carmel Extra No. 1</label>
+    </customValue>
+    <customValue>
+        <fullName>Carmel Extra No 1</fullName>
+        <default>false</default>
+        <label>Carmel Extra No 1</label>
+    </customValue>
+    <customValue>
+        <fullName>Carmel Extra Supreme</fullName>
+        <default>false</default>
+        <label>Carmel Extra Supreme</label>
+    </customValue>
+    <customValue>
+        <fullName>Carmel InShell</fullName>
+        <default>false</default>
+        <label>Carmel InShell</label>
+    </customValue>
+    <customValue>
+        <fullName>Carmel Kernel</fullName>
+        <default>false</default>
+        <label>Carmel Kernel</label>
+    </customValue>
+    <customValue>
+        <fullName>Carmel Manufacturing</fullName>
+        <default>false</default>
+        <label>Carmel Manufacturing</label>
+    </customValue>
+    <customValue>
+        <fullName>Carmel Select Sheller Run</fullName>
+        <default>false</default>
+        <label>Carmel Select Sheller Run</label>
+    </customValue>
+    <customValue>
+        <fullName>Carmel STD-5</fullName>
+        <default>false</default>
+        <label>Carmel STD-5</label>
+    </customValue>
+    <customValue>
+        <fullName>Carmel Supreme</fullName>
+        <default>false</default>
+        <label>Carmel Supreme</label>
+    </customValue>
+    <customValue>
+        <fullName>Carmel Type Select Sheller Run</fullName>
+        <default>false</default>
+        <label>Carmel Type Select Sheller Run</label>
+    </customValue>
+    <customValue>
+        <fullName>Carmel Type Supreme</fullName>
+        <default>false</default>
+        <label>Carmel Type Supreme</label>
+    </customValue>
+    <customValue>
+        <fullName>Cassia</fullName>
+        <default>false</default>
+        <label>Cassia</label>
+    </customValue>
+    <customValue>
+        <fullName>ChedP</fullName>
+        <default>false</default>
+        <label>ChedP</label>
+    </customValue>
+    <customValue>
+        <fullName>ChedT</fullName>
+        <default>false</default>
+        <label>ChedT</label>
+    </customValue>
+    <customValue>
+        <fullName>Chia Reject</fullName>
+        <default>false</default>
+        <label>Chia Reject</label>
+    </customValue>
+    <customValue>
+        <fullName>Chilli</fullName>
+        <default>false</default>
+        <label>Chilli</label>
+    </customValue>
+    <customValue>
+        <fullName>Chipped &amp; Scratched</fullName>
+        <default>false</default>
+        <label>Chipped &amp; Scratched</label>
+    </customValue>
+    <customValue>
+        <fullName>Cinnamon</fullName>
+        <default>false</default>
+        <label>Cinnamon</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaned Sesame</fullName>
+        <default>false</default>
+        <label>Cleaned Sesame</label>
+    </customValue>
+    <customValue>
+        <fullName>Cloves</fullName>
+        <default>false</default>
+        <label>Cloves</label>
+    </customValue>
+    <customValue>
+        <fullName>CNCA</fullName>
+        <default>false</default>
+        <label>CNCA</label>
+    </customValue>
+    <customValue>
+        <fullName>Coriander</fullName>
+        <default>false</default>
+        <label>Coriander</label>
+    </customValue>
+    <customValue>
+        <fullName>Cumin</fullName>
+        <default>false</default>
+        <label>Cumin</label>
+    </customValue>
+    <customValue>
+        <fullName>Curry Powder</fullName>
+        <default>false</default>
+        <label>Curry Powder</label>
+    </customValue>
+    <customValue>
+        <fullName>Dairy</fullName>
+        <default>false</default>
+        <label>Dairy</label>
+    </customValue>
+    <customValue>
+        <fullName>Dairy Other</fullName>
+        <default>false</default>
+        <label>Dairy Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Dairy SSC-3</fullName>
+        <default>false</default>
+        <label>Dairy SSC-3</label>
+    </customValue>
+    <customValue>
+        <fullName>Dairy SSD-30</fullName>
+        <default>false</default>
+        <label>Dairy SSD-30</label>
+    </customValue>
+    <customValue>
+        <fullName>Dairy SSP-83</fullName>
+        <default>false</default>
+        <label>Dairy SSP-83</label>
+    </customValue>
+    <customValue>
+        <fullName>Dehy Garlic</fullName>
+        <default>false</default>
+        <label>Dehy Garlic</label>
+    </customValue>
+    <customValue>
+        <fullName>Dehy Onion</fullName>
+        <default>false</default>
+        <label>Dehy Onion</label>
+    </customValue>
+    <customValue>
+        <fullName>Dehy White Onion</fullName>
+        <default>false</default>
+        <label>Dehy White Onion</label>
+    </customValue>
+    <customValue>
+        <fullName>Dehy Yellow Onion</fullName>
+        <default>false</default>
+        <label>Dehy Yellow Onion</label>
+    </customValue>
+    <customValue>
+        <fullName>Dessert Wholes</fullName>
+        <default>false</default>
+        <label>Dessert Wholes</label>
+    </customValue>
+    <customValue>
+        <fullName>Diced</fullName>
+        <default>false</default>
+        <label>Diced</label>
+    </customValue>
+    <customValue>
+        <fullName>DMIN 40</fullName>
+        <default>false</default>
+        <label>DMIN 40</label>
+    </customValue>
+    <customValue>
+        <fullName>DMIN 50</fullName>
+        <default>false</default>
+        <label>DMIN 50</label>
+    </customValue>
+    <customValue>
+        <fullName>DMIN 90</fullName>
+        <default>false</default>
+        <label>DMIN 90</label>
+    </customValue>
+    <customValue>
+        <fullName>Domestic Garlic</fullName>
+        <default>false</default>
+        <label>Domestic Garlic</label>
+    </customValue>
+    <customValue>
+        <fullName>Economy Garlic</fullName>
+        <default>false</default>
+        <label>Economy Garlic</label>
+    </customValue>
+    <customValue>
+        <fullName>Extra No 1 Fancy</fullName>
+        <default>false</default>
+        <label>Extra No 1 Fancy</label>
+    </customValue>
+    <customValue>
+        <fullName>Extra No 1 Halves</fullName>
+        <default>false</default>
+        <label>Extra No 1 Halves</label>
+    </customValue>
+    <customValue>
+        <fullName>Extra No 1 InShell</fullName>
+        <default>false</default>
+        <label>Extra No 1 InShell</label>
+    </customValue>
+    <customValue>
+        <fullName>Extra No 1 Kernel</fullName>
+        <default>false</default>
+        <label>Extra No 1 Kernel</label>
+    </customValue>
+    <customValue>
+        <fullName>Extra No 1 Pieces</fullName>
+        <default>false</default>
+        <label>Extra No 1 Pieces</label>
+    </customValue>
+    <customValue>
+        <fullName>Extra No 1 Premium</fullName>
+        <default>false</default>
+        <label>Extra No 1 Premium</label>
+    </customValue>
+    <customValue>
+        <fullName>Extra No 1 Supreme</fullName>
+        <default>false</default>
+        <label>Extra No 1 Supreme</label>
+    </customValue>
+    <customValue>
+        <fullName>Extra No 1 Value</fullName>
+        <default>false</default>
+        <label>Extra No 1 Value</label>
+    </customValue>
+    <customValue>
+        <fullName>Fancy InShell</fullName>
+        <default>false</default>
+        <label>Fancy InShell</label>
+    </customValue>
+    <customValue>
+        <fullName>Fancy Kernel</fullName>
+        <default>false</default>
+        <label>Fancy Kernel</label>
+    </customValue>
+    <customValue>
+        <fullName>Fancy Pieces</fullName>
+        <default>false</default>
+        <label>Fancy Pieces</label>
+    </customValue>
+    <customValue>
+        <fullName>Flour</fullName>
+        <default>false</default>
+        <label>Flour</label>
+    </customValue>
+    <customValue>
+        <fullName>Folsom InShell</fullName>
+        <default>false</default>
+        <label>Folsom InShell</label>
+    </customValue>
+    <customValue>
+        <fullName>Fresh Capsicums</fullName>
+        <default>false</default>
+        <label>Fresh Capsicums</label>
+    </customValue>
+    <customValue>
+        <fullName>Fresh Chilli</fullName>
+        <default>false</default>
+        <label>Fresh Chilli</label>
+    </customValue>
+    <customValue>
+        <fullName>Fresh Garlic</fullName>
+        <default>false</default>
+        <label>Fresh Garlic</label>
+    </customValue>
+    <customValue>
+        <fullName>Fresh Onion</fullName>
+        <default>false</default>
+        <label>Fresh Onion</label>
+    </customValue>
+    <customValue>
+        <fullName>GF Purees</fullName>
+        <default>false</default>
+        <label>GF Purees</label>
+    </customValue>
+    <customValue>
+        <fullName>Ginger</fullName>
+        <default>false</default>
+        <label>Ginger</label>
+    </customValue>
+    <customValue>
+        <fullName>Giresun InShell</fullName>
+        <default>false</default>
+        <label>Giresun InShell</label>
+    </customValue>
+    <customValue>
+        <fullName>Giresun Kernel</fullName>
+        <default>false</default>
+        <label>Giresun Kernel</label>
+    </customValue>
+    <customValue>
+        <fullName>Giresun Natural</fullName>
+        <default>false</default>
+        <label>Giresun Natural</label>
+    </customValue>
+    <customValue>
+        <fullName>Halves</fullName>
+        <default>false</default>
+        <label>Halves</label>
+    </customValue>
+    <customValue>
+        <fullName>Hand Cracked Grade</fullName>
+        <default>false</default>
+        <label>Hand Cracked Grade</label>
+    </customValue>
+    <customValue>
+        <fullName>Heat Stable</fullName>
+        <default>false</default>
+        <label>Heat Stable</label>
+    </customValue>
+    <customValue>
+        <fullName>Herbs</fullName>
+        <default>false</default>
+        <label>Herbs</label>
+    </customValue>
+    <customValue>
+        <fullName>HF Purees</fullName>
+        <default>false</default>
+        <label>HF Purees</label>
+    </customValue>
+    <customValue>
+        <fullName>HS</fullName>
+        <default>false</default>
+        <label>HS</label>
+    </customValue>
+    <customValue>
+        <fullName>Hulled Sesame</fullName>
+        <default>false</default>
+        <label>Hulled Sesame</label>
+    </customValue>
+    <customValue>
+        <fullName>Independence Extra No. 1</fullName>
+        <default>false</default>
+        <label>Independence Extra No. 1</label>
+    </customValue>
+    <customValue>
+        <fullName>Independence InShell</fullName>
+        <default>false</default>
+        <label>Independence InShell</label>
+    </customValue>
+    <customValue>
+        <fullName>Independence Kernel</fullName>
+        <default>false</default>
+        <label>Independence Kernel</label>
+    </customValue>
+    <customValue>
+        <fullName>Independence Select Sheller Run</fullName>
+        <default>false</default>
+        <label>Independence Select Sheller Run</label>
+    </customValue>
+    <customValue>
+        <fullName>Independence Supreme</fullName>
+        <default>false</default>
+        <label>Independence Supreme</label>
+    </customValue>
+    <customValue>
+        <fullName>Inshell</fullName>
+        <default>false</default>
+        <label>Inshell</label>
+    </customValue>
+    <customValue>
+        <fullName>Instant</fullName>
+        <default>false</default>
+        <label>Instant</label>
+    </customValue>
+    <customValue>
+        <fullName>Kala Gouchi Kernel</fullName>
+        <default>false</default>
+        <label>Kala Gouchi Kernel</label>
+    </customValue>
+    <customValue>
+        <fullName>Large Broken Pieces</fullName>
+        <default>false</default>
+        <label>Large Broken Pieces</label>
+    </customValue>
+    <customValue>
+        <fullName>Large White Pieces</fullName>
+        <default>false</default>
+        <label>Large White Pieces</label>
+    </customValue>
+    <customValue>
+        <fullName>Levant InShell</fullName>
+        <default>false</default>
+        <label>Levant InShell</label>
+    </customValue>
+    <customValue>
+        <fullName>Levant Kernel</fullName>
+        <default>false</default>
+        <label>Levant Kernel</label>
+    </customValue>
+    <customValue>
+        <fullName>Levant Natural</fullName>
+        <default>false</default>
+        <label>Levant Natural</label>
+    </customValue>
+    <customValue>
+        <fullName>Livingston InShell</fullName>
+        <default>false</default>
+        <label>Livingston InShell</label>
+    </customValue>
+    <customValue>
+        <fullName>Low Fat</fullName>
+        <default>false</default>
+        <label>Low Fat</label>
+    </customValue>
+    <customValue>
+        <fullName>LOWMOISTUREPARTSKIM</fullName>
+        <default>false</default>
+        <label>LOWMOISTUREPARTSKIM</label>
+    </customValue>
+    <customValue>
+        <fullName>Low Salt</fullName>
+        <default>false</default>
+        <label>Low Salt</label>
+    </customValue>
+    <customValue>
+        <fullName>Low Thermophyllic</fullName>
+        <default>false</default>
+        <label>Low Thermophyllic</label>
+    </customValue>
+    <customValue>
+        <fullName>Machine Cracked Grade</fullName>
+        <default>false</default>
+        <label>Machine Cracked Grade</label>
+    </customValue>
+    <customValue>
+        <fullName>Manufacturing</fullName>
+        <default>false</default>
+        <label>Manufacturing</label>
+    </customValue>
+    <customValue>
+        <fullName>Meal</fullName>
+        <default>false</default>
+        <label>Meal</label>
+    </customValue>
+    <customValue>
+        <fullName>Minor Spices</fullName>
+        <default>false</default>
+        <label>Minor Spices</label>
+    </customValue>
+    <customValue>
+        <fullName>Mission Extra No. 1</fullName>
+        <default>false</default>
+        <label>Mission Extra No. 1</label>
+    </customValue>
+    <customValue>
+        <fullName>Mission InShell</fullName>
+        <default>false</default>
+        <label>Mission InShell</label>
+    </customValue>
+    <customValue>
+        <fullName>Mission Kernel</fullName>
+        <default>false</default>
+        <label>Mission Kernel</label>
+    </customValue>
+    <customValue>
+        <fullName>Mission Select Sheller Run</fullName>
+        <default>false</default>
+        <label>Mission Select Sheller Run</label>
+    </customValue>
+    <customValue>
+        <fullName>Mission Whole &amp; Broken</fullName>
+        <default>false</default>
+        <label>Mission Whole &amp; Broken</label>
+    </customValue>
+    <customValue>
+        <fullName>Mixed InShell</fullName>
+        <default>false</default>
+        <label>Mixed InShell</label>
+    </customValue>
+    <customValue>
+        <fullName>Mixed Manufacturing</fullName>
+        <default>false</default>
+        <label>Mixed Manufacturing</label>
+    </customValue>
+    <customValue>
+        <fullName>Mixed Select Sheller Run</fullName>
+        <default>false</default>
+        <label>Mixed Select Sheller Run</label>
+    </customValue>
+    <customValue>
+        <fullName>Mixed STD-5</fullName>
+        <default>false</default>
+        <label>Mixed STD-5</label>
+    </customValue>
+    <customValue>
+        <fullName>Mixed Whole &amp; Broken</fullName>
+        <default>false</default>
+        <label>Mixed Whole &amp; Broken</label>
+    </customValue>
+    <customValue>
+        <fullName>Mixed Wholes</fullName>
+        <default>false</default>
+        <label>Mixed Wholes</label>
+    </customValue>
+    <customValue>
+        <fullName>Monterey Extra No. 1</fullName>
+        <default>false</default>
+        <label>Monterey Extra No. 1</label>
+    </customValue>
+    <customValue>
+        <fullName>Monterey Fancy</fullName>
+        <default>false</default>
+        <label>Monterey Fancy</label>
+    </customValue>
+    <customValue>
+        <fullName>Monterey InShell</fullName>
+        <default>false</default>
+        <label>Monterey InShell</label>
+    </customValue>
+    <customValue>
+        <fullName>Monterey Kernel</fullName>
+        <default>false</default>
+        <label>Monterey Kernel</label>
+    </customValue>
+    <customValue>
+        <fullName>Monterey Select Sheller Run</fullName>
+        <default>false</default>
+        <label>Monterey Select Sheller Run</label>
+    </customValue>
+    <customValue>
+        <fullName>Monterey Supreme</fullName>
+        <default>false</default>
+        <label>Monterey Supreme</label>
+    </customValue>
+    <customValue>
+        <fullName>Natural Diced</fullName>
+        <default>false</default>
+        <label>Natural Diced</label>
+    </customValue>
+    <customValue>
+        <fullName>Natural Flakes</fullName>
+        <default>false</default>
+        <label>Natural Flakes</label>
+    </customValue>
+    <customValue>
+        <fullName>Natural Meal</fullName>
+        <default>false</default>
+        <label>Natural Meal</label>
+    </customValue>
+    <customValue>
+        <fullName>Natural Paste</fullName>
+        <default>false</default>
+        <label>Natural Paste</label>
+    </customValue>
+    <customValue>
+        <fullName>Natural Pieces</fullName>
+        <default>false</default>
+        <label>Natural Pieces</label>
+    </customValue>
+    <customValue>
+        <fullName>Natural Protein Powder</fullName>
+        <default>false</default>
+        <label>Natural Protein Powder</label>
+    </customValue>
+    <customValue>
+        <fullName>Natural Roasted Chopped</fullName>
+        <default>false</default>
+        <label>Natural Roasted Chopped</label>
+    </customValue>
+    <customValue>
+        <fullName>Natural Roasted Paste</fullName>
+        <default>false</default>
+        <label>Natural Roasted Paste</label>
+    </customValue>
+    <customValue>
+        <fullName>Natural Roasted Whole</fullName>
+        <default>false</default>
+        <label>Natural Roasted Whole</label>
+    </customValue>
+    <customValue>
+        <fullName>Natural Sesame</fullName>
+        <default>false</default>
+        <label>Natural Sesame</label>
+    </customValue>
+    <customValue>
+        <fullName>Natural Sliced</fullName>
+        <default>false</default>
+        <label>Natural Sliced</label>
+    </customValue>
+    <customValue>
+        <fullName>Natural Slivered</fullName>
+        <default>false</default>
+        <label>Natural Slivered</label>
+    </customValue>
+    <customValue>
+        <fullName>Natural Splits</fullName>
+        <default>false</default>
+        <label>Natural Splits</label>
+    </customValue>
+    <customValue>
+        <fullName>Natural Whole and Brokens</fullName>
+        <default>false</default>
+        <label>Natural Whole and Brokens</label>
+    </customValue>
+    <customValue>
+        <fullName>Non Dairy</fullName>
+        <default>false</default>
+        <label>Non Dairy</label>
+    </customValue>
+    <customValue>
+        <fullName>Nonpareil Extra No. 1</fullName>
+        <default>false</default>
+        <label>Nonpareil Extra No. 1</label>
+    </customValue>
+    <customValue>
+        <fullName>Nonpareil Extra Supreme</fullName>
+        <default>false</default>
+        <label>Nonpareil Extra Supreme</label>
+    </customValue>
+    <customValue>
+        <fullName>Nonpareil Fancy</fullName>
+        <default>false</default>
+        <label>Nonpareil Fancy</label>
+    </customValue>
+    <customValue>
+        <fullName>Nonpareil InShell</fullName>
+        <default>false</default>
+        <label>Nonpareil InShell</label>
+    </customValue>
+    <customValue>
+        <fullName>Nonpareil Kernel</fullName>
+        <default>false</default>
+        <label>Nonpareil Kernel</label>
+    </customValue>
+    <customValue>
+        <fullName>Nonpareil Manufacturing</fullName>
+        <default>false</default>
+        <label>Nonpareil Manufacturing</label>
+    </customValue>
+    <customValue>
+        <fullName>Nonpareil Select Sheller Run</fullName>
+        <default>false</default>
+        <label>Nonpareil Select Sheller Run</label>
+    </customValue>
+    <customValue>
+        <fullName>Nonpareil STD - 5</fullName>
+        <default>false</default>
+        <label>Nonpareil STD - 5</label>
+    </customValue>
+    <customValue>
+        <fullName>Nonpareil STD-5</fullName>
+        <default>false</default>
+        <label>Nonpareil STD-5</label>
+    </customValue>
+    <customValue>
+        <fullName>Nonpareil Supreme</fullName>
+        <default>false</default>
+        <label>Nonpareil Supreme</label>
+    </customValue>
+    <customValue>
+        <fullName>Nonpareil Wholes &amp; Broken</fullName>
+        <default>false</default>
+        <label>Nonpareil Wholes &amp; Broken</label>
+    </customValue>
+    <customValue>
+        <fullName>Non Variety InShell</fullName>
+        <default>false</default>
+        <label>Non Variety InShell</label>
+    </customValue>
+    <customValue>
+        <fullName>Non Variety Manufacturing</fullName>
+        <default>false</default>
+        <label>Non Variety Manufacturing</label>
+    </customValue>
+    <customValue>
+        <fullName>Non Variety Splits</fullName>
+        <default>false</default>
+        <label>Non Variety Splits</label>
+    </customValue>
+    <customValue>
+        <fullName>Non Variety STD-5</fullName>
+        <default>false</default>
+        <label>Non Variety STD-5</label>
+    </customValue>
+    <customValue>
+        <fullName>Non Variety Wholes &amp; Broken</fullName>
+        <default>false</default>
+        <label>Non Variety Wholes &amp; Broken</label>
+    </customValue>
+    <customValue>
+        <fullName>Nutmeg</fullName>
+        <default>false</default>
+        <label>Nutmeg</label>
+    </customValue>
+    <customValue>
+        <fullName>Oil</fullName>
+        <default>false</default>
+        <label>Oil</label>
+    </customValue>
+    <customValue>
+        <fullName>Oils</fullName>
+        <default>false</default>
+        <label>Oils</label>
+    </customValue>
+    <customValue>
+        <fullName>Org.Retail Onion</fullName>
+        <default>false</default>
+        <label>Org.Retail Onion</label>
+    </customValue>
+    <customValue>
+        <fullName>Organic Kernel</fullName>
+        <default>false</default>
+        <label>Organic Kernel</label>
+    </customValue>
+    <customValue>
+        <fullName>Organic White Wholes</fullName>
+        <default>false</default>
+        <label>Organic White Wholes</label>
+    </customValue>
+    <customValue>
+        <fullName>Org Black Pepper</fullName>
+        <default>false</default>
+        <label>Org Black Pepper</label>
+    </customValue>
+    <customValue>
+        <fullName>Org Capsicums</fullName>
+        <default>false</default>
+        <label>Org Capsicums</label>
+    </customValue>
+    <customValue>
+        <fullName>Org Cassia</fullName>
+        <default>false</default>
+        <label>Org Cassia</label>
+    </customValue>
+    <customValue>
+        <fullName>Org Chilli</fullName>
+        <default>false</default>
+        <label>Org Chilli</label>
+    </customValue>
+    <customValue>
+        <fullName>Org Cinnamon</fullName>
+        <default>false</default>
+        <label>Org Cinnamon</label>
+    </customValue>
+    <customValue>
+        <fullName>Org Coriander</fullName>
+        <default>false</default>
+        <label>Org Coriander</label>
+    </customValue>
+    <customValue>
+        <fullName>Org Cumin</fullName>
+        <default>false</default>
+        <label>Org Cumin</label>
+    </customValue>
+    <customValue>
+        <fullName>Org Dehy Onion</fullName>
+        <default>false</default>
+        <label>Org Dehy Onion</label>
+    </customValue>
+    <customValue>
+        <fullName>Org Dehy White Onion</fullName>
+        <default>false</default>
+        <label>Org Dehy White Onion</label>
+    </customValue>
+    <customValue>
+        <fullName>Org Dehy Yellow Onion</fullName>
+        <default>false</default>
+        <label>Org Dehy Yellow Onion</label>
+    </customValue>
+    <customValue>
+        <fullName>Org Domestic Garlic</fullName>
+        <default>false</default>
+        <label>Org Domestic Garlic</label>
+    </customValue>
+    <customValue>
+        <fullName>Org GF Purees</fullName>
+        <default>false</default>
+        <label>Org GF Purees</label>
+    </customValue>
+    <customValue>
+        <fullName>Org Ginger</fullName>
+        <default>false</default>
+        <label>Org Ginger</label>
+    </customValue>
+    <customValue>
+        <fullName>Org HF Purees</fullName>
+        <default>false</default>
+        <label>Org HF Purees</label>
+    </customValue>
+    <customValue>
+        <fullName>Org Retail Garlic</fullName>
+        <default>false</default>
+        <label>Org Retail Garlic</label>
+    </customValue>
+    <customValue>
+        <fullName>Org Turmeric</fullName>
+        <default>false</default>
+        <label>Org Turmeric</label>
+    </customValue>
+    <customValue>
+        <fullName>Org White Pepper</fullName>
+        <default>false</default>
+        <label>Org White Pepper</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER</fullName>
+        <default>false</default>
+        <label>OTHER</label>
+    </customValue>
+    <customValue>
+        <fullName>Others</fullName>
+        <default>false</default>
+        <label>Others</label>
+    </customValue>
+    <customValue>
+        <fullName>Parsley</fullName>
+        <default>false</default>
+        <label>Parsley</label>
+    </customValue>
+    <customValue>
+        <fullName>Paste</fullName>
+        <default>false</default>
+        <label>Paste</label>
+    </customValue>
+    <customValue>
+        <fullName>Peerless InShell</fullName>
+        <default>false</default>
+        <label>Peerless InShell</label>
+    </customValue>
+    <customValue>
+        <fullName>Pieces</fullName>
+        <default>false</default>
+        <label>Pieces</label>
+    </customValue>
+    <customValue>
+        <fullName>Powder</fullName>
+        <default>false</default>
+        <label>Powder</label>
+    </customValue>
+    <customValue>
+        <fullName>Price Extra No. 1</fullName>
+        <default>false</default>
+        <label>Price Extra No. 1</label>
+    </customValue>
+    <customValue>
+        <fullName>Price Extra Supreme</fullName>
+        <default>false</default>
+        <label>Price Extra Supreme</label>
+    </customValue>
+    <customValue>
+        <fullName>Price InShell</fullName>
+        <default>false</default>
+        <label>Price InShell</label>
+    </customValue>
+    <customValue>
+        <fullName>Price Kernel</fullName>
+        <default>false</default>
+        <label>Price Kernel</label>
+    </customValue>
+    <customValue>
+        <fullName>Price Manufacturing</fullName>
+        <default>false</default>
+        <label>Price Manufacturing</label>
+    </customValue>
+    <customValue>
+        <fullName>Price Select Sheller Run</fullName>
+        <default>false</default>
+        <label>Price Select Sheller Run</label>
+    </customValue>
+    <customValue>
+        <fullName>Price STD - 5</fullName>
+        <default>false</default>
+        <label>Price STD - 5</label>
+    </customValue>
+    <customValue>
+        <fullName>Price Supreme</fullName>
+        <default>false</default>
+        <label>Price Supreme</label>
+    </customValue>
+    <customValue>
+        <fullName>Puffed Amaranth</fullName>
+        <default>false</default>
+        <label>Puffed Amaranth</label>
+    </customValue>
+    <customValue>
+        <fullName>Puffed Quinoa</fullName>
+        <default>false</default>
+        <label>Puffed Quinoa</label>
+    </customValue>
+    <customValue>
+        <fullName>Puffed Red Quinoa</fullName>
+        <default>false</default>
+        <label>Puffed Red Quinoa</label>
+    </customValue>
+    <customValue>
+        <fullName>Redimade</fullName>
+        <default>false</default>
+        <label>Redimade</label>
+    </customValue>
+    <customValue>
+        <fullName>Red Quinoa</fullName>
+        <default>false</default>
+        <label>Red Quinoa</label>
+    </customValue>
+    <customValue>
+        <fullName>Regular</fullName>
+        <default>false</default>
+        <label>Regular</label>
+    </customValue>
+    <customValue>
+        <fullName>Reject</fullName>
+        <default>false</default>
+        <label>Reject</label>
+    </customValue>
+    <customValue>
+        <fullName>Rejections</fullName>
+        <default>false</default>
+        <label>Rejections</label>
+    </customValue>
+    <customValue>
+        <fullName>Rejects</fullName>
+        <default>false</default>
+        <label>Rejects</label>
+    </customValue>
+    <customValue>
+        <fullName>Retail Garlic</fullName>
+        <default>false</default>
+        <label>Retail Garlic</label>
+    </customValue>
+    <customValue>
+        <fullName>Retail Onion</fullName>
+        <default>false</default>
+        <label>Retail Onion</label>
+    </customValue>
+    <customValue>
+        <fullName>Roasted Blanched Diced</fullName>
+        <default>false</default>
+        <label>Roasted Blanched Diced</label>
+    </customValue>
+    <customValue>
+        <fullName>Roasted Blanched Meal</fullName>
+        <default>false</default>
+        <label>Roasted Blanched Meal</label>
+    </customValue>
+    <customValue>
+        <fullName>Roasted Blanched Paste</fullName>
+        <default>false</default>
+        <label>Roasted Blanched Paste</label>
+    </customValue>
+    <customValue>
+        <fullName>Roasted Blanched Sliced</fullName>
+        <default>false</default>
+        <label>Roasted Blanched Sliced</label>
+    </customValue>
+    <customValue>
+        <fullName>Roasted Blanched Slivered</fullName>
+        <default>false</default>
+        <label>Roasted Blanched Slivered</label>
+    </customValue>
+    <customValue>
+        <fullName>Roasted Blanched Splits</fullName>
+        <default>false</default>
+        <label>Roasted Blanched Splits</label>
+    </customValue>
+    <customValue>
+        <fullName>Roasted Blanched Wholes &amp; Broken</fullName>
+        <default>false</default>
+        <label>Roasted Blanched Wholes &amp; Broken</label>
+    </customValue>
+    <customValue>
+        <fullName>Roasted Natural Diced</fullName>
+        <default>false</default>
+        <label>Roasted Natural Diced</label>
+    </customValue>
+    <customValue>
+        <fullName>Roasted Natural Flakes</fullName>
+        <default>false</default>
+        <label>Roasted Natural Flakes</label>
+    </customValue>
+    <customValue>
+        <fullName>Roasted Natural Meal</fullName>
+        <default>false</default>
+        <label>Roasted Natural Meal</label>
+    </customValue>
+    <customValue>
+        <fullName>Roasted Natural Oil</fullName>
+        <default>false</default>
+        <label>Roasted Natural Oil</label>
+    </customValue>
+    <customValue>
+        <fullName>Roasted Natural Paste</fullName>
+        <default>false</default>
+        <label>Roasted Natural Paste</label>
+    </customValue>
+    <customValue>
+        <fullName>Roasted Natural Whole</fullName>
+        <default>false</default>
+        <label>Roasted Natural Whole</label>
+    </customValue>
+    <customValue>
+        <fullName>Roasted Paste</fullName>
+        <default>false</default>
+        <label>Roasted Paste</label>
+    </customValue>
+    <customValue>
+        <fullName>Roasted Sesame</fullName>
+        <default>false</default>
+        <label>Roasted Sesame</label>
+    </customValue>
+    <customValue>
+        <fullName>Ruby InShell</fullName>
+        <default>false</default>
+        <label>Ruby InShell</label>
+    </customValue>
+    <customValue>
+        <fullName>Runner Shelled</fullName>
+        <default>false</default>
+        <label>Runner Shelled</label>
+    </customValue>
+    <customValue>
+        <fullName>Sachet</fullName>
+        <default>false</default>
+        <label>Sachet</label>
+    </customValue>
+    <customValue>
+        <fullName>Scorched Wholes</fullName>
+        <default>false</default>
+        <label>Scorched Wholes</label>
+    </customValue>
+    <customValue>
+        <fullName>Seasonings</fullName>
+        <default>false</default>
+        <label>Seasonings</label>
+    </customValue>
+    <customValue>
+        <fullName>Second Scorched Pieces</fullName>
+        <default>false</default>
+        <label>Second Scorched Pieces</label>
+    </customValue>
+    <customValue>
+        <fullName>Second Scorched Wholes</fullName>
+        <default>false</default>
+        <label>Second Scorched Wholes</label>
+    </customValue>
+    <customValue>
+        <fullName>Sesame Roasted</fullName>
+        <default>false</default>
+        <label>Sesame Roasted</label>
+    </customValue>
+    <customValue>
+        <fullName>Shasta InShell</fullName>
+        <default>false</default>
+        <label>Shasta InShell</label>
+    </customValue>
+    <customValue>
+        <fullName>Slivered</fullName>
+        <default>false</default>
+        <label>Slivered</label>
+    </customValue>
+    <customValue>
+        <fullName>Small Broken Pieces</fullName>
+        <default>false</default>
+        <label>Small Broken Pieces</label>
+    </customValue>
+    <customValue>
+        <fullName>Sonora InShell</fullName>
+        <default>false</default>
+        <label>Sonora InShell</label>
+    </customValue>
+    <customValue>
+        <fullName>Sonora Kernel</fullName>
+        <default>false</default>
+        <label>Sonora Kernel</label>
+    </customValue>
+    <customValue>
+        <fullName>Sonora Select Sheller Run</fullName>
+        <default>false</default>
+        <label>Sonora Select Sheller Run</label>
+    </customValue>
+    <customValue>
+        <fullName>Sonora Supreme</fullName>
+        <default>false</default>
+        <label>Sonora Supreme</label>
+    </customValue>
+    <customValue>
+        <fullName>Sonora XNO1</fullName>
+        <default>false</default>
+        <label>Sonora XNO1</label>
+    </customValue>
+    <customValue>
+        <fullName>Splits</fullName>
+        <default>false</default>
+        <label>Splits</label>
+    </customValue>
+    <customValue>
+        <fullName>Splits &amp; Broken</fullName>
+        <default>false</default>
+        <label>Splits &amp; Broken</label>
+    </customValue>
+    <customValue>
+        <fullName>STD - 5</fullName>
+        <default>false</default>
+        <label>STD - 5</label>
+    </customValue>
+    <customValue>
+        <fullName>STD - 5 Sized</fullName>
+        <default>false</default>
+        <label>STD - 5 Sized</label>
+    </customValue>
+    <customValue>
+        <fullName>STD - 5 Unsized</fullName>
+        <default>false</default>
+        <label>STD - 5 Unsized</label>
+    </customValue>
+    <customValue>
+        <fullName>Supareil InShell</fullName>
+        <default>false</default>
+        <label>Supareil InShell</label>
+    </customValue>
+    <customValue>
+        <fullName>Supareil Supreme</fullName>
+        <default>false</default>
+        <label>Supareil Supreme</label>
+    </customValue>
+    <customValue>
+        <fullName>Tahini Dark</fullName>
+        <default>false</default>
+        <label>Tahini Dark</label>
+    </customValue>
+    <customValue>
+        <fullName>Tahini Light</fullName>
+        <default>false</default>
+        <label>Tahini Light</label>
+    </customValue>
+    <customValue>
+        <fullName>Tahini Roasted</fullName>
+        <default>false</default>
+        <label>Tahini Roasted</label>
+    </customValue>
+    <customValue>
+        <fullName>Tin</fullName>
+        <default>false</default>
+        <label>Tin</label>
+    </customValue>
+    <customValue>
+        <fullName>Tricolor Quinoa</fullName>
+        <default>false</default>
+        <label>Tricolor Quinoa</label>
+    </customValue>
+    <customValue>
+        <fullName>Turmeric</fullName>
+        <default>false</default>
+        <label>Turmeric</label>
+    </customValue>
+    <customValue>
+        <fullName>UHT</fullName>
+        <default>false</default>
+        <label>UHT</label>
+    </customValue>
+    <customValue>
+        <fullName>Uncleaned Sesame</fullName>
+        <default>false</default>
+        <label>Uncleaned Sesame</label>
+    </customValue>
+    <customValue>
+        <fullName>US No 1 InShell</fullName>
+        <default>false</default>
+        <label>US No 1 InShell</label>
+    </customValue>
+    <customValue>
+        <fullName>US No 1 Kernel</fullName>
+        <default>false</default>
+        <label>US No 1 Kernel</label>
+    </customValue>
+    <customValue>
+        <fullName>US No 1 Pieces</fullName>
+        <default>false</default>
+        <label>US No 1 Pieces</label>
+    </customValue>
+    <customValue>
+        <fullName>White Chia</fullName>
+        <default>false</default>
+        <label>White Chia</label>
+    </customValue>
+    <customValue>
+        <fullName>White Pepper</fullName>
+        <default>false</default>
+        <label>White Pepper</label>
+    </customValue>
+    <customValue>
+        <fullName>White Quinoa</fullName>
+        <default>false</default>
+        <label>White Quinoa</label>
+    </customValue>
+    <customValue>
+        <fullName>White Wholes</fullName>
+        <default>false</default>
+        <label>White Wholes</label>
+    </customValue>
+    <customValue>
+        <fullName>Whole Milk</fullName>
+        <default>false</default>
+        <label>Whole Milk</label>
+    </customValue>
+    <customValue>
+        <fullName>Whole Roasted</fullName>
+        <default>false</default>
+        <label>Whole Roasted</label>
+    </customValue>
+    <customValue>
+        <fullName>Wholes &amp; Broken</fullName>
+        <default>false</default>
+        <label>Wholes &amp; Broken</label>
+    </customValue>
+    <customValue>
+        <fullName>Wholes &amp; Brokens</fullName>
+        <default>false</default>
+        <label>Wholes &amp; Brokens</label>
+    </customValue>
+    <customValue>
+        <fullName>Wood Colony Extra No. 1</fullName>
+        <default>false</default>
+        <label>Wood Colony Extra No. 1</label>
+    </customValue>
+    <customValue>
+        <fullName>Wood Colony Fancy</fullName>
+        <default>false</default>
+        <label>Wood Colony Fancy</label>
+    </customValue>
+    <customValue>
+        <fullName>Wood Colony InShell</fullName>
+        <default>false</default>
+        <label>Wood Colony InShell</label>
+    </customValue>
+    <customValue>
+        <fullName>Wood Colony Kernel</fullName>
+        <default>false</default>
+        <label>Wood Colony Kernel</label>
+    </customValue>
+    <customValue>
+        <fullName>Wood Colony Select Sheller Run</fullName>
+        <default>false</default>
+        <label>Wood Colony Select Sheller Run</label>
+    </customValue>
+    <customValue>
+        <fullName>Wood Colony STD - 5</fullName>
+        <default>false</default>
+        <label>Wood Colony STD - 5</label>
+    </customValue>
+    <customValue>
+        <fullName>Wood Colony Supreme</fullName>
+        <default>false</default>
+        <label>Wood Colony Supreme</label>
+    </customValue>
+    <customValue>
+        <fullName>Yogurt Heat Based</fullName>
+        <default>false</default>
+        <label>Yogurt Heat Based</label>
+    </customValue>
+    <customValue>
+        <fullName>YOGURTNONHEATBASED</fullName>
+        <default>false</default>
+        <label>YOGURTNONHEATBASED</label>
+    </customValue>
+    <customValue>
+        <fullName>NULL</fullName>
+        <default>false</default>
+        <label>NULL</label>
+    </customValue>
+    <customValue>
+        <fullName>(BLANKS)</fullName>
+        <default>false</default>
+        <label>(BLANKS)</label>
+    </customValue>
+    <customValue>
+        <fullName>MOONTEREY SELECT SHELLER RUN</fullName>
+        <default>false</default>
+        <label>MOONTEREY SELECT SHELLER RUN</label>
+    </customValue>
+    <customValue>
+        <fullName>ROASTED BUTTER</fullName>
+        <default>false</default>
+        <label>ROASTED BUTTER</label>
+    </customValue>
+    <customValue>
+        <fullName>ALUBIA BEANS</fullName>
+        <default>false</default>
+        <label>ALUBIA BEANS</label>
+    </customValue>
+    <customValue>
+        <fullName>Blends</fullName>
+        <default>false</default>
+        <label>Blends</label>
+    </customValue>
+    <customValue>
+        <fullName>Org Chile Peppers</fullName>
+        <default>false</default>
+        <label>Org Chile Peppers</label>
+    </customValue>
+    <customValue>
+        <fullName>Org Jalapeno Peppers</fullName>
+        <default>false</default>
+        <label>Org Jalapeno Peppers</label>
+    </customValue>
+    <customValue>
+        <fullName>Fennel</fullName>
+        <default>false</default>
+        <label>Fennel</label>
+    </customValue>
+    <customValue>
+        <fullName>Fenugreek</fullName>
+        <default>false</default>
+        <label>Fenugreek</label>
+    </customValue>
+    <customValue>
+        <fullName>Chile Peppers</fullName>
+        <default>false</default>
+        <label>Chile Peppers</label>
+    </customValue>
+    <customValue>
+        <fullName>RUNNER SPLITS</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>RUNNER SPLITS</label>
+    </customValue>
+    <customValue>
+        <fullName>Defatted Flour</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Defatted Flour</label>
+    </customValue>
+    <customValue>
+        <fullName>VIRGINIA SHELLED</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>VIRGINIA SHELLED</label>
+    </customValue>
+    <customValue>
+        <fullName>ROASTED</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>ROASTED</label>
+    </customValue>
+    <customValue>
+        <fullName>Jalapeno Peppers</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Jalapeno Peppers</label>
+    </customValue>
+    <customValue>
+        <fullName>Tomatillo</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Tomatillo</label>
+    </customValue>
+    <customValue>
+        <fullName>Chipotle</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Chipotle</label>
+    </customValue>
+    <customValue>
+        <fullName>Enchilada Sauce</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Enchilada Sauce</label>
+    </customValue>
+    <customValue>
+        <fullName>Poblano</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Poblano</label>
+    </customValue>
+    <customValue>
+        <fullName>ORG Enchilada Sauce</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>ORG Enchilada Sauce</label>
+    </customValue>
+    <customValue>
+        <fullName>ORG Tomatillo</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>ORG Tomatillo</label>
+    </customValue>
+    <customValue>
+        <fullName>ORG Poblano</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>ORG Poblano</label>
+    </customValue>
+    <customValue>
+        <fullName>Org Economy Garlic</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Org Economy Garlic</label>
+    </customValue>
+    <customValue>
+        <fullName>Org Fresh Garlic</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Org Fresh Garlic</label>
+    </customValue>
+    <customValue>
+        <fullName>Dill</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Dill</label>
+    </customValue>
+    <customValue>
+        <fullName>MACE</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>MACE</label>
+    </customValue>
+    <customValue>
+        <fullName>Whole pepper HT</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Whole pepper HT</label>
+    </customValue>
+    <customValue>
+        <fullName>Grinds pepper</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Grinds pepper</label>
+    </customValue>
+    <customValue>
+        <fullName>Whole pepper MC</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Whole pepper MC</label>
+    </customValue>
+    <customValue>
+        <fullName>Customized wholes</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Customized wholes</label>
+    </customValue>
+    <customValue>
+        <fullName>Customized pieces</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Customized pieces</label>
+    </customValue>
+    <customValue>
+        <fullName>Organic</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Organic</label>
+    </customValue>
+    <customValue>
+        <fullName>Pasteurized</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Pasteurized</label>
+    </customValue>
+    <customValue>
+        <fullName>Paste/Butter</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Paste/Butter</label>
+    </customValue>
+    <customValue>
+        <fullName>Sliced</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Sliced</label>
+    </customValue>
+    <customValue>
+        <fullName>BWB</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>BWB</label>
+    </customValue>
+    <customValue>
+        <fullName>Roasted Kernel</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Roasted Kernel</label>
+    </customValue>
+    <customValue>
+        <fullName>Roasted Inshell</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Roasted Inshell</label>
+    </customValue>
+    <customValue>
+        <fullName>Non Ingredient</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Non Ingredient</label>
+    </customValue>
+    <customValue>
+        <fullName>&quot;Paste/</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>&quot;Paste/</label>
+    </customValue>
+    <customValue>
+        <fullName>NUTRITIONAL</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>NUTRITIONAL</label>
+    </customValue>
+    <customValue>
+        <fullName>Butter&quot;</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Butter&quot;</label>
+    </customValue>
+    <customValue>
+        <fullName>SPANISH SHELLED</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>SPANISH SHELLED</label>
+    </customValue>
+    <masterLabel>Product Sub Category 2</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

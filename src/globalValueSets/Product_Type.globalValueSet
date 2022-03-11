@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>NULL</fullName>
+        <default>false</default>
+        <label>NULL</label>
+    </customValue>
+    <customValue>
+        <fullName>INSHELL</fullName>
+        <default>false</default>
+        <label>INSHELL</label>
+    </customValue>
+    <customValue>
+        <fullName>WHOLE KERNEL</fullName>
+        <default>false</default>
+        <label>WHOLE KERNEL</label>
+    </customValue>
+    <customValue>
+        <fullName>BROKEN KERNEL</fullName>
+        <default>false</default>
+        <label>BROKEN KERNEL</label>
+    </customValue>
+    <customValue>
+        <fullName>WHOLE</fullName>
+        <default>false</default>
+        <label>WHOLE</label>
+    </customValue>
+    <customValue>
+        <fullName>BROKEN</fullName>
+        <default>false</default>
+        <label>BROKEN</label>
+    </customValue>
+    <customValue>
+        <fullName>REJECT</fullName>
+        <default>false</default>
+        <label>REJECT</label>
+    </customValue>
+    <customValue>
+        <fullName>FLOUR</fullName>
+        <default>false</default>
+        <label>FLOUR</label>
+    </customValue>
+    <customValue>
+        <fullName>CUSTOMIZED PIECES</fullName>
+        <default>false</default>
+        <label>CUSTOMIZED PIECES</label>
+    </customValue>
+    <customValue>
+        <fullName>WASTE</fullName>
+        <default>false</default>
+        <label>WASTE</label>
+    </customValue>
+    <customValue>
+        <fullName>SHELL</fullName>
+        <default>false</default>
+        <label>SHELL</label>
+    </customValue>
+    <customValue>
+        <fullName>ORGANIC/FAIR TRADE</fullName>
+        <default>false</default>
+        <label>ORGANIC/FAIR TRADE</label>
+    </customValue>
+    <customValue>
+        <fullName>BLANCHED</fullName>
+        <default>false</default>
+        <label>BLANCHED</label>
+    </customValue>
+    <customValue>
+        <fullName>DXW</fullName>
+        <default>false</default>
+        <label>DXW</label>
+    </customValue>
+    <customValue>
+        <fullName>CUSTOMIZED WHOLES</fullName>
+        <default>false</default>
+        <label>CUSTOMIZED WHOLES</label>
+    </customValue>
+    <customValue>
+        <fullName>OIL</fullName>
+        <default>false</default>
+        <label>OIL</label>
+    </customValue>
+    <customValue>
+        <fullName>ROASTED</fullName>
+        <default>false</default>
+        <label>ROASTED</label>
+    </customValue>
+    <customValue>
+        <fullName>PASTE/BUTTER</fullName>
+        <default>false</default>
+        <label>PASTE/BUTTER</label>
+    </customValue>
+    <customValue>
+        <fullName>OIL STOCK</fullName>
+        <default>false</default>
+        <label>OIL STOCK</label>
+    </customValue>
+    <customValue>
+        <fullName>ROASTED UNSALTED WHOLE</fullName>
+        <default>false</default>
+        <label>ROASTED UNSALTED WHOLE</label>
+    </customValue>
+    <customValue>
+        <fullName>NATURAL WHOLE</fullName>
+        <default>false</default>
+        <label>NATURAL WHOLE</label>
+    </customValue>
+    <customValue>
+        <fullName>ROASTED SALTED WHOLE</fullName>
+        <default>false</default>
+        <label>ROASTED SALTED WHOLE</label>
+    </customValue>
+    <customValue>
+        <fullName>PASTE/ BUTTER</fullName>
+        <default>false</default>
+        <label>PASTE/ BUTTER</label>
+    </customValue>
+    <customValue>
+        <fullName>HALVES</fullName>
+        <default>false</default>
+        <label>HALVES</label>
+    </customValue>
+    <customValue>
+        <fullName>(BLANKS)</fullName>
+        <default>false</default>
+        <label>(BLANKS)</label>
+    </customValue>
+    <customValue>
+        <fullName>NUTS</fullName>
+        <default>false</default>
+        <label>NUTS</label>
+    </customValue>
+    <customValue>
+        <fullName>DRIED FRUITS</fullName>
+        <default>false</default>
+        <label>DRIED FRUITS</label>
+    </customValue>
+    <customValue>
+        <fullName>SEEDS AND PULSES</fullName>
+        <default>false</default>
+        <label>SEEDS AND PULSES</label>
+    </customValue>
+    <customValue>
+        <fullName>Others</fullName>
+        <default>false</default>
+        <label>Others</label>
+    </customValue>
+    <masterLabel>Product Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

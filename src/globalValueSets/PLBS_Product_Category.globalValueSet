@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Nut mixes</fullName>
+        <default>false</default>
+        <label>Nut mixes</label>
+    </customValue>
+    <customValue>
+        <fullName>Pasteurized nuts</fullName>
+        <default>false</default>
+        <label>Pasteurized nuts</label>
+    </customValue>
+    <customValue>
+        <fullName>Dry roasted nuts</fullName>
+        <default>false</default>
+        <label>Dry roasted nuts</label>
+    </customValue>
+    <customValue>
+        <fullName>Oil roasted nuts</fullName>
+        <default>false</default>
+        <label>Oil roasted nuts</label>
+    </customValue>
+    <customValue>
+        <fullName>Salts nuts</fullName>
+        <default>false</default>
+        <label>Salts nuts</label>
+    </customValue>
+    <customValue>
+        <fullName>Seasoned nuts</fullName>
+        <default>false</default>
+        <label>Seasoned nuts</label>
+    </customValue>
+    <customValue>
+        <fullName>Trail mixes</fullName>
+        <default>false</default>
+        <label>Trail mixes</label>
+    </customValue>
+    <customValue>
+        <fullName>Natural nuts</fullName>
+        <default>false</default>
+        <label>Natural nuts</label>
+    </customValue>
+    <customValue>
+        <fullName>Blanched nuts</fullName>
+        <default>false</default>
+        <label>Blanched nuts</label>
+    </customValue>
+    <customValue>
+        <fullName>Diced nuts</fullName>
+        <default>false</default>
+        <label>Diced nuts</label>
+    </customValue>
+    <customValue>
+        <fullName>Slivered nuts</fullName>
+        <default>false</default>
+        <label>Slivered nuts</label>
+    </customValue>
+    <customValue>
+        <fullName>Sliced nuts</fullName>
+        <default>false</default>
+        <label>Sliced nuts</label>
+    </customValue>
+    <customValue>
+        <fullName>Nut meal</fullName>
+        <default>false</default>
+        <label>Nut meal</label>
+    </customValue>
+    <customValue>
+        <fullName>Natural paste</fullName>
+        <default>false</default>
+        <label>Natural paste</label>
+    </customValue>
+    <customValue>
+        <fullName>Blanched paste</fullName>
+        <default>false</default>
+        <label>Blanched paste</label>
+    </customValue>
+    <customValue>
+        <fullName>Roasted paste</fullName>
+        <default>false</default>
+        <label>Roasted paste</label>
+    </customValue>
+    <customValue>
+        <fullName>Pure paste</fullName>
+        <default>false</default>
+        <label>Pure paste</label>
+    </customValue>
+    <customValue>
+        <fullName>Flavored paste</fullName>
+        <default>false</default>
+        <label>Flavored paste</label>
+    </customValue>
+    <customValue>
+        <fullName>Granola</fullName>
+        <default>false</default>
+        <label>Granola</label>
+    </customValue>
+    <customValue>
+        <fullName>Protein</fullName>
+        <default>false</default>
+        <label>Protein</label>
+    </customValue>
+    <customValue>
+        <fullName>Coated bars</fullName>
+        <default>false</default>
+        <label>Coated bars</label>
+    </customValue>
+    <customValue>
+        <fullName>Nut-based cookies</fullName>
+        <default>false</default>
+        <label>Nut-based cookies</label>
+    </customValue>
+    <customValue>
+        <fullName>Natural oil</fullName>
+        <default>false</default>
+        <label>Natural oil</label>
+    </customValue>
+    <customValue>
+        <fullName>Infused oil</fullName>
+        <default>false</default>
+        <label>Infused oil</label>
+    </customValue>
+    <customValue>
+        <fullName>Natural milk</fullName>
+        <default>false</default>
+        <label>Natural milk</label>
+    </customValue>
+    <customValue>
+        <fullName>Flavored milk</fullName>
+        <default>false</default>
+        <label>Flavored milk</label>
+    </customValue>
+    <customValue>
+        <fullName>Single Nuts/Fruits</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Single Nuts/Fruits</label>
+    </customValue>
+    <customValue>
+        <fullName>Mixed Nuts</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Mixed Nuts</label>
+    </customValue>
+    <customValue>
+        <fullName>Nut Meal/Flour</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Nut Meal/Flour</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Nut Ingredients</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Nut Ingredients</label>
+    </customValue>
+    <customValue>
+        <fullName>Nut Paste/Butter/Spread</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Nut Paste/Butter/Spread</label>
+    </customValue>
+    <customValue>
+        <fullName>Nut Oil</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Nut Oil</label>
+    </customValue>
+    <customValue>
+        <fullName>Trail Mix</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Trail Mix</label>
+    </customValue>
+    <masterLabel>Product Category</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

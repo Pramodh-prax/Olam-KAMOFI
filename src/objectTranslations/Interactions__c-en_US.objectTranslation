@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Interaction</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Interactions</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Interactions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Business Unit --></label>
+        <name>Business_Unit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Details --></label>
+        <name>Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Is Account Team Member --></label>
+        <name>User_Is_Account_Team_Member__c</name>
+    </fields>
+    <layouts>
+        <layout>Interaction Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <sharingReasons>
+        <label><!-- Access Set --></label>
+        <name>Access_Set</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- Olam Share --></label>
+        <name>Olam_Share</name>
+    </sharingReasons>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Only Primary Account Owners can create Interaction --></errorMessage>
+        <name>Primary_Acnt_Owner_To_Create_Interaction</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot create Interactions if you are not part of the Account Team. Add yourself as a Team Member in the Account before creating Interactions. --></errorMessage>
+        <name>User_Is_Not_Account_Team_Member</name>
+    </validationRules>
+</CustomObjectTranslation>

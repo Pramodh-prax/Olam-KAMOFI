@@ -1,0 +1,82 @@
+<aura:component controller="KAM_BudgetActualsCntl" extends="c:KAM_Util"
+    implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"
+    access="global">
+    <aura:attribute type="String" name="selectedYear" />
+    <aura:attribute type="String[]" name="yearPicklist" />
+    <aura:attribute name="isLoading" type="boolean" default="true" />
+    <aura:attribute name="showModal" type="boolean" default="true" />
+    <aura:attribute type="String" name="AccountId" />
+    <aura:attribute type="String" name="errors" />
+    <aura:attribute name="showBudgetvsActuals" type="boolean" default="false" />
+    <aura:attribute name="BudgetvsActualCompList" type="List" />
+    <aura:attribute name="BudgetvsActuals" type="Object" />
+    <aura:attribute name="Budgets" type="list" />
+    <aura:attribute name="SectionData" type="String" />
+    
+    <aura:attribute type="String" name="selectedBU" />
+    <aura:attribute type="Teams__c" name="currentUserAccountTeam" />
+    <aura:attribute type="String[]" name="BusinessUnit" default="Cocoa,Dairy,Edible_Nuts,Spice"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:if isTrue="{!v.showModal}">
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+            aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-backdrop slds-backdrop_open">
+                <div class="slds-modal__container c-newmodal-container slds-is-relative">
+
+                    <header class="slds-modal__header">
+                        <lightning:buttonIcon iconName="utility:close" onclick="{! c.closeModel }"
+                            alternativeText="close" variant="bare-inverse" class="slds-modal__close" />
+                        <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Create Budgets
+                        </h2>
+                    </header>
+                    <div class="slds-modal__content slds-p-around_medium modal-body" id="modal-content-id-1">
+                        <div class="slds-form--compound">
+                            <div>
+                                <aura:if isTrue="{!!v.isLoading}">
+                                    <lightning:select class="slds-show_inline-block" label="Year" required="true"
+                                        value="{!v.selectedYear}" aura:id="inputtemp"
+                                        messageWhenValueMissing="{!v.errors}">
+                                        <aura:iteration items="{!v.yearPicklist}" var="val">
+                                            <option value="{!val.value}"> {!val.label}</option>
+                                        </aura:iteration>
+                                    </lightning:select>
+                                    
+                                    <div>
+                                        <br></br>
+                                        <aura:if isTrue="{!v.currentUserAccountTeam.Business_Unit__c=='All'}">
+                                            <lightning:select class="slds-show_inline-block" label="Business Unit" required="true" value="{!v.selectedBU}" >
+                                                <aura:iteration items="{!v.BusinessUnit}" var="val">
+                                                    <option value="{!val}"> {!val}</option>
+                                                </aura:iteration>
+                                            </lightning:select>
+                                            <aura:set attribute="else">
+                                                <b>You're about to create a new Budget for <ui:outputText  value="{!v.currentUserAccountTeam.Business_Unit__c}"  /> Business Unit.</b>
+                                            </aura:set>
+                                        </aura:if>
+                                    </div>
+                                </aura:if>
+
+                            </div>
+                            <aura:if isTrue="{!v.errors}">
+                                <div style="color:red;">{!v.errors}</div>
+                            </aura:if>
+                            <aura:if isTrue="{!v.isLoading}">
+                                <c:KAM_LoadingDots />
+                            </aura:if>
+                        </div>
+                    </div>
+                    <footer class="slds-modal__footer">
+                        <lightning:button variant="brand" label="Save and Continue" title="Save"
+                            onclick="{!c.createNewBudgetvsActuals}" />
+                    </footer>
+                </div>
+            </div>
+        </section>
+    </aura:if>
+    <aura:if isTrue="{!v.showBudgetvsActuals}">
+        <c:KAM_BudgetCreationComp budget="{!v.BudgetvsActuals}" accountId="{!v.accountId}" />
+    </aura:if>
+
+
+</aura:component>

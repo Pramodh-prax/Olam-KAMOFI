@@ -1,0 +1,3 @@
+<aura:event type="COMPONENT" description="KAM_AccountPlanShare" >
+    <aura:attribute name="acctPlanId" type="String" />
+</aura:event>

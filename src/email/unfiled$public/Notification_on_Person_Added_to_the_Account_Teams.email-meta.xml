@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>An email notification to be sent to the person who is being added to the Account Teams on top of the in-app notification</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Notification on Person Added to the Account Teams</name>
+    <style>none</style>
+    <subject>You are added to the Account Teams</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

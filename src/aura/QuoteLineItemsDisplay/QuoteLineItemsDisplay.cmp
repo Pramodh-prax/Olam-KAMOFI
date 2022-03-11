@@ -1,0 +1,146 @@
+<aura:component controller="QuoteLineItemsDisplayController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    
+    <!--declare events handlers-->  
+    <aura:handler name="AddQuoteLineItemToParentCompEvent" event="c:AddQuoteLineItemToParentCompEvent" action="{!c.handleAddQuoteLineItemToParentCompEvent}"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:handler event="force:refreshView" action="{!c.doInit}" />
+    <!--declare attributes--> 
+    <aura:attribute name="listOfQuoteLineItems" type="QuoteLineItem[]"/>
+    <aura:attribute name="listOfAllSelectedQuoteLineItems" type="list"/>
+    <aura:attribute name="totalRecordsCount" type="Integer"/>
+    <aura:attribute name="selectedCount" type="integer" default="0"
+                    description="selected Records Count"/>
+    <aura:attribute name="screenName" type="string" default=""/>
+    <aura:attribute type="Aura.Component[]" name="productConfigComp" />
+    
+    <aura:attribute name="selectedQuoteLineItems" type="list"/> 
+    <aura:attribute name="quoteStatus" type="string" default=""/>
+    
+    <aura:attribute name="quoteRecord" type="Quote"/>
+    
+    <!-- START: Display the Quote Line Items of the Quote as a related List-->
+    <lightning:card aura:id="lightCard" class="slds-card_boundary" title="{! 'Quote Line Items (' + v.listOfQuoteLineItems.length + ')'}" iconName="standard:quotes">
+        <aura:set attribute="actions">
+            <lightning:button variant="neutral" label="Add Products" title="Add Products" onclick="{!c.addProduct}"/>
+            <lightning:button variant="neutral" label="Edit Products" title="Edit Products" onclick="{!c.editQuoteLineItems}"/>
+            <lightning:button variant="destructive" label="Delete Products" title="Delete Products" onclick="{!c.deleteQuoteLineItems}"/>
+        </aura:set>	
+        
+        <aura:if isTrue="{!v.listOfQuoteLineItems.length > 0}">
+            <div style="overflow-x: auto;">
+                <table class="slds-table slds-table--bordered slds-cell-wrap slds-table--cell-buffer" width="151px">
+                    <thead>
+                        <tr class="slds-text-title--caps"> 
+                            <th style="width:3.25rem;" class="slds-text-align_right">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <label class="slds-checkbox">
+                                            <ui:inputCheckbox disabled="{!v.listOfQuoteLineItems.length == 0}"
+                                                              aura:id="selectAllId"
+                                                              change="{!c.selectAllCheckbox}"/>
+                                            <span class="slds-checkbox_faux"></span>
+                                            <span class="slds-form-element__label"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="slds-is-sortable slds-text-title--caps" scope="col">
+                                <span class="slds-truncate" style="width:101px;" title="Config"></span>  
+                            </th>
+                            <th class="slds-is-sortable slds-text-title--caps" scope="col">
+                                <span class="slds-truncate" style="width:101px;" title="Product">Product</span>  
+                            </th>
+                            <th class="slds-is-sortable slds-text-title--caps" scope="col">
+                                <span class="slds-truncate" style="width:51px;" title="Unit Price">Unit Price</span>  
+                            </th> 
+                            <th class="slds-is-sortable slds-text-title--caps" scope="col">
+                                <span class="slds-truncate" style="width:101px;" title="Volume">Volume</span>  
+                            </th> 
+                            <th class="slds-is-sortable slds-text-title--caps" scope="col">
+                                <span class="slds-truncate" style="width:51px;" title="Approval Status">Approval Status</span>  
+                            </th> 
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <aura:iteration items="{!v.listOfQuoteLineItems}" var="quoteLineItem">  
+                            <tr> 
+                                <th scope="row" class="slds-text-align_right" style="width:3.25rem;">
+                                    <div class="slds-form-element">
+                                        <div class="slds-form-element__control">
+                                            <label class="slds-checkbox">
+                                                <ui:inputCheckbox text="{!quoteLineItem}"
+                                                                  value="{!quoteLineItem.isChecked}"
+                                                                  change="{!c.checkboxSelect}"
+                                                                  />
+                                                <span class="slds-checkbox_faux"></span>
+                                                <span class="slds-form-element__label text"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th scope="row">   
+                                    <div class="slds-truncate" >
+                                        <aura:if isTrue="{!not(empty(quoteLineItem.Product_Configuration__c))}">
+                                        	<lightning:buttonIcon iconName="utility:description" variant="bare" onclick="{!c.showConfigurations}" alternativeText="Product Configurations" title="Product Configurations" value="{!quoteLineItem.Id}"/>
+                                    	</aura:if>
+                                   	</div>
+                                </th>
+                                <th scope="row">   
+                                    <div class="slds-truncate" >
+                                        <a href="{!'/lightning/r/QuoteLineItem/'+quoteLineItem.Id+'/view'}" title="{!quoteLineItem.Name}" Id="{!quoteLineItem.Id}">{!quoteLineItem.Product2.Name}</a>   
+                                    </div>
+                                </th>
+                                <th scope="row">   
+                                    <div class="slds-truncate" >
+                                        {!quoteLineItem.UnitPrice}
+                                    </div>
+                                </th>
+                                <th scope="row">   
+                                    <div class="slds-truncate" >
+                                        {!quoteLineItem.Volume__c}
+                                    </div>
+                                </th>
+                                
+                                <th style=" display: grid;grid-template-columns: 1fr 1fr;">
+                                    <div class="slds-truncate">
+                                        {!quoteLineItem.Approval_Status__c}
+                                    </div>
+                                    <div>
+                                        <aura:if isTrue="{!not(empty(quoteLineItem.Approver_Comment__c))}">
+                                            <lightning:helptext
+                                                content="{!quoteLineItem.Approver_Comment__c}" />
+                                        </aura:if>
+                                    </div>
+                                    
+                                </th>
+                            </tr>
+                            
+                        </aura:iteration> 
+                    </tbody>
+                </table>
+                <!--<div class="slds-card__footer">
+					class="slds-truncate"
+                    <a href="/lightning/o/QuoteLineItem/home"><span class="view-all-label">View All</span></a>
+                </div> -->
+            </div>
+        </aura:if>
+    </lightning:card>
+    
+    <!-- Product Configurations Component -->
+    {!v.productConfigComp}
+    
+    <!-- END: Display the Quote Line Items of the Quote as a related List-->
+    <aura:if isTrue="{!v.screenName =='ADD_PRODUCTS'}">
+        <c:AddQuoteLineItems recordId="{!v.recordId}"/> 
+    </aura:if>
+    
+     <aura:if isTrue="{!v.screenName =='EDIT_PRODUCTS'}">
+        <c:EditQuoteLineItems listOfQuoteLineItemsToEdit="{!v.selectedQuoteLineItems}" 
+                              recordId = "{!v.recordId}"/> 
+    </aura:if>
+    <aura:if isTrue="{!v.screenName =='DELETE_PRODUCTS'}">
+        <c:DeleteQuoteLineItems listOfQuoteLineItemsToDelete="{!v.selectedQuoteLineItems}"
+                                showConfirmDialog = "true"
+                                /> 
+    </aura:if>
+</aura:component>

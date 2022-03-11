@@ -1,0 +1,90 @@
+<aura:component extends="c:KAM_Util" controller="KAM_AccountPlanListCntl" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" >
+    <aura:attribute name="showAccountplans" type="boolean"  default="False"/>
+    <aura:attribute name="PlanName" type="String" />
+    <aura:attribute name="acctPlanId" type="String" />
+    <aura:attribute name="currentYear" type="String" />
+    <aura:attribute name="AccountPlanList" type="list"/>
+    <aura:attribute type="list" name="AccountTeams" />
+    <aura:attribute type="User" name="UserBU" />
+     <aura:attribute name="isDeleteAcctPlan" type="String"/> 
+    <aura:attribute type="boolean" name="hasCustomPermission" />
+    <aura:attribute name="newDeletePopup" type="Aura.Component" />
+    
+    <aura:registerEvent name="KAM_AccountPlanRowEdit" type="c:KAM_AccountPlanRowEdit"/>
+    <aura:registerEvent name="KAM_AccountPlanShare" type="c:KAM_AccountPlanShare"/>
+    <aura:registerEvent name="KAM_AccountPlanGeneratePDFevt" type="c:KAM_AccountPlanGeneratePDFevt"/>  
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <aura:if isTrue="{!not(empty(v.AccountPlanList))}">
+    <lightning:tabset selectedTabId="one">
+        <lightning:tab label="Current FY Plan" id="one">
+            <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+                <thead>
+                    <tr class="slds-line-height_reset">
+                        <th class="slds-text-title_caps" scope="col"><div class="slds-truncate" title="Account Plans">Account Plan</div></th>
+                        <th class="slds-text-title_caps" scope="col"><div class="slds-truncate" title="Type">Type</div></th>
+                        <th class="slds-text-title_caps" scope="col"><div class="slds-truncate" title="Business Unit">Business Unit</div></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <aura:iteration items="{!v.AccountPlanList}" var="acctplans" indexVar="index">
+                        <aura:if isTrue="{!equals(v.currentYear,acctplans.Year__c)}">   
+                            <tr class="slds-hint-parent" id ="{!index}">
+                                <td class="slds-truncate">{!acctplans.Name}</td>
+                                <td class="slds-truncate">{!acctplans.Type__c}</td>
+                                <td class="slds-truncate">{!acctplans.BU_Identifier__c}</td>
+                                <td class="slds-truncate" id1="{!acctplans.Id}" >
+                                    <a href="" onclick="{!c.editAccountPlan}"><lightning:icon iconName="utility:preview" alternativeText="View" title="View" size="xx-small"/></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <aura:if isTrue="{!not(empty(v.AccountTeams)) }">
+                                    <a href="" onclick="{!c.shareAccountPlan}"><lightning:icon iconName="utility:internal_share" alternativeText="Share"  title="Share" size="small"/></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </aura:if>
+                                   <aura:if isTrue="{!v.hasCustomPermission==true}">
+                                    <a href="" onclick="{!c.deleteAccountPlan}" data-id="{!acctplans.Id}" data-index="{!index}"><lightning:icon iconName="utility:delete" alternativeText="Delete"  title="Delete" size="small"/></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </aura:if>
+                                    
+                                    <!--a href="" onclick="{!c.genrateAccountPlanPdf}"><lightning:icon iconName="utility:pdf_ext" alternativeText="Generate PDF" title="Generate PDF" size="small"/></a-->
+                                </td>
+                            </tr>
+                        </aura:if>
+                    </aura:iteration>                    
+                </tbody>
+            </table>
+        </lightning:tab>
+        <lightning:tab label="All Account Plans" id="two">
+            
+            <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+                <thead>
+                    <tr class="slds-line-height_reset">
+                        <th class="slds-text-title_caps" scope="col"><div class="slds-truncate" title="Account Plans">Account Plans</div></th>
+                        <th class="slds-text-title_caps" scope="col"><div class="slds-truncate" title="Type">Type</div></th>
+                        <th class="slds-text-title_caps" scope="col"><div class="slds-truncate" title="Business Unit">Business Unit</div></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <aura:iteration items="{!v.AccountPlanList}" var="acctplans" indexVar="index">
+                            <tr class="slds-hint-parent" id ="{!index}">
+                                <td class="slds-truncate">{!acctplans.Name}</td>
+                                <td class="slds-truncate">{!acctplans.Type__c}</td>
+                                <td class="slds-truncate">{!acctplans.BU_Identifier__c}</td>
+                                <td class="slds-truncate" id1="{!acctplans.Id}">
+                                    <a href="" onclick="{!c.editAccountPlan}"><lightning:icon iconName="utility:preview" alternativeText="View" title="View" size="xx-small"/></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <aura:if isTrue="{!not(empty(v.AccountTeams))}">
+                                    <a href="" onclick="{!c.shareAccountPlan}"><lightning:icon iconName="utility:internal_share" alternativeText="Share"  title="Share" size="small"/></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </aura:if>
+                                     <aura:if isTrue="{!v.hasCustomPermission==true}">
+                                    <a href="" onclick="{!c.deleteAccountPlan}" data-id="{!acctplans.Id}" data-index="{!index}"><lightning:icon iconName="utility:delete" alternativeText="Delete"  title="Delete" size="small"/></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </aura:if>
+                                    <!--a href="" onclick="{!c.genrateAccountPlanPdf}"><lightning:icon iconName="utility:pdf_ext" alternativeText="Generate PDF" title="Generate PDF" size="small"/></a-->
+                                </td>
+                            </tr>    
+                    </aura:iteration>
+                </tbody>
+            </table>
+        </lightning:tab>
+    </lightning:tabset>
+        <aura:set attribute="else">
+            <p><center>No Records Found...</center></p>
+        </aura:set>
+    </aura:if>
+    {!v.newDeletePopup}
+</aura:component>

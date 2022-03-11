@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Product Fields Filter Setup</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Product Fields Filter Setups</value>
+    </caseValues>
+    <fields>
+        <label><!-- Brand --></label>
+        <name>Brand__c</name>
+        <picklistValues>
+            <masterLabel>BLANK</masterLabel>
+            <translation><!-- BLANK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BT</masterLabel>
+            <translation><!-- BT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CPKELCO</masterLabel>
+            <translation><!-- CPKELCO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DAMIN</masterLabel>
+            <translation><!-- DAMIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DEZAAN</masterLabel>
+            <translation><!-- DEZAAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GC</masterLabel>
+            <translation><!-- GC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HERSHEY</masterLabel>
+            <translation><!-- HERSHEY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HUYSMAN</masterLabel>
+            <translation><!-- HUYSMAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JOANES</masterLabel>
+            <translation><!-- JOANES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MACAO</masterLabel>
+            <translation><!-- MACAO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEUTRAL</masterLabel>
+            <translation><!-- NEUTRAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NICHE</masterLabel>
+            <translation><!-- NICHE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLOT</masterLabel>
+            <translation><!-- PLOT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>STARBUCKS</masterLabel>
+            <translation><!-- STARBUCKS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRIAL</masterLabel>
+            <translation><!-- TRIAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UNICAO</masterLabel>
+            <translation><!-- UNICAO --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Category --></label>
+        <name>Product_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Family --></label>
+        <name>Product_Family__c</name>
+        <picklistValues>
+            <masterLabel>Almond</masterLabel>
+            <translation><!-- Almond --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cashew</masterLabel>
+            <translation><!-- Cashew --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cocoa</masterLabel>
+            <translation><!-- Cocoa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract mfg</masterLabel>
+            <translation><!-- Contract mfg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dairy</masterLabel>
+            <translation><!-- Dairy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hazelnut</masterLabel>
+            <translation><!-- Hazelnut --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Peanuts</masterLabel>
+            <translation><!-- Peanuts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pistachio</masterLabel>
+            <translation><!-- Pistachio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sesame</masterLabel>
+            <translation><!-- Sesame --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spices</masterLabel>
+            <translation><!-- Spices --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Super foods</masterLabel>
+            <translation><!-- Super foods --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Walnut</masterLabel>
+            <translation><!-- Walnut --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Sub Category 2 --></label>
+        <name>Product_Sub_Category_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Sub Category --></label>
+        <name>Product_Sub_Category__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

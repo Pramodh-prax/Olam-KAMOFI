@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Others ( e-commerce, etc.)</fullName>
+        <default>false</default>
+        <label>Others ( e-commerce, etc.)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Private Label / Retailer</fullName>
+        <default>false</default>
+        <label>Private Label / Retailer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Consumer Product Group or Brand Owner</fullName>
+        <default>false</default>
+        <label>Consumer Product Group or Brand Owner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Trade House</fullName>
+        <default>false</default>
+        <label>Trade House</label>
+    </standardValue>
+    <standardValue>
+        <fullName>B2B Processor</fullName>
+        <default>false</default>
+        <label>B2B Processor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Food Service / Quick Service Restaurants</fullName>
+        <default>false</default>
+        <label>Food Service / Quick Service Restaurants</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Importer / Distributor</fullName>
+        <default>false</default>
+        <label>Importer / Distributor</label>
+    </standardValue>
+</StandardValueSet>

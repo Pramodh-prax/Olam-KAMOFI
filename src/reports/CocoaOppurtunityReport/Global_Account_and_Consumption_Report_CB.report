@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Consumption__r$Application__c</field>
+    </columns>
+    <columns>
+        <field>Account.Consumption__r$Category__c</field>
+    </columns>
+    <columns>
+        <field>Account.Consumption__r$Sub_Category__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Consumption__r$Volume_MT__c</field>
+    </columns>
+    <columns>
+        <field>Account$Customer_Group__c</field>
+    </columns>
+    <columns>
+        <field>Account$Owner</field>
+    </columns>
+    <currency>USD</currency>
+    <format>Summary</format>
+    <name>Global Account and Consumption Report CB</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Account_and_Consumption__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Account.Consumption__r$Application__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Account$Cocoa_Active_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

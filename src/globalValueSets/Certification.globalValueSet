@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Null</fullName>
+        <default>false</default>
+        <label>Null</label>
+    </customValue>
+    <customValue>
+        <fullName>RA</fullName>
+        <default>false</default>
+        <label>RA</label>
+    </customValue>
+    <customValue>
+        <fullName>CP</fullName>
+        <default>false</default>
+        <label>CP</label>
+    </customValue>
+    <customValue>
+        <fullName>UTZ</fullName>
+        <default>false</default>
+        <label>UTZ</label>
+    </customValue>
+    <customValue>
+        <fullName>RAINFOREST ALLIANCE</fullName>
+        <default>false</default>
+        <label>RAINFOREST ALLIANCE</label>
+    </customValue>
+    <customValue>
+        <fullName>FAIR TRADE</fullName>
+        <default>false</default>
+        <label>FAIR TRADE</label>
+    </customValue>
+    <customValue>
+        <fullName>FAIR TRADE USA</fullName>
+        <default>false</default>
+        <label>FAIR TRADE USA</label>
+    </customValue>
+    <customValue>
+        <fullName>OLAM LIVELIHOOD CHARTER</fullName>
+        <default>false</default>
+        <label>OLAM LIVELIHOOD CHARTER</label>
+    </customValue>
+    <customValue>
+        <fullName>ORGANIC</fullName>
+        <default>false</default>
+        <label>ORGANIC</label>
+    </customValue>
+    <customValue>
+        <fullName>FAIR TRADE ORGANIC</fullName>
+        <default>false</default>
+        <label>FAIR TRADE ORGANIC</label>
+    </customValue>
+    <customValue>
+        <fullName>LINDT</fullName>
+        <default>false</default>
+        <label>LINDT</label>
+    </customValue>
+    <customValue>
+        <fullName>RAINFOREST ALLIANCE ORGANIC</fullName>
+        <default>false</default>
+        <label>RAINFOREST ALLIANCE ORGANIC</label>
+    </customValue>
+    <customValue>
+        <fullName>OLC SASSANDRA</fullName>
+        <default>false</default>
+        <label>OLC SASSANDRA</label>
+    </customValue>
+    <customValue>
+        <fullName>COCOA FOR GOOD</fullName>
+        <default>false</default>
+        <label>COCOA FOR GOOD</label>
+    </customValue>
+    <customValue>
+        <fullName>CL</fullName>
+        <default>false</default>
+        <label>CL</label>
+    </customValue>
+    <customValue>
+        <fullName>OLC</fullName>
+        <default>false</default>
+        <label>OLC</label>
+    </customValue>
+    <customValue>
+        <fullName>.</fullName>
+        <default>false</default>
+        <label>.</label>
+    </customValue>
+    <customValue>
+        <fullName>RAINFOREST</fullName>
+        <default>false</default>
+        <label>RAINFOREST</label>
+    </customValue>
+    <customValue>
+        <fullName>4C certified</fullName>
+        <default>false</default>
+        <label>4C certified</label>
+    </customValue>
+    <customValue>
+        <fullName>AtSource Entry</fullName>
+        <default>false</default>
+        <label>AtSource Entry</label>
+    </customValue>
+    <customValue>
+        <fullName>AtSource Entry Verified</fullName>
+        <default>false</default>
+        <label>AtSource Entry Verified</label>
+    </customValue>
+    <customValue>
+        <fullName>AtSource Infinity</fullName>
+        <default>false</default>
+        <label>AtSource Infinity</label>
+    </customValue>
+    <customValue>
+        <fullName>AtSource Plus</fullName>
+        <default>false</default>
+        <label>AtSource Plus</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Responsible Sourcing</fullName>
+        <default>false</default>
+        <label>Other Responsible Sourcing</label>
+    </customValue>
+    <customValue>
+        <fullName>RFA certified</fullName>
+        <default>false</default>
+        <label>RFA certified</label>
+    </customValue>
+    <masterLabel>Certification</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

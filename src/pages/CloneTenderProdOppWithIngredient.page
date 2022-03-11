@@ -1,0 +1,122 @@
+<apex:page standardController="Opportunity" extensions="TenderProdOppIngredientExtention" tabStyle="opportunity" lightningStylesheets="true">
+    
+    <apex:form >
+        <apex:pageBlock title="Opportunity Product Edit">
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!save}" value="Save"/>
+                <apex:commandButton action="{!cancel}" value="Cancel" immediate="true"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Opportunity Information"> 
+                <apex:inputField value="{!OpportunityCloned.owner.name}" label="Opportunity Owner"/>
+                <apex:inputField value="{!OpportunityCloned.amount}"/>
+                <apex:inputField value="{!OpportunityCloned.isPrivate}"/>
+                <apex:inputField value="{!OpportunityCloned.CloseDate}"/>
+                <apex:inputField value="{!OpportunityCloned.name}"/>
+                <apex:inputField value="{!OpportunityCloned.Parent_Opportunity__c }"/>
+                <apex:inputField value="{!OpportunityCloned.Accountid}"/>
+                <apex:inputField value="{!OpportunityCloned.StageName}"/>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="Retail Price">
+                <apex:inputField value="{!OpportunityCloned.Plbs_Shelf_Price__c }"/>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="TCB (FOB)">
+                <apex:inputField value="{!TcbCloned.Quotations_Given_as_Per__c}"/>
+                <apex:inputField value="{!TcbCloned.Opportunity_Processing__c}"/>
+                <apex:inputField value="{!TcbCloned.Loss_Product__c }"/>
+                <apex:inputField value="{!TcbCloned.Loss_1st_PM__c }"/>
+                <apex:inputField value="{!TcbCloned.Loss_2nd_PM_Carton__c}"/>
+                <apex:inputField value="{!TcbCloned.Packing_Cost_lbs__c }"/>
+                <apex:inputField value="{!TcbCloned.Pallet_Cost_USD_EA__c}"/>
+                <apex:inputField value="{!TcbCloned.Initial_Design__c}"/>
+                <apex:inputField value="{!TcbCloned.Other_Fixed_Costs__c}"/>
+                <apex:inputField value="{!TcbCloned.Fobbing_Container__c}"/>
+                <apex:inputField value="{!TcbCloned.TCB_FOB__c}"/>
+                <apex:inputField value="{!TcbCloned.Interest__c}"/>
+                <apex:inputField value="{!TcbCloned.Interest_Months__c}"/>
+                <apex:inputField value="{!TcbCloned.Margin__c}"/>
+                <apex:inputField value="{!TcbCloned.Freight_Container__c}"/>
+                <apex:inputField value="{!TcbCloned.Duty__c}"/>
+                <apex:inputField value="{!TcbCloned.Import_Clearance_USD_Cont__c}"/>
+                <apex:inputField value="{!TcbCloned.Port_Olam_WH_USD_Cont__c}"/>
+                <apex:inputField value="{!TcbCloned.Olam_WHs_Cost_USD_Pallet_Excl_PLT__c}"/>
+                <apex:inputField value="{!TcbCloned.Olam_WHs_Cost_USD_Pallet_Incl_PLT__c}"/>
+                <apex:inputField value="{!TcbCloned.WH_to_Customers_DC_Cost_USD_Pallet__c}"/>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="Product">
+                <apex:inputField value="{!OpportunityCloned.PLBS_Product__c  }"/>
+                <apex:inputField value="{!OpportunityCloned.Plbs_Weight_G__c  }"/>
+                <apex:inputField value="{!OpportunityCloned.Case_Mix__c  }"/>
+                <apex:inputField value="{!OpportunityCloned.Plbs_Annual_Unit__c  }"/>
+                <apex:inputField value="{!OpportunityCloned.Plbs_Est_Award__c  }"/>
+                <apex:inputField value="{!OpportunityCloned.Plbs_Manufacturing_Facility__c  }"/>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="Pallet">
+                <apex:inputField value="{!TcbCloned.Pallet_Type__c }"/>
+                <apex:inputField value="{!TcbCloned.Max_Height_mm__c}"/>
+                <apex:inputField value="{!TcbCloned.Max_Weight_kg__c}"/>
+                
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="Shipment">
+                
+                <apex:inputField value="{!TcbCloned.Term__c}"/>
+                <apex:inputField value="{!TcbCloned.Port_of_Entry__c}"/>
+                <apex:inputField value="{!TcbCloned.Container_Type__c}"/>
+                
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="First Packaging Material">
+                
+                <apex:inputField value="{!TcbCloned.PM_Type_1st__c}"/>
+                <apex:inputField value="{!TcbCloned.TCB_1st_PM_Pouch_Jar__c}"/>
+                <apex:inputField value="{!TcbCloned.MOQ_Packaging_1st__c}"/>
+                <apex:inputField value="{!TcbCloned.X1st_Structure__c}"/>
+                <apex:inputField value="{!TcbCloned.X1st_Printing__c}"/>
+                <apex:inputField value="{!TcbCloned.Tare_Weight_g_1st__c }"/>
+                <apex:inputField value="{!TcbCloned.Length_mm_1st__c }"/>
+                <apex:inputField value="{!TcbCloned.Width_mm_1st__c }"/>
+                <apex:inputField value="{!TcbCloned.Depth_Gusset_Height_mm__c}"/>
+                
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="Second Packaging Material">
+                <apex:inputField value="{!TcbCloned.PM_Type_2nd__c }"/>
+                <apex:inputField value="{!TcbCloned.X2nd_PM_Carton__c }"/>
+                <apex:inputField value="{!TcbCloned.MOQ_Packaging_2nd__c }"/>
+                <apex:inputField value="{!TcbCloned.Structure_2nd__c }"/>
+                <apex:inputField value="{!TcbCloned.Printing_2nd__c }"/>
+                <apex:inputField value="{!TcbCloned.Tare_Weight_g_2nd__c }"/>
+                <apex:inputField value="{!TcbCloned.Length_Depth_mm__c }"/>
+                <apex:inputField value="{!TcbCloned.Width_mm_2nd__c }"/>
+                <apex:inputField value="{!TcbCloned.Height_mm__c }"/>
+                
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="Pallet Load">
+                <apex:inputField value="{!TcbCloned.Unit_CTN__c }"/>
+                <apex:inputField value="{!TcbCloned.Case_Mix_PL__c }"/>
+                <apex:inputField value="{!TcbCloned.CTN_Layer__c }"/>
+                <apex:inputField value="{!TcbCloned.Layer_PL__c }"/>
+                <apex:inputField value="{!TcbCloned.Layer_PL_40HC__c }"/>
+                <apex:inputField value="{!TcbCloned.PL_20FT__c }"/>
+                <apex:inputField value="{!TcbCloned.PL_40FT__c }"/>
+                
+                
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="Floor Load">
+                
+                <apex:inputField value="{!TcbCloned.CTN_20FT__c	}"/>
+                <apex:inputField value="{!TcbCloned.CTN_40FT__c}"/>
+                <apex:inputField value="{!TcbCloned.CTN_40FT_HC__c}"/>
+                
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="Description Information">
+                <apex:inputField value="{!OpportunityCloned.Additional_Notes__c}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+    	<apex:relatedList list="OpportunityLineItems" />
+</apex:page>

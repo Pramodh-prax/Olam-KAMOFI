@@ -1,0 +1,76 @@
+<aura:component extends="c:KAM_Util" access="global" controller="KAM_EngagementPlanCntl"
+    implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction">
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="EngagementPlanList" type="List" />
+    <aura:attribute name="EngagementPlan" type="String" />
+    <aura:attribute name="SectionData" type="String" />
+    <aura:attribute name="showEngagemenPlan" type="boolean" default="False" />
+    <aura:attribute name="addEngModal" type="Aura.Component" />
+    <aura:attribute name="newEngModal" type="Aura.Component" />
+    <aura:attribute name="ListNumber" type="Integer" default="3" />
+    <aura:attribute name="sortDir" type="String" default="asc" />
+    <aura:attribute type="User" name="UserBU" />
+    <aura:attribute type="list" name="AccountTeams" />
+    <aura:handler name="engagementPlanUpdated" event="c:KAM_EngagementPlanUpdated" action="{!c.doInit}" />
+    <aura:handler event="force:refreshView" action="{!c.doInit}" />
+
+   
+        <div>
+            <lightning:card variant="Narrow" title="Engagement Plans" iconName="standard:entitlement" footer=""
+                class="container-header">
+                <aura:set attribute="actions">
+                    <lightning:buttonIcon iconName="utility:sort"  alternativeText="Sort by year" title="Sort by year" onclick="{! c.handleSortClick }" disabled="{!empty (v.EngagementPlanList)}"/>
+                    <aura:iteration items="{!v.AccountTeams}" var="acctTeams" indexVar="index">
+                    <aura:if isTrue="{!v.UserBU.Id==acctTeams.User__c}">
+                    <lightning:button label="New" onclick="{!c.createEngagementPlan}" />
+                </aura:if>
+                </aura:iteration>       
+                </aura:set>
+                <br />
+                <aura:iteration items="{!v.EngagementPlanList}" var="eng" indexVar="index" end="{!v.ListNumber}">
+                    <p class="slds-p-horizontal_small">
+                        <a href="javascript:void(0)" onclick="{!c.showEngagementPlan}">
+                            <div data-id="{!eng.Id}" style="font-size:15px;">{!eng.Name} </div>
+                        </a>
+                    </p>
+                    <div class="slds-p-horizontal_x-small">
+                        <lightning:recordViewForm recordId="{!eng.Id}" objectApiName="Engagement_Plan__c">
+
+                            <div class="slds-grid">
+                                <div class="slds-col slds-size_1-of-2">
+                                    <lightning:outputField fieldName="Year__c" />
+                                </div>
+                                <div class="slds-col slds-size_1-of-2">
+                                    <lightning:outputField fieldName="Business_Unit__c" />
+                                </div>
+                            </div>
+                            <div class="slds-grid">
+                                <div class="slds-col slds-size_1-of-2">
+                                    <lightning:outputField fieldName="Start_date__c" />
+                                </div>
+                                <div class="slds-col slds-size_1-of-2">
+                                    <lightning:outputField fieldName="End_Date__c" />
+                                </div>
+                            </div>
+
+                        </lightning:recordViewForm><br />
+                    </div>
+                </aura:iteration>
+                <aura:set attribute="footer">
+
+                    <aura:if isTrue="{!not(empty(v.EngagementPlanList))}">
+
+                        <lightning:button variant="base" label="View All" title="View All Action"
+                            onclick="{! c.viewRelatedList }" aura:id="viewhide" />
+
+                    </aura:if>
+
+                </aura:set>
+
+            </lightning:card>
+        </div>
+    
+    {!v.addEngModal}
+    {!v.newEngModal}
+</aura:component>

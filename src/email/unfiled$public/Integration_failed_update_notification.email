@@ -1,0 +1,4 @@
+Opportunity Name: {!OpportunityLineItem.Opportunity_Name__c}
+Integration Message: {!OpportunityLineItem.Integration_Messagee__c}
+
+Click here to review : {!OpportunityLineItem.Link}

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sample Request</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sample Requests</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account SAP Id --></label>
+        <name>Account_SAP_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Sample Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Actual Hours --></label>
+        <name>Actual_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Integration Message --></label>
+        <name>Integration_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Integration Status --></label>
+        <name>Integration_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Sample Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- PD&amp;I User Country --></label>
+        <name>PD_I_User_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- PD&amp;I User Email --></label>
+        <name>PD_I_User_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- PD&amp;I --></label>
+        <name>PD_I__c</name>
+        <relationshipLabel><!-- Sample Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+        <picklistValues>
+            <masterLabel>APAC</masterLabel>
+            <translation><!-- APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMENA</masterLabel>
+            <translation><!-- EMENA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USA</masterLabel>
+            <translation><!-- USA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sample Due Date --></label>
+        <name>Sample_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Request OSSM Id --></label>
+        <name>Sample_Request_SAP_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Requested Date --></label>
+        <name>Sample_Requested_Date__c</name>
+    </fields>
+    <layouts>
+        <layout>Sample Request Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

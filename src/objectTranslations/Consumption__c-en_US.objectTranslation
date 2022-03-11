@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Consumption</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Consumption</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Consumption --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Application --></label>
+        <name>Application__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brands --></label>
+        <name>Brands__c</name>
+    </fields>
+    <fields>
+        <label><!-- Budget vs Actual Line --></label>
+        <name>Budget_vs_Actual_Line__c</name>
+        <relationshipLabel><!-- Consumption --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Business Unit --></label>
+        <name>Business_Unit__c</name>
+        <picklistValues>
+            <masterLabel>Cocoa</masterLabel>
+            <translation><!-- Cocoa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coffee</masterLabel>
+            <translation><!-- Coffee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dairy</masterLabel>
+            <translation><!-- Dairy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edible_Nuts</masterLabel>
+            <translation><!-- Edible_Nuts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spice</masterLabel>
+            <translation><!-- Spice --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Category --></label>
+        <name>Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Certification --></label>
+        <name>Certification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Combination Key --></label>
+        <name>Combination_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer&apos;s Coverage --></label>
+        <name>Coverage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Defects --></label>
+        <name>Defects__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ingredient/commodity --></label>
+        <name>Ingredient_commodity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Origin --></label>
+        <name>Origin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pack Size --></label>
+        <name>Pack_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pack Type --></label>
+        <name>Pack_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Period --></label>
+        <name>Period__c</name>
+    </fields>
+    <fields>
+        <label><!-- Processing Type --></label>
+        <name>Processing_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Classification --></label>
+        <name>Product_Classification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Grade --></label>
+        <name>Product_Grade__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Group Code --></label>
+        <name>Product_Group_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Type --></label>
+        <name>Product_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Review Date --></label>
+        <name>Review_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Share --></label>
+        <name>Share__c</name>
+    </fields>
+    <fields>
+        <label><!-- Size --></label>
+        <name>Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Strength --></label>
+        <name>Strength__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Application 2 --></label>
+        <name>Sub_Application_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Application --></label>
+        <name>Sub_Application__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Sub Category 2 --></label>
+        <name>Sub_Category_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Sub Category --></label>
+        <name>Sub_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit of Measure --></label>
+        <name>Unit_of_Measure__c</name>
+        <picklistValues>
+            <masterLabel>LBS</masterLabel>
+            <translation><!-- LBS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MT</masterLabel>
+            <translation><!-- MT --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User Is Account Team Member --></label>
+        <name>User_Is_Account_Team_Member__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value Stream --></label>
+        <name>Value_Stream__c</name>
+    </fields>
+    <fields>
+        <label><!-- Variety --></label>
+        <name>Variety__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Consumption Volume --></label>
+        <name>Volume_MT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year --></label>
+        <name>Year__c</name>
+    </fields>
+    <layouts>
+        <layout>Consumption Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <sharingReasons>
+        <label><!-- Access Set --></label>
+        <name>Access_Set</name>
+    </sharingReasons>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Only Primary Account Owners can create Consumption --></errorMessage>
+        <name>Primary_Acnt_Owner_To_Create_Consumption</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot create Consumption if you are not part of the Account Team. Add yourself as a Team Member in the Account before creating Consumption. --></errorMessage>
+        <name>User_Is_Not_Account_Team_Member</name>
+    </validationRules>
+</CustomObjectTranslation>

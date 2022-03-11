@@ -1,0 +1,12 @@
+<aura:component extensible="true" controller="KAM_AccountPlanOverviewCntl" extends="c:KAM_Util">
+    <aura:attribute name="sectionData" type="Object" required="true"/>
+    <aura:attribute name="isLoading" type="Boolean" default="true"/>
+
+    <ltng:require 
+        scripts="{!join(',', $Resource.jquery) }"
+        styles="{!join(',', $Resource.KAM_Resource + '/css/main.min.css')}"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.initialize}"/>
+
+    {!v.body}
+</aura:component>

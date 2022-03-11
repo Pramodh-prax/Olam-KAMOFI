@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>40FT Container</fullName>
+        <default>true</default>
+        <label>40FT Container</label>
+    </customValue>
+    <customValue>
+        <fullName>20FT Container</fullName>
+        <default>false</default>
+        <label>20FT Container</label>
+    </customValue>
+    <masterLabel>Quotations Given as Per</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

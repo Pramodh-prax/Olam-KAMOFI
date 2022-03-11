@@ -1,0 +1,4 @@
+<aura:event type="COMPONENT" description="" >
+    <aura:attribute name="action" type="String"/>
+    <aura:attribute name="listOfContentDocIds" type="List"/>
+</aura:event>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Account Receivables Report</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Account Receivables Reports</value>
+    </caseValues>
+    <fields>
+        <label><!-- Customer No. --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Account Receivables Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Baseline Date --></label>
+        <name>Baseline_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Area Desc --></label>
+        <name>Business_Area_Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Area --></label>
+        <name>Business_Area__c</name>
+    </fields>
+    <fields>
+        <label><!-- Doc. Currency --></label>
+        <name>Doc_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice No --></label>
+        <name>Invoice_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Key Date --></label>
+        <name>Key_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Due Date --></label>
+        <name>Net_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of Days --></label>
+        <name>No_of_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Profit Center Desc --></label>
+        <name>Profit_Center_Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Profit Center --></label>
+        <name>Profit_Center__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total In Document Cu --></label>
+        <name>Total_In_Document_Cu__c</name>
+    </fields>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

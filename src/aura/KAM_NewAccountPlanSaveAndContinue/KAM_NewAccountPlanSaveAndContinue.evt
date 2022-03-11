@@ -1,0 +1,5 @@
+<aura:event type="APPLICATION" description="KAM_NewAccountPlanSaveAndContinue" >
+    <aura:attribute name="isOpen" type="boolean" />
+    <aura:attribute name="showAccountplans" type="boolean" />
+    <aura:attribute name="AccountPlanId" type="String" />
+</aura:event>

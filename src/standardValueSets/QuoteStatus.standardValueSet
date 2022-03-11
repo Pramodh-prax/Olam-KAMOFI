@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Not Started</fullName>
+        <default>true</default>
+        <label>Not Started</label>
+        <allowEmail>true</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>In Review</fullName>
+        <default>false</default>
+        <label>In Review</label>
+        <allowEmail>true</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>Approved</fullName>
+        <default>false</default>
+        <label>Approved</label>
+        <allowEmail>true</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>Partially Rejected</fullName>
+        <default>false</default>
+        <label>Partially Rejected</label>
+        <allowEmail>true</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>Rejected</fullName>
+        <default>false</default>
+        <label>Rejected</label>
+        <allowEmail>true</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>Presented To Customer</fullName>
+        <default>false</default>
+        <label>Presented To Customer</label>
+        <allowEmail>true</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer Accepted</fullName>
+        <default>false</default>
+        <label>Customer Accepted</label>
+        <allowEmail>true</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer Denied</fullName>
+        <default>false</default>
+        <label>Customer Denied</label>
+        <allowEmail>true</allowEmail>
+    </standardValue>
+</StandardValueSet>

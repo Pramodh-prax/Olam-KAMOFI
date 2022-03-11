@@ -1,0 +1,5 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+  <div>
+    <lightning:buttonIcon class="custom-button-css" iconName="utility:expand" onclick="{! c.showModel }" alternativeText="Preview" title="Preview"  />
+  </div>
+</aura:component>

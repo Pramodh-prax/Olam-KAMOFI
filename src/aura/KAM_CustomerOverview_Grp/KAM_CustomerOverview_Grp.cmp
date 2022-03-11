@@ -1,0 +1,64 @@
+<aura:component extends="c:KAM_AccountPlanOverviewBase"  access="global" >
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="Accountlist" type="List"  />
+	 <div class="account-over-view-container" aura:id="item-container">
+        <lightning:layout aura:id="item-wrapper" multipleRows="true" horizontalAlign="center" verticalAlign="center"
+            class="accountoverview-detail__closed">
+            <lightning:layoutItem size="12"
+                class="tit-desc-container slds-order_1  slds-small-order_1 slds-medium-order_1 slds-large-order_1"
+                smallDeviceSize="12" mediumDeviceSize="8" largeDeviceSize="8">
+                <lightning:layout multipleRows="true" horizontalAlign="center" verticalAlign="center" class="">
+                    <lightning:layoutItem size="12" class="title-text" smallDeviceSize="12" mediumDeviceSize="12"
+                        largeDeviceSize="12">
+                        <span>{!v.sectionData.compDetail.Title__c}</span>
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="12" class="desc-text" smallDeviceSize="12" mediumDeviceSize="12"
+                        largeDeviceSize="12">
+                        <span>{!v.sectionData.Description__c}</span>
+                    </lightning:layoutItem>
+                </lightning:layout>
+            </lightning:layoutItem>
+            <lightning:layoutItem size="4"
+                class="slds-order_3 slds-small-order_3 slds-medium-order_3 slds-large-order_3 account-over-view__header-control-container"
+                smallDeviceSize="4" mediumDeviceSize="4" largeDeviceSize="4">
+                <div class="accountoverview-detail__header-control">
+                    <a href="javascript:void(0)" onclick="{!c.toggleDetailContent}"
+                        class="accountoverview-detail__operator-cta"></a>
+                </div>
+            </lightning:layoutItem>
+            <lightning:layoutItem size="12"
+                class="slds-order_4 slds-small-order_4 slds-medium-order_4 slds-large-order_4 accountoverview__detail-content"
+                smallDeviceSize="12" mediumDeviceSize="12" largeDeviceSize="12" >
+                <div class="slds-form--compound">
+                    <div>
+                        <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-border_right slds-border_left">
+                <thead>
+                    <tr class="slds-line-height_reset">
+                        <th class="slds-text-title_caps" scope="col"><div class="slds-truncate" title="Account Name">Account Name</div></th>
+                        <th class="slds-text-title_caps" scope="col"><div class="slds-truncate" title="Account Description" style="width:40%">Account Description</div></th>
+                        <th class="slds-text-title_caps" scope="col"><div class="slds-truncate" title="Customer Group">Customer Group</div></th>
+                        <th class="slds-text-title_caps" scope="col"><div class="slds-truncate" title="Account Type">Account Type</div></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <aura:iteration items="{!v.Accountlist}" var="acct" indexVar="index">  
+                            <tr class="slds-hint-parent" id ="{!index}">
+                                <td class="slds-truncate"><a href="{!'/one/one.app?#/sObject/'+ acct.Id + '/view'}" target="_blank">{!acct.Name}</a></td>
+                                <td class="slds-truncate" style="width:40%"><div class="des">{!acct.Description}</div></td>
+                                <td class="slds-truncate">{!acct.Customer_Group__c}</td>
+                                <td class="slds-truncate">{!acct.Account_Type__c}</td>
+                            </tr>
+                    </aura:iteration>                    
+                </tbody>
+            </table>
+                        
+                        
+                         </div>
+                    <aura:if isTrue="{!v.isLoading}">
+                        <c:KAM_LoadingDots/>
+                    </aura:if>
+                </div>
+            </lightning:layoutItem>
+        </lightning:layout>
+    </div>
+</aura:component>

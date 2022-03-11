@@ -1,0 +1,21 @@
+<aura:component>
+    <aura:attribute name="uniqueId" type="String" default="some-unique-id"/>
+    <aura:attribute name="contacts" type="List" default="[]" />
+    <aura:attribute name="stakeHoldersView" type="String" default="treeView" />
+
+    <div>
+        <aura:if isTrue="{!!v.isLoading}">
+            <c:KAM_UtilityOptionButton selectedOption="{!v.stakeHoldersView}" uniqueId="{!v.uniqueId}">
+            </c:KAM_UtilityOptionButton>
+            <aura:if isTrue="{!v.stakeHoldersView == 'treeView'}">
+                <div class="tree-container">
+                    <c:KAM_AccountOverviewStakeHoldersTreeView idAttr="{!v.uniqueId}"
+                        items="{!v.contacts}" />
+                </div>
+            </aura:if>
+            <aura:if isTrue="{!v.stakeHoldersView == 'tableView'}">
+                <c:KAM_AccountOverviewStakeHoldersTableView items="{!v.contacts}" />
+            </aura:if>
+        </aura:if>
+    </div>
+</aura:component>

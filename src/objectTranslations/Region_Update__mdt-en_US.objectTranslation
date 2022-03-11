@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Region Update</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Region_Updates</value>
+    </caseValues>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+        <picklistValues>
+            <masterLabel>APAC</masterLabel>
+            <translation><!-- APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Africa</masterLabel>
+            <translation><!-- Africa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Europe</masterLabel>
+            <translation><!-- Europe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Latin America</masterLabel>
+            <translation><!-- Latin America --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Middle East</masterLabel>
+            <translation><!-- Middle East --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North America</masterLabel>
+            <translation><!-- North America --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ofi Region --></label>
+        <name>ofi_Region__c</name>
+        <picklistValues>
+            <masterLabel>APAC</masterLabel>
+            <translation><!-- APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMENA</masterLabel>
+            <translation><!-- EMENA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USA</masterLabel>
+            <translation><!-- USA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ofi Sub Region 2 --></label>
+        <name>ofi_Sub_Region_2__c</name>
+        <picklistValues>
+            <masterLabel>Australia and New Zealand</masterLabel>
+            <translation><!-- Australia and New Zealand --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Caribbean</masterLabel>
+            <translation><!-- Caribbean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Central America</masterLabel>
+            <translation><!-- Central America --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Central Asia</masterLabel>
+            <translation><!-- Central Asia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Channel Islands</masterLabel>
+            <translation><!-- Channel Islands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>East Africa</masterLabel>
+            <translation><!-- East Africa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>East Asia</masterLabel>
+            <translation><!-- East Asia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>East Europe</masterLabel>
+            <translation><!-- East Europe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Melanesia</masterLabel>
+            <translation><!-- Melanesia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Micronesia</masterLabel>
+            <translation><!-- Micronesia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Middle Africa</masterLabel>
+            <translation><!-- Middle Africa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North Africa</masterLabel>
+            <translation><!-- North Africa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North America</masterLabel>
+            <translation><!-- North America --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North Europe</masterLabel>
+            <translation><!-- North Europe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Polynesia</masterLabel>
+            <translation><!-- Polynesia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South Africa</masterLabel>
+            <translation><!-- South Africa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South America</masterLabel>
+            <translation><!-- South America --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South Asia</masterLabel>
+            <translation><!-- South Asia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South Europe</masterLabel>
+            <translation><!-- South Europe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South-East Asia</masterLabel>
+            <translation><!-- South-East Asia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West Africa</masterLabel>
+            <translation><!-- West Africa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West Asia</masterLabel>
+            <translation><!-- West Asia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West Europe</masterLabel>
+            <translation><!-- West Europe --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ofi Sub Region --></label>
+        <name>ofi_Sub_Region__c</name>
+        <picklistValues>
+            <masterLabel>Africa</masterLabel>
+            <translation><!-- Africa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Americas</masterLabel>
+            <translation><!-- Americas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asia</masterLabel>
+            <translation><!-- Asia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Europe</masterLabel>
+            <translation><!-- Europe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oceania</masterLabel>
+            <translation><!-- Oceania --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

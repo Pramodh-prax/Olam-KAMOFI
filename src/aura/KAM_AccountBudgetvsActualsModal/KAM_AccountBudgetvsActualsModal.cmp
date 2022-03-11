@@ -1,0 +1,172 @@
+<aura:component controller="KAM_BudgetActualsCntl" extends="c:KAM_Util"
+    implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction"
+    access="global">
+
+    <aura:attribute name="BudgetvsActualId" type="String" />
+    <aura:attribute name="BudgetvsActual" type="object" />
+    <aura:attribute name="SectionData" type="String" />
+    <aura:attribute name="isLoading" type="boolean" default="true" />
+    <aura:attribute name="budgetvsActualIdComp" type="Aura.Component" />
+    <aura:attribute name="labels" type="Object" />
+    <aura:attribute name="showBudgetvsActuals" type="Boolean" default="false" />
+    <aura:attribute name="budget" type="object" />
+    <aura:attribute name="budgets" type="list" />
+    <aura:attribute name="isAddBudgetButtonDisabled" type="Boolean" default="false" />
+    <aura:attribute name="isModifyBudgetBtnDisabled" type="Boolean" default="false" />
+    <aura:attribute name="addBudgetModal" type="Aura.Component" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <aura:handler name="budgetUpdated" event="c:KAM_BudgetUpdated" action="{!c.doInit}" />
+
+    <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+        aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+        <div class="slds-backdrop slds-backdrop_open">
+            <div class="slds-modal__container c-modal-container slds-is-relative">
+
+                <header class="slds-modal__header">
+                    <lightning:buttonIcon iconName="utility:close" onclick="{! c.closeModel }" alternativeText="close"
+                        variant="bare-inverse" class="slds-modal__close" />
+                    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Budget
+                    </h2>
+                </header>
+
+                <div class="slds-modal__content slds-p-around_medium modal-body" id="modal-content-id-1">
+                    <lightning:layoutItem size="12"
+                        class="slds-order_4 slds-small-order_4 slds-medium-order_4 slds-large-order_4 accountoverview__detail-content"
+                        smallDeviceSize="12" mediumDeviceSize="12" largeDeviceSize="12">
+                        <div class="slds-form--compound">
+                            <div>
+                                <div class="add-budget-btn-container">
+                                    <aura:if isTrue="{!v.isAddBudgetButtonDisabled}">
+                                        <lightning:button label="{!v.labels.btnRequesForEdit}"
+                                            title="{!v.labels.btnRequesForEdit}"
+                                            onclick="{!c.handleOnRequestEditBudget}"
+                                            disabled="{!v.isModifyBudgetBtnDisabled}"></lightning:button>
+                                        <aura:if isTrue="{!v.isModifyBudgetBtnDisabled}">
+                                            <div class="add-budget-help-text">
+                                                <span>{!v.labels.budgetApprovalWaitingText}</span>
+                                            </div>
+                                        </aura:if>
+                                    </aura:if>
+                                    <aura:if isTrue="{!!v.isAddBudgetButtonDisabled}">
+                                        <lightning:button label="{!v.labels.btnAddOrEdit}"
+                                            title="{!v.labels.btnAddOrEdit}" onclick="{!c.handleOnAddBudget}"
+                                            disabled="{!v.isAddBudgetButtonDisabled}"></lightning:button>
+                                        <div class="add-budget-help-text">
+                                            <span>{!v.labels.budgetDraftText}</span>
+                                        </div>
+                                    </aura:if>
+                                </div>
+                            </div>
+                            <aura:if isTrue="{!!v.isLoading}">
+                                <lightning:layout multipleRows="true" horizontalAlign="center" verticalAlign="center"
+                                    class="">
+                                    <lightning:layoutItem size="12" class="" smallDeviceSize="12" mediumDeviceSize="12"
+                                        largeDeviceSize="12">
+
+                                        <div class="table-wrapper">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr class="header-row">
+                                                        <th class="sticky-header" scope="col"
+                                                            style="width :20%;padding-left:.5rem;">
+                                                            {!v.labels.category}
+                                                        </th>
+                                                        <th class="sticky-header" scope="col"
+                                                            style="width :20%;padding-left:.5rem;">
+                                                            {!v.labels.subcategory}
+                                                        </th>
+                                                        <th class="sticky-header" scope="col"
+                                                            style="width :20%;padding-left:.5rem;">
+                                                            {!v.labels.subcategory2}
+                                                        </th>
+                                                        <th class="sticky-header" scope="col"
+                                                            style="width :20%;padding-left:.5rem;">
+                                                            {!v.labels.volume}
+                                                        </th>
+                                                        <th class="sticky-header" scope="col"
+                                                            style="width :20%;padding-left:.5rem;">
+                                                            {!v.labels.actuals}
+                                                        </th>
+                                                        <th class="sticky-header" scope="col"
+                                                            style="width :20%;padding-left:.5rem;">
+                                                            {!v.labels.total_consumption}
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <aura:if isTrue="{!(empty(v.budgets))}">
+                                                        <tr>
+                                                            <td class="contact-table-col" colspan="6">
+                                                                <div class="table-row-spec-no-rows " title="">
+                                                                    {!$Label.c.KAM_No_Data_available_in_table}
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </aura:if>
+                                                    <aura:if isTrue="{! not(empty(v.budgets))}">
+                                                        <aura:iteration items="{!v.budgets}" var="eachLineItem"
+                                                            indexVar="index">
+                                                            <tr>
+                                                                <td style="width :20%;" class="contact-table-col"
+                                                                    data-label="{!eachLineItem.Category__c}">
+                                                                    <div class="slds-truncate_custom table-row-spec"
+                                                                        title="{!eachLineItem.Category__c}">
+                                                                        {!eachLineItem.Category__c}</div>
+                                                                </td>
+                                                                <td style="width :20%;" class="contact-table-col"
+                                                                    data-label="{!eachLineItem.Sub_Category__c}">
+                                                                    <div class="slds-truncate_custom table-row-spec"
+                                                                        title="{!eachLineItem.Sub_Category__c}">
+                                                                        {!eachLineItem.Sub_Category__c}</div>
+                                                                </td>
+                                                                <td style="width :20%;" class="contact-table-col"
+                                                                    data-label="{!eachLineItem.Sub_Category_2__c}">
+                                                                    <div class="slds-truncate_custom table-row-spec"
+                                                                        title="{!eachLineItem.Sub_Category_2__c}">
+                                                                        {!eachLineItem.Sub_Category_2__c}</div>
+                                                                </td>
+                                                                <td style="width :20%;" class="contact-table-col"
+                                                                    data-label="{!eachLineItem.Volume__c}">
+                                                                    <div class="slds-truncate_custom table-row-spec"
+                                                                        title="{!eachLineItem.Volume__c}">
+                                                                        {!eachLineItem.Volume__c}</div>
+                                                                </td>
+                                                                <td style="width :20%;" class="contact-table-col"
+                                                                    data-label="{!eachLineItem.Actuals__c}">
+                                                                    <div class="slds-truncate_custom table-row-spec"
+                                                                        title="{!eachLineItem.Actuals__c}">
+                                                                        {!eachLineItem.Actuals__c}</div>
+                                                                </td>
+                                                                <td style="width :20%;" class="contact-table-col"
+                                                                    data-label="{!eachLineItem.Total_Consumption__c}">
+                                                                    <div class="slds-truncate_custom table-row-spec"
+                                                                        title="{!eachLineItem.Total_Consumption__c}">
+                                                                        {!eachLineItem.Total_Consumption__c}
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </aura:iteration>
+                                                    </aura:if>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </lightning:layoutItem>
+                                </lightning:layout>
+                            </aura:if>
+                            <aura:if isTrue="{!v.isLoading}">
+                                <c:KAM_LoadingDots />
+                            </aura:if>
+                        </div>
+
+                    </lightning:layoutItem>
+                </div>
+            </div>
+        </div>
+    </section>
+    <aura:if isTrue="{!v.showBudgetvsActuals}">
+        <c:KAM_BudgetCreationComp Budget="{!v.budget}" />
+    </aura:if>
+    {!v.addBudgetModal}
+
+</aura:component>

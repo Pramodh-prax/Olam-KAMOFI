@@ -1,0 +1,99 @@
+<aura:component extends="c:KAM_Util" controller="KAM_AccountPlanNewPopupCntl" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" >
+    <aura:attribute name="isOpen" type="boolean" default="false"/>
+    <aura:attribute type="String" name="Name" />
+    <aura:attribute type="String" name="Description" />
+    <aura:attribute type="String" name="selectedYear" />
+    <aura:attribute type="String" name="selectedType" />
+    <aura:attribute type="String" name="selectedBU" />
+    <aura:attribute type="String[]" name="YearPicklist" />
+    <aura:attribute type="String[]" name="TypePicklist" />
+    <aura:attribute type="String[]" name="BusinessUnit" default="Cocoa,Dairy,Edible_Nuts,Spice"/>
+    <aura:attribute type="Date" name="StartDate" />
+    <aura:attribute type="Date" name="EndDate" />
+    <aura:attribute type="String" name="AccountId" />
+    <aura:attribute type="User" name="currentUserBU" />
+    <aura:attribute type="Teams__c" name="currentUserAccountTeam" />
+    
+    <aura:registerEvent name="appEvent" type="c:KAM_NewAccountPlanSave"/>
+    <aura:registerEvent name="AccountPlanSaveAndContinue" type="c:KAM_NewAccountPlanSaveAndContinue"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:if isTrue="{!v.isOpen}">
+        <!--###### MODAL BOX Start######--> 
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-backdrop slds-backdrop_open">
+                <div class="slds-modal__container">
+                    <!-- ###### MODAL BOX HEADER Start ######-->
+                    <header class="slds-modal__header">
+                        <lightning:buttonIcon iconName="utility:close"
+                                              onclick="{! c.closeModel }"
+                                              alternativeText="close"
+                                              variant="bare-inverse"
+                                              class="slds-modal__close"/>
+                        <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">New Account Plan</h2>
+                    </header>
+                    <!--###### MODAL BOX BODY Part Start######-->
+                    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                        <lightning:input name="Name" label="Name" required="true" value="{!v.Name}" placeholder="type here..." />
+                        <lightning:textarea name="Description" label="Description" value="{!v.Description}" placeholder="type here..."/>
+                        <div class="c-container">
+                            <lightning:layout >
+                                <lightning:layoutItem class="slds-p-vertical_x-small">
+                                    <lightning:select label="Type" required="true" value="{!v.selectedType}" >
+                                        <aura:iteration items="{!v.TypePicklist}" var="val">
+                                            <option value="{!val}"> {!val}</option>
+                                        </aura:iteration>
+                                    </lightning:select>
+                                </lightning:layoutItem>
+                                <lightning:layoutItem class="slds-p-left_small slds-p-vertical_x-small">
+                                    <lightning:select label="Year" required="true" value="{!v.selectedYear}" onchange="{!c.onChangeofYear}" >
+                                        <aura:iteration items="{!v.YearPicklist}" var="val">
+                                            <option value="{!val}"> {!val}</option>
+                                        </aura:iteration>
+                                    </lightning:select>  
+                                </lightning:layoutItem>
+                            </lightning:layout>
+                        </div>
+                        <div class="c-container">
+                            <lightning:layout >
+                                <lightning:layoutItem class="slds-p-vertical_x-small">
+                                    <ui:inputDate aura:id="StartDate"  disabled="true" label="Start Date"  value="{!v.StartDate}" displayDatePicker="true" format="MM/dd/yyyy"/>
+                                </lightning:layoutItem>
+                                <lightning:layoutItem class="slds-p-left_small slds-p-vertical_x-small">
+                                    <ui:inputDate aura:id="EndDateField" disabled="true" label="End Date"  value="{!v.EndDate}" displayDatePicker="true" format="MM/dd/yyyy"/><br/>
+                                </lightning:layoutItem>
+                            </lightning:layout>
+                        </div>
+                        <aura:if isTrue="{!v.currentUserAccountTeam.Business_Unit__c=='All'}">
+                        <lightning:select class="slds-show_inline-block" label="Business Unit" required="true" value="{!v.selectedBU}" >
+                                        <aura:iteration items="{!v.BusinessUnit}" var="val">
+                                            <option value="{!val}"> {!val}</option>
+                                        </aura:iteration>
+                                    </lightning:select>
+                            <aura:set attribute="else">
+                                <b>You're about to create a Key Account Plan for <ui:outputText  value="{!v.currentUserAccountTeam.Business_Unit__c}"  /> Business Unit.</b>
+                            </aura:set>
+                        </aura:if>
+                         
+                        
+                    </div>
+                    <!--###### MODAL BOX FOOTER Part Start ######-->
+                    <footer class="slds-modal__footer">
+                        <lightning:button variant="neutral" 
+                                          label="Cancel"
+                                          title="Cancel"
+                                          onclick="{! c.closeModel }"/>
+                        <lightning:button variant="brand" 
+                                          label="Save and Continue"
+                                          title="Save"
+                                          onclick="{!c.saveAndContinueAccountPlan}"/>
+                        <lightning:button variant="brand" 
+                                          label="Save and Close"
+                                          title="Save"
+                                          onclick="{! c.createAccountPlan }"/>
+                    </footer>
+                </div>
+            </div>
+        </section>
+    </aura:if>
+</aura:component>

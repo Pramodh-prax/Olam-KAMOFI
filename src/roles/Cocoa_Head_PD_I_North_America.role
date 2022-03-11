@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Cocoa Head PD&amp;I North America</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>Cocoa_PD_I_Global_Head</parentRole>
+</Role>

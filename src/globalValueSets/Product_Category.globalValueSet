@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>BLEND</fullName>
+        <default>false</default>
+        <label>BLEND</label>
+    </customValue>
+    <customValue>
+        <fullName>Blended Product</fullName>
+        <default>false</default>
+        <label>Blended Product</label>
+    </customValue>
+    <customValue>
+        <fullName>BMP</fullName>
+        <default>false</default>
+        <label>BMP</label>
+    </customValue>
+    <customValue>
+        <fullName>BUTTER</fullName>
+        <default>false</default>
+        <label>BUTTER</label>
+    </customValue>
+    <customValue>
+        <fullName>By product</fullName>
+        <default>false</default>
+        <label>By product</label>
+    </customValue>
+    <customValue>
+        <fullName>CASEIN</fullName>
+        <default>false</default>
+        <label>CASEIN</label>
+    </customValue>
+    <customValue>
+        <fullName>CHEESE</fullName>
+        <default>false</default>
+        <label>CHEESE</label>
+    </customValue>
+    <customValue>
+        <fullName>Chocolate Drink Mix</fullName>
+        <default>false</default>
+        <label>Chocolate Drink Mix</label>
+    </customValue>
+    <customValue>
+        <fullName>Cocoa Beans</fullName>
+        <default>false</default>
+        <label>Cocoa Beans</label>
+    </customValue>
+    <customValue>
+        <fullName>Cocoa Butter</fullName>
+        <default>false</default>
+        <label>Cocoa Butter</label>
+    </customValue>
+    <customValue>
+        <fullName>Cocoa Cake</fullName>
+        <default>false</default>
+        <label>Cocoa Cake</label>
+    </customValue>
+    <customValue>
+        <fullName>Cocoa Liquor</fullName>
+        <default>false</default>
+        <label>Cocoa Liquor</label>
+    </customValue>
+    <customValue>
+        <fullName>Cocoa Low Fat Powder</fullName>
+        <default>false</default>
+        <label>Cocoa Low Fat Powder</label>
+    </customValue>
+    <customValue>
+        <fullName>Cocoa Mass</fullName>
+        <default>false</default>
+        <label>Cocoa Mass</label>
+    </customValue>
+    <customValue>
+        <fullName>Cocoa Mid Fat Powder</fullName>
+        <default>false</default>
+        <label>Cocoa Mid Fat Powder</label>
+    </customValue>
+    <customValue>
+        <fullName>Cocoa Powder</fullName>
+        <default>false</default>
+        <label>Cocoa Powder</label>
+    </customValue>
+    <customValue>
+        <fullName>Cocoa Powder &amp; Sugar</fullName>
+        <default>false</default>
+        <label>Cocoa Powder &amp; Sugar</label>
+    </customValue>
+    <customValue>
+        <fullName>CONDENSED</fullName>
+        <default>false</default>
+        <label>CONDENSED</label>
+    </customValue>
+    <customValue>
+        <fullName>CREAM</fullName>
+        <default>false</default>
+        <label>CREAM</label>
+    </customValue>
+    <customValue>
+        <fullName>Dehy</fullName>
+        <default>false</default>
+        <label>Dehy</label>
+    </customValue>
+    <customValue>
+        <fullName>EN - Almond</fullName>
+        <default>false</default>
+        <label>EN - Almond</label>
+    </customValue>
+    <customValue>
+        <fullName>EN - Brazil Nut</fullName>
+        <default>false</default>
+        <label>EN - Brazil Nut</label>
+    </customValue>
+    <customValue>
+        <fullName>EN - Cashew</fullName>
+        <default>false</default>
+        <label>EN - Cashew</label>
+    </customValue>
+    <customValue>
+        <fullName>EN - Hazelnut</fullName>
+        <default>false</default>
+        <label>EN - Hazelnut</label>
+    </customValue>
+    <customValue>
+        <fullName>EN - Macadamia</fullName>
+        <default>false</default>
+        <label>EN - Macadamia</label>
+    </customValue>
+    <customValue>
+        <fullName>EN - Miscellaneous</fullName>
+        <default>false</default>
+        <label>EN - Miscellaneous</label>
+    </customValue>
+    <customValue>
+        <fullName>EN - Mixed Nuts</fullName>
+        <default>false</default>
+        <label>EN - Mixed Nuts</label>
+    </customValue>
+    <customValue>
+        <fullName>EN - Peanut</fullName>
+        <default>false</default>
+        <label>EN - Peanut</label>
+    </customValue>
+    <customValue>
+        <fullName>EN - Pecan</fullName>
+        <default>false</default>
+        <label>EN - Pecan</label>
+    </customValue>
+    <customValue>
+        <fullName>EN - Pinenut</fullName>
+        <default>false</default>
+        <label>EN - Pinenut</label>
+    </customValue>
+    <customValue>
+        <fullName>EN - Pistachio</fullName>
+        <default>false</default>
+        <label>EN - Pistachio</label>
+    </customValue>
+    <customValue>
+        <fullName>EN - Pulses</fullName>
+        <default>false</default>
+        <label>EN - Pulses</label>
+    </customValue>
+    <customValue>
+        <fullName>EN - Sesame</fullName>
+        <default>false</default>
+        <label>EN - Sesame</label>
+    </customValue>
+    <customValue>
+        <fullName>EN - Superfoods</fullName>
+        <default>false</default>
+        <label>EN - Superfoods</label>
+    </customValue>
+    <customValue>
+        <fullName>EN - Walnut</fullName>
+        <default>false</default>
+        <label>EN - Walnut</label>
+    </customValue>
+    <customValue>
+        <fullName>FCMP</fullName>
+        <default>false</default>
+        <label>FCMP</label>
+    </customValue>
+    <customValue>
+        <fullName>FILLED</fullName>
+        <default>false</default>
+        <label>FILLED</label>
+    </customValue>
+    <customValue>
+        <fullName>ISMP</fullName>
+        <default>false</default>
+        <label>ISMP</label>
+    </customValue>
+    <customValue>
+        <fullName>IWMP</fullName>
+        <default>false</default>
+        <label>IWMP</label>
+    </customValue>
+    <customValue>
+        <fullName>LACTOSE</fullName>
+        <default>false</default>
+        <label>LACTOSE</label>
+    </customValue>
+    <customValue>
+        <fullName>LIQUIDS</fullName>
+        <default>false</default>
+        <label>LIQUIDS</label>
+    </customValue>
+    <customValue>
+        <fullName>MILK POWDER</fullName>
+        <default>false</default>
+        <label>MILK POWDER</label>
+    </customValue>
+    <customValue>
+        <fullName>MPC/MPI</fullName>
+        <default>false</default>
+        <label>MPC/MPI</label>
+    </customValue>
+    <customValue>
+        <fullName>NDC Cold Soluble</fullName>
+        <default>false</default>
+        <label>NDC Cold Soluble</label>
+    </customValue>
+    <customValue>
+        <fullName>NDC Regular</fullName>
+        <default>false</default>
+        <label>NDC Regular</label>
+    </customValue>
+    <customValue>
+        <fullName>OCPro</fullName>
+        <default>false</default>
+        <label>OCPro</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER FATS</fullName>
+        <default>false</default>
+        <label>OTHER FATS</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHERS</fullName>
+        <default>false</default>
+        <label>OTHERS</label>
+    </customValue>
+    <customValue>
+        <fullName>SMP</fullName>
+        <default>false</default>
+        <label>SMP</label>
+    </customValue>
+    <customValue>
+        <fullName>SMP HHHS</fullName>
+        <default>false</default>
+        <label>SMP HHHS</label>
+    </customValue>
+    <customValue>
+        <fullName>SMP MH</fullName>
+        <default>false</default>
+        <label>SMP MH</label>
+    </customValue>
+    <customValue>
+        <fullName>Tropical</fullName>
+        <default>false</default>
+        <label>Tropical</label>
+    </customValue>
+    <customValue>
+        <fullName>WHEY</fullName>
+        <default>false</default>
+        <label>WHEY</label>
+    </customValue>
+    <customValue>
+        <fullName>Whey Demin</fullName>
+        <default>false</default>
+        <label>Whey Demin</label>
+    </customValue>
+    <customValue>
+        <fullName>WPC</fullName>
+        <default>false</default>
+        <label>WPC</label>
+    </customValue>
+    <customValue>
+        <fullName>WPI</fullName>
+        <default>false</default>
+        <label>WPI</label>
+    </customValue>
+    <customValue>
+        <fullName>Green Coffee</fullName>
+        <default>false</default>
+        <label>Green Coffee</label>
+    </customValue>
+    <customValue>
+        <fullName>COCOA HIGHFAT POWDER</fullName>
+        <default>false</default>
+        <label>COCOA HIGHFAT POWDER</label>
+    </customValue>
+    <customValue>
+        <fullName>EN - Contract Mfg</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>EN - Contract Mfg</label>
+    </customValue>
+    <customValue>
+        <fullName>EN - RCN</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>EN - RCN</label>
+    </customValue>
+    <customValue>
+        <fullName>SODIUM CASEINATE</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>SODIUM CASEINATE</label>
+    </customValue>
+    <customValue>
+        <fullName>LIQUID</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>LIQUID</label>
+    </customValue>
+    <customValue>
+        <fullName>REWORK</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>REWORK</label>
+    </customValue>
+    <customValue>
+        <fullName>INF</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>INF</label>
+    </customValue>
+    <customValue>
+        <fullName>DAIRY PROCESSING</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>DAIRY PROCESSING</label>
+    </customValue>
+    <customValue>
+        <fullName>PROTEINS</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PROTEINS</label>
+    </customValue>
+    <customValue>
+        <fullName>FEED</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>FEED</label>
+    </customValue>
+    <masterLabel>Product Category</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

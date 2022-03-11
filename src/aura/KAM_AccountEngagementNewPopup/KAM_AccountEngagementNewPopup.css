@@ -1,0 +1,7 @@
+.THIS .c-newmodal-container{
+    width:30%;
+}
+.THIS .modal-body{
+    position: relative;
+    min-height: 75px;
+}

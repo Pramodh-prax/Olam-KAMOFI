@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_59608236</developerName>
+        <masterLabel>Region</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>FULL_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Amy Sun</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>David Deng</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fred Wang</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Cindy Ma</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Miranda Ling</sourceValue>
+            </sourceValues>
+            <value>China</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Anh Nguyen</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jeffrey Lee</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Karan Dogra</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kate Seng</sourceValue>
+            </sourceValues>
+            <value>SEA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Angela Ajeng</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Hans Daley</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nuzuli Hada Ginting</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Prasetyo Adi Yudhistira</sourceValue>
+            </sourceValues>
+            <value>Indonesia</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Abhay Betharia</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Gaurav Tripathi</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Hiran Perera</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mohammad Hassan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Preeti Gupta</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Vipan Kumar</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Vipin Kukreja</sourceValue>
+            </sourceValues>
+            <value>SAARC &amp; ME</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Nesrine Boukari</sourceValue>
+            </sourceValues>
+            <value>N Africa</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Vishal Sharma</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lamine Niang</sourceValue>
+            </sourceValues>
+            <value>W Africa</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Marcelino Valdez</sourceValue>
+            </sourceValues>
+            <value>LATAM</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Rutger Schutte</sourceValue>
+            </sourceValues>
+            <value>MNC</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Bartosz Stachowicz</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chorneng Yang</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chrisbriannata Brian</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Daniel Hitz</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jean Baptiste Assie</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Karel Keijzer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lucas Schmitz</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Marshel Prasona</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Matt Helon</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Matt Tham</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mihir Mogre</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Owen Zhang</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Piotr C</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Praveen Paulsamy</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Wadim Pasiczniak</sourceValue>
+            </sourceValues>
+            <value>Others</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Opportunity.Develop_Opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Closing Won,Closed Cancel,Closed Lost</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User.BU_Identifier__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Dairy</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity.Project_Type__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_59608236</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>2021 Sales Office Develop Opp revKS</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_PREVFY</interval>
+    </timeFrameFilter>
+</Report>

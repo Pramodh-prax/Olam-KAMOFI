@@ -1,0 +1,71 @@
+.THIS .add-budget-btn-container {
+    text-align: end;
+    padding : 1em 0;
+}
+.THIS .header-spec {
+    color: #173E35;
+    font-size: 12px;
+    font-weight: bold;
+}
+.THIS .table-row-spec{
+    color: #1E1E1E;
+    font-size: 12px;
+    line-height: 1.5em;
+}
+.THIS .slds-truncate_custom{
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: initial;
+}
+
+.THIS .table-row-spec-no-rows {
+    text-align: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 13px;
+    color: #1E1E1E;
+    letter-spacing: 0;
+    white-space: normal;
+}
+
+
+.THIS th.sticky-header {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: #f1efeb; /* #C09F80; */
+    color: #000;/*white;*/
+    padding: 0.5em;
+    z-index: 3;
+}
+.THIS tr.header-row {
+    background: #f1efeb; /* #C09F80; */
+    color: #000;/*white;*/
+}
+.THIS .table-wrapper{
+    width: 100%;
+    overflow: scroll;
+    margin: auto;
+    /* border: 1px solid rgb(217, 219, 221);
+    border-radius: 5px; */
+}
+.THIS .table-wrapper td , .THIS .table-wrapper th{
+    border: 1px solid #ccc;
+}
+.THIS .contact-table-col {
+    padding: .5rem;
+}
+.THIS .link-text  {
+    font-weight: normal;
+}
+.THIS .modal-body{
+    position: relative;
+    min-height: 75px;
+}
+.THIS .add-budget-help-text {
+    font-size: 10px;
+    color: red;
+    padding: .5em 0;
+    font-style: italic;
+}

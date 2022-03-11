@@ -1,0 +1,7 @@
+Hi {!Quote_Line_Approval__c.OwnerFirstName},
+
+The Quote Line Item {!Quote_Line_Approval__c.Quote_Line_Item__c} has been {!Quote_Line_Approval__c.Approval_Status__c} and approval status is changed to {!Quote_Line_Approval__c.Approval_Status__c}.
+
+Please do the needful!
+
+Thanks

@@ -1,0 +1,11 @@
+.THIS .child{
+    display:block;
+    float:left;
+    width: 1200px; /*desired width*/ 
+    overflow: scroll; /* Scrollbar are always visible */
+    overflow: auto;
+}
+.THIS.table-container {
+    overflow-x : auto !important;
+    height: 400px;
+}

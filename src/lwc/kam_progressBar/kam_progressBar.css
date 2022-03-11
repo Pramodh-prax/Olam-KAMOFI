@@ -1,0 +1,36 @@
+.progress {
+    position: relative;
+    display : flex;
+    border: 0;
+    height: 40px;
+    line-height: 40px;
+    margin: 4px 0;
+    font-family: arial, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    overflow: hidden;
+}
+.progress .progress-text {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    background:#173E35 ;
+    color: #ECECEC;
+}
+.progress .progress-text-inverted {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    color: #000;
+    background: #ECECEC;
+    /* clip-path: inset(0 0 0 50%);
+    -webkit-clip-path: inset(0 0 0 50%); */
+    transition: clip-path 1s linear;
+}

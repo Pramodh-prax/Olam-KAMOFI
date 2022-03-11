@@ -1,0 +1,5 @@
+<aura:component extensible="true" access="global" >
+    <ltng:require 
+        scripts="{!join(',', $Resource.jquery) }"/>
+    {!v.body}
+</aura:component>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>KAM Queuable Error Log</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>KAM Queuable Error Logs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Apex Class --></label>
+        <name>Apex_Class__c</name>
+    </fields>
+    <fields>
+        <label><!-- AsyncApexJobId --></label>
+        <name>AsyncApexJobId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exception --></label>
+        <name>Exception__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Detail --></label>
+        <name>Record_Detail__c</name>
+    </fields>
+    <fields>
+        <label><!-- RequestId --></label>
+        <name>RequestId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Result --></label>
+        <name>Result__c</name>
+    </fields>
+    <layouts>
+        <layout>KAM Queuable Error Log Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

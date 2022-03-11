@@ -1,0 +1,586 @@
+<aura:component controller ="AddQuoteLineItemsController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:html tag="style">
+        .slds-modal__container{
+        max-width: 95rem !important;
+        width:95% !important;
+        }
+        .slds-p-around--medium {
+        padding: 0rem !important;
+        }
+        .slds-modal__content{
+        overflow-y: auto;
+        height:unset !important;
+        max-height:unset !important;
+        }
+        .cuf-content {
+        padding: 0 0rem !important;
+        }
+    </aura:html>
+    
+    <!--declare events handlers-->  
+    <!--<aura:handler name="OnApplyMultiFilterEvent" event="c:OnApplyMultiFilterEvent" action="{!c.handleOnApplyMultiFilterEvent}"/>-->
+    
+    <!-- call doInit method on component load -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <!--Register events--> 
+    <aura:registerEvent name="AddQuoteLineItemToParentCompEvent" type="c:AddQuoteLineItemToParentCompEvent"/>
+    
+    <!--declare attributes--> 
+    <aura:attribute name="isLoading" default="false" type="Boolean"/>
+    <aura:attribute name="recordId" type="Id" />
+    <aura:attribute name="listOfAllProducts" type="list"/> 
+    <aura:attribute name="listOfAllSelectedProducts" type="list"/> 
+    <aura:attribute name="PaginationList" type="list"/> 
+    <aura:attribute name="selectedCount" type="integer" default="0" description="selected Records Count"/>
+    <aura:attribute name="startPage" type="Integer" />
+    <aura:attribute name="endPage" type="Integer"/>
+    <aura:attribute name="totalRecordsCount" type="Integer"/>
+    <aura:attribute name="pageSize" type="Integer" default="10" description="number of records to be display on per page"/>
+    <aura:attribute name="currentPage" type="integer" default="1"/>
+    <aura:attribute name="totalPagesCount" type="integer"/>
+    <aura:attribute name="bNoRecordsFound" type="boolean" default="false"/>
+    <aura:attribute name="showFilters" type="boolean" default="false"/>
+    <aura:attribute name="showSelected" type="boolean" default="true"/>
+    <aura:attribute name="isProductConfigRequired" type="boolean" default="false"/>
+    
+    <aura:attribute name="PriceBooks" type="PriceBook2[]" />
+    <aura:attribute name="selectedType" type="String" />
+    <aura:attribute name="isPLMApprovalRequiredOptions" type="string[]" default="Yes,No"/>
+    <aura:attribute name="unitofmeasurePicklistOpts" type="string[]" description="store picklist options values"/>
+    <aura:attribute name="QuoteLineItemForPicklistValues" type="QuoteLineItem" default="{sobjectType : 'QuoteLineItem'}" description="object information to fetch picklist values"/>
+    
+    
+    <aura:attribute name="screenName" type="string" default=""/>
+    <aura:attribute name="activeSections" type="List" default="['A','C']" />
+    
+    <aura:attribute type="String" name="sortField"/>
+    <aura:attribute type="Boolean" name="sortAsc"/>
+    
+    <aura:if isTrue="{!v.screenName =='ADD_PRICEBOOK'}">
+        <section role="dialog" tabindex="-1" aria-modal="true" class="slds-modal slds-fade-in-open slds-modal_small">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <div class="slds-text-heading_medium">Choose Price Book</div>
+                </header>
+                <div class="slds-modal__content slds-p-around_medium">
+                    <div>
+                        <!--<span class="alignCenter pbTextGeneral uiOutputText" data-aura-rendered-by="12250:0" data-aura-class="uiOutputText">Price Book</span> -->
+                        <lightning:layout horizontalAlign="center" verticalAlign="center" >
+                            <lightning:layoutItem padding="horizontal-medium">
+                                <!-- Create a dropdown menu with options -->
+                                <lightning:select aura:id="pricebooks" label="" name="selectType">
+                                    <aura:iteration items="{!v.PriceBooks}" var="pricebook">
+                                        <option value="{!pricebook.Id}">{!pricebook.Name}</option>
+                                    </aura:iteration>
+                                </lightning:select>
+                            </lightning:layoutItem>
+                        </lightning:layout>
+                    </div>
+                    <aura:if isTrue = "{!v.isLoading}">
+                        <div aura:id="spinnerId" class="slds-spinner_container">
+                            <div class="slds-spinner--brand  slds-spinner slds-spinner--large slds-is-relative" role="alert">
+                                <span class="slds-assistive-text">Loading...</span>
+                                <div class="slds-spinner__dot-a"></div>
+                                <div class="slds-spinner__dot-b"></div>
+                            </div>
+                        </div>
+                    </aura:if>
+                </div>
+                <footer class="slds-modal__footer">
+                    <lightning:button class="slds-theme_neutral" onclick="{!c.cancel}" variant="neutral" label="Cancel"></lightning:button>
+                    <lightning:button variant="brand"
+                                      label="Save"
+                                      title="Save"
+                                      onclick="{!c.addPriceBook}" 
+                                      />
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open">
+        </div>
+    </aura:if>
+    <aura:if isTrue="{!v.screenName =='ADD_PRODUCTS'}">
+        
+        <div>
+            <section role="dialog" tabindex="-1" aria-modal="true" class="slds-modal slds-fade-in-open slds-modal_large">
+                <div class="slds-modal__container">
+                    <header class="slds-modal__header">
+                        <!--<button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close">
+                                    
+                                    <span class="slds-assistive-text">Close</span>
+                                </button>-->
+                        <div class="slds-text-heading_medium">Add Products for Quote</div>
+                        <div class="slds-p-around_small slds-p-top_small slds-p-right_small slds-p-bottom_small slds-p-left_small slds-theme_shade">
+                            <lightning:badge label="{!'Total Records : ' + v.totalRecordsCount}"></lightning:badge>
+                            <div class="slds-m-top_x-small slds-text-title slds-text-color_weak">{!v.selectedCount} Item(s) Selected</div>
+                        </div>
+                        <br/>
+                        <div>
+                            <lightning:layout>
+                                <lightning:layoutItem size="11">
+                                    <div class="slds-input-has-icon slds-input-has-icon--right">
+                                        <div>
+                                            <lightning:buttonIcon iconName="utility:search" variant="bare" onclick="{! c.onClickSearch }" aura:id="Product_Search" name="Product_Search_Button" alternativeText="Search" class="slds-input__icon" />
+                                        </div>
+                                        <span onkeyup="{!c.callKeyUp}">
+                                            <div>
+                                                <lightning:input aura:id="searchKey" label="Product_Search" placeholder="Search Products by Name, OLAM Material Code or Customer Material Code" type="text" variant="label-hidden"></lightning:input>
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <!--<lightning:input aura:id="searchKey" label="Product_Search" placeholder="Search Products by Name, OLAM Material Code or Customer Material Code" type="text" variant="label-hidden"></lightning:input>-->
+                                </lightning:layoutItem>
+                                
+                                <!-- commented during Seacrh button related UI chnages
+								<lightning:layoutItem size="1">
+                                    <lightning:button aura:id="Product_Search" name="Product_Search_Button" class="slds-theme_neutral" onclick="{!c.onClickSearch}" variant="brand" label="Search"></lightning:button>
+                                </lightning:layoutItem> -->
+                                <lightning:layoutItem size="1">
+                                    <!--<lightning:button aura:id="Clear_Fiter" name="Clear_Fiter_Button" class="slds-theme_neutral" onclick="{!c.onClickClearFilter}" variant="brand" label="Clear Filter"></lightning:button> -->
+                                    <lightning:buttonIcon iconName="utility:clear" variant="bare" onclick="{! c.onClickClearFilter }" aura:id="Clear_Fiter" name="Clear_Fiter_Button" alternativeText="Clear Filters" class="slds-input__icon" size="large" />
+                                <!--</lightning:layoutItem>
+                                
+                                <lightning:layoutItem size="1">-->
+                                    <aura:if isTrue="{!v.showFilters == false}">
+                                        <!--<lightning:button class="slds-theme_neutral" onclick="{!c.showFilters}" variant="brand" label="Show Filters"></lightning:button>-->
+                                        <lightning:buttonIcon iconName="utility:filterList" variant="bare" onclick="{! c.showFilters }" aura:id="show_Filters" name="show_Filters_Icon" alternativeText="Show Filters" class="slds-input__icon" size="large" />
+                                    </aura:if>
+                                    
+                                    <aura:if isTrue="{!v.showFilters == true}">
+                                        <!--<lightning:button class="slds-theme_neutral" onclick="{!c.hideFilters}" variant="brand" label="Hide Filters"></lightning:button>-->
+                                      	<lightning:buttonIcon iconName="utility:hide" variant="bare" onclick="{! c.hideFilters}" aura:id="hide_Filters" name="hide_Filters_Icon" alternativeText="Hide Filters" class="slds-input__icon" size="large" />
+                                    </aura:if>
+                                </lightning:layoutItem>
+                            </lightning:layout>
+                            
+                            <aura:if isTrue="{!v.showFilters}">
+                                <lightning:layoutItem size="12" class="slds-m-top_small slds-m-bottom_small">
+                                    <lightning:recordEditForm aura:id="productSearch" objectApiName="Product_Fields_Filter_Setup__c" >
+                                        
+                                        <lightning:layout multipleRows="true" class="slds-is-relative">
+                                            
+                                            <lightning:layoutItem size="2">
+                                                <lightning:inputField class="user-inp" fieldName="Product_Family__c" aura:id="productFamily"/>
+                                            </lightning:layoutItem>
+                                           
+                                            <lightning:layoutItem size="2">
+                                                <lightning:inputField class="user-inp" fieldName="Product_Category__c" aura:id="productCategory"/>
+                                            </lightning:layoutItem>
+                                            
+                                            <lightning:layoutItem size="2">
+                                                <lightning:inputField class="user-inp" fieldName="Product_Sub_Category__c" aura:id="productSubCategory"/>
+                                            </lightning:layoutItem>
+                                            
+                                            <lightning:layoutItem size="2">
+                                                <lightning:inputField class="user-inp" fieldName="Product_Sub_Category_2__c" aura:id="productSubCategory2"/>
+                                            </lightning:layoutItem>
+                                            
+                                            <lightning:layoutItem size="2">
+                                                <lightning:inputField class="user-inp" fieldName="Brand__c" aura:id="productBrand"/>
+                                            </lightning:layoutItem>
+                                            
+                                            	<div class=" slds-m-left_x-large" padding="around-small" style="margin-top:20px">
+                                            	<lightning:layoutItem size="2">
+                                                <lightning:button aura:id="Product_Search2" name="Product_Search_Button2" class="slds-theme_neutral" onclick="{!c.onClickSearch}" variant="brand" label="Search"></lightning:button>
+                                            </lightning:layoutItem>   
+                                            </div>
+                                        </lightning:layout>
+                                        
+                                    </lightning:recordEditForm>
+                                </lightning:layoutItem>
+                            </aura:if>
+                            <div class="slds-grid slds-wrap">
+                                <aura:if isTrue="{!v.selectedCount != 0}">
+                                    <aura:if isTrue="{!v.showSelected}">
+                                        <lightning:layoutItem size="2" class="slds-m-top_small slds-m-bottom_small">
+                                            <button class="slds-button slds-float_left" onclick="{! c.onClickShowSelected}">Show Selected({!v.selectedCount})</button>
+                                        </lightning:layoutItem>
+                                        <aura:set attribute="else">
+                                            <lightning:layoutItem size="2" class="slds-m-top_small slds-m-bottom_small ">
+                                                <button class="slds-button slds-float_left" onclick="{! c.onClickBackToResults}">Back To Results</button>
+                                            </lightning:layoutItem>
+                                        </aura:set>
+                                    </aura:if>
+                                </aura:if>
+                            </div>
+                        </div>
+                    </header>
+                    
+                    <div class="slds-modal__content slds-p-around_medium">
+                        <div>
+                            <aura:if isTrue="{!v.bNoRecordsFound}">
+                                <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_info" role="alert">
+                                    <span class="slds-assistive-text">error</span>
+                                    <h2>No Matching Products Found.</h2>
+                                </div>
+                                <aura:set attribute="else">
+                                    <table class="slds-table slds-table_bordered slds-table_striped slds-table_col-bordered">
+                                        <thead>
+                                            <tr class="slds-text-title_caps">
+                                                <!--header checkbox for select all-->
+                                                <th style="width:3.25rem;" class="slds-text-align_right">
+                                                    <div class="slds-form-element">
+                                                        <div class="slds-form-element__control">
+                                                            <label class="slds-checkbox">
+                                                                <ui:inputCheckbox disabled="true"
+                                                                                  aura:id="selectAllId"
+                                                                                  change="{!c.selectAllCheckbox}"/>
+                                                                <span class="slds-checkbox_faux"></span>
+                                                                <span class="slds-form-element__label"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </th>
+                                                <th>
+                                                    <div class="slds-truncate" title="Name">Name</div>
+                                                </th>
+                                                <th>
+                                                    <div class="slds-truncate" title="Olam Product Code">Olam Product Code</div>
+                                                </th>
+                                                <th>
+                                                    <div class="slds-truncate" title="Customer Material Code">Customer Material Code</div>
+                                                </th>
+                                                <th>
+                                                    <div class="slds-truncate" title="Product Family">Product Family</div>
+                                                </th>
+                                                <th>
+                                                    <div class="slds-truncate" title="Category">Category</div>
+                                                </th>
+                                                <th>
+                                                    <div class="slds-truncate" title="Column 1">Sub Category</div>
+                                                </th>
+                                                <th>
+                                                    <div class="slds-truncate" title="Sub Category">Sub Category 2</div>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <aura:iteration items="{!v.PaginationList}" var="obj">
+                                                <tr>
+                                                    <th scope="row" class="slds-text-align_right" style="width:3.25rem;">
+                                                        <div class="slds-form-element">
+                                                            <div class="slds-form-element__control">
+                                                                <label class="slds-checkbox">
+                                                                    <ui:inputCheckbox text="{!obj.objPBE.Id}"
+                                                                                      value="{!obj.isChecked}"
+                                                                                      change="{!c.checkboxSelect}"
+                                                                                      aura:id="SelectAllIds"
+                                                                                      name="{!obj}"/>
+                                                                    <span class="slds-checkbox_faux"></span>
+                                                                    <span class="slds-form-element__label text"></span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </th>
+                                                    <th scope="row">
+                                                        <div class="slds-truncate" title="{!obj.Product2.Name}">
+                                                            {!obj.objPBE.Product2.Name}
+                                                        </div>
+                                                    </th>
+                                                    <th scope="row">
+                                                        <div class="slds-truncate" title="{!obj.Product2.External_Product_Code__c}">
+                                                            {!obj.objPBE.Product2.External_Product_Code__c}
+                                                        </div>
+                                                    </th>
+                                                    <th scope="row">
+                                                        <div class="slds-truncate">
+                                                            {!obj.customerMaterialCode}
+                                                        </div>
+                                                    </th>
+                                                    <th scope="row">
+                                                        <div class="slds-truncate" title="{!obj.Product2.Family}">
+                                                            {!obj.objPBE.Product2.Family}
+                                                        </div>
+                                                    </th>
+                                                    <th scope="row">
+                                                        <div class="slds-truncate" title="{!obj.Product2.Product_Category__c}">
+                                                            {!obj.objPBE.Product2.Product_Category__c}
+                                                        </div>
+                                                    </th>
+                                                    <th scope="row">
+                                                        <div class="slds-truncate" title="{!obj.Product2.Product_Sub_Category__c}">
+                                                            {!obj.objPBE.Product2.Product_Sub_Category__c}
+                                                        </div>
+                                                    </th>
+                                                    <th scope="row">
+                                                        <div class="slds-truncate" title="{!obj.Product2.Product_Sub_Category_2__c}">
+                                                            {!obj.objPBE.Product2.Product_Sub_Category_2__c}
+                                                        </div>
+                                                    </th>
+                                                </tr>
+                                            </aura:iteration>
+                                        </tbody>
+                                    </table>
+                                    
+                                </aura:set>
+                            </aura:if>
+                        </div>
+                        <aura:if isTrue = "{!v.isLoading}">
+                            <div aura:id="spinnerId" class="slds-spinner_container">
+                                <div class="slds-spinner--brand  slds-spinner slds-spinner--large slds-is-relative" role="alert">
+                                    <span class="slds-assistive-text">Loading...</span>
+                                    <div class="slds-spinner__dot-a"></div>
+                                    <div class="slds-spinner__dot-b"></div>
+                                </div>
+                            </div>
+                        </aura:if>
+                    </div>
+                    <footer class="slds-modal__footer">
+                        <lightning:layout>
+                            <lightning:layoutItem size="3"></lightning:layoutItem>
+                            <lightning:layoutItem size="6">
+                                <div class="slds-media slds-media_center">
+                                    <aura:if isTrue="{!or(v.showSelected,empty(v.listOfAllSelectedProducts))}">
+                                        <div class="slds-media__figure">
+                                            <lightning:button class="slds-theme_neutral" 
+                                                              label="Back"
+                                                              disabled="{!v.startPage == 0}"  
+                                                              onclick="{!c.navigation}"
+                                                              variant="brand"
+                                                              iconName="utility:back"
+                                                              name="previous"/>
+                                        </div>
+                                        <div class="slds-media__body">
+                                            <!--<lightning:progressIndicator currentStep="step1" type="base" variant="shaded">
+                                                    <lightning:progressStep label="Step 1" value="step1"></lightning:progressStep>
+                                                    <lightning:progressStep label="Step 2" value="step2"></lightning:progressStep>
+                                                    <lightning:progressStep label="Step 3" value="step3"></lightning:progressStep>
+                                                    <lightning:progressStep label="Step 4" value="step4"></lightning:progressStep>
+                                                </lightning:progressIndicator> -->
+                                        </div>
+                                        <div class="slds-media__figure slds-media__figure_reverse">
+                                            <lightning:button class="slds-theme_brand"
+                                                              label="Next"
+                                                              disabled="{!(v.endPage + 1) >= v.totalRecordsCount}" 
+                                                              onclick="{!c.navigation}"
+                                                              variant="brand"
+                                                              iconName="utility:forward"
+                                                              iconPosition="right"
+                                                              name="next"/>
+                                        </div>
+                                    </aura:if>
+                                </div>
+                            </lightning:layoutItem>
+                            <lightning:layoutItem size="3">
+                                <lightning:button class="slds-theme_neutral" onclick="{!c.cancel}" variant="neutral" label="Cancel"></lightning:button>
+                                <lightning:button class="slds-theme_brand" onclick="{!c.showUpdateDetails}" variant="brand" label="Next"></lightning:button>
+                            </lightning:layoutItem>
+                            <!--<lightning:layoutItem largeDeviceSize="3"></lightning:layoutItem>-->
+                        </lightning:layout>
+                    </footer>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+        </div>
+    </aura:if>
+    <aura:if isTrue="{!v.screenName =='UPDATE_DETAILS'}">
+        <section role="dialog" tabindex="-1" aria-modal="true" class="slds-modal slds-fade-in-open slds-modal_large">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <div class="slds-text-heading_medium">Add Products</div>
+                </header>
+                <div class="slds-modal__content slds-p-around_medium">
+                    <div>
+                        <table class="slds-table slds-table_bordered slds-table_cell-buffer slds-scrollable_x">
+                            <thead>
+                                <tr class="slds-text-title--caps">
+                                    <th scope="col"><div class="slds-truncate" title="Opportunity Name">Product Name</div></th> 
+                                    <th scope="col"><div class="slds-truncate" title="Product Name">External Product Code</div></th>
+                                    <th scope="col"><div class="slds-truncate" title="Product Name">Customer Material Code</div></th>
+                                    <th scope="col"><div class="slds-truncate" title="Unit Price">Unit Price</div></th>
+                                    <th scope="col"><div class="slds-truncate" title="Volume"></div>Volume</th>
+                                    <th scope="col"><div class="slds-truncate" title="Unit Of Measure"></div>Unit Of Measure</th>
+                                    <th scope="col"><div class="slds-truncate" title="PLM Approval Required?"></div>PLM Approval Required?</th>
+                                    <th scope="col"><div class="slds-truncate" title="Upload File"></div>Upload File</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <aura:iteration items="{!v.listOfAllSelectedProducts}" var="selectedWrapperItem">
+                                    <!-- Child Lightning Component -->
+                                    <c:QuoteLineitemEdit obj="{!selectedWrapperItem}" 
+                                                         isPLMApprovalRequiredOptions="{!v.isPLMApprovalRequiredOptions}"
+                                                         unitofmeasurePicklistOpts="{!v.unitofmeasurePicklistOpts}"
+                                                         recordId ="{!v.recordId}"/>
+                                </aura:iteration>
+                            </tbody>
+                        </table>  
+                    </div>
+                    <aura:if isTrue = "{!v.isLoading}">
+                        <div aura:id="spinnerId" class="slds-spinner_container">
+                            <div class="slds-spinner--brand  slds-spinner slds-spinner--large slds-is-relative" role="alert">
+                                <span class="slds-assistive-text">Loading...</span>
+                                <div class="slds-spinner__dot-a"></div>
+                                <div class="slds-spinner__dot-b"></div>
+                            </div>
+                        </div>
+                    </aura:if>
+                </div>
+                <footer class="slds-modal__footer">
+                    <lightning:button variant="brand"
+                                      label="Back"
+                                      title="Back"
+                                      onclick="{!c.showAddProduct}"/>
+                    <lightning:button variant="neutral"
+                                      label="Cancel"
+                                      title="Cancel"
+                                      onclick="{! c.cancel }"/>
+                    <aura:if isTrue = "{!v.isProductConfigRequired}">
+                        <lightning:button variant="brand"
+                                      label="Add Product Config"
+                                      title="Add Product Config"
+                                      onclick="{!c.showAddProductConfig}" 
+                                      />
+                        <aura:set attribute="else">
+                            <lightning:button variant="brand"
+                                      label="Save"
+                                      title="Save"
+                                      onclick="{!c.saveQuoteLineItems}"
+                                      />
+                        </aura:set>
+                    </aura:if>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </aura:if>
+    <aura:if isTrue="{!v.screenName =='ADD_PRODUCT_CONFIG'}">
+        <section role="dialog" tabindex="-1" aria-modal="true" class="slds-modal slds-fade-in-open slds-modal_large">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <div class="slds-text-heading_medium">Add Product Config</div>
+                </header>
+                <div class="slds-modal__content slds-p-around_medium">
+                    <div>
+                        <lightning:accordion activeSectionName="" allowMultipleSectionsOpen="true">
+                            <aura:iteration items="{!v.listOfAllSelectedProducts}" var="selectedWrapperItem" indexVar="ind">
+                                <aura:if isTrue="{!(empty(selectedWrapperItem.listOfProductConfigWrapperFinal)==false)}">
+                                    <lightning:accordionSection name="{!ind}" label="{!selectedWrapperItem.objPBE.Product2.Name}">
+                                        <!--Add your table and data here-->
+                                        
+                                        <aura:if isTrue="{!(empty(selectedWrapperItem.listOfProductConfigWrapperFinal))}">
+                                            <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_info" role="alert">
+                                                <span class="slds-assistive-text">error</span>
+                                                <h2>Product Config Not Available.</h2>
+                                            </div>
+                                            <aura:set attribute="else"> 
+                                                <table class="slds-table slds-table--bordered slds-table--cell-buffer slds-table--striped slds-max-medium-table--stacked-horizontal"
+                                                       role="grid">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="slds-is-sortable slds-cell-wrap" scope="col">
+                                                                Description
+                                                            </th>
+                                                            <th class="slds-is-sortable slds-cell-wrap" scope="col">
+                                                                Indicator
+                                                            </th>
+                                                            <th class="slds-is-sortable slds-cell-wrap" scope="col">
+                                                                UOM
+                                                            </th>
+                                                            <th class="slds-is-sortable slds-cell-wrap" scope="col">
+                                                                Quantitative
+                                                            </th>
+                                                            <th class="slds-is-sortable slds-cell-wrap" scope="col">
+                                                                Qualitative
+                                                            </th>
+                                                            <th class="slds-is-sortable slds-cell-wrap" scope="col">
+                                                                OLAM Range
+                                                            </th>
+                                                            <th class="slds-is-sortable slds-cell-wrap" scope="col">
+                                                                Customer Range
+                                                            </th>
+                                                            <th class="slds-is-sortable slds-cell-wrap" scope="col">
+                                                                New Range
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <aura:iteration items="{!selectedWrapperItem.listOfProductConfigWrapperFinal}" var="prodConfigfinal">
+                                                            <tr class="slds-hint-parent">
+                                                                <td role="gridcell" class="slds-cell-wrap" data-label="description">
+                                                                    <!--<aura:if isTrue="{!not(empty(prodConfigfinal.prodConfigFinal.mic))}">
+                                                                        {!prodConfigfinal.prodConfigFinal.mic}
+                                                                        <aura:set attribute="else">
+                                                                            {!prodConfigfinal.prodConfigFinal.varient_character_mapping}
+                                                                        </aura:set>
+                                                                    </aura:if> -->
+                                                                    {!prodConfigfinal.prodConfigFinal.description}
+                                                                </td>
+                                                                <td role="gridcell" class="slds-cell-wrap" data-label="indicator">
+                                                                    {!prodConfigfinal.prodConfigFinal.indicator}
+                                                                </td>
+                                                                <td role="gridcell" class="slds-cell-wrap" data-label="uom">
+                                                                    {!prodConfigfinal.prodConfigFinal.uom}
+                                                                </td>
+                                                                <td role="gridcell" class="slds-cell-wrap" data-label="quantitative">
+                                                                    {!prodConfigfinal.prodConfigFinal.quantitative}
+                                                                </td> 
+                                                                <td role="gridcell" class="slds-cell-wrap" data-label="qualitative">
+                                                                    {!prodConfigfinal.prodConfigFinal.qualitative}
+                                                                </td>
+                                                                <td role="gridcell" class="slds-cell-wrap" data-label="olam_range">
+                                                                    {!prodConfigfinal.prodConfigFinal.olam_range}
+                                                                </td>
+                                                                <td role="gridcell" class="slds-cell-wrap" data-label="customer_range">
+                                                                    {!prodConfigfinal.prodConfigFinal.customer_range}
+                                                                </td>
+                                                                <td role="gridcell" class="slds-cell-wrap" data-label="">
+                                                                    <lightning:input type="text" aura:id="new_range"
+                                                                                     class="field inputFieldWidth"
+                                                                                     value="{!prodConfigfinal.new_range}"
+                                                                                     
+                                                                                     />
+                                                                </td>
+                                                            </tr>
+                                                        </aura:iteration>
+                                                    </tbody>
+                                                </table>
+                                            </aura:set>
+                                        </aura:if>
+                                    </lightning:accordionSection>
+                                </aura:if>
+                            </aura:iteration>
+                        </lightning:accordion>
+                    </div>
+                    <aura:if isTrue = "{!v.isLoading}">
+                        <div aura:id="spinnerId" class="slds-spinner_container">
+                            <div class="slds-spinner--brand  slds-spinner slds-spinner--large slds-is-relative" role="alert">
+                                <span class="slds-assistive-text">Loading...</span>
+                                <div class="slds-spinner__dot-a"></div>
+                                <div class="slds-spinner__dot-b"></div>
+                            </div>
+                        </div>
+                    </aura:if>
+                </div>
+                <footer class="slds-modal__footer">
+                    <lightning:button variant="brand"
+                                      label="Back"
+                                      title="Back"
+                                      onclick="{!c.showUpdateDetailsBack}"/>
+                    <lightning:button variant="neutral"
+                                      label="Cancel"
+                                      title="Cancel"
+                                      onclick="{!c.cancel}"/>
+                    <lightning:button variant="brand"
+                                      label="Save"
+                                      title="Save"
+                                      onclick="{!c.saveQuoteLineItems}"
+                                      />
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+        
+        <!--Header-->
+        
+        <!--Header-->
+        
+        <!--Body    slds-modal__content slds-scrollable_x   -->
+        
+        <!--Body-->
+        
+        <!--Footer-->
+        
+        <!--Footer-->
+    </aura:if>
+</aura:component>

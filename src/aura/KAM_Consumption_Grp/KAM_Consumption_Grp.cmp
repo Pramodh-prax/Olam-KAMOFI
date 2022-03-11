@@ -1,0 +1,66 @@
+<aura:component extends="c:KAM_AccountPlanOverviewBase"  access="global" controller="KAM_ConsumptionCntl" >
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    
+    <aura:attribute name="selectedUnitOfMeasure" type="String" />
+    <aura:attribute name="previouslySelectedUnitOfMeasure" type="String" />
+    <aura:attribute name="options" type="List" default="[]"/>
+    <aura:attribute name="result" type="String"/>
+    <aura:attribute name="isUnitOfMeasureDisabled" type="Boolean" default="true"/>
+     
+    <aura:attribute name="Consumptions" type="List"  />
+
+    <div class="account-over-view-container" aura:id="item-container">
+        <lightning:layout aura:id="item-wrapper" multipleRows="true" horizontalAlign="center" verticalAlign="center"
+                          class="accountoverview-detail__closed">
+            <lightning:layoutItem size="12"
+                                  class="tit-desc-container slds-order_1  slds-small-order_1 slds-medium-order_1 slds-large-order_1"
+                                  smallDeviceSize="12" mediumDeviceSize="8" largeDeviceSize="8">
+                <lightning:layout multipleRows="true" horizontalAlign="center" verticalAlign="center" class="">
+                    <lightning:layoutItem size="12" class="title-text" smallDeviceSize="12" mediumDeviceSize="12"
+                                          largeDeviceSize="12">
+                        <span>{!v.sectionData.compDetail.Title__c}</span>
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="12" class="desc-text" smallDeviceSize="12" mediumDeviceSize="12"
+                                          largeDeviceSize="12">
+                        <span>{!v.sectionData.Description__c}</span>
+                    </lightning:layoutItem>
+                </lightning:layout>
+            </lightning:layoutItem>
+            <lightning:layoutItem size="4"
+                                  class="slds-order_3 slds-small-order_3 slds-medium-order_3 slds-large-order_3 account-over-view__header-control-container"
+                                  smallDeviceSize="4" mediumDeviceSize="4" largeDeviceSize="4">
+                <div class="accountoverview-detail__header-control">
+                    <a href="javascript:void(0)" onclick="{!c.toggleDetailContent}"
+                       class="accountoverview-detail__operator-cta"></a>
+                </div>
+            </lightning:layoutItem>
+            <lightning:layoutItem size="12"
+                                  class="slds-order_4 slds-small-order_4 slds-medium-order_4 slds-large-order_4 accountoverview__detail-content"
+                                  smallDeviceSize="12" mediumDeviceSize="12" largeDeviceSize="12" >
+                <div class="slds-form--compound">
+                    <div class="unit-of-measure-container">
+                        <div class="unit-of-measure-label">
+                            <span>{!$Label.c.KAM_UOM_Label}</span>
+                        </div>
+                        <div>
+                        	<lightning:combobox class="unit-of-measure-combo-box" name="unitOfMeasure" label="{!$Label.c.KAM_UOM_Label}" variant="label-hidden" value="{!v.selectedUnitOfMeasure}"
+                            placeholder="{!$Label.c.KAM_UOM_Place_Holder}" options="{! v.options }" onchange="{! c.handleOnUnitOfMeasureChange }" disabled="{!v.isUnitOfMeasureDisabled}" />
+                        </div>
+                    </div>
+                    <div>
+                        <aura:iteration items="{!v.Consumptions}" var="acct" indexVar="key">
+     						<!--c:KAM_Consumption_Table_Clone  items="{!acct}" uniqueId="{!key}" PlanType="{!v.sectionData.accountPlan.Type__c}"/-->	
+                             <c:KAM_Consumption_Table items="{!acct}" uniqueId="{!key}" PlanType="{!v.sectionData.accountPlan.Type__c}"/>
+                            <br/>
+                        </aura:iteration>
+                        
+                        </div>
+                    <aura:if isTrue="{!v.isLoading}">
+                        <c:KAM_LoadingDots/>
+                    </aura:if>
+                </div>
+            </lightning:layoutItem>
+        </lightning:layout>
+    </div>
+</aura:component>

@@ -1,0 +1,138 @@
+<aura:component extends="c:KAM_Util">
+
+    <ltng:require scripts="{!join(',',
+    $Resource.jquery) }" afterScriptsLoaded="{!c.scriptLoaded}" />
+
+    <aura:attribute name="items" type="List" default='[]' />
+    <aura:attribute name="displayedItems" type="List" default='[]' />
+    <aura:attribute name="columnHeaders" type="Object" default='{}' />
+    <aura:attribute name="showAccountCol" type="Boolean" default="false" />
+    <aura:attribute name="isPreviousBtnDisabled" type="Boolean" default="false" />
+    <aura:attribute name="isNextBtnDisabled" type="Boolean" default="false" />
+    <aura:attribute name="hasPaginatedView" type="Boolean" default="true" />
+    <aura:attribute name="pageSize" type="Integer" default="2" />
+    <aura:attribute name="currentIndex" type="Integer" default="0" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <lightning:layout multipleRows="true" horizontalAlign="center" verticalAlign="center" class="">
+        <lightning:layoutItem size="12" class="" smallDeviceSize="12" mediumDeviceSize="12" largeDeviceSize="12">
+
+            <div class="table-wrapper">
+                <table class="table">
+                    <thead>
+                        <tr class="header-row">
+                            <th class="sticky-header" scope="col" style="width :15%;padding-left:.5rem;">
+                                {!v.columnHeaders.name}
+                            </th>
+                            <th class="sticky-header" scope="col" style="width :15%;padding-left:.5rem;">
+                                {!v.columnHeaders.title}
+                            </th>
+                            <th class="sticky-header" scope="col" style="width :15%;padding-left:.5rem;">
+                                {!v.columnHeaders.email}
+                            </th>
+                            <th class="sticky-header" scope="col" style="width :15%;padding-left:.5rem;">
+                                {!v.columnHeaders.reportsTo}
+                            </th>
+                            <th class="sticky-header" scope="col" style="width :15%;padding-left:.5rem;">
+                                {!v.columnHeaders.owner}
+                            </th>
+                            <aura:if isTrue="{!v.showAccountCol}">
+                                <th class="sticky-header" scope="col" style="width :15%;padding-left:.5rem;">
+                                    {!v.columnHeaders.accountName}
+                                </th>
+                            </aura:if>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <aura:if isTrue="{!(empty(v.displayedItems))}">
+                            <tr>
+                                <td class="contact-table-col" colspan="{! v.showAccountCol == true ? '6' : '5'}">
+                                    <div class="table-row-spec-no-rows " title="">
+                                        {!$Label.c.KAM_No_Data_available_in_table}
+                                    </div>
+                                </td>
+                            </tr>
+                        </aura:if>
+                        <aura:if isTrue="{! not(empty(v.displayedItems))}">
+                            <aura:iteration items="{!v.displayedItems}" var="eachLineItem" indexVar="index">
+                                <tr>
+                                    <th scope="row" data-label="{!v.columnHeaders.name}" style="width :15%;"
+                                        class="contact-table-col">
+                                        <div class="slds-truncate table-row-spec" title="{!eachLineItem.Name}">
+                                            <a class="slds-truncate link-text "
+                                                href="{!'/one/one.app?#/sObject/'+ eachLineItem.Id + '/view'}"
+                                                target="_blank">
+                                                {!eachLineItem.Name}
+                                            </a>
+                                        </div>
+                                    </th>
+                                    <td style="width :15%;" class="contact-table-col"
+                                        data-label="{!v.columnHeaders.title}">
+                                        <div class="slds-truncate_custom table-row-spec" title="{!eachLineItem.Title}">
+                                            {!eachLineItem.Title}</div>
+                                    </td>
+                                    <td style="width :15%;" class="contact-table-col"
+                                        data-label="{!v.columnHeaders.email}">
+                                        <div class="slds-truncate_custom table-row-spec" title="{!eachLineItem.Email}">
+                                            {!eachLineItem.Email}</div>
+                                    </td>
+                                    <td style="width :15%;" class="contact-table-col"
+                                        data-label="{!v.columnHeaders.reportsTo}">
+                                        <div class="slds-truncate_custom table-row-spec"
+                                            title="{!eachLineItem.ReportsTo.Name}">
+                                            <aura:if isTrue="{!eachLineItem.ReportsToId}">
+                                                <a class="slds-truncate link-text "
+                                                    href="{!'/one/one.app?#/sObject/'+ eachLineItem.ReportsToId + '/view'}"
+                                                    target="_blank">
+                                                    {!eachLineItem.ReportsTo.Name}
+                                                </a>
+                                            </aura:if>
+                                        </div>
+                                    </td>
+                                    <td style="width :15%;" class="contact-table-col"
+                                        data-label="{!v.columnHeaders.owner}">
+                                        <div class="slds-truncate_custom table-row-spec"
+                                            title="{!eachLineItem.ReportsTo.Name}">
+                                            <aura:if isTrue="{!eachLineItem.OwnerId}">
+                                                <a class="slds-truncate link-text "
+                                                    href="{!'/one/one.app?#/sObject/'+ eachLineItem.OwnerId + '/view'}"
+                                                    target="_blank">
+                                                    {!eachLineItem.Owner.Name}
+                                                </a>
+                                            </aura:if>
+                                        </div>
+                                    </td>
+                                    <aura:if isTrue="{!v.showAccountCol}">
+                                        <td style="width :15%;" class="contact-table-col"
+                                            data-label="{!v.columnHeaders.accountName}">
+                                            <div class="slds-truncate_custom table-row-spec"
+                                                title="{!eachLineItem.Account.Name}">
+                                                <aura:if isTrue="{!eachLineItem.OwnerId}">
+                                                    <a class="slds-truncate link-text "
+                                                        href="{!'/one/one.app?#/sObject/'+ eachLineItem.AccountId + '/view'}"
+                                                        target="_blank">
+                                                        {!eachLineItem.Account.Name}
+                                                    </a>
+                                                </aura:if>
+                                            </div>
+                                        </td>
+                                    </aura:if>
+                                </tr>
+                            </aura:iteration>
+                        </aura:if>
+                    </tbody>
+                </table>
+            </div>
+        </lightning:layoutItem>
+        <aura:if isTrue="{!v.hasPaginatedView}">
+            <lightning:layoutItem size="12" class="pagination-btn-container" smallDeviceSize="12" mediumDeviceSize="12" largeDeviceSize="12">
+                <div>
+                    <lightning:button class="pagination-btn" variant="brand" label="Previous" title="Previous" onclick="{! c.handlePreviousClick }" disabled="{!v.isPreviousBtnDisabled}" />
+                </div>
+                <div>
+                    <lightning:button class="pagination-btn" variant="brand" label="Next" title="Next" onclick="{! c.handleNextClick }" disabled="{!v.isNextBtnDisabled}" />
+                </div>
+            </lightning:layoutItem>
+        </aura:if>
+    </lightning:layout>
+</aura:component>

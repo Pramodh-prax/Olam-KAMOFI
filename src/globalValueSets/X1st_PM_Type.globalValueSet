@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>DOY</fullName>
+        <default>false</default>
+        <label>DOY</label>
+    </customValue>
+    <customValue>
+        <fullName>PILLOW</fullName>
+        <default>false</default>
+        <label>PILLOW</label>
+    </customValue>
+    <customValue>
+        <fullName>FOUR SIDE SEAL</fullName>
+        <default>false</default>
+        <label>FOUR SIDE SEAL</label>
+    </customValue>
+    <customValue>
+        <fullName>DOY FLAT BOTTOM</fullName>
+        <default>false</default>
+        <label>DOY FLAT BOTTOM</label>
+    </customValue>
+    <customValue>
+        <fullName>PILLOW BLOCK BOTTOM</fullName>
+        <default>false</default>
+        <label>PILLOW BLOCK BOTTOM</label>
+    </customValue>
+    <customValue>
+        <fullName>VACUUM</fullName>
+        <default>false</default>
+        <label>VACUUM</label>
+    </customValue>
+    <customValue>
+        <fullName>PET JAR</fullName>
+        <default>false</default>
+        <label>PET JAR</label>
+    </customValue>
+    <customValue>
+        <fullName>GLASS JAR</fullName>
+        <default>false</default>
+        <label>GLASS JAR</label>
+    </customValue>
+    <customValue>
+        <fullName>PET CYLINDER JAR</fullName>
+        <default>false</default>
+        <label>PET CYLINDER JAR</label>
+    </customValue>
+    <customValue>
+        <fullName>METAL CANISTER</fullName>
+        <default>false</default>
+        <label>METAL CANISTER</label>
+    </customValue>
+    <customValue>
+        <fullName>COMPOSITE CANISTER</fullName>
+        <default>false</default>
+        <label>COMPOSITE CANISTER</label>
+    </customValue>
+    <customValue>
+        <fullName>PET CANISTER</fullName>
+        <default>false</default>
+        <label>PET CANISTER</label>
+    </customValue>
+    <customValue>
+        <fullName>PAPER MILK BOTTLE</fullName>
+        <default>false</default>
+        <label>PAPER MILK BOTTLE</label>
+    </customValue>
+    <masterLabel>1st PM Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

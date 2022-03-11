@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sample Request Line Item</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sample Request Line Items</value>
+    </caseValues>
+    <fields>
+        <label><!-- Actual Hours --></label>
+        <name>Actual_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bulk Sample Quantity --></label>
+        <name>Bulk_Sample_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created By Name --></label>
+        <name>Created_By_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Dispatch --></label>
+        <name>Date_of_Dispatch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Development Code --></label>
+        <name>Development_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Followup Date --></label>
+        <name>Followup_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Integration Status --></label>
+        <name>Integration_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Material code/External Product Code --></label>
+        <name>Material_code_External_Product_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Modified By Name --></label>
+        <name>Modified_By_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Product --></label>
+        <name>Opportunity_Product__c</name>
+        <relationshipLabel><!-- Sample Request Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Family --></label>
+        <name>Product_Family__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+        <relationshipLabel><!-- Sample Request Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project Dropped Date --></label>
+        <name>Project_Dropped_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity Dispatched --></label>
+        <name>Quantity_Dispatched__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity --></label>
+        <name>Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason for Resampling --></label>
+        <name>Reason_for_Resampling__c</name>
+        <picklistValues>
+            <masterLabel>Change in Quantity</masterLabel>
+            <translation><!-- Change in Quantity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change in Quantity &amp; Sample Spec</masterLabel>
+            <translation><!-- Change in Quantity &amp; Sample Spec --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change in Sample Spec</masterLabel>
+            <translation><!-- Change in Sample Spec --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Resample Request Date --></label>
+        <name>Resample_Request_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resample Sent Date --></label>
+        <name>Resample_Sent_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resampling Quantity --></label>
+        <name>Resampling_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- OSSM Line Item Id --></label>
+        <name>SAP_Line_Item_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Acceptance/ Rejection Date --></label>
+        <name>Sample_Acceptance_Rejection_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Due Date --></label>
+        <name>Sample_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Feedback --></label>
+        <name>Sample_Feedback__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Received Date --></label>
+        <name>Sample_Received_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Request --></label>
+        <name>Sample_Request__c</name>
+        <relationshipLabel><!-- Sample Request Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sample Sent Date --></label>
+        <name>Sample_Sent_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample with Billing --></label>
+        <name>Sample_with_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sampling Status --></label>
+        <name>Sampling_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Spec Change Description --></label>
+        <name>Spec_Change_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tracking Number --></label>
+        <name>Tracking_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit of measure --></label>
+        <name>Unit_of_measure__c</name>
+        <picklistValues>
+            <masterLabel>Gram</masterLabel>
+            <translation><!-- Gram --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kilogram</masterLabel>
+            <translation><!-- Kilogram --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Metric Ton</masterLabel>
+            <translation><!-- Metric Ton --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>US pound</masterLabel>
+            <translation><!-- US pound --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Sample Request Line Item Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Details --></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label><!-- Sub-Details --></label>
+            <section>Sub-Details</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

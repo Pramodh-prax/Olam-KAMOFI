@@ -1,0 +1,35 @@
+<aura:component controller="QuoteCreateNewFromOpptyCntl" implements="force:lightningQuickActionWithoutHeader,flexipage:availableForRecordHome,force:hasRecordId">
+	<aura:attribute name="recordId" type="string" />  
+    <aura:attribute name="isLoading" default="false" type="Boolean"/>
+    
+    <!--Header-->
+    <div class="modal-header slds-modal__header slds-size_1-of-1">
+        <h4 class="title slds-text-heading--medium">New Quote</h4>
+    </div>
+    <!--Header-->
+    
+    <!--Body-->
+    
+    <div class="slds-p-around--x-small slds-size_1-of-1 slds-is-relative table-container">
+        <div class="slds-form--compound">
+            <div class="text-align-center">You are about create a new Quote.</div>
+            <br/>
+            <div class="text-align-center">Click on Submit button to confirm.</div>
+            <br/>
+            <lightning:notificationsLibrary aura:id="notifLib"/>
+        </div>
+        
+        <aura:if isTrue="{!v.isLoading}">
+            <c:KAM_LoadingDots/>
+        </aura:if>
+    </div>
+    <!--Body-->
+    
+    
+    <!--Footer-->
+    <div class="modal-footer slds-modal__footer slds-size_1-of-1">
+        <lightning:button variant="neutral" label="Cancel" title="Cancel" onclick="{!c.cancel }"/>
+        <lightning:button variant="brand" label="Submit" title="Submit" aura:id="disableEnableButtonId" onclick="{!c.submit}"/>
+    </div>
+    <!--Footer-->
+</aura:component>

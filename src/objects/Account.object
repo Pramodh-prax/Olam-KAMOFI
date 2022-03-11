@@ -1,0 +1,2245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableCustomerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableCustomerPortalUser</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableCustomerPortalUser</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Olam_Account_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override updated by Lightning App Builder during activation.</comment>
+        <content>Olam_Account_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewCustomerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewCustomerPortalUser</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewCustomerPortalUser</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>WebsiteHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>WebsiteHighlightAction</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>WebsiteHighlightAction</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>Account_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Account_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>Commercialised__c</fields>
+        <fields>Phone</fields>
+        <fields>Type</fields>
+        <fields>BillingAddress</fields>
+        <fields>Cocoa_Active_Date__c</fields>
+        <fields>Cocoa_BD_Status__c</fields>
+        <fields>Dairy_Active_Date__c</fields>
+        <fields>Dairy_BD_Status__c</fields>
+        <fields>OwnerId</fields>
+        <label>Account Compact Layout</label>
+    </compactLayouts>
+    <compactLayouts>
+        <fullName>Account_for_Europe</fullName>
+        <fields>BillingAddress</fields>
+        <fields>Phone</fields>
+        <fields>Website</fields>
+        <fields>Type_of_Account__c</fields>
+        <label>Account for Europe</label>
+    </compactLayouts>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <fieldSets>
+        <fullName>CustomerOverViewSectionFieldSet</fullName>
+        <description>Used in aura component for Account plan section</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Description</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Customer_Group__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Account_Type__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>CustomerOverViewSectionFieldSet</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>Default</fullName>
+        <description>This is used to have default fields if none of the searched field set found</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Default</label>
+    </fieldSets>
+    <fields>
+        <fullName>AccountNumber</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>AccountSource</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Account_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Global Key Account</fullName>
+                    <default>false</default>
+                    <label>Global Key Account</label>
+                </value>
+                <value>
+                    <fullName>Global Account</fullName>
+                    <default>false</default>
+                    <label>Global Account</label>
+                </value>
+                <value>
+                    <fullName>Regional Key Account</fullName>
+                    <default>false</default>
+                    <label>Regional Key Account</label>
+                </value>
+                <value>
+                    <fullName>Regional Account</fullName>
+                    <default>false</default>
+                    <label>Regional Account</label>
+                </value>
+                <value>
+                    <fullName>Local Key Account</fullName>
+                    <default>false</default>
+                    <label>Local Key Account</label>
+                </value>
+                <value>
+                    <fullName>Local Account</fullName>
+                    <default>false</default>
+                    <label>Local Account</label>
+                </value>
+                <value>
+                    <fullName>Distributor</fullName>
+                    <default>false</default>
+                    <label>Distributor</label>
+                </value>
+                <value>
+                    <fullName>SME</fullName>
+                    <default>false</default>
+                    <label>SME</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Active</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>AnnualRevenue</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Application__c</fullName>
+        <externalId>false</externalId>
+        <label>Application</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Application_Pardot</valueSetName>
+        </valueSet>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>BU_Identifier__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( CONTAINS(Owner.UserRole.Name, &apos;Cocoa&apos;) , &apos;Cocoa&apos;, 
+IF( CONTAINS(Owner.UserRole.Name, &apos;Dairy&apos;) , &apos;Dairy&apos;, &apos;&apos;))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>BU Identifier</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BillingAddress</fullName>
+        <encryptionScheme>CaseInsensitiveDeterministicEncryption</encryptionScheme>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Billing_Country_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>Text (BillingCountryCode)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Billing Country Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Channel__c</fullName>
+        <externalId>false</externalId>
+        <label>Channel</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Channel</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Cocoa_Active_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>First Closing Win Opportunity Date</inlineHelpText>
+        <label>Cocoa Active Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Cocoa_BD_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Cocoa BD Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Approached</fullName>
+                    <default>false</default>
+                    <label>Approached</label>
+                </value>
+                <value>
+                    <fullName>Onboarding</fullName>
+                    <default>false</default>
+                    <label>Onboarding</label>
+                </value>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>false</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Inactive</fullName>
+                    <default>false</default>
+                    <label>Inactive</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Cocoa_First_Deal_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Cocoa First Deal Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Cocoa_Owner__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Cocoa Owner</label>
+        <length>200</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cocoa_Primary_Owner__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Cocoa Primary Owner</label>
+        <length>200</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cocoa_Total_Won_Volume__c</fullName>
+        <description>Sum of total volumes with opportunities = Closed Won and Business Unit = Cocoa</description>
+        <externalId>false</externalId>
+        <label>Cocoa Total Won Volume</label>
+        <summarizedField>Opportunity.Volume__c</summarizedField>
+        <summaryFilterItems>
+            <field>Opportunity.Business_Unit__c</field>
+            <operation>equals</operation>
+            <value>Cocoa</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Closing Won</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Cocoa_Won_Amount__c</fullName>
+        <description>sum of total amount with opportunities = Closed won and Business unit = Cocoa</description>
+        <externalId>false</externalId>
+        <label>Cocoa Won Amount</label>
+        <summarizedField>Opportunity.Total_Offer__c</summarizedField>
+        <summaryFilterItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Closing Won</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Opportunity.Business_Unit__c</field>
+            <operation>equals</operation>
+            <value>Cocoa</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Commercialised__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Commercialised</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Count_of_Cocoa_Opportunities__c</fullName>
+        <description>Count of Total number of open opportunities and BU = Cocoa</description>
+        <externalId>false</externalId>
+        <label>Count of Open Cocoa Opportunities</label>
+        <summaryFilterItems>
+            <field>Opportunity.IsClosed</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Opportunity.Business_Unit__c</field>
+            <operation>equals</operation>
+            <value>Cocoa</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Count_of_Dairy_Opportunities__c</fullName>
+        <description>Count of total number of open opportunities and BU = Dairy</description>
+        <externalId>false</externalId>
+        <label>Count of Dairy Opportunities</label>
+        <summaryFilterItems>
+            <field>Opportunity.IsClosed</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Opportunity.Business_Unit__c</field>
+            <operation>equals</operation>
+            <value>Dairy</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Count_of_Edible_Nuts_Opportunity__c</fullName>
+        <externalId>false</externalId>
+        <label>Count of Edible Nuts Opportunity</label>
+        <summaryFilterItems>
+            <field>Opportunity.IsClosed</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Opportunity.Business_Unit__c</field>
+            <operation>equals</operation>
+            <value>Edible_Nuts</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Count_of_Spice_Opportunity__c</fullName>
+        <externalId>false</externalId>
+        <label>Count of Spice Opportunity</label>
+        <summaryFilterItems>
+            <field>Opportunity.IsClosed</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Opportunity.Business_Unit__c</field>
+            <operation>equals</operation>
+            <value>Spice</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>CurrencyIsoCode</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Customer_Group__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Customer Group</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Dairy_Active_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>First Closing Win Opportunity Date</inlineHelpText>
+        <label>Dairy Active Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Dairy_BD_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Dairy BD Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Approached</fullName>
+                    <default>false</default>
+                    <label>Approached</label>
+                </value>
+                <value>
+                    <fullName>Onboarding</fullName>
+                    <default>false</default>
+                    <label>Onboarding</label>
+                </value>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>false</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Inactive</fullName>
+                    <default>false</default>
+                    <label>Inactive</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Dairy_Owner_Id__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Dairy Owner Id</label>
+        <length>200</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Dairy_Primary_Owner__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Dairy Primary Owner</label>
+        <length>200</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Dairy_Total_Won_Volume__c</fullName>
+        <description>Sum of total volume with opportunities = Closed Won and Business Unit = Dairy</description>
+        <externalId>false</externalId>
+        <label>Dairy Total Won Volume</label>
+        <summarizedField>Opportunity.Volume__c</summarizedField>
+        <summaryFilterItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Closing Won</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Opportunity.Business_Unit__c</field>
+            <operation>equals</operation>
+            <value>Dairy</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Data_Upload_Id__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Data Upload Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Data_Uploaded__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Data Uploaded?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Edible_Nuts_Active_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>First Closing Win Opportunity Date</inlineHelpText>
+        <label>Edible Nuts Active Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Edible_Nuts_BD_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Edible_Nuts_BD_Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Approached</fullName>
+                    <default>false</default>
+                    <label>Approached</label>
+                </value>
+                <value>
+                    <fullName>Onboarding</fullName>
+                    <default>false</default>
+                    <label>Onboarding</label>
+                </value>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>false</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Inactive</fullName>
+                    <default>false</default>
+                    <label>Inactive</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Edible_Nuts_Owner_Id__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Edible Nuts Owner Id</label>
+        <length>200</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Edible_Nuts_Primary_Owner__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Edible Nuts Primary Owner</label>
+        <length>200</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Emailaddress__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Emailaddress</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fax</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Inco_Terms_Cocoa__c</fullName>
+        <externalId>false</externalId>
+        <label>Inco Terms (Cocoa)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Inco_Terms</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Inco_Terms__c</fullName>
+        <externalId>false</externalId>
+        <label>Inco Terms</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CFR</fullName>
+                    <default>false</default>
+                    <label>CFR - Costs and freight</label>
+                </value>
+                <value>
+                    <fullName>CIF</fullName>
+                    <default>false</default>
+                    <label>CIF - Costs, insurance &amp; freight</label>
+                </value>
+                <value>
+                    <fullName>CIP</fullName>
+                    <default>false</default>
+                    <label>CIP - Carriage and insurance paid</label>
+                </value>
+                <value>
+                    <fullName>CPT</fullName>
+                    <default>false</default>
+                    <label>CPT - Carriage paid to</label>
+                </value>
+                <value>
+                    <fullName>DAP</fullName>
+                    <default>false</default>
+                    <label>DAP - Delivered At Place</label>
+                </value>
+                <value>
+                    <fullName>DDP</fullName>
+                    <default>false</default>
+                    <label>DDP - Delivered Duty Paid</label>
+                </value>
+                <value>
+                    <fullName>DPU</fullName>
+                    <default>false</default>
+                    <label>DPU - Delivered At Place Unloaded</label>
+                </value>
+                <value>
+                    <fullName>EXW</fullName>
+                    <default>false</default>
+                    <label>EXW - Ex Works</label>
+                </value>
+                <value>
+                    <fullName>FAS</fullName>
+                    <default>false</default>
+                    <label>FAS - Free Along Sideship</label>
+                </value>
+                <value>
+                    <fullName>FCA</fullName>
+                    <default>false</default>
+                    <label>FCA - Free Carrier</label>
+                </value>
+                <value>
+                    <fullName>FOB</fullName>
+                    <default>false</default>
+                    <label>FOB - Free On Board</label>
+                </value>
+                <value>
+                    <fullName>Instore</fullName>
+                    <default>false</default>
+                    <label>Instore</label>
+                </value>
+                <value>
+                    <fullName>CNF</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>CNF</label>
+                </value>
+                <value>
+                    <fullName>DAT</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>DAT</label>
+                </value>
+                <value>
+                    <fullName>DDU</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>DDU</label>
+                </value>
+                <value>
+                    <fullName>DES</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>DES</label>
+                </value>
+                <value>
+                    <fullName>FOR</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>FOR</label>
+                </value>
+                <value>
+                    <fullName>FOT</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>FOT</label>
+                </value>
+                <value>
+                    <fullName>UN</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>UN</label>
+                </value>
+                <value>
+                    <fullName>Z05</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Z05</label>
+                </value>
+                <value>
+                    <fullName>Z06</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Z06</label>
+                </value>
+                <value>
+                    <fullName>Z09</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Z09</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Indirect__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Indirect</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Industry</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Jigsaw</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>No_of_Employees__c</fullName>
+        <externalId>false</externalId>
+        <label>No. of Employees</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>No_of_Employees</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>NumberOfEmployees</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Ownership</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Pardot_Region__c</fullName>
+        <externalId>false</externalId>
+        <label>Pardot Region</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Region</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ParentId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Hierarchy</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Terms__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Terms</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ZU13 - Net 60 days - Date of Invoice</fullName>
+                    <default>false</default>
+                    <label>ZU13 - Net 60 days - Date of Invoice</label>
+                </value>
+                <value>
+                    <fullName>Z070 - 2% 15 days, 60 days net</fullName>
+                    <default>false</default>
+                    <label>Z070 - 2% 15 days, 60 days net</label>
+                </value>
+                <value>
+                    <fullName>ZU10 - Net 30 days - Date of Invoice</fullName>
+                    <default>false</default>
+                    <label>ZU10 - Net 30 days - Date of Invoice</label>
+                </value>
+                <value>
+                    <fullName>ZU14 - Net 90 days - Date of Invoice</fullName>
+                    <default>false</default>
+                    <label>ZU14 - Net 90 days - Date of Invoice</label>
+                </value>
+                <value>
+                    <fullName>ZU17 - Payment in Advance,Prepayment</fullName>
+                    <default>false</default>
+                    <label>ZU17 - Payment in Advance,Prepayment</label>
+                </value>
+                <value>
+                    <fullName>ZU07 - Net 15 days - Date of Invoice</fullName>
+                    <default>false</default>
+                    <label>ZU07 - Net 15 days - Date of Invoice</label>
+                </value>
+                <value>
+                    <fullName>ZS87 - CAD at Sight In Trust@120 day-98%-2% Pay on req</fullName>
+                    <default>false</default>
+                    <label>ZS87 - CAD at Sight In Trust@120 day-98%-2% Pay on req</label>
+                </value>
+                <value>
+                    <fullName>ZU12 - Net 45 days - Date of Invoice</fullName>
+                    <default>false</default>
+                    <label>ZU12 - Net 45 days - Date of Invoice</label>
+                </value>
+                <value>
+                    <fullName>USBM - 2% 10 NET 45</fullName>
+                    <default>false</default>
+                    <label>USBM - 2% 10 NET 45</label>
+                </value>
+                <value>
+                    <fullName>US0D - 1% 10 NET 60</fullName>
+                    <default>false</default>
+                    <label>US0D - 1% 10 NET 60</label>
+                </value>
+                <value>
+                    <fullName>ZU04 - Net 7 days - Date of Invoice</fullName>
+                    <default>true</default>
+                    <label>ZU04 - Net 7 days - Date of Invoice</label>
+                </value>
+                <value>
+                    <fullName>ZS96 - CAD at Sight In Trust @ 75 day - 100%</fullName>
+                    <default>false</default>
+                    <label>ZS96 - CAD at Sight In Trust @ 75 day - 100%</label>
+                </value>
+                <value>
+                    <fullName>USAE - Net due in 65 days</fullName>
+                    <default>false</default>
+                    <label>USAE - Net due in 65 days</label>
+                </value>
+                <value>
+                    <fullName>ZU11 - Net 40 days - Date of Invoice</fullName>
+                    <default>false</default>
+                    <label>ZU11 - Net 40 days - Date of Invoice</label>
+                </value>
+                <value>
+                    <fullName>SG06 - Letter of credit</fullName>
+                    <default>false</default>
+                    <label>SG06 - Letter of credit</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Priority_Customer__c</fullName>
+        <externalId>false</externalId>
+        <label>Priority Customer</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Hunt &amp; Grow</fullName>
+                    <default>false</default>
+                    <label>Hunt &amp; Grow</label>
+                </value>
+                <value>
+                    <fullName>Invest</fullName>
+                    <default>false</default>
+                    <label>Invest</label>
+                </value>
+                <value>
+                    <fullName>Maintain</fullName>
+                    <default>false</default>
+                    <label>Maintain</label>
+                </value>
+                <value>
+                    <fullName>Passive</fullName>
+                    <default>false</default>
+                    <label>Passive</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Processed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Processed</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Rating</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Regions__c</fullName>
+        <description>To Identify the account region</description>
+        <externalId>false</externalId>
+        <label>Regions</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>APAC</fullName>
+                    <default>false</default>
+                    <label>APAC</label>
+                </value>
+                <value>
+                    <fullName>EMENA</fullName>
+                    <default>false</default>
+                    <label>EMENA</label>
+                </value>
+                <value>
+                    <fullName>Others</fullName>
+                    <default>false</default>
+                    <label>Others</label>
+                </value>
+                <value>
+                    <fullName>USA</fullName>
+                    <default>false</default>
+                    <label>USA</label>
+                </value>
+                <value>
+                    <fullName>Africa</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Africa</label>
+                </value>
+                <value>
+                    <fullName>Americas</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Americas</label>
+                </value>
+                <value>
+                    <fullName>Europe</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Europe</label>
+                </value>
+                <value>
+                    <fullName>Latin America</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Latin America</label>
+                </value>
+                <value>
+                    <fullName>Middle East</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Middle East</label>
+                </value>
+                <value>
+                    <fullName>North America</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>North America</label>
+                </value>
+                <value>
+                    <fullName>Oceania</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Oceania</label>
+                </value>
+                <value>
+                    <fullName>South America</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>South America</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SAP_Account_Activation_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Account activated in SAP</inlineHelpText>
+        <label>SAP Account Activation Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SAP_Account_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <label>SAP Account ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Area__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Area</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>SG41 - 01 - 03</fullName>
+                    <default>false</default>
+                    <label>SG41 - 01 - 03</label>
+                </value>
+                <value>
+                    <fullName>SG41 - 02 - 03</fullName>
+                    <default>false</default>
+                    <label>SG41 - 02 - 03</label>
+                </value>
+                <value>
+                    <fullName>SG41 - 07 - 03</fullName>
+                    <default>false</default>
+                    <label>SG41 - 07 - 03</label>
+                </value>
+                <value>
+                    <fullName>SG42 - 01 - 03</fullName>
+                    <default>false</default>
+                    <label>SG42 - 01 - 03</label>
+                </value>
+                <value>
+                    <fullName>SG42 - 02 - 03</fullName>
+                    <default>false</default>
+                    <label>SG42 - 02 - 03</label>
+                </value>
+                <value>
+                    <fullName>SG42 - 07 - 03</fullName>
+                    <default>false</default>
+                    <label>SG42 - 07 - 03</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Segment_FoodServices__c</fullName>
+        <externalId>false</externalId>
+        <label>Segment_FS</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Segment</valueSetName>
+        </valueSet>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Segment__c</fullName>
+        <externalId>false</externalId>
+        <label>Segment</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Application</valueSetName>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ShippingAddress</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Sic</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>SicDesc</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Site</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Spice_Active_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>First Closing Win Opportunity Date</inlineHelpText>
+        <label>Spices Active Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Spice_BD_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Spices_BD_Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Approached</fullName>
+                    <default>false</default>
+                    <label>Approached</label>
+                </value>
+                <value>
+                    <fullName>Onboarding</fullName>
+                    <default>false</default>
+                    <label>Onboarding</label>
+                </value>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>false</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Inactive</fullName>
+                    <default>false</default>
+                    <label>Inactive</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Spice_Owner_Id__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Spices Owner Id</label>
+        <length>200</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Spices_Primary_User__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Spices Primary User</label>
+        <length>200</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Terms_of_Payment_Cocoa__c</fullName>
+        <externalId>false</externalId>
+        <label>Terms of Payment (Cocoa)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Terms_of_Payment</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TickerSymbol</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Tier</fullName>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Type_of_Account__c</fullName>
+        <externalId>false</externalId>
+        <label>Type of Account</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Prospect</fullName>
+                    <default>false</default>
+                    <label>Prospect</label>
+                </value>
+                <value>
+                    <fullName>Customer</fullName>
+                    <default>false</default>
+                    <label>Customer</label>
+                </value>
+                <value>
+                    <fullName>Co-packer</fullName>
+                    <default>false</default>
+                    <label>Co-packer</label>
+                </value>
+                <value>
+                    <fullName>Competitor</fullName>
+                    <default>false</default>
+                    <label>Competitor</label>
+                </value>
+                <value>
+                    <fullName>Co-manufacturer</fullName>
+                    <default>false</default>
+                    <label>Co-manufacturer</label>
+                </value>
+                <value>
+                    <fullName>Packaging supplier</fullName>
+                    <default>false</default>
+                    <label>Packaging supplier</label>
+                </value>
+                <value>
+                    <fullName>Raw material supplier</fullName>
+                    <default>false</default>
+                    <label>Raw material supplier</label>
+                </value>
+                <value>
+                    <fullName>Service provider</fullName>
+                    <default>false</default>
+                    <label>Service provider</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Vietnam_Account_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>true</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Inactive</fullName>
+                    <default>false</default>
+                    <label>Inactive</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Vietnam_Account_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Wholesaler</fullName>
+                    <default>false</default>
+                    <label>Wholesaler</label>
+                </value>
+                <value>
+                    <fullName>E-commerce</fullName>
+                    <default>false</default>
+                    <label>E-commerce</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Convenience Stores</fullName>
+                    <default>false</default>
+                    <label>Convenience Stores</label>
+                </value>
+                <value>
+                    <fullName>Supermarkets</fullName>
+                    <default>false</default>
+                    <label>Supermarkets</label>
+                </value>
+                <value>
+                    <fullName>Hypermarkets</fullName>
+                    <default>false</default>
+                    <label>Hypermarkets</label>
+                </value>
+                <value>
+                    <fullName>Discounters</fullName>
+                    <default>false</default>
+                    <label>Discounters</label>
+                </value>
+                <value>
+                    <fullName>Bulk Retailers</fullName>
+                    <default>false</default>
+                    <label>Bulk Retailers</label>
+                </value>
+                <value>
+                    <fullName>Gourmet/ Specialty</fullName>
+                    <default>false</default>
+                    <label>Gourmet/ Specialty</label>
+                </value>
+                <value>
+                    <fullName>Pharmacy/ Health &amp; Beauty</fullName>
+                    <default>false</default>
+                    <label>Pharmacy/ Health &amp; Beauty</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Vietnam_Annual_Profit__c</fullName>
+        <externalId>false</externalId>
+        <label>Annual Profit</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vietnam_Tax_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Tax ID</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Website</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ofi_Region__c</fullName>
+        <externalId>false</externalId>
+        <label>ofi Region</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>APAC</fullName>
+                    <default>false</default>
+                    <label>APAC</label>
+                </value>
+                <value>
+                    <fullName>EMENA</fullName>
+                    <default>false</default>
+                    <label>EMENA</label>
+                </value>
+                <value>
+                    <fullName>Others</fullName>
+                    <default>false</default>
+                    <label>Others</label>
+                </value>
+                <value>
+                    <fullName>USA</fullName>
+                    <default>false</default>
+                    <label>USA</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ofi_Sub_Region_2__c</fullName>
+        <externalId>false</externalId>
+        <label>ofi Sub Region 2</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Australia and New Zealand</fullName>
+                    <default>false</default>
+                    <label>Australia and New Zealand</label>
+                </value>
+                <value>
+                    <fullName>Caribbean</fullName>
+                    <default>false</default>
+                    <label>Caribbean</label>
+                </value>
+                <value>
+                    <fullName>Central America</fullName>
+                    <default>false</default>
+                    <label>Central America</label>
+                </value>
+                <value>
+                    <fullName>Central Asia</fullName>
+                    <default>false</default>
+                    <label>Central Asia</label>
+                </value>
+                <value>
+                    <fullName>Channel Islands</fullName>
+                    <default>false</default>
+                    <label>Channel Islands</label>
+                </value>
+                <value>
+                    <fullName>East Africa</fullName>
+                    <default>false</default>
+                    <label>East Africa</label>
+                </value>
+                <value>
+                    <fullName>East Asia</fullName>
+                    <default>false</default>
+                    <label>East Asia</label>
+                </value>
+                <value>
+                    <fullName>East Europe</fullName>
+                    <default>false</default>
+                    <label>East Europe</label>
+                </value>
+                <value>
+                    <fullName>Melanesia</fullName>
+                    <default>false</default>
+                    <label>Melanesia</label>
+                </value>
+                <value>
+                    <fullName>Micronesia</fullName>
+                    <default>false</default>
+                    <label>Micronesia</label>
+                </value>
+                <value>
+                    <fullName>Middle Africa</fullName>
+                    <default>false</default>
+                    <label>Middle Africa</label>
+                </value>
+                <value>
+                    <fullName>North Africa</fullName>
+                    <default>false</default>
+                    <label>North Africa</label>
+                </value>
+                <value>
+                    <fullName>North America</fullName>
+                    <default>false</default>
+                    <label>North America</label>
+                </value>
+                <value>
+                    <fullName>North Europe</fullName>
+                    <default>false</default>
+                    <label>North Europe</label>
+                </value>
+                <value>
+                    <fullName>Polynesia</fullName>
+                    <default>false</default>
+                    <label>Polynesia</label>
+                </value>
+                <value>
+                    <fullName>South Africa</fullName>
+                    <default>false</default>
+                    <label>South Africa</label>
+                </value>
+                <value>
+                    <fullName>South America</fullName>
+                    <default>false</default>
+                    <label>South America</label>
+                </value>
+                <value>
+                    <fullName>South Asia</fullName>
+                    <default>false</default>
+                    <label>South Asia</label>
+                </value>
+                <value>
+                    <fullName>South-East Asia</fullName>
+                    <default>false</default>
+                    <label>South-East Asia</label>
+                </value>
+                <value>
+                    <fullName>South Europe</fullName>
+                    <default>false</default>
+                    <label>South Europe</label>
+                </value>
+                <value>
+                    <fullName>West Africa</fullName>
+                    <default>false</default>
+                    <label>West Africa</label>
+                </value>
+                <value>
+                    <fullName>West Asia</fullName>
+                    <default>false</default>
+                    <label>West Asia</label>
+                </value>
+                <value>
+                    <fullName>West Europe</fullName>
+                    <default>false</default>
+                    <label>West Europe</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ofi_Sub_Region__c</fullName>
+        <externalId>false</externalId>
+        <label>ofi Sub Region</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Asia</fullName>
+                    <default>false</default>
+                    <label>Asia</label>
+                </value>
+                <value>
+                    <fullName>Africa</fullName>
+                    <default>false</default>
+                    <label>Africa</label>
+                </value>
+                <value>
+                    <fullName>Americas</fullName>
+                    <default>false</default>
+                    <label>Americas</label>
+                </value>
+                <value>
+                    <fullName>Europe</fullName>
+                    <default>false</default>
+                    <label>Europe</label>
+                </value>
+                <value>
+                    <fullName>Oceania</fullName>
+                    <default>false</default>
+                    <label>Oceania</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <listViews>
+        <fullName>AllAccounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY_CODE</columns>
+        <columns>CORE.USERS.FIRST_NAME</columns>
+        <columns>CORE.USERS.LAST_NAME</columns>
+        <columns>ACCOUNT.CREATED_DATE</columns>
+        <columns>ACCOUNT.ADDRESS1_STREET</columns>
+        <columns>ACCOUNT.ADDRESS1_ZIP</columns>
+        <columns>Account_Type__c</columns>
+        <columns>SAP_Account_ID__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Accounts</label>
+    </listViews>
+    <listViews>
+        <fullName>MyAccounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CORE.USERS.FIRST_NAME</columns>
+        <columns>CORE.USERS.LAST_NAME</columns>
+        <columns>ACCOUNT.CREATED_DATE</columns>
+        <columns>Commercialised__c</columns>
+        <columns>ACCOUNT.ADDRESS1_STREET</columns>
+        <columns>ACCOUNT.ADDRESS1_ZIP</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY_CODE</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Accounts</label>
+    </listViews>
+    <searchLayouts>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.ADDRESS1_CITY</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.PHONE1</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CORE.USERS.ALIAS</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.TYPE</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.ALIAS</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.TYPE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.PHONE1</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.ADDRESS1_COUNTRY_CODE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>SAP_Account_ID__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.LAST_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Customer_Group__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Commercialised__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.ADDRESS1_STREET</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.ADDRESS1_ZIP</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Read</sharingModel>
+    <validationRules>
+        <fullName>ACNT001_Cannot_Edit_if_Commercialised</fullName>
+        <active>false</active>
+        <description>Account cannot be edited if the Commercialised checkbox is checked.</description>
+        <errorConditionFormula>NOT(isnew()) &amp;&amp;  Commercialised__c &amp;&amp;
+NOT( $Permission.Olam_Validation_Exception )&amp;&amp;
+NOT(
+ISCHANGED( Cocoa_Owner__c ) || 
+ISCHANGED( Dairy_Owner_Id__c ) ||
+ISCHANGED( Spice_Owner_Id__c ) || 
+ISCHANGED( Edible_Nuts_Owner_Id__c ) || 
+ISCHANGED( Count_of_Cocoa_Opportunities__c ) || 
+ISCHANGED( Count_of_Dairy_Opportunities__c ) ||
+ISCHANGED( Count_of_Spice_Opportunity__c ) || 
+ISCHANGED( Count_of_Edible_Nuts_Opportunity__c ) ||
+ISCHANGED( Cocoa_Active_Date__c )|| 
+ISCHANGED( Cocoa_BD_Status__c ) ||
+ISCHANGED( Dairy_Active_Date__c ) ||
+ISCHANGED( Dairy_BD_Status__c ) || 
+ISCHANGED( Spice_Active_Date__c )|| 
+ISCHANGED( Spice_BD_Status__c ) ||
+ISCHANGED( Edible_Nuts_Active_Date__c ) ||
+ISCHANGED( Edible_Nuts_BD_Status__c ) ||
+ISCHANGED( Segment__c ) ||
+ISCHANGED( OwnerId )
+)</errorConditionFormula>
+        <errorMessage>You cannot edit this Account because it is already Commercialised. Please edit the Account details from the MDM.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Account_Cannot_be_More_than_80_Character</fullName>
+        <active>true</active>
+        <errorConditionFormula>LEN(Name) &gt; 80</errorConditionFormula>
+        <errorDisplayField>Name</errorDisplayField>
+        <errorMessage>Account Name cannot be more than 80 characters long.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Account_Edit_Access_Cocoa</fullName>
+        <active>false</active>
+        <errorConditionFormula>IF((NOT( ISBLANK(Cocoa_Owner__c) || ISCHANGED(Cocoa_Owner__c)))
+&amp;&amp; ($Profile.Name &lt;&gt; &quot;Integration Administrator&quot; &amp;&amp; $Profile.Name &lt;&gt; &quot;System Administrator&quot;) &amp;&amp; CONTAINS( $Profile.Name , &quot;Cocoa&quot;)
+,
+NOT((ISCHANGED(Cocoa_Active_Date__c) || ISCHANGED( Count_of_Cocoa_Opportunities__c ) || ISCHANGED(Cocoa_BD_Status__c))) &amp;&amp; CASESAFEID($User.Id) &lt;&gt; Cocoa_Owner__c,
+false
+)</errorConditionFormula>
+        <errorMessage>Only Primary owners can Update the Account</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Account_Edit_Access_Dairy</fullName>
+        <active>false</active>
+        <errorConditionFormula>IF((NOT( ISBLANK( Dairy_Owner_Id__c ) || ISCHANGED(Dairy_Owner_Id__c)))
+&amp;&amp; ($Profile.Name &lt;&gt; &quot;Integration Administrator&quot; &amp;&amp; $Profile.Name &lt;&gt; &quot;System Administrator&quot;) 
+,
+NOT((ISCHANGED( Dairy_BD_Status__c ) ||ISCHANGED(  Count_of_Dairy_Opportunities__c )|| ISCHANGED( Dairy_Active_Date__c ))) &amp;&amp; CASESAFEID($User.Id) &lt;&gt; Dairy_Owner_Id__c,
+false
+)</errorConditionFormula>
+        <errorMessage>Only Primary owners can Update the Account Dairy</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Account_Edit_Access_Edible_Nuts</fullName>
+        <active>false</active>
+        <errorConditionFormula>IF((NOT( ISBLANK( Edible_Nuts_Owner_Id__c ) || ISCHANGED(Edible_Nuts_Owner_Id__c)))
+&amp;&amp; ($Profile.Name &lt;&gt; &quot;Integration Administrator&quot; &amp;&amp; $Profile.Name &lt;&gt; &quot;System Administrator&quot;) &amp;&amp; CONTAINS( $Profile.Name , &quot;Edible Nuts&quot;)
+,
+NOT((ISCHANGED( Edible_Nuts_BD_Status__c ) ||ISCHANGED(  Count_of_Edible_Nuts_Opportunity__c )|| ISCHANGED( Edible_Nuts_Active_Date__c ))) &amp;&amp; CASESAFEID($User.Id) &lt;&gt; Edible_Nuts_Owner_Id__c,
+false
+)</errorConditionFormula>
+        <errorMessage>Only Primary owners can Update the Account</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Account_Edit_Access_Spices</fullName>
+        <active>false</active>
+        <errorConditionFormula>IF((NOT( ISBLANK(Spice_Owner_Id__c) || ISCHANGED(Spice_Owner_Id__c)))
+&amp;&amp; ($Profile.Name &lt;&gt; &quot;Integration Administrator&quot; &amp;&amp; $Profile.Name &lt;&gt; &quot;System Administrator&quot;) &amp;&amp; CONTAINS( $Profile.Name , &quot;Spices&quot;)
+,
+NOT((ISCHANGED(Spice_Active_Date__c) || ISCHANGED( Count_of_Spice_Opportunity__c ) || ISCHANGED(Spice_BD_Status__c))) &amp;&amp; CASESAFEID($User.Id) &lt;&gt; Spice_Owner_Id__c,
+false
+)</errorConditionFormula>
+        <errorMessage>Only Primary owners can Update the Account</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Account_Edit_Cocoa_Owner_Id_NULL</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(
+NOT(ISNEW()),
+ISBLANK( Cocoa_Owner__c ),
+
+NOT(ISCHANGED(Cocoa_Active_Date__c) || ISCHANGED( Count_of_Cocoa_Opportunities__c ) || ISCHANGED(Cocoa_BD_Status__c)
+))</errorConditionFormula>
+        <errorMessage>Please add yourself to the team before modifying the record.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Account_Edit_Dairy_Owner_Id_NULL</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(
+NOT(ISNEW()),
+ISBLANK( Dairy_Owner_Id__c ),
+Contains( $Profile.Name , &quot;Dairy&quot; ),
+NOT(ISCHANGED( Dairy_BD_Status__c ) ||ISCHANGED( Count_of_Dairy_Opportunities__c )|| ISCHANGED( Dairy_Active_Date__c ))
+)</errorConditionFormula>
+        <errorMessage>Please add yourself to the team before modifying the record Dairy</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Account_Edit_Edible_Nuts_Owner_Id_NULL</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(
+NOT(ISNEW()),
+ISBLANK( Edible_Nuts_Owner_Id__c ),
+NOT(ISCHANGED(Edible_Nuts_Active_Date__c) || ISCHANGED( Count_of_Edible_Nuts_Opportunity__c) || ISCHANGED(Edible_Nuts_BD_Status__c)
+))</errorConditionFormula>
+        <errorMessage>Please add yourself to the team before modifying the record.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Account_Edit_Spices_Owner_Id_NULL</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(
+NOT(ISNEW()),
+ISBLANK( Spice_Owner_Id__c ),
+NOT(ISCHANGED(Spice_Active_Date__c) || ISCHANGED( Count_of_Spice_Opportunity__c ) || ISCHANGED(Spice_BD_Status__c)
+))</errorConditionFormula>
+        <errorMessage>Please add yourself to the team before modifying the record.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Account_Name_cannot_be_changed</fullName>
+        <active>true</active>
+        <errorConditionFormula>ischanged( Name ) &amp;&amp;
+(ISPICKVAL( Dairy_BD_Status__c , &quot;Onboarding&quot;) || 
+ ISPICKVAL( Cocoa_BD_Status__c , &quot;Onboarding&quot;) ||
+ ISPICKVAL( Dairy_BD_Status__c , &quot;Active&quot;) || 
+ ISPICKVAL( Cocoa_BD_Status__c , &quot;Active&quot;) || 
+ISPICKVAL( Spice_BD_Status__c , &quot;Onboarding&quot;) || 
+ ISPICKVAL( Edible_Nuts_BD_Status__c , &quot;Onboarding&quot;) ||
+ ISPICKVAL( Spice_BD_Status__c , &quot;Active&quot;) || 
+ ISPICKVAL( Edible_Nuts_BD_Status__c , &quot;Active&quot;) )&amp;&amp;
+NOT( $Permission.Olam_Validation_Exception )</errorConditionFormula>
+        <errorDisplayField>CurrencyIsoCode</errorDisplayField>
+        <errorMessage>The Account Name cannot be changed at this stage, please contact your System Administrator if you wish to change the Account Name before it is Commercialised.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Account_Owner_to_Mark_for_Deletion</fullName>
+        <active>false</active>
+        <errorConditionFormula>$User.Id &lt;&gt; OwnerId &amp;&amp; ISCHANGED( Marked_for_Deletion__c )&amp;&amp;  Marked_for_Deletion__c = true &amp;&amp; NOT ($Permission.Olam_Validation_Exception)</errorConditionFormula>
+        <errorMessage>Only Primary Account Owners can mark the account for deletion</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Billing_Address_Cannot_be_Blank</fullName>
+        <active>true</active>
+        <errorConditionFormula>isblank( BillingCountry ) || isblank ( BillingStreet )  &amp;&amp;
+not( $Permission.Olam_Validation_Exception )</errorConditionFormula>
+        <errorDisplayField>BillingCountry</errorDisplayField>
+        <errorMessage>Please enter the Billing Address (Billing Country, Billing Street)</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Segment_only_Editable_by_Primary_Owners</fullName>
+        <active>true</active>
+        <description>Account Segments should only be edited by the Primary Owners</description>
+        <errorConditionFormula>( CASESAFEID($User.Id) &lt;&gt;  Cocoa_Owner__c &amp;&amp;
+  CASESAFEID($User.Id) &lt;&gt;  Dairy_Owner_Id__c &amp;&amp;
+  CASESAFEID($User.Id) &lt;&gt;  Edible_Nuts_Owner_Id__c &amp;&amp;
+  CASESAFEID($User.Id) &lt;&gt;  Spice_Owner_Id__c ) &amp;&amp;  ischanged(Segment__c ) &amp;&amp; not( $Permission.Olam_Validation_Exception )</errorConditionFormula>
+        <errorDisplayField>Segment__c</errorDisplayField>
+        <errorMessage>Only Primary Owners can edit the Segment</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>GoogleMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://maps.google.com/maps?f=q&amp;hl=en&amp;q={!Account_BillingStreet}+{!Account_BillingCity}+{!Account_BillingState}&amp;om=1</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleNews</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google News</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/news?&amp;q={!Account_Name}&amp;btnG=Search+News</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleSearch</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Search</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/search?q={!Account_Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>LinkedIn</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>LinkedIn</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://www.linkedin.com/search/results/companies/?keywords={!Account.Name}&amp;origin=CLUSTER_EXPANSION</url>
+    </webLinks>
+    <webLinks>
+        <fullName>pi__Send_Pardot_Emails</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Send Engage Email</masterLabel>
+        <openType>sidebar</openType>
+        <page>pi__MicroCampaignPersonAccount</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+    <webLinks>
+        <fullName>pi__Send_Single_Pardot_Email</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Send Engage Email</masterLabel>
+        <openType>sidebar</openType>
+        <page>pi__MicroCampaignSinglePersonAccount</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>pi__Send_To_Prospect_Insight</fullName>
+        <availability>online</availability>
+        <description>Send this Person Account to Pardot</description>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Send To Pardot</masterLabel>
+        <openType>sidebar</openType>
+        <page>pi__PardotAccountSendToPardot</page>
+        <protected>false</protected>
+    </webLinks>
+</CustomObject>

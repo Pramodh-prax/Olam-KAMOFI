@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Small bags (1 - 5 kilos)</fullName>
+        <default>false</default>
+        <label>Small bags (1 - 5 kilos)</label>
+    </customValue>
+    <customValue>
+        <fullName>Large bags (25 kilo - 1 ton)</fullName>
+        <default>false</default>
+        <label>Large bags (25 kilo - 1 ton)</label>
+    </customValue>
+    <masterLabel>Bag Format</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

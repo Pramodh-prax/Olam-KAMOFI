@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>NULL</fullName>
+        <default>false</default>
+        <label>NULL</label>
+    </customValue>
+    <customValue>
+        <fullName>SMALL</fullName>
+        <default>false</default>
+        <label>SMALL</label>
+    </customValue>
+    <customValue>
+        <fullName>LARGE</fullName>
+        <default>false</default>
+        <label>LARGE</label>
+    </customValue>
+    <customValue>
+        <fullName>MEDIUM</fullName>
+        <default>false</default>
+        <label>MEDIUM</label>
+    </customValue>
+    <customValue>
+        <fullName>20KG</fullName>
+        <default>false</default>
+        <label>20KG</label>
+    </customValue>
+    <customValue>
+        <fullName>(BLANKS)</fullName>
+        <default>false</default>
+        <label>(BLANKS)</label>
+    </customValue>
+    <customValue>
+        <fullName>BULK</fullName>
+        <default>false</default>
+        <label>BULK</label>
+    </customValue>
+    <customValue>
+        <fullName>BAG 25 KG</fullName>
+        <default>false</default>
+        <label>BAG 25 KG</label>
+    </customValue>
+    <customValue>
+        <fullName>CARTON 25 KG</fullName>
+        <default>false</default>
+        <label>CARTON 25 KG</label>
+    </customValue>
+    <customValue>
+        <fullName>0.56KG</fullName>
+        <default>false</default>
+        <label>0.56KG</label>
+    </customValue>
+    <customValue>
+        <fullName>25KG</fullName>
+        <default>false</default>
+        <label>25KG</label>
+    </customValue>
+    <customValue>
+        <fullName>0.25KG</fullName>
+        <default>false</default>
+        <label>0.25KG</label>
+    </customValue>
+    <customValue>
+        <fullName>BAG</fullName>
+        <default>false</default>
+        <label>BAG</label>
+    </customValue>
+    <customValue>
+        <fullName>CARTON 20X1 KG</fullName>
+        <default>false</default>
+        <label>CARTON 20X1 KG</label>
+    </customValue>
+    <customValue>
+        <fullName>CARTON 4X5 KG</fullName>
+        <default>false</default>
+        <label>CARTON 4X5 KG</label>
+    </customValue>
+    <customValue>
+        <fullName>BIGBAG 900 KG</fullName>
+        <default>false</default>
+        <label>BIGBAG 900 KG</label>
+    </customValue>
+    <customValue>
+        <fullName>CARTON 1.000 KG</fullName>
+        <default>false</default>
+        <label>CARTON 1.000 KG</label>
+    </customValue>
+    <customValue>
+        <fullName>BIGBAG 1000 KG</fullName>
+        <default>false</default>
+        <label>BIGBAG 1000 KG</label>
+    </customValue>
+    <masterLabel>Pack Size</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

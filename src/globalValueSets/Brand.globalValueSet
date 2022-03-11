@@ -1,0 +1,1585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>5 STAR</fullName>
+        <default>false</default>
+        <label>5 STAR</label>
+    </customValue>
+    <customValue>
+        <fullName>ADECOAGRO</fullName>
+        <default>false</default>
+        <label>ADECOAGRO</label>
+    </customValue>
+    <customValue>
+        <fullName>AGRI-MARK</fullName>
+        <default>false</default>
+        <label>AGRI-MARK</label>
+    </customValue>
+    <customValue>
+        <fullName>AGROPUR</fullName>
+        <default>false</default>
+        <label>AGROPUR</label>
+    </customValue>
+    <customValue>
+        <fullName>ALBAN</fullName>
+        <default>false</default>
+        <label>ALBAN</label>
+    </customValue>
+    <customValue>
+        <fullName>ALIMA</fullName>
+        <default>false</default>
+        <label>ALIMA</label>
+    </customValue>
+    <customValue>
+        <fullName>ALIMENTA</fullName>
+        <default>false</default>
+        <label>ALIMENTA</label>
+    </customValue>
+    <customValue>
+        <fullName>ALISA</fullName>
+        <default>false</default>
+        <label>ALISA</label>
+    </customValue>
+    <customValue>
+        <fullName>Ammerland</fullName>
+        <default>false</default>
+        <label>Ammerland</label>
+    </customValue>
+    <customValue>
+        <fullName>AMUL</fullName>
+        <default>false</default>
+        <label>AMUL</label>
+    </customValue>
+    <customValue>
+        <fullName>ANDRUSHOVCA</fullName>
+        <default>false</default>
+        <label>ANDRUSHOVCA</label>
+    </customValue>
+    <customValue>
+        <fullName>ARGENLAC</fullName>
+        <default>false</default>
+        <label>ARGENLAC</label>
+    </customValue>
+    <customValue>
+        <fullName>ARLA</fullName>
+        <default>false</default>
+        <label>ARLA</label>
+    </customValue>
+    <customValue>
+        <fullName>ARLA DANO</fullName>
+        <default>false</default>
+        <label>ARLA DANO</label>
+    </customValue>
+    <customValue>
+        <fullName>ARRABAWN</fullName>
+        <default>false</default>
+        <label>ARRABAWN</label>
+    </customValue>
+    <customValue>
+        <fullName>ASSOCIATED MILK PRODUCERS</fullName>
+        <default>false</default>
+        <label>ASSOCIATED MILK PRODUCERS</label>
+    </customValue>
+    <customValue>
+        <fullName>AURIVO</fullName>
+        <default>false</default>
+        <label>AURIVO</label>
+    </customValue>
+    <customValue>
+        <fullName>BABUSHKINA KRINKA</fullName>
+        <default>false</default>
+        <label>BABUSHKINA KRINKA</label>
+    </customValue>
+    <customValue>
+        <fullName>BALCHEM</fullName>
+        <default>false</default>
+        <label>BALCHEM</label>
+    </customValue>
+    <customValue>
+        <fullName>Barry Callebaut</fullName>
+        <default>false</default>
+        <label>Barry Callebaut</label>
+    </customValue>
+    <customValue>
+        <fullName>BELGIOIOSO</fullName>
+        <default>false</default>
+        <label>BELGIOIOSO</label>
+    </customValue>
+    <customValue>
+        <fullName>BELGOMILK</fullName>
+        <default>false</default>
+        <label>BELGOMILK</label>
+    </customValue>
+    <customValue>
+        <fullName>BELLADEL</fullName>
+        <default>false</default>
+        <label>BELLADEL</label>
+    </customValue>
+    <customValue>
+        <fullName>BELLAKT</fullName>
+        <default>false</default>
+        <label>BELLAKT</label>
+    </customValue>
+    <customValue>
+        <fullName>BIERUN</fullName>
+        <default>false</default>
+        <label>BIERUN</label>
+    </customValue>
+    <customValue>
+        <fullName>BIERY</fullName>
+        <default>false</default>
+        <label>BIERY</label>
+    </customValue>
+    <customValue>
+        <fullName>BILOSERKIVKA</fullName>
+        <default>false</default>
+        <label>BILOSERKIVKA</label>
+    </customValue>
+    <customValue>
+        <fullName>BINCO</fullName>
+        <default>false</default>
+        <label>BINCO</label>
+    </customValue>
+    <customValue>
+        <fullName>BLOMMER</fullName>
+        <default>false</default>
+        <label>BLOMMER</label>
+    </customValue>
+    <customValue>
+        <fullName>BMI</fullName>
+        <default>false</default>
+        <label>BMI</label>
+    </customValue>
+    <customValue>
+        <fullName>BONGARDS</fullName>
+        <default>false</default>
+        <label>BONGARDS</label>
+    </customValue>
+    <customValue>
+        <fullName>BONLAIT</fullName>
+        <default>false</default>
+        <label>BONLAIT</label>
+    </customValue>
+    <customValue>
+        <fullName>Britannia</fullName>
+        <default>false</default>
+        <label>Britannia</label>
+    </customValue>
+    <customValue>
+        <fullName>BTCocoa</fullName>
+        <default>false</default>
+        <label>BTCocoa</label>
+    </customValue>
+    <customValue>
+        <fullName>BUBBLY COW</fullName>
+        <default>false</default>
+        <label>BUBBLY COW</label>
+    </customValue>
+    <customValue>
+        <fullName>CABOT</fullName>
+        <default>false</default>
+        <label>CABOT</label>
+    </customValue>
+    <customValue>
+        <fullName>CALIFORNIA DAIRIES INC.</fullName>
+        <default>false</default>
+        <label>CALIFORNIA DAIRIES INC.</label>
+    </customValue>
+    <customValue>
+        <fullName>CAPSA</fullName>
+        <default>false</default>
+        <label>CAPSA</label>
+    </customValue>
+    <customValue>
+        <fullName>CARBERY</fullName>
+        <default>false</default>
+        <label>CARBERY</label>
+    </customValue>
+    <customValue>
+        <fullName>Cargill</fullName>
+        <default>false</default>
+        <label>Cargill</label>
+    </customValue>
+    <customValue>
+        <fullName>CAYUGA</fullName>
+        <default>false</default>
+        <label>CAYUGA</label>
+    </customValue>
+    <customValue>
+        <fullName>CHORTITZER</fullName>
+        <default>false</default>
+        <label>CHORTITZER</label>
+    </customValue>
+    <customValue>
+        <fullName>CLALDY</fullName>
+        <default>false</default>
+        <label>CLALDY</label>
+    </customValue>
+    <customValue>
+        <fullName>CLASSIC</fullName>
+        <default>false</default>
+        <label>CLASSIC</label>
+    </customValue>
+    <customValue>
+        <fullName>COLUMBIA RIVER PROCESSING</fullName>
+        <default>false</default>
+        <label>COLUMBIA RIVER PROCESSING</label>
+    </customValue>
+    <customValue>
+        <fullName>COLUN</fullName>
+        <default>false</default>
+        <label>COLUN</label>
+    </customValue>
+    <customValue>
+        <fullName>COMPLIMILK</fullName>
+        <default>false</default>
+        <label>COMPLIMILK</label>
+    </customValue>
+    <customValue>
+        <fullName>CONAPROLE</fullName>
+        <default>false</default>
+        <label>CONAPROLE</label>
+    </customValue>
+    <customValue>
+        <fullName>CONTINENTAL</fullName>
+        <default>false</default>
+        <label>CONTINENTAL</label>
+    </customValue>
+    <customValue>
+        <fullName>CORLASA</fullName>
+        <default>false</default>
+        <label>CORLASA</label>
+    </customValue>
+    <customValue>
+        <fullName>COVAP</fullName>
+        <default>false</default>
+        <label>COVAP</label>
+    </customValue>
+    <customValue>
+        <fullName>COWBELL</fullName>
+        <default>false</default>
+        <label>COWBELL</label>
+    </customValue>
+    <customValue>
+        <fullName>COWMILK</fullName>
+        <default>false</default>
+        <label>COWMILK</label>
+    </customValue>
+    <customValue>
+        <fullName>CREMAC</fullName>
+        <default>false</default>
+        <label>CREMAC</label>
+    </customValue>
+    <customValue>
+        <fullName>CRÈME VALLEY</fullName>
+        <default>false</default>
+        <label>CRÈME VALLEY</label>
+    </customValue>
+    <customValue>
+        <fullName>CUIAVIA</fullName>
+        <default>false</default>
+        <label>CUIAVIA</label>
+    </customValue>
+    <customValue>
+        <fullName>CZARNKAW</fullName>
+        <default>false</default>
+        <label>CZARNKAW</label>
+    </customValue>
+    <customValue>
+        <fullName>DAIRYAMERICA</fullName>
+        <default>false</default>
+        <label>DAIRYAMERICA</label>
+    </customValue>
+    <customValue>
+        <fullName>DAIRY FARMERS OF AMERICA</fullName>
+        <default>false</default>
+        <label>DAIRY FARMERS OF AMERICA</label>
+    </customValue>
+    <customValue>
+        <fullName>DAIRYGOLD</fullName>
+        <default>false</default>
+        <label>DAIRYGOLD</label>
+    </customValue>
+    <customValue>
+        <fullName>DAIRYGOLD IRELAND</fullName>
+        <default>false</default>
+        <label>DAIRYGOLD IRELAND</label>
+    </customValue>
+    <customValue>
+        <fullName>DARI</fullName>
+        <default>false</default>
+        <label>DARI</label>
+    </customValue>
+    <customValue>
+        <fullName>DARIGOLD</fullName>
+        <default>false</default>
+        <label>DARIGOLD</label>
+    </customValue>
+    <customValue>
+        <fullName>deZaan</fullName>
+        <default>false</default>
+        <label>DEZAAN</label>
+    </customValue>
+    <customValue>
+        <fullName>DMK</fullName>
+        <default>false</default>
+        <label>DMK</label>
+    </customValue>
+    <customValue>
+        <fullName>DYNAMIX</fullName>
+        <default>false</default>
+        <label>DYNAMIX</label>
+    </customValue>
+    <customValue>
+        <fullName>ECOM</fullName>
+        <default>false</default>
+        <label>ECOM</label>
+    </customValue>
+    <customValue>
+        <fullName>ELCOR</fullName>
+        <default>false</default>
+        <label>ELCOR</label>
+    </customValue>
+    <customValue>
+        <fullName>ELLSWORTH</fullName>
+        <default>false</default>
+        <label>ELLSWORTH</label>
+    </customValue>
+    <customValue>
+        <fullName>EPI</fullName>
+        <default>false</default>
+        <label>EPI</label>
+    </customValue>
+    <customValue>
+        <fullName>ETOILE</fullName>
+        <default>false</default>
+        <label>ETOILE</label>
+    </customValue>
+    <customValue>
+        <fullName>EURIAL</fullName>
+        <default>false</default>
+        <label>EURIAL</label>
+    </customValue>
+    <customValue>
+        <fullName>EUROSERUM</fullName>
+        <default>false</default>
+        <label>EUROSERUM</label>
+    </customValue>
+    <customValue>
+        <fullName>FARMFEEL</fullName>
+        <default>false</default>
+        <label>FARMFEEL</label>
+    </customValue>
+    <customValue>
+        <fullName>FIRST DISTRICT</fullName>
+        <default>false</default>
+        <label>FIRST DISTRICT</label>
+    </customValue>
+    <customValue>
+        <fullName>FONTERRA</fullName>
+        <default>false</default>
+        <label>Fonterra</label>
+    </customValue>
+    <customValue>
+        <fullName>FORBES</fullName>
+        <default>false</default>
+        <label>FORBES</label>
+    </customValue>
+    <customValue>
+        <fullName>FOREMOST</fullName>
+        <default>false</default>
+        <label>FOREMOST</label>
+    </customValue>
+    <customValue>
+        <fullName>FORMIDABLE</fullName>
+        <default>false</default>
+        <label>FORMIDABLE</label>
+    </customValue>
+    <customValue>
+        <fullName>FORTO</fullName>
+        <default>false</default>
+        <label>FORTO</label>
+    </customValue>
+    <customValue>
+        <fullName>FOSTERS/CRYSTAL CREAMERY</fullName>
+        <default>false</default>
+        <label>FOSTERS/CRYSTAL CREAMERY</label>
+    </customValue>
+    <customValue>
+        <fullName>FRISCHLI</fullName>
+        <default>false</default>
+        <label>FRISCHLI</label>
+    </customValue>
+    <customValue>
+        <fullName>FUDE &amp; SERAHN</fullName>
+        <default>false</default>
+        <label>FUDE &amp; SERAHN</label>
+    </customValue>
+    <customValue>
+        <fullName>GARDO</fullName>
+        <default>false</default>
+        <label>GARDO</label>
+    </customValue>
+    <customValue>
+        <fullName>GARWOLIN</fullName>
+        <default>false</default>
+        <label>GARWOLIN</label>
+    </customValue>
+    <customValue>
+        <fullName>GAY LEA</fullName>
+        <default>false</default>
+        <label>GAY LEA</label>
+    </customValue>
+    <customValue>
+        <fullName>GHIRARDELLI</fullName>
+        <default>false</default>
+        <label>GHIRARDELLI</label>
+    </customValue>
+    <customValue>
+        <fullName>GLANBIA</fullName>
+        <default>false</default>
+        <label>GLANBIA</label>
+    </customValue>
+    <customValue>
+        <fullName>GOLDEN HOPE</fullName>
+        <default>false</default>
+        <label>GOLDEN HOPE</label>
+    </customValue>
+    <customValue>
+        <fullName>GOLDLAIT</fullName>
+        <default>false</default>
+        <label>GOLDLAIT</label>
+    </customValue>
+    <customValue>
+        <fullName>GOSTYN</fullName>
+        <default>false</default>
+        <label>GOSTYN</label>
+    </customValue>
+    <customValue>
+        <fullName>GOURMET TREAT</fullName>
+        <default>false</default>
+        <label>GOURMET TREAT</label>
+    </customValue>
+    <customValue>
+        <fullName>GOVIND</fullName>
+        <default>false</default>
+        <label>GOVIND</label>
+    </customValue>
+    <customValue>
+        <fullName>GRAND MEADOW</fullName>
+        <default>false</default>
+        <label>Grand meadow</label>
+    </customValue>
+    <customValue>
+        <fullName>GRASSLAND</fullName>
+        <default>false</default>
+        <label>GRASSLAND</label>
+    </customValue>
+    <customValue>
+        <fullName>GREAT LAKES</fullName>
+        <default>false</default>
+        <label>GREAT LAKES</label>
+    </customValue>
+    <customValue>
+        <fullName>GREEN FLAG</fullName>
+        <default>false</default>
+        <label>GREEN FLAG</label>
+    </customValue>
+    <customValue>
+        <fullName>GREEN MOUNTAIN</fullName>
+        <default>false</default>
+        <label>GREEN MOUNTAIN</label>
+    </customValue>
+    <customValue>
+        <fullName>Guan Chong</fullName>
+        <default>false</default>
+        <label>Guan Chong</label>
+    </customValue>
+    <customValue>
+        <fullName>GUITTARD</fullName>
+        <default>false</default>
+        <label>GUITTARD</label>
+    </customValue>
+    <customValue>
+        <fullName>HAANO</fullName>
+        <default>false</default>
+        <label>HAANO</label>
+    </customValue>
+    <customValue>
+        <fullName>HAPPY COW</fullName>
+        <default>false</default>
+        <label>HAPPY COW</label>
+    </customValue>
+    <customValue>
+        <fullName>HAPPYLAIT</fullName>
+        <default>false</default>
+        <label>HAPPYLAIT</label>
+    </customValue>
+    <customValue>
+        <fullName>HAPPYLAIT POPULAR</fullName>
+        <default>false</default>
+        <label>HAPPYLAIT POPULAR</label>
+    </customValue>
+    <customValue>
+        <fullName>HIGH DESERT</fullName>
+        <default>false</default>
+        <label>HIGH DESERT</label>
+    </customValue>
+    <customValue>
+        <fullName>HILMAR</fullName>
+        <default>false</default>
+        <label>HILMAR</label>
+    </customValue>
+    <customValue>
+        <fullName>HOCHWACH</fullName>
+        <default>false</default>
+        <label>HOCHWACH</label>
+    </customValue>
+    <customValue>
+        <fullName>Huysman</fullName>
+        <default>false</default>
+        <label>HUYSMAN</label>
+    </customValue>
+    <customValue>
+        <fullName>ICHYNYA DAIRY</fullName>
+        <default>false</default>
+        <label>ICHYNYA DAIRY</label>
+    </customValue>
+    <customValue>
+        <fullName>IFPC</fullName>
+        <default>false</default>
+        <label>IFPC</label>
+    </customValue>
+    <customValue>
+        <fullName>ILLINTSI</fullName>
+        <default>false</default>
+        <label>ILLINTSI</label>
+    </customValue>
+    <customValue>
+        <fullName>ILOLAY</fullName>
+        <default>false</default>
+        <label>ILOLAY</label>
+    </customValue>
+    <customValue>
+        <fullName>IMPERIAL</fullName>
+        <default>false</default>
+        <label>IMPERIAL</label>
+    </customValue>
+    <customValue>
+        <fullName>INDAPUR</fullName>
+        <default>false</default>
+        <label>INDAPUR</label>
+    </customValue>
+    <customValue>
+        <fullName>INDCRESA</fullName>
+        <default>false</default>
+        <label>INDCRESA</label>
+    </customValue>
+    <customValue>
+        <fullName>ISIGNY</fullName>
+        <default>false</default>
+        <label>ISIGNY</label>
+    </customValue>
+    <customValue>
+        <fullName>JBCocoa</fullName>
+        <default>false</default>
+        <label>JBCocoa</label>
+    </customValue>
+    <customValue>
+        <fullName>KALINKOVICHI</fullName>
+        <default>false</default>
+        <label>KALINKOVICHI</label>
+    </customValue>
+    <customValue>
+        <fullName>KARAM</fullName>
+        <default>false</default>
+        <label>KARAM</label>
+    </customValue>
+    <customValue>
+        <fullName>KERRY</fullName>
+        <default>false</default>
+        <label>KERRY</label>
+    </customValue>
+    <customValue>
+        <fullName>KMK</fullName>
+        <default>false</default>
+        <label>KMK</label>
+    </customValue>
+    <customValue>
+        <fullName>KOLO</fullName>
+        <default>false</default>
+        <label>KOLO</label>
+    </customValue>
+    <customValue>
+        <fullName>KOMO</fullName>
+        <default>false</default>
+        <label>KOMO</label>
+    </customValue>
+    <customValue>
+        <fullName>KRAFT</fullName>
+        <default>false</default>
+        <label>KRAFT</label>
+    </customValue>
+    <customValue>
+        <fullName>LACPATRICK</fullName>
+        <default>false</default>
+        <label>LACPATRICK</label>
+    </customValue>
+    <customValue>
+        <fullName>LACPOL</fullName>
+        <default>false</default>
+        <label>LACPOL</label>
+    </customValue>
+    <customValue>
+        <fullName>LACTALIS</fullName>
+        <default>false</default>
+        <label>LACTALIS</label>
+    </customValue>
+    <customValue>
+        <fullName>LACTOGAL</fullName>
+        <default>false</default>
+        <label>LACTOGAL</label>
+    </customValue>
+    <customValue>
+        <fullName>LACTOLAND</fullName>
+        <default>false</default>
+        <label>LACTOLAND</label>
+    </customValue>
+    <customValue>
+        <fullName>LACTOLANDA</fullName>
+        <default>false</default>
+        <label>LACTOLANDA</label>
+    </customValue>
+    <customValue>
+        <fullName>LACTORICH</fullName>
+        <default>false</default>
+        <label>LACTORICH</label>
+    </customValue>
+    <customValue>
+        <fullName>LACTORICH POPULAR</fullName>
+        <default>false</default>
+        <label>LACTORICH POPULAR</label>
+    </customValue>
+    <customValue>
+        <fullName>LAICRAN</fullName>
+        <default>false</default>
+        <label>LAICRAN</label>
+    </customValue>
+    <customValue>
+        <fullName>LAKELAND</fullName>
+        <default>false</default>
+        <label>LAKELAND</label>
+    </customValue>
+    <customValue>
+        <fullName>LAKEVIEW CHEESE</fullName>
+        <default>false</default>
+        <label>LAKEVIEW CHEESE</label>
+    </customValue>
+    <customValue>
+        <fullName>LAKTOPOL</fullName>
+        <default>false</default>
+        <label>LAKTOPOL</label>
+    </customValue>
+    <customValue>
+        <fullName>LANCY</fullName>
+        <default>false</default>
+        <label>LANCY</label>
+    </customValue>
+    <customValue>
+        <fullName>LAND O&apos;LAKES</fullName>
+        <default>false</default>
+        <label>LAND O&apos;LAKES</label>
+    </customValue>
+    <customValue>
+        <fullName>LA RAMADA</fullName>
+        <default>false</default>
+        <label>LA RAMADA</label>
+    </customValue>
+    <customValue>
+        <fullName>LA TONADITA</fullName>
+        <default>false</default>
+        <label>LA TONADITA</label>
+    </customValue>
+    <customValue>
+        <fullName>LEADER</fullName>
+        <default>false</default>
+        <label>LEADER</label>
+    </customValue>
+    <customValue>
+        <fullName>LEPEL</fullName>
+        <default>false</default>
+        <label>LEPEL</label>
+    </customValue>
+    <customValue>
+        <fullName>LEPRINO</fullName>
+        <default>false</default>
+        <label>LEPRINO</label>
+    </customValue>
+    <customValue>
+        <fullName>LIMA</fullName>
+        <default>false</default>
+        <label>LIMA</label>
+    </customValue>
+    <customValue>
+        <fullName>LIMELCO</fullName>
+        <default>false</default>
+        <label>LIMELCO</label>
+    </customValue>
+    <customValue>
+        <fullName>LONE STAR</fullName>
+        <default>false</default>
+        <label>LONE STAR</label>
+    </customValue>
+    <customValue>
+        <fullName>LOWICZ</fullName>
+        <default>false</default>
+        <label>LOWICZ</label>
+    </customValue>
+    <customValue>
+        <fullName>LUMIKO</fullName>
+        <default>false</default>
+        <label>LUMIKO</label>
+    </customValue>
+    <customValue>
+        <fullName>LUNINETS</fullName>
+        <default>false</default>
+        <label>LUNINETS</label>
+    </customValue>
+    <customValue>
+        <fullName>LYNN</fullName>
+        <default>false</default>
+        <label>LYNN</label>
+    </customValue>
+    <customValue>
+        <fullName>Macao</fullName>
+        <default>false</default>
+        <label>MACAO</label>
+    </customValue>
+    <customValue>
+        <fullName>MAGNALAT</fullName>
+        <default>false</default>
+        <label>MAGNALAT</label>
+    </customValue>
+    <customValue>
+        <fullName>MANFREY</fullName>
+        <default>false</default>
+        <label>MANFREY</label>
+    </customValue>
+    <customValue>
+        <fullName>MARIJAMPOLES</fullName>
+        <default>false</default>
+        <label>MARIJAMPOLES</label>
+    </customValue>
+    <customValue>
+        <fullName>MARYLAND-VIRGINIA MILK</fullName>
+        <default>false</default>
+        <label>MARYLAND-VIRGINIA MILK</label>
+    </customValue>
+    <customValue>
+        <fullName>MASTELLONE</fullName>
+        <default>false</default>
+        <label>MASTELLONE</label>
+    </customValue>
+    <customValue>
+        <fullName>MASTER GALLERY</fullName>
+        <default>false</default>
+        <label>MASTER GALLERY</label>
+    </customValue>
+    <customValue>
+        <fullName>MATAURA VALLEY MILK</fullName>
+        <default>false</default>
+        <label>MATAURA VALLEY MILK</label>
+    </customValue>
+    <customValue>
+        <fullName>MEADOWCUP</fullName>
+        <default>false</default>
+        <label>MEADOWCUP</label>
+    </customValue>
+    <customValue>
+        <fullName>MEADOW CUP</fullName>
+        <default>false</default>
+        <label>MEADOW CUP</label>
+    </customValue>
+    <customValue>
+        <fullName>MEADOW FOODS</fullName>
+        <default>false</default>
+        <label>MEADOW FOODS</label>
+    </customValue>
+    <customValue>
+        <fullName>MEISTER</fullName>
+        <default>false</default>
+        <label>MEISTER</label>
+    </customValue>
+    <customValue>
+        <fullName>MICHIGAN MILK PRODUCERS</fullName>
+        <default>false</default>
+        <label>MICHIGAN MILK PRODUCERS</label>
+    </customValue>
+    <customValue>
+        <fullName>MIKSI</fullName>
+        <default>false</default>
+        <label>MIKSI</label>
+    </customValue>
+    <customValue>
+        <fullName>MILIDA</fullName>
+        <default>false</default>
+        <label>MILIDA</label>
+    </customValue>
+    <customValue>
+        <fullName>MILK ALLIANCE</fullName>
+        <default>false</default>
+        <label>MILK ALLIANCE</label>
+    </customValue>
+    <customValue>
+        <fullName>MILKAUT</fullName>
+        <default>false</default>
+        <label>MILKAUT</label>
+    </customValue>
+    <customValue>
+        <fullName>MILKAVITA</fullName>
+        <default>false</default>
+        <label>MILKAVITA</label>
+    </customValue>
+    <customValue>
+        <fullName>MILK HOUSE BLUE</fullName>
+        <default>false</default>
+        <label>MILK HOUSE BLUE</label>
+    </customValue>
+    <customValue>
+        <fullName>MILK HOUSE BLUE POPULAR</fullName>
+        <default>false</default>
+        <label>MILK HOUSE BLUE POPULAR</label>
+    </customValue>
+    <customValue>
+        <fullName>MILKILAND</fullName>
+        <default>false</default>
+        <label>MILKILAND</label>
+    </customValue>
+    <customValue>
+        <fullName>MILKY</fullName>
+        <default>false</default>
+        <label>MILKY</label>
+    </customValue>
+    <customValue>
+        <fullName>MILKY COW</fullName>
+        <default>false</default>
+        <label>MILKY COW</label>
+    </customValue>
+    <customValue>
+        <fullName>MILLAC</fullName>
+        <default>false</default>
+        <label>MILLAC</label>
+    </customValue>
+    <customValue>
+        <fullName>MILLAC CHAMPION</fullName>
+        <default>false</default>
+        <label>MILLAC CHAMPION</label>
+    </customValue>
+    <customValue>
+        <fullName>MIXWELL</fullName>
+        <default>false</default>
+        <label>MIXWELL</label>
+    </customValue>
+    <customValue>
+        <fullName>MLEKOVITA</fullName>
+        <default>false</default>
+        <label>MLEKOVITA</label>
+    </customValue>
+    <customValue>
+        <fullName>MLEKPOL</fullName>
+        <default>false</default>
+        <label>MLEKPOL</label>
+    </customValue>
+    <customValue>
+        <fullName>MOLFINO</fullName>
+        <default>false</default>
+        <label>MOLFINO</label>
+    </customValue>
+    <customValue>
+        <fullName>MOLKEREI AMMERLAND</fullName>
+        <default>false</default>
+        <label>MOLKEREI AMMERLAND</label>
+    </customValue>
+    <customValue>
+        <fullName>MOLOCHNIY MIR</fullName>
+        <default>false</default>
+        <label>MOLOCHNIY MIR</label>
+    </customValue>
+    <customValue>
+        <fullName>MONKI</fullName>
+        <default>false</default>
+        <label>MONKI</label>
+    </customValue>
+    <customValue>
+        <fullName>MONTAIGU</fullName>
+        <default>false</default>
+        <label>MONTAIGU</label>
+    </customValue>
+    <customValue>
+        <fullName>MORMILK</fullName>
+        <default>false</default>
+        <label>MORMILK</label>
+    </customValue>
+    <customValue>
+        <fullName>MULLINS</fullName>
+        <default>false</default>
+        <label>MULLINS</label>
+    </customValue>
+    <customValue>
+        <fullName>Murray Goulburn</fullName>
+        <default>false</default>
+        <label>Murray Goulburn</label>
+    </customValue>
+    <customValue>
+        <fullName>NASONVILLE</fullName>
+        <default>false</default>
+        <label>NASONVILLE</label>
+    </customValue>
+    <customValue>
+        <fullName>NATRA</fullName>
+        <default>false</default>
+        <label>NATRA</label>
+    </customValue>
+    <customValue>
+        <fullName>NEDERLAND</fullName>
+        <default>false</default>
+        <label>NEDERLAND</label>
+    </customValue>
+    <customValue>
+        <fullName>NESTLE</fullName>
+        <default>false</default>
+        <label>NESTLE</label>
+    </customValue>
+    <customValue>
+        <fullName>NOAL</fullName>
+        <default>false</default>
+        <label>NOAL</label>
+    </customValue>
+    <customValue>
+        <fullName>NOVA</fullName>
+        <default>false</default>
+        <label>NOVA</label>
+    </customValue>
+    <customValue>
+        <fullName>NUMIGOLD</fullName>
+        <default>false</default>
+        <label>NUMIGOLD</label>
+    </customValue>
+    <customValue>
+        <fullName>NUNU</fullName>
+        <default>false</default>
+        <label>NUNU</label>
+    </customValue>
+    <customValue>
+        <fullName>O-AT-KA</fullName>
+        <default>false</default>
+        <label>O-AT-KA</label>
+    </customValue>
+    <customValue>
+        <fullName>OCENIA DAIRY</fullName>
+        <default>false</default>
+        <label>OCENIA DAIRY</label>
+    </customValue>
+    <customValue>
+        <fullName>OPEN COUNTRY DAIRY</fullName>
+        <default>false</default>
+        <label>OPEN COUNTRY DAIRY</label>
+    </customValue>
+    <customValue>
+        <fullName>ORGANIC VALLEY/CROPP</fullName>
+        <default>false</default>
+        <label>ORGANIC VALLEY/CROPP</label>
+    </customValue>
+    <customValue>
+        <fullName>ORNUA</fullName>
+        <default>false</default>
+        <label>ORNUA</label>
+    </customValue>
+    <customValue>
+        <fullName>OSTMILCH</fullName>
+        <default>false</default>
+        <label>OSTMILCH</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHERS</fullName>
+        <default>false</default>
+        <label>OTHERS</label>
+    </customValue>
+    <customValue>
+        <fullName>PACIFIC CHEESE</fullName>
+        <default>false</default>
+        <label>PACIFIC CHEESE</label>
+    </customValue>
+    <customValue>
+        <fullName>PAMPA CHEESE</fullName>
+        <default>false</default>
+        <label>PAMPA CHEESE</label>
+    </customValue>
+    <customValue>
+        <fullName>PARAS</fullName>
+        <default>false</default>
+        <label>PARAS</label>
+    </customValue>
+    <customValue>
+        <fullName>PASLEK</fullName>
+        <default>false</default>
+        <label>PASLEK</label>
+    </customValue>
+    <customValue>
+        <fullName>PEARL</fullName>
+        <default>false</default>
+        <label>PEARL</label>
+    </customValue>
+    <customValue>
+        <fullName>PIENO ZVAIGZDES</fullName>
+        <default>false</default>
+        <label>PIENO ZVAIGZDES</label>
+    </customValue>
+    <customValue>
+        <fullName>PLAIN BAG</fullName>
+        <default>false</default>
+        <label>PLAIN BAG</label>
+    </customValue>
+    <customValue>
+        <fullName>PLAINVIEW</fullName>
+        <default>false</default>
+        <label>PLAINVIEW</label>
+    </customValue>
+    <customValue>
+        <fullName>POLMLEK</fullName>
+        <default>false</default>
+        <label>POLMLEK</label>
+    </customValue>
+    <customValue>
+        <fullName>POLOTSK</fullName>
+        <default>false</default>
+        <label>POLOTSK</label>
+    </customValue>
+    <customValue>
+        <fullName>PRABHAT</fullName>
+        <default>false</default>
+        <label>PRABHAT</label>
+    </customValue>
+    <customValue>
+        <fullName>PREPLAIT BLUE</fullName>
+        <default>false</default>
+        <label>PREPLAIT BLUE</label>
+    </customValue>
+    <customValue>
+        <fullName>PREPLAIT GREEN</fullName>
+        <default>false</default>
+        <label>PREPLAIT GREEN</label>
+    </customValue>
+    <customValue>
+        <fullName>PREPLAIT RED</fullName>
+        <default>false</default>
+        <label>PREPLAIT RED</label>
+    </customValue>
+    <customValue>
+        <fullName>PRIMEMILK</fullName>
+        <default>false</default>
+        <label>PRIMEMILK</label>
+    </customValue>
+    <customValue>
+        <fullName>PRIMOO</fullName>
+        <default>false</default>
+        <label>PRIMOO</label>
+    </customValue>
+    <customValue>
+        <fullName>PUNTA DEL AGUA</fullName>
+        <default>false</default>
+        <label>PUNTA DEL AGUA</label>
+    </customValue>
+    <customValue>
+        <fullName>PURA</fullName>
+        <default>false</default>
+        <label>PURA</label>
+    </customValue>
+    <customValue>
+        <fullName>PURISIMA</fullName>
+        <default>false</default>
+        <label>PURISIMA</label>
+    </customValue>
+    <customValue>
+        <fullName>RADOMSKO</fullName>
+        <default>false</default>
+        <label>RADOMSKO</label>
+    </customValue>
+    <customValue>
+        <fullName>RAMOLAC</fullName>
+        <default>false</default>
+        <label>RAMOLAC</label>
+    </customValue>
+    <customValue>
+        <fullName>RECORD</fullName>
+        <default>false</default>
+        <label>RECORD</label>
+    </customValue>
+    <customValue>
+        <fullName>REGAL GOLD</fullName>
+        <default>false</default>
+        <label>REGAL GOLD</label>
+    </customValue>
+    <customValue>
+        <fullName>REGINA</fullName>
+        <default>false</default>
+        <label>REGINA</label>
+    </customValue>
+    <customValue>
+        <fullName>REMOTTI</fullName>
+        <default>false</default>
+        <label>REMOTTI</label>
+    </customValue>
+    <customValue>
+        <fullName>RENNY PICOT</fullName>
+        <default>false</default>
+        <label>RENNY PICOT</label>
+    </customValue>
+    <customValue>
+        <fullName>RIGAS PIENAS</fullName>
+        <default>false</default>
+        <label>RIGAS PIENAS</label>
+    </customValue>
+    <customValue>
+        <fullName>ROIKISKIOS</fullName>
+        <default>false</default>
+        <label>ROIKISKIOS</label>
+    </customValue>
+    <customValue>
+        <fullName>ROSHEN</fullName>
+        <default>false</default>
+        <label>ROSHEN</label>
+    </customValue>
+    <customValue>
+        <fullName>ROYAL FRIESLAND CAMPINA</fullName>
+        <default>false</default>
+        <label>ROYAL FRIESLAND CAMPINA</label>
+    </customValue>
+    <customValue>
+        <fullName>ROYAL MILK</fullName>
+        <default>false</default>
+        <label>ROYAL MILK</label>
+    </customValue>
+    <customValue>
+        <fullName>RUCKER</fullName>
+        <default>false</default>
+        <label>RUCKER</label>
+    </customValue>
+    <customValue>
+        <fullName>RYKI</fullName>
+        <default>false</default>
+        <label>RYKI</label>
+    </customValue>
+    <customValue>
+        <fullName>SACHSENMILCH</fullName>
+        <default>false</default>
+        <label>SACHSENMILCH</label>
+    </customValue>
+    <customValue>
+        <fullName>SAHEM</fullName>
+        <default>false</default>
+        <label>SAHEM</label>
+    </customValue>
+    <customValue>
+        <fullName>SAMA</fullName>
+        <default>false</default>
+        <label>SAMA</label>
+    </customValue>
+    <customValue>
+        <fullName>SANO</fullName>
+        <default>false</default>
+        <label>SANO</label>
+    </customValue>
+    <customValue>
+        <fullName>SANTA CLARA</fullName>
+        <default>false</default>
+        <label>SANTA CLARA</label>
+    </customValue>
+    <customValue>
+        <fullName>SAPUTO</fullName>
+        <default>false</default>
+        <label>SAPUTO</label>
+    </customValue>
+    <customValue>
+        <fullName>SAVUSHKIN</fullName>
+        <default>false</default>
+        <label>SAVUSHKIN</label>
+    </customValue>
+    <customValue>
+        <fullName>SCHREIBER</fullName>
+        <default>false</default>
+        <label>SCHREIBER</label>
+    </customValue>
+    <customValue>
+        <fullName>SILVA</fullName>
+        <default>false</default>
+        <label>SILVA</label>
+    </customValue>
+    <customValue>
+        <fullName>SIMI</fullName>
+        <default>false</default>
+        <label>SIMI</label>
+    </customValue>
+    <customValue>
+        <fullName>SKIERNIEWICE</fullName>
+        <default>false</default>
+        <label>SKIERNIEWICE</label>
+    </customValue>
+    <customValue>
+        <fullName>SLIMCOW</fullName>
+        <default>false</default>
+        <label>SLIMCOW</label>
+    </customValue>
+    <customValue>
+        <fullName>SLIMCOW POPULAR</fullName>
+        <default>false</default>
+        <label>SLIMCOW POPULAR</label>
+    </customValue>
+    <customValue>
+        <fullName>SOFIVO</fullName>
+        <default>false</default>
+        <label>SOFIVO</label>
+    </customValue>
+    <customValue>
+        <fullName>SOLAREC</fullName>
+        <default>false</default>
+        <label>SOLAREC</label>
+    </customValue>
+    <customValue>
+        <fullName>SOLUS</fullName>
+        <default>false</default>
+        <label>SOLUS</label>
+    </customValue>
+    <customValue>
+        <fullName>SONAI</fullName>
+        <default>false</default>
+        <label>SONAI</label>
+    </customValue>
+    <customValue>
+        <fullName>SOPROLE</fullName>
+        <default>false</default>
+        <label>SOPROLE</label>
+    </customValue>
+    <customValue>
+        <fullName>SOUTHWEST CHEESE</fullName>
+        <default>false</default>
+        <label>SOUTHWEST CHEESE</label>
+    </customValue>
+    <customValue>
+        <fullName>ST. ALBANS</fullName>
+        <default>false</default>
+        <label>ST. ALBANS</label>
+    </customValue>
+    <customValue>
+        <fullName>STAROCONSTANTINOV</fullName>
+        <default>false</default>
+        <label>STAROCONSTANTINOV</label>
+    </customValue>
+    <customValue>
+        <fullName>SUPERCOW</fullName>
+        <default>false</default>
+        <label>SUPERCOW</label>
+    </customValue>
+    <customValue>
+        <fullName>SUPERCOW POPULAR</fullName>
+        <default>false</default>
+        <label>SUPERCOW POPULAR</label>
+    </customValue>
+    <customValue>
+        <fullName>SWISS VALLEY</fullName>
+        <default>false</default>
+        <label>SWISS VALLEY</label>
+    </customValue>
+    <customValue>
+        <fullName>SYNLAIT</fullName>
+        <default>false</default>
+        <label>SYNLAIT</label>
+    </customValue>
+    <customValue>
+        <fullName>TASTYLAIT</fullName>
+        <default>false</default>
+        <label>TASTYLAIT</label>
+    </customValue>
+    <customValue>
+        <fullName>TATE &amp; LYLE</fullName>
+        <default>false</default>
+        <label>TATE &amp; LYLE</label>
+    </customValue>
+    <customValue>
+        <fullName>TATURA</fullName>
+        <default>false</default>
+        <label>TATURA</label>
+    </customValue>
+    <customValue>
+        <fullName>TERRA FOOD</fullName>
+        <default>false</default>
+        <label>TERRA FOOD</label>
+    </customValue>
+    <customValue>
+        <fullName>THE UNION DAIRY COMPANY ( UDC)</fullName>
+        <default>false</default>
+        <label>THE UNION DAIRY COMPANY ( UDC)</label>
+    </customValue>
+    <customValue>
+        <fullName>TILLAMOOK</fullName>
+        <default>false</default>
+        <label>TILLAMOOK</label>
+    </customValue>
+    <customValue>
+        <fullName>TOUS LES JOUR</fullName>
+        <default>false</default>
+        <label>TOUS LES JOUR</label>
+    </customValue>
+    <customValue>
+        <fullName>TREGAR</fullName>
+        <default>false</default>
+        <label>TREGAR</label>
+    </customValue>
+    <customValue>
+        <fullName>UCP</fullName>
+        <default>false</default>
+        <label>UCP</label>
+    </customValue>
+    <customValue>
+        <fullName>UELZENA</fullName>
+        <default>false</default>
+        <label>UELZENA</label>
+    </customValue>
+    <customValue>
+        <fullName>Unicao</fullName>
+        <default>false</default>
+        <label>UNICAO</label>
+    </customValue>
+    <customValue>
+        <fullName>UNITED DAIRYMEN OF ARIZONA</fullName>
+        <default>false</default>
+        <label>UNITED DAIRYMEN OF ARIZONA</label>
+    </customValue>
+    <customValue>
+        <fullName>VALLEY MILK</fullName>
+        <default>false</default>
+        <label>VALLEY MILK</label>
+    </customValue>
+    <customValue>
+        <fullName>VALLEY QUEEN</fullName>
+        <default>false</default>
+        <label>VALLEY QUEEN</label>
+    </customValue>
+    <customValue>
+        <fullName>VERONICA</fullName>
+        <default>false</default>
+        <label>VERONICA</label>
+    </customValue>
+    <customValue>
+        <fullName>VILKISHKI</fullName>
+        <default>false</default>
+        <label>VILKISHKI</label>
+    </customValue>
+    <customValue>
+        <fullName>VOLAC</fullName>
+        <default>false</default>
+        <label>VOLAC</label>
+    </customValue>
+    <customValue>
+        <fullName>VREUGDENHIL</fullName>
+        <default>false</default>
+        <label>VREUGDENHIL</label>
+    </customValue>
+    <customValue>
+        <fullName>WARRNAMBOOL</fullName>
+        <default>false</default>
+        <label>WARRNAMBOOL</label>
+    </customValue>
+    <customValue>
+        <fullName>WESTLAND</fullName>
+        <default>false</default>
+        <label>WESTLAND</label>
+    </customValue>
+    <customValue>
+        <fullName>WHITE RIVER</fullName>
+        <default>false</default>
+        <label>WHITE RIVER</label>
+    </customValue>
+    <customValue>
+        <fullName>WINONA</fullName>
+        <default>false</default>
+        <label>WINONA</label>
+    </customValue>
+    <customValue>
+        <fullName>WISCONSIN WHEY PROTEIN</fullName>
+        <default>false</default>
+        <label>WISCONSIN WHEY PROTEIN</label>
+    </customValue>
+    <customValue>
+        <fullName>YEW TREE</fullName>
+        <default>false</default>
+        <label>YEW TREE</label>
+    </customValue>
+    <customValue>
+        <fullName>ZEMAJTOS</fullName>
+        <default>false</default>
+        <label>ZEMAJTOS</label>
+    </customValue>
+    <customValue>
+        <fullName>ZOMA</fullName>
+        <default>false</default>
+        <label>ZOMA</label>
+    </customValue>
+    <customValue>
+        <fullName>ZVENYGORODKA</fullName>
+        <default>false</default>
+        <label>ZVENYGORODKA</label>
+    </customValue>
+    <customValue>
+        <fullName>BT</fullName>
+        <default>false</default>
+        <label>BT</label>
+    </customValue>
+    <customValue>
+        <fullName>BLANK</fullName>
+        <default>false</default>
+        <label>BLANK</label>
+    </customValue>
+    <customValue>
+        <fullName>HERSHEY</fullName>
+        <default>false</default>
+        <label>HERSHEY</label>
+    </customValue>
+    <customValue>
+        <fullName>JOANES</fullName>
+        <default>false</default>
+        <label>JOANES</label>
+    </customValue>
+    <customValue>
+        <fullName>NEUTRAL</fullName>
+        <default>false</default>
+        <label>NEUTRAL</label>
+    </customValue>
+    <customValue>
+        <fullName>STARBUCKS</fullName>
+        <default>false</default>
+        <label>STARBUCKS</label>
+    </customValue>
+    <customValue>
+        <fullName>CPKELCO</fullName>
+        <default>false</default>
+        <label>CPKELCO</label>
+    </customValue>
+    <customValue>
+        <fullName>DAMIN</fullName>
+        <default>false</default>
+        <label>DAMIN</label>
+    </customValue>
+    <customValue>
+        <fullName>GC</fullName>
+        <default>false</default>
+        <label>GC</label>
+    </customValue>
+    <customValue>
+        <fullName>NICHE</fullName>
+        <default>false</default>
+        <label>NICHE</label>
+    </customValue>
+    <customValue>
+        <fullName>PLOT</fullName>
+        <default>false</default>
+        <label>PLOT</label>
+    </customValue>
+    <customValue>
+        <fullName>TRIAL</fullName>
+        <default>false</default>
+        <label>TRIAL</label>
+    </customValue>
+    <customValue>
+        <fullName>AUSNUTRIA</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>AUSNUTRIA</label>
+    </customValue>
+    <customValue>
+        <fullName>OCD</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>OCD</label>
+    </customValue>
+    <customValue>
+        <fullName>CANDIA</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CANDIA</label>
+    </customValue>
+    <customValue>
+        <fullName>DALE FARM</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>DALE FARM</label>
+    </customValue>
+    <customValue>
+        <fullName>GUT VON HOLSTEIN</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>GUT VON HOLSTEIN</label>
+    </customValue>
+    <customValue>
+        <fullName>LECHE CELTA</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>LECHE CELTA</label>
+    </customValue>
+    <customValue>
+        <fullName>MULLER</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>MULLER</label>
+    </customValue>
+    <customValue>
+        <fullName>OLYMPIA</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>OLYMPIA</label>
+    </customValue>
+    <customValue>
+        <fullName>JAGR</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>JAGR</label>
+    </customValue>
+    <customValue>
+        <fullName>SPOMLEK</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>SPOMLEK</label>
+    </customValue>
+    <customValue>
+        <fullName>VALIO</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>VALIO</label>
+    </customValue>
+    <customValue>
+        <fullName>VALMIERAS</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>VALMIERAS</label>
+    </customValue>
+    <customValue>
+        <fullName>ZOTT</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>ZOTT</label>
+    </customValue>
+    <customValue>
+        <fullName>VIV BUISMAN</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>VIV BUISMAN</label>
+    </customValue>
+    <customValue>
+        <fullName>BAYERNLAND</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>BAYERNLAND</label>
+    </customValue>
+    <masterLabel>Brand</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

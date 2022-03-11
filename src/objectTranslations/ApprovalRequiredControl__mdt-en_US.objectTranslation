@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>ApprovalRequiredControl</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>ApprovalRequiredControl</value>
+    </caseValues>
+    <fields>
+        <label><!-- Business Unit --></label>
+        <name>Business_Unit__c</name>
+        <picklistValues>
+            <masterLabel>Cocoa</masterLabel>
+            <translation><!-- Cocoa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dairy</masterLabel>
+            <translation><!-- Dairy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edible_Nuts</masterLabel>
+            <translation><!-- Edible_Nuts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spice</masterLabel>
+            <translation><!-- Spice --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+        <picklistValues>
+            <masterLabel>APAC</masterLabel>
+            <translation><!-- APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMENA</masterLabel>
+            <translation><!-- EMENA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USA</masterLabel>
+            <translation><!-- USA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Required? --></label>
+        <name>Required__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

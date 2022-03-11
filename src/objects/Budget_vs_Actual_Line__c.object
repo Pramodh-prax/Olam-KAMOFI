@@ -1,0 +1,3029 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Actuals__c</fullName>
+        <externalId>false</externalId>
+        <label>Actual Volume</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Application__c</fullName>
+        <externalId>false</externalId>
+        <label>Application</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Business_Unit__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetName>Application</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Brand__c</fullName>
+        <externalId>false</externalId>
+        <label>Brand</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>BLANK</fullName>
+                    <default>false</default>
+                    <label>BLANK</label>
+                </value>
+                <value>
+                    <fullName>DEZAAN</fullName>
+                    <default>false</default>
+                    <label>DEZAAN</label>
+                </value>
+                <value>
+                    <fullName>HERSHEY</fullName>
+                    <default>false</default>
+                    <label>HERSHEY</label>
+                </value>
+                <value>
+                    <fullName>HUYSMAN</fullName>
+                    <default>false</default>
+                    <label>HUYSMAN</label>
+                </value>
+                <value>
+                    <fullName>JOANES</fullName>
+                    <default>false</default>
+                    <label>JOANES</label>
+                </value>
+                <value>
+                    <fullName>MACAO</fullName>
+                    <default>false</default>
+                    <label>MACAO</label>
+                </value>
+                <value>
+                    <fullName>NEUTRAL</fullName>
+                    <default>false</default>
+                    <label>NEUTRAL</label>
+                </value>
+                <value>
+                    <fullName>STARBUCKS</fullName>
+                    <default>false</default>
+                    <label>STARBUCKS</label>
+                </value>
+                <value>
+                    <fullName>UNICAO</fullName>
+                    <default>false</default>
+                    <label>UNICAO</label>
+                </value>
+                <value>
+                    <fullName>BT</fullName>
+                    <default>false</default>
+                    <label>BT</label>
+                </value>
+                <value>
+                    <fullName>CPKELCO</fullName>
+                    <default>false</default>
+                    <label>CPKELCO</label>
+                </value>
+                <value>
+                    <fullName>DAMIN</fullName>
+                    <default>false</default>
+                    <label>DAMIN</label>
+                </value>
+                <value>
+                    <fullName>GC</fullName>
+                    <default>false</default>
+                    <label>GC</label>
+                </value>
+                <value>
+                    <fullName>NICHE</fullName>
+                    <default>false</default>
+                    <label>NICHE</label>
+                </value>
+                <value>
+                    <fullName>PLOT</fullName>
+                    <default>false</default>
+                    <label>PLOT</label>
+                </value>
+                <value>
+                    <fullName>TRIAL</fullName>
+                    <default>false</default>
+                    <label>TRIAL</label>
+                </value>
+                <value>
+                    <fullName>ORIGIN/DEZAAN</fullName>
+                    <default>false</default>
+                    <label>ORIGIN/DEZAAN</label>
+                </value>
+                <value>
+                    <fullName>ORIGIN</fullName>
+                    <default>false</default>
+                    <label>ORIGIN</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Budget_vs_Actuals__c</fullName>
+        <externalId>false</externalId>
+        <label>Budget vs Actuals</label>
+        <referenceTo>Budget_vs_Actuals__c</referenceTo>
+        <relationshipLabel>Budget vs Actual Lines</relationshipLabel>
+        <relationshipName>Budget_vs_Actual_Lines</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Business_Unit__c</fullName>
+        <externalId>false</externalId>
+        <label>Business Unit</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>BU_Identifier</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Category</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Business_Unit__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetName>Product_Category</valueSetName>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>Blended Product</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>By product</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>Chocolate Drink Mix</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>Cocoa Beans</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>Cocoa Butter</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>Cocoa Cake</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>Cocoa Liquor</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>Cocoa Low Fat Powder</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>Cocoa Mid Fat Powder</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>Cocoa Powder</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>Cocoa Powder &amp; Sugar</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>ISMP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>IWMP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>MILK POWDER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>NDC Cold Soluble</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>NDC Regular</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>OCPro</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>SMP HHHS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>SMP MH</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>Whey Demin</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>BLEND</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>BMP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>BUTTER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>CASEIN</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>CHEESE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>CONDENSED</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>CREAM</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>FCMP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>FILLED</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>LACTOSE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>LIQUIDS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>MPC/MPI</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>OTHER FATS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <controllingFieldValue>Spice</controllingFieldValue>
+                <valueName>OTHERS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>SMP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>WHEY</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>WPC</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>WPI</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Spice</controllingFieldValue>
+                <valueName>Dehy</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Spice</controllingFieldValue>
+                <valueName>Tropical</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Edible_Nuts</controllingFieldValue>
+                <valueName>EN - Almond</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Edible_Nuts</controllingFieldValue>
+                <valueName>EN - Brazil Nut</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Edible_Nuts</controllingFieldValue>
+                <valueName>EN - Cashew</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Edible_Nuts</controllingFieldValue>
+                <valueName>EN - Hazelnut</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Edible_Nuts</controllingFieldValue>
+                <valueName>EN - Macadamia</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Edible_Nuts</controllingFieldValue>
+                <valueName>EN - Miscellaneous</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Edible_Nuts</controllingFieldValue>
+                <valueName>EN - Mixed Nuts</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Edible_Nuts</controllingFieldValue>
+                <valueName>EN - Peanut</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Edible_Nuts</controllingFieldValue>
+                <valueName>EN - Pecan</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Edible_Nuts</controllingFieldValue>
+                <valueName>EN - Pinenut</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Edible_Nuts</controllingFieldValue>
+                <valueName>EN - Pistachio</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Edible_Nuts</controllingFieldValue>
+                <valueName>EN - Pulses</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Edible_Nuts</controllingFieldValue>
+                <valueName>EN - Sesame</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Edible_Nuts</controllingFieldValue>
+                <valueName>EN - Superfoods</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Edible_Nuts</controllingFieldValue>
+                <valueName>EN - Walnut</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Coffee</controllingFieldValue>
+                <valueName>Green Coffee</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Certification__c</fullName>
+        <externalId>false</externalId>
+        <label>Certification</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Certification</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Certifications_del__c</fullName>
+        <externalId>false</externalId>
+        <label>Certification</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>4C certified</fullName>
+                    <default>false</default>
+                    <label>4C certified</label>
+                </value>
+                <value>
+                    <fullName>AtSource Entry</fullName>
+                    <default>false</default>
+                    <label>AtSource Entry</label>
+                </value>
+                <value>
+                    <fullName>AtSource Entry Verified</fullName>
+                    <default>false</default>
+                    <label>AtSource Entry Verified</label>
+                </value>
+                <value>
+                    <fullName>AtSource Infinity</fullName>
+                    <default>false</default>
+                    <label>AtSource Infinity</label>
+                </value>
+                <value>
+                    <fullName>AtSource Plus</fullName>
+                    <default>false</default>
+                    <label>AtSource Plus</label>
+                </value>
+                <value>
+                    <fullName>Fair Trade certified</fullName>
+                    <default>false</default>
+                    <label>Fair Trade certified</label>
+                </value>
+                <value>
+                    <fullName>Organic certified</fullName>
+                    <default>false</default>
+                    <label>Organic certified</label>
+                </value>
+                <value>
+                    <fullName>Other Responsible Sourcing</fullName>
+                    <default>false</default>
+                    <label>Other Responsible Sourcing</label>
+                </value>
+                <value>
+                    <fullName>RFA certified</fullName>
+                    <default>false</default>
+                    <label>RFA certified</label>
+                </value>
+                <value>
+                    <fullName>UTZ certified</fullName>
+                    <default>false</default>
+                    <label>UTZ certified</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Defects__c</fullName>
+        <externalId>false</externalId>
+        <label>Defects</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Defects</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Ingredient_commodity__c</fullName>
+        <externalId>false</externalId>
+        <label>Ingredient/commodity</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Ingredient_commodity</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Origin__c</fullName>
+        <externalId>false</externalId>
+        <label>Origin</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Brazil</fullName>
+                    <default>false</default>
+                    <label>Brazil</label>
+                </value>
+                <value>
+                    <fullName>China</fullName>
+                    <default>false</default>
+                    <label>China</label>
+                </value>
+                <value>
+                    <fullName>Colombia</fullName>
+                    <default>false</default>
+                    <label>Colombia</label>
+                </value>
+                <value>
+                    <fullName>DRC</fullName>
+                    <default>false</default>
+                    <label>DRC</label>
+                </value>
+                <value>
+                    <fullName>East Timor</fullName>
+                    <default>false</default>
+                    <label>East Timor</label>
+                </value>
+                <value>
+                    <fullName>Egypt</fullName>
+                    <default>false</default>
+                    <label>Egypt</label>
+                </value>
+                <value>
+                    <fullName>Ethiopia</fullName>
+                    <default>false</default>
+                    <label>Ethiopia</label>
+                </value>
+                <value>
+                    <fullName>Guatemala</fullName>
+                    <default>false</default>
+                    <label>Guatemala</label>
+                </value>
+                <value>
+                    <fullName>Honduras</fullName>
+                    <default>false</default>
+                    <label>Honduras</label>
+                </value>
+                <value>
+                    <fullName>India</fullName>
+                    <default>false</default>
+                    <label>India</label>
+                </value>
+                <value>
+                    <fullName>Indonesia</fullName>
+                    <default>false</default>
+                    <label>Indonesia</label>
+                </value>
+                <value>
+                    <fullName>IVC</fullName>
+                    <default>false</default>
+                    <label>IVC</label>
+                </value>
+                <value>
+                    <fullName>Laos</fullName>
+                    <default>false</default>
+                    <label>Laos</label>
+                </value>
+                <value>
+                    <fullName>Mexico</fullName>
+                    <default>false</default>
+                    <label>Mexico</label>
+                </value>
+                <value>
+                    <fullName>Nicaragua</fullName>
+                    <default>false</default>
+                    <label>Nicaragua</label>
+                </value>
+                <value>
+                    <fullName>Others</fullName>
+                    <default>false</default>
+                    <label>Others</label>
+                </value>
+                <value>
+                    <fullName>Peru</fullName>
+                    <default>false</default>
+                    <label>Peru</label>
+                </value>
+                <value>
+                    <fullName>PNG</fullName>
+                    <default>false</default>
+                    <label>PNG</label>
+                </value>
+                <value>
+                    <fullName>Tanzania</fullName>
+                    <default>false</default>
+                    <label>Tanzania</label>
+                </value>
+                <value>
+                    <fullName>Uganda</fullName>
+                    <default>false</default>
+                    <label>Uganda</label>
+                </value>
+                <value>
+                    <fullName>Vietnam</fullName>
+                    <default>false</default>
+                    <label>Vietnam</label>
+                </value>
+                <value>
+                    <fullName>Zambia</fullName>
+                    <default>false</default>
+                    <label>Zambia</label>
+                </value>
+                <value>
+                    <fullName>USA</fullName>
+                    <default>false</default>
+                    <label>USA</label>
+                </value>
+                <value>
+                    <fullName>Australia</fullName>
+                    <default>false</default>
+                    <label>Australia</label>
+                </value>
+                <value>
+                    <fullName>Korea</fullName>
+                    <default>false</default>
+                    <label>Korea</label>
+                </value>
+                <value>
+                    <fullName>Malaysia</fullName>
+                    <default>false</default>
+                    <label>Malaysia</label>
+                </value>
+                <value>
+                    <fullName>Philippines</fullName>
+                    <default>false</default>
+                    <label>Philippines</label>
+                </value>
+                <value>
+                    <fullName>Singapore</fullName>
+                    <default>false</default>
+                    <label>Singapore</label>
+                </value>
+                <value>
+                    <fullName>Taiwan</fullName>
+                    <default>false</default>
+                    <label>Taiwan</label>
+                </value>
+                <value>
+                    <fullName>Thailand</fullName>
+                    <default>false</default>
+                    <label>Thailand</label>
+                </value>
+                <value>
+                    <fullName>Hong Kong</fullName>
+                    <default>false</default>
+                    <label>Hong Kong</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Pack_Size__c</fullName>
+        <externalId>false</externalId>
+        <label>Pack Size</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Pack_Size</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Pack_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Pack Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Pack_Type</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Plant__c</fullName>
+        <externalId>false</externalId>
+        <label>Plant</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>SG</fullName>
+                    <default>false</default>
+                    <label>SG</label>
+                </value>
+                <value>
+                    <fullName>NL</fullName>
+                    <default>false</default>
+                    <label>NL</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Processing_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Processing Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Processing_Type</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Product_Classification__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Classification</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Product_Classification</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Product_Grade__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Grade</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Product_Grade</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Product_Group_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Group Code</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Product_Group_Code</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Product_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Product_Type</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Size__c</fullName>
+        <externalId>false</externalId>
+        <label>Size</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Size</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Sub_Category_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Sub Category 2</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Sub_Category__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetName>Product_Sub_Category_2</valueSetName>
+            <valueSettings>
+                <controllingFieldValue>Amaranth Organic</controllingFieldValue>
+                <valueName>Amaranth Grain</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Amaranth Organic</controllingFieldValue>
+                <valueName>Puffed Amaranth</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Capsicums</controllingFieldValue>
+                <valueName>Capsicums</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Capsicums</controllingFieldValue>
+                <valueName>Org Capsicums</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cashew Ingredient</controllingFieldValue>
+                <controllingFieldValue>Cashew Kernel Organic</controllingFieldValue>
+                <valueName>Butter</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cashew Ingredient</controllingFieldValue>
+                <controllingFieldValue>Hazelnut Ingredient</controllingFieldValue>
+                <controllingFieldValue>Pistachio Ingredient</controllingFieldValue>
+                <controllingFieldValue>Almond Ingredient Natural</controllingFieldValue>
+                <valueName>Diced</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cashew Ingredient</controllingFieldValue>
+                <controllingFieldValue>Hazelnut Ingredient</controllingFieldValue>
+                <controllingFieldValue>Almond Ingredient Natural</controllingFieldValue>
+                <valueName>Flour</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cashew Ingredient</controllingFieldValue>
+                <controllingFieldValue>Cashew Kernel</controllingFieldValue>
+                <controllingFieldValue>Cashew Kernel Organic</controllingFieldValue>
+                <valueName>Large Broken Pieces</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cashew Ingredient</controllingFieldValue>
+                <valueName>Meal</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cashew Ingredient</controllingFieldValue>
+                <controllingFieldValue>Cashew Kernel</controllingFieldValue>
+                <controllingFieldValue>Hazelnut Ingredient</controllingFieldValue>
+                <controllingFieldValue>Mixed Nut Ingredient</controllingFieldValue>
+                <controllingFieldValue>Pistachio Ingredient</controllingFieldValue>
+                <controllingFieldValue>Walnut Ingredient</controllingFieldValue>
+                <valueName>Paste</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cashew Ingredient</controllingFieldValue>
+                <controllingFieldValue>Pistachio Ingredient</controllingFieldValue>
+                <controllingFieldValue>Pistachio Kernel</controllingFieldValue>
+                <controllingFieldValue>Almond Ingredient Natural</controllingFieldValue>
+                <valueName>Pieces</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cashew Ingredient</controllingFieldValue>
+                <controllingFieldValue>Cashew Kernel</controllingFieldValue>
+                <controllingFieldValue>Cashew Kernel Organic</controllingFieldValue>
+                <valueName>Scorched Wholes</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cashew Ingredient</controllingFieldValue>
+                <controllingFieldValue>Cashew Kernel</controllingFieldValue>
+                <controllingFieldValue>Cashew Kernel Organic</controllingFieldValue>
+                <valueName>Small Broken Pieces</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cashew Ingredient</controllingFieldValue>
+                <controllingFieldValue>Cashew Kernel</controllingFieldValue>
+                <controllingFieldValue>Cashew Kernel Organic</controllingFieldValue>
+                <valueName>White Wholes</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cagliata</controllingFieldValue>
+                <controllingFieldValue>Mozzarella</controllingFieldValue>
+                <valueName>Analogue</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cagliata</controllingFieldValue>
+                <controllingFieldValue>Mozzarella</controllingFieldValue>
+                <valueName>Low Fat</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cagliata</controllingFieldValue>
+                <controllingFieldValue>Cheddar</controllingFieldValue>
+                <controllingFieldValue>Mozzarella</controllingFieldValue>
+                <controllingFieldValue>Food</controllingFieldValue>
+                <controllingFieldValue>MPC</controllingFieldValue>
+                <controllingFieldValue>DWP</controllingFieldValue>
+                <controllingFieldValue>Lactic</controllingFieldValue>
+                <controllingFieldValue>Sweet Cream</controllingFieldValue>
+                <controllingFieldValue>Parmesan</controllingFieldValue>
+                <controllingFieldValue>Blends</controllingFieldValue>
+                <controllingFieldValue>High Fat</controllingFieldValue>
+                <controllingFieldValue>SKIMMILKCONCENTRATE</controllingFieldValue>
+                <controllingFieldValue>Whey Concentrate</controllingFieldValue>
+                <controllingFieldValue>WPC 80</controllingFieldValue>
+                <controllingFieldValue>CODEX MH</controllingFieldValue>
+                <controllingFieldValue>ADPI MH</controllingFieldValue>
+                <controllingFieldValue>CODEX LH</controllingFieldValue>
+                <controllingFieldValue>ADPI LH</controllingFieldValue>
+                <controllingFieldValue>CODEX HH</controllingFieldValue>
+                <controllingFieldValue>ADPI HH</controllingFieldValue>
+                <controllingFieldValue>Protein 22-24%</controllingFieldValue>
+                <controllingFieldValue>Low Protein 15-20%</controllingFieldValue>
+                <controllingFieldValue>Whey Butter</controllingFieldValue>
+                <valueName>OTHER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cagliata</controllingFieldValue>
+                <controllingFieldValue>Cheddar</controllingFieldValue>
+                <controllingFieldValue>Mozzarella</controllingFieldValue>
+                <controllingFieldValue>WPC 80</controllingFieldValue>
+                <controllingFieldValue>WPI</controllingFieldValue>
+                <controllingFieldValue>CODEX MH</controllingFieldValue>
+                <controllingFieldValue>ADPI MH</controllingFieldValue>
+                <controllingFieldValue>CODEX LH</controllingFieldValue>
+                <controllingFieldValue>ADPI LH</controllingFieldValue>
+                <controllingFieldValue>CODEX HH</controllingFieldValue>
+                <controllingFieldValue>ADPI HH</controllingFieldValue>
+                <valueName>Regular</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cheddar</controllingFieldValue>
+                <controllingFieldValue>Deo De-Gummed</controllingFieldValue>
+                <controllingFieldValue>Bleached</controllingFieldValue>
+                <controllingFieldValue>Cocoa Powder &amp; Sugar &amp; Milk</controllingFieldValue>
+                <controllingFieldValue>Lightly Alkalized</controllingFieldValue>
+                <valueName>#640 Colored</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cheddar</controllingFieldValue>
+                <controllingFieldValue>Deo De-Gummed</controllingFieldValue>
+                <controllingFieldValue>Bleached</controllingFieldValue>
+                <controllingFieldValue>Cocoa Powder &amp; Sugar &amp; Milk</controllingFieldValue>
+                <controllingFieldValue>Lightly Alkalized</controllingFieldValue>
+                <valueName>#640 Whites</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cheddar</controllingFieldValue>
+                <controllingFieldValue>Deo De-Gummed</controllingFieldValue>
+                <controllingFieldValue>Bleached</controllingFieldValue>
+                <controllingFieldValue>Cocoa Powder &amp; Sugar &amp; Milk</controllingFieldValue>
+                <controllingFieldValue>Lightly Alkalized</controllingFieldValue>
+                <valueName>40# colored</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cheddar</controllingFieldValue>
+                <controllingFieldValue>Deo De-Gummed</controllingFieldValue>
+                <controllingFieldValue>Bleached</controllingFieldValue>
+                <controllingFieldValue>Cocoa Powder &amp; Sugar &amp; Milk</controllingFieldValue>
+                <controllingFieldValue>Lightly Alkalized</controllingFieldValue>
+                <valueName>40# White</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cheddar</controllingFieldValue>
+                <controllingFieldValue>Deo De-Gummed</controllingFieldValue>
+                <controllingFieldValue>Bleached</controllingFieldValue>
+                <controllingFieldValue>Cocoa Powder &amp; Sugar &amp; Milk</controllingFieldValue>
+                <controllingFieldValue>Lightly Alkalized</controllingFieldValue>
+                <valueName>500# White</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cheddar</controllingFieldValue>
+                <valueName>ChedP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cheddar</controllingFieldValue>
+                <valueName>ChedT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cashew Kernel</controllingFieldValue>
+                <controllingFieldValue>Cashew Kernel Organic</controllingFieldValue>
+                <valueName>Mixed Wholes</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cashew Kernel</controllingFieldValue>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <valueName>Others</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cashew Kernel</controllingFieldValue>
+                <controllingFieldValue>Cashew Kernel Organic</controllingFieldValue>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <controllingFieldValue>Almond Reject</controllingFieldValue>
+                <valueName>Rejects</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cashew Kernel Organic</controllingFieldValue>
+                <valueName>Dessert Wholes</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cashew Kernel Organic</controllingFieldValue>
+                <valueName>Second Scorched Wholes</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Brown</controllingFieldValue>
+                <controllingFieldValue>White</controllingFieldValue>
+                <controllingFieldValue>High Fat</controllingFieldValue>
+                <valueName>Dairy</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Brown</controllingFieldValue>
+                <controllingFieldValue>White</controllingFieldValue>
+                <controllingFieldValue>High Fat</controllingFieldValue>
+                <valueName>Non Dairy</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>White</controllingFieldValue>
+                <valueName>Dairy Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>White</controllingFieldValue>
+                <valueName>Dairy SSC-3</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>White</controllingFieldValue>
+                <valueName>Dairy SSD-30</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>White</controllingFieldValue>
+                <valueName>Dairy SSP-83</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Chia</controllingFieldValue>
+                <controllingFieldValue>Chia Organic</controllingFieldValue>
+                <valueName>Black Chia</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Chia</controllingFieldValue>
+                <controllingFieldValue>Chia Organic</controllingFieldValue>
+                <valueName>White Chia</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Chilli</controllingFieldValue>
+                <valueName>Chilli</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dehy Vegetable</controllingFieldValue>
+                <valueName>Parsley</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Garlic</controllingFieldValue>
+                <valueName>Dehy Garlic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Garlic</controllingFieldValue>
+                <valueName>Domestic Garlic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Garlic</controllingFieldValue>
+                <valueName>Economy Garlic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Garlic</controllingFieldValue>
+                <valueName>Fresh Garlic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Garlic</controllingFieldValue>
+                <valueName>Org Domestic Garlic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Garlic</controllingFieldValue>
+                <valueName>Org Retail Garlic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Garlic</controllingFieldValue>
+                <valueName>Redimade</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Garlic</controllingFieldValue>
+                <valueName>Retail Garlic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hazelnut Ingredient</controllingFieldValue>
+                <controllingFieldValue>Peanut Ingredient</controllingFieldValue>
+                <controllingFieldValue>Pistachio Ingredient</controllingFieldValue>
+                <controllingFieldValue>Almond Ingredient Blanched</controllingFieldValue>
+                <valueName>Blanched</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hazelnut Ingredient</controllingFieldValue>
+                <valueName>Whole Roasted</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mozzarella</controllingFieldValue>
+                <controllingFieldValue>Deo De-Gummed</controllingFieldValue>
+                <controllingFieldValue>Bleached</controllingFieldValue>
+                <controllingFieldValue>Cocoa Powder &amp; Sugar &amp; Milk</controllingFieldValue>
+                <controllingFieldValue>Lightly Alkalized</controllingFieldValue>
+                <valueName>LOWMOISTUREPARTSKIM</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mozzarella</controllingFieldValue>
+                <valueName>Low Salt</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mozzarella</controllingFieldValue>
+                <controllingFieldValue>Deo De-Gummed</controllingFieldValue>
+                <controllingFieldValue>Bleached</controllingFieldValue>
+                <controllingFieldValue>Cocoa Powder &amp; Sugar &amp; Milk</controllingFieldValue>
+                <controllingFieldValue>Lightly Alkalized</controllingFieldValue>
+                <valueName>Whole Milk</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Food</controllingFieldValue>
+                <valueName>100#</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Food</controllingFieldValue>
+                <valueName>200#</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Food</controllingFieldValue>
+                <valueName>40#</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Food</controllingFieldValue>
+                <valueName>60-80#</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MPC</controllingFieldValue>
+                <controllingFieldValue>SKIMMILKCONCENTRATE</controllingFieldValue>
+                <valueName>70%</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MPC</controllingFieldValue>
+                <controllingFieldValue>Whey Concentrate</controllingFieldValue>
+                <valueName>80%</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hazelnut InShell</controllingFieldValue>
+                <valueName>Akcakoca InShell</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hazelnut InShell</controllingFieldValue>
+                <valueName>Giresun InShell</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hazelnut InShell</controllingFieldValue>
+                <valueName>Levant InShell</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hazelnut Kernel</controllingFieldValue>
+                <valueName>Akcakoca Kernel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hazelnut Kernel</controllingFieldValue>
+                <valueName>Giresun Kernel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hazelnut Kernel</controllingFieldValue>
+                <valueName>Levant Kernel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hazelnut Natural</controllingFieldValue>
+                <valueName>Akcakoca Natural</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hazelnut Natural</controllingFieldValue>
+                <valueName>Giresun Natural</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hazelnut Natural</controllingFieldValue>
+                <valueName>Levant Natural</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Herbs</controllingFieldValue>
+                <valueName>Herbs</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DWP</controllingFieldValue>
+                <valueName>DMIN 40</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DWP</controllingFieldValue>
+                <valueName>DMIN 50</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DWP</controllingFieldValue>
+                <valueName>DMIN 90</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Deo De-Gummed</controllingFieldValue>
+                <controllingFieldValue>Bleached</controllingFieldValue>
+                <controllingFieldValue>Cocoa Powder &amp; Sugar &amp; Milk</controllingFieldValue>
+                <controllingFieldValue>Parmesan</controllingFieldValue>
+                <controllingFieldValue>Lightly Alkalized</controllingFieldValue>
+                <valueName>40# Block</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Deo De-Gummed</controllingFieldValue>
+                <controllingFieldValue>Bleached</controllingFieldValue>
+                <controllingFieldValue>Cocoa Powder &amp; Sugar &amp; Milk</controllingFieldValue>
+                <controllingFieldValue>Blends</controllingFieldValue>
+                <controllingFieldValue>Lightly Alkalized</controllingFieldValue>
+                <valueName>40#Monterey Jack</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Deo De-Gummed</controllingFieldValue>
+                <controllingFieldValue>Bleached</controllingFieldValue>
+                <controllingFieldValue>Cocoa Powder &amp; Sugar &amp; Milk</controllingFieldValue>
+                <controllingFieldValue>Parmesan</controllingFieldValue>
+                <controllingFieldValue>Lightly Alkalized</controllingFieldValue>
+                <valueName>500# Barrel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Deo De-Gummed</controllingFieldValue>
+                <controllingFieldValue>Bleached</controllingFieldValue>
+                <controllingFieldValue>Cocoa Powder &amp; Sugar &amp; Milk</controllingFieldValue>
+                <controllingFieldValue>Lactic</controllingFieldValue>
+                <controllingFieldValue>Sweet Cream</controllingFieldValue>
+                <controllingFieldValue>Lightly Alkalized</controllingFieldValue>
+                <valueName>80% salted</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Deo De-Gummed</controllingFieldValue>
+                <controllingFieldValue>Bleached</controllingFieldValue>
+                <controllingFieldValue>Cocoa Powder &amp; Sugar &amp; Milk</controllingFieldValue>
+                <controllingFieldValue>Lactic</controllingFieldValue>
+                <controllingFieldValue>Sweet Cream</controllingFieldValue>
+                <controllingFieldValue>Lightly Alkalized</controllingFieldValue>
+                <valueName>80% unsalted</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Deo De-Gummed</controllingFieldValue>
+                <controllingFieldValue>Bleached</controllingFieldValue>
+                <controllingFieldValue>Cocoa Powder &amp; Sugar &amp; Milk</controllingFieldValue>
+                <controllingFieldValue>Lactic</controllingFieldValue>
+                <controllingFieldValue>Sweet Cream</controllingFieldValue>
+                <controllingFieldValue>Lightly Alkalized</controllingFieldValue>
+                <controllingFieldValue>Whey Butter</controllingFieldValue>
+                <valueName>82% unsalted</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Off grade</controllingFieldValue>
+                <controllingFieldValue>Walnut InShell</controllingFieldValue>
+                <controllingFieldValue>Walnut Kernel</controllingFieldValue>
+                <valueName>Machine Cracked Grade</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sweet Cream</controllingFieldValue>
+                <valueName>72.5% unsalted</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sweet Cream</controllingFieldValue>
+                <valueName>82.5% unsalted</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Blends</controllingFieldValue>
+                <valueName>40#Colby Jack</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Blends</controllingFieldValue>
+                <valueName>40# Pepper Jack</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Oils</controllingFieldValue>
+                <valueName>Oils</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Onion</controllingFieldValue>
+                <valueName>Dehy Onion</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Onion</controllingFieldValue>
+                <valueName>Dehy White Onion</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Onion</controllingFieldValue>
+                <valueName>Dehy Yellow Onion</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Onion</controllingFieldValue>
+                <valueName>Org Dehy Onion</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Peanut Ingredient</controllingFieldValue>
+                <valueName>Oil</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Peanut Shelled</controllingFieldValue>
+                <valueName>Runner Shelled</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Peanut Shelled</controllingFieldValue>
+                <valueName>Splits</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pepper</controllingFieldValue>
+                <valueName>Black Pepper</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pepper</controllingFieldValue>
+                <valueName>Org Black Pepper</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pepper</controllingFieldValue>
+                <valueName>White Pepper</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pistachio Ingredient</controllingFieldValue>
+                <controllingFieldValue>Pistachio InShell</controllingFieldValue>
+                <valueName>Extra No 1 InShell</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pistachio Ingredient</controllingFieldValue>
+                <valueName>Extra No 1 Premium</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pistachio Ingredient</controllingFieldValue>
+                <valueName>Extra No 1 Supreme</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pistachio InShell</controllingFieldValue>
+                <valueName>AA InShell</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pistachio InShell</controllingFieldValue>
+                <valueName>Artificially Open InShell</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pistachio InShell</controllingFieldValue>
+                <valueName>Fancy InShell</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pistachio InShell</controllingFieldValue>
+                <valueName>US No 1 InShell</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pistachio Kernel</controllingFieldValue>
+                <valueName>Extra No 1 Kernel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pistachio Kernel</controllingFieldValue>
+                <valueName>Extra No 1 Pieces</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pistachio Kernel</controllingFieldValue>
+                <valueName>Fancy Kernel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pistachio Kernel</controllingFieldValue>
+                <valueName>Fancy Pieces</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pistachio Kernel</controllingFieldValue>
+                <valueName>Halves</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pistachio Kernel</controllingFieldValue>
+                <valueName>Kala Gouchi Kernel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pistachio Kernel</controllingFieldValue>
+                <valueName>US No 1 Kernel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pistachio Kernel</controllingFieldValue>
+                <valueName>US No 1 Pieces</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pistachio Kernel</controllingFieldValue>
+                <valueName>Wholes &amp; Brokens</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Purees</controllingFieldValue>
+                <valueName>GF Purees</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Quinoa</controllingFieldValue>
+                <controllingFieldValue>Quinoa Organic</controllingFieldValue>
+                <valueName>Black Quinoa</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Quinoa</controllingFieldValue>
+                <controllingFieldValue>Quinoa Organic</controllingFieldValue>
+                <valueName>Red Quinoa</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Quinoa</controllingFieldValue>
+                <controllingFieldValue>Quinoa Organic</controllingFieldValue>
+                <valueName>Tricolor Quinoa</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Quinoa</controllingFieldValue>
+                <controllingFieldValue>Quinoa Organic</controllingFieldValue>
+                <valueName>White Quinoa</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Quinoa Organic</controllingFieldValue>
+                <valueName>Puffed Quinoa</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Root Spices</controllingFieldValue>
+                <controllingFieldValue>Tropical Spices</controllingFieldValue>
+                <valueName>Ginger</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Root Spices</controllingFieldValue>
+                <valueName>Org Ginger</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Root Spices</controllingFieldValue>
+                <controllingFieldValue>Seed Spices</controllingFieldValue>
+                <valueName>Turmeric</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>WPC 80</controllingFieldValue>
+                <valueName>HS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>WPC 80</controllingFieldValue>
+                <controllingFieldValue>WPI</controllingFieldValue>
+                <controllingFieldValue>CODEX MH</controllingFieldValue>
+                <controllingFieldValue>ADPI MH</controllingFieldValue>
+                <controllingFieldValue>CODEX LH</controllingFieldValue>
+                <controllingFieldValue>ADPI LH</controllingFieldValue>
+                <controllingFieldValue>CODEX HH</controllingFieldValue>
+                <controllingFieldValue>ADPI HH</controllingFieldValue>
+                <valueName>Instant</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Seed Spices</controllingFieldValue>
+                <valueName>Cloves</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Seed Spices</controllingFieldValue>
+                <valueName>Coriander</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Seed Spices</controllingFieldValue>
+                <valueName>Cumin</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Seed Spices</controllingFieldValue>
+                <valueName>Minor Spices</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Seed Spices</controllingFieldValue>
+                <valueName>Fennel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Seed Spices</controllingFieldValue>
+                <valueName>Fenugreek</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sesame Ingredient</controllingFieldValue>
+                <valueName>Sesame Roasted</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sesame Seeds</controllingFieldValue>
+                <valueName>Cleaned Sesame</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sesame Seeds</controllingFieldValue>
+                <controllingFieldValue>Sesame Seeds Organic</controllingFieldValue>
+                <valueName>Hulled Sesame</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sesame Seeds</controllingFieldValue>
+                <valueName>Natural Sesame</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sesame Seeds</controllingFieldValue>
+                <valueName>Uncleaned Sesame</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Tahini</controllingFieldValue>
+                <controllingFieldValue>Tahini Organic</controllingFieldValue>
+                <valueName>Tahini Dark</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Tahini</controllingFieldValue>
+                <controllingFieldValue>Tahini Organic</controllingFieldValue>
+                <valueName>Tahini Light</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Tropical Spices</controllingFieldValue>
+                <valueName>Cassia</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Tropical Spices</controllingFieldValue>
+                <valueName>Cinnamon</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Tropical Spices</controllingFieldValue>
+                <valueName>Nutmeg</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Walnut InShell</controllingFieldValue>
+                <valueName>Inshell</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Walnut Kernel</controllingFieldValue>
+                <valueName>Hand Cracked Grade</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CODEX MH</controllingFieldValue>
+                <controllingFieldValue>ADPI MH</controllingFieldValue>
+                <controllingFieldValue>CODEX LH</controllingFieldValue>
+                <controllingFieldValue>ADPI LH</controllingFieldValue>
+                <controllingFieldValue>CODEX HH</controllingFieldValue>
+                <controllingFieldValue>ADPI HH</controllingFieldValue>
+                <valueName>CNCA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CODEX MH</controllingFieldValue>
+                <controllingFieldValue>ADPI MH</controllingFieldValue>
+                <controllingFieldValue>CODEX LH</controllingFieldValue>
+                <controllingFieldValue>ADPI LH</controllingFieldValue>
+                <controllingFieldValue>CODEX HH</controllingFieldValue>
+                <controllingFieldValue>ADPI HH</controllingFieldValue>
+                <valueName>Low Thermophyllic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CODEX MH</controllingFieldValue>
+                <controllingFieldValue>ADPI MH</controllingFieldValue>
+                <controllingFieldValue>CODEX LH</controllingFieldValue>
+                <controllingFieldValue>ADPI LH</controllingFieldValue>
+                <controllingFieldValue>CODEX HH</controllingFieldValue>
+                <controllingFieldValue>ADPI HH</controllingFieldValue>
+                <valueName>UHT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ADPI MH</controllingFieldValue>
+                <controllingFieldValue>ADPI LH</controllingFieldValue>
+                <controllingFieldValue>CODEX HH</controllingFieldValue>
+                <controllingFieldValue>ADPI HH</controllingFieldValue>
+                <valueName>Heat Stable</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Protein 22-24%</controllingFieldValue>
+                <valueName>Yogurt Heat Based</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Protein 22-24%</controllingFieldValue>
+                <valueName>YOGURTNONHEATBASED</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Retail</controllingFieldValue>
+                <valueName>Sachet</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Retail</controllingFieldValue>
+                <valueName>Tin</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Ingredient Blanched</controllingFieldValue>
+                <valueName>Blanched Diced</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Ingredient Blanched</controllingFieldValue>
+                <valueName>Blanched Flakes</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Ingredient Blanched</controllingFieldValue>
+                <valueName>Blanched Meal</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Ingredient Blanched</controllingFieldValue>
+                <valueName>Blanched Paste</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Ingredient Blanched</controllingFieldValue>
+                <valueName>Blanched Pieces</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Ingredient Blanched</controllingFieldValue>
+                <valueName>Blanched Powder</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Ingredient Blanched</controllingFieldValue>
+                <valueName>Blanched Sliced</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Ingredient Blanched</controllingFieldValue>
+                <valueName>Blanched Slivered</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Ingredient Blanched</controllingFieldValue>
+                <valueName>Blanched Splits</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Ingredient Blanched</controllingFieldValue>
+                <valueName>Blanched Whole</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Ingredient Blanched</controllingFieldValue>
+                <valueName>Blanched Wholes &amp; Broken</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Ingredient Blanched</controllingFieldValue>
+                <valueName>Carmel Blanched</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Ingredient Blanched</controllingFieldValue>
+                <valueName>Roasted Blanched Diced</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Ingredient Blanched</controllingFieldValue>
+                <valueName>Roasted Blanched Meal</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Ingredient Blanched</controllingFieldValue>
+                <valueName>Roasted Blanched Paste</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Ingredient Blanched</controllingFieldValue>
+                <valueName>Roasted Blanched Sliced</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Ingredient Blanched</controllingFieldValue>
+                <valueName>Roasted Blanched Slivered</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Ingredient Blanched</controllingFieldValue>
+                <valueName>Roasted Blanched Splits</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Ingredient Blanched</controllingFieldValue>
+                <valueName>Roasted Blanched Wholes &amp; Broken</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Ingredient Natural</controllingFieldValue>
+                <valueName>Natural Diced</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Ingredient Natural</controllingFieldValue>
+                <valueName>Natural Flakes</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Ingredient Natural</controllingFieldValue>
+                <valueName>Natural Meal</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Ingredient Natural</controllingFieldValue>
+                <valueName>Natural Paste</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Ingredient Natural</controllingFieldValue>
+                <valueName>Natural Pieces</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Ingredient Natural</controllingFieldValue>
+                <valueName>Natural Protein Powder</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Ingredient Natural</controllingFieldValue>
+                <valueName>Natural Roasted Chopped</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Ingredient Natural</controllingFieldValue>
+                <valueName>Natural Roasted Paste</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Ingredient Natural</controllingFieldValue>
+                <valueName>Natural Roasted Whole</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Ingredient Natural</controllingFieldValue>
+                <valueName>Natural Sliced</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Ingredient Natural</controllingFieldValue>
+                <valueName>Natural Slivered</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Ingredient Natural</controllingFieldValue>
+                <valueName>Natural Splits</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Ingredient Natural</controllingFieldValue>
+                <valueName>Natural Whole and Brokens</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Ingredient Natural</controllingFieldValue>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Nonpareil Extra No. 1</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Ingredient Natural</controllingFieldValue>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Nonpareil Extra Supreme</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Ingredient Natural</controllingFieldValue>
+                <valueName>Roasted Natural Diced</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Ingredient Natural</controllingFieldValue>
+                <valueName>Roasted Natural Meal</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Ingredient Natural</controllingFieldValue>
+                <valueName>Roasted Natural Oil</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Ingredient Natural</controllingFieldValue>
+                <valueName>Roasted Natural Whole</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Ingredient Natural</controllingFieldValue>
+                <valueName>Slivered</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond InShell</controllingFieldValue>
+                <valueName>Aldrich InShell</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond InShell</controllingFieldValue>
+                <valueName>Avalon InShell</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond InShell</controllingFieldValue>
+                <valueName>Butte InShell</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond InShell</controllingFieldValue>
+                <valueName>Carmel InShell</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond InShell</controllingFieldValue>
+                <valueName>Folsom InShell</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond InShell</controllingFieldValue>
+                <valueName>Independence InShell</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond InShell</controllingFieldValue>
+                <valueName>Livingston InShell</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond InShell</controllingFieldValue>
+                <valueName>Mixed InShell</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond InShell</controllingFieldValue>
+                <valueName>Monterey InShell</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond InShell</controllingFieldValue>
+                <valueName>Nonpareil InShell</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond InShell</controllingFieldValue>
+                <valueName>Non Variety InShell</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond InShell</controllingFieldValue>
+                <valueName>Peerless InShell</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond InShell</controllingFieldValue>
+                <valueName>Price InShell</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond InShell</controllingFieldValue>
+                <valueName>Shasta InShell</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond InShell</controllingFieldValue>
+                <valueName>Sonora InShell</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond InShell</controllingFieldValue>
+                <valueName>Supareil InShell</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond InShell</controllingFieldValue>
+                <valueName>Wood Colony InShell</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Aldrich Extra No. 1</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Butte/Padre Kernel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Butte/Padre Select Sheller Run</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Butte Kernel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Butte Select Sheller Run</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>California Select Sheller Run</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>California STD</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>California Supreme</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>California Type Select Sheller Run</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Carmel Extra No. 1</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Carmel Extra No 1</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Carmel Extra Supreme</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Carmel Kernel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Carmel Manufacturing</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Carmel Select Sheller Run</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Carmel STD-5</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Carmel Supreme</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Carmel Type Select Sheller Run</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Carmel Type Supreme</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Independence Extra No. 1</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Mission Select Sheller Run</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Mixed Manufacturing</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Mixed Select Sheller Run</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Mixed STD-5</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Monterey Kernel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Monterey Select Sheller Run</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Monterey Supreme</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Nonpareil Fancy</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Nonpareil Manufacturing</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Nonpareil Select Sheller Run</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Nonpareil STD-5</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Nonpareil Supreme</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Nonpareil Wholes &amp; Broken</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Non Variety Manufacturing</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Non Variety Wholes &amp; Broken</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Price Extra No. 1</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Price Extra Supreme</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Price Kernel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Price Manufacturing</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Price Select Sheller Run</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Price STD - 5</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Price Supreme</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Sonora Select Sheller Run</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Sonora Supreme</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Sonora XNO1</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>STD - 5</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>STD - 5 Unsized</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Supareil Supreme</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Wholes &amp; Broken</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Wood Colony Select Sheller Run</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Almond Kernel</controllingFieldValue>
+                <valueName>Wood Colony Supreme</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Sub_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Sub Category</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Category__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetName>Product_Sub_Category</valueSetName>
+            <valueSettings>
+                <controllingFieldValue>EN - Brazil Nut</controllingFieldValue>
+                <valueName>Brazil Nut Kernel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Cashew</controllingFieldValue>
+                <valueName>Cashew DCNSL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Cashew</controllingFieldValue>
+                <valueName>Cashew Ingredient</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Cashew</controllingFieldValue>
+                <valueName>Cashew Kernel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Cashew</controllingFieldValue>
+                <valueName>Cashew Kernel Organic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Cashew</controllingFieldValue>
+                <controllingFieldValue>EN - Walnut</controllingFieldValue>
+                <valueName>Off grade</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Cashew</controllingFieldValue>
+                <valueName>Raw Cashew Nut</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Hazelnut</controllingFieldValue>
+                <valueName>Hazelnut Ingredient</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Hazelnut</controllingFieldValue>
+                <valueName>Hazelnut InShell</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Hazelnut</controllingFieldValue>
+                <valueName>Hazelnut Kernel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Hazelnut</controllingFieldValue>
+                <valueName>Hazelnut Natural</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Hazelnut</controllingFieldValue>
+                <valueName>Hazelnut Reject</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Hazelnut</controllingFieldValue>
+                <valueName>Hazelnut Waste</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Macadamia</controllingFieldValue>
+                <valueName>Macadamia Ingredient</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Macadamia</controllingFieldValue>
+                <valueName>Macadamia InShell</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Macadamia</controllingFieldValue>
+                <valueName>Macadamia Kernel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Mixed Nuts</controllingFieldValue>
+                <valueName>Mixed Nut Ingredient</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Mixed Nuts</controllingFieldValue>
+                <valueName>Mixed Nut Kernel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Peanut</controllingFieldValue>
+                <valueName>Peanut Ingredient</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Peanut</controllingFieldValue>
+                <valueName>Peanut Reject</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Peanut</controllingFieldValue>
+                <valueName>Peanut Shelled</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Pecan</controllingFieldValue>
+                <valueName>Pecan Kernel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Pinenut</controllingFieldValue>
+                <valueName>Pinenut Kernel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Pistachio</controllingFieldValue>
+                <valueName>Pistachio Ingredient</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Pistachio</controllingFieldValue>
+                <valueName>Pistachio InShell</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Pistachio</controllingFieldValue>
+                <valueName>Pistachio Kernel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Pistachio</controllingFieldValue>
+                <valueName>Pistachio Reject</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>BUTTER</controllingFieldValue>
+                <valueName>Lactic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>BUTTER</controllingFieldValue>
+                <controllingFieldValue>CASEIN</controllingFieldValue>
+                <controllingFieldValue>CHEESE</controllingFieldValue>
+                <controllingFieldValue>CONDENSED</controllingFieldValue>
+                <controllingFieldValue>CREAM</controllingFieldValue>
+                <controllingFieldValue>OTHER FATS</controllingFieldValue>
+                <controllingFieldValue>FCMP</controllingFieldValue>
+                <controllingFieldValue>FILLED</controllingFieldValue>
+                <controllingFieldValue>SMP</controllingFieldValue>
+                <controllingFieldValue>BLEND</controllingFieldValue>
+                <controllingFieldValue>BMP</controllingFieldValue>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <valueName>Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>BUTTER</controllingFieldValue>
+                <valueName>Sweet Cream</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>BUTTER</controllingFieldValue>
+                <valueName>Whey Butter</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CASEIN</controllingFieldValue>
+                <valueName>Acid</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CASEIN</controllingFieldValue>
+                <valueName>Calcium Caseinate</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CASEIN</controllingFieldValue>
+                <valueName>Rennet</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CASEIN</controllingFieldValue>
+                <valueName>Sodium Caseinate</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Sesame</controllingFieldValue>
+                <valueName>Sesame Ingredient</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Sesame</controllingFieldValue>
+                <valueName>Sesame Reject</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Sesame</controllingFieldValue>
+                <valueName>Sesame Seeds</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Sesame</controllingFieldValue>
+                <valueName>Sesame Seeds Organic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Sesame</controllingFieldValue>
+                <valueName>Tahini</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Sesame</controllingFieldValue>
+                <valueName>Tahini Organic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CHEESE</controllingFieldValue>
+                <valueName>AMERICAN STYLE CH</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CHEESE</controllingFieldValue>
+                <valueName>Analogue</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CHEESE</controllingFieldValue>
+                <controllingFieldValue>Tropical</controllingFieldValue>
+                <valueName>Blends</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CHEESE</controllingFieldValue>
+                <valueName>Cagliata</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CHEESE</controllingFieldValue>
+                <valueName>Cheddar</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CHEESE</controllingFieldValue>
+                <controllingFieldValue>LIQUIDS</controllingFieldValue>
+                <valueName>Cream</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CHEESE</controllingFieldValue>
+                <valueName>Edam</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CHEESE</controllingFieldValue>
+                <valueName>Emmental</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CHEESE</controllingFieldValue>
+                <valueName>Gouda</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CHEESE</controllingFieldValue>
+                <valueName>Mozzarella</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CHEESE</controllingFieldValue>
+                <valueName>Parmesan</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CHEESE</controllingFieldValue>
+                <valueName>Processed Cheese</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Superfoods</controllingFieldValue>
+                <valueName>Amaranth</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Superfoods</controllingFieldValue>
+                <valueName>Amaranth Organic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Superfoods</controllingFieldValue>
+                <valueName>Canihua Organic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Superfoods</controllingFieldValue>
+                <valueName>Chia</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Superfoods</controllingFieldValue>
+                <valueName>Chia Organic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Superfoods</controllingFieldValue>
+                <valueName>Quinoa</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Superfoods</controllingFieldValue>
+                <valueName>Quinoa Organic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CONDENSED</controllingFieldValue>
+                <valueName>Evap</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CONDENSED</controllingFieldValue>
+                <valueName>SCM</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Walnut</controllingFieldValue>
+                <valueName>Walnut Ingredient</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Walnut</controllingFieldValue>
+                <valueName>Walnut InShell</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Walnut</controllingFieldValue>
+                <valueName>Walnut Kernel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Walnut</controllingFieldValue>
+                <valueName>Walnut Reject</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CREAM</controllingFieldValue>
+                <valueName>Frozen</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CREAM</controllingFieldValue>
+                <valueName>Powder</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CREAM</controllingFieldValue>
+                <controllingFieldValue>FCMP</controllingFieldValue>
+                <controllingFieldValue>LIQUIDS</controllingFieldValue>
+                <valueName>UHT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHER FATS</controllingFieldValue>
+                <valueName>AMF</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHER FATS</controllingFieldValue>
+                <valueName>Butter Oil</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHER FATS</controllingFieldValue>
+                <valueName>Ghee</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FCMP</controllingFieldValue>
+                <valueName>HH</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FCMP</controllingFieldValue>
+                <controllingFieldValue>SMP</controllingFieldValue>
+                <controllingFieldValue>BMP</controllingFieldValue>
+                <valueName>Instant</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FCMP</controllingFieldValue>
+                <controllingFieldValue>LACTOSE</controllingFieldValue>
+                <controllingFieldValue>BMP</controllingFieldValue>
+                <valueName>Regular</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FCMP</controllingFieldValue>
+                <controllingFieldValue>FILLED</controllingFieldValue>
+                <controllingFieldValue>SMP</controllingFieldValue>
+                <valueName>Retail</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FILLED</controllingFieldValue>
+                <valueName>Adult Nutrition</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FILLED</controllingFieldValue>
+                <valueName>Cheese Powder</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FILLED</controllingFieldValue>
+                <valueName>High Fat</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FILLED</controllingFieldValue>
+                <valueName>Infant Formula</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FILLED</controllingFieldValue>
+                <valueName>Low Protein &lt;8%</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FILLED</controllingFieldValue>
+                <valueName>Low Protein 15-20%</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FILLED</controllingFieldValue>
+                <valueName>Low Protein 8-14%</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FILLED</controllingFieldValue>
+                <valueName>Protein 22-24%</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>LACTOSE</controllingFieldValue>
+                <controllingFieldValue>SMP</controllingFieldValue>
+                <controllingFieldValue>WHEY</controllingFieldValue>
+                <controllingFieldValue>WPC</controllingFieldValue>
+                <valueName>Feed</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>LACTOSE</controllingFieldValue>
+                <valueName>Food</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SMP</controllingFieldValue>
+                <valueName>ADPI HH</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SMP</controllingFieldValue>
+                <valueName>ADPI LH</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SMP</controllingFieldValue>
+                <valueName>ADPI MH</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SMP</controllingFieldValue>
+                <valueName>CODEX HH</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SMP</controllingFieldValue>
+                <valueName>CODEX LH</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SMP</controllingFieldValue>
+                <valueName>CODEX MH</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SMP</controllingFieldValue>
+                <valueName>Partial</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa Butter</controllingFieldValue>
+                <valueName>Bleached</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa Butter</controllingFieldValue>
+                <valueName>Deo</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa Butter</controllingFieldValue>
+                <valueName>Deo De-Gummed</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa Butter</controllingFieldValue>
+                <controllingFieldValue>Cocoa Liquor</controllingFieldValue>
+                <controllingFieldValue>Cocoa Low Fat Powder</controllingFieldValue>
+                <valueName>Natural</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa Liquor</controllingFieldValue>
+                <valueName>Alkalized</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa Low Fat Powder</controllingFieldValue>
+                <valueName>Black Alkalized</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa Low Fat Powder</controllingFieldValue>
+                <valueName>Highly Alkalized</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa Low Fat Powder</controllingFieldValue>
+                <valueName>Lightly Alkalized</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa Low Fat Powder</controllingFieldValue>
+                <controllingFieldValue>Cocoa Mid Fat Powder</controllingFieldValue>
+                <valueName>Medium Alkalized</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>BLEND</controllingFieldValue>
+                <valueName>Brown</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>BLEND</controllingFieldValue>
+                <valueName>White</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>WHEY</controllingFieldValue>
+                <valueName>DWP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>WHEY</controllingFieldValue>
+                <valueName>Permeate</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>WHEY</controllingFieldValue>
+                <valueName>SWP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Tropical</controllingFieldValue>
+                <valueName>Capsicums</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Tropical</controllingFieldValue>
+                <valueName>Chilli</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Tropical</controllingFieldValue>
+                <valueName>Herbs</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Tropical</controllingFieldValue>
+                <valueName>Pepper</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Tropical</controllingFieldValue>
+                <valueName>Root Spices</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Tropical</controllingFieldValue>
+                <valueName>Seed Spices</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Tropical</controllingFieldValue>
+                <valueName>Tropical Spices</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>WPC</controllingFieldValue>
+                <valueName>WPC 34</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>WPC</controllingFieldValue>
+                <valueName>WPC 80</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>WPC</controllingFieldValue>
+                <valueName>WPC other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>WPI</controllingFieldValue>
+                <valueName>WPI</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHERS</controllingFieldValue>
+                <valueName>Oils</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHERS</controllingFieldValue>
+                <valueName>Others</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Blended Product</controllingFieldValue>
+                <valueName>Cocoa Powder &amp; Sugar &amp; Milk</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <valueName>Nibs</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MPC/MPI</controllingFieldValue>
+                <valueName>MPC</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MPC/MPI</controllingFieldValue>
+                <valueName>MPI</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>LIQUIDS</controllingFieldValue>
+                <valueName>BUTTERMLKCONCENTRATE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>LIQUIDS</controllingFieldValue>
+                <valueName>Raw Milk</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>LIQUIDS</controllingFieldValue>
+                <valueName>Skim Milk</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>LIQUIDS</controllingFieldValue>
+                <valueName>SKIMMILKCONCENTRATE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>LIQUIDS</controllingFieldValue>
+                <valueName>Whey Concentrate</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dehy</controllingFieldValue>
+                <valueName>Dehy Vegetable</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dehy</controllingFieldValue>
+                <valueName>Garlic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dehy</controllingFieldValue>
+                <valueName>Onion</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dehy</controllingFieldValue>
+                <valueName>Purees</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Almond</controllingFieldValue>
+                <valueName>Almond Ingredient Blanched</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Almond</controllingFieldValue>
+                <valueName>Almond Ingredient Natural</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Almond</controllingFieldValue>
+                <valueName>Almond InShell</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Almond</controllingFieldValue>
+                <valueName>Almond Kernel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Almond</controllingFieldValue>
+                <valueName>Almond Reject</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Almond</controllingFieldValue>
+                <valueName>Almond Waste</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Total_Consumption__c</fullName>
+        <externalId>false</externalId>
+        <label>Consumption Volume</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Trader__c</fullName>
+        <externalId>false</externalId>
+        <label>Trader</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Ajay G.</fullName>
+                    <default>false</default>
+                    <label>Ajay G.</label>
+                </value>
+                <value>
+                    <fullName>Alessandro M.</fullName>
+                    <default>false</default>
+                    <label>Alessandro M.</label>
+                </value>
+                <value>
+                    <fullName>Andres O.</fullName>
+                    <default>false</default>
+                    <label>Andres O.</label>
+                </value>
+                <value>
+                    <fullName>Anubhav K.</fullName>
+                    <default>false</default>
+                    <label>Anubhav K.</label>
+                </value>
+                <value>
+                    <fullName>Ashim K.</fullName>
+                    <default>false</default>
+                    <label>Ashim K.</label>
+                </value>
+                <value>
+                    <fullName>Bertie S.</fullName>
+                    <default>false</default>
+                    <label>Bertie S.</label>
+                </value>
+                <value>
+                    <fullName>Bruno R.</fullName>
+                    <default>false</default>
+                    <label>Bruno R.</label>
+                </value>
+                <value>
+                    <fullName>Corrado R.</fullName>
+                    <default>false</default>
+                    <label>Corrado R.</label>
+                </value>
+                <value>
+                    <fullName>Daniela R</fullName>
+                    <default>false</default>
+                    <label>Daniela R</label>
+                </value>
+                <value>
+                    <fullName>Douglas Z.</fullName>
+                    <default>false</default>
+                    <label>Douglas Z.</label>
+                </value>
+                <value>
+                    <fullName>Florian S.</fullName>
+                    <default>false</default>
+                    <label>Florian S.</label>
+                </value>
+                <value>
+                    <fullName>George S.</fullName>
+                    <default>false</default>
+                    <label>George S.</label>
+                </value>
+                <value>
+                    <fullName>Howard B.</fullName>
+                    <default>false</default>
+                    <label>Howard B.</label>
+                </value>
+                <value>
+                    <fullName>Ian K.</fullName>
+                    <default>false</default>
+                    <label>Ian K.</label>
+                </value>
+                <value>
+                    <fullName>Jeronimo P.</fullName>
+                    <default>false</default>
+                    <label>Jeronimo P.</label>
+                </value>
+                <value>
+                    <fullName>Julio V.</fullName>
+                    <default>false</default>
+                    <label>Julio V.</label>
+                </value>
+                <value>
+                    <fullName>Kohei I.</fullName>
+                    <default>false</default>
+                    <label>Kohei I.</label>
+                </value>
+                <value>
+                    <fullName>Kyle B.</fullName>
+                    <default>false</default>
+                    <label>Kyle B.</label>
+                </value>
+                <value>
+                    <fullName>Luis R.</fullName>
+                    <default>false</default>
+                    <label>Luis R.</label>
+                </value>
+                <value>
+                    <fullName>Manuel M.</fullName>
+                    <default>false</default>
+                    <label>Manuel M.</label>
+                </value>
+                <value>
+                    <fullName>Marco C.</fullName>
+                    <default>false</default>
+                    <label>Marco C.</label>
+                </value>
+                <value>
+                    <fullName>Mario P.</fullName>
+                    <default>false</default>
+                    <label>Mario P.</label>
+                </value>
+                <value>
+                    <fullName>Maxime C.</fullName>
+                    <default>false</default>
+                    <label>Maxime C.</label>
+                </value>
+                <value>
+                    <fullName>Midhun P.</fullName>
+                    <default>false</default>
+                    <label>Midhun P.</label>
+                </value>
+                <value>
+                    <fullName>Mi Jung S.</fullName>
+                    <default>false</default>
+                    <label>Mi Jung S.</label>
+                </value>
+                <value>
+                    <fullName>Milan B.</fullName>
+                    <default>false</default>
+                    <label>Milan B.</label>
+                </value>
+                <value>
+                    <fullName>Nikhil C.</fullName>
+                    <default>false</default>
+                    <label>Nikhil C.</label>
+                </value>
+                <value>
+                    <fullName>Philip S.</fullName>
+                    <default>false</default>
+                    <label>Philip S.</label>
+                </value>
+                <value>
+                    <fullName>Pratyush S.</fullName>
+                    <default>false</default>
+                    <label>Pratyush S.</label>
+                </value>
+                <value>
+                    <fullName>Ritesh S.</fullName>
+                    <default>false</default>
+                    <label>Ritesh S.</label>
+                </value>
+                <value>
+                    <fullName>Rob S.</fullName>
+                    <default>false</default>
+                    <label>Rob S.</label>
+                </value>
+                <value>
+                    <fullName>Sahra B.</fullName>
+                    <default>false</default>
+                    <label>Sahra B.</label>
+                </value>
+                <value>
+                    <fullName>Santiago P.</fullName>
+                    <default>false</default>
+                    <label>Santiago P.</label>
+                </value>
+                <value>
+                    <fullName>Shaun W.</fullName>
+                    <default>false</default>
+                    <label>Shaun W.</label>
+                </value>
+                <value>
+                    <fullName>Shekhar S.</fullName>
+                    <default>false</default>
+                    <label>Shekhar S.</label>
+                </value>
+                <value>
+                    <fullName>Srikanth A.</fullName>
+                    <default>false</default>
+                    <label>Srikanth A.</label>
+                </value>
+                <value>
+                    <fullName>Stane S.</fullName>
+                    <default>false</default>
+                    <label>Stane S.</label>
+                </value>
+                <value>
+                    <fullName>Thomas G.</fullName>
+                    <default>false</default>
+                    <label>Thomas G.</label>
+                </value>
+                <value>
+                    <fullName>Todd M.</fullName>
+                    <default>false</default>
+                    <label>Todd M.</label>
+                </value>
+                <value>
+                    <fullName>Tom H.</fullName>
+                    <default>false</default>
+                    <label>Tom H.</label>
+                </value>
+                <value>
+                    <fullName>Trista C.</fullName>
+                    <default>false</default>
+                    <label>Trista C.</label>
+                </value>
+                <value>
+                    <fullName>Ubirajara G.</fullName>
+                    <default>false</default>
+                    <label>Ubirajara G.</label>
+                </value>
+                <value>
+                    <fullName>Vancler C.</fullName>
+                    <default>false</default>
+                    <label>Vancler C.</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Value_Stream__c</fullName>
+        <externalId>false</externalId>
+        <label>Value Stream</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Value_Stream</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Variety__c</fullName>
+        <externalId>false</externalId>
+        <label>Variety</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Variety</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Volume__c</fullName>
+        <externalId>false</externalId>
+        <label>Annual Budget Volume</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Budget vs Actual Line</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>BVSAL-{0000000}</displayFormat>
+        <label>Budget vs Actual Line Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Budget vs Actual Lines</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

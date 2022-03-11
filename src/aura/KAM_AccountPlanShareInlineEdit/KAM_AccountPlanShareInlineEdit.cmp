@@ -1,0 +1,58 @@
+<aura:component extends="c:KAM_Util" controller="KAM_AccountPlanSharePopupCntl" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" >
+    <aura:attribute name="AccessLevel1" type="string[]" description="store picklist options values"/> 
+    <aura:attribute name="showSaveCancelBtn" type="boolean"/>
+    <aura:attribute name="showErrorClass" type="boolean" default="false"/>
+    <aura:attribute name="sNo" type="string" />
+    <aura:attribute name="singleRec" type="Account_Plans__Share"/>
+    <aura:attribute name="accessLevelEditMode" type="boolean" default="false" />
+    <aura:registerEvent name="KAM_AccountPlanShareInlineEditevt" type="c:KAM_AccountPlanShareInlineEditevt"/>
+    
+     <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+     <!--Table Row Start-->  
+    <tr>   
+        <td style="width:10rem;"><div class="slds-truncate" >{!v.singleRec.UserName}</div></td>
+        <td style="width:10rem;"><div class="slds-truncate" >{!v.singleRec.BusinessUnit}</div></td>
+        <td style="width:10rem;"><div class="slds-truncate" >{!v.singleRec.ShareReason }</div></td>
+        <td  class="slds-cell-edit" ><div class="slds-truncate" >{!v.singleRec.AccessLevel}</div></td>
+            <!--<span class="slds-grid slds-grid_align-spread">
+              
+                <aura:if isTrue="{!v.accessLevelEditMode == false}">
+                    <span class="slds-truncate" title="AccessLevel" >{!v.singleRec.AccessLevel}</span>
+                    <aura:if isTrue="{!and(v.singleRec.RowCause != 'Owner',v.singleRec.RowCause !='By Role')}">
+                    <button onclick="{!c.inlineEditAccessLevel}" class="slds-button slds-button_icon slds-cell-edit__button slds-m-left_x-small" tabindex="0" title="Edit AccessLevel">
+                        <lightning:icon iconName="utility:edit" size="xx-small" alternativeText="edit"/>
+                    </button>
+                    </aura:if>
+                  
+                    <aura:set attribute="else">
+                        <section  tabindex="0" class="slds-popover slds-popover_edit" role="dialog" style="position: absolute; top: 0px">
+                            <div class="slds-popover__body">
+                                <div class="slds-form-element slds-grid slds-wrap">
+                                    <div class="slds-form-element__control slds-grow">
+                                        <label class="slds-form-element__label">Access Level</label>
+                                        <ui:inputSelect aura:id="accRating"
+                                                        class="slds-select inputFieldWidth"
+                                                        blur="{!c.closeRatingBox}"
+                                                        change="{!c.onRatingChange}"
+                                                        value="{!v.singleRec.AccessLevel}"
+                                                        >
+                                            <aura:iteration items="{!v.AccessLevel1}" var="val">
+                                                <ui:inputSelectOption text="{!val}" />
+                                                    
+                                                </aura:iteration>
+                                        </ui:inputSelect>
+                                    </div>
+                                </div>
+                            </div>
+                            <span id="form-end" tabindex="0"></span>
+                        </section>  
+                    </aura:set>  
+                </aura:if> 
+            </span>
+        </td>--> 
+         <td style="width:15rem;"><div class="slds-truncate">
+             <aura:if isTrue="{!v.singleRec.ShareReason != 'Owner'}">
+             <a href="" onclick="{!c.removeAccess}" ><lightning:icon iconName="utility:delete" alternativeText="Remove"  title="Remove" size="small"/></a>
+             </aura:if></div></td>
+    </tr>
+</aura:component>

@@ -1,0 +1,20 @@
+.THIS {
+}
+@media (min-width: 48em) {
+    .THIS .user-inp .slds-form-element_horizontal .slds-form-element__control, 
+    .THIS .user-inp .slds-form_horizontal .slds-form-element .slds-form-element__control, 
+    .THIS .user-inp .slds-form_stacked .slds-form-element_horizontal .slds-form-element__control {
+        padding-left: 0;
+        clear: both;
+    }
+    .THIS .user-inp .slds-form-element_horizontal .slds-form-element__label, 
+    .THIS .user-inp .slds-form_horizontal .slds-form-element .slds-form-element__label, 
+    .THIS .user-inp .slds-form_stacked .slds-form-element_horizontal .slds-form-element__label {
+        max-width : 100%
+    }
+    .THIS .slds-modal__container {
+        margin: 0 auto;
+        width: 75%;
+        max-width: 55rem;
+    }
+}

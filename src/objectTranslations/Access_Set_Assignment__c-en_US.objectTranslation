@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Access Set Assignment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Access Set Assignments</value>
+    </caseValues>
+    <fields>
+        <label><!-- Access Set --></label>
+        <name>Access_Set__c</name>
+        <relationshipLabel><!-- Access Set Assignments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account Teams Creation Status --></label>
+        <name>Account_Teams_Creation_Status__c</name>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Initiated</masterLabel>
+            <translation><!-- Initiated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processed</masterLabel>
+            <translation><!-- Processed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Unique ID --></label>
+        <name>Unique_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- Access Set Assignments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- User&apos;s Email ID --></label>
+        <name>User_s_Email_ID__c</name>
+    </fields>
+    <layouts>
+        <layout>Access Set Management Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

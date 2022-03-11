@@ -1,0 +1,82 @@
+<apex:page renderAs="pdf" 
+           id="thePage" 
+           StandardController="Quote" 
+           extensions="PLBSQuotePDFCustomCntl" 
+           contentType="application/pdf"
+           applyBodyTag="false">
+     
+    
+    <head>
+    	<style type="text/css" media="print">
+        @page {
+            margin-bottom: 3cm;
+
+            @bottom-left {
+             content: element(footer);
+            }
+        }
+        div.footer {
+            position: running(footer);
+        }
+
+    </style>
+	</head>
+    
+         <body>
+        
+        <div>
+            <apex:image id="logo" value="{!$Resource.OfiLogo}" height="100px" width="150px"/>
+        </div><hr/>
+        <div style="font-family: Arial, Helvetica, sans-serif;">
+            
+		                <apex:outputText rendered="{!if((DAY(TODAY()) == 1) || (DAY(TODAY()) == 21) || (DAY(TODAY()) == 31) , true,false) }"> {!DAY(TODAY())}<sup>st</sup></apex:outputText>
+                        <apex:outputText rendered="{!if((DAY(TODAY()) == 2) || (DAY(TODAY()) == 22) , true,false) }"> {!DAY(TODAY())}<sup>nd</sup></apex:outputText>
+                        <apex:outputText rendered="{!if((DAY(TODAY()) == 3) || (DAY(TODAY()) == 23) , true,false) }"> {!DAY(TODAY())}<sup>rd</sup></apex:outputText>
+                        <apex:outputText rendered="{!if((DAY(TODAY()) > 3 && DAY(TODAY()) <21) || (DAY(TODAY()) > 23 && DAY(TODAY()) <31), true,false) }"> {!DAY(TODAY())}<sup>th</sup></apex:outputText> 
+                       &nbsp;<apex:outputText value="{0,date,MMMMM}"> <apex:param value="{!TODAY()}" /></apex:outputText> {!YEAR(TODAY())} 
+            <br/><br/>
+                <address style="line-height:0.5em">
+                    {!contact.Name}<br/><br/>
+                    {!contact.Phone}<br/><br/>
+                    {!contact.MailingStreet}<br/><br/>
+                    {!contact.MailingCity}<br/><br/>
+                    {!contact.MailingState}<br/><br/>
+                    {!contact.MailingPostalCode}<br/><br/>
+                    {!contact.MailingCountry}<br/><br/>
+                </address>                
+
+                
+ 
+            <br/><br/>
+        </div>
+        <u><b style="font-size:20px">Quotation for {!Quote.Account.Name}</b></u>
+        <br/><br/>
+        
+        <apex:dataTable value="{!pdfWrapList}" border="2px" style="text-align: center;width: 100%;font-family: arial, sans-serif;border-collapse: collapse;" var="pdfWrap" cellpadding="10" >
+            <apex:column headerValue="Item"  style="border: 1px solid #ddd;" value="{!pdfWrap.ItemNum}" />
+            <apex:column headerValue="Product Name"  style="border: 1px solid #ddd;" value="{!pdfWrap.productName}" />
+            <apex:column headerValue="Grade"  style="border: 1px solid #ddd;" value="{!pdfWrap.Grade}"/>
+            <apex:column headerValue="Pacakging Type"  style="border: 1px solid #ddd;" value="{!pdfWrap.packagingType}"/>
+            <apex:column headerValue="Weight(G)"  style="border: 1px solid #ddd;" value="{!pdfWrap.Weight}"/>
+            <apex:column headerValue="USD/Unit" style="border: 1px solid #ddd;" value="{!pdfWrap.usdPerUnit}"/>
+            <apex:column headerValue="Primary Packaging MOQ (pcs)" style="border: 1px solid #ddd;" value="{!pdfWrap.PrimaryPackagingMOQ}"/>
+        </apex:dataTable>
+        
+        <br/>
+        <div><h2>Terms and Conditions </h2></div>
+        <hr style="color:green"></hr>
+    
+    	<apex:repeat value="{!termsandcondition}" var="string">
+    	    <li><apex:outputText value="{!string}" id="theValue"/><br/></li>
+    	</apex:repeat>        
+    
+        
+        <div class="footer" style="page-break-after:always;font-family:Arial,Helvetica,sen-serif;font-size:8pt;color:808080;">
+            <span style="color:#8B2292;"><b>Olam Vietnam Limited</b></span><br/>
+            Lot L, Road No. 5, An Phuoc Industrial Park<br/>
+            An phuoc communce,Long thanh Dist,Dong Nai,Vietnam<br/>
+            T+ 84 251 882 6748-882 6749-882 6750 | F+ 84 251 339 2360 | www.ofi.com           
+     	</div>
+    
+    </body>
+</apex:page>

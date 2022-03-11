@@ -1,0 +1,4 @@
+PD&I member has sent the sample to the {!Opportunity.Account} on {!OpportunityLineItem.Sample_Sent_Date__c} 
+
+Opportunity Link:{!Opportunity.Link}
+Opportunity id: {!Opportunity.Id}

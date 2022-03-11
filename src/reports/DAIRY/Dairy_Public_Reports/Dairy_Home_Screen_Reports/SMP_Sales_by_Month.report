@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_73034068</developerName>
+        <masterLabel>Region</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>FULL_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Amy Sun</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Cindy Ma</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>David Deng</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Miranda Ling</sourceValue>
+            </sourceValues>
+            <value>China</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Jeffrey Lee</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Karan Dogra</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kate Seng</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Anh Nguyen</sourceValue>
+            </sourceValues>
+            <value>SEA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Abhay Betharia</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Hiran Perera</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mohammad Hassan</sourceValue>
+            </sourceValues>
+            <value>ME</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Vipin Kukreja</sourceValue>
+            </sourceValues>
+            <value>SAARC</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Mihir Mogre</sourceValue>
+            </sourceValues>
+            <value>N Africa</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Vishal Sharma</sourceValue>
+            </sourceValues>
+            <value>W Africa</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Matt Helon</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Marcelino Valdez</sourceValue>
+            </sourceValues>
+            <value>USA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Wadim Pasiczniak</sourceValue>
+            </sourceValues>
+            <value>E EU</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Rutger Schutte</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Karel Keijzer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jean Baptiste Plasma</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bartosz Stachowicz</sourceValue>
+            </sourceValues>
+            <value>W EU</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Angela Ajeng</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Hans Daley</sourceValue>
+            </sourceValues>
+            <value>Indonesia</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>OpportunityLineItem.Volume__c</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_73034068</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OpportunityLineItem.Volume__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Product2.Product_Category__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>SMP</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Month</dateGranularity>
+        <field>LAST_UPDATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_73034068</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>SMP Sales by Month</name>
+    <params>
+        <name>open</name>
+        <value>closedwon</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

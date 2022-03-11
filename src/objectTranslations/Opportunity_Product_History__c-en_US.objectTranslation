@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Opportunity Product History</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Opportunity Product History</value>
+    </caseValues>
+    <fields>
+        <label><!-- Ingredient --></label>
+        <name>Ingredient__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Recorded Date --></label>
+        <name>Last_Recorded_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- List Price --></label>
+        <name>List_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Value --></label>
+        <name>New_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Old Value --></label>
+        <name>Old_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Product --></label>
+        <name>Opportunity_Product__c</name>
+        <relationshipLabel><!-- Opportunity Product History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Ingredient History Tracking --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quantity --></label>
+        <name>Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ratio --></label>
+        <name>Ratio__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit Price --></label>
+        <name>Unit_Price__c</name>
+    </fields>
+    <layouts>
+        <layout>PLBS Opportunity Product History Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

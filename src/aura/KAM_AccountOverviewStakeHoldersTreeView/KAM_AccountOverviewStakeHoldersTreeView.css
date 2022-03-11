@@ -1,0 +1,131 @@
+/* 
+.THIS body {
+    font-family: Calibri, Segoe, "Segoe UI", "Gill Sans", "Gill Sans MT", sans-serif;
+  } */
+  
+  /* It's supposed to look like a tree diagram */
+  .THIS .tree, .THIS .tree ul, .THIS .tree li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+  
+.THIS .tree {
+    margin: 0 0 1em;
+    text-align: center;
+}
+.THIS .tree, .THIS .tree ul {
+    display: table;
+}
+.THIS .tree ul {
+    width: 100%;
+}
+.THIS .tree li {
+    display: table-cell;
+    padding: .5em 0;
+    vertical-align: top;
+}
+/* _________ */
+.THIS .tree li::before {
+    outline: solid 1px #666;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.THIS .tree li:first-child::before {left: 50%;}
+.THIS .tree li:last-child::before {right: 50%;}
+
+.THIS .tree code, .THIS .tree .contact-card {
+    border: solid .1em #666;
+    border-radius: .2em;
+    display: inline-block;
+    margin: 0 .2em .5em;
+    padding: .5em .5em;
+    position: relative;
+    vertical-align: middle;
+}
+/* If the tree represents DOM structure */
+.THIS .tree code {
+    font-family: monaco, Consolas, 'Lucida Console', monospace;
+}
+
+/* | */
+.THIS .tree ul::before,
+.THIS .tree code::before,
+.THIS .tree .contact-card div::before {
+    outline: solid 1px #666;
+    content: "";
+    height: .4em;
+    left: 50%;
+    position: absolute;
+}
+.THIS .tree ul::before {
+    top: -.5em;
+}
+.THIS .tree code::before,
+.THIS .tree .contact-card div::before {
+    top: -.55em;
+}
+
+  /* The root node doesn't connect upwards */
+.THIS .tree > li {margin-top: 0;}
+.THIS .tree > li::before,
+.THIS .tree > li::after,
+.THIS .tree > li > code::before,
+.THIS .tree > li > .contact-card div::before {
+    outline: none;
+}
+
+.THIS .contact-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    
+    /* width: 40%; */
+}
+.THIS .contact-card-outer-container {
+    display: grid;
+    grid-template-columns: 50px auto;
+}
+  
+.THIS .contact-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+  
+.THIS .contact-card-container {
+    padding: 2px;
+    display : inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+.THIS .contact-card-container span {
+    display : block;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+.THIS .contact-card-container .desc-text{
+    color : #706E6B;
+}
+.THIS .contact-name {
+    font-weight: 700;
+}
+.THIS .contact-img {
+    vertical-align : middle;
+	border-radius: 50%;
+    align-self : center;
+    padding : 4px;
+/*     
+    display : inline-block;
+    border-radius: 50%;
+    vertical-align: middle;
+    width: 20%; */
+}
+.THIS .empty-tree-container {
+    text-align: center;
+    padding : 1rem;
+    font-size: 14px;
+    font-weight: 600;
+}

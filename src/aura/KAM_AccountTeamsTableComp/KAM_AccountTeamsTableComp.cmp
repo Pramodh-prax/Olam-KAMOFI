@@ -1,0 +1,118 @@
+<aura:component extends="c:KAM_Util">
+
+    <ltng:require scripts="{!join(',',
+    $Resource.jquery) }" afterScriptsLoaded="{!c.scriptLoaded}" />
+
+    <aura:attribute name="items" type="List" default='[]' />
+    <aura:attribute name="displayedItems" type="List" default='[]' />
+    <aura:attribute name="columnHeaders" type="Object" default='{}' />
+    <aura:attribute name="showAccountCol" type="Boolean" default="false" />
+    <aura:attribute name="isPreviousBtnDisabled" type="Boolean" default="false" />
+    <aura:attribute name="isNextBtnDisabled" type="Boolean" default="false" />
+    <aura:attribute name="hasPaginatedView" type="Boolean" default="true" />
+    <aura:attribute name="pageSize" type="Integer" default="2" />
+    <aura:attribute name="currentIndex" type="Integer" default="0" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <lightning:layout multipleRows="true" horizontalAlign="center" verticalAlign="center" class="">
+        <lightning:layoutItem size="12" class="" smallDeviceSize="12" mediumDeviceSize="12" largeDeviceSize="12">
+
+            <div class="table-wrapper">
+                <table class="table">
+                    <thead>
+                        <tr class="header-row">
+                            <th class="sticky-header" scope="col" style="width :15%;padding-left:.5rem;">
+                                {!v.columnHeaders.teamMember}
+                            </th>
+                            <th class="sticky-header" scope="col" style="width :15%;padding-left:.5rem;">
+                                {!v.columnHeaders.role}
+                            </th>
+                            <th class="sticky-header" scope="col" style="width :15%;padding-left:.5rem;">
+                                {!v.columnHeaders.primary}
+                            </th>
+                            <th class="sticky-header" scope="col" style="width :15%;padding-left:.5rem;">
+                                {!v.columnHeaders.bu}
+                            </th>
+                            <aura:if isTrue="{!v.showAccountCol}">
+                                <th class="sticky-header" scope="col" style="width :15%;padding-left:.5rem;">
+                                    {!v.columnHeaders.accountName}
+                                </th>
+                            </aura:if>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <aura:if isTrue="{!(empty(v.displayedItems))}">
+                            <tr>
+                                <td class="accTeam-table-col" colspan="{! v.showAccountCol == true ? '5' : '4'}">
+                                    <div class="table-row-spec-no-rows " title="">
+                                        {!$Label.c.KAM_No_Data_available_in_table}
+                                    </div>
+                                </td>
+                            </tr>
+                        </aura:if>
+                        <aura:if isTrue="{! not(empty(v.displayedItems))}">
+                            <aura:iteration items="{!v.displayedItems}" var="eachLineItem" indexVar="index">
+                                <tr>
+                                    <th scope="row" data-label="{!v.columnHeaders.teamMember}" style="width :15%;"
+                                        class="accTeam-table-col">
+                                        <div class="slds-truncate table-row-spec" title="{!eachLineItem.UserName}">
+                                            <a class="slds-truncate link-text "
+                                                href="{!'/one/one.app?#/sObject/'+ eachLineItem.Id + '/view'}"
+                                                target="_blank">
+                                                {!eachLineItem.UserName}
+                                            </a>
+                                        </div>
+                                    </th>
+                                    <td style="width :15%;" class="accTeam-table-col"
+                                        data-label="{!v.columnHeaders.role}">
+                                        <div class="slds-truncate_custom table-row-spec" title="{!eachLineItem.Role}">
+                                            {!eachLineItem.Role}
+                                        </div>
+                                    </td>
+                                    <td style="width :15%;" class="accTeam-table-col"
+                                        data-label="{!v.columnHeaders.primary}">
+                                        <div class="slds-truncate_custom table-row-spec" title="{!eachLineItem.Primary}">
+                                            <ui:outputCheckbox aura:id="output" value="{!eachLineItem.Primary}"/>
+                                        </div>
+                                    </td>
+                                    <td style="width :15%;" class="accTeam-table-col"
+                                        data-label="{!v.columnHeaders.bu}">
+                                        <div class="slds-truncate_custom table-row-spec"
+                                            title="{!eachLineItem.BusinessUnit}">
+                                            {!eachLineItem.BusinessUnit}
+                                        </div>
+                                    </td>
+                                    <aura:if isTrue="{!v.showAccountCol}">
+                                        <td style="width :15%;" class="accTeam-table-col"
+                                            data-label="{!v.columnHeaders.accountName}">
+                                            <div class="slds-truncate_custom table-row-spec"
+                                                title="{!eachLineItem.accountName}">
+                                                <aura:if isTrue="{!eachLineItem.accountId}">
+                                                    <a class="slds-truncate link-text "
+                                                        href="{!'/one/one.app?#/sObject/'+ eachLineItem.accountId + '/view'}"
+                                                        target="_blank">
+                                                        {!eachLineItem.accountName}
+                                                    </a>
+                                                </aura:if>
+                                            </div>
+                                        </td>
+                                    </aura:if>
+                                </tr>
+                            </aura:iteration>
+                        </aura:if>
+                    </tbody>
+                </table>
+            </div>
+        </lightning:layoutItem>
+        <aura:if isTrue="{!v.hasPaginatedView}">
+            <lightning:layoutItem size="12" class="pagination-btn-container" smallDeviceSize="12" mediumDeviceSize="12" largeDeviceSize="12">
+                <div>
+                    <lightning:button class="pagination-btn" variant="brand" label="Previous" title="Previous" onclick="{! c.handlePreviousClick }" disabled="{!v.isPreviousBtnDisabled}" />
+                </div>
+                <div>
+                    <lightning:button class="pagination-btn" variant="brand" label="Next" title="Next" onclick="{! c.handleNextClick }" disabled="{!v.isNextBtnDisabled}" />
+                </div>
+            </lightning:layoutItem>
+        </aura:if>
+    </lightning:layout>
+</aura:component>

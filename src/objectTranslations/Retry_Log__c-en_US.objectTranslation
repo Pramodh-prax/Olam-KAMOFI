@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Retry Log</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Retry Logs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Access Set Assignment --></label>
+        <name>Access_Set_Assignment__c</name>
+        <relationshipLabel><!-- Retry Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account Team --></label>
+        <name>Account_Team__c</name>
+        <relationshipLabel><!-- Retry Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Error Message --></label>
+        <name>Error_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Retry Count --></label>
+        <name>Retry_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Account Team Creation</masterLabel>
+            <translation><!-- Account Team Creation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account Team Grant Access</masterLabel>
+            <translation><!-- Account Team Grant Access --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

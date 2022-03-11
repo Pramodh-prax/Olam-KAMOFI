@@ -1,0 +1,5 @@
+Hi, 
+
+The {!OpportunityLineItem.Opportunity_Name__c} for {!OpportunityLineItem.Account_Name__c} the sampling status is changed to {!OpportunityLineItem.Sample_Status__c}.
+
+Click here to review : {!OpportunityLineItem.Link}

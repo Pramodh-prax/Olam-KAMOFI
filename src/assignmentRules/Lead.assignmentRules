@@ -1,0 +1,2198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Lead for Olam Cocoa Pro Enquiries</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <assignedTo>geoffrey.meek@ofi.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 10 OR 11) AND (4 OR 5 OR 6 OR 7) AND 8 AND 9</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>equals</operation>
+                <value>Cocoa Powder</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>equals</operation>
+                <value>Cocoa Mass</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>equals</operation>
+                <value>Cocoa Butter</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Region__c</field>
+                <operation>equals</operation>
+                <value>West Europe</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Region__c</field>
+                <operation>equals</operation>
+                <value>Middle East and North Africa</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Region__c</field>
+                <operation>equals</operation>
+                <value>Sub Sahara Africa</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Region__c</field>
+                <operation>equals</operation>
+                <value>East Europe and Russia</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Bag_Format__c</field>
+                <operation>equals</operation>
+                <value>Large bags (25 kilo - 1 ton)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>equals</operation>
+                <value>Cocoa Nibs</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>equals</operation>
+                <value>Chocolate</value>
+            </criteriaItems>
+            <template>unfiled$public/Olam_Cocoa_Pro_Redirect_lead</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>charissa.leong@ofi.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 12 OR 11) AND (4 OR 5 OR 6 OR 7 OR 8) AND 9 AND 10</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>equals</operation>
+                <value>Cocoa Powder</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>equals</operation>
+                <value>Cocoa Mass</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>equals</operation>
+                <value>Cocoa Butter</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Region__c</field>
+                <operation>equals</operation>
+                <value>Southern Asia</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Region__c</field>
+                <operation>equals</operation>
+                <value>Central Asia</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Region__c</field>
+                <operation>equals</operation>
+                <value>East Asia</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Region__c</field>
+                <operation>equals</operation>
+                <value>South East Asia</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Region__c</field>
+                <operation>equals</operation>
+                <value>Australia and New Zealand</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Bag_Format__c</field>
+                <operation>equals</operation>
+                <value>Large bags (25 kilo - 1 ton)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>equals</operation>
+                <value>Cocoa Nibs</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>equals</operation>
+                <value>Chocolate</value>
+            </criteriaItems>
+            <template>unfiled$public/Olam_Cocoa_Pro_Redirect_lead</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Product_Beans</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>equals</operation>
+                <value>Cocoa Beans</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <template>unfiled$public/Olam_Cocoa_Pro_Redirect_lead</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>william.pearce@ofi.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 9 OR 10) AND (4 OR 5 OR 6) AND 7 AND 8</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>equals</operation>
+                <value>Cocoa Powder</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>equals</operation>
+                <value>Cocoa Mass</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>equals</operation>
+                <value>Cocoa Butter</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Region__c</field>
+                <operation>equals</operation>
+                <value>North America</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Region__c</field>
+                <operation>equals</operation>
+                <value>Central America</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Region__c</field>
+                <operation>equals</operation>
+                <value>South America</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Bag_Format__c</field>
+                <operation>equals</operation>
+                <value>Large bags (25 kilo - 1 ton)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>equals</operation>
+                <value>Cocoa Nibs</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>equals</operation>
+                <value>Chocolate</value>
+            </criteriaItems>
+            <template>unfiled$public/Olam_Cocoa_Pro_Redirect_lead</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Order_Enquiry_North_Central_America</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Enquiry_Type__c</field>
+                <operation>equals</operation>
+                <value>Order information</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Region__c</field>
+                <operation>equals</operation>
+                <value>North America</value>
+            </criteriaItems>
+            <template>unfiled$public/Olam_Cocoa_Pro_Redirect_lead</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Order_Enquiry_South_America</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Region__c</field>
+                <operation>equals</operation>
+                <value>South America</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Enquiry_Type__c</field>
+                <operation>equals</operation>
+                <value>Order information</value>
+            </criteriaItems>
+            <template>unfiled$public/Olam_Cocoa_Pro_Redirect_lead</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Order_Enquiry_EMEA</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2 AND (3 OR 4 OR 5 OR 6)</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Enquiry_Type__c</field>
+                <operation>equals</operation>
+                <value>Order information</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Region__c</field>
+                <operation>equals</operation>
+                <value>West Europe</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Region__c</field>
+                <operation>equals</operation>
+                <value>Middle East and North Africa</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Region__c</field>
+                <operation>equals</operation>
+                <value>Sub Sahara Africa</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Region__c</field>
+                <operation>equals</operation>
+                <value>East Europe and Russia</value>
+            </criteriaItems>
+            <template>unfiled$public/New_Lead_Olam_Cocoa_Pro</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Order_Enquiry_North_Central_America</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Enquiry_Type__c</field>
+                <operation>equals</operation>
+                <value>Order information</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Region__c</field>
+                <operation>equals</operation>
+                <value>Central America</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <template>unfiled$public/Olam_Cocoa_Pro_Redirect_lead</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Order_Enquiry_APAC</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND (2 OR 3 OR 4 OR 5 OR 6) AND 7</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Region__c</field>
+                <operation>equals</operation>
+                <value>Southern Asia</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Region__c</field>
+                <operation>equals</operation>
+                <value>Central Asia</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Region__c</field>
+                <operation>equals</operation>
+                <value>East Asia</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Region__c</field>
+                <operation>equals</operation>
+                <value>South East Asia</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Region__c</field>
+                <operation>equals</operation>
+                <value>Australia and New Zealand</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Enquiry_Type__c</field>
+                <operation>equals</operation>
+                <value>Order information</value>
+            </criteriaItems>
+            <template>unfiled$public/Olam_Cocoa_Pro_Redirect_lead</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Tech_Product_Enquiry_AMEA</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND (2 OR 3 OR 4) AND 5</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Enquiry_Type__c</field>
+                <operation>equals</operation>
+                <value>Product specification</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Region__c</field>
+                <operation>equals</operation>
+                <value>North America</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Region__c</field>
+                <operation>equals</operation>
+                <value>Central America</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Region__c</field>
+                <operation>equals</operation>
+                <value>South America</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <template>unfiled$public/Olam_Cocoa_Pro_Redirect_lead</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Tech_Product_Enquiry_EMEA</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND (2 OR 3 OR 4 OR 5) AND 6</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Enquiry_Type__c</field>
+                <operation>equals</operation>
+                <value>Product specification</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Region__c</field>
+                <operation>equals</operation>
+                <value>West Europe</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Region__c</field>
+                <operation>equals</operation>
+                <value>Middle East and North Africa</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Region__c</field>
+                <operation>equals</operation>
+                <value>Sub Sahara Africa</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Region__c</field>
+                <operation>equals</operation>
+                <value>East Europe and Russia</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <template>unfiled$public/Olam_Cocoa_Pro_Redirect_lead</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Tech_Product_Enquiry_APAC</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND (2 OR 3 OR 4 OR 5 OR 6) AND 7</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Enquiry_Type__c</field>
+                <operation>equals</operation>
+                <value>Product specification</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Region__c</field>
+                <operation>equals</operation>
+                <value>Southern Asia</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Region__c</field>
+                <operation>equals</operation>
+                <value>Central Asia</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Region__c</field>
+                <operation>equals</operation>
+                <value>East Asia</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Region__c</field>
+                <operation>equals</operation>
+                <value>South East Asia</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Region__c</field>
+                <operation>equals</operation>
+                <value>Australia and New Zealand</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <template>unfiled$public/Olam_Cocoa_Pro_Redirect_lead</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Small_Packs_Team</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Bag_Format__c</field>
+                <operation>equals</operation>
+                <value>Small bags (1 - 5 kilos)</value>
+            </criteriaItems>
+            <template>unfiled$public/Olam_Cocoa_Pro_Redirect_lead</template>
+        </ruleEntry>
+    </assignmentRule>
+    <assignmentRule>
+        <fullName>New Lead for Olam Cocoa Pro Enquiries-21</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>ricardo.leite@ofi.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 7 OR 8) AND 4 AND 5 AND 6</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Powder</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Mass</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Butter</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Denmark,Noway,Sweden,Iceland,Iceland,Greenland,Svalbard and Jan Mayen</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Bag_Format__c</field>
+                <operation>equals</operation>
+                <value>Large bags (25 kilo - 1 ton)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Nibs</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Chocolate</value>
+            </criteriaItems>
+            <template>unfiled$public/Leads_New_assignment_notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>mounir.laghribi@ofi.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 7 OR 8) AND 4 AND 5 AND 6</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Powder</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Mass</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Butter</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Switzerland,Italy,Greece,Turkey</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Bag_Format__c</field>
+                <operation>equals</operation>
+                <value>Large bags (25 kilo - 1 ton)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Nibs</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Chocolate</value>
+            </criteriaItems>
+            <template>unfiled$public/Leads_New_assignment_notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>christian.laucht@ofi.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 7 OR 8) AND 4 AND 5 AND 6</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Powder</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Mass</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Butter</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Austria,Germany</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Bag_Format__c</field>
+                <operation>equals</operation>
+                <value>Large bags (25 kilo - 1 ton)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Nibs</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Chocolate</value>
+            </criteriaItems>
+            <template>unfiled$public/Leads_New_assignment_notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>constantin.wagner@ofi.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 7 OR 8) AND 4 AND 5 AND 6</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Powder</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Mass</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Butter</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Germany</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Bag_Format__c</field>
+                <operation>equals</operation>
+                <value>Large bags (25 kilo - 1 ton)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Nibs</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Chocolate</value>
+            </criteriaItems>
+            <template>unfiled$public/Leads_New_assignment_notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>jesper.snorgaard@ofi.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 7 OR 8) AND 4 AND 5 AND 6</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Powder</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Mass</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Butter</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Spain</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Bag_Format__c</field>
+                <operation>equals</operation>
+                <value>Large bags (25 kilo - 1 ton)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Nibs</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Chocolate</value>
+            </criteriaItems>
+            <template>unfiled$public/Leads_New_assignment_notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>chemsi.ayouche@ofi.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 7 OR 8) AND 4 AND 5 AND 6</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Powder</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Mass</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Butter</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>France,Algeria,Morocco,Tunisia</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Bag_Format__c</field>
+                <operation>equals</operation>
+                <value>Large bags (25 kilo - 1 ton)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Nibs</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Chocolate</value>
+            </criteriaItems>
+            <template>unfiled$public/Leads_New_assignment_notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>mike.barrett@ofi.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 7 OR 8) AND 4 AND 5 AND 6</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Powder</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Mass</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Butter</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>United Kingdom,Ireland</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Bag_Format__c</field>
+                <operation>equals</operation>
+                <value>Large bags (25 kilo - 1 ton)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Nibs</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Chocolate</value>
+            </criteriaItems>
+            <template>unfiled$public/Leads_New_assignment_notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>andriy@ofi.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 7 OR 8) AND 4 AND 5 AND 6</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Powder</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Mass</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Butter</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Ukraine,Moldova,Republic of,Georgia,Czech Republic,Romania</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Bag_Format__c</field>
+                <operation>equals</operation>
+                <value>Large bags (25 kilo - 1 ton)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Nibs</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Chocolate</value>
+            </criteriaItems>
+            <template>unfiled$public/Leads_New_assignment_notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>philipp.duering@ofi.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 7 OR 8) AND 4 AND 5 AND 6</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Powder</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Mass</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Butter</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Poland,Czech Republic,Hungary,Estonia,Latvia,Lithuania,Bulgaria,Romania,Albania,Bosnia and Herzegovina,KOSOVO,Montenegro,Macedonia,the former Yugoslav Republic of,Solvenia,Serbia</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Bag_Format__c</field>
+                <operation>equals</operation>
+                <value>Large bags (25 kilo - 1 ton)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Nibs</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Chocolate</value>
+            </criteriaItems>
+            <template>unfiled$public/Leads_New_assignment_notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>andrey.fomin@ofi.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 7 OR 8) AND 4 AND 5 AND 6</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Powder</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Mass</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Butter</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Russian Federation,Azerbaijan,Armenia,Belarus,Georgia,Kazakhstan,Kyrgyzstan,Moldova,Republic of,Tajikistan,Turkmenistan,Uzbekistan,Ukraine</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Bag_Format__c</field>
+                <operation>equals</operation>
+                <value>Large bags (25 kilo - 1 ton)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Nibs</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Chocolate</value>
+            </criteriaItems>
+            <template>unfiled$public/Leads_New_assignment_notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>munish.uppal@ofi.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 7 OR 8) AND 4 AND 5 AND 6</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Powder</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Mass</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Butter</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Jordan,Lebanon,Kuwait,Saudi Arabia,Syrian Arab Republic,Republic of,Iraq,Utd.Arab Emir.,Egypt,Iran,Islamic Republic of</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Bag_Format__c</field>
+                <operation>equals</operation>
+                <value>Large bags (25 kilo - 1 ton)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Nibs</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Chocolate</value>
+            </criteriaItems>
+            <template>unfiled$public/Leads_New_assignment_notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>cecile.charroin@ofi.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 7 OR 8) AND 4 AND 5 AND 6</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Powder</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Mass</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Butter</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Israel</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Bag_Format__c</field>
+                <operation>equals</operation>
+                <value>Large bags (25 kilo - 1 ton)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Nibs</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Chocolate</value>
+            </criteriaItems>
+            <template>unfiled$public/Leads_New_assignment_notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>jason.eberle@ofi.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 7 OR 8) AND (4 OR 10)  AND 5 AND 6 AND 9</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Powder</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Mass</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Butter</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Mexico</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Bag_Format__c</field>
+                <operation>equals</operation>
+                <value>Large bags (25 kilo - 1 ton)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Nibs</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Chocolate</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Region__c</field>
+                <operation>equals</operation>
+                <value>North East</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>USA</value>
+            </criteriaItems>
+            <template>unfiled$public/Leads_New_assignment_notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>samantha.henkel@ofi.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 8 OR 9) AND 4 AND 5 AND 6 AND 7</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Powder</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Mass</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Butter</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>USA</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Region__c</field>
+                <operation>equals</operation>
+                <value>Midwest</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Bag_Format__c</field>
+                <operation>equals</operation>
+                <value>Large bags (25 kilo - 1 ton)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Nibs</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Chocolate</value>
+            </criteriaItems>
+            <template>unfiled$public/Leads_New_assignment_notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>andrew.oh@ofi.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 8 OR 9) AND 4 AND 5 AND 6 AND 7</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Powder</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Mass</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Butter</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>USA</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Region__c</field>
+                <operation>equals</operation>
+                <value>West Coast</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Bag_Format__c</field>
+                <operation>equals</operation>
+                <value>Large bags (25 kilo - 1 ton)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Nibs</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Chocolate</value>
+            </criteriaItems>
+            <template>unfiled$public/Leads_New_assignment_notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>tyler.miller@ofi.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 8 OR 9) AND 4 AND 5 AND 6 AND 7</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Powder</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Mass</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Butter</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>USA</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Region__c</field>
+                <operation>equals</operation>
+                <value>South West,South East</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Bag_Format__c</field>
+                <operation>equals</operation>
+                <value>Large bags (25 kilo - 1 ton)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Nibs</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Chocolate</value>
+            </criteriaItems>
+            <template>unfiled$public/Leads_New_assignment_notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>mike.pukansky@ofi.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 7 OR 8) AND 4 AND 5 AND 6</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Powder</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Mass</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Butter</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Canada</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Bag_Format__c</field>
+                <operation>equals</operation>
+                <value>Large bags (25 kilo - 1 ton)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Nibs</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Chocolate</value>
+            </criteriaItems>
+            <template>unfiled$public/Leads_New_assignment_notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>darren.spruce@ofi.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 7 OR 8) AND 4 AND 5 AND 6</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Powder</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Mass</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Butter</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>United Kingdom,Ireland</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Bag_Format__c</field>
+                <operation>equals</operation>
+                <value>Large bags (25 kilo - 1 ton)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Nibs</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Chocolate</value>
+            </criteriaItems>
+            <template>unfiled$public/Leads_New_assignment_notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>evgeniy.zhidkikh@ofi.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 7 OR 8) AND 4 AND 5 AND 6</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Powder</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Mass</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Butter</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Russian Federation,Azerbaijan,Armenia,Belarus,Georgia,Kazakhstan,Kyrgyzstan,Moldova,Republic of,Tajikistan,Turkmenistan,Uzbekistan,Ukraine</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Bag_Format__c</field>
+                <operation>equals</operation>
+                <value>Large bags (25 kilo - 1 ton)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Nibs</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Chocolate</value>
+            </criteriaItems>
+            <template>unfiled$public/Leads_New_assignment_notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>milana.davidonyte@ofi.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 7 OR 8) AND 4 AND 5 AND 6</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Powder</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Mass</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Butter</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Luxembourg,Belgium,Netherlands</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Bag_Format__c</field>
+                <operation>equals</operation>
+                <value>Large bags (25 kilo - 1 ton)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Nibs</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Chocolate</value>
+            </criteriaItems>
+            <template>unfiled$public/Leads_New_assignment_notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>charissa.leong@ofi.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 12 OR 11) AND (4 OR 5 OR 6 OR 7 OR 8) AND 9 AND 10</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Powder</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Mass</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Butter</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Afghanistan,Bangladesh,Bhutan,India,Maldives,Nepal,Pakistan,Sri Lanka</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Kazakhstan,Kyrgyzstan,Tajikistan,Turkmenistan,Uzbekistan</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>China,Hong Kong,Macao,Japan,Mongolia,Korea,Democratic People&apos;s Republic of,Taiwan</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Brunei,Cambodia,Indonesia,Malaysia,Myanmar,Philippines,Singapore,Thailand,Viet Nam</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Australia,New Zealand</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Bag_Format__c</field>
+                <operation>equals</operation>
+                <value>Large bags (25 kilo - 1 ton)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Nibs</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Chocolate</value>
+            </criteriaItems>
+            <template>unfiled$public/Leads_New_assignment_notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Product_Beans</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Beans</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <template>unfiled$public/Olam_Cocoa_Pro_Redirect_lead</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Order_Enquiry_North_Central_America</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Enquiry_Type__c</field>
+                <operation>equals</operation>
+                <value>Order information</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Antigua and Barbuda,Bahamas,Barbados,Belize,Canada,Costa Rica,Cuba,Dominica,Dominican Republic,El Salvador,Grenada,Guatemala,Haiti,Honduras,Jamaica,Mexico,Nicaragua,Panama,USA</value>
+            </criteriaItems>
+            <template>unfiled$public/Olam_Cocoa_Pro_Redirect_lead</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Order_Enquiry_South_America</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Brazil,Colombia,Argentina,Peru,Venezuela,Bolivarian Republic of,Chile,Ecuador,Bolivia,Paraguay,Uruguay,Guyana,Suriname,French Guiana,Falkland Islands (Malvinas),Uruguay,Guyana,Suriname,French Guiana</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Enquiry_Type__c</field>
+                <operation>equals</operation>
+                <value>Order information</value>
+            </criteriaItems>
+            <template>unfiled$public/Olam_Cocoa_Pro_Redirect_lead</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Order_Enquiry_EMEA</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2 AND (3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9)</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Enquiry_Type__c</field>
+                <operation>equals</operation>
+                <value>Order information</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Austria,Belgium,Denmark,Finland,France,Germany,Greece,Iceland,Ireland,Italy,Luxembourg,Netherlands,Norway,Portugal,Spain,Sweden,Switzerland,United Kingdom</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Algeria,Bahrain,Cyprus,Egypt,Iraq,Israel,Jordan,Kuwait,Lebanon,Libya,Morocco,Oman,Palestinian Territory Occupied,Qatar,Saudi Arabia,Syrian Arab Republic,Tunisia,Turkey,Libyan Arab Jamahiriya,Iran,Islamic Republic of</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Angola,Benin,Botswana,Burkina,Faso,Burundi,Cameroon,Cape Verde,Central African Republic,Chad,Comoros,Congo,the Democratic Republic of the,Congo,Djibouti,Equatorial,Guinea,Eritrea,Ethiopia,Gabon,Gambia,Ghana,Guinea,Guinea-Bissau,Cote d&apos;Ivoire.Kenya</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Lesotho,Liberia,Madagascar,Malawi,Mali,Mauritania,Mauritius,Mozambique,Namibia,Niger,Nigeria,Réunion,Rwanda,Sao Tomé e Príncipe,Senegal,Seychelles,Sierra,Leone,Somalia,South Africa,South Sudan,Sudan,Swaziland,Togo,Uganda,Zambia,Zimbabwe</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Albania,Armenia,Azerbaijan,Belarus,Bosnia-Herzegovina,Bulgaria,Croatia,Czech Republic,Estonia,Georgia,Hungary,Kazakhstan,Kosovo,Kyrgyzstan,Latvia,Lithuania,Malta,Moldova,Montenegro,Poland,Romania,Serbia,Slovakia,Slovenia,Tajikistan</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Russian Federation,Turkmenistan,Ukraine,Uzbekistan,Macedonia,the former Yugoslav Republic of</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Tanzania,United Republic of</value>
+            </criteriaItems>
+            <template>unfiled$public/Olam_Cocoa_Pro_Redirect_lead</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Order_Enquiry_North_Central_America</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Enquiry_Type__c</field>
+                <operation>equals</operation>
+                <value>Order information</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Belize,Costa Rica,El Salvador,Guatemala,Honduras,Nicaragua,Panama</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <template>unfiled$public/Olam_Cocoa_Pro_Redirect_lead</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Order_Enquiry_APAC</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND (2 OR 3 OR 4 OR 5 OR 6) AND 7</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Afghanistan,Bangladesh,Bhutan,India,Nepal,Maldives,Pakistan,Sri Lanka</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Kazakhstan,Kyrgyzstan,Tajikistan,Turkmenistan,Uzbekistan</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>China,Hong Kong,Macau,Japan,Mongolia,Korea,Democratic People&apos;s Republic of,Taiwan</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Brunei,Cambodia,Indonesia,Malaysia,Myanmar,Philippines,Singapore,Thailand,Viet Nam,Timor-Leste</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Australia,New Zealand,Lao People&apos;s Democratic Republic</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Enquiry_Type__c</field>
+                <operation>equals</operation>
+                <value>Order information</value>
+            </criteriaItems>
+            <template>unfiled$public/Olam_Cocoa_Pro_Redirect_lead</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Tech_Product_Enquiry_AMEA</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND (2 OR 3 OR 4) AND 5</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Enquiry_Type__c</field>
+                <operation>equals</operation>
+                <value>Product specification</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Antigua and Barbuda,Bahamas,Barbados,Canada,Cuba,Dominica,Dominican Republic,Grenada,Haiti,Jamaica,Mexico,USA</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Belize,Costa Rica,El Salvador,Guatemala,Honduras,Nicaragua,Panama</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Brazil,Colombia,Argentina,Peru,Venezuela,Bolivarian Republic of,Chile,Ecuador,Bolivia,Paraguay,Uruguay,Guyana,Suriname,French Guiana,Falkland Islands</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <template>unfiled$public/Olam_Cocoa_Pro_Redirect_lead</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Tech_Product_Enquiry_EMEA</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7) AND 8</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Enquiry_Type__c</field>
+                <operation>equals</operation>
+                <value>Product specification</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Austria,Belgium,Denmark,Finland,France,Germany,Greece,Iceland,Ireland,Italy,Luxembourg,Netherlands,Norway,Portugal,Spain,Sweden,Switzerland,United Kingdom</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Algeria,Bahrain,Cyprus,Egypt,Iraq,Israel,Jordan,Kuwait,Lebanon,Libya,Morocco,Oman,Palestinian Territory Occupied,Qatar,Saudi Arabia,Syria,Tunisia,Turkey,Libyan Arab Jamahiriya,Iran,Islamic Republic of</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Angola,Benin,Botswana,Burkina,Faso,Burundi,Cameroon,Cape Verde,Central African Republic,Chad,Comoros,Congo,the Democratic Republic of the,Djibouti,Equatorial Guinea,Eritrea,Ethiopia,Gabon,Gambia,Ghana,Guinea,Guinea-Bissau,Cote d&apos;Ivoire,Kenya,Lesotho</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Liberia,Madagascar,Malawi,Mali,Mauritania,Mauritius,Mozambique,Namibia,Niger,Nigeria,Réunion,Rwanda,Sao Tomé e Príncipe,Senegal,Seychelles,Sierra,Leone,Somalia,South Africa,South Sudan,Sudan,Swaziland,Tanzania,Togo,Uganda,Zambia,Zimbabwe</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Albania,Armenia,Azerbaijan,Belarus,Bosnia and Herzegovina,Bulgaria,Croatia,Czech Republic,Estonia,Georgia,Hungary,Kazakhstan,Kosovo,Kyrgyzstan,Latvia,Lithuania,Malta,Moldova,Montenegro,Poland,Romania,Serbia,Slovakia,Slovenia,Tajikistan</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Russian Federation,Turkmenistan,Ukraine,Uzbekistan,Macedonia,the former Yugoslav Republic of</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <template>unfiled$public/Olam_Cocoa_Pro_Redirect_lead</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Tech_Product_Enquiry_APAC</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND (2 OR 3 OR 4 OR 5 OR 6) AND 7</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Enquiry_Type__c</field>
+                <operation>equals</operation>
+                <value>Product specification</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Afghanistan,Bangladesh,Bhutan,India,Nepal,Maldives,Pakistan,Sri Lanka</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Kazakhstan,Kyrgyzstan,Tajikistan,Turkmenistan,Uzbekistan</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>China,Hong Kong,Macau,Japan,Mongolia,Korea,Democratic People&apos;s Republic of,Taiwan</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Brunei,Cambodia,Timor-Leste,Indonesia,Lao People&apos;s Democratic Republic,Malaysia,Myanmar,Philippines,Singapore,Thailand,Viet Nam</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Australia,New Zealand</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <template>unfiled$public/Olam_Cocoa_Pro_Redirect_lead</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>william.pearce@ofi.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 9 OR 10) AND (4 OR 5 OR 6) AND 7 AND 8</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Powder</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Mass</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Butter</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Antigua and Barbuda,Bahamas,Barbados,Cuba,Dominica,Dominican Republic,Grenada,Haiti,Jamaica</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Belize,Costa Rica,El Salvador,Guatemala,Honduras,Nicaragua,Panama</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Panama</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Bag_Format__c</field>
+                <operation>equals</operation>
+                <value>Large bags (25 kilo - 1 ton)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Nibs</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Chocolate</value>
+            </criteriaItems>
+            <template>unfiled$public/Leads_New_assignment_notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>geoffrey.meek@ofi.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 7 OR 8) AND 4 AND 5 AND 6</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Powder</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Mass</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Butter</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Japan,China,Viet nam,South Africa,Australia,New Zealand,Nigeria</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Bag_Format__c</field>
+                <operation>equals</operation>
+                <value>Large bags (25 kilo - 1 ton)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Nibs</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Chocolate</value>
+            </criteriaItems>
+            <template>unfiled$public/Leads_New_assignment_notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>clothilde.muzard@ofi.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 7 OR 8) AND 4 AND 5 AND 6</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Powder</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Mass</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Butter</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Germany,France</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Bag_Format__c</field>
+                <operation>equals</operation>
+                <value>Small bags (1 - 5 kilos)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Nibs</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Chocolate</value>
+            </criteriaItems>
+            <template>unfiled$public/Leads_New_assignment_notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>manvendra.singh@ofi.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 7 OR 8) AND 4 AND 5 AND 6</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Powder</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Mass</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Butter</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>India</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Bag_Format__c</field>
+                <operation>equals</operation>
+                <value>Small bags (1 - 5 kilos)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Nibs</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Chocolate</value>
+            </criteriaItems>
+            <template>unfiled$public/Leads_New_assignment_notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>kaushik.chandra@ofi.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 7 OR 8) AND 4 AND 5 AND 6</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Powder</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Mass</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Butter</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Indonesia</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Bag_Format__c</field>
+                <operation>equals</operation>
+                <value>Small bags (1 - 5 kilos)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Nibs</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Chocolate</value>
+            </criteriaItems>
+            <template>unfiled$public/Leads_New_assignment_notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>jo-lin.tan@ofi.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 12 OR 11) AND (4 OR 5 OR 6 OR 7 OR 8) AND 9 AND 10</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Powder</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Mass</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Butter</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Afghanistan,Bangladesh,Bhutan,Maldives,Nepal,Pakistan,Sri Lanka</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Kazakhstan,Kyrgyzstan,Tajikistan,Turkmenistan,Uzbekistan</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>China,Hong Kong,Macao,Japan,Mongolia,Korea,Democratic People&apos;s Republic of,Taiwan</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Brunei,Cambodia,Malaysia,Myanmar,Philippines,Singapore,Thailand,Viet Nam</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Australia,New Zealand</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Bag_Format__c</field>
+                <operation>equals</operation>
+                <value>Small bags (1 - 5 kilos)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Nibs</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Chocolate</value>
+            </criteriaItems>
+            <template>unfiled$public/Leads_New_assignment_notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>lisanne.veltman@ofi.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 7 OR 8) AND (4 OR 9 OR 10 OR 11 OR 12 OR 13) AND 5 AND 6</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Powder</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Mass</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Butter</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Albania,Algeria,Angola,Austria,Bahrain,Belarus,Belgium,Benin,Bosnia and Herzegovina,Botswana,Bulgaria,Burkina Faso,Burundi,Cameroon,Cape Verde,Central African Republic,Chad,Comoros,Croatia,Cyprus,Czech Republic</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Bag_Format__c</field>
+                <operation>equals</operation>
+                <value>Small bags (1 - 5 kilos)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Nibs</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Chocolate</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Congo,the Democratic Republic of the,Denmark,Djibouti,Egypt,Equatorial Guinea,Eritrea,Estonia,Ethiopia,Faroe Islands,Finland,Gabon,Gambia,Georgia,Ghana,Gibraltar,Greece,Guernsey,Guinea,Guinea-Bissau,Hungary,Iceland</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Iran,Islamic Republic of,Iraq,Ireland,Isle Of Man,Israel,Italy,Cote d&apos;Ivoire,Jersey,Jordan,Kenya,Kuwait,Latvia,Lebanon,Lesotho,Liberia,Libyan Arab Jamahiriya,Liechtenstein,Lithuania,Luxembourg,Macedonia,the former Yugoslav Republic of</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Madagascar,Malawi,Mali,Malta,Mauritania,Mauritius,Moldova,Republic of,Monaco,Montenegro,Morocco,Mozambique,Namibia,Netherlands,Niger,Nigeria,Norway,Oman,Palestinian Territory Occupied,Poland,Portugal,Qatar,Romania,Rwanda,San Marino</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Sao Tome and Principe,Saudi Arabia,Senegal,Serbia,Slovakia,Slovenia,Somalia,South Africa,Spain,Sudan,Swaziland,Sweden,Switzerland,Syrian Arab Republic,Togo,Tunisia,Turkey,Uganda,Ukraine,Utd.Arab Emir.,United Kingdom,Vatican City</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Western Sahara,Yemen,Zambia,Zimbabwe</value>
+            </criteriaItems>
+            <template>unfiled$public/Leads_New_assignment_notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>diane.stopford@ofi.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 8 OR 9) AND (4 OR 5) AND 6 AND 7</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Powder</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Mass</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Butter</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Antigua and Barbuda,Bahamas,Barbados,Belize,Canada,Costa Rica,Cuba,Dominica,Dominican Republic,El Salvador,Grenada,Guatemala,Haiti,Honduras,Jamaica,Mexico,Nicaragua,Panama,USA</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Brazil,Colombia,Argentina,Peru,Venezuela,Bolivarian Republic of,Chile,Ecuador,Bolivia,Paraguay,Uruguay,Guyana,Suriname,French Guiana,Falkland Islands (Malvinas),Uruguay,Guyana,Suriname,French Guiana</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Pardot_Lead__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Bag_Format__c</field>
+                <operation>equals</operation>
+                <value>Small bags (1 - 5 kilos)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Chocolate</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>includes</operation>
+                <value>Cocoa Nibs</value>
+            </criteriaItems>
+            <template>unfiled$public/Leads_New_assignment_notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>simon.braynsmith@ofi.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.Bag_Format__c</field>
+                <operation>equals</operation>
+                <value>Small bags (1 - 5 kilos)</value>
+            </criteriaItems>
+            <template>unfiled$public/Leads_New_assignment_notification</template>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

@@ -1,0 +1,7 @@
+*** INACTIVE LEAD FOR THE PAST 30 DAYS NOTIFICATION ***
+
+
+Company: {!Lead.Company}
+Lead Name: {!Lead.Name}
+
+Click on the link to access the lead directly: {!Lead.Link}

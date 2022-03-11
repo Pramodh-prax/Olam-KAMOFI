@@ -1,0 +1,30 @@
+<aura:component controller="PLBSCustomQuotePDFController" implements="force:lightningQuickActionWithoutHeader,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	<lightning:quickActionAPI aura:id="quickActionAPI" />
+    <aura:html tag="style">
+        .slds-modal__container{
+        max-width: 80rem !important;
+        width:80% !important;
+        }
+    </aura:html>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="isContactAvailable" type="Boolean" />
+    
+    <aura:attribute name="dataDoc" type="Object"/>
+    <aura:attribute name="recordId" type="String" />
+    
+    <!--Header-->
+    <div class="modal-header slds-modal__header slds-size_1-of-1">
+        <h4 class="title slds-text-heading--medium">PDF Preview</h4>
+    </div>
+    <!--Header-->
+    <lightning:notificationsLibrary aura:id="notifLib"/>
+    <iframe width="100%" height="450" overflow="auto" style="border: 1px solid" src="{!'/apex/PLBSQuotePDFCustom?Id='+v.recordId}" />
+    
+    <!--Footer-->
+    <div class="modal-footer slds-modal__footer slds-size_1-of-1">
+        <lightning:button variant="neutral" label="Cancel" title="Cancel" onclick="{!c.cancel }"/>
+        <lightning:button variant="brand" label="Save PDF" title="Save PDF" aura:id="saveButtonId" onclick="{!c.savePDF}"/>
+        <lightning:button variant="brand" title="Send Eamil" label="Save and Send Email" aura:id="sendEamilButtonId" onclick="{!c.sendEmail}"/>
+    </div>
+    <!--Footer-->
+</aura:component>

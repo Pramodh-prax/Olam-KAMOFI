@@ -1,0 +1,36 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:hasRecordId" access="global">
+    <!--lightning:button variant="brand" label="Click to Open" title="Click to Open" onclick="{!c.showModel}" />-->
+    <div>
+        <!--lightning:button class="custom-button-css" iconName="utility:expand" variant="brand" label="Preview" title="Preview" onclick="{!c.showModel}" /-->
+        <lightning:buttonIcon class="custom-button-css" iconName="utility:expand" onclick="{! c.showModel }" alternativeText="Preview" title="Preview"  />
+    </div>
+    
+	<aura:attribute name="recordId" type="String" />
+    <aura:attribute name="showModal" type="boolean" default="false"/>
+    
+    <aura:if isTrue="{!v.showModal}">
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" 
+                 aria-modal="true" aria-describedby="modal-content-id-1" 
+                 class="slds-modal slds-fade-in-open slds-modal--large">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                      <lightning:buttonIcon iconName="utility:close"
+                                          	onclick="{! c.hideModel }"
+                                          	alternativeText="close"
+                                          	variant="border-filled"
+                                          	class="slds-modal__close" />
+                   <!--h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Modal Box</h2>-->
+                </header>
+                <!--Modal/Popup Box Body Starts here-->
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <!--tab:tableauViz height="800" showTabs="true" vizUrl="https://tableau.olamnet.com/views/CocoaSalesforceDashboard/CustomerAnalysis" /-->
+                    <!--tab:tableauViz height="1915" recordId="{!v.recordId}" sfAdvancedFilter="Account.SAP_Account_ID__c" tabAdvancedFilter="CustomerKey" vizUrl="https://public.tableau.com/views/LinkedIn-PerformanceOverview/LinkedIn-PerformanceOverview" /-->
+                    <!--tab:tableauViz height="1915" recordId="{!v.recordId}" sfAdvancedFilter="Account.SAP_Account_ID__c" tabAdvancedFilter="CustomerKey" vizUrl="https://tableau.olamnet.com/views/CocoaSalesforceDashboard_1008_945/CustomerAnalysis_SA/vanathy.paramanandam@olamdomain.com/4ad85e0d-f71c-4e6a-aa8b-00c702ed32f8" /-->
+                    <!--tab:tableauViz height="1915" recordId="{!v.recordId}" sfAdvancedFilter="Account.SAP_Account_ID__c" tabAdvancedFilter="CustomerKey" vizUrl="https://tableau.olamnet.com/views/OFICustomer360Analysis/Customer360Analysis/ravindra.adithiyan@olamdomain.com/10769027-13c4-40ca-a10e-b85b373f4ba7" /-->
+                    <tab:tableauViz height="650" recordId="{!v.recordId}" sfAdvancedFilter="Account.SAP_Account_ID__c" tabAdvancedFilter="Customer Key" vizUrl="https://tableau.olamnet.com/views/Customer360Analysis/Customer360AccountView" />
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </aura:if>
+</aura:component>

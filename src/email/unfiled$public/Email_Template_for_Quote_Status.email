@@ -1,0 +1,5 @@
+Hi, {!Receiving_User.FirstName}
+
+The Quote Status for {!Quote.Name} is - {!Quote.Status}
+
+Thank you !

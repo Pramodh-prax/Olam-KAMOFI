@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>R&amp;D</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>R&amp;Ds</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- R&amp;Ds --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Courier --></label>
+        <name>Courier__c</name>
+        <picklistValues>
+            <masterLabel>DHL</masterLabel>
+            <translation><!-- DHL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fedex</masterLabel>
+            <translation><!-- Fedex --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UPS</masterLabel>
+            <translation><!-- UPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Viettel Post</masterLabel>
+            <translation><!-- Viettel Post --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Courier cost --></label>
+        <name>Courier_cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Note --></label>
+        <name>Note__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Opportunity --></label>
+        <name>Parent_Opportunity__c</name>
+        <relationshipLabel><!-- R&amp;Ds --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Samples Sent Date --></label>
+        <name>Samples_Sent_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tracking Number --></label>
+        <name>Tracking_Number__c</name>
+    </fields>
+    <layouts>
+        <layout>R&amp;D Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

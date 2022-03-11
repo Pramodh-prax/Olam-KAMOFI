@@ -1,0 +1,115 @@
+<aura:component controller="SubmitForApprovalController" implements="force:lightningQuickActionWithoutHeader,flexipage:availableForRecordHome,force:hasRecordId">
+    
+    <aura:html tag="style">
+        .slds-modal__container{
+            max-width: 75rem !important;
+            width:75% !important;
+        }
+    </aura:html>
+    
+    <aura:attribute name="recordId" type="string" />
+    <aura:attribute name="showConfirmDialog" type="boolean" default="true"/>
+    <aura:attribute name="isLoading" default="false" type="Boolean"/>
+    <aura:attribute name="QuoteLineItemsListRequiredApproval" type="list"/>
+    <aura:attribute name="columns" type="List"/>
+    
+    <!-- Handler -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <!--Register events--> 
+    <aura:registerEvent name="AddQuoteLineItemToParentCompEvent" type="c:AddQuoteLineItemToParentCompEvent"/>
+    
+        <div class="modal-header slds-modal__header slds-size_1-of-1">
+            <h4 class="title slds-text-heading--medium">Submit For Approval</h4>
+        </div>
+        
+    	<div class="slds-p-around--x-small slds-size_1-of-1 slds-is-relative table-container">
+            <aura:if isTrue="{!not(empty(v.QuoteLineItemsListRequiredApproval))}">
+                <!--   -->   
+                <div class="slds-form--compound">
+                    <div class="text-align-center">You are about to Submit the quote for PLM Approval. Please review the details before submitting.</div>
+                    <br/>
+                    <div class="text-align-center">Click on Submit button to confirm.</div>
+                    <br/>
+                    <lightning:notificationsLibrary aura:id="notifLib"/>
+                </div>
+                <div class="red">
+                <table class="slds-table slds-table--bordered slds-cell-wrap slds-table--cell-buffer ">
+                    <thead>
+                        <tr class="slds-text-title--caps"> 
+                            <th class="slds-is-sortable slds-text-title--caps" scope="col">
+                                <span class="slds-truncate" style="width:101px;" title="Product">Product</span>  
+                            </th>
+                            <th class="slds-is-sortable slds-text-title--caps" scope="col">
+                                <span class="slds-truncate" style="width:51px;" title="Unit Price">Unit Price</span>  
+                            </th> 
+                            <th class="slds-is-sortable slds-text-title--caps" scope="col">
+                                <span class="slds-truncate" style="width:101px;" title="Volume">Volume</span>  
+                            </th> 
+                            <th class="slds-is-sortable slds-text-title--caps" scope="col">
+                                <span class="slds-truncate" style="width:51px;" title="Approval Status">Approver 1</span>  
+                            </th> 
+                            <th class="slds-is-sortable slds-text-title--caps" scope="col">
+                                <span class="slds-truncate" style="width:51px;" title="Approval Status">Approver 2</span>  
+                            </th>
+                            <th class="slds-is-sortable slds-text-title--caps" scope="col">
+                                <span class="slds-truncate" style="width:51px;" title="Approval Status">Approver 3</span>  
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <aura:iteration items="{!v.QuoteLineItemsListRequiredApproval}" var="quoteLineItem">  
+                            <tr> 
+                                <th scope="row">   
+                                    <div class="slds-truncate" >
+                                        {!quoteLineItem.quoteLine.Product2.Name} 
+                                    </div>
+                                </th>
+                                <th scope="row">   
+                                    <div class="slds-truncate" >
+                                        {!quoteLineItem.quoteLine.UnitPrice}
+                                    </div>
+                                </th>
+                                <th scope="row">   
+                                    <div class="slds-truncate" >
+                                        {!quoteLineItem.quoteLine.Volume__c}
+                                    </div>
+                                </th>
+                                <th scope="row">   
+                                    <div class="slds-truncate" >
+                                        {!quoteLineItem.approvalMatrix.Approver_1__r.Name}
+                                    </div>
+                                </th>
+                                <th scope="row">   
+                                    <div class="slds-truncate" >
+                                        {!quoteLineItem.approvalMatrix.Approver_2__r.Name}
+                                    </div>
+                                </th>
+                                <th scope="row">   
+                                    <div class="slds-truncate" >
+                                        {!quoteLineItem.approvalMatrix.Approver_3__r.Name}
+                                    </div>
+                                </th>
+                            </tr>
+                            
+                        </aura:iteration> 
+                    </tbody>
+                </table>
+                </div>
+                <aura:set attribute="else">
+                    <div class="text-align-center">There are no Quote Line Items to submit for approval.</div>
+                </aura:set>
+            </aura:if>
+    	</div>
+    
+        <aura:if isTrue="{!v.isLoading}">
+            <c:KAM_LoadingDots/>
+        </aura:if>
+
+    
+        <div class="modal-footer slds-modal__footer slds-size_1-of-1">
+            <lightning:button variant="neutral" label="Cancel" title="Cancel" onclick="{!c.cancel}"/>
+            <lightning:button variant="brand" label="Submit" title="Submit" onclick="{!c.createQuoteLineApproval}" disabled="{!empty(v.QuoteLineItemsListRequiredApproval)}"/>
+        </div>
+    
+</aura:component>

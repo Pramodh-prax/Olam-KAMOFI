@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Bakery</fullName>
+        <default>false</default>
+        <label>Bakery</label>
+    </customValue>
+    <customValue>
+        <fullName>Beverage</fullName>
+        <default>false</default>
+        <label>Beverage</label>
+    </customValue>
+    <customValue>
+        <fullName>Chocolate &amp; Confectionary</fullName>
+        <default>false</default>
+        <label>Chocolate &amp; Confectionary</label>
+    </customValue>
+    <customValue>
+        <fullName>Dairy &amp; Desserts</fullName>
+        <default>false</default>
+        <label>Dairy &amp; Desserts</label>
+    </customValue>
+    <customValue>
+        <fullName>Savoury &amp; Culinary</fullName>
+        <default>false</default>
+        <label>Savoury &amp; Culinary</label>
+    </customValue>
+    <customValue>
+        <fullName>Snacks</fullName>
+        <default>false</default>
+        <label>Snacks</label>
+    </customValue>
+    <customValue>
+        <fullName>Bakery/Baked Goods</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Bakery/Baked Goods</label>
+    </customValue>
+    <customValue>
+        <fullName>Beverage(Flavoured)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Beverage(Flavoured)</label>
+    </customValue>
+    <customValue>
+        <fullName>Dairy Spreads</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Dairy Spreads</label>
+    </customValue>
+    <customValue>
+        <fullName>Premix RTD</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Premix RTD</label>
+    </customValue>
+    <customValue>
+        <fullName>Food Blenders</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Food Blenders</label>
+    </customValue>
+    <customValue>
+        <fullName>Distributors</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Distributors</label>
+    </customValue>
+    <customValue>
+        <fullName>Food Service</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Food Service</label>
+    </customValue>
+    <customValue>
+        <fullName>Others</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Others</label>
+    </customValue>
+    <customValue>
+        <fullName>Confectionery</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Confectionery</label>
+    </customValue>
+    <customValue>
+        <fullName>Health &amp; Personal Care</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Health &amp; Personal Care</label>
+    </customValue>
+    <customValue>
+        <fullName>Baked Goods</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Baked Goods</label>
+    </customValue>
+    <customValue>
+        <fullName>Biscuits &amp; Wafers</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Biscuits &amp; Wafers</label>
+    </customValue>
+    <customValue>
+        <fullName>Cereal</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Cereal</label>
+    </customValue>
+    <customValue>
+        <fullName>Cheese</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Cheese</label>
+    </customValue>
+    <customValue>
+        <fullName>Chocolate</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Chocolate</label>
+    </customValue>
+    <customValue>
+        <fullName>Chocolate confectionery</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Chocolate confectionery</label>
+    </customValue>
+    <customValue>
+        <fullName>Compound Confectionery</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Compound Confectionery</label>
+    </customValue>
+    <customValue>
+        <fullName>Dairy Drinks &amp; Desserts</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Dairy Drinks &amp; Desserts</label>
+    </customValue>
+    <customValue>
+        <fullName>Flavoured Powdered Drinks</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Flavoured Powdered Drinks</label>
+    </customValue>
+    <customValue>
+        <fullName>Ice cream &amp; frozen desserts</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Ice cream &amp; frozen desserts</label>
+    </customValue>
+    <customValue>
+        <fullName>Infant Formula</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Infant Formula</label>
+    </customValue>
+    <customValue>
+        <fullName>Nutritional</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Nutritional</label>
+    </customValue>
+    <customValue>
+        <fullName>Probiotic</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Probiotic</label>
+    </customValue>
+    <customValue>
+        <fullName>Spreads</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Spreads</label>
+    </customValue>
+    <customValue>
+        <fullName>Sweetened Condensed Milk</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Sweetened Condensed Milk</label>
+    </customValue>
+    <customValue>
+        <fullName>Tobacco</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Tobacco</label>
+    </customValue>
+    <customValue>
+        <fullName>UHT Milk/ Recombined Milk</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>UHT Milk/ Recombined Milk</label>
+    </customValue>
+    <customValue>
+        <fullName>Yogurt</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Yogurt</label>
+    </customValue>
+    <customValue>
+        <fullName>Chocolate/Confectionery/Candy</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Chocolate/Confectionery/Candy</label>
+    </customValue>
+    <customValue>
+        <fullName>Cheese Manufacturer</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Cheese Manufacturer</label>
+    </customValue>
+    <customValue>
+        <fullName>Processed Cheese</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Processed Cheese</label>
+    </customValue>
+    <customValue>
+        <fullName>Yogurt(Set/Stirred/Drinking)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Yogurt(Set/Stirred/Drinking)</label>
+    </customValue>
+    <customValue>
+        <fullName>Distributor/Trader</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Distributor/Trader</label>
+    </customValue>
+    <customValue>
+        <fullName>Blender (B2B)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Blender (B2B)</label>
+    </customValue>
+    <customValue>
+        <fullName>Re-Packer</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Re-Packer</label>
+    </customValue>
+    <masterLabel>Application</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

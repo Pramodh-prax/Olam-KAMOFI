@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Approved SKU</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Approved SKUs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Customer Material Code --></label>
+        <name>Customer_Material_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Configuration --></label>
+        <name>Product_Configuration__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Product Configuration --></label>
+        <name>SAP_Product_Configuration__c</name>
+    </fields>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

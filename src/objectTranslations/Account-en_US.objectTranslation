@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- CustomerOverViewSectionFieldSet --></label>
+        <name>CustomerOverViewSectionFieldSet</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Default --></label>
+        <name>Default</name>
+    </fieldSets>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Channel</value>
+        </caseValues>
+        <name>type_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Account Type --></label>
+        <name>Account_Type__c</name>
+        <picklistValues>
+            <masterLabel>Distributor</masterLabel>
+            <translation><!-- Distributor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Global Account</masterLabel>
+            <translation><!-- Global Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Global Key Account</masterLabel>
+            <translation><!-- Global Key Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Local Account</masterLabel>
+            <translation><!-- Local Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Local Key Account</masterLabel>
+            <translation><!-- Local Key Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regional Account</masterLabel>
+            <translation><!-- Regional Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regional Key Account</masterLabel>
+            <translation><!-- Regional Key Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SME</masterLabel>
+            <translation><!-- SME --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application --></label>
+        <name>Application__c</name>
+    </fields>
+    <fields>
+        <label><!-- BU Identifier --></label>
+        <name>BU_Identifier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Country Code --></label>
+        <name>Billing_Country_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Channel --></label>
+        <name>Channel__c</name>
+    </fields>
+    <fields>
+        <help><!-- First Closing Win Opportunity Date --></help>
+        <label><!-- Cocoa Active Date --></label>
+        <name>Cocoa_Active_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cocoa BD Status --></label>
+        <name>Cocoa_BD_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approached</masterLabel>
+            <translation><!-- Approached --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Onboarding</masterLabel>
+            <translation><!-- Onboarding --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cocoa First Deal Date --></label>
+        <name>Cocoa_First_Deal_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cocoa Owner --></label>
+        <name>Cocoa_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cocoa Primary Owner --></label>
+        <name>Cocoa_Primary_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cocoa Total Won Volume --></label>
+        <name>Cocoa_Total_Won_Volume__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cocoa Won Amount --></label>
+        <name>Cocoa_Won_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commercialised --></label>
+        <name>Commercialised__c</name>
+    </fields>
+    <fields>
+        <label><!-- Count of Open Cocoa Opportunities --></label>
+        <name>Count_of_Cocoa_Opportunities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Count of Dairy Opportunities --></label>
+        <name>Count_of_Dairy_Opportunities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Count of Edible Nuts Opportunity --></label>
+        <name>Count_of_Edible_Nuts_Opportunity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Count of Spice Opportunity --></label>
+        <name>Count_of_Spice_Opportunity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Group --></label>
+        <name>Customer_Group__c</name>
+    </fields>
+    <fields>
+        <help><!-- First Closing Win Opportunity Date --></help>
+        <label><!-- Dairy Active Date --></label>
+        <name>Dairy_Active_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dairy BD Status --></label>
+        <name>Dairy_BD_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approached</masterLabel>
+            <translation><!-- Approached --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Onboarding</masterLabel>
+            <translation><!-- Onboarding --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Dairy Owner Id --></label>
+        <name>Dairy_Owner_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dairy Primary Owner --></label>
+        <name>Dairy_Primary_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dairy Total Won Volume --></label>
+        <name>Dairy_Total_Won_Volume__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Upload Id --></label>
+        <name>Data_Upload_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Uploaded? --></label>
+        <name>Data_Uploaded__c</name>
+    </fields>
+    <fields>
+        <help><!-- First Closing Win Opportunity Date --></help>
+        <label><!-- Edible Nuts Active Date --></label>
+        <name>Edible_Nuts_Active_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Edible_Nuts_BD_Status --></label>
+        <name>Edible_Nuts_BD_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approached</masterLabel>
+            <translation><!-- Approached --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Onboarding</masterLabel>
+            <translation><!-- Onboarding --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Edible Nuts Owner Id --></label>
+        <name>Edible_Nuts_Owner_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Edible Nuts Primary Owner --></label>
+        <name>Edible_Nuts_Primary_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Emailaddress --></label>
+        <name>Emailaddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inco Terms (Cocoa) --></label>
+        <name>Inco_Terms_Cocoa__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inco Terms --></label>
+        <name>Inco_Terms__c</name>
+        <picklistValues>
+            <masterLabel>CFR - Costs and freight</masterLabel>
+            <translation><!-- CFR - Costs and freight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CIF - Costs, insurance &amp; freight</masterLabel>
+            <translation><!-- CIF - Costs, insurance &amp; freight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CIP - Carriage and insurance paid</masterLabel>
+            <translation><!-- CIP - Carriage and insurance paid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CPT - Carriage paid to</masterLabel>
+            <translation><!-- CPT - Carriage paid to --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DAP - Delivered At Place</masterLabel>
+            <translation><!-- DAP - Delivered At Place --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DDP - Delivered Duty Paid</masterLabel>
+            <translation><!-- DDP - Delivered Duty Paid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DPU - Delivered At Place Unloaded</masterLabel>
+            <translation><!-- DPU - Delivered At Place Unloaded --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXW - Ex Works</masterLabel>
+            <translation><!-- EXW - Ex Works --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAS - Free Along Sideship</masterLabel>
+            <translation><!-- FAS - Free Along Sideship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FCA - Free Carrier</masterLabel>
+            <translation><!-- FCA - Free Carrier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FOB - Free On Board</masterLabel>
+            <translation><!-- FOB - Free On Board --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Instore</masterLabel>
+            <translation><!-- Instore --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Indirect --></label>
+        <name>Indirect__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. of Employees --></label>
+        <name>No_of_Employees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pardot Region --></label>
+        <name>Pardot_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Terms --></label>
+        <name>Payment_Terms__c</name>
+        <picklistValues>
+            <masterLabel>SG06 - Letter of credit</masterLabel>
+            <translation><!-- SG06 - Letter of credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>US0D - 1% 10 NET 60</masterLabel>
+            <translation><!-- US0D - 1% 10 NET 60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USAE - Net due in 65 days</masterLabel>
+            <translation><!-- USAE - Net due in 65 days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USBM - 2% 10 NET 45</masterLabel>
+            <translation><!-- USBM - 2% 10 NET 45 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Z070 - 2% 15 days, 60 days net</masterLabel>
+            <translation><!-- Z070 - 2% 15 days, 60 days net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZS87 - CAD at Sight In Trust@120 day-98%-2% Pay on req</masterLabel>
+            <translation><!-- ZS87 - CAD at Sight In Trust@120 day-98%-2% Pay on req --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZS96 - CAD at Sight In Trust @ 75 day - 100%</masterLabel>
+            <translation><!-- ZS96 - CAD at Sight In Trust @ 75 day - 100% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZU04 - Net 7 days - Date of Invoice</masterLabel>
+            <translation><!-- ZU04 - Net 7 days - Date of Invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZU07 - Net 15 days - Date of Invoice</masterLabel>
+            <translation><!-- ZU07 - Net 15 days - Date of Invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZU10 - Net 30 days - Date of Invoice</masterLabel>
+            <translation><!-- ZU10 - Net 30 days - Date of Invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZU11 - Net 40 days - Date of Invoice</masterLabel>
+            <translation><!-- ZU11 - Net 40 days - Date of Invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZU12 - Net 45 days - Date of Invoice</masterLabel>
+            <translation><!-- ZU12 - Net 45 days - Date of Invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZU13 - Net 60 days - Date of Invoice</masterLabel>
+            <translation><!-- ZU13 - Net 60 days - Date of Invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZU14 - Net 90 days - Date of Invoice</masterLabel>
+            <translation><!-- ZU14 - Net 90 days - Date of Invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZU17 - Payment in Advance,Prepayment</masterLabel>
+            <translation><!-- ZU17 - Payment in Advance,Prepayment --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Priority Customer --></label>
+        <name>Priority_Customer__c</name>
+        <picklistValues>
+            <masterLabel>Hunt &amp; Grow</masterLabel>
+            <translation><!-- Hunt &amp; Grow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invest</masterLabel>
+            <translation><!-- Invest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maintain</masterLabel>
+            <translation><!-- Maintain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Passive</masterLabel>
+            <translation><!-- Passive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Processed --></label>
+        <name>Processed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Regions --></label>
+        <name>Regions__c</name>
+        <picklistValues>
+            <masterLabel>APAC</masterLabel>
+            <translation><!-- APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMENA</masterLabel>
+            <translation><!-- EMENA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USA</masterLabel>
+            <translation><!-- USA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Account activated in SAP --></help>
+        <label><!-- SAP Account Activation Date --></label>
+        <name>SAP_Account_Activation_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Account ID --></label>
+        <name>SAP_Account_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Area --></label>
+        <name>Sales_Area__c</name>
+        <picklistValues>
+            <masterLabel>SG41 - 01 - 03</masterLabel>
+            <translation><!-- SG41 - 01 - 03 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SG41 - 02 - 03</masterLabel>
+            <translation><!-- SG41 - 02 - 03 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SG41 - 07 - 03</masterLabel>
+            <translation><!-- SG41 - 07 - 03 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SG42 - 01 - 03</masterLabel>
+            <translation><!-- SG42 - 01 - 03 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SG42 - 02 - 03</masterLabel>
+            <translation><!-- SG42 - 02 - 03 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SG42 - 07 - 03</masterLabel>
+            <translation><!-- SG42 - 07 - 03 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Segment_FS --></label>
+        <name>Segment_FoodServices__c</name>
+    </fields>
+    <fields>
+        <label><!-- Segment --></label>
+        <name>Segment__c</name>
+    </fields>
+    <fields>
+        <help><!-- First Closing Win Opportunity Date --></help>
+        <label><!-- Spices Active Date --></label>
+        <name>Spice_Active_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Spices_BD_Status --></label>
+        <name>Spice_BD_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approached</masterLabel>
+            <translation><!-- Approached --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Onboarding</masterLabel>
+            <translation><!-- Onboarding --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Spices Owner Id --></label>
+        <name>Spice_Owner_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Spices Primary User --></label>
+        <name>Spices_Primary_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Terms of Payment (Cocoa) --></label>
+        <name>Terms_of_Payment_Cocoa__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of Account --></label>
+        <name>Type_of_Account__c</name>
+        <picklistValues>
+            <masterLabel>Co-manufacturer</masterLabel>
+            <translation><!-- Co-manufacturer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Co-packer</masterLabel>
+            <translation><!-- Co-packer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor</masterLabel>
+            <translation><!-- Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer</masterLabel>
+            <translation><!-- Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Packaging supplier</masterLabel>
+            <translation><!-- Packaging supplier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect</masterLabel>
+            <translation><!-- Prospect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Raw material supplier</masterLabel>
+            <translation><!-- Raw material supplier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service provider</masterLabel>
+            <translation><!-- Service provider --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Account Status --></label>
+        <name>Vietnam_Account_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Account Type --></label>
+        <name>Vietnam_Account_Type__c</name>
+        <picklistValues>
+            <masterLabel>Bulk Retailers</masterLabel>
+            <translation><!-- Bulk Retailers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Convenience Stores</masterLabel>
+            <translation><!-- Convenience Stores --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discounters</masterLabel>
+            <translation><!-- Discounters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E-commerce</masterLabel>
+            <translation><!-- E-commerce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gourmet/ Specialty</masterLabel>
+            <translation><!-- Gourmet/ Specialty --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hypermarkets</masterLabel>
+            <translation><!-- Hypermarkets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharmacy/ Health &amp; Beauty</masterLabel>
+            <translation><!-- Pharmacy/ Health &amp; Beauty --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supermarkets</masterLabel>
+            <translation><!-- Supermarkets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesaler</masterLabel>
+            <translation><!-- Wholesaler --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Annual Profit --></label>
+        <name>Vietnam_Annual_Profit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax ID --></label>
+        <name>Vietnam_Tax_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- ofi Region --></label>
+        <name>ofi_Region__c</name>
+        <picklistValues>
+            <masterLabel>APAC</masterLabel>
+            <translation><!-- APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMENA</masterLabel>
+            <translation><!-- EMENA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USA</masterLabel>
+            <translation><!-- USA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ofi Sub Region 2 --></label>
+        <name>ofi_Sub_Region_2__c</name>
+        <picklistValues>
+            <masterLabel>Australia and New Zealand</masterLabel>
+            <translation><!-- Australia and New Zealand --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Caribbean</masterLabel>
+            <translation><!-- Caribbean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Central America</masterLabel>
+            <translation><!-- Central America --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Central Asia</masterLabel>
+            <translation><!-- Central Asia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Channel Islands</masterLabel>
+            <translation><!-- Channel Islands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>East Africa</masterLabel>
+            <translation><!-- East Africa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>East Asia</masterLabel>
+            <translation><!-- East Asia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>East Europe</masterLabel>
+            <translation><!-- East Europe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Melanesia</masterLabel>
+            <translation><!-- Melanesia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Micronesia</masterLabel>
+            <translation><!-- Micronesia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Middle Africa</masterLabel>
+            <translation><!-- Middle Africa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North Africa</masterLabel>
+            <translation><!-- North Africa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North America</masterLabel>
+            <translation><!-- North America --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North Europe</masterLabel>
+            <translation><!-- North Europe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Polynesia</masterLabel>
+            <translation><!-- Polynesia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South Africa</masterLabel>
+            <translation><!-- South Africa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South America</masterLabel>
+            <translation><!-- South America --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South Asia</masterLabel>
+            <translation><!-- South Asia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South Europe</masterLabel>
+            <translation><!-- South Europe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South-East Asia</masterLabel>
+            <translation><!-- South-East Asia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West Africa</masterLabel>
+            <translation><!-- West Africa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West Asia</masterLabel>
+            <translation><!-- West Asia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West Europe</masterLabel>
+            <translation><!-- West Europe --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ofi Sub Region --></label>
+        <name>ofi_Sub_Region__c</name>
+        <picklistValues>
+            <masterLabel>Africa</masterLabel>
+            <translation><!-- Africa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Americas</masterLabel>
+            <translation><!-- Americas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asia</masterLabel>
+            <translation><!-- Asia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Europe</masterLabel>
+            <translation><!-- Europe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oceania</masterLabel>
+            <translation><!-- Oceania --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Account Layout</layout>
+        <sections>
+            <label><!-- Account Summary --></label>
+            <section>Account Summary</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Account for Europe</layout>
+        <sections>
+            <label><!-- Extra Information --></label>
+            <section>Extra Information</section>
+        </sections>
+        <sections>
+            <label><!-- In-depth Information --></label>
+            <section>In-depth Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Account for OCPro</layout>
+        <sections>
+            <label><!-- Extra Information --></label>
+            <section>Extra Information</section>
+        </sections>
+        <sections>
+            <label><!-- In-depth Information --></label>
+            <section>In-depth Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Olam Account Page Layout</layout>
+        <sections>
+            <label><!-- MDM Details --></label>
+            <section>MDM Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>VietNam Account Page Layout</layout>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- MDM Details --></label>
+            <section>MDM Details</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Child Account --></label>
+        <name>Child_Account</name>
+    </quickActions>
+    <validationRules>
+        <errorMessage><!-- You cannot edit this Account because it is already Commercialised. Please edit the Account details from the MDM. --></errorMessage>
+        <name>ACNT001_Cannot_Edit_if_Commercialised</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Account Name cannot be more than 80 characters long. --></errorMessage>
+        <name>Account_Cannot_be_More_than_80_Character</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Primary owners can Update the Account --></errorMessage>
+        <name>Account_Edit_Access_Cocoa</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Primary owners can Update the Account Dairy --></errorMessage>
+        <name>Account_Edit_Access_Dairy</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Primary owners can Update the Account --></errorMessage>
+        <name>Account_Edit_Access_Edible_Nuts</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Primary owners can Update the Account --></errorMessage>
+        <name>Account_Edit_Access_Spices</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please add yourself to the team before modifying the record. --></errorMessage>
+        <name>Account_Edit_Cocoa_Owner_Id_NULL</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please add yourself to the team before modifying the record Dairy --></errorMessage>
+        <name>Account_Edit_Dairy_Owner_Id_NULL</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please add yourself to the team before modifying the record. --></errorMessage>
+        <name>Account_Edit_Edible_Nuts_Owner_Id_NULL</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please add yourself to the team before modifying the record. --></errorMessage>
+        <name>Account_Edit_Spices_Owner_Id_NULL</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Account Name cannot be changed at this stage, please contact your System Administrator if you wish to change the Account Name before it is Commercialised. --></errorMessage>
+        <name>Account_Name_cannot_be_changed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Primary Account Owners can mark the account for deletion --></errorMessage>
+        <name>Account_Owner_to_Mark_for_Deletion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter the Billing Address (Billing Country, Billing Street) --></errorMessage>
+        <name>Billing_Address_Cannot_be_Blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Primary Owners can edit the Segment --></errorMessage>
+        <name>Segment_only_Editable_by_Primary_Owners</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- LinkedIn --></label>
+        <name>LinkedIn</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Pardot_Emails --></label>
+        <name>pi__Send_Pardot_Emails</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Single_Pardot_Email --></label>
+        <name>pi__Send_Single_Pardot_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_To_Prospect_Insight --></label>
+        <name>pi__Send_To_Prospect_Insight</name>
+    </webLinks>
+</CustomObjectTranslation>

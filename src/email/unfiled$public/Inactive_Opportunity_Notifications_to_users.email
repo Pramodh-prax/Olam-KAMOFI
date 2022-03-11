@@ -1,0 +1,4 @@
+"{!Opportunity.Name}" "{!Account.Name}" "{!Opportunity.RecordType}" Opportunity has been Inactive Past 14 Days
+ 
+Click Here to view the opportunity! {!Opportunity.Link}
+Opportunity Id: {!Opportunity.Id}

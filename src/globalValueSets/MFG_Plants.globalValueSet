@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>4866-OIL Processing Singapore-Cocoa</fullName>
+        <default>false</default>
+        <label>4866-OIL Processing Singapore-Cocoa</label>
+    </customValue>
+    <customValue>
+        <fullName>4862-Olam Koog</fullName>
+        <default>false</default>
+        <label>4862-Olam Koog</label>
+    </customValue>
+    <customValue>
+        <fullName>4864-Olam Wormer</fullName>
+        <default>false</default>
+        <label>4864-Olam Wormer</label>
+    </customValue>
+    <customValue>
+        <fullName>4868-Olam Mannheim</fullName>
+        <default>false</default>
+        <label>4868-Olam Mannheim</label>
+    </customValue>
+    <description>This will contain all Manufacturing Plants that Olam produces goods from</description>
+    <masterLabel>MFG Plants</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

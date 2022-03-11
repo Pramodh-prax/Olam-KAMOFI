@@ -1,0 +1,118 @@
+<aura:component extends="c:KAM_Util" access="global" controller="KAM_EngagementPlanCntl">
+    <aura:attribute name="items" type="List" default="[]" />
+
+    <aura:attribute name="planLines" type="List" default="[]" access="PRIVATE" />
+
+    <aura:attribute name="labels" type="Object" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:handler name="change" value="{!v.items}" action="{!c.itemsChange}" />
+    <div>
+        <div class="table-wrapper">
+            <table class="table">
+                <thead>
+                    <tr class="header-row">
+                        <th class="sticky-header" scope="col" style="width :20%;padding-left:.5rem;">
+                            {!v.labels.interactionType}
+                        </th>
+                        <th class="sticky-header" scope="col" style="width :15%;">
+                            {!v.labels.frequency}
+                        </th>
+                        <th class="sticky-header" scope="col" style="width :15%;">
+                            {!v.labels.lastEngagement}
+                        </th>
+                        <th class="sticky-header" scope="col" style="width :20%;">
+                            {!v.labels.actualVsPlanned}
+                        </th>
+                        <th class="sticky-header" scope="col" style="width :60%;">
+                            {!v.labels.members}
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <aura:if isTrue="{!(empty(v.planLines))}">
+                        <tr>
+                            <td class="plan-table-col" colspan="5">
+                                <div class="table-row-spec-no-rows " title="">
+                                    {!v.labels.noData}
+                                </div>
+                            </td>
+                        </tr>
+                    </aura:if>
+                    <aura:if isTrue="{! not(empty(v.planLines))}">
+                        <aura:iteration items="{!v.planLines}" var="eachLineItem" indexVar="index">
+                            <aura:if isTrue="{! or(eachLineItem.Planned__c > 0, eachLineItem.Actuals__c)}">
+                                <tr>
+                                    <td scope="row" data-label="{!v.labels.interactionType}" style="width :20%;"
+                                        class="plan-table-col">
+                                        <div class="slds-truncate table-row-spec"
+                                            title="{!eachLineItem.Type_of_Engagement__c}">
+                                            {!eachLineItem.Type_of_Engagement__c}
+                                        </div>
+                                    </td>
+                                    <td style="width :15%;" class="plan-table-col" data-label="{!v.labels.frequency}">
+                                        <div class="slds-truncate_custom table-row-spec"
+                                            title="{!eachLineItem.Frequency__c}">
+                                            {!eachLineItem.Frequency__c}</div>
+                                    </td>
+                                    <td style="width : 15%;" class="plan-table-col"
+                                        data-label="{!v.labels.lastEngagement}">
+                                        <div class="slds-truncate_custom table-row-spec"
+                                            title="{!eachLineItem.Last_Engagement_Date__c}">
+                                            {!eachLineItem.Last_Engagement_Date__c}
+                                            <!-- <lightning:formattedDateTime value="{!eachLineItem.Last_Engagement_Date__c}"/> -->
+                                        </div>
+                                    </td>
+                                    <td style="width :20%;" class="plan-table-col"
+                                        data-label="{!v.labels.actualVsPlanned}">
+                                        <div class="slds-truncate_custom table-row-spec"
+                                            title="{!eachLineItem.Actuals__c + ' / ' + eachLineItem.Planned__c}">
+                                            <!-- <c:kam_progressBar
+                                                progressText="{!eachLineItem.Actuals__c + ' / ' + eachLineItem.Planned__c}"
+                                                progress="{! (100 * (eachLineItem.Actuals__c / eachLineItem.Planned__c))}"
+                                                borderRadius="40px" 
+                                                progressBarHeight="24px" 
+                                                progressBackgroundColor="#2196f3"
+                                            ></c:kam_progressBar> -->
+                                            <div class="progress" style="border-radius:40px; height: 24px;">
+                                                <aura:if isTrue="{!eachLineItem.Actuals__c==null}">
+                                                    <div class="progress-text" style="background:#2196f3">
+                                                    0 &nbsp; / &nbsp;
+                                                    {!eachLineItem.Planned__c}</div>
+                                                <div class="progress-text-inverted"
+                                                    style="{! 'clip-path: inset(-2% -1% -2% ' + (100 * (eachLineItem.Actuals__c / eachLineItem.Planned__c)) + '%);-webkit-clip-path: inset(-2% -1% -2% ' + (100 * (eachLineItem.Actuals__c / eachLineItem.Planned__c)) + '%)' }">
+                                                    0 &nbsp; / &nbsp;
+                                                    {!eachLineItem.Planned__c}</div>
+                                                <aura:set attribute="else">
+                                                    
+                                                  <div class="progress-text" style="background:#2196f3">
+                                                    {!eachLineItem.Actuals__c} &nbsp; / &nbsp;
+                                                    {!eachLineItem.Planned__c}</div>
+                                                <div class="progress-text-inverted"
+                                                    style="{! 'clip-path: inset(-2% -1% -2% ' + (100 * (eachLineItem.Actuals__c / eachLineItem.Planned__c)) + '%);-webkit-clip-path: inset(-2% -1% -2% ' + (100 * (eachLineItem.Actuals__c / eachLineItem.Planned__c)) + '%)' }">
+                                                    {!eachLineItem.Actuals__c} &nbsp; / &nbsp;
+                                                    {!eachLineItem.Planned__c}</div>
+                                                     </aura:set>
+                                                            </aura:if>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td style="width :60%;" class="plan-table-col" data-label="{!v.labels.members}">
+                                        <div class="slds-truncate_custom table-row-spec" title="{!v.labels.members}">
+                                            <aura:iteration items="{!eachLineItem.members}" var="member">
+                                                <span class="slds-badge memebr-tile">{!member}</span>
+                                            </aura:iteration>
+                                            <!-- <c:KAM_EngagementPlanMembers 
+                                                membersJSON="{!eachLineItem.Attendee__c}"
+                                            /> -->
+                                        </div>
+                                    </td>
+                                </tr>
+                            </aura:if>
+                        </aura:iteration>
+                    </aura:if>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</aura:component>

@@ -1,0 +1,60 @@
+<aura:component extends="c:KAM_Util" controller="KAM_AccountPlanListCntl" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" >
+    <aura:attribute name="AccountPlanList" type="list"/>
+    <aura:attribute name="UserRoles" type="String[]"/>
+    <aura:attribute name="usersList" type="List"/>
+    <aura:attribute name="showAccountpls" type="boolean"  default="False"/>
+    <aura:attribute name="isOpen" type="boolean" default="false"/>
+    <aura:attribute name="showAccountplans" type="boolean"  default="False"/>
+    <aura:attribute name="showAccountplanShare" type="boolean"  default="False"/>
+    <aura:attribute name="showAccountplanGenratePdf" type="boolean"  default="False"/>
+    <aura:attribute name="showNeedsPermission" type="boolean"  default="False"/>
+    <aura:attribute name="AccountPlanId" type="String"/>
+    <aura:handler event="c:KAM_NewAccountPlanSave" action="{!c.handleKAM_NewAccountPlanSave}"/>
+    <aura:handler event="c:KAM_NewAccountPlanSaveAndContinue" action="{!c.handleKAM_NewAccountPlanSaveAndNew}"/>
+    <aura:handler name="KAM_AccountPlanRowEdit" event="c:KAM_AccountPlanRowEdit" action="{!c.handleKAM_AccountPlanRowEdit}"/>
+    <aura:handler name="KAM_AccountPlanShare" event="c:KAM_AccountPlanShare" action="{!c.handleKAM_AccountPlanShare}"/>
+    <aura:handler name="KAM_AccountPlanGeneratePDFevt" event="c:KAM_AccountPlanGeneratePDFevt" action="{!c.handleKAM_AccountPlanGeneratePDF}"/>
+    <aura:handler name="KAM_AccountPlanDelete" event="c:KAM_AccountPlanDelete" action="{!c.handleKAM_deleteAccountPlan}" />
+    <aura:attribute type="String" name="pdfContent" />
+    <aura:attribute type="User" name="UserBU" />
+    <aura:attribute type="list" name="AccountTeams" />
+
+    <aura:attribute name="recordId" type="String" />
+    <!-- -->
+    <aura:attribute name="planOverViewComp" type="Aura.Component" />
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doinit}"/>
+    <aura:if isTrue="{!v.showNeedsPermission}">
+        
+        <p><lightning:icon iconName="utility:warning" alternativeText="warning" title="warning" size="small"/>&nbsp;&nbsp;You don't have permission to access the Key Account Plan. Please reach out to the Primary Account Manager to grant you the access.</p>
+    </aura:if>
+    <aura:iteration items="{!v.AccountTeams}" var="acctTeams" indexVar="index">
+        <aura:if isTrue="{!v.UserBU.Id==acctTeams.User__c}">
+            <div style="padding-top: 1rem;padding-bottom: 1rem;">
+                <lightning:button label="Create Account Plan"  onclick="{!c.showAccountPlanPop}"/>
+            </div>
+            <c:KAM_AccountPlanRow  AccountPlanList="{!v.AccountPlanList}" AccountTeams="{v.AccountTeams}"   UserBU="{!v.UserBU}" />
+             <aura:set attribute="else">
+                 <c:KAM_AccountPlanRow  AccountPlanList="{!v.AccountPlanList}" AccountTeams="{v.AccountTeams}"  UserBU="{!v.UserBU}"/>
+            </aura:set>
+        </aura:if>
+    </aura:iteration>
+    <aura:if isTrue="{!v.showAccountpls}">
+        <c:KAM_AccountPlanRow  AccountPlanList="{!v.AccountPlanList}"/>
+    </aura:if>
+    
+    <aura:if isTrue="{!v.isOpen}">
+        <c:KAM_AccountPlanNewPop isOpen="{!v.isOpen}" AccountId="{!v.recordId}" currentUserBU="{!v.UserBU}"/>
+    </aura:if>
+    <aura:if isTrue="{!v.showAccountplans}">    
+        {!v.planOverViewComp}
+        <!--c:KAM_AccountPlanPopup showAccountplans="{!v.showAccountplans}" AccountPlanId="{!v.AccountPlanId}" AccountId="{!v.recordId}" /-->
+    </aura:if>
+    <aura:if isTrue="{!v.showAccountplanShare}">    
+        <c:KAM_AccountPlanSharePopup showAccountplanShare="{!v.showAccountplanShare}" AccountPlanId="{!v.AccountPlanId}" AccountId="{!v.recordId}"/>
+    </aura:if>
+    <aura:if isTrue="{!v.showAccountplanGenratePdf}">    
+        <c:KAM_AccountPlanGeneratePDF showAccountplanGenratePdf="{!v.showAccountplanGenratePdf}" content="{!v.pdfContent}"/>
+    </aura:if>
+    
+</aura:component>

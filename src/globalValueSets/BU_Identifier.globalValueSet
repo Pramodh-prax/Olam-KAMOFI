@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Cocoa</fullName>
+        <default>false</default>
+        <label>Cocoa</label>
+    </customValue>
+    <customValue>
+        <fullName>Dairy</fullName>
+        <default>false</default>
+        <label>Dairy</label>
+    </customValue>
+    <customValue>
+        <fullName>Spice</fullName>
+        <default>false</default>
+        <label>Spices</label>
+    </customValue>
+    <customValue>
+        <fullName>Edible_Nuts</fullName>
+        <default>false</default>
+        <label>Edible_Nuts</label>
+    </customValue>
+    <customValue>
+        <fullName>Coffee</fullName>
+        <default>false</default>
+        <label>Coffee</label>
+    </customValue>
+    <customValue>
+        <fullName>All</fullName>
+        <default>false</default>
+        <label>All</label>
+    </customValue>
+    <masterLabel>BU Identifier</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

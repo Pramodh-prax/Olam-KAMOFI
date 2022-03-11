@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Product Price Kit</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Product Price Kit</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Price Kit --></label>
+        <name>Price_Kit__c</name>
+        <relationshipLabel><!-- Product Price Kit --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Processing cost (USD/lb) --></label>
+        <name>Processing_cost_USD_lb__c</name>
+    </fields>
+    <fields>
+        <label><!-- Processing loss % --></label>
+        <name>Processing_loss__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Category --></label>
+        <name>Product_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Family --></label>
+        <name>Product_Family__c</name>
+    </fields>
+    <layouts>
+        <layout>Product Price Kit Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

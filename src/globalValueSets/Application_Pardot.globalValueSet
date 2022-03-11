@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Bakery</fullName>
+        <default>false</default>
+        <label>Bakery</label>
+    </customValue>
+    <customValue>
+        <fullName>Confectionery</fullName>
+        <default>false</default>
+        <label>Confectionery</label>
+    </customValue>
+    <customValue>
+        <fullName>Drinks</fullName>
+        <default>false</default>
+        <label>Drinks</label>
+    </customValue>
+    <customValue>
+        <fullName>Ice Creams</fullName>
+        <default>false</default>
+        <label>Ice Creams</label>
+    </customValue>
+    <customValue>
+        <fullName>Desserts</fullName>
+        <default>false</default>
+        <label>Desserts</label>
+    </customValue>
+    <customValue>
+        <fullName>Savoury</fullName>
+        <default>false</default>
+        <label>Savoury</label>
+    </customValue>
+    <customValue>
+        <fullName>Bevarage</fullName>
+        <default>false</default>
+        <label>Bevarage</label>
+    </customValue>
+    <customValue>
+        <fullName>Frozen Desserts</fullName>
+        <default>false</default>
+        <label>Frozen Desserts</label>
+    </customValue>
+    <masterLabel>application</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

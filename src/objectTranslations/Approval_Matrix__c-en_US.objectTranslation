@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Approval Matrix</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Approval Matrix</value>
+    </caseValues>
+    <fields>
+        <label><!-- Approver 1 --></label>
+        <name>Approver_1__c</name>
+        <relationshipLabel><!-- Approval Matrix (Approver 1) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Approver 2 --></label>
+        <name>Approver_2__c</name>
+        <relationshipLabel><!-- Approval Matrix (Approver 2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Approver 3 --></label>
+        <name>Approver_3__c</name>
+        <relationshipLabel><!-- Approval Matrix (Approver 3) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Brand --></label>
+        <name>Brand__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Unit --></label>
+        <name>Business_Unit__c</name>
+        <picklistValues>
+            <masterLabel>Cocoa</masterLabel>
+            <translation><!-- Cocoa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dairy</masterLabel>
+            <translation><!-- Dairy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edible_Nuts</masterLabel>
+            <translation><!-- Edible_Nuts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spices</masterLabel>
+            <translation><!-- Spices --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Category --></label>
+        <name>Product_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Sub Category 2 --></label>
+        <name>Product_Sub_Category_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Sub Category --></label>
+        <name>Product_Sub_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+        <picklistValues>
+            <masterLabel>APAC</masterLabel>
+            <translation><!-- APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMENA</masterLabel>
+            <translation><!-- EMENA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USA</masterLabel>
+            <translation><!-- USA --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Approval Matrix Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

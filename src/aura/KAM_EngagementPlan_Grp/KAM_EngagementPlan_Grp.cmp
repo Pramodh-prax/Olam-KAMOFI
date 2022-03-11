@@ -1,0 +1,106 @@
+<aura:component extends="c:KAM_AccountPlanOverviewBase" access="global" controller="KAM_EngagementPlanGrpCntl">
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="sectionItems" type="Aura.Component[]" />
+    <aura:attribute name="EngagementLineItems" type="List" />
+    <aura:attribute name="labels" type="Object" />
+    <div class="account-over-view-container" aura:id="item-container">
+        <lightning:layout aura:id="item-wrapper" multipleRows="true" horizontalAlign="center" verticalAlign="center"
+            class="accountoverview-detail__closed">
+            <lightning:layoutItem size="12"
+                class="tit-desc-container slds-order_1  slds-small-order_1 slds-medium-order_1 slds-large-order_1"
+                smallDeviceSize="12" mediumDeviceSize="8" largeDeviceSize="8">
+                <lightning:layout multipleRows="true" horizontalAlign="center" verticalAlign="center" class="">
+                    <lightning:layoutItem size="12" class="title-text" smallDeviceSize="12" mediumDeviceSize="12"
+                        largeDeviceSize="12">
+                        <span>{!v.sectionData.compDetail.Title__c}</span>
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="12" class="desc-text" smallDeviceSize="12" mediumDeviceSize="12"
+                        largeDeviceSize="12">
+                        <span>{!v.sectionData.Description__c}</span>
+                    </lightning:layoutItem>
+                </lightning:layout>
+            </lightning:layoutItem>
+            <lightning:layoutItem size="4"
+                class="slds-order_3 slds-small-order_3 slds-medium-order_3 slds-large-order_3 account-over-view__header-control-container"
+                smallDeviceSize="4" mediumDeviceSize="4" largeDeviceSize="4">
+                <div class="accountoverview-detail__header-control">
+                    <a href="javascript:void(0)" onclick="{!c.toggleDetailContent}"
+                        class="accountoverview-detail__operator-cta"></a>
+                </div>
+            </lightning:layoutItem>
+            <lightning:layoutItem size="12"
+                class="slds-order_4 slds-small-order_4 slds-medium-order_4 slds-large-order_4 accountoverview__detail-content"
+                smallDeviceSize="12" mediumDeviceSize="12" largeDeviceSize="12">
+                <div class="slds-form--compound">
+                    <div>
+                        <table
+                            class="slds-table slds-table_cell-buffer slds-table_bordered slds-border_right slds-border_left">
+                            <thead>
+                                <tr class="slds-text-title_caps">
+                                    <th class="slds-text-title_caps" scope="col">
+                                        <div class="slds-truncate" title="interactionType">{!v.labels.interactionType}
+                                        </div>
+                                    </th>
+                                    <th class="slds-text-title_caps" scope="col">
+                                        <div class="slds-truncate" title="actualVsPlanned">{!v.labels.actualVsPlanned}
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <aura:if isTrue="{! not(empty(v.EngagementLineItems))}">
+                                    <aura:iteration items="{!v.EngagementLineItems}" var="eachLineItem"
+                                        indexVar="index">
+                                        <aura:if isTrue="{! or(eachLineItem.planned > 0, eachLineItem.actuals)}">
+                                            <tr>
+                                                <td class="slds-truncate">{!eachLineItem.Type_of_Engagement__c}</td>
+                                                <td class="slds-truncate">
+                                                    <div class="slds-truncate_custom table-row-spec" style="width:50%"
+                                                        title="{!eachLineItem.actuals + ' / ' + eachLineItem.planned}">
+                                                        <!-- <c:kam_progressBar
+                                                        progressText="{!eachLineItem.actuals + ' / ' + eachLineItem.planned}"
+                                                        progress="{! (100 * (eachLineItem.actuals / eachLineItem.planned))}"
+                                                        borderRadius="40px" 
+                                                        progressBarHeight="24px" 
+                                                        progressBackgroundColor="#2196f3"
+                                                    ></c:kam_progressBar> -->
+                                                        <div class="progress" style="border-radius:40px; height: 24px;">
+                                                            <aura:if isTrue="{!eachLineItem.actuals==null}">
+                                   							<div class="progress-text-inverted"
+                                                                style="{! 'clip-path: inset(-2% -1% -2% ' + (100 * (eachLineItem.actuals / eachLineItem.planned)) + '%);-webkit-clip-path: inset(-2% -1% -2% ' + (100 * (eachLineItem.actuals / eachLineItem.planned)) + '%)' }">
+                                                                0 &nbsp; / &nbsp;
+                                                                {!eachLineItem.planned}</div>
+                                                            <div class="progress-text" style="background:#2196f3">
+                                                                0 &nbsp; / &nbsp;
+                                                                {!eachLineItem.planned}</div>
+                                                            <aura:set attribute="else">
+                                                            <div class="progress-text-inverted"
+                                                                style="{! 'clip-path: inset(-2% -1% -2% ' + (100 * (eachLineItem.actuals / eachLineItem.planned)) + '%);-webkit-clip-path: inset(-2% -1% -2% ' + (100 * (eachLineItem.actuals / eachLineItem.planned)) + '%)' }">
+                                                                {!eachLineItem.actuals} &nbsp; / &nbsp;
+                                                                {!eachLineItem.planned}</div>
+                                                            <div class="progress-text" style="background:#2196f3">
+                                                                {!eachLineItem.actuals} &nbsp; / &nbsp;
+                                                                {!eachLineItem.planned}</div>
+                                                            </aura:set>
+                                                            </aura:if>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </td>
+
+                                            </tr>
+                                        </aura:if>
+                                    </aura:iteration>
+                                </aura:if>
+                            </tbody>
+                        </table>
+                    </div>
+                    <aura:if isTrue="{!v.isLoading}">
+                        <c:KAM_LoadingDots />
+                    </aura:if>
+                </div>
+            </lightning:layoutItem>
+        </lightning:layout>
+    </div>
+</aura:component>

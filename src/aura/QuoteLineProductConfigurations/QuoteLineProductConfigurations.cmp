@@ -1,0 +1,108 @@
+<aura:component controller="QuoteLineProductConfigCntl" implements="force:hasRecordId,force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,lightning:isUrlAddressable"
+    access="global">
+    
+    <aura:attribute name="productConfigurations" type="list"/>
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="isLoading" type="Boolean" default="false"/>
+    
+    <aura:attribute name="productConfigurationsSAP" type="Object"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <div aura:id="modalDiv">
+        <div role="dialog" class="slds-modal slds-fade-in-open slds-modal_medium">
+            <div class="slds-modal__container">
+                <div class="slds-modal__header">
+                    <button class="slds-button slds-modal__close slds-button--icon-inverse" title="Close" onclick="{!c.handleCloseModal}">
+                        X<span class="slds-assistive-text">Close</span>
+                    </button>
+                    <h1 class="slds-text-heading--medium">Product Configurations</h1>
+                </div>
+                 
+                <!--Modal Box Header-->
+                <div class="slds-modal__content slds-p-around--medium">
+                    <lightning:notificationsLibrary aura:id="notifLib"/>
+                    <aura:if isTrue="{!empty(v.productConfigurationsSAP.configurations)}">
+                        <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_info" role="alert">
+                            <span class="slds-assistive-text">error</span>
+                            <h2>Product Config Not Available.</h2>
+                        </div>
+                        <aura:set attribute="else">
+                            <table class="slds-table slds-table--bordered slds-table--cell-buffer slds-table--striped slds-max-medium-table--stacked-horizontal" role="grid">
+                                <thead>
+                                    <tr>
+                                        <th class="slds-is-sortable slds-cell-wrap" scope="col">
+                                            Description
+                                        </th>
+                                        <th class="slds-is-sortable slds-cell-wrap" scope="col">
+                                            Indicator
+                                        </th>
+                                        <th class="slds-is-sortable slds-cell-wrap" scope="col">
+                                            UOM
+                                        </th>
+                                        <th class="slds-is-sortable slds-cell-wrap" scope="col">
+                                            Quantitative
+                                        </th>
+                                        <th class="slds-is-sortable slds-cell-wrap" scope="col">
+                                            Qualitative
+                                        </th>
+                                        <th class="slds-is-sortable slds-cell-wrap" scope="col">
+                                            OLAM Range
+                                        </th>
+                                        <th class="slds-is-sortable slds-cell-wrap" scope="col">
+                                            Customer Range
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <aura:iteration items="{!v.productConfigurationsSAP.configurations}" var="prodConfig">
+                                        <tr class="slds-hint-parent">
+                                            <td role="gridcell" class="slds-cell-wrap" data-label="description">
+                                                <!--<aura:if isTrue="{!not(empty(prodConfig.mic))}">
+                                                    {!prodConfig.mic}
+                                                    <aura:set attribute="else">
+                                                        {!prodConfig.varient_character_mapping}
+                                                    </aura:set>
+                                                </aura:if>-->
+                                                {!prodConfig.description}
+                                            </td>
+                                            <td role="gridcell" class="slds-cell-wrap" data-label="indicator">
+                                                {!prodConfig.indicator}
+                                            </td>
+                                            <td role="gridcell" class="slds-cell-wrap" data-label="uom">
+                                                {!prodConfig.uom}
+                                            </td>
+                                            <td role="gridcell" class="slds-cell-wrap" data-label="quantitative">
+                                                {!prodConfig.quantitative}
+                                            </td> 
+                                            <td role="gridcell" class="slds-cell-wrap" data-label="qualitative">
+                                                {!prodConfig.qualitative}
+                                            </td>
+                                            <td role="gridcell" class="slds-cell-wrap" data-label="olam_range">
+                                                {!prodConfig.olam_range}
+                                            </td>
+                                            <td role="gridcell" class="slds-cell-wrap" data-label="customer_range">
+                                                <lightning:input type="text" value="{!prodConfig.customer_range}"/>
+                                            </td>
+                                        </tr>
+                                    </aura:iteration>
+                                </tbody>
+                            </table>
+                        </aura:set>
+                    </aura:if>
+                    
+                    <aura:if isTrue="{!v.isLoading}">
+                        <c:KAM_LoadingDots/>
+                    </aura:if>
+                    
+                </div>
+                <!--Modal Box Button-->
+                <div class="slds-modal__footer">
+                    <lightning:button label="Save" class="slds-button_brand" onclick="{!c.handleSubmit}" disabled="{!empty(v.productConfigurationsSAP.configurations)}" />
+                    <lightning:button label="Cancel" class="slds-button" onclick="{!c.handleCloseModal }"  />
+                </div>
+            </div>
+        </div>
+        <div class="slds-backdrop slds-backdrop--open"></div>            
+    </div>
+</aura:component>

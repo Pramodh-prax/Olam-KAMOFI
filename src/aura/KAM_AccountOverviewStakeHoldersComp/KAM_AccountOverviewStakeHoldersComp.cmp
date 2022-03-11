@@ -1,0 +1,56 @@
+<aura:component extends="c:KAM_AccountPlanOverviewBase" access="global">
+
+    <ltng:require scripts="{!join(',',$Resource.jquery) }" afterScriptsLoaded="{!c.scriptLoaded}" />
+
+    <aura:attribute name="accountId" type="String" default="{!v.sectionData.accountId}" />
+    <aura:attribute name="contacts" type="List" default="[]" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <aura:attribute name="stakeHoldersView" type="String" default="treeView" />
+    <aura:attribute name="showHeader" type="Boolean" default="true" />
+
+    <div class="account-over-view-container" aura:id="item-container">
+        <lightning:layout aura:id="item-wrapper" multipleRows="true" horizontalAlign="center" verticalAlign="center"
+            class="accountoverview-detail__closed">
+            <aura:if isTrue="{!v.showHeader}">
+                <lightning:layoutItem size="12"
+                    class="tit-desc-container slds-order_1  slds-small-order_1 slds-medium-order_1 slds-large-order_1"
+                    smallDeviceSize="12" mediumDeviceSize="8" largeDeviceSize="8">
+                    <lightning:layout multipleRows="true" horizontalAlign="center" verticalAlign="center" class="">
+                        <lightning:layoutItem size="12" class="title-text" smallDeviceSize="12" mediumDeviceSize="12"
+                            largeDeviceSize="12">
+                            <span>{!v.sectionData.compDetail.Title__c}</span>
+                        </lightning:layoutItem>
+                        <lightning:layoutItem size="12" class="desc-text" smallDeviceSize="12" mediumDeviceSize="12"
+                            largeDeviceSize="12">
+                            <span>{!v.sectionData.Description__c}</span>
+                        </lightning:layoutItem>
+                    </lightning:layout>
+                </lightning:layoutItem>
+                <lightning:layoutItem size="4"
+                    class="slds-order_3 slds-small-order_3 slds-medium-order_3 slds-large-order_3 account-over-view__header-control-container"
+                    smallDeviceSize="4" mediumDeviceSize="4" largeDeviceSize="4">
+                    <div class="accountoverview-detail__header-control">
+                        <a href="javascript:void(0)" onclick="{!c.toggleDetailContent}"
+                            class="accountoverview-detail__operator-cta"></a>
+                    </div>
+                </lightning:layoutItem>
+            </aura:if>
+            <lightning:layoutItem size="12"
+                class="slds-order_4 slds-small-order_4 slds-medium-order_4 slds-large-order_4 accountoverview__detail-content"
+                smallDeviceSize="12" mediumDeviceSize="12" largeDeviceSize="12">
+                <div class="slds-form--compound">
+                    <div>
+                        <aura:if isTrue="{!!v.isLoading}">
+                            <c:KAM_KeyStakeHolders contacts="{!v.contacts}" />
+                        </aura:if>
+                    </div>
+                    <aura:if isTrue="{!v.isLoading}">
+                        <c:KAM_LoadingDots />
+                    </aura:if>
+                </div>
+            </lightning:layoutItem>
+        </lightning:layout>
+    </div>
+</aura:component>

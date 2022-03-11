@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_14765607</developerName>
+        <masterLabel>Regions</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>FULL_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Hiran Perera</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mohammad Hassan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Abhay Betharia</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Vipan Kumar</sourceValue>
+            </sourceValues>
+            <value>ME</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Jeffrey Lee</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kate Seng</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Anh Nguyen</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Karan Dogra</sourceValue>
+            </sourceValues>
+            <value>SEA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Angela Ajeng</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Hans Daley</sourceValue>
+            </sourceValues>
+            <value>Indonesia</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Marcelino Valdez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Matt Helon</sourceValue>
+            </sourceValues>
+            <value>US</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Jean Baptiste Plasma</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Karel Keijzer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Rutger Schutte</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lucas Schmitz</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jean Baptiste Assie</sourceValue>
+            </sourceValues>
+            <value>W EU</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Vipin Kukreja</sourceValue>
+            </sourceValues>
+            <value>SAARC</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Mihir Mogre</sourceValue>
+            </sourceValues>
+            <value>N Africa</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Daniel Hitz</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nuzuli Hada Ginting</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Matt Tham</sourceValue>
+            </sourceValues>
+            <value>EUM</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Vishal Sharma</sourceValue>
+            </sourceValues>
+            <value>W Africa</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Cindy Ma</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Miranda Ling</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Amy Sun</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>David Deng</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fred Wang</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Owen Zhang</sourceValue>
+            </sourceValues>
+            <value>China</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Bartosz Stachowicz</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Wadim Pasiczniak</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Piotr C</sourceValue>
+            </sourceValues>
+            <value>E EU</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Manish Khede</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Praveen Paulsamy</sourceValue>
+            </sourceValues>
+            <value>Nigeria</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>VerticalColumnStacked</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_14765607</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <secondaryGroupingColumn>CREATED_DATE</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>Product2.Product_Category__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OpportunityLineItem.Volume__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>UNIT_PRICE</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.Shipment_Month__c</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>OWNER_PROFILE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>dairy</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Briefing,Offering,Closing Won,Closed Lost</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Month</dateGranularity>
+        <field>CREATED_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_14765607</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Opportunity Count - Last 30 Days</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_LAST30</interval>
+    </timeFrameFilter>
+</Report>

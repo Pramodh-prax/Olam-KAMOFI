@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Budget vs Actual Line</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Budget vs Actual Lines</value>
+    </caseValues>
+    <fields>
+        <label><!-- Actual Volume --></label>
+        <name>Actuals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application --></label>
+        <name>Application__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brand --></label>
+        <name>Brand__c</name>
+        <picklistValues>
+            <masterLabel>BLANK</masterLabel>
+            <translation><!-- BLANK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BT</masterLabel>
+            <translation><!-- BT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CPKELCO</masterLabel>
+            <translation><!-- CPKELCO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DAMIN</masterLabel>
+            <translation><!-- DAMIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DEZAAN</masterLabel>
+            <translation><!-- DEZAAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GC</masterLabel>
+            <translation><!-- GC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HERSHEY</masterLabel>
+            <translation><!-- HERSHEY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HUYSMAN</masterLabel>
+            <translation><!-- HUYSMAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JOANES</masterLabel>
+            <translation><!-- JOANES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MACAO</masterLabel>
+            <translation><!-- MACAO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEUTRAL</masterLabel>
+            <translation><!-- NEUTRAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NICHE</masterLabel>
+            <translation><!-- NICHE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ORIGIN</masterLabel>
+            <translation><!-- ORIGIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ORIGIN/DEZAAN</masterLabel>
+            <translation><!-- ORIGIN/DEZAAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLOT</masterLabel>
+            <translation><!-- PLOT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>STARBUCKS</masterLabel>
+            <translation><!-- STARBUCKS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRIAL</masterLabel>
+            <translation><!-- TRIAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UNICAO</masterLabel>
+            <translation><!-- UNICAO --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Budget vs Actuals --></label>
+        <name>Budget_vs_Actuals__c</name>
+        <relationshipLabel><!-- Budget vs Actual Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Business Unit --></label>
+        <name>Business_Unit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Category --></label>
+        <name>Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Certification --></label>
+        <name>Certification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Certification --></label>
+        <name>Certifications_del__c</name>
+        <picklistValues>
+            <masterLabel>4C certified</masterLabel>
+            <translation><!-- 4C certified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AtSource Entry</masterLabel>
+            <translation><!-- AtSource Entry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AtSource Entry Verified</masterLabel>
+            <translation><!-- AtSource Entry Verified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AtSource Infinity</masterLabel>
+            <translation><!-- AtSource Infinity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AtSource Plus</masterLabel>
+            <translation><!-- AtSource Plus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fair Trade certified</masterLabel>
+            <translation><!-- Fair Trade certified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Organic certified</masterLabel>
+            <translation><!-- Organic certified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Responsible Sourcing</masterLabel>
+            <translation><!-- Other Responsible Sourcing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RFA certified</masterLabel>
+            <translation><!-- RFA certified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UTZ certified</masterLabel>
+            <translation><!-- UTZ certified --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Defects --></label>
+        <name>Defects__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ingredient/commodity --></label>
+        <name>Ingredient_commodity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Origin --></label>
+        <name>Origin__c</name>
+        <picklistValues>
+            <masterLabel>Australia</masterLabel>
+            <translation><!-- Australia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brazil</masterLabel>
+            <translation><!-- Brazil --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>China</masterLabel>
+            <translation><!-- China --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Colombia</masterLabel>
+            <translation><!-- Colombia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRC</masterLabel>
+            <translation><!-- DRC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>East Timor</masterLabel>
+            <translation><!-- East Timor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Egypt</masterLabel>
+            <translation><!-- Egypt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ethiopia</masterLabel>
+            <translation><!-- Ethiopia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guatemala</masterLabel>
+            <translation><!-- Guatemala --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Honduras</masterLabel>
+            <translation><!-- Honduras --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hong Kong</masterLabel>
+            <translation><!-- Hong Kong --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IVC</masterLabel>
+            <translation><!-- IVC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>India</masterLabel>
+            <translation><!-- India --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indonesia</masterLabel>
+            <translation><!-- Indonesia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Korea</masterLabel>
+            <translation><!-- Korea --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Laos</masterLabel>
+            <translation><!-- Laos --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Malaysia</masterLabel>
+            <translation><!-- Malaysia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mexico</masterLabel>
+            <translation><!-- Mexico --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nicaragua</masterLabel>
+            <translation><!-- Nicaragua --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PNG</masterLabel>
+            <translation><!-- PNG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Peru</masterLabel>
+            <translation><!-- Peru --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Philippines</masterLabel>
+            <translation><!-- Philippines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Singapore</masterLabel>
+            <translation><!-- Singapore --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Taiwan</masterLabel>
+            <translation><!-- Taiwan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tanzania</masterLabel>
+            <translation><!-- Tanzania --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thailand</masterLabel>
+            <translation><!-- Thailand --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USA</masterLabel>
+            <translation><!-- USA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uganda</masterLabel>
+            <translation><!-- Uganda --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vietnam</masterLabel>
+            <translation><!-- Vietnam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zambia</masterLabel>
+            <translation><!-- Zambia --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pack Size --></label>
+        <name>Pack_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pack Type --></label>
+        <name>Pack_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plant --></label>
+        <name>Plant__c</name>
+        <picklistValues>
+            <masterLabel>NL</masterLabel>
+            <translation><!-- NL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SG</masterLabel>
+            <translation><!-- SG --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Processing Type --></label>
+        <name>Processing_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Classification --></label>
+        <name>Product_Classification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Grade --></label>
+        <name>Product_Grade__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Group Code --></label>
+        <name>Product_Group_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Type --></label>
+        <name>Product_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Size --></label>
+        <name>Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Sub Category 2 --></label>
+        <name>Sub_Category_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Sub Category --></label>
+        <name>Sub_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Consumption Volume --></label>
+        <name>Total_Consumption__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trader --></label>
+        <name>Trader__c</name>
+        <picklistValues>
+            <masterLabel>Ajay G.</masterLabel>
+            <translation><!-- Ajay G. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alessandro M.</masterLabel>
+            <translation><!-- Alessandro M. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Andres O.</masterLabel>
+            <translation><!-- Andres O. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Anubhav K.</masterLabel>
+            <translation><!-- Anubhav K. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ashim K.</masterLabel>
+            <translation><!-- Ashim K. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bertie S.</masterLabel>
+            <translation><!-- Bertie S. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bruno R.</masterLabel>
+            <translation><!-- Bruno R. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corrado R.</masterLabel>
+            <translation><!-- Corrado R. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Daniela R</masterLabel>
+            <translation><!-- Daniela R --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Douglas Z.</masterLabel>
+            <translation><!-- Douglas Z. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Florian S.</masterLabel>
+            <translation><!-- Florian S. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>George S.</masterLabel>
+            <translation><!-- George S. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Howard B.</masterLabel>
+            <translation><!-- Howard B. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ian K.</masterLabel>
+            <translation><!-- Ian K. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jeronimo P.</masterLabel>
+            <translation><!-- Jeronimo P. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Julio V.</masterLabel>
+            <translation><!-- Julio V. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kohei I.</masterLabel>
+            <translation><!-- Kohei I. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kyle B.</masterLabel>
+            <translation><!-- Kyle B. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Luis R.</masterLabel>
+            <translation><!-- Luis R. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manuel M.</masterLabel>
+            <translation><!-- Manuel M. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marco C.</masterLabel>
+            <translation><!-- Marco C. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mario P.</masterLabel>
+            <translation><!-- Mario P. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maxime C.</masterLabel>
+            <translation><!-- Maxime C. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mi Jung S.</masterLabel>
+            <translation><!-- Mi Jung S. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Midhun P.</masterLabel>
+            <translation><!-- Midhun P. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Milan B.</masterLabel>
+            <translation><!-- Milan B. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nikhil C.</masterLabel>
+            <translation><!-- Nikhil C. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Philip S.</masterLabel>
+            <translation><!-- Philip S. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pratyush S.</masterLabel>
+            <translation><!-- Pratyush S. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ritesh S.</masterLabel>
+            <translation><!-- Ritesh S. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rob S.</masterLabel>
+            <translation><!-- Rob S. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sahra B.</masterLabel>
+            <translation><!-- Sahra B. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Santiago P.</masterLabel>
+            <translation><!-- Santiago P. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shaun W.</masterLabel>
+            <translation><!-- Shaun W. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shekhar S.</masterLabel>
+            <translation><!-- Shekhar S. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Srikanth A.</masterLabel>
+            <translation><!-- Srikanth A. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stane S.</masterLabel>
+            <translation><!-- Stane S. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thomas G.</masterLabel>
+            <translation><!-- Thomas G. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Todd M.</masterLabel>
+            <translation><!-- Todd M. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tom H.</masterLabel>
+            <translation><!-- Tom H. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trista C.</masterLabel>
+            <translation><!-- Trista C. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ubirajara G.</masterLabel>
+            <translation><!-- Ubirajara G. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vancler C.</masterLabel>
+            <translation><!-- Vancler C. --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Value Stream --></label>
+        <name>Value_Stream__c</name>
+    </fields>
+    <fields>
+        <label><!-- Variety --></label>
+        <name>Variety__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Budget Volume --></label>
+        <name>Volume__c</name>
+    </fields>
+    <layouts>
+        <layout>Budget vs Actual Line Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

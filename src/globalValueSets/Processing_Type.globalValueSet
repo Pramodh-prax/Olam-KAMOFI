@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>NULL</fullName>
+        <default>false</default>
+        <label>NULL</label>
+    </customValue>
+    <customValue>
+        <fullName>ORGANIC</fullName>
+        <default>false</default>
+        <label>ORGANIC</label>
+    </customValue>
+    <customValue>
+        <fullName>PASTEURISED</fullName>
+        <default>false</default>
+        <label>PASTEURISED</label>
+    </customValue>
+    <customValue>
+        <fullName>ROASTED</fullName>
+        <default>false</default>
+        <label>ROASTED</label>
+    </customValue>
+    <customValue>
+        <fullName>RAW MATERIAL</fullName>
+        <default>false</default>
+        <label>RAW MATERIAL</label>
+    </customValue>
+    <customValue>
+        <fullName>PASTE</fullName>
+        <default>false</default>
+        <label>PASTE</label>
+    </customValue>
+    <customValue>
+        <fullName>DICED</fullName>
+        <default>false</default>
+        <label>DICED</label>
+    </customValue>
+    <customValue>
+        <fullName>NATURAL</fullName>
+        <default>false</default>
+        <label>NATURAL</label>
+    </customValue>
+    <customValue>
+        <fullName>BYPRODUCT</fullName>
+        <default>false</default>
+        <label>BYPRODUCT</label>
+    </customValue>
+    <customValue>
+        <fullName>FAIRTRADE</fullName>
+        <default>false</default>
+        <label>FAIRTRADE</label>
+    </customValue>
+    <customValue>
+        <fullName>BLANK</fullName>
+        <default>false</default>
+        <label>BLANK</label>
+    </customValue>
+    <customValue>
+        <fullName>(BLANKS)</fullName>
+        <default>false</default>
+        <label>(BLANKS)</label>
+    </customValue>
+    <customValue>
+        <fullName>507DP11</fullName>
+        <default>false</default>
+        <label>507DP11</label>
+    </customValue>
+    <customValue>
+        <fullName>D11AZ</fullName>
+        <default>false</default>
+        <label>D11AZ</label>
+    </customValue>
+    <customValue>
+        <fullName>D11CK</fullName>
+        <default>false</default>
+        <label>D11CK</label>
+    </customValue>
+    <customValue>
+        <fullName>10/12 S7</fullName>
+        <default>false</default>
+        <label>10/12 S7</label>
+    </customValue>
+    <customValue>
+        <fullName>10/12 SN</fullName>
+        <default>false</default>
+        <label>10/12 SN</label>
+    </customValue>
+    <customValue>
+        <fullName>ALK BLACK</fullName>
+        <default>false</default>
+        <label>ALK BLACK</label>
+    </customValue>
+    <customValue>
+        <fullName>AJ11P</fullName>
+        <default>false</default>
+        <label>AJ11P</label>
+    </customValue>
+    <customValue>
+        <fullName>PROCESSED</fullName>
+        <default>false</default>
+        <label>PROCESSED</label>
+    </customValue>
+    <masterLabel>Processing Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

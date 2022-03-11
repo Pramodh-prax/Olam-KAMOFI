@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_56878122</developerName>
+        <masterLabel>Business Unit</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>ROLE</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Cocoa Head PD&amp;I EMEA</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Cocoa PD&amp;I Manager EMEA</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Cocoa Sales Head Europe</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Cocoa Sales Head Russia</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Cocoa Sales Head UK</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Cocoa Sales Manager EMEA</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Cocoa Sales Manager Europe</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Cocoa Sales Manager Germany</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Cocoa Sales Manager Russia</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Cocoa Sales Manager Spain</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Cocoa Sales Manager UK</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Cocoa Sales Manager Ukraine</sourceValue>
+            </sourceValues>
+            <value>Cocoa</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Dairy Sales Associate West EU</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Dairy Sales Head East EU</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Dairy Sales Head EUM</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Dairy Sales Head West EU</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Dairy Sales Manager East EU</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Dairy Sales Manager EUM</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Dairy Sales Manager West EU</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Dairy Sales Regional Head East EU &amp; West EU &amp; USA</sourceValue>
+            </sourceValues>
+            <value>Dairy</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Spice Europe Sales Manager</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Spice Turkey Sales Manager</sourceValue>
+            </sourceValues>
+            <value>Spice</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>User.Regions__c</field>
+    </columns>
+    <columns>
+        <field>ROLE</field>
+    </columns>
+    <columns>
+        <field>LAST_LOGIN</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>User.Regions__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Europe</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LAST_LOGIN</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>LAST_N_DAYS:10</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>User.BU_Identifier__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>OFI Europe user not logged in 10 Days</name>
+    <params>
+        <name>active</name>
+        <value>active</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>User</reportType>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <sortColumn>FULL_NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>LAST_LOGIN</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

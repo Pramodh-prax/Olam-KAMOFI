@@ -1,0 +1,208 @@
+<aura:component controller="KAM_BudgetActualsCntl" extends="c:KAM_Util">
+
+    <aura:attribute name="accountId" type="String" />
+    <aura:attribute name="accountPlan" type="Object" />
+    <aura:attribute name="budget" type="Object" />
+    <aura:attribute name="labels" type="Object" />
+
+    <aura:attribute name="budgets" type="List" default='[]' />
+
+    <aura:attribute name="isLoading" type="Boolean" default="true" />
+    <aura:attribute name="errorMessage" type="String" default="" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <aura:attribute name="mode" type="String" default="new" />
+    <aura:attribute name="recordIndex" type="Integer" />
+
+    <aura:registerEvent name="budgetUpdated" type="c:KAM_BudgetUpdated"/>
+
+    
+    <aura:attribute name="currentUser" type="Object"/>
+    <aura:attribute name="isCurrentUserBURequired" type="Boolean" default="false" />
+
+    <aura:if isTrue="{!v.isCurrentUserBURequired}">
+        <force:recordData recordId="{!$SObjectType.CurrentUser.Id}"
+                  fields="BU_Identifier__c"
+                  targetFields="{!v.currentUser}"
+                  recordUpdated="{!c.handleOnRecordUpdated}"/>
+    </aura:if>
+
+    <!--###### MODAL BOX Start######-->
+    <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+        aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+        <div class="slds-backdrop slds-backdrop_open">
+            <div class="slds-modal__container c-modal-container slds-is-relative">
+                <!-- ###### MODAL BOX HEADER Start ######-->
+                <header class="slds-modal__header">
+                    <lightning:buttonIcon iconName="utility:close" onclick="{! c.closeModel }" alternativeText="close"
+                        variant="bare-inverse" class="slds-modal__close" />
+                    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">{!v.labels.modalHeading}
+                    </h2>
+                </header>
+                <!--###### MODAL BOX BODY Part Start######-->
+                <div class="slds-modal__content slds-p-around_medium create-engagement-content" id="modal-content-id-1">
+                    <lightning:layout multipleRows="true" class="slds-is-relative">
+                        <!-- <aura:if isTrue="{!!v.isLoading}">
+                            
+                        </aura:if> -->
+
+                        <lightning:layoutItem size="12" class="slds-m-top_small slds-m-bottom_large">
+                            <lightning:recordEditForm aura:id="budgetForm" onsubmit="{!c.handleSubmit}"
+                                objectApiName="Budget_vs_Actual_Line__c" onload="{!c.handleEditFormLoad}">
+                                <aura:if isTrue="{!v.errorMessage}">
+                                    <span class="error-msg-text">{!v.errorMessage}</span>
+                                </aura:if>
+                                <lightning:messages />
+                                <lightning:layout multipleRows="true" class="slds-is-relative">
+                                    <lightning:layoutItem size="12" smallDeviceSize="3" mediumDeviceSize="3"
+                                        largeDeviceSize="3">
+                                        <lightning:inputField class="user-inp" required="true" fieldName="Category__c"
+                                            aura:id="Category__c" disabled="{!v.mode == 'edit'}"/>
+                                    </lightning:layoutItem>
+                                    <lightning:layoutItem size="12" smallDeviceSize="3" mediumDeviceSize="3"
+                                        largeDeviceSize="3">
+                                        <lightning:inputField class="user-inp" fieldName="Sub_Category__c" aura:id="Sub_Category__c" disabled="{!v.mode == 'edit'}"/>
+                                    </lightning:layoutItem>
+                                    <lightning:layoutItem size="12" smallDeviceSize="3" mediumDeviceSize="3"
+                                        largeDeviceSize="3">
+                                        <lightning:inputField class="user-inp" fieldName="Sub_Category_2__c"
+                                            aura:id="Sub_Category_2__c" disabled="{!v.mode == 'edit'}"/>
+                                    </lightning:layoutItem>
+                                    <lightning:layoutItem size="12" smallDeviceSize="3" mediumDeviceSize="3"
+                                        largeDeviceSize="3">
+                                        <lightning:inputField class="user-inp" required="true" fieldName="Volume__c"
+                                            aura:id="Volume__c" />
+                                    </lightning:layoutItem>
+                                    <lightning:layoutItem size="12" smallDeviceSize="3" mediumDeviceSize="3"
+                                        largeDeviceSize="3" class="bu-field-container">
+                                        <lightning:inputField class="user-inp" required="true" fieldName="Business_Unit__c"
+                                            aura:id="Business_Unit__c" disabled="true"/>
+                                    </lightning:layoutItem>
+                                </lightning:layout>
+                                <div class="btn-container">
+                                    <aura:if isTrue="{!v.mode == 'new'}">
+                                        <lightning:button variant="neutral" label="Reset" title="{!v.labels.btnReset}" onclick="{! c.handleAddReset }" />
+                                        <lightning:button class="" type="submit" label="{!v.labels.btnAdd}" />
+                                    </aura:if>
+                                    <aura:if isTrue="{!v.mode == 'edit'}">
+                                        <lightning:button variant="neutral" label="{!v.labels.btnCancel}" title="{!v.labels.btnCancel}" onclick="{! c.handleUpdateCancel }" />
+                                        <lightning:button class="" type="submit" label="{!v.labels.btnUpdate}" />
+                                    </aura:if>
+                                </div>
+                            </lightning:recordEditForm>
+                        </lightning:layoutItem>
+
+
+                        <lightning:layoutItem size="12" class="slds-m-top_small slds-m-bottom_large">
+                            <div class="table-container">
+                                <div
+                                    class="{! ((empty(v.budgets)) ? 'budget-table-wrapper_empty' : '') + ' slds-table--header-fixed_container budget-table-wrapper '}">
+                                    <div class="slds-scrollable" style="height:100%;">
+                                        <aura:if isTrue="{!(empty(v.budgets))}">
+                                            <div class="table-row-spec-no-rows table-row-spec-no-rows-desktop "
+                                                title="">
+                                                {!v.labels.noData}
+                                            </div>
+                                        </aura:if>
+                                        <table
+                                            class="slds-table slds-table_bordered slds-table--fixed-layout slds-table--header-fixed slds-no-row-hover">
+                                            <thead>
+                                                <tr class="slds-text-title_caps">
+                                                    <th scope="col" style="width :40%;padding-left:.5rem;">
+                                                        <div class="slds-truncate slds-cell-fixed slds-p-left_x-small slds-p-top_x-small header-spec"
+                                                            title="{!v.labels.category}">
+                                                            {!v.labels.category}
+                                                        </div>
+                                                    </th>
+                                                    <th scope="col" style="width :40%;">
+                                                        <div class="slds-truncate slds-cell-fixed slds-p-left_x-small slds-p-top_x-small header-spec"
+                                                            title="{!v.labels.subcategory}">
+                                                            {!v.labels.subcategory}
+                                                        </div>
+                                                    </th>
+                                                    <th scope="col" style="width :40%;">
+                                                        <div class="slds-truncate slds-cell-fixed slds-p-left_x-small slds-p-top_x-small header-spec"
+                                                            title="{!v.labels.subcategory2}">
+                                                            {!v.labels.subcategory2}
+                                                        </div>
+                                                    </th>
+                                                    <th scope="col" style="width :40%;">
+                                                        <div class="slds-truncate slds-cell-fixed slds-p-left_x-small slds-p-top_x-small header-spec"
+                                                            title="{!v.labels.volume}">
+                                                            {!v.labels.volume}
+                                                        </div>
+                                                    </th>
+                                                    <th scope="col" style="width :20%;">
+                                                        <div class="slds-truncate slds-cell-fixed slds-p-left_x-small slds-p-top_x-small header-spec"
+                                                            title="{!v.labels.edit}">
+                                                            {!v.labels.edit}
+                                                        </div>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <aura:if isTrue="{! not(empty(v.budgets))}">
+                                                    <aura:iteration items="{!v.budgets}" var="eachLineItem"
+                                                        indexVar="index">
+                                                        <tr>
+                                                            <th scope="row" data-label="{!v.labels.category}" style="width :40%;"
+                                                                class="">
+                                                                <div class="slds-truncate table-row-spec"
+                                                                    title="{!eachLineItem.Category__c}">
+                                                                    {!eachLineItem.Category__c}
+                                                                </div>
+                                                            </th>
+                                                            <td style="width :40%;" class="" data-label="{!v.labels.subcategory}">
+                                                                <div class="slds-truncate_custom table-row-spec"
+                                                                    title="{!eachLineItem.Sub_Category__c}">
+                                                                    {!eachLineItem.Sub_Category__c}</div>
+                                                            </td>
+                                                            <td style="width :40%;" class=""
+                                                                data-label="{!v.labels.subcategory2}">
+                                                                <div class="slds-truncate_custom table-row-spec"
+                                                                    title="{!eachLineItem.Sub_Category_2__c}">
+                                                                    {!eachLineItem.Sub_Category_2__c}</div>
+                                                            </td>
+                                                            <td style="width :40%;" class="" data-label="{!v.labels.volume}">
+                                                                <div class="slds-truncate_custom table-row-spec"
+                                                                    title="{!eachLineItem.Volume}">
+                                                                    {!eachLineItem.Volume__c}
+                                                                </div>
+                                                            </td>
+                                                            <td style="width :20%;" class="" data-label="{!v.labels.edit}">
+                                                                <div class="slds-truncate_custom table-row-spec"
+                                                                    title="Delete">
+                                                                    <a href="javascript:void(0);" data-index="{!index}"
+                                                                        onclick="{!c.editBudgetLine}">
+                                                                        {!v.labels.edit}
+                                                                    </a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </aura:iteration>
+                                                </aura:if>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </lightning:layoutItem>
+                        <aura:if isTrue="{!v.isLoading}">
+                            <lightning:layoutItem size="12" class="slds-m-top_small">
+                                <c:KAM_LoadingDots />
+                            </lightning:layoutItem>
+                        </aura:if>
+                    </lightning:layout>
+                </div>
+                <!--###### MODAL BOX FOOTER Part Start ######-->
+                <footer class="slds-modal__footer">
+                    <lightning:button variant="neutral" label="{!v.labels.modalBtnCancel}" title="{!v.labels.modalBtnCancel}" onclick="{! c.closeModel }" disabled="{!v.isLoading}"/>
+                    <lightning:button variant="neutral" label="{!v.labels.modalBtnSaveAsDraft}" title="{!v.labels.modalBtnSaveAsDraft}"
+                        disabled="{! (v.budgets.length == 0 || v.isLoading)}" onclick="{! c.handleOnSaveAsDraft }" />
+                    <lightning:button variant="neutral" label="{!v.labels.modalBtnSaveAndLock}" title="{!v.labels.modalBtnSaveAndLock}"
+                        onclick="{! c.handleOnSaveAndLock }" disabled="{! (empty(v.budgets) || v.isLoading)}" />
+                </footer>
+            </div>
+        </div>
+    </section>
+</aura:component>

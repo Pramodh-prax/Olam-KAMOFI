@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Opportunity Log</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Opportunity Logs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Action --></label>
+        <name>Action__c</name>
+        <picklistValues>
+            <masterLabel>Line Item Value Changed</masterLabel>
+            <translation><!-- Line Item Value Changed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manually Removed</masterLabel>
+            <translation><!-- Manually Removed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not offered by Olam</masterLabel>
+            <translation><!-- Not offered by Olam --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- OpportunityID --></label>
+        <name>OpportunityID__c</name>
+        <relationshipLabel><!-- Opportunity Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Original Olam Offer (per MT) --></label>
+        <name>Original_Olam_Offer_per_MT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Volume (MT) --></label>
+        <name>Original_Volume_MT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product2Id --></label>
+        <name>Product2Id__c</name>
+        <relationshipLabel><!-- Opportunity Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Reason for Removal --></label>
+        <name>Reason_for_Removal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Olam Offer (per MT) --></label>
+        <name>UnitPrice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Volume (MT) --></label>
+        <name>Volume__c</name>
+    </fields>
+    <layouts>
+        <layout>Opportunity Log Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Disposal - 0.8x1.2m</fullName>
+        <default>false</default>
+        <label>Disposal - 0.8x1.2m</label>
+    </customValue>
+    <customValue>
+        <fullName>Disposal - 1x1.2m</fullName>
+        <default>false</default>
+        <label>Disposal - 1x1.2m</label>
+    </customValue>
+    <customValue>
+        <fullName>Disposal - 1.1x1.1m</fullName>
+        <default>false</default>
+        <label>Disposal - 1.1x1.1m</label>
+    </customValue>
+    <customValue>
+        <fullName>CHEP – 0.8x1.2m</fullName>
+        <default>false</default>
+        <label>CHEP – 0.8x1.2m</label>
+    </customValue>
+    <customValue>
+        <fullName>CHEP – 40x48 inches</fullName>
+        <default>false</default>
+        <label>CHEP – 40x48 inches</label>
+    </customValue>
+    <customValue>
+        <fullName>PECO – 0.8x1.2m</fullName>
+        <default>false</default>
+        <label>PECO – 0.8x1.2m</label>
+    </customValue>
+    <customValue>
+        <fullName>PECO – 40x48 inches</fullName>
+        <default>false</default>
+        <label>PECO – 40x48 inches</label>
+    </customValue>
+    <customValue>
+        <fullName>LOSCAM – 0.8x1.2m</fullName>
+        <default>false</default>
+        <label>LOSCAM – 0.8x1.2m</label>
+    </customValue>
+    <customValue>
+        <fullName>LOSCAM – 40x48 inches</fullName>
+        <default>false</default>
+        <label>LOSCAM – 40x48 inches</label>
+    </customValue>
+    <customValue>
+        <fullName>Slip sheet - 0.8x1.2m</fullName>
+        <default>false</default>
+        <label>Slip sheet - 0.8x1.2m</label>
+    </customValue>
+    <customValue>
+        <fullName>Slip sheet - 1x1.2m</fullName>
+        <default>false</default>
+        <label>Slip sheet - 1x1.2m</label>
+    </customValue>
+    <customValue>
+        <fullName>Slip sheet - 1.1x1.1m</fullName>
+        <default>false</default>
+        <label>Slip sheet - 1.1x1.1m</label>
+    </customValue>
+    <masterLabel>Pallet Set</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

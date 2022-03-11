@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Brand &amp; Competitor</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Brands &amp; Competitors</value>
+    </caseValues>
+    <fields>
+        <label><!-- Brand --></label>
+        <name>Brand__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brand type --></label>
+        <name>Brand_type__c</name>
+        <picklistValues>
+            <masterLabel>External</masterLabel>
+            <translation><!-- External --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal</masterLabel>
+            <translation><!-- Internal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Consumption --></label>
+        <name>Consumption__c</name>
+        <relationshipLabel><!-- Brands &amp; Competitors --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contributed Volume --></label>
+        <name>Contributed_Volume__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Group Code --></label>
+        <name>Product_Group_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remarks --></label>
+        <name>Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Share % --></label>
+        <name>Share__c</name>
+    </fields>
+    <layouts>
+        <layout>Brand n competitor Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

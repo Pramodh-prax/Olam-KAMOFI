@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Dairy_Opportunity_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Dairy Opportunity Sharing</label>
+        <sharedTo>
+            <group>Dairy_Group</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Business_Unit__c</field>
+            <operation>equals</operation>
+            <value>Dairy</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>PLBS_Opp_share_with_PLBS_group</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>PLBS Tender opp and product opp should only be visible to PLBS Group</description>
+        <label>PLBS Opp share with PLBS group</label>
+        <sharedTo>
+            <group>PLBS_Group</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>PLBS Tendering Product,PLBS Tendering Opportunity</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

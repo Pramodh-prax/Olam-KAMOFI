@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Product specification</fullName>
+        <default>false</default>
+        <label>Product specification</label>
+    </customValue>
+    <customValue>
+        <fullName>Order information</fullName>
+        <default>false</default>
+        <label>Order information</label>
+    </customValue>
+    <customValue>
+        <fullName>Buying Cacao</fullName>
+        <default>false</default>
+        <label>Buying Cacao</label>
+    </customValue>
+    <customValue>
+        <fullName>Getting Samples</fullName>
+        <default>false</default>
+        <label>Getting Samples</label>
+    </customValue>
+    <customValue>
+        <fullName>Speak to an expert</fullName>
+        <default>false</default>
+        <label>Speak to an expert</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <masterLabel>Enquiry Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

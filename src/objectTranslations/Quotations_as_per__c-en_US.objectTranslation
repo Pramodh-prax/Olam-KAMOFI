@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Quotations as per</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Quotations as per</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fobbing/container --></label>
+        <name>Fobbing_container__c</name>
+        <picklistValues>
+            <masterLabel>20FT Container</masterLabel>
+            <translation><!-- 20FT Container --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40FT Container</masterLabel>
+            <translation><!-- 40FT Container --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Price Kit --></label>
+        <name>Price_Kit__c</name>
+        <relationshipLabel><!-- Quotations as per --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- USD --></label>
+        <name>USD__c</name>
+    </fields>
+    <layouts>
+        <layout>Quotations as per Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

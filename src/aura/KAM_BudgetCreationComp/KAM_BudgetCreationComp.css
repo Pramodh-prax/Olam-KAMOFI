@@ -1,0 +1,126 @@
+.THIS .btn-container{
+    text-align: right;
+}
+.THIS .budget-table-wrapper{
+    background-image: none !important;
+    border-left: 1px solid #DADADA;
+    border-right: 1px solid #DADADA;
+    border-top: 1px solid #dadada;
+}
+.THIS .header-spec {
+    color: #173E35;
+    font-size: 12px;
+    font-weight: bold;
+}
+.THIS .table-row-spec{
+    color: #1E1E1E;
+    font-size: 12px;
+    line-height: 1.5em;
+}
+.THIS .slds-truncate_custom{
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: initial;
+}
+.THIS .budget-table-wrapper tbody tr th:first-child {
+    padding-left: 1rem;
+}
+/*.THIS .budget-table-wrapper tbody tr td {
+    padding-left: 11%;
+} */
+.THIS .table-row-spec-no-rows {
+    text-align: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 13px;
+    color: #1E1E1E;
+    letter-spacing: 0;
+    white-space: normal;
+}
+.THIS .table-row-spec-no-rows-desktop {
+    position: absolute;
+    top : 50%;
+    left : 20%;
+    right: 20%;
+    font-size: 14px;
+    font-weight: 400;
+    color: #1E1E1E;
+}
+.THIS .budget-table-wrapper_empty {
+    min-height: 150px;
+    border-bottom: 1px solid #DADADA;
+}
+.THIS .bu-field-container {
+    display:none;
+}
+@media only screen and (max-width: 30em) {
+    .THIS .budget-table-wrapper thead th {/*:not(:first-child)*/
+        display: none;
+    }
+
+    .THIS .budget-table-wrapper td, .THIS .budget-table-wrapper th {
+        display: block;
+        width : auto !important;
+    }
+    .THIS .budget-table-wrapper td > div, .THIS .budget-table-wrapper th > div {
+        display : inline;
+        float: right;
+        font-weight: 600;
+        max-width: 50%;
+        text-align: right;
+    }
+
+    .THIS .budget-table-wrapper td, .THIS .budget-table-wrapper th {
+        font-weight: 600;
+    }
+
+    .THIS .budget-table-wrapper td[data-label]:before, .THIS .budget-table-wrapper th[data-label]:before  {
+        content: attr(data-label);
+    }
+    .THIS .budget-table-wrapper tbody tr th:first-child {
+        padding-left: .5rem;
+        text-decoration: none;
+    }
+    .THIS .table-container .slds-table--header-fixed_container {
+        padding-top: 0;
+    }
+
+    .THIS .table-container .slds-table_bordered tbody td, 
+    .THIS .table-container .slds-table_bordered tbody th, 
+    .THIS .table-container .slds-table--bordered tbody td, 
+    .THIS .table-container .slds-table--bordered tbody th  {
+        border-top : none;
+    }
+    .THIS .table-container .budget-table-wrapper tbody tr:not(:last-child), 
+    .THIS .table-container .budget-table-wrapper tbody tr:not(:last-child) {
+        border-bottom: 1px solid #DADADA;
+    }
+    .THIS .table-container .budget-table-wrapper .slds-table_bordered, 
+    .THIS .table-container .budget-table-wrapper .slds-table--bordered {
+        border-collapse: collapse;
+    }
+}
+.THIS .error-msg-text {
+    color : red;
+    font-size: 12px;
+    padding: 0.5em 0;
+}
+@media (min-width: 48em) {
+    .THIS .user-inp .slds-form-element_horizontal .slds-form-element__control, 
+    .THIS .user-inp .slds-form_horizontal .slds-form-element .slds-form-element__control, 
+    .THIS .user-inp .slds-form_stacked .slds-form-element_horizontal .slds-form-element__control {
+        padding-left: 0;
+        clear: both;
+    }
+    .THIS .user-inp .slds-form-element_horizontal .slds-form-element__label, 
+    .THIS .user-inp .slds-form_horizontal .slds-form-element .slds-form-element__label, 
+    .THIS .user-inp .slds-form_stacked .slds-form-element_horizontal .slds-form-element__label {
+        max-width : 100%
+    }
+    .THIS .slds-modal__container {
+        margin: 0 auto;
+        width: 75%;
+        max-width: 55rem;
+    }
+}

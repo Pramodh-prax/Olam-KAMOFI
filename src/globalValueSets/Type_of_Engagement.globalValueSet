@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>C Level Engagement</fullName>
+        <default>false</default>
+        <label>C Level Engagement</label>
+    </customValue>
+    <customValue>
+        <fullName>Commercial (Sales &amp; Pricing)</fullName>
+        <default>false</default>
+        <label>Commercial (Sales &amp; Pricing)</label>
+    </customValue>
+    <customValue>
+        <fullName>Finance (Structures &amp; Payments)</fullName>
+        <default>false</default>
+        <label>Finance (Structures &amp; Payments)</label>
+    </customValue>
+    <customValue>
+        <fullName>Innovation</fullName>
+        <default>false</default>
+        <label>Innovation</label>
+    </customValue>
+    <customValue>
+        <fullName>Risk (Solutions)</fullName>
+        <default>false</default>
+        <label>Risk (Solutions)</label>
+    </customValue>
+    <customValue>
+        <fullName>S&amp;D (Market View Exchange)</fullName>
+        <default>false</default>
+        <label>S&amp;D (Market View Exchange)</label>
+    </customValue>
+    <customValue>
+        <fullName>Sales &amp; Ops Planning/Review</fullName>
+        <default>false</default>
+        <label>Sales &amp; Ops Planning/Review</label>
+    </customValue>
+    <customValue>
+        <fullName>Sustainability</fullName>
+        <default>false</default>
+        <label>Sustainability</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <masterLabel>Type of Engagement</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

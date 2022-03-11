@@ -1,0 +1,209 @@
+<aura:component controller="KAM_ActionPlanCntl" extends="c:KAM_Util">
+
+    <ltng:require scripts="{!join(',',$Resource.jquery) }" afterScriptsLoaded="{!c.scriptLoaded}" />
+
+    <aura:attribute name="items" type="List" default="[]" />
+    <aura:attribute name="labels" type="Object" />
+    <aura:attribute name="accountPlan" type="Object" />
+    <aura:attribute name="isLoading" type="Boolean" default="true" />
+
+    <aura:attribute name="displayType" type="String" default="individual" />
+    <aura:attribute name="accounts" type="List" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <div>
+        <div class="slds-form--compound">
+            <div class="table-wrapper">
+                <table class="table">
+                    <thead>
+                        <tr class="header-row">
+                            <th class="sticky-header" scope="col" style="width :20%;padding-left:.5rem;">
+                                {!v.labels.oppty}
+                            </th>
+                            <aura:if isTrue="{!v.displayType == 'group'}">
+                                <th class="sticky-header" scope="col" style="width :20%;padding-left:.5rem;">
+                                    {!v.labels.account}
+                                </th>
+                            </aura:if>
+                            <th class="sticky-header" scope="col" style="width :15%;">
+                                {!v.labels.createdDate}
+                            </th>
+                            <th class="sticky-header" scope="col" style="width :15%;">
+                                {!v.labels.stage}
+                            </th>
+                            <th class="sticky-header" scope="col" style="width :15%;">
+                                {!v.labels.lastModifiedDate}
+                            </th>
+                            <aura:if isTrue="{!v.displayType == 'group'}">
+                                <th class="sticky-header" scope="col" style="width :15%;">
+                                    {!v.labels.owner}
+                                </th>
+                            </aura:if>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <aura:if isTrue="{!(empty(v.items))}">
+                            <tr>
+                                <td class="opp-table-col"
+                                colspan="{! v.displayType == 'individual' ? '4' : '6'}">
+                                    <div class="table-row-spec-no-rows " title="">
+                                        {!v.labels.noData}
+                                    </div>
+                                </td>
+                            </tr>
+                        </aura:if>
+                        <aura:if isTrue="{! not(empty(v.items))}">
+                            <aura:iteration items="{!v.items}" var="eachLineItem" indexVar="index">
+                                <tr>
+                                    <th scope="row" data-label="{!v.labels.oppty}" style="width :20%;" class="opp-table-col">
+                                        <div class="slds-truncate table-row-spec" title="{!eachLineItem.Name}">
+                                            <div class="toggle-btn-container detail_toggle">
+                                                <aura:if
+                                                    isTrue="{!eachLineItem.OpportunityLineItems.length > 0}">
+                                                    <a href="javascript:void(0)" onclick="{!c.handleRowToggle}"
+                                                        data-toggle="openOppLink"
+                                                        class="detail__operator-cta"></a>
+                                                </aura:if>
+                                                <aura:if
+                                                    isTrue="{!!eachLineItem.OpportunityLineItems.length > 0}">
+                                                    <a href="javascript:void(0)"></a>
+                                                </aura:if>
+                                                <a href="{!'/one/one.app?#/sObject/'+ eachLineItem.Id + '/view'}"
+                                                    target="_blank" class="slds-truncate link-text ">
+                                                    {!eachLineItem.Name}
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <aura:if isTrue="{!v.displayType == 'group'}">
+                                        <th scope="row" data-label="{!v.labels.account}" style="width :20%;"
+                                            class="opp-table-col">
+                                            <div class="slds-truncate table-row-spec"
+                                                title="{!eachLineItem.Account.Name}">
+                                                <a href="{!'/one/one.app?#/sObject/'+ eachLineItem.AccountId + '/view'}"
+                                                    target="_blank" class="slds-truncate link-text ">
+                                                    {!eachLineItem.Account.Name}
+                                                </a>
+                                            </div>
+                                        </th>
+                                    </aura:if>
+                                    <td style="width :15%;" class="opp-table-col" data-label="{!v.labels.createdDate}">
+                                        <div class="slds-truncate_custom table-row-spec"
+                                            title="{!eachLineItem.CreatedDate}">
+                                            <aura:if isTrue="{!eachLineItem.CreatedDate}">
+                                                <lightning:formattedDateTime
+                                                    value="{!eachLineItem.CreatedDate}" />
+                                            </aura:if>
+                                        </div>
+                                    </td>
+                                    <td style="width :15%;" class="opp-table-col" data-label="{!v.labels.stage}">
+                                        <div class="slds-truncate_custom table-row-spec"
+                                            title="{!eachLineItem.StageName}">
+                                            {!eachLineItem.StageName}</div>
+                                    </td>
+                                    <td style="width :15%;" class="opp-table-col" data-label="{!v.labels.lastModifiedDate}">
+                                        <div class="slds-truncate_custom table-row-spec"
+                                            title="{!eachLineItem.LastModifiedDate}">
+                                            <aura:if isTrue="{!eachLineItem.LastModifiedDate}">
+                                                <lightning:formattedDateTime
+                                                    value="{!eachLineItem.LastModifiedDate}" />
+                                            </aura:if>
+                                        </div>
+                                    </td>
+                                    <aura:if isTrue="{!v.displayType == 'group'}">
+                                        <td scope="row" data-label="{!v.labels.owner}" style="width :15%;"
+                                            class="opp-table-col">
+                                            <div class="slds-truncate table-row-spec"
+                                                 title="{!eachLineItem.Owner.Name}">
+                                                <a href="{!'/one/one.app?#/sObject/'+ eachLineItem.OwnerId + '/view'}"
+                                                   target="_blank" class="slds-truncate link-text">
+                                                    {!eachLineItem.Owner.Name}
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </aura:if>
+                                </tr>
+                                <aura:if isTrue="{!eachLineItem.OpportunityLineItems.length > 0}">
+                                    <tr class="hide">
+                                        <td></td>
+                                        <td class="opp-table-col"
+                                            colspan="{! v.displayType == 'individual' ? '3' : '5'}">
+
+                                            <table class="table">
+                                                <thead>
+                                                    <tr class="header-row slds-text-title_caps">
+                                                        <th class="sticky-header" scope="col"
+                                                            style="width :30%;padding-left:.5rem;">
+                                                            {!v.labels.product}
+                                                        </th>
+                                                        <th class="sticky-header" scope="col" style="width :25%;">
+                                                            {!v.labels.category}
+                                                        </th>
+                                                        <!-- <th class="sticky-header" scope="col" style="width :25%;">
+                                                            {!v.labels.sampleSentDate}
+                                                        </th>
+                                                        <th class="sticky-header" scope="col"
+                                                            style="width :25%;padding-left:.5rem;">
+                                                            {!v.labels.samplingStatus}
+                                                        </th> -->
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <aura:if isTrue="{! not(empty(eachLineItem.OpportunityLineItems))}">
+                                                        <aura:iteration items="{!eachLineItem.OpportunityLineItems}"
+                                                            var="eachLine" indexVar="index">
+                                                            <tr>
+                                                                <th scope="row" data-label="{!v.labels.product}"
+                                                                    style="width :30%;" class="opp-table-col">
+                                                                    <div class="slds-truncate table-row-spec"
+                                                                        title="{!eachLine.Product2.Name}">
+                                                                        <a href="{!'/one/one.app?#/sObject/'+ eachLine.Id + '/view'}"
+                                                                            target="_blank" class="slds-truncate link-text ">
+                                                                            {!eachLine.Product2.Name}
+                                                                        </a>
+                                                                    </div>
+                                                                </th>
+                                                                <td style="width :25%;" class="opp-table-col"
+                                                                    data-label="{!v.labels.category}">
+                                                                    <div class="slds-truncate_custom table-row-spec"
+                                                                        title="{!eachLine.Product2.Product_Category__c}">
+                                                                        {!eachLine.Product2.Product_Category__c}
+                                                                    </div>
+                                                                </td>
+                                                                <!-- <td style="width :25%;" class="opp-table-col"
+                                                                    data-label="{!v.labels.sampleSentDate}">
+                                                                    <div class="slds-truncate_custom table-row-spec"
+                                                                        title="{!eachLine.Sample_Sent_Date__c}">
+                                                                        <aura:if
+                                                                            isTrue="{!eachLine.Sample_Sent_Date__c}">
+                                                                            <lightning:formattedDateTime
+                                                                                value="{!eachLine.Sample_Sent_Date__c}" />
+                                                                        </aura:if>
+                                                                    </div>
+                                                                </td>
+                                                                <td style="width :25%;" class="opp-table-col"
+                                                                    data-label="{!v.labels.samplingStatus}">
+                                                                    <div class="slds-truncate_custom table-row-spec"
+                                                                        title="{!eachLine.Sampling_Status__c}">
+                                                                        {!eachLine.Sampling_Status__c}
+                                                                    </div>
+                                                                </td> -->
+                                                            </tr>
+                                                        </aura:iteration>
+                                                    </aura:if>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </aura:if>
+                            </aura:iteration>
+                        </aura:if>
+                    </tbody>
+                </table>
+            </div>
+            <aura:if isTrue="{!v.isLoading}">
+                <c:KAM_LoadingDots />
+            </aura:if>
+        </div>
+    </div>
+</aura:component>

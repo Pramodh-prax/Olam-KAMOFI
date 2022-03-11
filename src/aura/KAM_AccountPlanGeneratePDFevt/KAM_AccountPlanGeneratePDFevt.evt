@@ -1,0 +1,4 @@
+<aura:event type="COMPONENT" description="KAM_AccountPlanGeneratePDFevt" >
+    <aura:attribute name="accountPlanId" type="String" />
+    <aura:attribute name="pdfInfo" type="String" />
+</aura:event>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Open Contract (Dairy)</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Open Contracts (Dairy)</value>
+    </caseValues>
+    <fields>
+        <label><!-- SAP Party Code --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Open Contracts (Dairy) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deal Date --></label>
+        <name>Deal_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Division --></label>
+        <name>Division__c</name>
+    </fields>
+    <fields>
+        <label><!-- OPS Party Code --></label>
+        <name>OPS_Party_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ord No. --></label>
+        <name>Ord_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ord. Qty --></label>
+        <name>Ord_Qty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Origin --></label>
+        <name>Origin__c</name>
+    </fields>
+    <fields>
+        <label><!-- PRICE --></label>
+        <name>PRICE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party Name --></label>
+        <name>Party_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pend. Qty --></label>
+        <name>Pend_Qty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Price UOM --></label>
+        <name>Price_UOM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Code --></label>
+        <name>Product_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship Month --></label>
+        <name>Ship_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipped Qty --></label>
+        <name>Shipped_Qty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Category --></label>
+        <name>Sub_Category__c</name>
+    </fields>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

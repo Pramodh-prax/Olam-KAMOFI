@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Used when Pardot sends a lead to salesforce which is not supported by Olam Cocoa Food Services</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Olam Cocoa Pro Redirect lead</name>
+    <style>none</style>
+    <subject>Olam Cocoa Online Lead Enquiry</subject>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

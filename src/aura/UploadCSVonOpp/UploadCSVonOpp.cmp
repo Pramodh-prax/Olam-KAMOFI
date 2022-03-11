@@ -1,0 +1,131 @@
+<aura:component controller="UploadCSVonOpp" implements="force:hasRecordId,force:lightningQuickAction,force:hasRecordId">           
+    <ltng:require scripts="{!$Resource.xlsxJSLibrary}"></ltng:require>
+    <aura:handler name="init" value="{!this}" action="{!c.doinit}"/>
+    
+    <!--Declare Attribute for store  Records List-->  
+     <aura:attribute name="gridData" type="Object[]"/> 
+    
+    <aura:attribute name="counter" type="integer" default= "0"/>
+    <aura:attribute name="progress" type="Integer" default= "0"/>
+    <aura:attribute name="totalRecordCount" type="integer" default= "0"/>
+    <aura:attribute name="showProgressBar" type="Boolean" default="false"/>
+	<aura:attribute name="message" type="String" default="some error"/>
+    <aura:attribute name="failmsg" type="String"/>
+    <aura:attribute name="generalmsg" type="String"/>
+    <aura:attribute name="showSuccessMsg" type="boolean" default="false"/>
+     <aura:attribute name="filetype" type="List" default="['.csv', '.xlsx', '.xls']" />
+    
+    <aura:attribute name="showHeadder" type="string" />
+    <aura:attribute name="showRequiredField" type="string" />
+    
+    <aura:attribute name="isError" type="Boolean" default="false"/>
+    <aura:attribute name="errorMessage" type="String" default="some error"/>
+    
+    <aura:attribute name="showcard" type="boolean" default="false"/>
+    <aura:attribute name="showUpload" type="boolean" default="false"/>
+    <aura:attribute name="recordId" type="string" />
+    
+    <aura:attribute name="showUploadButton" type="boolean" default="false"/>
+    <aura:attribute name="isLoading" type="Boolean" default="false"/>
+    <aura:attribute name="showDownloadCSVButton" type="Boolean" default="false"/>
+    <!--aura handler with waiting and donewaiting events-->
+    <aura:handler event="aura:waiting" action="{!c.showSpinner}"/>
+    <aura:handler event="aura:doneWaiting" action="{!c.hideSpinner}"/>
+    
+    <aura:attribute name="fileName" type="string" />
+    <aura:attribute name="selectedFileType" type="string" />
+    <aura:attribute name="fileItemsConvertedToJSON" type="String" />
+    
+    <aura:if isTrue="{!v.isError}" >
+        <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert">
+            <lightning:icon iconName="utility:warning" size="x-small" alternativeText="Warning"/>&nbsp;
+            <h2>
+                {!v.errorMessage}
+            </h2>  
+        </div>
+    </aura:if>
+   
+    <aura:if isTrue = "{!v.isLoading}">
+        <div class="demo-only" style="height:6rem;position:relative">
+  					<div class="slds-spinner_container">
+    				<div role="status" class="slds-spinner slds-spinner_medium slds-spinner_brand">
+     			    <span class="slds-assistive-text">Loading</span>
+      				<div class="slds-spinner__dot-a"></div>
+      				<div class="slds-spinner__dot-b"></div>
+    				</div>
+  					</div>
+				</div>
+			</aura:if>   
+    
+    <aura:if isTrue = "{!v.showUpload}">
+        <div> 
+            <div class="slds-p-around_large slds-p-top_large slds-p-right_large slds-p-bottom_large slds-p-left_large slds-card ">
+                   
+                        <div>
+                            <div class="slds-align_absolute-center">
+                                <lightning:icon class="slds-m-bottom_small slds-align_absolute-center" iconName="doctype:folder" size="slds-icon_large" variant="default"></lightning:icon>
+                            </div>
+                            <div class="slds-text-align_center" style="font-size: 1.00rem;">
+                                <p>Select Global Template</p>
+                            </div>
+                        </div>
+                       <!--<input type="file" class="file  slds-p-top_x-large" style="padding-left: 34%;" aura:id="file" accept="{!v.filetype}" onchange="{!c.showfiledata}"/> -->
+                	   <input type="file" class="file  slds-p-top_x-large" style="padding-left: 34%;" aura:id="file" accept="{!v.filetype}" onchange="{!c.handleFileSelect}"/>
+                </div>
+            
+            
+            <aura:if isTrue = "{!v.showUploadButton}">    
+              <div>
+                <lightning:button label="Upload" onclick="{!c.handleFileUpload}" class="slds-button slds-button--brand slds-size_1-of-1"/>
+            </div>
+            </aura:if> 
+
+           <!-- 
+           <aura:if isTrue = "{!v.isLoading}">
+               <div class="demo-only" style="height:6rem;position:relative">
+  					<div class="slds-spinner_container">
+    				<div role="status" class="slds-spinner slds-spinner_medium slds-spinner_brand">
+     			    <span class="slds-assistive-text">Loading</span>
+      				<div class="slds-spinner__dot-a"></div>
+      				<div class="slds-spinner__dot-b"></div>
+    				</div>
+  					</div>
+				</div>
+			</aura:if>    -->
+        </div>
+    </aura:if>
+    
+    <aura:if isTrue = "{!v.showcard}">
+        <lightning:card>
+            <div id="divCSV">
+            </div>  
+        </lightning:card>
+    </aura:if>
+    
+    <aura:if isTrue="{!v.showSuccessMsg}">
+        <div class="slds-theme_success slds-notify slds-notify_toast slds-align_absolute-center">
+                    <lightning:icon iconName="utility:success" alternativeText="Success!" variant="Success"
+            title="no variant" />
+                    <div class="slds-notify__content" style="font-size: 0.8125rem;">
+                        <p>{!v.message}</p>
+                    </div>
+                </div>
+    </aura:if>
+    <aura:if isTrue = "{!v.showDownloadCSVButton}">
+        
+                <div class="slds-theme_warning slds-notify slds-notify_toast slds-align_absolute-center">
+                      <lightning:icon class="slds-m-right_small" iconName="utility:warning" size="small"></lightning:icon>
+                    <div class="slds-notify__content" style="font-size: 0.8125rem;">
+                        <p>{!v.message}<br/>{!v.failmsg}<br/>{!v.generalmsg}</p>
+                    </div>
+                </div>
+        
+        <div class="slds-align_absolute-center slds-p-top_x-large">
+            <footer>
+            <lightning:button label="Download Error Log" onclick="{!c.downloadCSV}" class="slds-button slds-button--brand"/>
+            <!--<lightning:buttonIcon iconName="utility:download" onclick="{!c.downloadCSV}" alternativeText="Download Error File" />-->
+        </footer>
+            </div> 
+    </aura:if>
+        
+</aura:component>

@@ -1,0 +1,70 @@
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h3>Please kindly follow up with this Online Lead Enquiry.</h3>
+
+<table>
+  <tr>
+    <th>Lead Name</th>
+    <td>{!Lead.Name}</td>
+  </tr>
+  <tr>
+    <th>Email</th>
+    <td>{!Lead.Email}</td>
+  </tr>
+  <tr>
+    <th>Phone</th>
+    <td>{!Lead.Phone}</td>
+  </tr>
+  <tr>
+    <th>Company</th>
+    <td>{!Lead.Company}</td>
+  </tr>
+  <tr>
+    <th>Country</th>
+    <td>{!Lead.Country}</td>
+  </tr>
+  <tr>
+    <th>Already a Customer</th>
+    <td>{!Lead.Already_a_Customer__c}</td>
+  </tr>
+  <tr>
+    <th>Product</th>
+    <td>{!Lead.Product__c}</td>
+  </tr>
+  <tr>
+    <th>Enquired Volume</th>
+    <td>{!Lead.Enquired_Volume__c}</td>
+  </tr>
+  <tr>
+    <th>Bag Format</th>
+    <td>{!Lead.Bag_Format__c}</td>
+  </tr>
+  <tr>
+    <th>Comments</th>
+    <td>{!Lead.Pardot_Description__c} </td>
+  </tr>
+</table>
+
+<a href="mailto:cocoa@olamnet.com?subject=Olam%20Cocoa%20Online%20Lead%20Enquiry"><img src="https://storage.pardot.com/814413/307/Olam_Cocoa_Logo.jpg" width="100px" style="margin:20px 20px 20px 0;" /></a>
+
+</body>

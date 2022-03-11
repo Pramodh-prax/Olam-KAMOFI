@@ -1,0 +1,10 @@
+Lead Name: {!Lead.Name}
+Email: {!Lead.Email}
+Phone: {!Lead.Phone}
+Company: {!Lead.Company}
+Region: {!Lead.Region__c}
+Already a Customer: {!Lead.00N4J00000Gale4}
+Product: {!Lead.Product__c}
+Enquired Volume: {!Lead.Enquired_Volume__c}
+Bag Format: {!Lead.Bag_Format__c}
+Comments: {!Lead.Description}

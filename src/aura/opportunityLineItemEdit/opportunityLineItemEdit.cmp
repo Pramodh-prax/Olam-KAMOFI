@@ -1,0 +1,154 @@
+<aura:component implements="force:lightningQuickAction" controller="opportunityLineItemEdit">
+    <!-- on component load, fetch picklist values dynamically from apex controller -->   
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:handler name="oSelectedRecordEvent" event="c:selectedsObjectRecordEvent" action="{!c.handleComponentEvent}"/>
+        
+    <!--declare aura attributes-->
+    <aura:attribute name="showSaveCancelBtn" type="boolean"/>
+    <aura:attribute name="SamplingStatusPicklistOpts" type="string[]" description="store picklist options values"/> 
+    <aura:attribute name="UnitofmeasurePicklistOpts" type="string[]" description="store picklist options values"/> 
+    <aura:attribute name="ReasonforResamplingPicklistOpts" type="string[]" description="store picklist options values"/> 
+    <aura:attribute name="ReasonForResamplingBoolean" type="boolean" default="true"/>
+    
+    <aura:attribute name="SamplingStatusPicklistOptsStr" type="String" description="store picklist options values"/> 
+    <aura:attribute name="UnitofmeasurePicklistOptsStr" type="String" description="store picklist options values"/>
+    <aura:attribute name="ReasonforResamplingPicklistOptsStr" type="String" description="store picklist options values"/>
+    
+    <aura:attribute name="showErrorClass" type="boolean" default="false"/>
+    <aura:attribute name="sNo" type="string" />
+    <aura:attribute name="recordId" type="string" />
+    <aura:attribute name="selectedLookUpRecord" type="sObject" default="{}"/>
+    <aura:attribute name="singleRec" type="sobject" default="{'sobjectType' : 'OpportunityLineItem',
+                                                             'Product2.Name' : '',
+                                                             'UnitPrice' : '',
+                                                             'Customer_Bid__c' : '',
+                                                             'Unit_of_measure__c' :'',
+                                                             'Description': '',
+                                                             'Volume__c': '',
+                                                             'Shipment_Month__c': '',
+                                                             'Splits__c': '',
+                                                             'Sampling_Status__c': '',
+                                                             'Quantity_of_Sample_Grams__c': '',
+                                                             'Tracking_Number__c': '',
+                                                             'Tracking_URL__c': '',
+                                                             'Resampling_Quantity__c': '',
+                                                             'Bulk_Sample_Quantity__c': '',
+                                                             'Sample_Feedback__c': ''
+                                                             }"/>
+    <aura:attribute name="Product2IdEditMode" type="boolean" default="false" />
+    
+    <!--Table Row Start--> 
+    
+    <tr>
+        <td><div class="slds-truncate">{!v.sNo}</div></td>
+        
+        <td class="{! v.showErrorClass == true ? 'slds-cell-edit slds-has-error' : 'slds-cell-edit'}">
+            <aura:if isTrue="{!v.Product2IdEditMode}">
+                <div class="lookup-container">
+                    <c:customLookup aura:id="name" objectAPIName="product2" currencyisocode="{!v.singleRec.PricebookEntry.CurrencyIsoCode}" priceBookId="{!v.singleRec.PricebookEntry.Pricebook2Id}" IconName="standard:product" OpportunityLineItemId ="{!v.singleRec.Id}" selectedRecord="{!v.selectedLookUpRecord}" label="Product Name"/>
+                </div>
+            </aura:if>
+        </td>
+        
+        <td class="{! v.showErrorClass == true ? 'slds-cell-edit slds-has-error' : 'slds-cell-edit'}">
+            <ui:inputNumber aura:id="UnitPrice"
+                              class="field inputFieldWidth"
+                              value="{!v.singleRec.UnitPrice}"
+                              />
+        </td> 
+        
+        <td class="{! v.showErrorClass == true ? 'slds-cell-edit slds-has-error' : 'slds-cell-edit'}">
+            <ui:inputNumber aura:id="CustomerBid"
+                              class="field inputFieldWidth"
+                              value="{!v.singleRec.Customer_Bid__c}"
+                              />
+        </td> 
+        <td class="{! v.showErrorClass == true ? 'slds-cell-edit slds-has-error' : 'slds-cell-edit'}">
+            <lightning:select name="Unitofmeasure" label="Select a Unitofmeasure:" variant="label-hidden"  
+                              aura:id="Unitofmeasure" value="{!v.singleRec.Unit_of_measure__c}">
+                <aura:iteration items="{!v.UnitofmeasurePicklistOpts}" var="option">
+                    <option text="{!option.label}" value="{!option.value}" selected="{!option.selected}"/>
+                </aura:iteration>
+            </lightning:select>
+        </td> 
+        <td  class="{! v.showErrorClass == true ? 'slds-cell-edit slds-has-error' : 'slds-cell-edit'}">
+            <ui:inputText aura:id="Description"
+                          class="field inputFieldWidth"
+                          value="{!v.singleRec.Description}"
+                          />
+        </td> 
+        <td class="{! v.showErrorClass == true ? 'slds-cell-edit slds-has-error' : 'slds-cell-edit'}">
+            <ui:inputNumber aura:id="Volume"
+                            class="field inputFieldWidth"
+                            value="{!v.singleRec.Volume__c}"
+                            />
+        </td> 
+        <td  class="{! v.showErrorClass == true ? 'slds-cell-edit slds-has-error' : 'slds-cell-edit'}">
+            <div class="ship-month-container">
+            	<lightning:input type="date"
+                             class="field inputFieldWidth"
+                             value="{!v.singleRec.Shipment_Month__c}"
+                             />
+            </div>
+        </td> 
+        <td class="{! v.showErrorClass == true ? 'slds-cell-edit slds-has-error' : 'slds-cell-edit'}">
+            <ui:inputNumber aura:id="Splits"
+                            class="field inputFieldWidth"
+                            value="{!v.singleRec.Splits__c}"
+                            maxlength = "2"
+                            />
+        </td> 
+        <td class="{! v.showErrorClass == true ? 'slds-cell-edit slds-has-error' : 'slds-cell-edit'}">
+            <lightning:select name="SamplingStatus" label="Select a SamplingStatus:" variant="label-hidden" onchange="{!c.checkifResampling}"  
+                              aura:id="SamplingStatus" value="{!v.singleRec.Sampling_Status__c}">
+                <aura:iteration items="{!v.SamplingStatusPicklistOpts}" var="option">
+                    <option text="{!option.label}" value="{!option.value}" selected="{!option.selected}"/>
+                </aura:iteration>
+            </lightning:select>
+        </td> 
+        <td class="{! v.showErrorClass == true ? 'slds-cell-edit slds-has-error' : 'slds-cell-edit'}">
+             <ui:inputNumber aura:id="QuantityofSampleGrams"
+                             class="field inputFieldWidth"
+                             value="{!v.singleRec.Quantity_of_Sample_Grams__c}"
+                             />
+        </td> 
+        <td class="{! v.showErrorClass == true ? 'slds-cell-edit slds-has-error' : 'slds-cell-edit'}">
+            <ui:inputText aura:id="TrackingNumber"
+                          class="field inputFieldWidth"
+                          value="{!v.singleRec.Tracking_Number__c}"
+                          />
+        </td> 
+        <td class="{! v.showErrorClass == true ? 'slds-cell-edit slds-has-error' : 'slds-cell-edit'}">
+            <ui:inputURL aura:id="TrackingURL"
+                         class="field inputFieldWidth"
+                         value="{!v.singleRec.Tracking_URL__c}"
+                         />
+        </td> 
+        <td class="{! v.showErrorClass == true ? 'slds-cell-edit slds-has-error' : 'slds-cell-edit'}">
+            <lightning:select disabled="{!v.ReasonForResamplingBoolean}" name="ReasonforResampling" label="Select a ReasonforResampling :" variant="label-hidden"  
+                              aura:id="ReasonforResampling" value="{!v.singleRec.Reason_for_Resampling__c}">
+                <aura:iteration items="{!v.ReasonforResamplingPicklistOpts}" var="option">
+                    <option text="{!option.label}" value="{!option.value}" selected="{!option.selected}"/>
+                </aura:iteration>
+            </lightning:select>
+        </td>
+        <td class="{! v.showErrorClass == true ? 'slds-cell-edit slds-has-error' : 'slds-cell-edit'}">
+            <ui:inputNumber aura:id="ResamplingQuantity"
+                          class="field inputFieldWidth"
+                          value="{!v.singleRec.Resampling_Quantity__c}"
+                          />
+        </td> 
+        <td class="{! v.showErrorClass == true ? 'slds-cell-edit slds-has-error' : 'slds-cell-edit'}">
+            <ui:inputNumber aura:id="BulkSampleQuantity"
+                          class="field inputFieldWidth"
+                          value="{!v.singleRec.Bulk_Sample_Quantity__c}"
+                          />
+        </td> 
+        <td class="{! v.showErrorClass == true ? 'slds-cell-edit slds-has-error' : 'slds-cell-edit'}">
+            <ui:inputTextArea aura:id="SampleFeedback"
+                          class="field inputFieldWidth"
+                          value="{!v.singleRec.Sample_Feedback__c}"
+                          rows="2"/>
+        </td> 
+    </tr>
+</aura:component>

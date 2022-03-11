@@ -1,0 +1,6 @@
+<aura:event type="COMPONENT" description="Event template">
+    <aura:attribute name="identifier" type="String" default=""/>
+    <aura:attribute name="oldComment" type="String" default=""/>
+    <aura:attribute name="newComment" type="String" default=""/>     
+    <aura:attribute name="compRef" type="Object"/>     
+</aura:event>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Open Contract (Cocoa)</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Open Contracts (Cocoa)</value>
+    </caseValues>
+    <fields>
+        <label><!-- Customer Code --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Open Contracts (Cocoa) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Company Code --></label>
+        <name>Company_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Date --></label>
+        <name>Contract_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Number --></label>
+        <name>Contract_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency --></label>
+        <name>Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Name --></label>
+        <name>Customer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Qty(MT) --></label>
+        <name>Delivery_Qty_MT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Division Code --></label>
+        <name>Division_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Quantity (MT) --></label>
+        <name>Invoice_Quantity_MT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Material Description --></label>
+        <name>Material_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Material Group --></label>
+        <name>Material_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pending Contract Qty (MT) --></label>
+        <name>Pending_Contract_Qty_MT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate/UoM --></label>
+        <name>Rate_UoM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipment Month --></label>
+        <name>Shipment_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipment Year --></label>
+        <name>Shipment_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Contract Qty(MT) --></label>
+        <name>Total_Contract_Qty_MT__c</name>
+    </fields>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

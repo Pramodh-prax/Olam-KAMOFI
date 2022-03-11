@@ -1,0 +1,113 @@
+<aura:component controller="opportunityLineItemEdit" implements="force:lightningQuickActionWithoutHeader,flexipage:availableForRecordHome,force:hasRecordId">
+    
+    <aura:handler name="init" value="{!this}" action="{!c.initRecords}"/>
+    
+    <!--declare aura attributes-->
+    <aura:attribute name="objInfoForPicklistValues" type="OpportunityLineItem" default="{sobjectType : 'OpportunityLineItem'}" description="object information to fetch picklist values"/>
+    <aura:attribute name="SamplingStatusPicklistOpts" type="string[]" description="store picklist options values"/> 
+    <aura:attribute name="UnitofmeasurePicklistOpts" type="string[]" description="store picklist options values"/> 
+    <aura:attribute name="ReasonforResamplingPicklistOpts" type="string[]" description="store picklist options values"/> 
+    
+    <aura:attribute name="SamplingStatusPicklistOptsStr" type="String" description="store picklist options values"/> 
+    <aura:attribute name="UnitofmeasurePicklistOptsStr" type="String" description="store picklist options values"/> 
+    <aura:attribute name="ReasonforResamplingPicklistOptsStr" type="String" description="store picklist options values"/>
+    
+    <aura:attribute name="isLoading" default="false" type="Boolean"/>
+    <aura:attribute name="isDataLoaded" default="false" type="Boolean"/>
+    
+    <aura:attribute name="recordId" type="string" />
+    <aura:attribute name="OpportunityLineItemList" type="OpportunityLineItem[]" description="store OpportunityLineItem records list"/>
+    <aura:attribute name="showSaveCancelBtn" type="boolean" default="false" description="flag for rendered save and cancel buttons in aura:if "/>
+    <aura:html tag="style">
+        .slds-modal__container{
+        max-width: 95rem !important;
+        width:95% !important;
+        }
+        .slds-p-around--medium {
+        padding: 0rem !important;
+        }
+        .slds-modal__content{
+        overflow-y: auto;
+        height:unset !important;
+        max-height:unset !important;
+        }
+        .cuf-content {
+        padding: 0 0rem !important;
+        }
+    </aura:html>
+    
+    <!--Header-->
+    <div class="modal-header slds-modal__header slds-size_1-of-1">
+        <h4 class="title slds-text-heading--medium">Opportunity Line Item</h4>
+    </div>
+    <!--Header-->
+    
+    <!--Body    slds-modal__content slds-scrollable_x   -->
+    <div class="slds-p-around--x-small slds-size_1-of-1 slds-is-relative table-container">
+        <div class="slds-form--compound">
+            <div>
+                <table class="slds-table slds-table_bordered slds-table_cell-buffer slds-scrollable_x">
+                    <thead>
+                        <tr class="slds-text-title--caps">
+                            <th scope="col"><div class="slds-truncate" title="Id">S.No</div></th> 
+                            <th scope="col"><div class="slds-truncate" title="Product2">Product</div></th>
+                            <th scope="col"><div class="slds-truncate" title="Olam Offer (per MT)">Olam Offer (per MT)</div></th>
+                            <th scope="col"><div class="slds-truncate" title="Customer Bid">Customer Bid</div></th>
+                            <th scope="col"><div class="slds-truncate" title="Unit of measure">Unit of measure</div></th>
+                            <th scope="col"><div class="slds-truncate" title="Line Description">Line Description</div></th>
+                            <th scope="col"><div class="slds-truncate" title="Volume (MT)">Volume (MT)</div></th>
+                            <th scope="col"><div class="slds-truncate" title="ETD">ETD</div></th>
+                            <th scope="col"><div class="slds-truncate" title="Splits">Splits</div></th>
+                            <th scope="col"><div class="slds-truncate" title="Sampling Status">Sampling Status</div></th>
+                            <th scope="col"><div class="slds-truncate" title="Quantity of Sample (Grams)">Quantity of Sample (Grams)</div></th>
+                            <th scope="col"><div class="slds-truncate" title="Tracking Number">Tracking Number</div></th>
+                            <th scope="col"><div class="slds-truncate" title="Tracking URL">Tracking URL</div></th>
+                            <th scope="col"><div class="slds-truncate" title="Reason for Resampling">Reason for Resampling</div></th>                       
+                            <th scope="col"><div class="slds-truncate" title="Resampling Quantity">Resampling Quantity</div></th>
+                            <th scope="col"><div class="slds-truncate" title="Bulk Sample Quantity">Bulk Sample Quantity</div></th>
+                            <th scope="col"><div class="slds-truncate" title="Sample Feedback">Sample Feedback</div></th>
+                        </tr>
+                    </thead>
+                    
+                    
+                    <tbody>
+                        <aura:if isTrue="{!v.isDataLoaded}">
+                            <aura:iteration items="{!v.OpportunityLineItemList}" var="opli" indexVar="sNo">
+                                <!-- Child Lightning Component --> 
+                                <c:opportunityLineItemEdit 
+                                                           SamplingStatusPicklistOptsStr="{#v.SamplingStatusPicklistOptsStr}"
+                                                           UnitofmeasurePicklistOptsStr="{#v.UnitofmeasurePicklistOptsStr}"
+                                                           ReasonforResamplingPicklistOptsStr="{#v.ReasonforResamplingPicklistOptsStr}"
+                                                           singleRec="{!opli}"
+                                                           showSaveCancelBtn="{!v.showSaveCancelBtn}"
+                                                           sNo="{!sNo + 1}" />
+                            </aura:iteration>
+                        </aura:if>
+                    </tbody>
+                </table>  
+            </div>
+            <aura:if isTrue="{!v.isLoading}">
+                <c:KAM_LoadingDots />
+            </aura:if>
+        </div>
+        
+    </div>
+    
+    
+    
+    <!--Body-->
+    
+    <!--Footer-->
+    <div class="modal-footer slds-modal__footer slds-size_1-of-1">
+        <lightning:button variant="neutral"
+                          label="Cancel"
+                          title="Cancel"
+                          onclick="{! c.cancel }"/>
+        <lightning:button variant="brand"
+                          label="Save"
+                          title="Save"
+                          onclick="{!c.Save}" 
+                          disabled="{NOT(!v.showSaveCancelBtn)}"/>
+    </div>
+    <!--Footer-->
+</aura:component>

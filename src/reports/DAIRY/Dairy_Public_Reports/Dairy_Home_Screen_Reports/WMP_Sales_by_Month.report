@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_72409702</developerName>
+        <masterLabel>Region</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>FULL_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Amy Sun</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Cindy Ma</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>David Deng</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Miranda Ling</sourceValue>
+            </sourceValues>
+            <value>China</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Anh Nguyen</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jeffrey Lee</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kate Seng</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Karan Dogra</sourceValue>
+            </sourceValues>
+            <value>SEA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Angela Ajeng</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Hans Daley</sourceValue>
+            </sourceValues>
+            <value>Indonesia</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Abhay Betharia</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Hiran Perera</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mohammad Hassan</sourceValue>
+            </sourceValues>
+            <value>ME</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Vipin Kukreja</sourceValue>
+            </sourceValues>
+            <value>SAARC</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OpportunityLineItem.Volume__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Product2.Product_Category__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>FCMP</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Month</dateGranularity>
+        <field>LAST_UPDATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_72409702</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>WMP Sales by Month</name>
+    <params>
+        <name>open</name>
+        <value>closedwon</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

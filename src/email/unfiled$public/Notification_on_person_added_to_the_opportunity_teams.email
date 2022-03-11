@@ -1,0 +1,5 @@
+You have been added to {!Opportunity.Name} as a Team Member by {!Opportunity.OwnerFullName}.
+
+Click Here to view opportunity! {!Opportunity.Link}
+
+Opportunity ID: {!Opportunity.Id}

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Pallet</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Pallet</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pallet Type --></label>
+        <name>Pallet_Type__c</name>
+        <picklistValues>
+            <masterLabel>CHEP - 0.8x1.2m</masterLabel>
+            <translation><!-- CHEP - 0.8x1.2m --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHEP - 40x48 inches</masterLabel>
+            <translation><!-- CHEP - 40x48 inches --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disposal - 0.8x1.2m</masterLabel>
+            <translation><!-- Disposal - 0.8x1.2m --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disposal - 1.1x1.1m</masterLabel>
+            <translation><!-- Disposal - 1.1x1.1m --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disposal - 1x1.2m</masterLabel>
+            <translation><!-- Disposal - 1x1.2m --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOSCAM - 0.8x1.2m</masterLabel>
+            <translation><!-- LOSCAM - 0.8x1.2m --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOSCAM - 40x48 inches</masterLabel>
+            <translation><!-- LOSCAM - 40x48 inches --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PECO - 0.8x1.2m</masterLabel>
+            <translation><!-- PECO - 0.8x1.2m --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PECO - 40x48 inches</masterLabel>
+            <translation><!-- PECO - 40x48 inches --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slip sheet - 0.8x1.2m</masterLabel>
+            <translation><!-- Slip sheet - 0.8x1.2m --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slip sheet - 1.1x1.1m</masterLabel>
+            <translation><!-- Slip sheet - 1.1x1.1m --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slip sheet - 1x1.2m</masterLabel>
+            <translation><!-- Slip sheet - 1x1.2m --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Price Kit --></label>
+        <name>Price_Kit__c</name>
+        <relationshipLabel><!-- Pallet --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- USD/each --></label>
+        <name>USD_each__c</name>
+    </fields>
+    <layouts>
+        <layout>Pallet Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

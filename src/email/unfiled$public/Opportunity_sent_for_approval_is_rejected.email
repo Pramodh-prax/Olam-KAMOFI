@@ -1,0 +1,6 @@
+Dear Sales User,
+
+The  {![Opportunity].RecordType.Name} has been rejected
+
+Click here to view Opportunity:{!Opportunity.Link}
+Opportunity id: {!Opportunity.Id}

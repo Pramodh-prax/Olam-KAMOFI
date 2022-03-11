@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>ZA-EXA</fullName>
+        <default>false</default>
+        <label>ZA-EXA</label>
+    </customValue>
+    <customValue>
+        <fullName>ZB-CIF</fullName>
+        <default>false</default>
+        <label>ZB-CIF</label>
+    </customValue>
+    <customValue>
+        <fullName>ZC-DDP</fullName>
+        <default>false</default>
+        <label>ZC-DDP</label>
+    </customValue>
+    <customValue>
+        <fullName>ZD-FOB</fullName>
+        <default>false</default>
+        <label>ZD-FOB</label>
+    </customValue>
+    <customValue>
+        <fullName>ZE-Exceptional</fullName>
+        <default>false</default>
+        <label>ZE-Exceptional</label>
+    </customValue>
+    <customValue>
+        <fullName>ZF-CFR</fullName>
+        <default>false</default>
+        <label>ZF-CFR</label>
+    </customValue>
+    <masterLabel>Shipping Conditions</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

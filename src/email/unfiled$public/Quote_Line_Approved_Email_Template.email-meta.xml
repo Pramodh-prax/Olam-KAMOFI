@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Quote Line Approval Email Template</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Quote Line Approval Email Template</name>
+    <style>none</style>
+    <subject>Approval Status for Quote Line Item {!Quote_Line_Approval__c.Quote_Line_Item__c} is {!Quote_Line_Approval__c.Approval_Status__c}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,1088 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Acid</fullName>
+        <default>false</default>
+        <label>Acid</label>
+    </customValue>
+    <customValue>
+        <fullName>ADPI HH</fullName>
+        <default>false</default>
+        <label>ADPI HH</label>
+    </customValue>
+    <customValue>
+        <fullName>ADPI LH</fullName>
+        <default>false</default>
+        <label>ADPI LH</label>
+    </customValue>
+    <customValue>
+        <fullName>ADPI MH</fullName>
+        <default>false</default>
+        <label>ADPI MH</label>
+    </customValue>
+    <customValue>
+        <fullName>Adult Nutrition</fullName>
+        <default>false</default>
+        <label>Adult Nutrition</label>
+    </customValue>
+    <customValue>
+        <fullName>Alkalized</fullName>
+        <default>false</default>
+        <label>Alkalized</label>
+    </customValue>
+    <customValue>
+        <fullName>Almond Ingredient Blanched</fullName>
+        <default>false</default>
+        <label>Almond Ingredient Blanched</label>
+    </customValue>
+    <customValue>
+        <fullName>Almond Ingredient Natural</fullName>
+        <default>false</default>
+        <label>Almond Ingredient Natural</label>
+    </customValue>
+    <customValue>
+        <fullName>Almond InShell</fullName>
+        <default>false</default>
+        <label>Almond InShell</label>
+    </customValue>
+    <customValue>
+        <fullName>Almond InShell Organic</fullName>
+        <default>false</default>
+        <label>Almond InShell Organic</label>
+    </customValue>
+    <customValue>
+        <fullName>Almond Kernel</fullName>
+        <default>false</default>
+        <label>Almond Kernel</label>
+    </customValue>
+    <customValue>
+        <fullName>Almond Kernel Organic</fullName>
+        <default>false</default>
+        <label>Almond Kernel Organic</label>
+    </customValue>
+    <customValue>
+        <fullName>Almond Oil Stock</fullName>
+        <default>false</default>
+        <label>Almond Oil Stock</label>
+    </customValue>
+    <customValue>
+        <fullName>Almond Reject</fullName>
+        <default>false</default>
+        <label>Almond Reject</label>
+    </customValue>
+    <customValue>
+        <fullName>Almond Waste</fullName>
+        <default>false</default>
+        <label>Almond Waste</label>
+    </customValue>
+    <customValue>
+        <fullName>Amaranth</fullName>
+        <default>false</default>
+        <label>Amaranth</label>
+    </customValue>
+    <customValue>
+        <fullName>Amaranth Organic</fullName>
+        <default>false</default>
+        <label>Amaranth Organic</label>
+    </customValue>
+    <customValue>
+        <fullName>AMERICAN STYLE CH</fullName>
+        <default>false</default>
+        <label>AMERICAN STYLE CH</label>
+    </customValue>
+    <customValue>
+        <fullName>AMF</fullName>
+        <default>false</default>
+        <label>AMF</label>
+    </customValue>
+    <customValue>
+        <fullName>Analogue</fullName>
+        <default>false</default>
+        <label>Analogue</label>
+    </customValue>
+    <customValue>
+        <fullName>Black Alkalized</fullName>
+        <default>false</default>
+        <label>Black Alkalized</label>
+    </customValue>
+    <customValue>
+        <fullName>Bleached</fullName>
+        <default>false</default>
+        <label>Bleached</label>
+    </customValue>
+    <customValue>
+        <fullName>Blends</fullName>
+        <default>false</default>
+        <label>Blends</label>
+    </customValue>
+    <customValue>
+        <fullName>Brazil Nut Ingredient</fullName>
+        <default>false</default>
+        <label>Brazil Nut Ingredient</label>
+    </customValue>
+    <customValue>
+        <fullName>Brazil Nut Kernel</fullName>
+        <default>false</default>
+        <label>Brazil Nut Kernel</label>
+    </customValue>
+    <customValue>
+        <fullName>Brown</fullName>
+        <default>false</default>
+        <label>Brown</label>
+    </customValue>
+    <customValue>
+        <fullName>BUTTERMLKCONCENTRATE</fullName>
+        <default>false</default>
+        <label>BUTTERMLKCONCENTRATE</label>
+    </customValue>
+    <customValue>
+        <fullName>Butter Oil</fullName>
+        <default>false</default>
+        <label>Butter Oil</label>
+    </customValue>
+    <customValue>
+        <fullName>Cagliata</fullName>
+        <default>false</default>
+        <label>Cagliata</label>
+    </customValue>
+    <customValue>
+        <fullName>Calcium Caseinate</fullName>
+        <default>false</default>
+        <label>Calcium Caseinate</label>
+    </customValue>
+    <customValue>
+        <fullName>Canihua</fullName>
+        <default>false</default>
+        <label>Canihua</label>
+    </customValue>
+    <customValue>
+        <fullName>Canihua Organic</fullName>
+        <default>false</default>
+        <label>Canihua Organic</label>
+    </customValue>
+    <customValue>
+        <fullName>Capsicums</fullName>
+        <default>false</default>
+        <label>Capsicums</label>
+    </customValue>
+    <customValue>
+        <fullName>Cashew DCNSL</fullName>
+        <default>false</default>
+        <label>Cashew DCNSL</label>
+    </customValue>
+    <customValue>
+        <fullName>Cashew Ingredient</fullName>
+        <default>false</default>
+        <label>Cashew Ingredient</label>
+    </customValue>
+    <customValue>
+        <fullName>Cashew Ingredient Organic</fullName>
+        <default>false</default>
+        <label>Cashew Ingredient Organic</label>
+    </customValue>
+    <customValue>
+        <fullName>Cashew Kernel</fullName>
+        <default>false</default>
+        <label>Cashew Kernel</label>
+    </customValue>
+    <customValue>
+        <fullName>Cashew Kernel Organic</fullName>
+        <default>false</default>
+        <label>Cashew Kernel Organic</label>
+    </customValue>
+    <customValue>
+        <fullName>Cashew Waste</fullName>
+        <default>false</default>
+        <label>Cashew Waste</label>
+    </customValue>
+    <customValue>
+        <fullName>Cheddar</fullName>
+        <default>false</default>
+        <label>Cheddar</label>
+    </customValue>
+    <customValue>
+        <fullName>Cheese Powder</fullName>
+        <default>false</default>
+        <label>Cheese Powder</label>
+    </customValue>
+    <customValue>
+        <fullName>Chia</fullName>
+        <default>false</default>
+        <label>Chia</label>
+    </customValue>
+    <customValue>
+        <fullName>Chia Organic</fullName>
+        <default>false</default>
+        <label>Chia Organic</label>
+    </customValue>
+    <customValue>
+        <fullName>Chilli</fullName>
+        <default>false</default>
+        <label>Chilli</label>
+    </customValue>
+    <customValue>
+        <fullName>Cocoa Powder &amp; Sugar &amp; Milk</fullName>
+        <default>false</default>
+        <label>Cocoa Powder &amp; Sugar &amp; Milk</label>
+    </customValue>
+    <customValue>
+        <fullName>CODEX HH</fullName>
+        <default>false</default>
+        <label>CODEX HH</label>
+    </customValue>
+    <customValue>
+        <fullName>CODEX LH</fullName>
+        <default>false</default>
+        <label>CODEX LH</label>
+    </customValue>
+    <customValue>
+        <fullName>CODEX MH</fullName>
+        <default>false</default>
+        <label>CODEX MH</label>
+    </customValue>
+    <customValue>
+        <fullName>Cream</fullName>
+        <default>false</default>
+        <label>Cream</label>
+    </customValue>
+    <customValue>
+        <fullName>DCNSL</fullName>
+        <default>false</default>
+        <label>DCNSL</label>
+    </customValue>
+    <customValue>
+        <fullName>Dehy Vegetable</fullName>
+        <default>false</default>
+        <label>Dehy Vegetable</label>
+    </customValue>
+    <customValue>
+        <fullName>Deo</fullName>
+        <default>false</default>
+        <label>Deo</label>
+    </customValue>
+    <customValue>
+        <fullName>Deo De-Gummed</fullName>
+        <default>false</default>
+        <label>Deo De-Gummed</label>
+    </customValue>
+    <customValue>
+        <fullName>DWP</fullName>
+        <default>false</default>
+        <label>DWP</label>
+    </customValue>
+    <customValue>
+        <fullName>Edam</fullName>
+        <default>false</default>
+        <label>Edam</label>
+    </customValue>
+    <customValue>
+        <fullName>Emmental</fullName>
+        <default>false</default>
+        <label>Emmental</label>
+    </customValue>
+    <customValue>
+        <fullName>Evap</fullName>
+        <default>false</default>
+        <label>Evap</label>
+    </customValue>
+    <customValue>
+        <fullName>Feed</fullName>
+        <default>false</default>
+        <label>Feed</label>
+    </customValue>
+    <customValue>
+        <fullName>Food</fullName>
+        <default>false</default>
+        <label>Food</label>
+    </customValue>
+    <customValue>
+        <fullName>Frozen</fullName>
+        <default>false</default>
+        <label>Frozen</label>
+    </customValue>
+    <customValue>
+        <fullName>Garlic</fullName>
+        <default>false</default>
+        <label>Garlic</label>
+    </customValue>
+    <customValue>
+        <fullName>Ghee</fullName>
+        <default>false</default>
+        <label>Ghee</label>
+    </customValue>
+    <customValue>
+        <fullName>Gouda</fullName>
+        <default>false</default>
+        <label>Gouda</label>
+    </customValue>
+    <customValue>
+        <fullName>Hazelnut Ingredient</fullName>
+        <default>false</default>
+        <label>Hazelnut Ingredient</label>
+    </customValue>
+    <customValue>
+        <fullName>Hazelnut InShell</fullName>
+        <default>false</default>
+        <label>Hazelnut InShell</label>
+    </customValue>
+    <customValue>
+        <fullName>Hazelnut Kernel</fullName>
+        <default>false</default>
+        <label>Hazelnut Kernel</label>
+    </customValue>
+    <customValue>
+        <fullName>Hazelnut Natural</fullName>
+        <default>false</default>
+        <label>Hazelnut Natural</label>
+    </customValue>
+    <customValue>
+        <fullName>Hazelnut Organic</fullName>
+        <default>false</default>
+        <label>Hazelnut Organic</label>
+    </customValue>
+    <customValue>
+        <fullName>Hazelnut Reject</fullName>
+        <default>false</default>
+        <label>Hazelnut Reject</label>
+    </customValue>
+    <customValue>
+        <fullName>Hazelnut Waste</fullName>
+        <default>false</default>
+        <label>Hazelnut Waste</label>
+    </customValue>
+    <customValue>
+        <fullName>Herbs</fullName>
+        <default>false</default>
+        <label>Herbs</label>
+    </customValue>
+    <customValue>
+        <fullName>HH</fullName>
+        <default>false</default>
+        <label>HH</label>
+    </customValue>
+    <customValue>
+        <fullName>HHHS</fullName>
+        <default>false</default>
+        <label>HHHS</label>
+    </customValue>
+    <customValue>
+        <fullName>High Fat</fullName>
+        <default>false</default>
+        <label>High Fat</label>
+    </customValue>
+    <customValue>
+        <fullName>Highly Alkalized</fullName>
+        <default>false</default>
+        <label>Highly Alkalized</label>
+    </customValue>
+    <customValue>
+        <fullName>Infant Formula</fullName>
+        <default>false</default>
+        <label>Infant Formula</label>
+    </customValue>
+    <customValue>
+        <fullName>Instant</fullName>
+        <default>false</default>
+        <label>Instant</label>
+    </customValue>
+    <customValue>
+        <fullName>Kiwicha</fullName>
+        <default>false</default>
+        <label>Kiwicha</label>
+    </customValue>
+    <customValue>
+        <fullName>Kiwicha Organic</fullName>
+        <default>false</default>
+        <label>Kiwicha Organic</label>
+    </customValue>
+    <customValue>
+        <fullName>Kiwiicha Organic</fullName>
+        <default>false</default>
+        <label>Kiwiicha Organic</label>
+    </customValue>
+    <customValue>
+        <fullName>Lactic</fullName>
+        <default>false</default>
+        <label>Lactic</label>
+    </customValue>
+    <customValue>
+        <fullName>Lightly Alkalized</fullName>
+        <default>false</default>
+        <label>Lightly Alkalized</label>
+    </customValue>
+    <customValue>
+        <fullName>Low Protein</fullName>
+        <default>false</default>
+        <label>Low Protein</label>
+    </customValue>
+    <customValue>
+        <fullName>Low Protein &lt;8%</fullName>
+        <default>false</default>
+        <label>Low Protein &lt;8%</label>
+    </customValue>
+    <customValue>
+        <fullName>Low Protein 15-20%</fullName>
+        <default>false</default>
+        <label>Low Protein 15-20%</label>
+    </customValue>
+    <customValue>
+        <fullName>Low Protein 8-14%</fullName>
+        <default>false</default>
+        <label>Low Protein 8-14%</label>
+    </customValue>
+    <customValue>
+        <fullName>Macadamia Ingredient</fullName>
+        <default>false</default>
+        <label>Macadamia Ingredient</label>
+    </customValue>
+    <customValue>
+        <fullName>Macadamia InShell</fullName>
+        <default>false</default>
+        <label>Macadamia InShell</label>
+    </customValue>
+    <customValue>
+        <fullName>Macadamia Kernel</fullName>
+        <default>false</default>
+        <label>Macadamia Kernel</label>
+    </customValue>
+    <customValue>
+        <fullName>Macadamia Reject</fullName>
+        <default>false</default>
+        <label>Macadamia Reject</label>
+    </customValue>
+    <customValue>
+        <fullName>Macadamia Rejects</fullName>
+        <default>false</default>
+        <label>Macadamia Rejects</label>
+    </customValue>
+    <customValue>
+        <fullName>Macadamia Waste</fullName>
+        <default>false</default>
+        <label>Macadamia Waste</label>
+    </customValue>
+    <customValue>
+        <fullName>Medium Alkalized</fullName>
+        <default>false</default>
+        <label>Medium Alkalized</label>
+    </customValue>
+    <customValue>
+        <fullName>Mixed Nut Ingredient</fullName>
+        <default>false</default>
+        <label>Mixed Nut Ingredient</label>
+    </customValue>
+    <customValue>
+        <fullName>Mixed Nut Kernel</fullName>
+        <default>false</default>
+        <label>Mixed Nut Kernel</label>
+    </customValue>
+    <customValue>
+        <fullName>Mixed Nut Reject</fullName>
+        <default>false</default>
+        <label>Mixed Nut Reject</label>
+    </customValue>
+    <customValue>
+        <fullName>Mozzarella</fullName>
+        <default>false</default>
+        <label>Mozzarella</label>
+    </customValue>
+    <customValue>
+        <fullName>MPC</fullName>
+        <default>false</default>
+        <label>MPC</label>
+    </customValue>
+    <customValue>
+        <fullName>MPI</fullName>
+        <default>false</default>
+        <label>MPI</label>
+    </customValue>
+    <customValue>
+        <fullName>Natural</fullName>
+        <default>false</default>
+        <label>Natural</label>
+    </customValue>
+    <customValue>
+        <fullName>Nibs</fullName>
+        <default>false</default>
+        <label>Nibs</label>
+    </customValue>
+    <customValue>
+        <fullName>Off grade</fullName>
+        <default>false</default>
+        <label>Off grade</label>
+    </customValue>
+    <customValue>
+        <fullName>Oils</fullName>
+        <default>false</default>
+        <label>Oils</label>
+    </customValue>
+    <customValue>
+        <fullName>Onion</fullName>
+        <default>false</default>
+        <label>Onion</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Others</fullName>
+        <default>false</default>
+        <label>Others</label>
+    </customValue>
+    <customValue>
+        <fullName>Parmesan</fullName>
+        <default>false</default>
+        <label>Parmesan</label>
+    </customValue>
+    <customValue>
+        <fullName>Partial</fullName>
+        <default>false</default>
+        <label>Partial</label>
+    </customValue>
+    <customValue>
+        <fullName>Peanut Ingredient</fullName>
+        <default>false</default>
+        <label>Peanut Ingredient</label>
+    </customValue>
+    <customValue>
+        <fullName>Peanut InShell</fullName>
+        <default>false</default>
+        <label>Peanut InShell</label>
+    </customValue>
+    <customValue>
+        <fullName>Peanut Reject</fullName>
+        <default>false</default>
+        <label>Peanut Reject</label>
+    </customValue>
+    <customValue>
+        <fullName>Peanut Shelled</fullName>
+        <default>false</default>
+        <label>Peanut Shelled</label>
+    </customValue>
+    <customValue>
+        <fullName>Pecan Kernel</fullName>
+        <default>false</default>
+        <label>Pecan Kernel</label>
+    </customValue>
+    <customValue>
+        <fullName>Pepper</fullName>
+        <default>false</default>
+        <label>Pepper</label>
+    </customValue>
+    <customValue>
+        <fullName>Permeate</fullName>
+        <default>false</default>
+        <label>Permeate</label>
+    </customValue>
+    <customValue>
+        <fullName>Pinenut Kernel</fullName>
+        <default>false</default>
+        <label>Pinenut Kernel</label>
+    </customValue>
+    <customValue>
+        <fullName>Pistachio Ingredient</fullName>
+        <default>false</default>
+        <label>Pistachio Ingredient</label>
+    </customValue>
+    <customValue>
+        <fullName>Pistachio InShell</fullName>
+        <default>false</default>
+        <label>Pistachio InShell</label>
+    </customValue>
+    <customValue>
+        <fullName>Pistachio Kernel</fullName>
+        <default>false</default>
+        <label>Pistachio Kernel</label>
+    </customValue>
+    <customValue>
+        <fullName>Pistachio Reject</fullName>
+        <default>false</default>
+        <label>Pistachio Reject</label>
+    </customValue>
+    <customValue>
+        <fullName>Powder</fullName>
+        <default>false</default>
+        <label>Powder</label>
+    </customValue>
+    <customValue>
+        <fullName>Processed Cheese</fullName>
+        <default>false</default>
+        <label>Processed Cheese</label>
+    </customValue>
+    <customValue>
+        <fullName>Protein 22-24%</fullName>
+        <default>false</default>
+        <label>Protein 22-24%</label>
+    </customValue>
+    <customValue>
+        <fullName>Purees</fullName>
+        <default>false</default>
+        <label>Purees</label>
+    </customValue>
+    <customValue>
+        <fullName>Quinoa</fullName>
+        <default>false</default>
+        <label>Quinoa</label>
+    </customValue>
+    <customValue>
+        <fullName>Quinoa Organic</fullName>
+        <default>false</default>
+        <label>Quinoa Organic</label>
+    </customValue>
+    <customValue>
+        <fullName>Raw Cashew Nut</fullName>
+        <default>false</default>
+        <label>Raw Cashew Nut</label>
+    </customValue>
+    <customValue>
+        <fullName>Raw Cashew Nut Organic</fullName>
+        <default>false</default>
+        <label>Raw Cashew Nut Organic</label>
+    </customValue>
+    <customValue>
+        <fullName>Raw Milk</fullName>
+        <default>false</default>
+        <label>Raw Milk</label>
+    </customValue>
+    <customValue>
+        <fullName>RBD Palm</fullName>
+        <default>false</default>
+        <label>RBD Palm</label>
+    </customValue>
+    <customValue>
+        <fullName>Regular</fullName>
+        <default>false</default>
+        <label>Regular</label>
+    </customValue>
+    <customValue>
+        <fullName>Rejections/By products</fullName>
+        <default>false</default>
+        <label>Rejections/By products</label>
+    </customValue>
+    <customValue>
+        <fullName>Rennet</fullName>
+        <default>false</default>
+        <label>Rennet</label>
+    </customValue>
+    <customValue>
+        <fullName>Retail</fullName>
+        <default>false</default>
+        <label>Retail</label>
+    </customValue>
+    <customValue>
+        <fullName>Root Spices</fullName>
+        <default>false</default>
+        <label>Root Spices</label>
+    </customValue>
+    <customValue>
+        <fullName>SCM</fullName>
+        <default>false</default>
+        <label>SCM</label>
+    </customValue>
+    <customValue>
+        <fullName>Seed Spices</fullName>
+        <default>false</default>
+        <label>Seed Spices</label>
+    </customValue>
+    <customValue>
+        <fullName>Sesame Ingredient</fullName>
+        <default>false</default>
+        <label>Sesame Ingredient</label>
+    </customValue>
+    <customValue>
+        <fullName>Sesame Reject</fullName>
+        <default>false</default>
+        <label>Sesame Reject</label>
+    </customValue>
+    <customValue>
+        <fullName>Sesame Seeds</fullName>
+        <default>false</default>
+        <label>Sesame Seeds</label>
+    </customValue>
+    <customValue>
+        <fullName>Sesame Seeds Organic</fullName>
+        <default>false</default>
+        <label>Sesame Seeds Organic</label>
+    </customValue>
+    <customValue>
+        <fullName>Sesame Waste</fullName>
+        <default>false</default>
+        <label>Sesame Waste</label>
+    </customValue>
+    <customValue>
+        <fullName>Skim Milk</fullName>
+        <default>false</default>
+        <label>Skim Milk</label>
+    </customValue>
+    <customValue>
+        <fullName>SKIMMILKCONCENTRATE</fullName>
+        <default>false</default>
+        <label>SKIMMILKCONCENTRATE</label>
+    </customValue>
+    <customValue>
+        <fullName>Sodium Caseinate</fullName>
+        <default>false</default>
+        <label>Sodium Caseinate</label>
+    </customValue>
+    <customValue>
+        <fullName>Sweet Cream</fullName>
+        <default>false</default>
+        <label>Sweet Cream</label>
+    </customValue>
+    <customValue>
+        <fullName>SWP</fullName>
+        <default>false</default>
+        <label>SWP</label>
+    </customValue>
+    <customValue>
+        <fullName>Tahini</fullName>
+        <default>false</default>
+        <label>Tahini</label>
+    </customValue>
+    <customValue>
+        <fullName>Tahini Organic</fullName>
+        <default>false</default>
+        <label>Tahini Organic</label>
+    </customValue>
+    <customValue>
+        <fullName>Tropical Spices</fullName>
+        <default>false</default>
+        <label>Tropical Spices</label>
+    </customValue>
+    <customValue>
+        <fullName>UHT</fullName>
+        <default>false</default>
+        <label>UHT</label>
+    </customValue>
+    <customValue>
+        <fullName>Walnut Ingredient</fullName>
+        <default>false</default>
+        <label>Walnut Ingredient</label>
+    </customValue>
+    <customValue>
+        <fullName>Walnut InShell</fullName>
+        <default>false</default>
+        <label>Walnut InShell</label>
+    </customValue>
+    <customValue>
+        <fullName>Walnut Kernel</fullName>
+        <default>false</default>
+        <label>Walnut Kernel</label>
+    </customValue>
+    <customValue>
+        <fullName>Walnut Reject</fullName>
+        <default>false</default>
+        <label>Walnut Reject</label>
+    </customValue>
+    <customValue>
+        <fullName>Walnut Waste</fullName>
+        <default>false</default>
+        <label>Walnut Waste</label>
+    </customValue>
+    <customValue>
+        <fullName>Whey Butter</fullName>
+        <default>false</default>
+        <label>Whey Butter</label>
+    </customValue>
+    <customValue>
+        <fullName>Whey Concentrate</fullName>
+        <default>false</default>
+        <label>Whey Concentrate</label>
+    </customValue>
+    <customValue>
+        <fullName>White</fullName>
+        <default>false</default>
+        <label>White</label>
+    </customValue>
+    <customValue>
+        <fullName>WPC 34</fullName>
+        <default>false</default>
+        <label>WPC 34</label>
+    </customValue>
+    <customValue>
+        <fullName>WPC 80</fullName>
+        <default>false</default>
+        <label>WPC 80</label>
+    </customValue>
+    <customValue>
+        <fullName>WPC other</fullName>
+        <default>false</default>
+        <label>WPC other</label>
+    </customValue>
+    <customValue>
+        <fullName>WPI</fullName>
+        <default>false</default>
+        <label>WPI</label>
+    </customValue>
+    <customValue>
+        <fullName>Standard Protein</fullName>
+        <default>false</default>
+        <label>Standard Protein</label>
+    </customValue>
+    <customValue>
+        <fullName>MH CODEX</fullName>
+        <default>false</default>
+        <label>MH CODEX</label>
+    </customValue>
+    <customValue>
+        <fullName>LH ADPI</fullName>
+        <default>false</default>
+        <label>LH ADPI</label>
+    </customValue>
+    <customValue>
+        <fullName>NULL</fullName>
+        <default>false</default>
+        <label>NULL</label>
+    </customValue>
+    <customValue>
+        <fullName>BEANS</fullName>
+        <default>false</default>
+        <label>Beans</label>
+    </customValue>
+    <customValue>
+        <fullName>COCOA WASTE</fullName>
+        <default>false</default>
+        <label>COCOA WASTE</label>
+    </customValue>
+    <customValue>
+        <fullName>SFG</fullName>
+        <default>false</default>
+        <label>SFG</label>
+    </customValue>
+    <customValue>
+        <fullName>SPECIALTY</fullName>
+        <default>false</default>
+        <label>SPECIALTY</label>
+    </customValue>
+    <customValue>
+        <fullName>PREMIUM</fullName>
+        <default>false</default>
+        <label>PREMIUM</label>
+    </customValue>
+    <customValue>
+        <fullName>EXCLUSIVE</fullName>
+        <default>false</default>
+        <label>EXCLUSIVE</label>
+    </customValue>
+    <customValue>
+        <fullName>G2</fullName>
+        <default>false</default>
+        <label>G2</label>
+    </customValue>
+    <customValue>
+        <fullName>STANDARD</fullName>
+        <default>false</default>
+        <label>STANDARD</label>
+    </customValue>
+    <customValue>
+        <fullName>REWORK</fullName>
+        <default>false</default>
+        <label>REWORK</label>
+    </customValue>
+    <customValue>
+        <fullName>HISPANIOLA</fullName>
+        <default>false</default>
+        <label>HISPANIOLA</label>
+    </customValue>
+    <customValue>
+        <fullName>SANCHEZ</fullName>
+        <default>false</default>
+        <label>SANCHEZ</label>
+    </customValue>
+    <customValue>
+        <fullName>STANDARD+</fullName>
+        <default>false</default>
+        <label>STANDARD+</label>
+    </customValue>
+    <customValue>
+        <fullName>SUMATRA</fullName>
+        <default>false</default>
+        <label>SUMATRA</label>
+    </customValue>
+    <customValue>
+        <fullName>SPECIALTY +</fullName>
+        <default>false</default>
+        <label>SPECIALTY +</label>
+    </customValue>
+    <customValue>
+        <fullName>STANDARD +</fullName>
+        <default>false</default>
+        <label>STANDARD +</label>
+    </customValue>
+    <customValue>
+        <fullName>COCOA BUTTER</fullName>
+        <default>false</default>
+        <label>COCOA BUTTER</label>
+    </customValue>
+    <customValue>
+        <fullName>MAIN CROP</fullName>
+        <default>false</default>
+        <label>MAIN CROP</label>
+    </customValue>
+    <customValue>
+        <fullName>PACKED</fullName>
+        <default>false</default>
+        <label>PACKED</label>
+    </customValue>
+    <customValue>
+        <fullName>MID CROP</fullName>
+        <default>false</default>
+        <label>MID CROP</label>
+    </customValue>
+    <customValue>
+        <fullName>CAKE</fullName>
+        <default>false</default>
+        <label>CAKE</label>
+    </customValue>
+    <customValue>
+        <fullName>REFERENCE</fullName>
+        <default>false</default>
+        <label>REFERENCE</label>
+    </customValue>
+    <customValue>
+        <fullName>LIQUID</fullName>
+        <default>false</default>
+        <label>LIQUID</label>
+    </customValue>
+    <customValue>
+        <fullName>ASE</fullName>
+        <default>false</default>
+        <label>ASE</label>
+    </customValue>
+    <customValue>
+        <fullName>ASSS</fullName>
+        <default>false</default>
+        <label>ASSS</label>
+    </customValue>
+    <customValue>
+        <fullName>OTHER STATES</fullName>
+        <default>false</default>
+        <label>OTHER STATES</label>
+    </customValue>
+    <customValue>
+        <fullName>ASS</fullName>
+        <default>false</default>
+        <label>ASS</label>
+    </customValue>
+    <customValue>
+        <fullName>CCN51</fullName>
+        <default>false</default>
+        <label>CCN51</label>
+    </customValue>
+    <customValue>
+        <fullName>Chile Peppers</fullName>
+        <default>false</default>
+        <label>Chile Peppers</label>
+    </customValue>
+    <customValue>
+        <fullName>DRY</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>DRY</label>
+    </customValue>
+    <customValue>
+        <fullName>HH ADPI</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>HH ADPI</label>
+    </customValue>
+    <customValue>
+        <fullName>BMC</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>BMC</label>
+    </customValue>
+    <customValue>
+        <fullName>WC</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>WC</label>
+    </customValue>
+    <customValue>
+        <fullName>SMC</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>SMC</label>
+    </customValue>
+    <customValue>
+        <fullName>LH</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>LH</label>
+    </customValue>
+    <customValue>
+        <fullName>MH</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>MH</label>
+    </customValue>
+    <customValue>
+        <fullName>Butter</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Butter</label>
+    </customValue>
+    <customValue>
+        <fullName>SM</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>SM</label>
+    </customValue>
+    <customValue>
+        <fullName>Deo Natural</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Deo Natural</label>
+    </customValue>
+    <customValue>
+        <fullName>Alkalized Natural</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Alkalized Natural</label>
+    </customValue>
+    <customValue>
+        <fullName>Alkalized Extra Fine</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Alkalized Extra Fine</label>
+    </customValue>
+    <customValue>
+        <fullName>Natural Low Alkalized</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Natural Low Alkalized</label>
+    </customValue>
+    <customValue>
+        <fullName>Natural High Alkalized</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Natural High Alkalized</label>
+    </customValue>
+    <customValue>
+        <fullName>MH ADPI</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>MH ADPI</label>
+    </customValue>
+    <customValue>
+        <fullName>LH CODEX</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>LH CODEX</label>
+    </customValue>
+    <customValue>
+        <fullName>HH CODEX</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>HH CODEX</label>
+    </customValue>
+    <customValue>
+        <fullName>CASHEW REJECT</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CASHEW REJECT</label>
+    </customValue>
+    <masterLabel>Product Sub Category</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

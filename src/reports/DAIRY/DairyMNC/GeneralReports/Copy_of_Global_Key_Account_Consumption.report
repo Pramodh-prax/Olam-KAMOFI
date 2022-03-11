@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$SAP_Account_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account$Customer_Group__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$BillingCountryCode</field>
+    </columns>
+    <columns>
+        <field>Account.Consumption__r$Owner</field>
+    </columns>
+    <columns>
+        <field>Account.Consumption__r$Category__c</field>
+    </columns>
+    <columns>
+        <field>Account.Consumption__r$Sub_Category__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Consumption__r$Volume_MT__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Account$Account_Type__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Global Key Account</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Copy of Global Key Account - Consumption</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>Account_and_Consumption__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

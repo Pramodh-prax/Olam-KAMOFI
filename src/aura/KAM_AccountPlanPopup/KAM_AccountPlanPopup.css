@@ -1,0 +1,42 @@
+.THIS .c-modal-container {
+    width: 90%;
+    max-width: 90rem;
+}
+.THIS .plan-action-box {
+    display : flex;
+    float : right;
+}
+.THIS .plan-info-action-container{
+    display: flex;
+    justify-content: space-between;
+}
+.THIS .field-info {
+    display: flex;
+    flex-flow: row wrap
+}
+.THIS .plan-info-box {
+    display : flex;
+}
+.THIS .plan-action-btn {
+    border: 1px solid #DDDBDA;
+    padding: .5em;
+}
+.THIS .plan-action-box  div + div {
+    border-left: none;
+}
+@media print {
+   .THIS body * {
+      visibility: hidden;
+    }
+   .THIS .section-to-print,.THIS .section-to-print * {
+      visibility: visible;
+    }
+    /* .section-to-print {
+      position: absolute;
+      left: 0;
+      top: 4%;
+    } */
+    .THIS .section-to-print .print-btn {
+        display: none;
+    }
+  }

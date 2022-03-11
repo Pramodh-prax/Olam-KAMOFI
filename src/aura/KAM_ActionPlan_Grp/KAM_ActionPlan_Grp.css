@@ -1,0 +1,24 @@
+.THIS .heading{
+    color : #16325c;
+    font-size: 1.074rem;
+    margin: 0 0 .5em 0;
+}
+.THIS .unit-of-measure-container div + div {
+    padding-left : .5rem;
+}
+.THIS .unit-of-measure-label {
+    align-self : center;
+}.THIS .unit-of-measure-container {
+    width : 25%;
+    /* float : right; 
+     display: grid;
+    grid-template-columns: 100px 120px;
+    */
+    margin-bottom : .5rem;
+   	display : flex;
+}
+.THIS .unit-of-measure-combo-box > div .slds-dropdown-trigger_click.slds-is-open .slds-dropdown, 
+.THIS .unit-of-measure-combo-box > div .slds-dropdown-trigger--click.slds-is-open .slds-dropdown {
+    max-width: 120px;
+    min-width: 120px;
+}

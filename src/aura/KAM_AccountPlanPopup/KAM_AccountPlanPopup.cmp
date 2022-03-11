@@ -1,0 +1,110 @@
+<aura:component controller="KAM_AccountPlanPopupCntl" extends="c:KAM_Util"
+    implements="force:hasRecordId,force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,lightning:isUrlAddressable"
+    access="global">
+    <aura:attribute name="showAccountplans" type="boolean" default="False" />
+    <aura:attribute name="showAccountplansRefresh" type="boolean" default="False" />
+    <aura:attribute name="PlanName" type="String" />
+    <aura:attribute name="AccountId" type="String" />
+    <aura:attribute name="AccountPlanId" type="String" />
+    <aura:attribute name="AccountPlan" type="Account_Plans__c" />
+    <aura:registerEvent name="KAM_AccountPlanShare" type="c:KAM_AccountPlanShare" />
+    <aura:registerEvent name="KAM_AccountPlanGeneratePDFevt" type="c:KAM_AccountPlanGeneratePDFevt" />
+
+    <aura:attribute name="isLoading" type="Boolean" default="true" />
+    <aura:handler name="init" value="{!this}" action="{!c.doinit}" />
+    <aura:if isTrue="{!v.showAccountplans}">
+        <!--###### MODAL BOX Start######-->
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+            aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-backdrop slds-backdrop_open">
+                <div class="slds-modal__container c-modal-container slds-is-relative">
+                    <!-- ###### MODAL BOX HEADER Start ######-->
+                    <header class="slds-modal__header">
+                        <lightning:buttonIcon iconName="utility:close" onclick="{! c.closeModel }"
+                            alternativeText="close" variant="bare-inverse" class="slds-modal__close" />
+                        <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">{!v.AccountPlan.Name}
+                        </h2>
+                    </header>
+                    <!--###### MODAL BOX BODY Part Start######-->
+                    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                        <div aura:id="acct-plan" class="section-to-print">
+                           
+                        <lightning:layout multipleRows="true" class="slds-is-relative">
+                            <aura:if isTrue="{!!v.isLoading}">
+                                
+                                <lightning:layoutItem size="12" class="slds-p-around_small plan-info-action-container">
+                                    <div class="plan-info-box">
+                                        <div class="slds-form-element slds-form-element_stacked field-info">
+                                            <span class="slds-form-element__label">
+                                                BU Identifier
+                                            </span>
+                                            <span class="slds-form-element__control">
+                                                {!v.AccountPlan.BU_Identifier__c}
+                                            </span>
+                                        </div>
+                                        <div class="slds-form-element slds-form-element_stacked field-info">
+                                            <span class="slds-form-element__label">
+                                                Type
+                                            </span>
+                                            <span class="slds-form-element__control">
+                                                {!v.AccountPlan.Type__c}
+                                            </span>
+                                        </div>
+                                        <div class="slds-form-element slds-form-element_stacked field-info">
+                                            <span class="slds-form-element__label">
+                                                Year
+                                            </span>
+                                            <span class="slds-form-element__control">
+                                                {!v.AccountPlan.Year__c}
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="plan-action-box">
+                                        
+                                            <div class="plan-action-btn">
+                                                <a href="" onclick="{!c.refreshAccountPlan}">
+                                                    <lightning:icon iconName="utility:refresh"
+                                                        alternativeText="refresh" title="Refresh" />
+                                                </a>
+                                            </div>
+                                        <div class="plan-action-btn">
+                                            <a href="" onclick="{!c.shareAccountPlan}">
+                                                <lightning:icon iconName="utility:internal_share"
+                                                    alternativeText="Share" title="Share" />
+                                            </a>
+                                        </div>
+                                        <div class="plan-action-btn">
+                                            <a href="" onclick="{!c.genrateAccountPlanPdf}">
+                                                <lightning:icon iconName="utility:pdf_ext"
+                                                    alternativeText="Generate PDF" title="Generate PDF" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </lightning:layoutItem>
+                                <lightning:layoutItem size="12" class="">
+                                    <c:KAM_AccountPlanOverview accountPlanId="{!v.AccountPlanId}"
+                                        accountId="{!v.AccountId}" accountPlan="{!v.AccountPlan}">
+                                    </c:KAM_AccountPlanOverview>
+                                </lightning:layoutItem>
+                                  
+                            </aura:if>
+                           
+
+                            <aura:if isTrue="{!v.isLoading}">
+                                <lightning:layoutItem size="12" class="slds-m-top_small">
+                                    <c:KAM_LoadingDots />
+                                </lightning:layoutItem>
+                            </aura:if>
+                        </lightning:layout>
+                            </div>
+                    </div>
+                    <!--###### MODAL BOX FOOTER Part Start ######-->
+                    <footer class="slds-modal__footer">
+                        <lightning:button variant="neutral" label="Close" title="Close" onclick="{! c.closeModel }" />
+
+                    </footer>
+                </div>
+            </div>
+        </section>
+    </aura:if>
+</aura:component>

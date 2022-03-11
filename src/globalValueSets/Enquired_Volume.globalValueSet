@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Less than 1 mt</fullName>
+        <default>false</default>
+        <label>Less than 1 mt</label>
+    </customValue>
+    <customValue>
+        <fullName>2 - 10 mt</fullName>
+        <default>false</default>
+        <label>2 - 10 mt</label>
+    </customValue>
+    <customValue>
+        <fullName>11 - 50 mt</fullName>
+        <default>false</default>
+        <label>11 - 50 mt</label>
+    </customValue>
+    <customValue>
+        <fullName>Greater than 50 mt</fullName>
+        <default>false</default>
+        <label>Greater than 50 mt</label>
+    </customValue>
+    <customValue>
+        <fullName>1-8 bags</fullName>
+        <default>false</default>
+        <label>1-8 bags</label>
+    </customValue>
+    <customValue>
+        <fullName>8-15 bags</fullName>
+        <default>false</default>
+        <label>8-15 bags</label>
+    </customValue>
+    <customValue>
+        <fullName>1-5 MT</fullName>
+        <default>false</default>
+        <label>1-5 MT</label>
+    </customValue>
+    <customValue>
+        <fullName>5-25 MT</fullName>
+        <default>false</default>
+        <label>5-25 MT</label>
+    </customValue>
+    <customValue>
+        <fullName>Greater than 25MT</fullName>
+        <default>false</default>
+        <label>Greater than 25MT</label>
+    </customValue>
+    <customValue>
+        <fullName>Not Applicable</fullName>
+        <default>false</default>
+        <label>Not Applicable</label>
+    </customValue>
+    <masterLabel>Enquired Volume</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

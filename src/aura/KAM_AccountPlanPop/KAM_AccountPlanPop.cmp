@@ -1,0 +1,80 @@
+<aura:component extends="c:KAM_Util" controller="KAM_AccountPlanPopupCntl" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction,lightning:isUrlAddressable" access="global" >
+    <aura:attribute name="showAccountplans" type="boolean" default="False" />
+    <aura:attribute name="PlanName" type="String" />
+    <aura:attribute name="AccountId" type="String" />
+    <aura:attribute name="AccountPlanId" type="String" />
+    <aura:attribute name="AccountPlan" type="Account_Plans__c" />
+    <aura:registerEvent name="KAM_AccountPlanShare" type="c:KAM_AccountPlanShare" />
+    <aura:registerEvent name="KAM_AccountPlanGeneratePDFevt" type="c:KAM_AccountPlanGeneratePDFevt" />
+
+    <aura:attribute name="isLoading" type="Boolean" default="true" />
+    <aura:handler name="init" value="{!this}" action="{!c.doinit}" />
+    <aura:if isTrue="{!v.showAccountplans}">
+        <div aura:id="acct-plan" class="section-to-print">
+                           
+                        <lightning:layout multipleRows="true" class="slds-is-relative">
+                            <aura:if isTrue="{!!v.isLoading}">
+                                
+                                <lightning:layoutItem size="12" class="slds-p-around_small plan-info-action-container">
+                                    <div class="plan-info-box">
+                                        <div class="slds-form-element slds-form-element_stacked field-info">
+                                            <span class="slds-form-element__label">
+                                                BU Identifier
+                                            </span>
+                                            <span class="slds-form-element__control">
+                                                {!v.AccountPlan.BU_Identifier__c}
+                                            </span>
+                                        </div>
+                                        <div class="slds-form-element slds-form-element_stacked field-info">
+                                            <span class="slds-form-element__label">
+                                                Type
+                                            </span>
+                                            <span class="slds-form-element__control">
+                                                {!v.AccountPlan.Type__c}
+                                            </span>
+                                        </div>
+                                        <div class="slds-form-element slds-form-element_stacked field-info">
+                                            <span class="slds-form-element__label">
+                                                Year
+                                            </span>
+                                            <span class="slds-form-element__control">
+                                                {!v.AccountPlan.Year__c}
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <!--div class="plan-action-box">
+                                        <div class="plan-action-btn">
+                                            <a href="" onclick="{!c.shareAccountPlan}">
+                                                <lightning:icon iconName="utility:internal_share"
+                                                    alternativeText="Share" title="Share" />
+                                            </a>
+                                        </div>
+                                        <div class="plan-action-btn">
+                                            <a href="" onclick="{!c.genrateAccountPlanPdf}">
+                                                <lightning:icon iconName="utility:pdf_ext"
+                                                    alternativeText="Generate PDF" title="Generate PDF" />
+                                            </a>
+                                        </div>
+                                    </div-->
+                                </lightning:layoutItem>
+                                <lightning:layoutItem size="12" class="">
+                                    <aura:if isTrue="{!v.AccountPlan}">
+                                    <c:KAM_AccountPlanOverview accountPlanId="{!v.AccountPlanId}"
+                                        accountId="{!v.AccountId}" accountPlan="{!v.AccountPlan}">
+                                    </c:KAM_AccountPlanOverview>
+                                    </aura:if>
+                                    
+                                </lightning:layoutItem>
+                                  
+                            </aura:if>
+
+                            <aura:if isTrue="{!v.isLoading}">
+                                <lightning:layoutItem size="12" class="slds-m-top_small">
+                                    <c:KAM_LoadingDots />
+                                </lightning:layoutItem>
+                            </aura:if>
+                        </lightning:layout>
+                            </div>
+        
+ </aura:if>        
+</aura:component>

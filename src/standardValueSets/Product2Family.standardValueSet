@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>03-Cocoa and Speciality</fullName>
+        <default>false</default>
+        <label>Cocoa</label>
+    </standardValue>
+    <standardValue>
+        <fullName>04-Dairy</fullName>
+        <default>false</default>
+        <label>Dairy</label>
+    </standardValue>
+    <standardValue>
+        <fullName>12-Spices</fullName>
+        <default>false</default>
+        <label>Spices</label>
+    </standardValue>
+    <standardValue>
+        <fullName>09-Cashew</fullName>
+        <default>false</default>
+        <label>Cashew</label>
+    </standardValue>
+    <standardValue>
+        <fullName>10-Peanuts</fullName>
+        <default>false</default>
+        <label>Peanuts</label>
+    </standardValue>
+    <standardValue>
+        <fullName>11-Almond</fullName>
+        <default>false</default>
+        <label>Almond</label>
+    </standardValue>
+    <standardValue>
+        <fullName>16-Sesame</fullName>
+        <default>false</default>
+        <label>Sesame</label>
+    </standardValue>
+    <standardValue>
+        <fullName>22-Hazelnut</fullName>
+        <default>false</default>
+        <label>Hazelnut</label>
+    </standardValue>
+    <standardValue>
+        <fullName>25-Pistachio</fullName>
+        <default>false</default>
+        <label>Pistachio</label>
+    </standardValue>
+    <standardValue>
+        <fullName>26-Walnut</fullName>
+        <default>false</default>
+        <label>Walnut</label>
+    </standardValue>
+    <standardValue>
+        <fullName>29-Super foods</fullName>
+        <default>false</default>
+        <label>Super foods</label>
+    </standardValue>
+    <standardValue>
+        <fullName>30-Contract mfg</fullName>
+        <default>false</default>
+        <label>Contract mfg</label>
+    </standardValue>
+    <standardValue>
+        <fullName>ENPLVN Ingredient</fullName>
+        <default>false</default>
+        <label>ENPLVN Ingredient</label>
+    </standardValue>
+</StandardValueSet>

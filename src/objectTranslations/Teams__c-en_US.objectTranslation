@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Teams</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Teams</value>
+    </caseValues>
+    <fields>
+        <label><!-- Access Level --></label>
+        <name>Access_Level__c</name>
+        <picklistValues>
+            <masterLabel>Edit Access</masterLabel>
+            <translation><!-- Edit Access --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Read Access</masterLabel>
+            <translation><!-- Read Access --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Access Set Ids --></label>
+        <name>Access_Set_Ids__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Teams --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- BU --></label>
+        <name>BU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Unit --></label>
+        <name>Business_Unit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Grant Access Status --></label>
+        <name>Grant_Access_Status__c</name>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Initiated</masterLabel>
+            <translation><!-- Initiated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processed</masterLabel>
+            <translation><!-- Processed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is Primary --></label>
+        <name>Is_Primary__c</name>
+    </fields>
+    <fields>
+        <label><!-- My Team --></label>
+        <name>My_Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- Role Name --></label>
+        <name>Role_Name__c</name>
+        <picklistValues>
+            <masterLabel>Cocoa Sales Manager</masterLabel>
+            <translation><!-- Cocoa Sales Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dairy Sales Manager</masterLabel>
+            <translation><!-- Dairy Sales Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edible_Nuts Sales Manager</masterLabel>
+            <translation><!-- Edible_Nuts Sales Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spice Sales Manager</masterLabel>
+            <translation><!-- Spice Sales Manager --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User Role Name --></label>
+        <name>User_Role_Name__c</name>
+        <picklistValues>
+            <masterLabel>Cocoa PDI Manager</masterLabel>
+            <translation><!-- Cocoa PDI Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cocoa Sales Manager</masterLabel>
+            <translation><!-- Cocoa Sales Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dairy PDI Manager</masterLabel>
+            <translation><!-- Dairy PDI Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dairy Sales Manager</masterLabel>
+            <translation><!-- Dairy Sales Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edible Nuts PDI Manager</masterLabel>
+            <translation><!-- Edible Nuts PDI Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edible Nuts Sales Manager</masterLabel>
+            <translation><!-- Edible Nuts Sales Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spice PDI Manager</masterLabel>
+            <translation><!-- Spice PDI Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spice Sales Manager</masterLabel>
+            <translation><!-- Spice Sales Manager --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- Teams --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- User&apos;s Role Name --></label>
+        <name>User_s_Role_Name__c</name>
+    </fields>
+    <layouts>
+        <layout>Teams Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Primary Member Cannot Be Read Access --></errorMessage>
+        <name>Primary_Member_can_be_changed_to_read</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Theres an existing Primary Owner assigned for this account --></errorMessage>
+        <name>Restrict_Primary_from_Same_BU</name>
+    </validationRules>
+</CustomObjectTranslation>

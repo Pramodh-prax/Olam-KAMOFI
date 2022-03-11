@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Snacks</fullName>
+        <default>false</default>
+        <label>Snacks</label>
+    </customValue>
+    <customValue>
+        <fullName>Ingredients</fullName>
+        <default>false</default>
+        <label>Ingredients</label>
+    </customValue>
+    <customValue>
+        <fullName>Paste</fullName>
+        <default>false</default>
+        <label>Paste</label>
+    </customValue>
+    <customValue>
+        <fullName>Bars &amp; Cookies</fullName>
+        <default>false</default>
+        <label>Bars &amp; Cookies</label>
+    </customValue>
+    <customValue>
+        <fullName>Nut &amp; Seed Oils</fullName>
+        <default>false</default>
+        <label>Nut &amp; Seed Oils</label>
+    </customValue>
+    <customValue>
+        <fullName>Milk</fullName>
+        <default>false</default>
+        <label>Milk</label>
+    </customValue>
+    <masterLabel>Product Family</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

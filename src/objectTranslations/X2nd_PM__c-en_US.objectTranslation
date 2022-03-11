@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>2nd PM</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>2nd PM</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loss % --></label>
+        <name>Loss__c</name>
+    </fields>
+    <fields>
+        <label><!-- Price Kit --></label>
+        <name>Price_Kit__c</name>
+        <relationshipLabel><!-- 2nd PM --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- 2nd PM Type --></label>
+        <name>X2nd_PM_Type__c</name>
+        <picklistValues>
+            <masterLabel>PRE CUT RSC</masterLabel>
+            <translation><!-- PRE CUT RSC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RSC</masterLabel>
+            <translation><!-- RSC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRAY &amp; LID</masterLabel>
+            <translation><!-- TRAY &amp; LID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRAY ONLY</masterLabel>
+            <translation><!-- TRAY ONLY --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>2nd PM Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

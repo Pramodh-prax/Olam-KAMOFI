@@ -1,0 +1,4 @@
+<aura:event type="COMPONENT" description="by this event we are pass the selected account in the parent component">
+    <aura:attribute name="userByEvent" type="User"/>
+    <aura:attribute name="showUserdetail" type="boolean"/>
+</aura:event>

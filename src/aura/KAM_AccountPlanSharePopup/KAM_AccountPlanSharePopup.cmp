@@ -1,0 +1,129 @@
+<aura:component extends="c:KAM_Util" controller="KAM_AccountPlanSharePopupCntl" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" >
+    <aura:attribute name="AccountPlanId" type="String" />
+    <aura:attribute name="AccountId" type="String" />
+    <aura:attribute name="showAccountplanShare" type="boolean"  default="False"/>
+    <aura:attribute name="showUserdetail" type="boolean"  default="False"/>
+    <aura:attribute name="AccountPlanShare" type="List"/>
+    <aura:attribute name="UsersList" type="List"/>
+    <aura:attribute name="selectedRecord" type="User" default="{}" description="Use,for store SELECTED sObject Record"/>
+    <aura:attribute name="listOfSearchRecords" type="User[]" description="Use,for store the list of search records which returns from apex class"/>
+    <aura:attribute name="SearchKeyWord" type="string"/>
+    <aura:attribute name="Message" type="String" default="Search Result.."/>
+    <aura:attribute name="IconName" type="string" default="standard:user"/>
+    <aura:attribute name="label" type="string" default="User"/>
+    <aura:attribute name="AccessLevel" type="String[]" />
+    <aura:attribute name="selectedAccessLevel" type="String" />
+    <aura:attribute name="showSaveCancelBtn" type="boolean" default="false" description="flag for rendered save and cancel buttons in aura:if "/>
+    <aura:registerEvent name="KAM_AccountPlanRowEdit" type="c:KAM_AccountPlanRowEdit"/>
+    <aura:handler name="KAM_AccountPlanShareUserList" event="c:KAM_AccountPlanShareUserList" action="{!c.handleComponentEvent}"/>
+    <aura:handler name="KAM_AccountPlanShareInlineEditevt" event="c:KAM_AccountPlanShareInlineEditevt" action="{!c.doinit}"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doinit}"/>
+    <aura:if isTrue="{!v.showAccountplanShare}">
+        <!--###### MODAL BOX Start######--> 
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-backdrop slds-backdrop_open">
+                <div class="slds-modal__container">
+                    <!-- ###### MODAL BOX HEADER Start ######-->
+                    <header class="slds-modal__header">
+                        <lightning:buttonIcon iconName="utility:close"
+                                              onclick="{! c.closeModel }"
+                                              alternativeText="close"
+                                              variant="bare-inverse"
+                                              class="slds-modal__close"/>
+                        <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Share Account Plan</h2>
+                    </header>
+                    <!--###### MODAL BOX BODY Part Start######-->
+                    <div class="slds-modal__content slds-p-around_large" id="modal-content-id-1" style="padding-bottom: 20rem;">
+                        <div onmouseleave="{!c.onblur}" aura:id="searchRes" class="slds-form-element slds-lookup slds-is-close" data-select="single">
+                            <!--<label class="slds-form-element__label" for="lookup-348">{!v.label}</label>-->
+                            <!--This part is for display search bar for lookup-->  
+                            <div class="slds-form-element__control">
+                                
+                                <div class="slds-input-has-icon slds-input-has-icon--right" style="width: fit-content;">
+                                    <!-- This markup is for when an record is selected -->
+                                    <div aura:id="lookup-pill" class="slds-pill-container slds-hide access-pill-selector">
+                                        <div class="pill-container">
+                                            <lightning:pill class="pillSize" label="{!v.selectedRecord.Name}" name="{!v.selectedRecord.Name}" onremove="{! c.clear }">
+                                                <aura:set attribute="media">
+                                                    <lightning:icon iconName="{!v.IconName}" size="x-small" alternativeText="{!v.IconName}"/>
+                                                </aura:set>
+                                            </lightning:pill>
+                                        </div>
+                                        <aura:if isTrue="{!v.showUserdetail}">
+                                            <!--div class="access-leve-container">
+                                                <lightning:select label="AccessLevel" required="true" value="{!v.selectedAccessLevel}" class="access-level-select" >
+                                                    <aura:iteration items="{!v.AccessLevel}" var="val">
+                                                        <option value="{!val}"> {!val}</option>
+                                                    </aura:iteration>
+                                                </lightning:select> 
+                                            </div-->
+                                            <div class="access-btn-container">
+                                                <lightning:button variant="brand" 
+                                                                  label="Add"
+                                                                  title="Add"
+                                                                  onclick="{! c.createAccountPlanShare }"/>
+                                            </div>
+                                        </aura:if>
+                                    </div>
+                                    <div aura:id="lookupField" class="slds-show">
+                                        
+                                        <lightning:icon class="slds-input__icon slds-show" iconName="utility:search" size="x-small" alternativeText="search"/>
+                                        <span class="slds-icon_container  slds-combobox__input-entity-icon" title="record">
+                                            <lightning:icon class="slds-icon slds-icon slds-icon_small slds-icon-text-default" iconName="{!v.IconName}" size="x-small" alternativeText="icon"/>
+                                            <span class="slds-assistive-text"></span>
+                                        </span>
+                                        <ui:inputText click="{!c.onfocus}" updateOn="keyup" keyup="{!c.keyPressController}" class="slds-lookup__search-input slds-input leftPaddingClass" value="{!v.SearchKeyWord}" placeholder="search.."/>
+                                        
+                                    </div>   
+                                </div>
+                            </div>
+                            <!--This part is for Display typehead lookup result List-->  
+                            <ul style="min-height:40px;margin-top:0px !important" class="slds-listbox slds-listbox_vertical slds-dropdown slds-dropdown_fluid slds-lookup__menu slds" role="listbox">
+                                <lightning:spinner class="slds-hide" variant="brand" size="small" aura:id="mySpinner"/>
+                                <center> {!v.Message}</center>
+                                <aura:iteration items="{!v.listOfSearchRecords}" var="singleRec">
+                                    <c:KAM_AccountPlanShareUserLookup UserName="{!singleRec}" IconName="{!v.IconName}"/>
+                                </aura:iteration>
+                            </ul>
+                        </div>
+                        <br/>
+                        <br/>
+                        <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-border_right slds-border_left">
+                            <thead>
+                                <tr class="slds-line-height_reset">
+                                    <th class="slds-text-title_caps" scope="col"><div class="slds-truncate" title="Users">Users</div></th>
+                                    <th class="slds-text-title_caps" scope="col"><div class="slds-truncate" title="AccessLevel">Business Unit</div></th>
+                                    <th class="slds-text-title_caps" scope="col"><div class="slds-truncate" title="AccessLevel">Share Reason</div></th>
+                                    <th class="slds-text-title_caps" scope="col"><div class="slds-truncate" title="AccessLevel">Access Level</div></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <aura:iteration items="{!v.AccountPlanShare}" var="acctplans" indexVar="index">
+
+                                    <c:KAM_AccountPlanShareInlineEdit singleRec="{!acctplans}"
+                                                                      showSaveCancelBtn="{!v.showSaveCancelBtn}"
+                                                                      AccessLevel1="{!v.AccessLevel}"/>
+                                </aura:iteration>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--###### MODAL BOX FOOTER Part Start ######-->
+                    <footer class="slds-modal__footer">
+                        <lightning:button variant="brand" 
+                                          label="Save and Close"
+                                          title="Save and Close"
+                                          onclick="{! c.closeModel }"/>
+                        <aura:if isTrue="{!v.showSaveCancelBtn}">
+                            <!--button for save and cancel Record after Inline Edit-->
+                            <lightning:button label="Save and Close" onclick="{!c.updateAcctPlanShare}" variant="brand"/>
+                            
+                        </aura:if> 
+                        
+                    </footer>
+                </div>
+            </div>
+        </section>
+    </aura:if>
+</aura:component>

@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Access_Level__c</fullName>
+        <defaultValue>&quot;Read Access&quot;</defaultValue>
+        <externalId>false</externalId>
+        <label>Access Level</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Read Access</fullName>
+                    <default>false</default>
+                    <label>Read Access</label>
+                </value>
+                <value>
+                    <fullName>Edit Access</fullName>
+                    <default>false</default>
+                    <label>Edit Access</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Access_Set_Ids__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Access Set Ids</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Teams</relationshipLabel>
+        <relationshipName>Teams</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>BU__c</fullName>
+        <externalId>false</externalId>
+        <formula>User__r.BU_Identifier__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>BU</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Business_Unit__c</fullName>
+        <externalId>false</externalId>
+        <label>Business Unit</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>BU_Identifier</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Grant_Access_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Grant Access Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Failed</fullName>
+                    <default>false</default>
+                    <label>Failed</label>
+                </value>
+                <value>
+                    <fullName>Initiated</fullName>
+                    <default>false</default>
+                    <label>Initiated</label>
+                </value>
+                <value>
+                    <fullName>Processed</fullName>
+                    <default>false</default>
+                    <label>Processed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Is_Primary__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Primary</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>My_Team__c</fullName>
+        <externalId>false</externalId>
+        <formula>$User.Id = User__r.Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>My Team</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Role_Name__c</fullName>
+        <defaultValue>IF(CONTAINS($UserRole.Name, &apos;Cocoa&apos;), &apos;Cocoa Sales Manager&apos;,
+(IF(CONTAINS($UserRole.Name, &apos;Dairy&apos;), &apos;Dairy Sales Manager&apos;,
+(IF(CONTAINS($UserRole.Name, &apos;Spice&apos;), &apos;Spice Sales Manager&apos;,
+(IF(CONTAINS($UserRole.Name, &apos;Edible_Nuts&apos;), &apos;Edible_Nuts Sales Manager&apos;, &apos; &apos;)))))))</defaultValue>
+        <externalId>false</externalId>
+        <label>Role Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Cocoa Sales Manager</fullName>
+                    <default>false</default>
+                    <label>Cocoa Sales Manager</label>
+                </value>
+                <value>
+                    <fullName>Dairy Sales Manager</fullName>
+                    <default>false</default>
+                    <label>Dairy Sales Manager</label>
+                </value>
+                <value>
+                    <fullName>Spice Sales Manager</fullName>
+                    <default>false</default>
+                    <label>Spice Sales Manager</label>
+                </value>
+                <value>
+                    <fullName>Edible_Nuts Sales Manager</fullName>
+                    <default>false</default>
+                    <label>Edible_Nuts Sales Manager</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>User_Role_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>User Role Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Cocoa Sales Manager</fullName>
+                    <default>false</default>
+                    <label>Cocoa Sales Manager</label>
+                </value>
+                <value>
+                    <fullName>Cocoa PDI Manager</fullName>
+                    <default>false</default>
+                    <label>Cocoa PDI Manager</label>
+                </value>
+                <value>
+                    <fullName>Dairy Sales Manager</fullName>
+                    <default>false</default>
+                    <label>Dairy Sales Manager</label>
+                </value>
+                <value>
+                    <fullName>Dairy PDI Manager</fullName>
+                    <default>false</default>
+                    <label>Dairy PDI Manager</label>
+                </value>
+                <value>
+                    <fullName>Spice Sales Manager</fullName>
+                    <default>false</default>
+                    <label>Spice Sales Manager</label>
+                </value>
+                <value>
+                    <fullName>Spice PDI Manager</fullName>
+                    <default>false</default>
+                    <label>Spice PDI Manager</label>
+                </value>
+                <value>
+                    <fullName>Edible Nuts Sales Manager</fullName>
+                    <default>false</default>
+                    <label>Edible Nuts Sales Manager</label>
+                </value>
+                <value>
+                    <fullName>Edible Nuts PDI Manager</fullName>
+                    <default>false</default>
+                    <label>Edible Nuts PDI Manager</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Teams</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>User_s_Role_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(CONTAINS(User__r.UserRole.Name, &apos;Cocoa Sales&apos;), &apos;Cocoa Sales Manager&apos;,
+(IF(CONTAINS(User__r.UserRole.Name, &apos;Cocoa PD&amp;I&apos;), &apos;Cocoa PDI Manager&apos;,
+(IF(CONTAINS(User__r.UserRole.Name, &apos;Dairy Sales&apos;), &apos;Dairy Sales Manager&apos;,
+(IF(CONTAINS(User__r.UserRole.Name, &apos;Dairy PD&amp;I&apos;), &apos;Dairy PDI Manager&apos;,
+(IF(CONTAINS(User__r.UserRole.Name, &apos;Spice Sales&apos;), &apos;Spice Sales Manager&apos;,
+(IF(CONTAINS(User__r.UserRole.Name, &apos;Spice PDI&apos;), &apos;Spice PDI Manager&apos;,
+(IF(CONTAINS(User__r.UserRole.Name, &apos;Edible_Nuts Sales&apos;), &apos;Edible Nuts Sales Manager&apos;,
+(IF(CONTAINS(User__r.UserRole.Name, &apos;Edible_Nuts PDI&apos;), &apos;Edible Nuts PDI Manager&apos;,
+(IF(CONTAINS(User__r.UserRole.Name, &apos;Coffee&apos;), &apos;Coffee Sales Manager&apos;, &apos; &apos;)))))))))))))))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>User&apos;s Role Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Teams</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>User__c</columns>
+        <columns>Grant_Access_Status__c</columns>
+        <columns>Account__c</columns>
+        <columns>Is_Primary__c</columns>
+        <columns>Role_Name__c</columns>
+        <columns>NAME</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Teams_Accounts</fullName>
+        <columns>Account__c</columns>
+        <columns>Is_Primary__c</columns>
+        <columns>OWNER.FIRST_NAME</columns>
+        <columns>OWNER.LAST_NAME</columns>
+        <columns>Role_Name__c</columns>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>My_Team__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>My Teams&apos; Accounts</label>
+    </listViews>
+    <nameField>
+        <label>Teams Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Teams</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Primary_Member_can_be_changed_to_read</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND (ISCHANGED(Access_Level__c) ,  ISPICKVAL(Access_Level__c, &apos;Read Access&apos;) ,  Is_Primary__c )</errorConditionFormula>
+        <errorDisplayField>Access_Level__c</errorDisplayField>
+        <errorMessage>Primary Member Cannot Be Read Access</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Restrict_Primary_from_Same_BU</fullName>
+        <active>false</active>
+        <errorConditionFormula>(ISNEW() &amp;&amp;  CONTAINS( $UserRole.Name , &apos;Dairy&apos;) &amp;&amp;   Is_Primary__c &amp;&amp; NOT((ISBLANK(Account__r.Dairy_Owner_Id__c)))) ||((ISNEW() &amp;&amp;  CONTAINS( $UserRole.Name , &apos;Cocoa&apos;) &amp;&amp;  Is_Primary__c &amp;&amp; NOT((ISBLANK( Account__r.Cocoa_Owner__c ))))) ||
+((ISNEW() &amp;&amp;  CONTAINS( $UserRole.Name , &apos;Spice&apos;) &amp;&amp;  Is_Primary__c &amp;&amp; NOT((ISBLANK( Account__r.Spice_Owner_Id__c ))))) ||
+((ISNEW() &amp;&amp;  CONTAINS( $UserRole.Name , &apos;Edible_Nuts&apos;) &amp;&amp;  Is_Primary__c &amp;&amp; NOT((ISBLANK( Account__r.Edible_Nuts_Owner_Id__c )))))</errorConditionFormula>
+        <errorMessage>Theres an existing Primary Owner assigned for this account</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

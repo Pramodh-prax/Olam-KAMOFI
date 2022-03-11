@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Spice PDI Manager Vietnam</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>Spice_PDI_Vietnam_Head</parentRole>
+</Role>

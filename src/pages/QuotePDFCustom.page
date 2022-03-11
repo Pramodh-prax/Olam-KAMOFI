@@ -1,0 +1,576 @@
+<apex:page renderAs="pdf" 
+           id="thePage" 
+           StandardController="Quote" 
+           extensions="QuotePDFCustomCntl" 
+           contentType="application/pdf"
+           applyBodyTag="false"
+           applyHtmlTag="false"
+           showHeader="false">
+    
+    <head>
+    	<style type="text/css" media="print">
+        @page {
+            size: A4;
+            
+            margin-top: 0.5cm;padding:0px;margin-left: 1cm;
+            @top-left {
+				
+            }
+            @bottom-left {
+                content: "Page " counter(page) " of " counter(pages);
+             }
+            @bottom-right{
+            	content:"Buyer's Initials __________";	
+            }  	   
+        }
+       
+       <!-- div.header-logo {
+            margin:5px;
+            position: running(header-logo);
+        } -->
+        .content{
+            	-fs-table-paginate: paginate;
+            	border-spacing: 0px;
+            	width:100%;
+		}
+         .content td{
+            padding:0;
+            }
+        .tablehead{
+         	background: #999999;
+            border-top: solid 1px #000000;
+            border-right: solid 1px #000000;
+            color: #fff;
+            font : aerial;
+            font-size: 0.8em;
+            font-weight: normal;
+         }
+         .tablehead td p{
+          	color:black;  
+          }
+           .bordernone{
+               border:0;
+            }
+            
+            .page-break {
+            
+            	page-break-after:always;
+
+        	}
+            .table2
+            {
+				position: relative; right:-180px; top:-90px;
+            	border-spacing: 0px;
+            }
+            .table2 td{
+            	padding:0;
+            	border:none;
+            }
+            .header
+            {
+            	
+            
+            }
+            h1{
+            	text-align:center;
+            	position: relative; top: -10px;
+            	font-size:30pt;
+            	
+            }
+            .main{
+            	border-spacing: 0px;
+            }
+
+    </style>
+         
+        <div style="header">
+            <div class="header-logo" style="font-family:Arial,Helvetica,sen-serif;font-size:5pt;color:808080;">
+                <apex:image id="logo" value="{!$Resource.newOfiLogo}" alt="OFI Logo" height="50px" width="140px"/><br/>
+            <span style="font-size:10px;">OLAM SPICES AND VEGETABLE</span><br/>
+            <span style="font-size:10px;">205 E RIVER PARK CIRCLE SUITE 310</span><br/>
+            <span style="font-size:10px;">FRESNO CA 93720-1572 USA</span><br/>
+            </div>
+            <div style="margin-top:-2.5cm;align:center">
+                <h1><strong> QUOTATION </strong></h1>
+            </div>
+        </div>
+	</head>
+     
+	<body style="font:Aerial">
+
+        <p>&nbsp;</p>   
+    	<table class="main" border="1px solid #000;" width="100%"  >
+           
+           <tr>
+             <th COLSPAN="1" style="text-align:center;"> CUSTOMER </th>
+             <th COLSPAN="1" style='border:none;'>  </th>
+             <th COLSPAN="2" style="text-align:center;">  QUOTATION TERMS </th>
+            </tr>
+            <tr>
+                 <td style="vertical-align:top;" rowspan="6">
+                        	<p>{!quote.Account.Name}<br/>
+                            	{!quote.Account.BillingStreet}<br/>
+                            	{!quote.Account.BillingCity}, {!quote.Account.BillingState} {!quote.Account.BillingPostalCode}<br/>
+                            	{!quote.Account.BillingCountry}
+                            </p>
+                		</td> 
+                <td rowspan="6" style='border:none;'></td>
+                <td>QUOTE NUMBER</td>
+                <td>{!quote.Olam_Quote_Number__c}</td>
+            </tr>
+        
+                    <tr>
+                        <td>
+                        	QUOTE EXPIRATION
+                        </td>
+                        <td>
+                            <apex:outputText value="{0,date,dd'.'MM'.'yyyy}" ><apex:param value="{!Today}" /></apex:outputText><apex:outputText rendered="{!IF((quote.ExpirationDate!=null),true,false)}" >&nbsp; to &nbsp;</apex:outputText><apex:outputText value="{0,date,dd'.'MM'.'yyyy}"><apex:param value="{!quote.ExpirationDate}"/></apex:outputText>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>PAYMENT TERMS</td>
+                        <td>{!quote.Payment_Terms__c}</td>
+                    </tr>
+                    <tr>
+                        <td>INCOTERMS</td>
+                        <td>{!quote.Inco_Terms__c}</td>
+                    </tr>
+                    <tr>
+                        <td>CONTRACT PERIOD</td>
+                        <td><apex:outputText value="{0,date,dd'.'MM'.'yyyy}" rendered="{!IF((quote.Contract_End_Date__c!=null),true,false)}"><apex:param value="{!quote.Contract_Start_Date__c}"/> </apex:outputText> <apex:outputText rendered="{!IF((quote.Contract_Start_Date__c!=null && quote.Contract_End_Date__c != null),true,false)}" >&nbsp; to &nbsp;</apex:outputText> <apex:outputText value="{0,date,dd'.'MM'.'yyyy}"><apex:param value="{!quote.Contract_End_Date__c}"/></apex:outputText> <br /></td>
+                    </tr>
+                    <tr>
+                        <td>ACCOUNT MANAGER</td>
+                        <td>{!quote.Opportunity.Owner.Name}</td>
+                    </tr>
+           <!-- <td>
+                <table class="table1" border="1px solid black" height ="50px" width="100%">
+                    <tr>
+                        <td style="vertical-align:top;color: #000000;background:#808080;">
+                        	<p><strong> CUSTOMER </strong></p>
+                    	</td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align:top;">
+                        	<p>{!quote.Account.Name}<br/>
+                            	{!quote.Account.ShippingStreet}<br/>
+                            	{!quote.Account.ShippingCity}, {!quote.Account.ShippingState} {!quote.Account.ShippingPostalCode}<br/>
+                            	{!quote.Account.ShippingCountry}
+                            </p>
+                		</td>
+                    </tr>
+                </table>
+            </td>
+			
+            <td>
+                <table class="table2" style="border:1px solid black;padding-left:2px;" height="100px" width="350px">
+                    <tr>
+                        <td style="vertical-align:top;color: #000000;background:#808080;"><strong> QUOTATION TERMS&nbsp; </strong></td>
+                        <td style="vertical-align:top;color: #000000;background:#808080;"></td>
+                    </tr>
+                    
+                    <tr>
+                    	<td>QUOTE NUMBER</td>
+                        <td>{!quote.Olam_Quote_Number__c}</td>
+                    </tr>
+                    <tr>
+                        <td>
+                        	QUOTE EXPIRATION
+                        </td>
+                        <td>
+                            <apex:outputText value="{0,date,dd'/'MMM'/'yyyy}"><apex:param value="{!quote.ExpirationDate}"/></apex:outputText>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>PAYMENT TERMS</td>
+                        <td>{!quote.Payment_Terms__c}</td>
+                    </tr>
+                    <tr>
+                        <td>INCOTERMS</td>
+                        <td>{!quote.Inco_Terms__c}</td>
+                    </tr>
+                    <tr>
+                        <td>QUOTE EXPIRATION</td>
+                        <td><apex:outputText value="{0,date,dd'/'MMM'/'yyyy}"><apex:param value="{!quote.Contract_Start_Date__c}"/></apex:outputText> <br /></td>
+                    </tr>
+                    <tr>
+                        <td>ACCOUNT MANAGER</td>
+                        <td>{!quote.Opportunity.Owner.Name}</td>
+                    </tr>
+                </table>
+            </td>-->
+	    </table>
+    
+    	<!--<div style="border: 1px solid black; cellPadding:15px;"> 
+         <table border= "1px dotted red" width="100%">
+            <tbody>
+                <tr>
+                    <td>
+                        <p><strong> CUSTOMER </strong></p>
+                    </td>
+                    <td><strong> QUOTATION TERMS&nbsp; </strong></td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>{!quote.Account.Name}<br/>
+                            {!quote.Account.ShippingStreet}<br/>
+                            {!quote.Account.ShippingCity}, {!quote.Account.ShippingState} {!quote.Account.ShippingPostalCode}<br/>
+                            {!quote.Account.ShippingCountry}</P>
+                </td>
+                
+            <td>
+                <p>	<strong> QUOTE NUMBER: </strong> {!quote.Olam_Quote_Number__c} <br /> 
+                    <apex:outputText value="{0,date,dd'/'MMM'/'yyyy}"><strong> QUOTE EXPIRATION: </strong> <apex:param value="{!quote.ExpirationDate}"/></apex:outputText> <br /> 
+                    <strong> PAYMENT TERMS: </strong> {!quote.Payment_Terms__c} <br /> 
+                    <strong> INCOTERMS </strong> : {!quote.Inco_Terms__c} <br /> 
+                    <apex:outputText value="{0,date,dd'/'MMM'/'yyyy}"><strong> QUOTE EXPIRATION: </strong> <apex:param value="{!quote.Contract_Start_Date__c}"/></apex:outputText> <br /> 
+                    <apex:outputText value="{0,date,dd'/'MMM'/'yyyy}"><strong> QUOTE EXPIRATION: </strong> <apex:param value="{!quote.Contract_End_Date__c}"/></apex:outputText> <br /> 
+                    <strong> ACCOUNT MANAGER: </strong> {!quote.Opportunity.Owner.Name}&nbsp;
+                </p>
+            </td>
+        </tr>
+    </tbody>
+    </table>
+            
+    	<!--</div> -->
+        
+    <p>&nbsp;</p>
+    <div style="border: 1px solid black">
+        <table width="100%">
+        <tbody>
+            <tr>
+                <td>
+                    <p>Notes:</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+    <p>&nbsp;</p>
+    
+    <table border= "1px solid #000;" class="content">
+       <!-- <tbody > -->
+            <tr class="tablehead">
+                <td style="text-align:center;">
+                    <p><strong> SI No. </strong></p>
+                </td>
+                <td style="text-align:center;">
+                    <p><strong> Olam Item Code </strong></p>
+                </td>
+                <td style="text-align:center;">
+                    <p><strong> Customer Code </strong></p>
+                </td>
+                <td style="text-align:center;">
+                    <p><strong> Olam Item Description </strong></p>
+                </td>
+                <td style="text-align:center;">
+                    <p><strong> Quote Qty </strong></p>
+                </td>
+                <td style="text-align:center;">
+                    <p><strong> UOM </strong></p>
+                </td>
+                <td style="text-align:center;">
+                    <p><strong> Unit Price </strong></p>
+                </td>
+                <td style="text-align:center;">
+                    <p><strong> Itemized Total </strong></p>
+                </td>
+            </tr>
+            <apex:variable var="rowNo" value="{!0}"/>
+            
+            <apex:repeat value="{!quote.QuoteLineItems}" var="quoteLine">
+                <tr>
+                    <apex:variable var="rowNo" value="{!rowNo+1}"/>    
+                    <td style="text-align:center;">
+                        <p>{!rowNo}</p>
+                    </td>
+                    <td width="16%" style="text-align:center;">
+                        <p>{!quoteLine.Product2.External_Product_Code__c}</p>
+                    </td>
+                    <td style="text-align:center;">
+                        <p>{!quoteLine.Customer_Material_Code__c}</p>
+                    </td>
+                    <td>
+                        <p>{!quoteLine.Product2.Name}</p>
+                    </td>
+                    <td style="text-align:center;">
+                        <p>{!quoteLine.Volume__c}</p>
+                    </td>
+                    <td style="text-align:center;">
+                        <p>{!quoteLine.Unit_Of_Measure__c}</p>
+                    </td>
+                    <td style="text-align:center;">
+                        <p>{!quoteLine.UnitPrice}</p>
+                    </td>
+                    <td style="text-align:center;">
+                        <p>{!quoteLine.Olam_Total_Offer__c}</p>
+                    </td>
+                </tr>
+            </apex:repeat>
+            
+            <tr>
+                <td colspan="7">
+                    <p><strong> Total: </strong></p>
+                </td>
+                <td style="text-align:center;">
+                    <p>{!total}</p>
+                </td>
+            </tr>
+      <!--  </tbody> -->
+    </table>
+    <p>&nbsp;</p>
+    
+	<div style="page-break-after: always"/>
+    <div style="border: 1px solid black">
+        <table>
+        <tbody>
+            <tr>
+                <td>
+                    <p>This quotation is governed by the terms &amp; conditions attached herein and expressly limits acceptance to the terms stated herein, and any additional or different
+                        terms proposed by Buyer are rejected unless expressly agreed to in writing by the seller.<br/>
+                        All orders for any product defined herein must adhere to the minimum order quantity (MOQ) policy.<br/>
+                    Orders are priced based upon Order Ship Date. All Prices include Broker Commissions when applicable.</p>
+                </td>
+            </tr>
+        </tbody>
+    	</table>
+	</div>
+    
+    <p>&nbsp;</p>
+    <p>&nbsp;Accepted for: {!quote.Account.Name} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Accepted for OLAM</p>
+    <p>&nbsp;</p>
+        
+    <table width="100%">
+  
+      <tr>
+        <td>_________________ </td>
+        <td>_________________</td>
+        <td></td>
+        <td>_________________ </td>
+        <td>_________________</td>
+      </tr>
+      <tr>
+        <td>Signature</td>
+        <td>Date</td>
+        <td></td>
+        <td>Signature</td>
+        <td>Date</td>
+      </tr>
+        </table>
+        <p>&nbsp;</p>
+        <table width="100%">
+      <tr>
+        <td>_________________ </td>
+        <td>_________________</td>
+        <td></td>
+        <td>_________________ </td>
+        <td>_________________</td>
+      </tr>
+      <tr>
+        <td>Name(Type or Print)</td>
+        <td>Title</td>
+        <td></td>
+        <td>Name(Type or Print)</td>
+        <td>Title</td>
+      </tr>
+    </table> 
+    <!--
+    <apex:pageBlock >
+    	<p>&nbsp;</p>
+    <p>Accepted for: {!quote.Account.Name} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Accepted for OLAM</p>
+    <p>&nbsp;</p>
+    <p>__________________________ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; __________________________</p>
+    <p>Signature &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Date &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Signature &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Date &nbsp;</p>
+    <p>&nbsp;</p>
+    <p>__________________________ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; __________________________</p>
+    <p>Name(Type or Print) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Date &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Name(Type or Print) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Date &nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>    
+	</apex:pageBlock>
+       --> 
+     
+	
+	<div style="page-break-after: always"/>
+
+   <!--<div Style="border:1px solid black;" class="page-break" > -->
+        <table border="1px solid black" class="content">
+        <tbody>
+            <tr>
+                <td>
+                    <p style="text-align:center"><strong> SUPPLY TERMS AND CONDITIONS </strong></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>These Supply Terms and Conditions (&ldquo;Terms&rdquo;) shall be binding upon Olam West Coast, Inc. dba Olam Spices(&ldquo;Seller&rdquo;) and the
+                        buyer (&ldquo;Buyer&rdquo;) and they shall be applicable to all sales transactions between the Seller and Buyer, and together with invoices,
+                        specifications, order acknowledgements and policies (if/when applicable), shall form the Agreement between the Parties
+                        (&ldquo;Agreement&rdquo;). All deliveries of goods or products (the &ldquo;Products&rdquo;) by Seller to Buyer shall be contingent upon Buyer's
+                        acceptance of these Terms. Based upon these Terms with Buyer, Seller has relied to its detriment that Buyer will fully perform
+                        hereunder by taking positions or making third party commitments with regard to the purchase of the Products to be delivered
+                        hereunder. Herein, Buyer and Seller are each referred to as &ldquo;Party&rdquo; and collectively referred to as &ldquo;Parties.&rdquo;</p>
+                    <p>1. Buyer agrees to purchase all Products subject to these Terms upon executing or otherwise accepting such Terms, even where Buyer elects to not attach these Terms in a response to Seller's estimate or quotation, which can be satisfied by e-mail or formal written signature. No additional terms or conditions, presented by either Party in any miscellaneous or prospective documents, shall supersede these Terms unless formally agreed to in writing by an authorized representative of the Seller. Seller's agents and representatives have no authority to make any oral representations, statements, warranties, conditions or agreements that conflict with these Terms or the terms of the Order Acknowledgement (see below), and such oral representations, statements, warranties, conditions or agreements, if made, shall be null and void.</p>
+                    <p>2. <u>Order Acknowledgement.</u> Once Buyer has provided the aforementioned acceptance of these Terms, Seller will issue to Buyer an Order Acknowledgement consisting of the: (i) product and specification, (ii) price, (iii) payment terms, (iv) quantity, (v) incoterms of sale, (vi) shipment schedule, and (vii) additional notes. The Order Acknowledgement provides the terms of the sale which, in conjunction with these Terms, constitute the legal and binding agreement between the Parties.</p>
+                    <p>3. <u>Payment Terms.</u> The payment terms under these Terms shall be based upon the date of invoice or as otherwise stated on Seller's invoice. When the payment terms call for a payment at a date in the future, it is the intent that the payment is intended to be made by good funds, in bank by the payment due date. Should Buyer's financial strength become unsatisfactory to Seller, Seller may, in its sole discretion, withhold further shipments, require immediate cash payments for past and/or future shipments or require other security satisfactory to Seller before further deliveries shall be made. If Buyer fails to pay Seller in accordance with these Terms, Seller has the right, in addition to any other rights or remedies provided by contract or law, and subject to any right Buyer has by law to correct its default, to declare the entire balance of Buyer's account immediately due and payable or to foreclose any security interest that Seller may have in the Products delivered. If any unpaid balance is referred for collection to any attorney who is not a salaried employee of Seller, Buyer agrees to pay (in addition to all damages otherwise available to Seller), to the extent permitted by law, reasonable attorney fees, whether or not litigation is commenced or prosecuted to final judgment, plus any court costs or expenses incurred by Seller, and any finance charge accrued on any unpaid balance owed by Buyer, all as calculated in accordance with these Terms, until all amounts owed to Seller that are due are under the Agreement, or under any contract, invoice, or otherwise, are paid in full. In the event Seller is required to pay fees, demurrage, or costs with respect to the shipping of the Products sold herein, Buyer hereby agrees to pay all such fees, demurrage, and other costs, including any subsequent undercharge claims, and to indemnify and hold Seller harmless from any claims for payment of any such fees, demurrage, or other costs. Orders for Products requested by Buyer but not described in these Terms may be filled, at Seller's sole discretion, according to Seller's standard price list, until a purchase contract is executed by both Parties. If Buyer fails to pay any invoice amounts due by their respective due dates, Buyer agrees to pay all finance charges on the unpaid balance of all overdue invoices, less any applicable payments and credits, from the date the total amount of each invoice is due and payable at an annual rate of eighteen percent (18%), or the highest applicable and lawful rate on such unpaid balance, whichever is lower. the highest applicable and lawful rate on such unpaid balance, whichever is lower</p>
+                    
+                    <p>4.<u>Shipping and Delivery.</u></p>
+                    
+                    <p>4.1. Unless definite shipping dates appear in the Agreement, Buyer shall provide timely shipping instructions to Seller for
+                    Seller to execute delivery as requested and in a manner that will generally reduce the quantity of Products described
+                    uniformly over the term of the Agreement. Unless otherwise stated in these Terms or any other mutually executed
+                    contract between the Parties, title to the Products and risk of loss shall be defined by the freight terms as evidenced by
+                    the order documents and shipper's issued Bill of Lading. FOB - Origin shall be defined as Buyer assumes title of
+                    Products at the time the Products are placed in the hands of the carrier and FOB - Destination shall be defined as Seller
+                    retains title of the products until Buyer receives the Products at the defined destination.</p>
+                    
+					<p>4.2. Unless otherwise specifically stated in writing, Products will be timely shipped by any public carrier that Seller deems satisfactory. Delivery is not guaranteed to the destination, and title of the Products in transit as well as claims for
+                    shortages or damages in transit are governed by the freight terms as evidenced by the &ldquo;Order Confirmation&rdquo; and shipper
+                    issued &ldquo;Bill of Lading.&rdquo; Buyer may not refuse to receive any lot or portion of Products shipped hereunder for failure of
+                    any other lot or portion of a lot to be delivered or to comply with the Agreement, unless such right of refusal is
+                    expressly provided for on the face hereof.</p>
+
+                    <p>4.3. Buyer shall inspect Products sold hereunder immediately upon receipt of the same at Buyer's facility. Products, once
+                    accepted, may not be returned without prior written approval by Seller and, if Seller provides such approval Buyer
+                    agrees to pay a restocking charge of twenty-five percent (25%) of the invoice price for the returned Products and return
+                    shipping fees are for the account of the Buyer. Acceptance by Buyer of any Products shall constitute a waiver by Buyer
+                    of any claim for damages on account of any delay in delivery of such Products. If the Agreement requires or authorizes
+                    the delivery of Products in separate lots to be separately accepted by Buyer, Buyer may only refuse such portion of such
+                    lot or shipment that fails to comply with the requirements of the Agreement.</p>
+                    <p>UNLESS WRITTEN NOTICE OF REJECTION, SPECIFYING THE GROUNDS THEREFOR, IS RECEIVED BY
+                    SELLER WITHIN TEN (10) DAYS FROM THE DATE OF RECEIPT OF SHIPMENT BY BUYER, SUCH
+                    PRODUCTS SHALL AUTOMATICALLY BE DEEMED ACCEPTED.</p>
+
+                    <p>4.4. Seller reserves the right to pro-rate the quantity of Products described on the face hereof or cancel the Agreement in total in the event of crop failure or shortage, or for any other reason beyond Seller's control. Seller further reserves the right to cancel, based on unordered Products, up to the following percentages of the total contracted pounds: twenty-five
+                    percent (25%) through the first quarter of the term, fifty percent (50%) through the second quarter, seventy-five (75%)
+                    through the third quarter. Seller also reserves the right to limit the quantity shipped per quarter to twenty-five percent
+                    (25%) of the total quantity purchased under the Agreement.</p>
+                   
+                    <p>4.5. Notwithstanding anything to the contrary herein, Buyer hereby agrees to purchase and take from Seller all quantities of the such Products initially contracted for (e.g., in a quotation or order, etc.), or to pay for such Products even if Buyer
+                    elects not to take such Products. If Buyer has not taken Products by the mutually agreed upon timelines, or upon
+                    termination or expiration of the Agreement, Seller shall provide Buyer with an invoice for the remaining Products
+                    which shall act as thirty (30) days' written notice to take the remaining Products. Should Buyer not take the remaining
+                    Products within the 30-day period, Seller may, solely at Seller's option, exercise one of the following options, which
+                    BUYER HEREBY IRREVOCABLY AGREES TO: (i) Seller may destroy such Products, at Buyer's expense, and
+                    provide to Buyer the certification of such destruction; or (ii) Seller may consider the Products irrevocably abandoned by
+                    Buyer, taking full title to such Products, and Buyer shall pay to Seller any costs due for such Products initially
+                    contracted for; or (iii) Seller may consider the Products irrevocably abandoned by Buyer, taking full title to such
+                    Products, forgiving any remaining costs owed to Seller for such Products initially contracted for. Buyers agrees that
+                    ONLY formal written notice of Seller's election to the aforementioned options above (i-iii) shall be binding against the
+                    Parties and verbal or email statements from Buyer's personnel shall not be relied upon by the Parties.</p>
+
+                    <p>5.<u>Buyer's Default.</u>  If Buyer fails to make any payment when due, or fails to perform any other of its obligations under the
+                    Agreement, or if Buyer makes any assignment for the benefit of its creditors, or if a petition under any State or Federal
+                    bankruptcy or insolvency law is filed by or against Buyer, or if a receiver of Buyer's property is appointed, then Buyer shall be in breach of this Agreement, and Seller shall, in addition to any other remedies, have the right to immediately withhold further deliveries and Seller may terminate this Agreement immediately by written notice to Buyer.</p>
+
+                    <p>6. <u>Recall.</u> Buyer has the exclusive right to initiate and direct any recall, market withdrawal, stock recovery, product
+                    correction, or advisory safety communication (a &ldquo;Recall Action&rdquo;) regarding the Products or any product incorporating the
+                    Products. In case a Recall Action is caused solely by defective Products supplied by the Seller, Buyer may direct Seller to, and upon such direction from Buyer with reasonable detail and with reasonable supporting documentation, Seller shall, conduct such Recall Action if Seller reasonably believes that the usage of the Product constitutes a health risk, Seller shall also have the right to request Buyer to initiate a Recall Action that arises from a defect in the Product or other components of the Product solely supplied to the Buyer by the Seller, by written notice to the Buyer. The Parties shall immediately, diligently and in good faith work together to determine the cause of the defect, and the manner, text, and timing of any publicity to be given such matters. Seller shall fully cooperate and take all such steps as are reasonably requested to implement the Recall Action in a timely and complete manner. For Products produced and supplied by Seller to Buyer, Buyer's exclusive remedy, in the event of such a Recall Action of defective Products is for Seller, at its option, to either replace the defective Products or refund the purchase price for the defective Products and pay the reasonable cost of: (i) preparing, printing and mailing a recall notice to inform distributors and customers of the nature of the Recall Action, (ii) freight to replace the defective Products, and (iii) reasonable labor costs and expenses to perform in-field replacement activities, if any, for defective Products. All press or other enquiries relating to a Recall Action shall be dealt with by the Parties together in good faith and no public statement shall be made absent mutual agreement of both Parties.</p>
+                    
+                    <p>7. <u>Confidential Information.</u> All information provided by Seller hereunder, including, but not limited to, the terms and
+                    conditions of the Agreement must be held in confidence by Buyer. This obligation shall survive the termination or expiration of the Agreement.</p>
+                    
+                    <p>8. <u>Limited Warranty.</u> Seller warrants that the Products sold hereunder, as of the date of shipment, shall be fit for human
+                    consumption and not in violation of any U.S. State or Federal laws or regulations, and are not adulterated or misbranded
+                    within the meaning of the Federal Food, Drug and Cosmetic Act, nor are the Products, which may not, under the provisions of that Act, be introduced into interstate commerce. Seller further warrants the Products sold and delivered hereunder will conform to the description set forth in the Agreement. SELLER MAKES NO OTHER WARRANTY, EITHER EXPRESS OR IMPLIED, WITH RESPECT TO THE PRODUCTS DESCRIBED HEREIN, AND EXPRESSLY DISCLAIMS ALL WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE. SELLER SHALL NOT BE LIABLE FOR ANY LOSS OR DAMAGE DIRECTLY OR INDIRECTLY ARISING FROM BUYER'S PURCHASE OR USE OF SUCH PRODUCTS OR FOR ANY CONSEQUENTIAL, INCIDENTAL, EXEMPLARY, PUNITIVE, SPECIAL OR INCIDENTAL DAMAGES ARISING UNDER THE AGREEMENT. SELLER'S TOTAL LIABILITY TO BUYER FOR ANY BREACH OF THIS LIMITED WARRANTY, OR FOR ANY CLAIM THAT THE PRODUCTS
+                    DELIVERED HEREUNDER WERE DEFECTIVE OR NON-CONFORMING, SHALL BE LIMITED TO THE SPECIFIC
+                    INVOICE PRICE OF ANY PRODUCTS SHOWN TO BE DEFECTIVE, NON-CONFORMING, OR IN VIOLATION OF
+                    THE LIMITED WARRANTY PROVIDED HEREIN. ANY CLAIM FOR DAMAGES AS A RESULT OF THE RECEIPT
+                    OF DEFECTIVE OR OTHERWISE NON-CONFORMING PRODUCTS UNDER THIS AGREEMENT MUST BE MADE
+                    BY BUYER THROUGH WRITTEN NOTICE TO SELLER WITHIN THIRTY (30) DAYS FOLLOWING RECEIPT OF
+                        SHIPMENT OF THE PRODUCTS BY BUYER, DESCRIBING THE SPECIFIC DEFECT OR CLAIM ALLEGED.<br/>
+                    FAILURE TO PROVIDE SUCH WRITTEN NOTICE WITHIN THIS TIME PERIOD SHALL BE DEEMED A WAIVER
+                    AND RELEASE OF ANY SUCH CLAIM OR RIGHT OF RECOVERY BY BUYER WITH RESPECT TO ANY SUCH
+                    DEFECTIVE OR NON-CONFORMING PRODUCTS.</p>
+                    
+                    <p>9. <u>Indemnification.</u> Buyer shall be solely responsible for determining the adequacy of the Products sold hereunder for any and all uses to which Buyer shall apply said Products. Subject to the limitations herein (Section 8) Buyer agrees to hold Seller harmless from and against any and all claims arising out of connected with or in any way related to this Buyer's use of the Products and to indemnify Seller against any and all such claims, suits, loss, damage, or other liability which may arise in connection with Buyer's use of the Products covered by the Agreement. Seller agrees to indemnify and defend Buyer from all claims arising from Seller's breach of its warranties hereunder, again subject to the limitations herein (Section 8); except to the extent such claims are caused by the negligence or intentional misconduct of Buyer or its agents or employees and provided Buyer gives notice to Seller of such and does not settle without Seller's consent.</p>
+
+                    <p>10. <u>Title of Products, Security Interest.</u> Notwithstanding any provisions in these Terms or any other conditions (e.g., in
+                    Incoterms 2010 as updated) regarding the passing of title and risk, title to the Products shall remain vested in Seller and shall not pass to Buyer until payment of the price has been received in full by Seller. Full payment of the price shall include, without limitation, the amount of any interest or other sum payable hereunder or in the Order Acknowledgement. Until title to the Products passes to Buyer, the Products shall be subject to the following conditions: (i) Seller shall have the right to retake, sell or otherwise possess and/or dispose of all or any part of the Products, (ii) Seller, Seller's agents and Seller's employees shall have the right, at all times, and without prior notice, to enter any property upon which Seller reasonably believes the Products are stored in order to inspect or remove such Products. Buyer hereby grants Seller a security interest in each and every part of all Products supplied (and any proceeds thereof) for any amounts owing by Buyer to Seller from time to time, and for the full performance by Buyer of all of its obligations to Seller from time to time. To protect Seller's security interest, Buyer authorizes Seller to prepare and file a financing statement (Form UCC-1), or register or otherwise perfect its security interest as permitted by law in any relevant jurisdiction at Seller's sole discretion. On Seller's request, Buyer agrees to promptly provide to Seller all assistance and information (including, but not limited to, signing any documents) as requested by Seller to enable Seller to register or otherwise perfect its security interest with the priority it requires. Buyer waives the right to receive from Seller a copy of any financing statement, financing change statement, or verification statement filed at any time in respect of the security interest granted under these Terms or any renewal or replacement Terms. Buyer shall be entitled to a release or discharge of the security interest granted pursuant to these Terms or any renewal or replacement of these Terms upon Buyer's full performance of these Terms, any Order Acknowledgement, and any related agreement, including, without limitation, full payment, performance, and satisfaction of all amounts owing to Seller under these Terms or any related agreement or any renewal or replacement of these Terms. In the event of any breach of any provision of these Terms or any related agreement, Seller shall have the right to call all obligations hereunder immediately due and payable and shall have all of the rights and remedies afforded a secured party under the California Uniform Commercial Code and all other remedies allowed under applicable law.</p>
+
+                    <p>11. <u>Governing Law and Arbitration.</u> The Agreement, including the Parties rights and obligations, shall be governed in all
+                    respects (including validity, interpretation and effect) by the laws of the State of California, without giving effect to its choice of law principles (specifically including the provisions of the California Uniform Commercial Code). If a dispute arises from or relates to the Agreement, the Parties agree that upon the request of either Party they will try in good faith to resolve the dispute within thirty (30) days of that request, following which either Party may submit the matter to mediation under the Commercial Mediation Rules of the American Arbitration Association. If the mediator determines that the dispute cannot reasonably be resolved by mediation, or if either Party, after good faith participation in the mediation, shall make written demand therefore, then the dispute shall be submitted to binding arbitration, conducted by a single neutral arbitrator, acceptable to both Parties, who shall be either a licensed attorney or retired judge. Such demand will set forth the nature of the matter to be resolved by arbitration. The arbitration will be governed by the provisions of the California Arbitration Act, California Code of Civil Procedure &sect;&sect;1280 et seq. Arbitration will be conducted in Fresno County, California. The Parties shall have all discovery rights and obligations conferred by the California Code of Civil Procedure, including, but not limited to, the right to take depositions without first obtaining leave from the arbitration. The arbitrator shall not have authority to award punitive damages or exemplary damages. If proper notice of any hearing has been given, the arbitrator will have full power to proceed to take evidence or to perform any other acts necessary to arbitrate the matter in the absence of any Party who fails to appear. The arbitrator shall render a written statement of decision setting forth all of the arbitrator's findings of fact and conclusions of law. The prevailing Party shall be entitled, in addition to any judgment or award upon such action or proceeding, to an award for all costs and expenses (including costs of all legal or administrative proceedings or hearings) incurred by such prevailing Party, including, without limitation, all attorneys' fees and related costs incurred by such Party in connection with such actions and proceedings and the enforcement of any such judgment or award and upon prevailing in any appeal relating thereto. All decisions of the arbitrator will be final, binding, and conclusive on all Parties. Judgment may
+                    be entered upon any such decision in accordance with applicable law in any court having jurisdiction thereof. For the
+                    purpose of obtaining such a judgment, the Parties consent to the jurisdiction of all federal and state courts in California, and agreed that venue will lie exclusively in Fresno County, California. THE PARTIES MUTUALLY AND IRREVOCABLY
+                    WAIVE THEIR RIGHT TO TRIAL BY JURY IN ANY SUIT ARISING UNDER OR CONNECTED WITH THE
+                    AGREEMENT.</p>
+
+                    <p>12. <u>Notices.</u> All notices required or permitted under the Agreement or any applicable law shall be in writing, and be either
+                    personally served, sent with return receipt requested by certified mail with postage prepaid, sent by nationally recognized overnight courier service, or sent by telecopy or email with an original to be delivered by nationally recognized overnight courier service. Notice given in the foregoing manner shall be deemed sufficiently given for all purposes hereunder on the date the same was personally delivered, deposited with the United States Postal Service, delivered by a nationally recognized overnight courier service, or sent by telecopy or email, except that any notices of changes of address shall not be effective until actual receipt. If notice is received after 4:30 p.m. or on a Saturday, Sunday or legal holiday it shall be deemed received on the next business day. Notices shall be sent to Buyer or Seller, at the address on the face hereof, or at their principal place
+                    of business, and, in any event, with copies to:</p>
+                    
+                    <p>Olam West Coast, Inc., d.b.a. Olam Spices<br/>
+                    205 E. River Park Circle, Suite 310<br/>
+                    Fresno, California 93720<br/>
+                    Attn: Director of Legal<br/>
+                    Attn: VP of Sales</p>
+                    
+                    <p>13.<u>Miscellaneous.</u></p>
+                    
+                    <p>13.1. <u>Entire Agreement.</u> The Agreement incorporates all the understandings of the Parties with respect to the matters
+                    contained herein and supersede all prior agreements, negotiations or communications, whether oral, written, or implied
+                    concerning the subject matter of this Agreement. The Agreement has been negotiated equally by both Parties, and the
+                    Agreement shall not be interpreted against one Party or the other. No other terms of any miscellaneous Buyer documents shall be incorporated into these Terms.</p>
+                    
+                    <p>13.2. <u>Severability.</u> Whenever possible, each provision of the Agreement or subsequent written contracts executed
+                    pursuant to the Agreement shall be interpreted in such a manner as to be effective and valid under applicable law, but if
+                    any provision of the Agreement or any invoice or contract related hereto shall be prohibited by or invalid under such
+                    law, such provision shall be ineffective to the extent of such prohibition or invalidity, without invalidating the remainder
+                    of such provision or the remaining provisions of the Agreement or any invoice or contract related hereto. In the event of
+                    any discrepancy between the Terms and any invoice or other agreement between the parties, these Terms shall control.</p>
+                    
+                    <p>13.3. <u>Force Majeure.</u> The Seller shall not be liable for any failure or delay of delivery hereunder, where such failure or
+                    delay has been occasioned by fire, floods, earthquakes, embargo, acts of terrorism, strikes, wars (declared or not),
+                    accidents, acts of God, crop failure or crop shortage, strikes or labor disturbances, voluntary or involuntary compliance
+                    with any valid or invalid law, or regulation of any governmental agency or authority, lack of transportation facilities, or
+                    other causes beyond the control of Seller. In the case where shipment is delayed by the above causes, Seller shall not be relieved from making shipment of or Buyer from accepting delivery at the agreed price, when the causes of such delay are removed.</p>
+
+                    <p>13.4. <u>Assignment.</u> Buyer may not assign, convey or transfer the Agreement or any interest herein or undertake any
+                    transaction or series of transactions which would result in a transfer of the Agreement or any interest herein, or
+                    sublicense or assign any rights or obligations hereunder, or delegate or subcontract performance of any obligations
+                    hereunder, in whole or in part, to any third party or parties, without the prior written consent of Seller. Any attempt to
+                    do any act prohibited herein shall be void and shall, at Seller's option have the effect of terminating the Agreement
+                    effective immediately upon Seller's giving Buyer notice of such termination. The above prohibition against the
+                    assignment or transfer of the Agreement, or any part hereof, shall include a prohibition against the sale of (a) a
+                    controlling interest in the stock of Buyer or any entity which, either indirectly or directly, owns or controls Buyer or (b)
+                    all, or substantially all, of Buyer's assets.</p>
+
+                    <p>13.5. <u>No Waiver.</u> No waiver of any breach of the Agreement shall be deemed to apply to any succeeding
+                    breach of the provision or of any other provision of the Agreement. No failure to exercise or delay in exercising on the
+                   part of any of the Parties hereto any right, power or privilege hereunder shall operate as a waiver thereof nor shall any
+                    single or partial exercise of any right, power or privilege preclude any other or further exercise thereof or the exercise of
+                    any other right, power or privilege.</p>
+                    
+                    <p>13.6. <u>Amendment.</u> No provisions of the Agreement or any related agreement may be modified in any manner
+                    whatsoever except by an amendment in writing signed by a duly authorized representative of both Parties. The rights
+                    and remedies provided in the Agreement are cumulative and not exclusive of any rights or remedies otherwise available
+                    (whether at law or in equity) to the parties hereto.</p>
+                    
+                    <p>13.7. <u>Attorney's Fees.</u> In the event of any controversy, claim, or dispute between the Parties arising out of or relating to the Products, the Agreement, or any related agreement, or the breach thereof, the prevailing party shall be entitled to recover from the other party reasonable expenses, attorneys', paralegals', and other professionals' fees and costs.</p>
+                    
+                  
+                   
+                    <p>13.8. <u>No Additional Rights.</u> Nothing in the Agreement gives Buyer any right, title, or interest in or to any of Seller's
+                    assets or rights other than the Products.</p>
+                  
+                    <p>13.9. <u>Headings.</u> Headings at the beginning of each numbered Section of the Agreement are solely for the
+                    convenience of the Parties and are not a part of the Agreement.</p>
+                    
+                    <p>13.10. <u>Authority.</u> Buyer represents and warrants that it has the full authority to purchase the Products and to carry out
+                    the obligations under the Agreement. Buyer hereby agrees that, for purposes of enforcing the Agreement, and any
+                    related terms and conditions, Seller may rely on the authority of any agent or employee of Buyer that signs invoices or
+                    documents on behalf of Buyer.</p>
+                   
+                    <p>13.11. <u>Broker Agreement.</u> If Buyer is associated to a broker, a separate Industrial Brokerage Agreement must be in
+                    place between the Broker and the Seller. All sales and agreements of sales of Products contracted, as stated on the front side of these Terms, are not guaranteed to be paid commission upon invoice of Products.</p>
+                </td>
+              </tr>
+        </tbody>
+    </table>
+ <!--</div>-->
+
+    <p>&nbsp;</p>    
+</body>
+
+
+</apex:page>

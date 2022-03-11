@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>AccountTeamCannotAddCrossBU</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AccountTeamCannotAddCrossBU</shortDescription>
+        <value>You cannot add a user from another BU to account teams.</value>
+    </labels>
+    <labels>
+        <fullName>AccountTeamLoggedInUserRoleRequired</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AccountTeamLoggedInUserRoleRequired</shortDescription>
+        <value>Please make sure that your user record has a role set.</value>
+    </labels>
+    <labels>
+        <fullName>AccountTeamOnlyOnePrimaryAllowed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AccountTeamOnlyOnePrimaryAllowed</shortDescription>
+        <value>A primary member already exists. You cannot add another user as a primary</value>
+    </labels>
+    <labels>
+        <fullName>AccountTeamOnlyPrimaryCanAddOtherUsers</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AccountTeamOnlyPrimaryCanAddOtherUsers</shortDescription>
+        <value>Only primary team member can add other users to account teams</value>
+    </labels>
+    <labels>
+        <fullName>AccountTeamUserAlreadyExists</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AccountTeamUserAlreadyExists</shortDescription>
+        <value>The user is already part of the account teams</value>
+    </labels>
+    <labels>
+        <fullName>Automated_Process</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Automated Process</shortDescription>
+        <value>Automated Process</value>
+    </labels>
+    <labels>
+        <fullName>Cocoa_Product_Family</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cocoa Product Family</shortDescription>
+        <value>Cocoa</value>
+    </labels>
+    <labels>
+        <fullName>CustomerOverViewSectionFieldSetName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CustomerOverViewSectionFieldSetName</shortDescription>
+        <value>CustomerOverViewSectionFieldSet</value>
+    </labels>
+    <labels>
+        <fullName>Defend_Record_Type_ID</fullName>
+        <categories>Record Type ID</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Defend Record Type ID</shortDescription>
+        <value>0122v000001eRklAAE</value>
+    </labels>
+    <labels>
+        <fullName>DevOrDefendOpptyHaveOneLineItem</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DevOrDefendOpptyHaveOneLineItem</shortDescription>
+        <value>Develop/ Defend Opportunities cannot have more than one product.</value>
+    </labels>
+    <labels>
+        <fullName>Develop_Record_Type_ID</fullName>
+        <categories>Record Type ID</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Develop Record Type ID</shortDescription>
+        <value>0122v000001eRkmAAE</value>
+    </labels>
+    <labels>
+        <fullName>FileUploadValidation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FileUploadValidation</shortDescription>
+        <value>Please Upload the Spec document to the Opportunity.</value>
+    </labels>
+    <labels>
+        <fullName>Integration_user_id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Integration user id</shortDescription>
+        <value>0052v00000hOrxRAAS</value>
+    </labels>
+    <labels>
+        <fullName>Is_offered_by_Olam</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Is offered by Olam?</shortDescription>
+        <value>Is offered by Olam?</value>
+    </labels>
+    <labels>
+        <fullName>KAM_AccountPlan_Create_Errror_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_AccountPlan_Create_Errror_Message</shortDescription>
+        <value>Each year can have only one account plan for each plan type</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Account_Overview_StakeHoldersTree_Empty_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Account_Overview_StakeHoldersTree_Empty_Message</shortDescription>
+        <value>No contacts found</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Account_Team_Table_Header_Account</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Account_Team_Table_Header_Account</shortDescription>
+        <value>Account</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Account_Team_Table_Header_Business_Unit</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Account_Team_Table_Header_Business_Unit</shortDescription>
+        <value>Business Unit</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Account_Team_Table_Header_Is_Primary</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Account_Team_Table_Header_Is_Primary</shortDescription>
+        <value>Primary</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Account_Team_Table_Header_Role</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Account_Team_Table_Header_Role</shortDescription>
+        <value>Role</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Account_Team_Table_Header_Team_Member</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Account_Team_Table_Header_Team_Member</shortDescription>
+        <value>Team Member</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Action_Plan_Section_Develop_Action</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Action_Plan_Section_Develop_Action</shortDescription>
+        <value>Development Opportunities</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Action_Plan_Section_Present_Action</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Action_Plan_Section_Present_Action</shortDescription>
+        <value>Presentation Opportunities</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Action_Plan_Section_Sales_Action</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Action_Plan_Section_Sales_Action</shortDescription>
+        <value>Sales Opportunities</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Action_Plan_Section_Service_Action</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Action_Plan_Section_Service_Action</shortDescription>
+        <value>Service Opportunities</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Action_Plan_Section_Service_and_Present_Action</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Action_Plan_Section_Service_and_Present_Action</shortDescription>
+        <value>Service &amp; Presentation Opportunities</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Action_Plan_Table_Header_Account_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Action_Plan_Table_Header_Account_Name</shortDescription>
+        <value>Account</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Action_Plan_Table_Header_Category</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Action_Plan_Table_Header_Category</shortDescription>
+        <value>Category</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Action_Plan_Table_Header_Created_Date</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Action_Plan_Table_Header_Created_Date</shortDescription>
+        <value>Created Date</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Action_Plan_Table_Header_Estimated_Volume</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Action_Plan_Table_Header_Estimated_Volume</shortDescription>
+        <value>Estimated Volume</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Action_Plan_Table_Header_Last_ModifiedDate</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Action_Plan_Table_Header_Last_ModifiedDate</shortDescription>
+        <value>LastModified Date</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Action_Plan_Table_Header_Oppty_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Action_Plan_Table_Header_Oppty_Name</shortDescription>
+        <value>Opportunity Name</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Action_Plan_Table_Header_Owner</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Action_Plan_Table_Header_Owner</shortDescription>
+        <value>Owner</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Action_Plan_Table_Header_Product</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Action_Plan_Table_Header_Product</shortDescription>
+        <value>Product</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Action_Plan_Table_Header_Sample_Accepted</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Action_Plan_Table_Header_Sample_Accepted</shortDescription>
+        <value>Samples Accepted</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Action_Plan_Table_Header_Sample_Sent</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Action_Plan_Table_Header_Sample_Sent</shortDescription>
+        <value>Samples Sent</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Action_Plan_Table_Header_Sample_Sent_Date</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Action_Plan_Table_Header_Sample_Sent_Date</shortDescription>
+        <value>Sample Sent Date</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Action_Plan_Table_Header_Sampling_Status</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Action_Plan_Table_Header_Sampling_Status</shortDescription>
+        <value>Sampling Status</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Action_Plan_Table_Header_Stage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Action_Plan_Table_Header_Stage</shortDescription>
+        <value>Stage</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Approval_Request_Manager_Unassigned_Error_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Approval_Request_Manager_Unassigned_Error_Message</shortDescription>
+        <value>Please contact your administrator to associate yourself to a Manager.</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Btn_Label_Add_Edit_Budget</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Btn_Label_Add_Edit_Budget</shortDescription>
+        <value>Add / Edit Budget</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Btn_Label_Reques_Approval_For_Edit_Budget</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Btn_Label_Reques_Approval_For_Edit_Budget</shortDescription>
+        <value>Request for Edit</value>
+    </labels>
+    <labels>
+        <fullName>KAM_BudgetVsActualsYear</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_BudgetVsActualsYear</shortDescription>
+        <value>*Budget vs Actuals exist for the given year.</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Budget_Creation_Modal_Header</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Budget_Creation_Modal_Header</shortDescription>
+        <value>Budgets</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Budget_Mandatory_Field_Error_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Budget_Mandatory_Field_Error_Message</shortDescription>
+        <value>Please fill mandatory fields : [ {0} ]</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Budget_Plan_Approval_Waiting_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Budget_Plan_Approval_Waiting_Message</shortDescription>
+        <value>* Your request for modifying the budget is sent to your manager. It’s currently in pending state.</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Budget_Plan_Draft_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Budget_Plan_Draft_Message</shortDescription>
+        <value>* This budget in draft state</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Budget_Product_Cat_SubCat_already_Choosen</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Budget_Product_Cat_SubCat_already_Choosen</shortDescription>
+        <value>This category-subcategory already budgeted</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Budget_Table_Btn_Add</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Budget_Table_Btn_Add</shortDescription>
+        <value>Add</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Budget_Table_Btn_Cancel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Budget_Table_Btn_Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Budget_Table_Btn_Reset</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Budget_Table_Btn_Reset</shortDescription>
+        <value>Reset</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Budget_Table_Btn_Update</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Budget_Table_Btn_Update</shortDescription>
+        <value>Update</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Budget_Table_Header_Account</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Budget_Table_Header_Account</shortDescription>
+        <value>Account</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Budget_Table_Header_Achieved</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Budget_Table_Header_Achieved</shortDescription>
+        <value>Achieved %</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Budget_Table_Header_Actuals</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Budget_Table_Header_Actuals</shortDescription>
+        <value>Actuals</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Budget_Table_Header_Budget</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Budget_Table_Header_Budget</shortDescription>
+        <value>Budget</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Budget_Table_Header_Category</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Budget_Table_Header_Category</shortDescription>
+        <value>Category</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Budget_Table_Header_Edit</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Budget_Table_Header_Edit</shortDescription>
+        <value>Edit</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Budget_Table_Header_Sub_Category</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Budget_Table_Header_Sub_Category</shortDescription>
+        <value>Sub Category</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Budget_Table_Header_Sub_Category_2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Budget_Table_Header_Sub_Category_2</shortDescription>
+        <value>Sub Category2</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Budget_Table_Header_Total_Consumption</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Budget_Table_Header_Total_Consumption</shortDescription>
+        <value>Total Consumption</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Budget_Table_Header_Total_Volume</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Budget_Table_Header_Total_Volume</shortDescription>
+        <value>Offered volume</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Budget_Table_Header_Volume</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Budget_Table_Header_Volume</shortDescription>
+        <value>Volume</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Budget_Table_Header_Wallet_Share</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Budget_Table_Header_Wallet_Share</shortDescription>
+        <value>Wallet Share %</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Budget_Table_Header_Won_Volume</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Budget_Table_Header_Won_Volume</shortDescription>
+        <value>Won volume</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Comments_Section_Header</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Comments_Section_Header</shortDescription>
+        <value>Comments</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Customer_Group_Empty_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Customer_Group_Empty_Message</shortDescription>
+        <value>Customer group is blank, Group Account Plans can&apos;t be created.</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Default_Num_Records_To_Be_Displayed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Default_Num_Records_To_Be_Displayed</shortDescription>
+        <value>4</value>
+    </labels>
+    <labels>
+        <fullName>KAM_EnagagementPlanYear</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_EnagagementPlanYear</shortDescription>
+        <value>*EngagementPlan exist for the given year.</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Eng_Plan_Btn_Add_Or_Edit_Engagaement</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Eng_Plan_Btn_Add_Or_Edit_Engagaement</shortDescription>
+        <value>Add / Edit Engagement</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Eng_Plan_Btn_Request_For_Edit_Engagaement</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Eng_Plan_Btn_Request_For_Edit_Engagaement</shortDescription>
+        <value>Request for Edit</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Eng_Plan_Table_Header_Actuals_vs_Planned</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Eng_Plan_Table_Header_Actuals_vs_Planned</shortDescription>
+        <value>Actual / Planned</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Eng_Plan_Table_Header_Frequency</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Eng_Plan_Table_Header_Frequency</shortDescription>
+        <value>Frequency</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Eng_Plan_Table_Header_Interaction_Type</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Eng_Plan_Table_Header_Interaction_Type</shortDescription>
+        <value>Interaction Type</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Eng_Plan_Table_Header_Last_Engagement</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Eng_Plan_Table_Header_Last_Engagement</shortDescription>
+        <value>Last Engagement</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Eng_Plan_Table_Header_Members</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Eng_Plan_Table_Header_Members</shortDescription>
+        <value>Members</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Eng_Plan_Table_Header_Planned</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Eng_Plan_Table_Header_Planned</shortDescription>
+        <value>Planned</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Engagement_Plan_Approval_Waiting_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Engagement_Plan_Approval_Waiting_Message</shortDescription>
+        <value>* Your request for modifying the plan is sent to your manager. It’s currently in pending state.</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Engagement_Plan_Draft_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Engagement_Plan_Draft_Message</shortDescription>
+        <value>* This engagement in draft state</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Engagement_Plan_Table_Header</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Engagement_Plan_Table_Header</shortDescription>
+        <value>Engagement Plans</value>
+    </labels>
+    <labels>
+        <fullName>KAM_IS_DEV_ERROR_TOAST_ENABLED</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_IS_DEV_ERROR_TOAST_ENABLED</shortDescription>
+        <value>no</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Invalid_Account_Plan_Detail_Error_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Invalid_Account_Plan_Detail_Error_Message</shortDescription>
+        <value>Invalid account plan details / Invalid customer group!</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Lookup_Min_Record_Limit</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Lookup_Min_Record_Limit</shortDescription>
+        <value>5</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Modal_Btn_Cancel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Modal_Btn_Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Modal_Btn_Save_And_Lock</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Modal_Btn_Save_And_Lock</shortDescription>
+        <value>Save &amp; Lock</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Modal_Btn_Save_As_Draft</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Modal_Btn_Save_As_Draft</shortDescription>
+        <value>Save as Draft</value>
+    </labels>
+    <labels>
+        <fullName>KAM_No_Data_available_in_table</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_No_Data_available_in_table</shortDescription>
+        <value>No data available in the table</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Plan_Approval_Waiting_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Plan_Approval_Waiting_Message</shortDescription>
+        <value>Your request for modifying the plan is in pending state. Please wait for sometime to get it approved.</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Stake_Holder_Table_Header_Account</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Stake_Holder_Table_Header_Account</shortDescription>
+        <value>Account</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Stake_Holder_Table_Header_Email</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Stake_Holder_Table_Header_Email</shortDescription>
+        <value>Email</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Stake_Holder_Table_Header_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Stake_Holder_Table_Header_Name</shortDescription>
+        <value>Name</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Stake_Holder_Table_Header_Owner</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Stake_Holder_Table_Header_Owner</shortDescription>
+        <value>Owner</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Stake_Holder_Table_Header_Reports_To</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Stake_Holder_Table_Header_Reports_To</shortDescription>
+        <value>Reports To</value>
+    </labels>
+    <labels>
+        <fullName>KAM_Stake_Holder_Table_Header_Title</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_Stake_Holder_Table_Header_Title</shortDescription>
+        <value>Title</value>
+    </labels>
+    <labels>
+        <fullName>KAM_UOM_Label</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_UOM_Label</shortDescription>
+        <value>Unit of measure</value>
+    </labels>
+    <labels>
+        <fullName>KAM_UOM_Place_Holder</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_UOM_Place_Holder</shortDescription>
+        <value>Select Unit of measure</value>
+    </labels>
+    <labels>
+        <fullName>KAM_User_Unassigned_BU_Error_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>KAM_User_Unassigned_BU_Error_Message</shortDescription>
+        <value>Contact your system administrator, to assign yourself to a Business unit.</value>
+    </labels>
+    <labels>
+        <fullName>New_Opportunity_Notification</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>New Opportunity Notification</shortDescription>
+        <value>A New opportunity has been created</value>
+    </labels>
+    <labels>
+        <fullName>OFI_All_Price_Book</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OFI All Price Book</shortDescription>
+        <value>01s5i000000kFcQAAU</value>
+    </labels>
+    <labels>
+        <fullName>OFI_OpportunityField_Create_Error_Msg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OFI_OpportunityBU_Create_Error_Msg</shortDescription>
+        <value>Please select correct Business Unit</value>
+    </labels>
+    <labels>
+        <fullName>OFI_Opportunity_Create_Error_Msg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OFI_Opportunity_Create_Error_Msg</shortDescription>
+        <value>You don&apos;t have access to create/update this BU opportunity</value>
+    </labels>
+    <labels>
+        <fullName>OFI_QuoteField_Create_Error_Msg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OFI QuoteField Create Error Msg</shortDescription>
+        <value>Please select correct Business Unit</value>
+    </labels>
+    <labels>
+        <fullName>OFI_Quote_Create_Error_Msg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OFI Quote Create Error Msg</shortDescription>
+        <value>You have no access to create quote</value>
+    </labels>
+    <labels>
+        <fullName>Olam_Add_PrimaryContact</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Olam Add PrimaryContact</shortDescription>
+        <value>Please ensure you add a Primary Contact in Contact Roles before adding the products.</value>
+    </labels>
+    <labels>
+        <fullName>Olam_Cocoa_Pricebook</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Olam Cocoa Pricebook</shortDescription>
+        <value>01s2v00000N70o3AAB</value>
+    </labels>
+    <labels>
+        <fullName>Olam_Dairy_Pricebook</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Olam Dairy Pricebook</shortDescription>
+        <value>01s2v00000N70o8AAB</value>
+    </labels>
+    <labels>
+        <fullName>Olam_Edible_Nuts_PriceBook</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Olam Edible Nuts PriceBook</shortDescription>
+        <value>01s2v00000NKBcfAAH</value>
+    </labels>
+    <labels>
+        <fullName>Olam_Material_Code</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Olam Material Code</shortDescription>
+        <value>Olam Material Code</value>
+    </labels>
+    <labels>
+        <fullName>Olam_Notification_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Olam Notification ID</shortDescription>
+        <value>0ML2v000000KzIwGAK</value>
+    </labels>
+    <labels>
+        <fullName>Olam_Spices_PriceBook</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Olam Spices PriceBook</shortDescription>
+        <value>01s2v00000NKBcaAAH</value>
+    </labels>
+    <labels>
+        <fullName>Olam_Standard_Pricebooj</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Olam Standard Pricebook</shortDescription>
+        <value>01s2v00000Mq2wRAAR</value>
+    </labels>
+    <labels>
+        <fullName>Olam_URL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Olam URL</shortDescription>
+        <value>https://olamuat--olamcrmuat.lightning.force.com/lightning/o/Opportunity</value>
+    </labels>
+    <labels>
+        <fullName>OnlyAccountTeamsCanAddContactErrorMessage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OnlyAccountTeamsCanAddContactErrorMessage</shortDescription>
+        <value>Only account team members are allowed to create contacts.</value>
+    </labels>
+    <labels>
+        <fullName>OppDocumentRelatedListUrl</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OppDocumentRelatedListUrl</shortDescription>
+        <value>https://olam.lightning.force.com/lightning/r/Opportunity/&lt;&lt;OPPID&gt;&gt;/related/AttachedContentDocuments/view</value>
+    </labels>
+    <labels>
+        <fullName>Opportunity_Status_Change</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity Status Change</shortDescription>
+        <value>Status of the Opportunity is Changed</value>
+    </labels>
+    <labels>
+        <fullName>PLBS_Packaging_Configuration_InCharge_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PLBS Packaging Configuration InCharge ID</shortDescription>
+        <value>0055i0000011qkXAAQ</value>
+    </labels>
+    <labels>
+        <fullName>Product_Family</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Product Family</shortDescription>
+        <value>Product Family</value>
+    </labels>
+    <labels>
+        <fullName>ProfilesAllowedToCreateContacts</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ProfilesAllowedToCreateContacts</shortDescription>
+        <value>System Administrator;Edible Nuts Vietnam PLBS:Edible Nuts Vietnam PKG:Edible Nuts Vietnam R&amp;D</value>
+    </labels>
+    <labels>
+        <fullName>Sampling_Status_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sampling Status Message</shortDescription>
+        <value>New Samples sent to customers. Kindly followup</value>
+    </labels>
+    <labels>
+        <fullName>UserMustHaveARole</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UserMustHaveARole</shortDescription>
+        <value>Please make sure that a role is assigned to the user before adding to account teams.</value>
+    </labels>
+</CustomLabels>

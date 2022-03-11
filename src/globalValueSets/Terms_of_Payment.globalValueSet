@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>SG01-ADVANCE PAYMENTS</fullName>
+        <default>false</default>
+        <label>SG01-ADVANCE PAYMENTS</label>
+    </customValue>
+    <customValue>
+        <fullName>SG02-CASH AGAINST DOCUMENTS</fullName>
+        <default>false</default>
+        <label>SG02-CASH AGAINST DOCUMENTS</label>
+    </customValue>
+    <customValue>
+        <fullName>SG03-DOCUMENTS AGAINST BL</fullName>
+        <default>false</default>
+        <label>SG03-DOCUMENTS AGAINST BL</label>
+    </customValue>
+    <customValue>
+        <fullName>SG04-DOCUMENTS AGAINST PAYMENT</fullName>
+        <default>false</default>
+        <label>SG04-DOCUMENTS AGAINST PAYMENT</label>
+    </customValue>
+    <customValue>
+        <fullName>SG05-IN TRUST</fullName>
+        <default>false</default>
+        <label>SG05-IN TRUST</label>
+    </customValue>
+    <customValue>
+        <fullName>SG06-LETTER OF CREDIT</fullName>
+        <default>false</default>
+        <label>SG06-LETTER OF CREDIT</label>
+    </customValue>
+    <customValue>
+        <fullName>SG07-PAYMENT AGAINST COPY DOCUMENTS</fullName>
+        <default>false</default>
+        <label>SG07-PAYMENT AGAINST COPY DOCUMENTS</label>
+    </customValue>
+    <customValue>
+        <fullName>SG08-PAYMENT AGAINST DOCUMENTS IN TRUST</fullName>
+        <default>false</default>
+        <label>SG08-PAYMENT AGAINST DOCUMENTS IN TRUST</label>
+    </customValue>
+    <customValue>
+        <fullName>SG09-PAYMENT AGAINST DOCUMENTS THROUGH BANKS</fullName>
+        <default>false</default>
+        <label>SG09-PAYMENT AGAINST DOCUMENTS THROUGH BANKS</label>
+    </customValue>
+    <customValue>
+        <fullName>SG10-PAYMENT AGAINST INVOICE</fullName>
+        <default>false</default>
+        <label>SG10-PAYMENT AGAINST INVOICE</label>
+    </customValue>
+    <customValue>
+        <fullName>SG11-PREPAYMENT</fullName>
+        <default>false</default>
+        <label>SG11-PREPAYMENT</label>
+    </customValue>
+    <customValue>
+        <fullName>SG12-UPON DELIVERY</fullName>
+        <default>false</default>
+        <label>SG12-UPON DELIVERY</label>
+    </customValue>
+    <customValue>
+        <fullName>SG13-DOCUMENT AGAINST ACCEPTANCE</fullName>
+        <default>false</default>
+        <label>SG13-DOCUMENT AGAINST ACCEPTANCE</label>
+    </customValue>
+    <customValue>
+        <fullName>ZS11-CASH AGAINST DOCUMENTS AT SIGHT</fullName>
+        <default>false</default>
+        <label>ZS11-CASH AGAINST DOCUMENTS AT SIGHT</label>
+    </customValue>
+    <customValue>
+        <fullName>ZD60-60 Days from Date of Invoice</fullName>
+        <default>false</default>
+        <label>ZD60-60 Days from Date of Invoice</label>
+    </customValue>
+    <customValue>
+        <fullName>Z030-100% Cash Against Documents</fullName>
+        <default>false</default>
+        <label>Z030-100% Cash Against Documents</label>
+    </customValue>
+    <customValue>
+        <fullName>Z001-Pay immediately w/o deductions</fullName>
+        <default>false</default>
+        <label>Z001-Pay immediately w/o deductions</label>
+    </customValue>
+    <customValue>
+        <fullName>ZS13-IN TRUST</fullName>
+        <default>false</default>
+        <label>ZS13-IN TRUST</label>
+    </customValue>
+    <customValue>
+        <fullName>0001-Payable immediately Due net</fullName>
+        <default>false</default>
+        <label>0001-Payable immediately Due net</label>
+    </customValue>
+    <customValue>
+        <fullName>ZD30-30 Days from Date of Invoice</fullName>
+        <default>false</default>
+        <label>ZD30-30 Days from Date of Invoice</label>
+    </customValue>
+    <customValue>
+        <fullName>Z009-Cash against Documents at sight</fullName>
+        <default>false</default>
+        <label>Z009-Cash against Documents at sight</label>
+    </customValue>
+    <customValue>
+        <fullName>Z047-Documentst Against Payment</fullName>
+        <default>false</default>
+        <label>Z047-Documentst Against Payment</label>
+    </customValue>
+    <customValue>
+        <fullName>Z008-Upon Delivery</fullName>
+        <default>false</default>
+        <label>Z008-Upon Delivery</label>
+    </customValue>
+    <customValue>
+        <fullName>ZS02-LETTER OF CREDIT ON SIGHT (Confirmed)</fullName>
+        <default>false</default>
+        <label>ZS02-LETTER OF CREDIT ON SIGHT (Confirmed)</label>
+    </customValue>
+    <customValue>
+        <fullName>ZS17-USANCE LC(Confirmed)</fullName>
+        <default>false</default>
+        <label>ZS17-USANCE LC(Confirmed)</label>
+    </customValue>
+    <customValue>
+        <fullName>ZS14-UPON DELIVERY</fullName>
+        <default>false</default>
+        <label>ZS14-UPON DELIVERY</label>
+    </customValue>
+    <customValue>
+        <fullName>ZS10-DOCUMENTS AGAINST PAYMENT</fullName>
+        <default>false</default>
+        <label>ZS10-DOCUMENTS AGAINST PAYMENT</label>
+    </customValue>
+    <customValue>
+        <fullName>ZS09-USANCELC(Confirmed)</fullName>
+        <default>false</default>
+        <label>ZS09-USANCELC(Confirmed)</label>
+    </customValue>
+    <customValue>
+        <fullName>ZS03-LETTER OF CREDIT AT SIGHT(Unconfirmed)</fullName>
+        <default>false</default>
+        <label>ZS03-LETTER OF CREDIT AT SIGHT(Unconfirmed)</label>
+    </customValue>
+    <customValue>
+        <fullName>ZS01-PRE PAYMENT</fullName>
+        <default>false</default>
+        <label>ZS01-PRE PAYMENT</label>
+    </customValue>
+    <customValue>
+        <fullName>Z007-30 Days from Date of Invoice</fullName>
+        <default>false</default>
+        <label>Z007-30 Days from Date of Invoice</label>
+    </customValue>
+    <customValue>
+        <fullName>Z180-Sales Term - 180 Days from Date of Invoice</fullName>
+        <default>false</default>
+        <label>Z180-Sales Term - 180 Days from Date of Invoice</label>
+    </customValue>
+    <masterLabel>Terms of Payment</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>CFR</fullName>
+        <default>false</default>
+        <label>CFR - Costs and freight</label>
+    </customValue>
+    <customValue>
+        <fullName>CIF</fullName>
+        <default>false</default>
+        <label>CIF - Costs, insurance &amp; freight</label>
+    </customValue>
+    <customValue>
+        <fullName>CIP</fullName>
+        <default>false</default>
+        <label>CIP - Carriage and insurance paid</label>
+    </customValue>
+    <customValue>
+        <fullName>CPT</fullName>
+        <default>false</default>
+        <label>CPT - Carriage paid to</label>
+    </customValue>
+    <customValue>
+        <fullName>DAP</fullName>
+        <default>false</default>
+        <label>DAP - Delivered At Place</label>
+    </customValue>
+    <customValue>
+        <fullName>DDP</fullName>
+        <default>false</default>
+        <label>DDP - Delivered Duty Paid</label>
+    </customValue>
+    <customValue>
+        <fullName>DPU</fullName>
+        <default>false</default>
+        <label>DPU - Delivered At Place Unloaded</label>
+    </customValue>
+    <customValue>
+        <fullName>EXW</fullName>
+        <default>false</default>
+        <label>EXW - Ex Works</label>
+    </customValue>
+    <customValue>
+        <fullName>FAS</fullName>
+        <default>false</default>
+        <label>FAS - Free Along Sideship</label>
+    </customValue>
+    <customValue>
+        <fullName>FCA</fullName>
+        <default>false</default>
+        <label>FCA - Free Carrier</label>
+    </customValue>
+    <customValue>
+        <fullName>FOB</fullName>
+        <default>false</default>
+        <label>FOB - Free On Board</label>
+    </customValue>
+    <customValue>
+        <fullName>Instore</fullName>
+        <default>false</default>
+        <label>Instore</label>
+    </customValue>
+    <masterLabel>Term</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

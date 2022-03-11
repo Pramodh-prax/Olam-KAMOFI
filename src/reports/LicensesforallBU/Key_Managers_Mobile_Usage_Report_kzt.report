@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_46062801</developerName>
+        <masterLabel>Business Unit</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>User$Profile</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Cocoa PDI</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Cocoa Sales</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Cocoa Temp</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Olam Cocoa Pro</sourceValue>
+            </sourceValues>
+            <value>Cocoa</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Dairy PDI</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Dairy Sales</sourceValue>
+            </sourceValues>
+            <value>Dairy</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Spices PDI</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Spices Sales</sourceValue>
+            </sourceValues>
+            <value>Spices</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Edible_Nuts PDI</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Edible_Nuts Sales</sourceValue>
+            </sourceValues>
+            <value>Edible Nuts</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>OFI</sourceValue>
+            </sourceValues>
+            <value>OFI</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBarGrouped</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>User$LastLoginDate</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <secondaryGroupingColumn>User$Name</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>User*User$Full_Name__c</field>
+    </columns>
+    <columns>
+        <field>User$Profile</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>User.IdpEventLog$UserId$App</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>salesforce</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User$Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>crm</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User$Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Karan Dogra,Chemsi Ayouche,Charissa Leong,Defne,Tejinder,Bill Flack,Mallikarjuna,Jiahui,Prakash,Monica,Ramakrishna Prasad,Amit,Brijesh,Keith</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Month</dateGranularity>
+        <field>User$LastLoginDate</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsAcross>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>User.IdpEventLog$UserId$App</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>User$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_46062801</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Key Managers Mobile Usage Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Login_History_with_Identity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>User$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

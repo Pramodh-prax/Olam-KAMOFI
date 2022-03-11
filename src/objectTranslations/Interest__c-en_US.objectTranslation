@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Interest %</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Interest</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest % --></label>
+        <name>Interest__c</name>
+    </fields>
+    <fields>
+        <label><!-- Price Kit --></label>
+        <name>Price_Kit__c</name>
+        <relationshipLabel><!-- Interest --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Interest % Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

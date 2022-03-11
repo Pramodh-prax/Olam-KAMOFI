@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Region__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Region</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Africa</fullName>
+                    <default>true</default>
+                    <label>Africa</label>
+                </value>
+                <value>
+                    <fullName>APAC</fullName>
+                    <default>false</default>
+                    <label>APAC</label>
+                </value>
+                <value>
+                    <fullName>Europe</fullName>
+                    <default>false</default>
+                    <label>Europe</label>
+                </value>
+                <value>
+                    <fullName>Latin America</fullName>
+                    <default>false</default>
+                    <label>Latin America</label>
+                </value>
+                <value>
+                    <fullName>Middle East</fullName>
+                    <default>false</default>
+                    <label>Middle East</label>
+                </value>
+                <value>
+                    <fullName>North America</fullName>
+                    <default>false</default>
+                    <label>North America</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ofi_Region__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>ofi Region</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>APAC</fullName>
+                    <default>true</default>
+                    <label>APAC</label>
+                </value>
+                <value>
+                    <fullName>EMENA</fullName>
+                    <default>false</default>
+                    <label>EMENA</label>
+                </value>
+                <value>
+                    <fullName>Others</fullName>
+                    <default>false</default>
+                    <label>Others</label>
+                </value>
+                <value>
+                    <fullName>USA</fullName>
+                    <default>false</default>
+                    <label>USA</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ofi_Sub_Region_2__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>ofi Sub Region 2</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>South Asia</fullName>
+                    <default>true</default>
+                    <label>South Asia</label>
+                </value>
+                <value>
+                    <fullName>North Europe</fullName>
+                    <default>false</default>
+                    <label>North Europe</label>
+                </value>
+                <value>
+                    <fullName>South Europe</fullName>
+                    <default>false</default>
+                    <label>South Europe</label>
+                </value>
+                <value>
+                    <fullName>North Africa</fullName>
+                    <default>false</default>
+                    <label>North Africa</label>
+                </value>
+                <value>
+                    <fullName>Polynesia</fullName>
+                    <default>false</default>
+                    <label>Polynesia</label>
+                </value>
+                <value>
+                    <fullName>Middle Africa</fullName>
+                    <default>false</default>
+                    <label>Middle Africa</label>
+                </value>
+                <value>
+                    <fullName>Caribbean</fullName>
+                    <default>false</default>
+                    <label>Caribbean</label>
+                </value>
+                <value>
+                    <fullName>South America</fullName>
+                    <default>false</default>
+                    <label>South America</label>
+                </value>
+                <value>
+                    <fullName>West Asia</fullName>
+                    <default>false</default>
+                    <label>West Asia</label>
+                </value>
+                <value>
+                    <fullName>Australia and New Zealand</fullName>
+                    <default>false</default>
+                    <label>Australia and New Zealand</label>
+                </value>
+                <value>
+                    <fullName>West Europe</fullName>
+                    <default>false</default>
+                    <label>West Europe</label>
+                </value>
+                <value>
+                    <fullName>East Europe</fullName>
+                    <default>false</default>
+                    <label>East Europe</label>
+                </value>
+                <value>
+                    <fullName>Central America</fullName>
+                    <default>false</default>
+                    <label>Central America</label>
+                </value>
+                <value>
+                    <fullName>West Africa</fullName>
+                    <default>false</default>
+                    <label>West Africa</label>
+                </value>
+                <value>
+                    <fullName>North America</fullName>
+                    <default>false</default>
+                    <label>North America</label>
+                </value>
+                <value>
+                    <fullName>South Africa</fullName>
+                    <default>false</default>
+                    <label>South Africa</label>
+                </value>
+                <value>
+                    <fullName>East Africa</fullName>
+                    <default>false</default>
+                    <label>East Africa</label>
+                </value>
+                <value>
+                    <fullName>South-East Asia</fullName>
+                    <default>false</default>
+                    <label>South-East Asia</label>
+                </value>
+                <value>
+                    <fullName>East Asia</fullName>
+                    <default>false</default>
+                    <label>East Asia</label>
+                </value>
+                <value>
+                    <fullName>Melanesia</fullName>
+                    <default>false</default>
+                    <label>Melanesia</label>
+                </value>
+                <value>
+                    <fullName>Micronesia</fullName>
+                    <default>false</default>
+                    <label>Micronesia</label>
+                </value>
+                <value>
+                    <fullName>Channel Islands</fullName>
+                    <default>false</default>
+                    <label>Channel Islands</label>
+                </value>
+                <value>
+                    <fullName>Central Asia</fullName>
+                    <default>false</default>
+                    <label>Central Asia</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ofi_Sub_Region__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>ofi Sub Region</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Asia</fullName>
+                    <default>true</default>
+                    <label>Asia</label>
+                </value>
+                <value>
+                    <fullName>Europe</fullName>
+                    <default>false</default>
+                    <label>Europe</label>
+                </value>
+                <value>
+                    <fullName>Africa</fullName>
+                    <default>false</default>
+                    <label>Africa</label>
+                </value>
+                <value>
+                    <fullName>Oceania</fullName>
+                    <default>false</default>
+                    <label>Oceania</label>
+                </value>
+                <value>
+                    <fullName>Americas</fullName>
+                    <default>false</default>
+                    <label>Americas</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Region Update</label>
+    <pluralLabel>Region_Updates</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

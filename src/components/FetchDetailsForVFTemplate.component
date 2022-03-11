@@ -1,0 +1,55 @@
+<apex:component controller="FetchQLAandQLIDetails" access="global">
+    <apex:attribute name="currentRecordId" description="" assignTo="{!quoteLineApprovalId}" type="String"/>
+    <h>Hi,</h><br/>
+    <h>There is an PLM approval due for the below Quote.</h>
+    <br/><br/>
+    <b><u>Details of Quote</u></b><br/>
+    
+     <table style="border-spacing: 5px;" >
+        <tr><td>Customer Name </td><td>:<apex:outputText style="padding: 5px;" value="{!quoteLineApproval.Quote_Line_Item__r.Quote.Account.Name}"></apex:outputText></td></tr>
+        <tr><td>Product Name</td><td>:<apex:outputText style="padding: 5px;" value="{!quoteLineApproval.Product_Name__c}"></apex:outputText></td></tr>
+        <tr><td>Price </td><td>:<apex:outputText style="padding: 5px;" value="{!quoteLineApproval.Price__c}"></apex:outputText></td></tr>
+        <tr><td>Currency </td><td>:<apex:outputText style="padding: 5px;" value="{!quoteLineApproval.CurrencyIsoCode}"></apex:outputText></td></tr>
+         <tr><td>Volume </td><td>:<apex:outputText style="padding: 5px;" value="{!quoteLineApproval.Volume__c}"></apex:outputText></td></tr>
+        <tr><td>U.O.M </td><td>:<apex:outputText style="padding: 5px;" value="{!quoteLineApproval.Quote_Line_Item__r.Unit_Of_Measure__c}"></apex:outputText></td></tr>
+    	<tr><td>Inco Terms </td><td>:<apex:outputText style="padding: 5px;" value="{!quoteLineApproval.Inco_Terms__c}"></apex:outputText></td></tr>
+         <tr><td>Payment Terms </td><td>:<apex:outputText style="padding: 5px;" value="{!quoteLineApproval.Payment_Terms__c}"></apex:outputText></td></tr>
+         <tr><td>Contract Start Date </td><td>:<apex:outputText style="padding: 5px;" value="{0,date,dd'/'MM'/'yyyy}" ><apex:param value="{!quoteLineApproval.Quote_Line_Item__r.Quote.Contract_Start_Date__c}"/></apex:outputText></td></tr>
+         <tr><td>Contract End Date </td><td>:<apex:outputText style="padding: 5px;" value="{0,date,dd'/'MM'/'yyyy}" ><apex:param value="{!quoteLineApproval.Quote_Line_Item__r.Quote.Contract_End_Date__c}"/></apex:outputText></td></tr>
+         
+    </table>
+    
+    <!--
+    <h>Product Name: </h>
+    {!quoteLineApproval.Product_Name__c}<br/>
+    <h>Price : </h>
+    {!quoteLineApproval.Price__c}<br/>
+    <h>Volume : </h>
+    {!quoteLineApproval.Volume__c}<br/>
+    <h>Inco Terms : </h>
+    {!quoteLineApproval.Inco_Terms__c}<br/>
+    <h>Payment Terms : </h>
+    {!quoteLineApproval.Payment_Terms__c}<br/>-->
+    <br/><br/>
+    
+    <apex:variable value="{!1}" var="count"/>
+    
+    <apex:dataTable border="1" value="{!productConfig}" var="pc" rendered="{!IF(quoteLineApproval.Quote_Line_Item__r.Product_Configuration__c != null,true,false)}" cellspacing="2px" cellpadding="5px" style="text-align:center;">
+        <apex:column headerValue="No." >{!count}
+        <apex:variable value="{!count + 1}" var="count"/>               
+      </apex:column>
+        
+        <apex:column headerValue="Description" value="{!pc.description}" />
+        <apex:column headerValue="Indicator" value="{!pc.indicator}" />
+        <apex:column headerValue="UOM" value="{!pc.UOM}" />
+        <apex:column headerValue="Quantitative" value="{!pc.quantitative}"/>
+        <apex:column headerValue="Qualitative" value="{!pc.qualitative}"/>
+        <apex:column headerValue="Olam Range" value="{!pc.olam_range}"/>
+        <apex:column headerValue="Customer Range" value="{!pc.customer_range}"/>
+        
+    </apex:dataTable>
+    
+    <apex:outputText rendered="{!IF(quoteLineApproval.Quote_Line_Item__r.Product_Configuration__c == null,true,false)}" >No Product Configuration Record Found</apex:outputText><br/>
+    
+    
+</apex:component>

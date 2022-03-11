@@ -1,0 +1,72 @@
+<aura:component extends="c:KAM_AccountPlanOverviewBase"  controller="KAM_AccountTeamsCntl">
+	<ltng:require scripts="{!join(',',$Resource.jquery) }" afterScriptsLoaded="{!c.scriptLoaded}" />
+
+    <aura:attribute name="account" type="Object" />
+    <aura:attribute name="accountTeams" type="List" default="[]" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="isLoading" type="Boolean" default="true" />
+    
+    
+    <div class="account-over-view-container" aura:id="item-container">
+        <lightning:layout aura:id="item-wrapper" multipleRows="true" horizontalAlign="center" verticalAlign="center"
+            class="">
+            <lightning:layoutItem size="12"
+                class="tit-desc-container titel-item-desc-container slds-order_1  slds-small-order_1 slds-medium-order_1 slds-large-order_1"
+                smallDeviceSize="12" mediumDeviceSize="8" largeDeviceSize="8">
+                <lightning:layout multipleRows="true" horizontalAlign="center" verticalAlign="center" class="">
+                    <lightning:layoutItem size="12" class="title-text item-title-text" smallDeviceSize="12" mediumDeviceSize="12"
+                        largeDeviceSize="12">
+                        <span>{!v.account.Name}</span>
+                    </lightning:layoutItem>
+                    <!-- <lightning:layoutItem size="12" class="desc-text" smallDeviceSize="12" mediumDeviceSize="12"
+                            largeDeviceSize="12">
+                            <span>{!v.sectionData.Description__c}</span>
+                        </lightning:layoutItem> -->
+                </lightning:layout>
+            </lightning:layoutItem>
+            <lightning:layoutItem size="4"
+                class="slds-order_3 slds-small-order_3 slds-medium-order_3 slds-large-order_3 account-over-view__header-control-container"
+                smallDeviceSize="4" mediumDeviceSize="4" largeDeviceSize="4">
+                <div class="accountoverview-detail__header-control">
+                    <a href="javascript:void(0)" onclick="{!c.toggleDetailContent}"
+                        class="accountoverview-detail__operator-cta item-accountoverview-detail__operator-cta"></a>
+                </div>
+            </lightning:layoutItem>
+            <lightning:layoutItem size="12"
+                class="slds-order_4 slds-small-order_4 slds-medium-order_4 slds-large-order_4 accountoverview__detail-content"
+                smallDeviceSize="12" mediumDeviceSize="12" largeDeviceSize="12">
+                <div class="slds-form--compound">
+                    <div>
+                        <aura:if isTrue="{!!v.isLoading}">
+                            <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-border_right slds-border_left">
+                                <thead>
+                                    <tr class="slds-line-height_reset">
+                                        <th class="slds-text-title_caps" scope="col"><div class="slds-truncate" title="Team Member">Team Member</div></th>
+                                        <th class="slds-text-title_caps" scope="col"><div class="slds-truncate" title="Role">Role</div></th>
+                                        <th class="slds-text-title_caps" scope="col"><div class="slds-truncate" title="Primary">Primary</div></th>
+                                        <th class="slds-text-title_caps" scope="col"><div class="slds-truncate" title="Business Unit">Business Unit</div></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <aura:iteration items="{!v.accountTeams}" var="acc" indexVar="key"> 
+                                        <tr class="slds-hint-parent" id ="{!key}">
+                                            <td class="slds-truncate"><a href="{!'/one/one.app?#/sObject/'+ acc.Id + '/view'}" target="_blank">{!acc.UserName}</a></td>
+                                            <td class="slds-truncate">{!acc.Role}</td>
+                                            <td class="slds-truncate"><ui:outputCheckbox aura:id="output" value="{!acc.Primary}"/></td>
+                                            <td class="slds-truncate">{!acc.BusinessUnit}</td>
+                                        </tr>
+                                    </aura:iteration>   
+                                </tbody>
+                            </table>
+                            <br/>
+                            </aura:if>
+                    </div>
+                    <aura:if isTrue="{!v.isLoading}">
+                        <c:KAM_LoadingDots />
+                    </aura:if>
+                </div>
+            </lightning:layoutItem>
+        </lightning:layout>
+    </div>
+</aura:component>

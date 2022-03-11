@@ -1,0 +1,13 @@
+*** NEW LEAD ASSIGNMENT NOTIFICATION ***  
+
+The following lead has been assigned to you.  
+Company:  {!Lead.Company} 
+Lead Name:  {!Lead.Name}
+Email: {!Lead.Email}
+Phone:  {!Lead.Phone}
+Country: {!Lead.Country}
+Already a customer: {!Lead.Already_a_Customer__c}
+Enquired Volume: {!Lead.Enquired_Volume__c}
+Bag Format: {!Lead.Bag_Format__c}
+
+Click on the link to access the lead directly:  {!Lead.Link}

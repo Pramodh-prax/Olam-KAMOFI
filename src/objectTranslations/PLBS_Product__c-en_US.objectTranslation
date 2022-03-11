@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Private Label Product</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Private Label Products</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Product Category --></label>
+        <name>Other_Product_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Category --></label>
+        <name>Product_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Code --></label>
+        <name>Product_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Description --></label>
+        <name>Product_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Family --></label>
+        <name>Product_Family__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Category --></label>
+        <name>Sub_Category__c</name>
+        <picklistValues>
+            <masterLabel>Almonds</masterLabel>
+            <translation><!-- Almonds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brazil Nuts</masterLabel>
+            <translation><!-- Brazil Nuts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cashews</masterLabel>
+            <translation><!-- Cashews --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hazelnuts</masterLabel>
+            <translation><!-- Hazelnuts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Macadamias</masterLabel>
+            <translation><!-- Macadamias --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nut mixes</masterLabel>
+            <translation><!-- Nut mixes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Peanuts</masterLabel>
+            <translation><!-- Peanuts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pecans</masterLabel>
+            <translation><!-- Pecans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pine Nuts</masterLabel>
+            <translation><!-- Pine Nuts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pistachios in shell</masterLabel>
+            <translation><!-- Pistachios in shell --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pistachios kernels</masterLabel>
+            <translation><!-- Pistachios kernels --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seeds</masterLabel>
+            <translation><!-- Seeds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trail mixes</masterLabel>
+            <translation><!-- Trail mixes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Walnuts</masterLabel>
+            <translation><!-- Walnuts --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>PLBS Product Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

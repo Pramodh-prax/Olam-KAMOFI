@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_14765607</developerName>
+        <masterLabel>Regions</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>FULL_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Andrew OH</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Andrew Hoffmaster</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bart Bulcke</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bill Pearce</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Diane Stopford</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jason Eberle</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jonathan Tharnstrom</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mike Pukansky</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tyler Miller</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Samantha Henkel</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Wouter Stomph</sourceValue>
+            </sourceValues>
+            <value>USA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Andrey Fomin</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Axelle Stuber</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Cecile Charroin</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Christian Laucht</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chemsi ayouche</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Darren Spruce</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Dennis Weiss</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Evelien Zaal</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Evgeniy Zhidkikh</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Hartmut Schnack</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>jesper snorgaard</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Koen Van Maasakkers</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>manon faasse</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mike Barrett</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Milana Davidonyte</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>munish uppal</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nicholas Morss</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Philipp Duering</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Piotr C</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Wido Roorda</sourceValue>
+            </sourceValues>
+            <value>Europe</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Amanda Teh</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Charissa Leong</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Charlene Zhu</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Damien Lim</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Wan Peng Lew</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Reina Wong</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Penny Seet</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Gaven Low</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Evan Kee</sourceValue>
+            </sourceValues>
+            <value>APAC</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>VerticalColumnStacked</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_14765607</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <secondaryGroupingColumn>CREATED_DATE</secondaryGroupingColumn>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>Product2.Product_Category__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OpportunityLineItem.Volume__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>UNIT_PRICE</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.Shipment_Month__c</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>OWNER_PROFILE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Cocoa</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Briefing,Offering,Closing Won,Closed Lost</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>BucketField_14765607</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>USA,Europe,APAC</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Month</dateGranularity>
+        <field>CREATED_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_14765607</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Opportunity Count - Last 30 Days</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_LAST30</interval>
+    </timeFrameFilter>
+</Report>

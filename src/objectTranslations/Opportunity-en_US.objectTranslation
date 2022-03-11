@@ -1,0 +1,1574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer&apos;s Business Type</value>
+        </caseValues>
+        <name>type_opportunity</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Account Created By Name --></label>
+        <name>Account_Created_By_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Developing Hours --></label>
+        <name>Actual_Developing_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Notes --></label>
+        <name>Additional_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual MT --></label>
+        <name>Annual_MT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Segment --></label>
+        <name>Application__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application from Account --></label>
+        <name>Application_from_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application --></label>
+        <name>Application_from_Pardot__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application --></label>
+        <name>Applications__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Awarded --></label>
+        <name>Awarded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bid Close --></label>
+        <name>Bid_Close__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bid Open --></label>
+        <name>Bid_Open__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brands --></label>
+        <name>Brands__c</name>
+    </fields>
+    <fields>
+        <label><!-- Briefing Evaluvation Change --></label>
+        <name>Briefing_Evaluvation_Change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Budget Confirmed --></label>
+        <name>Budget_Confirmed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Budgeted Developing Hours --></label>
+        <name>Budgeted_Developing_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Unit --></label>
+        <name>Business_Unit__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation><!-- All --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cocoa</masterLabel>
+            <translation><!-- Cocoa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dairy</masterLabel>
+            <translation><!-- Dairy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edible_Nuts</masterLabel>
+            <translation><!-- Edible_Nuts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spice</masterLabel>
+            <translation><!-- Spice --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cancel Reason --></label>
+        <name>Cancel_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled by Customer</masterLabel>
+            <translation><!-- Cancelled by Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled by Olam</masterLabel>
+            <translation><!-- Cancelled by Olam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If Case Mix is yes, Kindly fill in Additional Notes --></help>
+        <label><!-- Case Mix --></label>
+        <name>Case_Mix__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>Category__c</name>
+        <picklistValues>
+            <masterLabel>DRY</masterLabel>
+            <translation><!-- DRY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAT</masterLabel>
+            <translation><!-- FAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISCELLANEOUS</masterLabel>
+            <translation><!-- MISCELLANEOUS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WET</masterLabel>
+            <translation><!-- WET --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor --></label>
+        <name>Competitor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Count of Commercialised Products --></label>
+        <name>Count_of_Commercialised_Products__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox if the customer has accepted the offer of the products, but has not signed any contract or order form. --></help>
+        <label><!-- Customer Acceptance --></label>
+        <name>Customer_Acceptance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Test --></label>
+        <name>Data_Test__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Upload --></label>
+        <name>Data_Upload__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Uploaded? --></label>
+        <name>Data_Uploaded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delete Opportunity --></label>
+        <name>Delete_Opportunity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Destination Country --></label>
+        <name>Destination_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Destination Zone --></label>
+        <name>Destination_Zone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Development Stage Change --></label>
+        <name>Development_Stage_Change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discovery Completed --></label>
+        <name>Discovery_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Einstein Opportunity Score --></label>
+        <name>Einstein_Opportunity_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- End contract --></label>
+        <name>End_contract__c</name>
+    </fields>
+    <fields>
+        <help><!-- Possible / Potential Volume Olam (MT) expects to get --></help>
+        <label><!-- Estimated Volume --></label>
+        <name>Estimated_Volume_MT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange Rate (Local /USD)* --></label>
+        <name>Exchange_Rate_Local_USD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange Rate (USD/VND) --></label>
+        <name>Exchange_Rate_USD_VND__c</name>
+    </fields>
+    <fields>
+        <label><!-- Final Margin (TCB) --></label>
+        <name>Final_Margin_TCB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Final Price/ Pack --></label>
+        <name>Final_Price_Pack__c</name>
+    </fields>
+    <fields>
+        <label><!-- Final Price Per Pack (USD) --></label>
+        <name>Final_Price_Per_Pack_USD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Final Quote --></label>
+        <name>Final_Quote__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- First Sample Due Date --></label>
+        <name>First_Sample_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Integration Message --></label>
+        <name>Integration_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Integration Status --></label>
+        <name>Integration_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Key Driver to Win Project --></label>
+        <name>Key_Driver_to_Win_Project__c</name>
+        <picklistValues>
+            <masterLabel>Cost</masterLabel>
+            <translation><!-- Cost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quality</masterLabel>
+            <translation><!-- Quality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Time to Customer</masterLabel>
+            <translation><!-- Time to Customer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Local Currency --></label>
+        <name>Local_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loss Reason --></label>
+        <name>Loss_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Lost to Competitor</masterLabel>
+            <translation><!-- Lost to Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Budget / Lost Funding</masterLabel>
+            <translation><!-- No Budget / Lost Funding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Decision / Non-Responsive</masterLabel>
+            <translation><!-- No Decision / Non-Responsive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation><!-- Price --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- MT Awarded --></label>
+        <name>MT_Awarded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Market --></label>
+        <name>Market__c</name>
+    </fields>
+    <fields>
+        <label><!-- New to Briefing Acceptance Duration --></label>
+        <name>New_to_Briefing_Acceptance_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Logs --></label>
+        <name>Number_of_Logs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Products --></label>
+        <name>Number_of_Products__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Samples Sent --></label>
+        <name>Number_of_Samples_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offering Stage Change --></label>
+        <name>Offering_Stage_Change__c</name>
+    </fields>
+    <fields>
+        <label><!-- OlamQuoteNumber --></label>
+        <name>OlamQuoteNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Olam Cocoa Plant --></label>
+        <name>Olam_Cocoa_Plant__c</name>
+        <picklistValues>
+            <masterLabel>BT</masterLabel>
+            <translation><!-- BT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HM</masterLabel>
+            <translation><!-- HM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SG</masterLabel>
+            <translation><!-- SG --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Record Type (Text Only) --></label>
+        <name>Opportunity_Record_Type_Text_Only__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Score --></label>
+        <name>Opportunity_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Value for MT --></label>
+        <name>Opportunity_Value_for_MT__c</name>
+    </fields>
+    <fields>
+        <label><!-- OptyP1 --></label>
+        <name>OptyP1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order/ Contract Number --></label>
+        <name>Order_Contract_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner ID Match --></label>
+        <name>Owner_ID_Match__c</name>
+    </fields>
+    <fields>
+        <label><!-- PDI Lead --></label>
+        <name>PDI_Lead__c</name>
+        <relationshipLabel><!-- Opportunities (PDI Lead) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- PDI Member --></label>
+        <name>PDI_Member__c</name>
+        <relationshipLabel><!-- Opportunities (PDI Member) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- PDI Approval Status --></label>
+        <name>PDNI_Approval_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation><!-- Not Started --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Add a PD&amp;I member to the Opportunity Team and give him/her Read/Write access to your opportunity before submitting it to the PD&amp;I member for approval. --></help>
+        <label><!-- PD&amp;I Member is Added --></label>
+        <name>PD_I_Member_is_Added__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Number --></label>
+        <name>PLBS_Opportunity_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>PLBS_Product__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Retail Price --></label>
+        <name>PLBS_Retail_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Profit --></label>
+        <name>PLBS_Total_Profit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Revenue --></label>
+        <name>PLBS_Total_Revenue__c</name>
+    </fields>
+    <fields>
+        <help><!-- True if PLM is added to the opportunity team --></help>
+        <label><!-- PLM Added --></label>
+        <name>PLM_Added__c</name>
+    </fields>
+    <fields>
+        <label><!-- PLM Approval Status --></label>
+        <name>PLM_Approval_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation><!-- Not Started --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PLM/ PDI --></label>
+        <name>PLM_PDI__c</name>
+        <relationshipLabel><!-- Opportunities (PLM/ PDI) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- PLM --></label>
+        <name>PLM__c</name>
+        <relationshipLabel><!-- Opportunities (PLM) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Parent Opportunity --></label>
+        <name>Parent_Opportunity__c</name>
+        <relationshipLabel><!-- Opportunities (Related) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Partial Win --></label>
+        <name>Partial_Win__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person In Charge --></label>
+        <name>Person_In_Charge__c</name>
+        <relationshipLabel><!-- Opportunities (Person In Charge) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Plant --></label>
+        <name>Plant__c</name>
+        <picklistValues>
+            <masterLabel>BT</masterLabel>
+            <translation><!-- BT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SG</masterLabel>
+            <translation><!-- SG --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Annual Unit --></label>
+        <name>Plbs_Annual_Unit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Est. Award % --></label>
+        <name>Plbs_Est_Award__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manufacturing Facility --></label>
+        <name>Plbs_Manufacturing_Facility__c</name>
+    </fields>
+    <fields>
+        <help><!-- Local Currency --></help>
+        <label><!-- Shelf Price --></label>
+        <name>Plbs_Shelf_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Weight(G) --></label>
+        <name>Plbs_Weight_G__c</name>
+    </fields>
+    <fields>
+        <label><!-- Link to Presentation Opportunity --></label>
+        <name>Present_Opportunity__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Presentation Opty --></label>
+        <name>Presentation_Opty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Account Owner ID --></label>
+        <name>Primary_Account_Owner_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Cocoa Owner ID match --></label>
+        <name>Primary_Cocoa_Owner_ID_match__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact Added --></label>
+        <name>Primary_Contact_Added__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Dairy Owner ID match --></label>
+        <name>Primary_Dairy_Owner_ID_match__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Edible Nuts Owner ID match --></label>
+        <name>Primary_Edible_Nuts_Owner_ID_match__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Spices Owner ID match --></label>
+        <name>Primary_Spices_Owner_ID_match__c</name>
+    </fields>
+    <fields>
+        <label><!-- Processed --></label>
+        <name>Processed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Family --></label>
+        <name>Product_Family__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Products --></label>
+        <name>Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Closing Date --></label>
+        <name>Project_Closing_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Status --></label>
+        <name>Project_Status__c</name>
+        <picklistValues>
+            <masterLabel>Briefing Evaluation</masterLabel>
+            <translation><!-- Briefing Evaluation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Acceptance</masterLabel>
+            <translation><!-- Customer Acceptance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Development</masterLabel>
+            <translation><!-- Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offering</masterLabel>
+            <translation><!-- Offering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Cancelled</masterLabel>
+            <translation><!-- Project Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Closing</masterLabel>
+            <translation><!-- Project Closing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sampling</masterLabel>
+            <translation><!-- Sampling --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Project Type --></label>
+        <name>Project_Type__c</name>
+        <picklistValues>
+            <masterLabel>Develop</masterLabel>
+            <translation><!-- Develop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Match</masterLabel>
+            <translation><!-- Match --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sample</masterLabel>
+            <translation><!-- Sample --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RFP Due Date --></label>
+        <name>RFP_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- RFP Open Date --></label>
+        <name>RFP_Open_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- RFP Platform --></label>
+        <name>RFP_Platform__c</name>
+    </fields>
+    <fields>
+        <label><!-- ROI Analysis Completed --></label>
+        <name>ROI_Analysis_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ratio of Actual vs Budgeted Hours --></label>
+        <name>Ratio_of_Actual_vs_Budgeted_Hours__c</name>
+    </fields>
+    <fields>
+        <help><!-- Add a PD&amp;I Manager as an Opportunity Team member and fill in the Estimated Volume (MT) field. --></help>
+        <label><!-- Ready for Approval --></label>
+        <name>Ready_for_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason Won --></label>
+        <name>Reason_Won__c</name>
+        <picklistValues>
+            <masterLabel>Availability</masterLabel>
+            <translation><!-- Availability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation><!-- Price --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quality</masterLabel>
+            <translation><!-- Quality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speed to Market</masterLabel>
+            <translation><!-- Speed to Market --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reason Lost --></label>
+        <name>Reason_lost__c</name>
+        <picklistValues>
+            <masterLabel>Availability</masterLabel>
+            <translation><!-- Availability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation><!-- Price --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quality</masterLabel>
+            <translation><!-- Quality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speed to Market</masterLabel>
+            <translation><!-- Speed to Market --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request --></label>
+        <name>Request__c</name>
+        <picklistValues>
+            <masterLabel>Application</masterLabel>
+            <translation><!-- Application --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Documentation</masterLabel>
+            <translation><!-- Documentation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Samples</masterLabel>
+            <translation><!-- Samples --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Result of Presentation Opty --></label>
+        <name>Result_of_Presentation_Opty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Accepted Flag --></label>
+        <name>Sample_Accepted_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Request OSSM Id --></label>
+        <name>Sample_Request_OSSM_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Sent Flag --></label>
+        <name>Sample_Sent_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Segment --></label>
+        <name>Segment__c</name>
+        <picklistValues>
+            <masterLabel>BAKERY</masterLabel>
+            <translation><!-- BAKERY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BAKERY MIXES</masterLabel>
+            <translation><!-- BAKERY MIXES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BEVERAGES</masterLabel>
+            <translation><!-- BEVERAGES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CEREALS</masterLabel>
+            <translation><!-- CEREALS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHOCOLATE (LIKE)</masterLabel>
+            <translation><!-- CHOCOLATE (LIKE) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONFECTIONERY MIXES</masterLabel>
+            <translation><!-- CONFECTIONERY MIXES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DAIRY</masterLabel>
+            <translation><!-- DAIRY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DAIRY ALTERNATIVES</masterLabel>
+            <translation><!-- DAIRY ALTERNATIVES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DAIRY MIXES</masterLabel>
+            <translation><!-- DAIRY MIXES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DECORATION</masterLabel>
+            <translation><!-- DECORATION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FILLINGS (FB)</masterLabel>
+            <translation><!-- FILLINGS (FB) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FILLINGS (WB)</masterLabel>
+            <translation><!-- FILLINGS (WB) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FROZEN DAIRY</masterLabel>
+            <translation><!-- FROZEN DAIRY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INSTANT MIXES</masterLabel>
+            <translation><!-- INSTANT MIXES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER APPLICATIONS</masterLabel>
+            <translation><!-- OTHER APPLICATIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>REPACKING</masterLabel>
+            <translation><!-- REPACKING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPREADS (FB)</masterLabel>
+            <translation><!-- SPREADS (FB) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SYRUPS (FB)</masterLabel>
+            <translation><!-- SYRUPS (FB) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SYRUPS (WB)</masterLabel>
+            <translation><!-- SYRUPS (WB) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Shipment Term --></label>
+        <name>Shipment_Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipped Container Type --></label>
+        <name>Shipped_Container_Type__c</name>
+        <picklistValues>
+            <masterLabel>20&apos;DC Dry</masterLabel>
+            <translation><!-- 20&apos;DC Dry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20&apos;RF Reefer</masterLabel>
+            <translation><!-- 20&apos;RF Reefer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40&apos;DC Dry</masterLabel>
+            <translation><!-- 40&apos;DC Dry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40&apos;HC Dry</masterLabel>
+            <translation><!-- 40&apos;HC Dry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40&apos;HC Reefer</masterLabel>
+            <translation><!-- 40&apos;HC Reefer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40&apos;RF Reefer</masterLabel>
+            <translation><!-- 40&apos;RF Reefer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Shipping Party SAP ID --></label>
+        <name>Shipping_Party_SAP_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start contract --></label>
+        <name>Start_contract__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Category --></label>
+        <name>Sub_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Segment --></label>
+        <name>Sub_Segment__c</name>
+        <picklistValues>
+            <masterLabel>2/3 Component mix</masterLabel>
+            <translation><!-- 2/3 Component mix --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bakeable fillings</masterLabel>
+            <translation><!-- Bakeable fillings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Beverages</masterLabel>
+            <translation><!-- Beverages --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Biscuit creams</masterLabel>
+            <translation><!-- Biscuit creams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Biscuits</masterLabel>
+            <translation><!-- Biscuits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Body Care products</masterLabel>
+            <translation><!-- Body Care products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bread spreads (FB)</masterLabel>
+            <translation><!-- Bread spreads (FB) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bread spreads (WB)</masterLabel>
+            <translation><!-- Bread spreads (WB) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Breakfast cereal</masterLabel>
+            <translation><!-- Breakfast cereal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brownie mix</masterLabel>
+            <translation><!-- Brownie mix --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brownies</masterLabel>
+            <translation><!-- Brownies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cake mix</masterLabel>
+            <translation><!-- Cake mix --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cakes</masterLabel>
+            <translation><!-- Cakes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cereal &amp; energy bars</masterLabel>
+            <translation><!-- Cereal &amp; energy bars --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cereal Coatings (WB)</masterLabel>
+            <translation><!-- Cereal Coatings (WB) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chewing Gum</masterLabel>
+            <translation><!-- Chewing Gum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chocolate / Bon bon fillings</masterLabel>
+            <translation><!-- Chocolate / Bon bon fillings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chocolate / Coverture</masterLabel>
+            <translation><!-- Chocolate / Coverture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chocolate cream</masterLabel>
+            <translation><!-- Chocolate cream --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chocolate cream mixes</masterLabel>
+            <translation><!-- Chocolate cream mixes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chocolate milk</masterLabel>
+            <translation><!-- Chocolate milk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chocolate powder</masterLabel>
+            <translation><!-- Chocolate powder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chocolate vermicelli / flakes / shavings</masterLabel>
+            <translation><!-- Chocolate vermicelli / flakes / shavings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cocoa Powder as such</masterLabel>
+            <translation><!-- Cocoa Powder as such --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cocoa flavoured (alcoholic) drinks</masterLabel>
+            <translation><!-- Cocoa flavoured (alcoholic) drinks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cocoa powder household (&lt; 1kg)</masterLabel>
+            <translation><!-- Cocoa powder household (&lt; 1kg) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cocoa powder institutional (&gt; 1kg)</masterLabel>
+            <translation><!-- Cocoa powder institutional (&gt; 1kg) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cocoa preparation (mp + cp/cl)</masterLabel>
+            <translation><!-- Cocoa preparation (mp + cp/cl) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cocoa preparation (sugar + cp/cl)</masterLabel>
+            <translation><!-- Cocoa preparation (sugar + cp/cl) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compound vermicelli / flakes / shavings</masterLabel>
+            <translation><!-- Compound vermicelli / flakes / shavings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compounded chocolate / Coating</masterLabel>
+            <translation><!-- Compounded chocolate / Coating --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cookie mix</masterLabel>
+            <translation><!-- Cookie mix --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cookies</masterLabel>
+            <translation><!-- Cookies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cream Cheese</masterLabel>
+            <translation><!-- Cream Cheese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cream fillings (WB)</masterLabel>
+            <translation><!-- Cream fillings (WB) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crumb</masterLabel>
+            <translation><!-- Crumb --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custard</masterLabel>
+            <translation><!-- Custard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custard mixes</masterLabel>
+            <translation><!-- Custard mixes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Decoration spreads</masterLabel>
+            <translation><!-- Decoration spreads --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Desserts</masterLabel>
+            <translation><!-- Desserts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dragees</masterLabel>
+            <translation><!-- Dragees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flavours (industry)</masterLabel>
+            <translation><!-- Flavours (industry) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Foam fillings</masterLabel>
+            <translation><!-- Foam fillings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fondant Fillings</masterLabel>
+            <translation><!-- Fondant Fillings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frostings / Fudges (FB)</masterLabel>
+            <translation><!-- Frostings / Fudges (FB) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frostings / Fudges (WB)</masterLabel>
+            <translation><!-- Frostings / Fudges (WB) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frozen yoghurt</masterLabel>
+            <translation><!-- Frozen yoghurt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hard candy fillings (FB)</masterLabel>
+            <translation><!-- Hard candy fillings (FB) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hard candy fillings (WB)</masterLabel>
+            <translation><!-- Hard candy fillings (WB) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hot Coffee</masterLabel>
+            <translation><!-- Hot Coffee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ice (Cream)</masterLabel>
+            <translation><!-- Ice (Cream) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ice Cream</masterLabel>
+            <translation><!-- Ice Cream --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ice mixes</masterLabel>
+            <translation><!-- Ice mixes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Iced Coffee</masterLabel>
+            <translation><!-- Iced Coffee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Industrial pre mixes</masterLabel>
+            <translation><!-- Industrial pre mixes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Juices</masterLabel>
+            <translation><!-- Juices --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lozenges, candies, jellies</masterLabel>
+            <translation><!-- Lozenges, candies, jellies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marshmallow</masterLabel>
+            <translation><!-- Marshmallow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marzipan (like) fillings</masterLabel>
+            <translation><!-- Marzipan (like) fillings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Milk shake</masterLabel>
+            <translation><!-- Milk shake --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Milk shake mixes</masterLabel>
+            <translation><!-- Milk shake mixes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Modifier for chocolate drinks (FB)</masterLabel>
+            <translation><!-- Modifier for chocolate drinks (FB) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Modifier for chocolate drinks (WB)</masterLabel>
+            <translation><!-- Modifier for chocolate drinks (WB) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mousse</masterLabel>
+            <translation><!-- Mousse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mousse mixes</masterLabel>
+            <translation><!-- Mousse mixes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-dairy milk chocolate</masterLabel>
+            <translation><!-- Non-dairy milk chocolate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other FB decoration</masterLabel>
+            <translation><!-- Other FB decoration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other FB fillings</masterLabel>
+            <translation><!-- Other FB fillings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other FB spreads</masterLabel>
+            <translation><!-- Other FB spreads --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Instant mixes</masterLabel>
+            <translation><!-- Other Instant mixes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other WB fillings</masterLabel>
+            <translation><!-- Other WB fillings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other WB syrups</masterLabel>
+            <translation><!-- Other WB syrups --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other bakery goods</masterLabel>
+            <translation><!-- Other bakery goods --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other bakery mixes</masterLabel>
+            <translation><!-- Other bakery mixes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other beverages</masterLabel>
+            <translation><!-- Other beverages --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other cereal products</masterLabel>
+            <translation><!-- Other cereal products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other confectionery mixes</masterLabel>
+            <translation><!-- Other confectionery mixes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other dairy alternatives</masterLabel>
+            <translation><!-- Other dairy alternatives --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other dairy mixes</masterLabel>
+            <translation><!-- Other dairy mixes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other frozen dairy products</masterLabel>
+            <translation><!-- Other frozen dairy products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pastry</masterLabel>
+            <translation><!-- Pastry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharmaceutical products</masterLabel>
+            <translation><!-- Pharmaceutical products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Popcorn</masterLabel>
+            <translation><!-- Popcorn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pressed centers for dragees</masterLabel>
+            <translation><!-- Pressed centers for dragees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pudding</masterLabel>
+            <translation><!-- Pudding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pudding mixes</masterLabel>
+            <translation><!-- Pudding mixes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remaining wet dairy products</masterLabel>
+            <translation><!-- Remaining wet dairy products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Savoury applications</masterLabel>
+            <translation><!-- Savoury applications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sport (protein) powders</masterLabel>
+            <translation><!-- Sport (protein) powders --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sport bars</masterLabel>
+            <translation><!-- Sport bars --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sport drinks</masterLabel>
+            <translation><!-- Sport drinks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tobacco flavouring</masterLabel>
+            <translation><!-- Tobacco flavouring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Toppings (FB)</masterLabel>
+            <translation><!-- Toppings (FB) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Toppings (WB)</masterLabel>
+            <translation><!-- Toppings (WB) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vending mix</masterLabel>
+            <translation><!-- Vending mix --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wafer creams</masterLabel>
+            <translation><!-- Wafer creams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wafers</masterLabel>
+            <translation><!-- Wafers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yoghurt</masterLabel>
+            <translation><!-- Yoghurt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yogurts</masterLabel>
+            <translation><!-- Yogurts --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Target Margin --></label>
+        <name>Target_Margin__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Target RM Price --></label>
+        <name>Target_RM_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Selling Price (Per Unit) --></label>
+        <name>Target_Selling_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tender Contract End --></label>
+        <name>Tender_Contract_End__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tender Contract Start --></label>
+        <name>Tender_Contract_Start__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tender Number --></label>
+        <name>Tender_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Ingredient Price(No Processing) --></label>
+        <name>Total_Ingredient_Price_No_Processing__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sum of total offer generated by each product --></help>
+        <label><!-- Opportunity Value --></label>
+        <name>Total_Offer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit Awarded --></label>
+        <name>Unit_Awarded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit of Measure --></label>
+        <name>Unit_of_Measure__c</name>
+        <picklistValues>
+            <masterLabel>KG</masterLabel>
+            <translation><!-- KG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LB</masterLabel>
+            <translation><!-- LB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MT</masterLabel>
+            <translation><!-- MT --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User Is Account Team Member --></label>
+        <name>User_Is_Account_Team_Member__c</name>
+    </fields>
+    <fields>
+        <label><!-- Local Currency --></label>
+        <name>Vietnam_Child_Opp_Currency__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total of product volume after product acceptance --></help>
+        <label><!-- Opportunity Volume (MT) --></label>
+        <name>Volume__c</name>
+    </fields>
+    <fields>
+        <label><!-- Winning Offer --></label>
+        <name>Winning_Offer__c</name>
+    </fields>
+    <layouts>
+        <layout>Olam Defend Page Layout</layout>
+        <sections>
+            <label><!-- OSSM integration Details --></label>
+            <section>OSSM integration Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Olam Develop Page Layout</layout>
+        <sections>
+            <label><!-- OSSM Integration Details --></label>
+            <section>OSSM Integration Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Olam OSSM Defend Page Layout</layout>
+        <sections>
+            <label><!-- OSSM Integration Details --></label>
+            <section>OSSM Integration Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Olam OSSM Develop Page Layout</layout>
+        <sections>
+            <label><!-- OSSM Integration Details --></label>
+            <section>OSSM Integration Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Olam Service Page Layout</layout>
+        <sections>
+            <label><!-- Sampling Information --></label>
+            <section>Sampling Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>PLBS Tendering Page Layout</layout>
+        <sections>
+            <label><!-- Currency Exchange --></label>
+            <section>Currency Exchange</section>
+        </sections>
+        <sections>
+            <label><!-- Summary --></label>
+            <section>Summary</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>PLBS Tendering Product Page Layout</layout>
+        <sections>
+            <label><!-- Retail Price --></label>
+            <section>Retail Price</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Add Product --></label>
+        <name>Add_Product</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Edit Products --></label>
+        <name>Edit_Products2</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Quote --></label>
+        <name>New_Quote</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Remove Products --></label>
+        <name>Remove_Products</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Request For Sampling --></label>
+        <name>Request_For_Sampling</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Send to OSSM --></label>
+        <name>Send_to_OSSM</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update PDI Fields --></label>
+        <name>Update_PDI_Fields</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Upload Products --></label>
+        <name>Upload_Products</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- Defend existing Olam business that may be at threat due to quality, product functionality, or price. Involves upgrading our product offering by Sampling a different SKU, Matching competitor offers, Developing new SKU --></description>
+        <label><!-- Defend Opportunity --></label>
+        <name>Defend_Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- To Develop new business with the customer. This may involve either Sampling an existing Portfolio SKU, Matching an existing grade used by the customer, Developing a new product for the customer or Partnering with the customer to develop a new Product --></description>
+        <label><!-- Develop Opportunity --></label>
+        <name>Develop_Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Commercial Sale Opportunity --></description>
+        <label><!-- Gain Opportunity --></label>
+        <name>Gain_Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Opportunity to capture PLBS Tendering Details --></description>
+        <label><!-- PLBS Tendering Opportunity --></label>
+        <name>PLBS_Tendering_Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Opportunity to capture PLBS Tendering Product Details --></description>
+        <label><!-- PLBS Tendering Product --></label>
+        <name>PLBS_Tendering_Product</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Opportunity to present new concepts or solutions to the customer that may lead to new business --></description>
+        <label><!-- Presentation Opportunity --></label>
+        <name>Present</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Request from customer for documents, logistics issues, other ad hoc requests. Does not have any commercial impact --></description>
+        <label><!-- Service --></label>
+        <name>Service</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Capture and track tender projects --></description>
+        <label><!-- Tendering Opportunity --></label>
+        <name>Tendering_Opportunity</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- New Opportunities cannot be created if the Account is inactive. Please reactivate the Account through the MDM first. --></errorMessage>
+        <name>ACNT002_Cannot_Create_if_Acct_Inactive</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must enter Bid Close &gt;= Bid Open --></errorMessage>
+        <name>Bid_Close_and_Bid_Open</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You can&apos;t edit a previously closed or cancelled opportunity --></errorMessage>
+        <name>Block_access_to_Edit_Opportunity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot delete Opportunity Product --></errorMessage>
+        <name>Cannot_Delete_Opportunity_Product</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot delete Opportunity Product (PDI) --></errorMessage>
+        <name>Cannot_Delete_Opportunity_Product_PDI</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot delete Opportunity Product (Sales) --></errorMessage>
+        <name>Cannot_Delete_Opportunity_Product_Sales</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opportunity must undergo Sampling before you can change the Opportunity Stage to Offering. --></errorMessage>
+        <name>Cannot_move_to_offering_without_Samples</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The selected applications are not a part of Account&apos;s Segment. --></errorMessage>
+        <name>Check_Application_Value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The selected applications are not a part of Account&apos;s Segment. --></errorMessage>
+        <name>Check_Application_Value_Dairy</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Closed date should not be in the past, Please select future date. --></errorMessage>
+        <name>Close_Date_Should_Not_Be_On_Past</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not authorised, Please proceed to submit to PDI --></errorMessage>
+        <name>Dairy_Salesperson_to_choose_Sample_Proj</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please ensure that your products have been Commercialised in SAP before closing the Opportunity as Closing Won --></errorMessage>
+        <name>GAIN_SAP_Product_ID_should_not_be_blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You need to ensure the products are added to the opportunity by capturing Volumes --></errorMessage>
+        <name>Gain_Opportunity_Requires_Total_Volume</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Ensure a Valid Contact is selected before adding a product --></errorMessage>
+        <name>OPTY001_GAIN_Oppty_Must_have_Contact</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Ensure a Valid Contact is selected before proceeding to the next Stage --></errorMessage>
+        <name>OPTY001_Opportunity_Must_have_Contact</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Order/ Contract Number should be filled only when changing the stage to Closing Won. --></errorMessage>
+        <name>OPTY001_Order_Contract_No_Must_be_Blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please key in the Actual Developing Hours before closing the Opportunity. --></errorMessage>
+        <name>OPTY009_Opportunity_Developing_Hours</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please input Reason Lost --></errorMessage>
+        <name>OPTY013_Opportunity_Lost_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please input Cancel Reason --></errorMessage>
+        <name>OPTY014_Opportunity_Cancel_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please input Reason Won and the Order/ Contract Number. --></errorMessage>
+        <name>OPTY015_Opportunity_Won_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot close the opportunity if you are not the owner. --></errorMessage>
+        <name>Only_Owner_Can_Close_Opportunity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot edit this field if you are not the owner of this opportunity or if the opportunity is not in Offering stage. --></errorMessage>
+        <name>Only_Owner_can_Select_Cust_Acceptance</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please contact system administrator to change the Opportunity Owner --></errorMessage>
+        <name>Opportunity_Owner_Cannot_be_edited</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select PLM user for India, Vietnam or China --></errorMessage>
+        <name>PLM_PDI_SelectionValidation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please ensure that the Account has been commercialised in SAP before closing an Opportunity as Closing Won --></errorMessage>
+        <name>Prevent_Closing_Opportunity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You need to ensure the products are added to the opportunity by capturing Volumes --></errorMessage>
+        <name>Require_Total_Vol_for_Gain</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill in full information for confirm order before change stage to Awarded. --></errorMessage>
+        <name>Stage_Awarded_If_Confirm_Order_is_Filled</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must enter Tender Contract End &gt;= Tender Contract Start --></errorMessage>
+        <name>Tender_Contract_Start_End</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot create opportunities if you are not part of the Account Team. Add yourself as a Team Member in the Account before creating Opportunities. --></errorMessage>
+        <name>User_Is_Not_Account_Team_Member</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please leave the winning offer blank if your opportunity is not Closed Lost --></errorMessage>
+        <name>Winning_Offer_Populated_Only_When_Lost</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Clone_Opportunity_and_Products --></label>
+        <name>Clone_Opportunity_and_Products</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Clone_Product_With_Ingredient --></label>
+        <name>Clone_Product_With_Ingredient</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Pardot_Emails --></label>
+        <name>pi__Send_Pardot_Emails</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Single_Pardot_Email --></label>
+        <name>pi__Send_Single_Pardot_Email</name>
+    </webLinks>
+</CustomObjectTranslation>

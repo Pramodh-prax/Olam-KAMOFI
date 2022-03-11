@@ -1,0 +1,3929 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Consumption_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Consumption_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Consumption</relationshipLabel>
+        <relationshipName>Consumption</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Application__c</fullName>
+        <externalId>false</externalId>
+        <label>Application</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Business_Unit__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetName>Application</valueSetName>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <controllingFieldValue>Spice</controllingFieldValue>
+                <controllingFieldValue>Edible_Nuts</controllingFieldValue>
+                <controllingFieldValue>Coffee</controllingFieldValue>
+                <valueName>Bakery</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <controllingFieldValue>Spice</controllingFieldValue>
+                <controllingFieldValue>Edible_Nuts</controllingFieldValue>
+                <controllingFieldValue>Coffee</controllingFieldValue>
+                <valueName>Beverage</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <controllingFieldValue>Spice</controllingFieldValue>
+                <controllingFieldValue>Edible_Nuts</controllingFieldValue>
+                <controllingFieldValue>Coffee</controllingFieldValue>
+                <valueName>Chocolate &amp; Confectionary</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <controllingFieldValue>Spice</controllingFieldValue>
+                <controllingFieldValue>Edible_Nuts</controllingFieldValue>
+                <controllingFieldValue>Coffee</controllingFieldValue>
+                <valueName>Dairy &amp; Desserts</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <controllingFieldValue>Spice</controllingFieldValue>
+                <controllingFieldValue>Edible_Nuts</controllingFieldValue>
+                <controllingFieldValue>Coffee</controllingFieldValue>
+                <valueName>Savoury &amp; Culinary</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <controllingFieldValue>Spice</controllingFieldValue>
+                <controllingFieldValue>Edible_Nuts</controllingFieldValue>
+                <controllingFieldValue>Coffee</controllingFieldValue>
+                <valueName>Snacks</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Brands__c</fullName>
+        <externalId>false</externalId>
+        <label>Brands</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <controllingField>Business_Unit__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetName>Brand</valueSetName>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>BALCHEM</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>Barry Callebaut</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>BLOMMER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>Britannia</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>BTCocoa</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>Cargill</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>deZaan</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>ECOM</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>FORBES</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>GHIRARDELLI</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>Guan Chong</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>GUITTARD</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>Huysman</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>IFPC</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>INDCRESA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>JBCocoa</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>Macao</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>NATRA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>NEDERLAND</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>OTHERS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>TATE &amp; LYLE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>UCP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>Unicao</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>5 STAR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>ADECOAGRO</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>AGRI-MARK</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>AGROPUR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>ALBAN</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>ALIMA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>ALIMENTA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>ALISA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>Ammerland</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>AMUL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>ANDRUSHOVCA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>ARGENLAC</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>ARLA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>ARLA DANO</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>ARRABAWN</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>ASSOCIATED MILK PRODUCERS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>AURIVO</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>BABUSHKINA KRINKA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>BELGIOIOSO</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>BELGOMILK</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>BELLADEL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>BELLAKT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>BIERUN</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>BIERY</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>BILOSERKIVKA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>BINCO</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>BMI</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>BONGARDS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>BONLAIT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>BUBBLY COW</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>CABOT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>CALIFORNIA DAIRIES INC.</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>CAPSA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>CARBERY</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>CAYUGA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>CHORTITZER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>CLALDY</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>CLASSIC</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>COLUMBIA RIVER PROCESSING</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>COLUN</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>COMPLIMILK</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>CONAPROLE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>CONTINENTAL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>CORLASA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>COVAP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>COWBELL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>COWMILK</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>CREMAC</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>CRÈME VALLEY</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>CUIAVIA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>CZARNKAW</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>DAIRYAMERICA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>DAIRY FARMERS OF AMERICA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>DAIRYGOLD</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>DARI</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>DARIGOLD</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>DMK</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>DYNAMIX</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>ELCOR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>ELLSWORTH</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>EPI</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>ETOILE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>EURIAL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>EUROSERUM</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>FARMFEEL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>FIRST DISTRICT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>FONTERRA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>FOREMOST</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>FORMIDABLE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>FORTO</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>FOSTERS/CRYSTAL CREAMERY</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>FRISCHLI</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>FUDE &amp; SERAHN</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>GARDO</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>GARWOLIN</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>GAY LEA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>GLANBIA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>GOLDEN HOPE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>GOLDLAIT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>GOSTYN</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>GOURMET TREAT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>GOVIND</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>GRAND MEADOW</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>GRASSLAND</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>GREAT LAKES</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>GREEN FLAG</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>GREEN MOUNTAIN</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>HAANO</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>HAPPY COW</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>HAPPYLAIT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>HAPPYLAIT POPULAR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>HIGH DESERT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>HILMAR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>HOCHWACH</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>ICHYNYA DAIRY</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>ILLINTSI</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>ILOLAY</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>IMPERIAL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>INDAPUR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>ISIGNY</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>KALINKOVICHI</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>KARAM</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>KERRY</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>KMK</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>KOLO</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>KOMO</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>KRAFT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>LACPATRICK</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>LACPOL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>LACTALIS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>LACTOGAL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>LACTOLAND</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>LACTOLANDA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>LACTORICH</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>LACTORICH POPULAR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>LAICRAN</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>LAKELAND</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>LAKEVIEW CHEESE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>LAKTOPOL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>LANCY</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>LAND O&apos;LAKES</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>LA RAMADA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>LA TONADITA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>LEADER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>LEPEL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>LEPRINO</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>LIMA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>LIMELCO</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>LONE STAR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>LOWICZ</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>LUMIKO</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>LUNINETS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>LYNN</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>MAGNALAT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>MANFREY</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>MARIJAMPOLES</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>MARYLAND-VIRGINIA MILK</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>MASTELLONE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>MASTER GALLERY</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>MATAURA VALLEY MILK</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>MEADOWCUP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>MEADOW CUP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>MEADOW FOODS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>MEISTER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>MICHIGAN MILK PRODUCERS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>MIKSI</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>MILIDA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>MILK ALLIANCE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>MILKAUT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>MILKAVITA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>MILK HOUSE BLUE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>MILK HOUSE BLUE POPULAR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>MILKILAND</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>MILKY</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>MILKY COW</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>MILLAC</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>MILLAC CHAMPION</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>MIXWELL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>MLEKOVITA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>MLEKPOL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>MOLFINO</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>MOLKEREI AMMERLAND</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>MOLOCHNIY MIR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>MONKI</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>MONTAIGU</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>MORMILK</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>MULLINS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>Murray Goulburn</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>NASONVILLE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>NESTLE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>NOAL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>NOVA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>NUMIGOLD</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>NUNU</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>O-AT-KA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>OCENIA DAIRY</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>OPEN COUNTRY DAIRY</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>ORGANIC VALLEY/CROPP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>ORNUA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>OSTMILCH</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>PACIFIC CHEESE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>PAMPA CHEESE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>PARAS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>PASLEK</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>PEARL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>PIENO ZVAIGZDES</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>PLAIN BAG</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>PLAINVIEW</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>POLMLEK</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>POLOTSK</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>PRABHAT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>PREPLAIT BLUE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>PREPLAIT GREEN</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>PREPLAIT RED</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>PRIMEMILK</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>PRIMOO</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>PUNTA DEL AGUA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>PURA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>PURISIMA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>RADOMSKO</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>RAMOLAC</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>RECORD</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>REGAL GOLD</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>REGINA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>REMOTTI</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>RENNY PICOT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>RIGAS PIENAS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>ROIKISKIOS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>ROSHEN</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>ROYAL FRIESLAND CAMPINA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>ROYAL MILK</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>RUCKER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>RYKI</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>SACHSENMILCH</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>SAHEM</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>SAMA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>SANO</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>SANTA CLARA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>SAPUTO</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>SAVUSHKIN</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>SCHREIBER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>SILVA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>SIMI</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>SKIERNIEWICE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>SLIMCOW</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>SLIMCOW POPULAR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>SOFIVO</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>SOLAREC</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>SOLUS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>SONAI</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>SOPROLE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>SOUTHWEST CHEESE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>ST. ALBANS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>STAROCONSTANTINOV</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>SUPERCOW</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>SUPERCOW POPULAR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>SWISS VALLEY</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>SYNLAIT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>TASTYLAIT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>TERRA FOOD</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>THE UNION DAIRY COMPANY ( UDC)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>TILLAMOOK</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>TOUS LES JOUR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>TREGAR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>UELZENA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>UNITED DAIRYMEN OF ARIZONA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>VALLEY MILK</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>VALLEY QUEEN</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>VERONICA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>VILKISHKI</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>VOLAC</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>VREUGDENHIL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>WARRNAMBOOL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>WESTLAND</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>WHITE RIVER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>WINONA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>WISCONSIN WHEY PROTEIN</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>YEW TREE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>ZEMAJTOS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>ZOMA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>ZVENYGORODKA</valueName>
+            </valueSettings>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Budget_vs_Actual_Line__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Budget vs Actual Line</label>
+        <referenceTo>Budget_vs_Actual_Line__c</referenceTo>
+        <relationshipLabel>Consumption</relationshipLabel>
+        <relationshipName>Consumption</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Business_Unit__c</fullName>
+        <externalId>false</externalId>
+        <label>Business Unit</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Cocoa</fullName>
+                    <default>false</default>
+                    <label>Cocoa</label>
+                </value>
+                <value>
+                    <fullName>Dairy</fullName>
+                    <default>false</default>
+                    <label>Dairy</label>
+                </value>
+                <value>
+                    <fullName>Spice</fullName>
+                    <default>false</default>
+                    <label>Spice</label>
+                </value>
+                <value>
+                    <fullName>Edible_Nuts</fullName>
+                    <default>false</default>
+                    <label>Edible_Nuts</label>
+                </value>
+                <value>
+                    <fullName>Coffee</fullName>
+                    <default>false</default>
+                    <label>Coffee</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Business_Unit__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetName>Product_Category</valueSetName>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>Blended Product</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>By product</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>Chocolate Drink Mix</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>Cocoa Beans</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>Cocoa Butter</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>Cocoa Cake</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>Cocoa Liquor</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>Cocoa Low Fat Powder</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>Cocoa Mid Fat Powder</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>Cocoa Powder</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>Cocoa Powder &amp; Sugar</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>ISMP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>IWMP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>MILK POWDER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>NDC Cold Soluble</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>NDC Regular</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>OCPro</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>SMP HHHS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>SMP MH</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa</controllingFieldValue>
+                <valueName>Whey Demin</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>BLEND</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>BMP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>BUTTER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>CASEIN</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>CHEESE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>CONDENSED</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>CREAM</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>FCMP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>FILLED</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>LACTOSE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>LIQUIDS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>MPC/MPI</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>OTHER FATS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <controllingFieldValue>Spice</controllingFieldValue>
+                <valueName>OTHERS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>SMP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>WHEY</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>WPC</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>WPI</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Spice</controllingFieldValue>
+                <valueName>Dehy</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Spice</controllingFieldValue>
+                <valueName>Tropical</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Edible_Nuts</controllingFieldValue>
+                <valueName>EN - Almond</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Edible_Nuts</controllingFieldValue>
+                <valueName>EN - Brazil Nut</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Edible_Nuts</controllingFieldValue>
+                <valueName>EN - Cashew</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Edible_Nuts</controllingFieldValue>
+                <valueName>EN - Hazelnut</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Edible_Nuts</controllingFieldValue>
+                <valueName>EN - Macadamia</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Edible_Nuts</controllingFieldValue>
+                <valueName>EN - Miscellaneous</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Edible_Nuts</controllingFieldValue>
+                <valueName>EN - Mixed Nuts</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Edible_Nuts</controllingFieldValue>
+                <valueName>EN - Peanut</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Edible_Nuts</controllingFieldValue>
+                <valueName>EN - Pecan</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Edible_Nuts</controllingFieldValue>
+                <valueName>EN - Pinenut</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Edible_Nuts</controllingFieldValue>
+                <valueName>EN - Pistachio</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Edible_Nuts</controllingFieldValue>
+                <valueName>EN - Pulses</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Edible_Nuts</controllingFieldValue>
+                <valueName>EN - Sesame</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Edible_Nuts</controllingFieldValue>
+                <valueName>EN - Superfoods</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Edible_Nuts</controllingFieldValue>
+                <valueName>EN - Walnut</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Coffee</controllingFieldValue>
+                <valueName>Green Coffee</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Certification__c</fullName>
+        <externalId>false</externalId>
+        <label>Certification</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Certification</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Combination_Key__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Business_Unit__c) + &apos;_&apos; + TEXT(Year__c) + &apos;_&apos; + TEXT(Category__c) + &apos;_&apos; +  TEXT(Sub_Category__c) + &apos;_&apos; + TEXT(Sub_Category_2__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Combination Key</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Coverage__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Customer&apos;s Coverage</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Defects__c</fullName>
+        <externalId>false</externalId>
+        <label>Defects</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Defects</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>End_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>DATE(VALUE(TEXT(Year__c)) ,12,31)</formula>
+        <label>End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Ingredient_commodity__c</fullName>
+        <externalId>false</externalId>
+        <label>Ingredient/commodity</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Ingredient_commodity</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Origin__c</fullName>
+        <externalId>false</externalId>
+        <label>Origin</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Origin</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Pack_Size__c</fullName>
+        <externalId>false</externalId>
+        <label>Pack Size</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Pack_Size</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Pack_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Pack Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Pack_Type</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Period__c</fullName>
+        <externalId>false</externalId>
+        <formula>Coverage__c - TODAY()</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Period</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Processing_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Processing Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Processing_Type</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Product_Classification__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Classification</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Product_Classification</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Product_Grade__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Grade</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Product_Grade</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Product_Group_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Group Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Product_Group_Code</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Product_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Product_Type</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Review_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Review Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Share__c</fullName>
+        <externalId>false</externalId>
+        <label>Share</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Size__c</fullName>
+        <externalId>false</externalId>
+        <label>Size</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Size</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>DATE(VALUE(TEXT(Year__c)) ,1,1)</formula>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Strength__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Strength</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Sub_Application_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Sub Application 2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Sub_Application__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetName>Sub_Application_2</valueSetName>
+            <valueSettings>
+                <controllingFieldValue>Ready Meals &amp; Side Dishes</controllingFieldValue>
+                <valueName>Instant Noodles</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ready Meals &amp; Side Dishes</controllingFieldValue>
+                <valueName>Instant Pasta</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ready Meals &amp; Side Dishes</controllingFieldValue>
+                <valueName>Main Dishes</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ready Meals &amp; Side Dishes</controllingFieldValue>
+                <valueName>Meal Kits</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ready Meals &amp; Side Dishes</controllingFieldValue>
+                <valueName>Other Meal Components</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ready Meals &amp; Side Dishes</controllingFieldValue>
+                <valueName>Pizza</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ready Meals &amp; Side Dishes</controllingFieldValue>
+                <valueName>Plain Pasta &amp; Noodles</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ready Meals &amp; Side Dishes</controllingFieldValue>
+                <valueName>Potato Products</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ready Meals &amp; Side Dishes</controllingFieldValue>
+                <valueName>Prepared Pasta &amp; Noodles</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ready Meals &amp; Side Dishes</controllingFieldValue>
+                <valueName>Prepared Salads</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ready Meals &amp; Side Dishes</controllingFieldValue>
+                <valueName>Ready Meals</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ready Meals &amp; Side Dishes</controllingFieldValue>
+                <valueName>Rice</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ready Meals &amp; Side Dishes</controllingFieldValue>
+                <valueName>Sandwiches</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sauces &amp; Seasonings</controllingFieldValue>
+                <valueName>Cooking Sauces</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sauces &amp; Seasonings</controllingFieldValue>
+                <valueName>Mayonnaise &amp; Dressings</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sauces &amp; Seasonings</controllingFieldValue>
+                <valueName>Oils</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sauces &amp; Seasonings</controllingFieldValue>
+                <valueName>Pasta Sauces</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sauces &amp; Seasonings</controllingFieldValue>
+                <valueName>Pickled Condiments/Chutney</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sauces &amp; Seasonings</controllingFieldValue>
+                <valueName>Seasonings</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sauces &amp; Seasonings</controllingFieldValue>
+                <valueName>Stocks</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sauces &amp; Seasonings</controllingFieldValue>
+                <valueName>Table Sauces</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sauces &amp; Seasonings</controllingFieldValue>
+                <valueName>Vinegar</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Soup</controllingFieldValue>
+                <valueName>Dry Soup</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Soup</controllingFieldValue>
+                <valueName>Wet Soup</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Spreads</controllingFieldValue>
+                <valueName>Caramel &amp; Cream Spreads</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Spreads</controllingFieldValue>
+                <valueName>Chocolate Spreads</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Spreads</controllingFieldValue>
+                <valueName>Confiture &amp; Fruit Spreads</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Spreads</controllingFieldValue>
+                <valueName>Honey</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Spreads</controllingFieldValue>
+                <valueName>Other Sweet Spreads</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Spreads</controllingFieldValue>
+                <valueName>Nut Spreads</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Spreads</controllingFieldValue>
+                <valueName>Sandwich Fillers/Spreads</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Spreads</controllingFieldValue>
+                <valueName>Syrups</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Spreads</controllingFieldValue>
+                <valueName>Dips</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Spreads</controllingFieldValue>
+                <valueName>Meat Pastes &amp; Pates</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Spreads</controllingFieldValue>
+                <valueName>Savory Vegetable Pastes/Spreads</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Spreads</controllingFieldValue>
+                <valueName>Yeast Extracts</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Spreads</controllingFieldValue>
+                <valueName>Other Savoury Spreads</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meat, Fish &amp; Eggs</controllingFieldValue>
+                <valueName>Deli Meat</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meat, Fish &amp; Eggs</controllingFieldValue>
+                <valueName>Egg &amp; Egg Products</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meat, Fish &amp; Eggs</controllingFieldValue>
+                <valueName>Fish &amp; Seafood</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meat, Fish &amp; Eggs</controllingFieldValue>
+                <valueName>Meat Products</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meat, Fish &amp; Eggs</controllingFieldValue>
+                <valueName>Meat Substitutes</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meat, Fish &amp; Eggs</controllingFieldValue>
+                <valueName>Poultry</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Snacks</controllingFieldValue>
+                <valueName>Bean Based Snacks</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Snacks</controllingFieldValue>
+                <valueName>Cassava &amp; Other Root Based Snacks</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Snacks</controllingFieldValue>
+                <valueName>Corn Based Snacks</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Snacks</controllingFieldValue>
+                <valueName>Finger Foods/Hors d&apos;oeurves</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Snacks</controllingFieldValue>
+                <valueName>Fruit Based Snacks</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Snacks</controllingFieldValue>
+                <valueName>Meat Snacks</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Snacks</controllingFieldValue>
+                <valueName>Popcorn</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Snacks</controllingFieldValue>
+                <valueName>Potato Based Snacks</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Snacks</controllingFieldValue>
+                <valueName>Snack Mixes</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Snacks</controllingFieldValue>
+                <valueName>Snack Nuts &amp; Seeds</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Snacks</controllingFieldValue>
+                <valueName>Vegetable Based Snacks</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Snacks</controllingFieldValue>
+                <valueName>Wheat &amp; Other Grain Based Snacks</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Snacks</controllingFieldValue>
+                <valueName>Baked snacks</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Snacks</controllingFieldValue>
+                <valueName>Snack Bars</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Snacks</controllingFieldValue>
+                <valueName>Other Snacks</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bakery</controllingFieldValue>
+                <valueName>Baking Ingredients &amp; Mixes</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bakery</controllingFieldValue>
+                <valueName>Bread &amp; Bread Products</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bakery</controllingFieldValue>
+                <valueName>Cakes - Pastries &amp; Sweet Goods</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bakery</controllingFieldValue>
+                <valueName>Savory Biscuits/Crackers</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bakery</controllingFieldValue>
+                <valueName>Sweet Biscuits/Cookies</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bakery</controllingFieldValue>
+                <valueName>Wafers</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bakery</controllingFieldValue>
+                <valueName>Other Baked Goods</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bakery</controllingFieldValue>
+                <valueName>Nutritional Bar (baked)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cereals</controllingFieldValue>
+                <valueName>Cereal &amp; Energy Bars</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cereals</controllingFieldValue>
+                <valueName>Breakfast Cereals</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cereals</controllingFieldValue>
+                <valueName>Cold Cereal</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cereals</controllingFieldValue>
+                <valueName>Hot Cereal</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Soft Drinks (Cold Drinks)</controllingFieldValue>
+                <valueName>Bottled Water - Flavored</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Soft Drinks (Cold Drinks)</controllingFieldValue>
+                <valueName>Bottled Water - Unflavored</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Soft Drinks (Cold Drinks)</controllingFieldValue>
+                <valueName>Carbonates</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Soft Drinks (Cold Drinks)</controllingFieldValue>
+                <valueName>Drink Concentrates &amp; Mixes</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Soft Drinks (Cold Drinks)</controllingFieldValue>
+                <valueName>Energy Drinks</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Soft Drinks (Cold Drinks)</controllingFieldValue>
+                <valueName>Fruit/Flavored Still Drinks</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Soft Drinks (Cold Drinks)</controllingFieldValue>
+                <valueName>Iced Coffee</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Soft Drinks (Cold Drinks)</controllingFieldValue>
+                <valueName>Iced Tea</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Soft Drinks (Cold Drinks)</controllingFieldValue>
+                <valueName>Juices &amp; Nectars</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Soft Drinks (Cold Drinks)</controllingFieldValue>
+                <valueName>Meal Replacements &amp; Other Drinks</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Soft Drinks (Cold Drinks)</controllingFieldValue>
+                <valueName>Other Soft Drinks</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Soft Drinks (Cold Drinks)</controllingFieldValue>
+                <valueName>Plant Based Waters</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Soft Drinks (Cold Drinks)</controllingFieldValue>
+                <valueName>Nutritional Drinks &amp; Other Beverages</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Soft Drinks (Cold Drinks)</controllingFieldValue>
+                <valueName>RTDs</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Soft Drinks (Cold Drinks)</controllingFieldValue>
+                <valueName>Fermented Beverages (Kombucha)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Soft Drinks (Cold Drinks)</controllingFieldValue>
+                <valueName>Syrups &amp; Flavor Mixes (Food Service)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Alcoholic</controllingFieldValue>
+                <valueName>Beer</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Alcoholic</controllingFieldValue>
+                <valueName>Wine</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Alcoholic</controllingFieldValue>
+                <valueName>Spirits</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Alcoholic</controllingFieldValue>
+                <valueName>Other  alcoholic drinks</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hot Beverages</controllingFieldValue>
+                <valueName>Coffee</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hot Beverages</controllingFieldValue>
+                <valueName>Dry Mix Beverages</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hot Beverages</controllingFieldValue>
+                <valueName>Malt &amp; Other Hot Beverages</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hot Beverages</controllingFieldValue>
+                <valueName>Tea</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hot Beverages</controllingFieldValue>
+                <valueName>Other Hot Drinks</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sports Nutrition</controllingFieldValue>
+                <valueName>Sports Bars</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sports Nutrition</controllingFieldValue>
+                <valueName>Sports Drinks RTD</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sports Nutrition</controllingFieldValue>
+                <valueName>Sports Others</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sports Nutrition</controllingFieldValue>
+                <valueName>Sports Powders</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sports Nutrition</controllingFieldValue>
+                <valueName>Sport Protein Based RTD</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sports Nutrition</controllingFieldValue>
+                <valueName>Sports Supplements</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sports Nutrition</controllingFieldValue>
+                <valueName>Sports &amp; Energy Drinks</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Chocolate</controllingFieldValue>
+                <valueName>Chocolate Bars</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Chocolate</controllingFieldValue>
+                <valueName>Chocolate Blocks</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Chocolate</controllingFieldValue>
+                <valueName>Chocolate Pieces - Unwrapped</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Chocolate</controllingFieldValue>
+                <valueName>Chocolate Pieces - Wrapped</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Chocolate</controllingFieldValue>
+                <valueName>Compounds &amp; Covertures</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Confectionery</controllingFieldValue>
+                <valueName>Gum</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Confectionery</controllingFieldValue>
+                <valueName>Gummies/Jellies</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Confectionery</controllingFieldValue>
+                <valueName>Hard Candy</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Confectionery</controllingFieldValue>
+                <valueName>Licorice</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Confectionery</controllingFieldValue>
+                <valueName>Lollipop</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Confectionery</controllingFieldValue>
+                <valueName>Marshmallow</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Confectionery</controllingFieldValue>
+                <valueName>Medicated Confectionery</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Confectionery</controllingFieldValue>
+                <valueName>Mints</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Confectionery</controllingFieldValue>
+                <valueName>Mixed Assortments</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Confectionery</controllingFieldValue>
+                <valueName>Other Chocolate Confectionery</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Confectionery</controllingFieldValue>
+                <valueName>Other Sugar Confectionery</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Confectionery</controllingFieldValue>
+                <valueName>Toffee &amp; Fudge</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>Butter</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>Cheese</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>Cheese - Fresh &amp; Cream</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>Cheese - Non-Dairy</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>Cheese - Processed Cheese</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>Cheese - Semi-Hard &amp; Hard</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>Cheese - Soft Cheese Desserts</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>Dairy - Cream</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>Dairy - Creamers</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>Dairy - Dairy Alternative Drinks</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>Dairy - Drinking Yogurt/Fermented Beverages</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>Dairy - Evaporated Milk</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>Dairy - Flavored Milk</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>Dairy - Magarine &amp; Other Blends</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>Dairy - Other Dairy Products</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>Dairy - Shortening &amp; Lard</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>Dairy - Spoonable Dairy Yogurt</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>Dairy - Spoonable Non-Dairy Yogurt</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>Dairy - Sweetened Condensed Milk</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>Dairy - Unflavored Milk</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>Plant based Dairy</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Desserts &amp; Ice Cream</controllingFieldValue>
+                <valueName>Ambient Desserts</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Desserts &amp; Ice Cream</controllingFieldValue>
+                <valueName>Chilled Desserts</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Desserts &amp; Ice Cream</controllingFieldValue>
+                <valueName>Dairy Based Ice Cream &amp; Frozen Yogurt</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Desserts &amp; Ice Cream</controllingFieldValue>
+                <valueName>Frozen Desserts</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Desserts &amp; Ice Cream</controllingFieldValue>
+                <valueName>Non-Dairy Ice Cream &amp; Frozen Yogurt</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Desserts &amp; Ice Cream</controllingFieldValue>
+                <valueName>Toppings</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Desserts &amp; Ice Cream</controllingFieldValue>
+                <valueName>Water Based Ice Lollies, Pop &amp; Sorbet</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Sub_Application__c</fullName>
+        <externalId>false</externalId>
+        <label>Sub Application</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Application__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetName>Sub_Application</valueSetName>
+            <valueSettings>
+                <controllingFieldValue>Dairy &amp; Desserts</controllingFieldValue>
+                <valueName>Dairy</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy &amp; Desserts</controllingFieldValue>
+                <valueName>Desserts &amp; Ice Cream</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Savoury &amp; Culinary</controllingFieldValue>
+                <valueName>Ready Meals &amp; Side Dishes</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Savoury &amp; Culinary</controllingFieldValue>
+                <valueName>Sauces &amp; Seasonings</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Savoury &amp; Culinary</controllingFieldValue>
+                <valueName>Soup</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Savoury &amp; Culinary</controllingFieldValue>
+                <valueName>Meat, Fish &amp; Eggs</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Snacks</controllingFieldValue>
+                <valueName>Snacks</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bakery</controllingFieldValue>
+                <valueName>Bakery</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bakery</controllingFieldValue>
+                <valueName>Cereals</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Beverage</controllingFieldValue>
+                <valueName>Soft Drinks (Cold Drinks)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Beverage</controllingFieldValue>
+                <valueName>Alcoholic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Beverage</controllingFieldValue>
+                <valueName>Hot Beverages</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Beverage</controllingFieldValue>
+                <valueName>Sports Nutrition</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Chocolate &amp; Confectionary</controllingFieldValue>
+                <valueName>Chocolate</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Chocolate &amp; Confectionary</controllingFieldValue>
+                <valueName>Confectionery</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Chocolate &amp; Confectionary</controllingFieldValue>
+                <valueName>Spreads</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Sub_Category_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Sub Category 2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Sub_Category__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetName>Product_Sub_Category_2</valueSetName>
+            <valueSettings>
+                <controllingFieldValue>Capsicums</controllingFieldValue>
+                <valueName>Capsicums</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Capsicums</controllingFieldValue>
+                <valueName>Fresh Capsicums</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Capsicums</controllingFieldValue>
+                <valueName>Org Capsicums</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cagliata</controllingFieldValue>
+                <controllingFieldValue>Mozzarella</controllingFieldValue>
+                <valueName>Analogue</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cagliata</controllingFieldValue>
+                <controllingFieldValue>Mozzarella</controllingFieldValue>
+                <valueName>Low Fat</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cagliata</controllingFieldValue>
+                <controllingFieldValue>Cheddar</controllingFieldValue>
+                <controllingFieldValue>Mozzarella</controllingFieldValue>
+                <controllingFieldValue>Food</controllingFieldValue>
+                <controllingFieldValue>MPC</controllingFieldValue>
+                <controllingFieldValue>DWP</controllingFieldValue>
+                <controllingFieldValue>Lactic</controllingFieldValue>
+                <controllingFieldValue>Sweet Cream</controllingFieldValue>
+                <controllingFieldValue>Parmesan</controllingFieldValue>
+                <controllingFieldValue>Blends</controllingFieldValue>
+                <controllingFieldValue>High Fat</controllingFieldValue>
+                <controllingFieldValue>SKIMMILKCONCENTRATE</controllingFieldValue>
+                <controllingFieldValue>Whey Concentrate</controllingFieldValue>
+                <controllingFieldValue>WPC 80</controllingFieldValue>
+                <controllingFieldValue>CODEX MH</controllingFieldValue>
+                <controllingFieldValue>ADPI MH</controllingFieldValue>
+                <controllingFieldValue>CODEX LH</controllingFieldValue>
+                <controllingFieldValue>ADPI LH</controllingFieldValue>
+                <controllingFieldValue>CODEX HH</controllingFieldValue>
+                <controllingFieldValue>ADPI HH</controllingFieldValue>
+                <controllingFieldValue>Protein 22-24%</controllingFieldValue>
+                <controllingFieldValue>Whey Butter</controllingFieldValue>
+                <controllingFieldValue>Others</controllingFieldValue>
+                <valueName>OTHER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cagliata</controllingFieldValue>
+                <controllingFieldValue>Mozzarella</controllingFieldValue>
+                <controllingFieldValue>WPC 80</controllingFieldValue>
+                <controllingFieldValue>WPI</controllingFieldValue>
+                <controllingFieldValue>CODEX MH</controllingFieldValue>
+                <controllingFieldValue>ADPI MH</controllingFieldValue>
+                <controllingFieldValue>CODEX LH</controllingFieldValue>
+                <controllingFieldValue>ADPI LH</controllingFieldValue>
+                <controllingFieldValue>CODEX HH</controllingFieldValue>
+                <controllingFieldValue>ADPI HH</controllingFieldValue>
+                <valueName>Regular</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cheddar</controllingFieldValue>
+                <valueName>#640 Colored</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cheddar</controllingFieldValue>
+                <valueName>#640 Whites</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cheddar</controllingFieldValue>
+                <valueName>40# colored</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cheddar</controllingFieldValue>
+                <valueName>40# White</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cheddar</controllingFieldValue>
+                <valueName>500# White</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cheddar</controllingFieldValue>
+                <valueName>ChedP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cheddar</controllingFieldValue>
+                <valueName>ChedT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Brown</controllingFieldValue>
+                <controllingFieldValue>High Fat</controllingFieldValue>
+                <valueName>Dairy</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Brown</controllingFieldValue>
+                <controllingFieldValue>White</controllingFieldValue>
+                <controllingFieldValue>High Fat</controllingFieldValue>
+                <valueName>Non Dairy</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>White</controllingFieldValue>
+                <valueName>Dairy Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>White</controllingFieldValue>
+                <valueName>Dairy SSC-3</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>White</controllingFieldValue>
+                <valueName>Dairy SSD-30</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>White</controllingFieldValue>
+                <valueName>Dairy SSP-83</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Chilli</controllingFieldValue>
+                <valueName>Chilli</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Chilli</controllingFieldValue>
+                <valueName>Fresh Chilli</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Chilli</controllingFieldValue>
+                <valueName>Org Chilli</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dehy Vegetable</controllingFieldValue>
+                <valueName>Parsley</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Garlic</controllingFieldValue>
+                <valueName>Dehy Garlic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Garlic</controllingFieldValue>
+                <valueName>Domestic Garlic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Garlic</controllingFieldValue>
+                <valueName>Economy Garlic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Garlic</controllingFieldValue>
+                <valueName>Fresh Garlic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Garlic</controllingFieldValue>
+                <valueName>Org Domestic Garlic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Garlic</controllingFieldValue>
+                <valueName>Org Retail Garlic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Garlic</controllingFieldValue>
+                <valueName>Redimade</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Garlic</controllingFieldValue>
+                <valueName>Retail Garlic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mozzarella</controllingFieldValue>
+                <valueName>LOWMOISTUREPARTSKIM</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mozzarella</controllingFieldValue>
+                <valueName>Low Salt</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Mozzarella</controllingFieldValue>
+                <valueName>Whole Milk</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Food</controllingFieldValue>
+                <valueName>100#</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Food</controllingFieldValue>
+                <valueName>200#</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Food</controllingFieldValue>
+                <valueName>40#</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Food</controllingFieldValue>
+                <valueName>60-80#</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MPC</controllingFieldValue>
+                <controllingFieldValue>SKIMMILKCONCENTRATE</controllingFieldValue>
+                <valueName>70%</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MPC</controllingFieldValue>
+                <controllingFieldValue>Whey Concentrate</controllingFieldValue>
+                <valueName>80%</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Herbs</controllingFieldValue>
+                <valueName>Herbs</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DWP</controllingFieldValue>
+                <valueName>DMIN 40</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DWP</controllingFieldValue>
+                <valueName>DMIN 50</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>DWP</controllingFieldValue>
+                <valueName>DMIN 90</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Deo De-Gummed</controllingFieldValue>
+                <controllingFieldValue>Lactic</controllingFieldValue>
+                <controllingFieldValue>Sweet Cream</controllingFieldValue>
+                <valueName>80% salted</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Deo De-Gummed</controllingFieldValue>
+                <controllingFieldValue>Lactic</controllingFieldValue>
+                <controllingFieldValue>Sweet Cream</controllingFieldValue>
+                <valueName>80% unsalted</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lactic</controllingFieldValue>
+                <controllingFieldValue>Sweet Cream</controllingFieldValue>
+                <controllingFieldValue>Natural</controllingFieldValue>
+                <controllingFieldValue>Whey Butter</controllingFieldValue>
+                <valueName>82% unsalted</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sweet Cream</controllingFieldValue>
+                <valueName>72.5% unsalted</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Sweet Cream</controllingFieldValue>
+                <valueName>82.5% unsalted</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Parmesan</controllingFieldValue>
+                <valueName>40# Block</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Parmesan</controllingFieldValue>
+                <valueName>500# Barrel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Blends</controllingFieldValue>
+                <valueName>40#Colby Jack</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Blends</controllingFieldValue>
+                <valueName>40#Monterey Jack</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Blends</controllingFieldValue>
+                <valueName>40# Pepper Jack</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Oils</controllingFieldValue>
+                <valueName>Oils</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Onion</controllingFieldValue>
+                <valueName>Dehy Onion</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Onion</controllingFieldValue>
+                <valueName>Dehy White Onion</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Onion</controllingFieldValue>
+                <valueName>Dehy Yellow Onion</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Onion</controllingFieldValue>
+                <valueName>Fresh Onion</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Onion</controllingFieldValue>
+                <valueName>Org.Retail Onion</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Onion</controllingFieldValue>
+                <valueName>Org Dehy Onion</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Onion</controllingFieldValue>
+                <valueName>Org Dehy White Onion</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Onion</controllingFieldValue>
+                <valueName>Org Dehy Yellow Onion</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Onion</controllingFieldValue>
+                <valueName>Retail Onion</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pepper</controllingFieldValue>
+                <valueName>Black Pepper</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pepper</controllingFieldValue>
+                <valueName>Org Black Pepper</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pepper</controllingFieldValue>
+                <valueName>Org White Pepper</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pepper</controllingFieldValue>
+                <valueName>White Pepper</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Purees</controllingFieldValue>
+                <valueName>GF Purees</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Purees</controllingFieldValue>
+                <valueName>HF Purees</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Purees</controllingFieldValue>
+                <valueName>Org GF Purees</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Purees</controllingFieldValue>
+                <valueName>Org HF Purees</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Rejections/By products</controllingFieldValue>
+                <valueName>Rejections</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Root Spices</controllingFieldValue>
+                <controllingFieldValue>Tropical Spices</controllingFieldValue>
+                <valueName>Ginger</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Root Spices</controllingFieldValue>
+                <controllingFieldValue>Seed Spices</controllingFieldValue>
+                <valueName>Minor Spices</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Root Spices</controllingFieldValue>
+                <valueName>Org Turmeric</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Root Spices</controllingFieldValue>
+                <valueName>Turmeric</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>WPC 80</controllingFieldValue>
+                <valueName>HS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>WPC 80</controllingFieldValue>
+                <controllingFieldValue>WPI</controllingFieldValue>
+                <controllingFieldValue>CODEX MH</controllingFieldValue>
+                <controllingFieldValue>ADPI MH</controllingFieldValue>
+                <controllingFieldValue>CODEX LH</controllingFieldValue>
+                <controllingFieldValue>ADPI LH</controllingFieldValue>
+                <controllingFieldValue>CODEX HH</controllingFieldValue>
+                <controllingFieldValue>ADPI HH</controllingFieldValue>
+                <valueName>Instant</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Seed Spices</controllingFieldValue>
+                <valueName>Cloves</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Seed Spices</controllingFieldValue>
+                <valueName>Coriander</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Seed Spices</controllingFieldValue>
+                <valueName>Cumin</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Seed Spices</controllingFieldValue>
+                <valueName>Org Coriander</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Seed Spices</controllingFieldValue>
+                <valueName>Org Cumin</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Seed Spices</controllingFieldValue>
+                <valueName>Fennel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Seed Spices</controllingFieldValue>
+                <valueName>Fenugreek</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Tropical Spices</controllingFieldValue>
+                <valueName>Cassia</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Tropical Spices</controllingFieldValue>
+                <valueName>Cinnamon</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Tropical Spices</controllingFieldValue>
+                <valueName>Nutmeg</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Tropical Spices</controllingFieldValue>
+                <valueName>Org Cassia</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Tropical Spices</controllingFieldValue>
+                <valueName>Org Cinnamon</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Tropical Spices</controllingFieldValue>
+                <valueName>Org Ginger</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CODEX MH</controllingFieldValue>
+                <controllingFieldValue>ADPI MH</controllingFieldValue>
+                <controllingFieldValue>CODEX LH</controllingFieldValue>
+                <controllingFieldValue>ADPI LH</controllingFieldValue>
+                <controllingFieldValue>CODEX HH</controllingFieldValue>
+                <controllingFieldValue>ADPI HH</controllingFieldValue>
+                <valueName>CNCA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CODEX MH</controllingFieldValue>
+                <controllingFieldValue>ADPI MH</controllingFieldValue>
+                <controllingFieldValue>CODEX LH</controllingFieldValue>
+                <controllingFieldValue>ADPI LH</controllingFieldValue>
+                <controllingFieldValue>CODEX HH</controllingFieldValue>
+                <controllingFieldValue>ADPI HH</controllingFieldValue>
+                <valueName>Low Thermophyllic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CODEX MH</controllingFieldValue>
+                <controllingFieldValue>ADPI MH</controllingFieldValue>
+                <controllingFieldValue>CODEX LH</controllingFieldValue>
+                <controllingFieldValue>ADPI LH</controllingFieldValue>
+                <controllingFieldValue>CODEX HH</controllingFieldValue>
+                <controllingFieldValue>ADPI HH</controllingFieldValue>
+                <valueName>UHT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ADPI MH</controllingFieldValue>
+                <controllingFieldValue>ADPI LH</controllingFieldValue>
+                <controllingFieldValue>CODEX HH</controllingFieldValue>
+                <controllingFieldValue>ADPI HH</controllingFieldValue>
+                <valueName>Heat Stable</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Protein 22-24%</controllingFieldValue>
+                <valueName>Yogurt Heat Based</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Protein 22-24%</controllingFieldValue>
+                <valueName>YOGURTNONHEATBASED</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Retail</controllingFieldValue>
+                <valueName>Sachet</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Retail</controllingFieldValue>
+                <valueName>Tin</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Sub_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Sub Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Category__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetName>Product_Sub_Category</valueSetName>
+            <valueSettings>
+                <controllingFieldValue>EN - Brazil Nut</controllingFieldValue>
+                <valueName>Brazil Nut Ingredient</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Brazil Nut</controllingFieldValue>
+                <valueName>Brazil Nut Kernel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Brazil Nut</controllingFieldValue>
+                <controllingFieldValue>EN - Cashew</controllingFieldValue>
+                <controllingFieldValue>EN - Macadamia</controllingFieldValue>
+                <controllingFieldValue>EN - Sesame</controllingFieldValue>
+                <controllingFieldValue>EN - Superfoods</controllingFieldValue>
+                <controllingFieldValue>EN - Walnut</controllingFieldValue>
+                <valueName>Off grade</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Cashew</controllingFieldValue>
+                <valueName>Cashew DCNSL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Cashew</controllingFieldValue>
+                <valueName>Cashew Ingredient</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Cashew</controllingFieldValue>
+                <valueName>Cashew Ingredient Organic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Cashew</controllingFieldValue>
+                <valueName>Cashew Kernel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Cashew</controllingFieldValue>
+                <valueName>Cashew Kernel Organic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Cashew</controllingFieldValue>
+                <valueName>Cashew Waste</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Cashew</controllingFieldValue>
+                <valueName>DCNSL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Cashew</controllingFieldValue>
+                <valueName>Raw Cashew Nut</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Cashew</controllingFieldValue>
+                <valueName>Raw Cashew Nut Organic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Hazelnut</controllingFieldValue>
+                <valueName>Hazelnut Ingredient</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Hazelnut</controllingFieldValue>
+                <valueName>Hazelnut InShell</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Hazelnut</controllingFieldValue>
+                <valueName>Hazelnut Kernel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Hazelnut</controllingFieldValue>
+                <valueName>Hazelnut Natural</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Hazelnut</controllingFieldValue>
+                <valueName>Hazelnut Organic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Hazelnut</controllingFieldValue>
+                <valueName>Hazelnut Reject</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Hazelnut</controllingFieldValue>
+                <valueName>Hazelnut Waste</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Macadamia</controllingFieldValue>
+                <valueName>Macadamia Ingredient</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Macadamia</controllingFieldValue>
+                <valueName>Macadamia InShell</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Macadamia</controllingFieldValue>
+                <valueName>Macadamia Kernel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Macadamia</controllingFieldValue>
+                <valueName>Macadamia Reject</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Macadamia</controllingFieldValue>
+                <valueName>Macadamia Rejects</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Macadamia</controllingFieldValue>
+                <valueName>Macadamia Waste</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Mixed Nuts</controllingFieldValue>
+                <valueName>Mixed Nut Ingredient</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Mixed Nuts</controllingFieldValue>
+                <valueName>Mixed Nut Kernel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Mixed Nuts</controllingFieldValue>
+                <valueName>Mixed Nut Reject</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Peanut</controllingFieldValue>
+                <valueName>Peanut Ingredient</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Peanut</controllingFieldValue>
+                <valueName>Peanut InShell</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Peanut</controllingFieldValue>
+                <valueName>Peanut Reject</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Peanut</controllingFieldValue>
+                <valueName>Peanut Shelled</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Pecan</controllingFieldValue>
+                <valueName>Pecan Kernel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Pinenut</controllingFieldValue>
+                <valueName>Pinenut Kernel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Pistachio</controllingFieldValue>
+                <valueName>Pistachio Ingredient</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Pistachio</controllingFieldValue>
+                <valueName>Pistachio InShell</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Pistachio</controllingFieldValue>
+                <valueName>Pistachio Kernel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Pistachio</controllingFieldValue>
+                <valueName>Pistachio Reject</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>BUTTER</controllingFieldValue>
+                <valueName>Lactic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>BUTTER</controllingFieldValue>
+                <controllingFieldValue>CASEIN</controllingFieldValue>
+                <controllingFieldValue>CHEESE</controllingFieldValue>
+                <controllingFieldValue>CONDENSED</controllingFieldValue>
+                <controllingFieldValue>CREAM</controllingFieldValue>
+                <controllingFieldValue>OTHER FATS</controllingFieldValue>
+                <controllingFieldValue>FCMP</controllingFieldValue>
+                <controllingFieldValue>FILLED</controllingFieldValue>
+                <controllingFieldValue>SMP</controllingFieldValue>
+                <controllingFieldValue>BLEND</controllingFieldValue>
+                <controllingFieldValue>BMP</controllingFieldValue>
+                <valueName>Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>BUTTER</controllingFieldValue>
+                <valueName>Sweet Cream</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>BUTTER</controllingFieldValue>
+                <valueName>Whey Butter</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CASEIN</controllingFieldValue>
+                <valueName>Acid</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CASEIN</controllingFieldValue>
+                <valueName>Calcium Caseinate</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CASEIN</controllingFieldValue>
+                <valueName>Rennet</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CASEIN</controllingFieldValue>
+                <valueName>Sodium Caseinate</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Sesame</controllingFieldValue>
+                <valueName>Sesame Ingredient</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Sesame</controllingFieldValue>
+                <valueName>Sesame Reject</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Sesame</controllingFieldValue>
+                <valueName>Sesame Seeds</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Sesame</controllingFieldValue>
+                <valueName>Sesame Seeds Organic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Sesame</controllingFieldValue>
+                <valueName>Sesame Waste</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Sesame</controllingFieldValue>
+                <valueName>Tahini</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Sesame</controllingFieldValue>
+                <valueName>Tahini Organic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CHEESE</controllingFieldValue>
+                <valueName>AMERICAN STYLE CH</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CHEESE</controllingFieldValue>
+                <valueName>Analogue</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CHEESE</controllingFieldValue>
+                <controllingFieldValue>Tropical</controllingFieldValue>
+                <valueName>Blends</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CHEESE</controllingFieldValue>
+                <valueName>Cagliata</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CHEESE</controllingFieldValue>
+                <valueName>Cheddar</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CHEESE</controllingFieldValue>
+                <controllingFieldValue>LIQUIDS</controllingFieldValue>
+                <valueName>Cream</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CHEESE</controllingFieldValue>
+                <valueName>Edam</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CHEESE</controllingFieldValue>
+                <valueName>Emmental</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CHEESE</controllingFieldValue>
+                <valueName>Gouda</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CHEESE</controllingFieldValue>
+                <valueName>Mozzarella</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CHEESE</controllingFieldValue>
+                <valueName>Parmesan</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CHEESE</controllingFieldValue>
+                <valueName>Processed Cheese</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Superfoods</controllingFieldValue>
+                <valueName>Amaranth</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Superfoods</controllingFieldValue>
+                <valueName>Amaranth Organic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Superfoods</controllingFieldValue>
+                <valueName>Canihua</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Superfoods</controllingFieldValue>
+                <valueName>Canihua Organic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Superfoods</controllingFieldValue>
+                <valueName>Chia</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Superfoods</controllingFieldValue>
+                <valueName>Chia Organic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Superfoods</controllingFieldValue>
+                <valueName>Kiwicha</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Superfoods</controllingFieldValue>
+                <valueName>Kiwicha Organic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Superfoods</controllingFieldValue>
+                <valueName>Kiwiicha Organic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Superfoods</controllingFieldValue>
+                <valueName>Quinoa</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Superfoods</controllingFieldValue>
+                <valueName>Quinoa Organic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CONDENSED</controllingFieldValue>
+                <valueName>Evap</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CONDENSED</controllingFieldValue>
+                <valueName>SCM</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Walnut</controllingFieldValue>
+                <valueName>Walnut Ingredient</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Walnut</controllingFieldValue>
+                <valueName>Walnut InShell</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Walnut</controllingFieldValue>
+                <valueName>Walnut Kernel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Walnut</controllingFieldValue>
+                <valueName>Walnut Reject</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Walnut</controllingFieldValue>
+                <valueName>Walnut Waste</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CREAM</controllingFieldValue>
+                <valueName>Frozen</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CREAM</controllingFieldValue>
+                <valueName>Powder</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CREAM</controllingFieldValue>
+                <controllingFieldValue>FCMP</controllingFieldValue>
+                <controllingFieldValue>LIQUIDS</controllingFieldValue>
+                <valueName>UHT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHER FATS</controllingFieldValue>
+                <valueName>AMF</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHER FATS</controllingFieldValue>
+                <valueName>Butter Oil</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHER FATS</controllingFieldValue>
+                <valueName>Ghee</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FCMP</controllingFieldValue>
+                <valueName>HH</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FCMP</controllingFieldValue>
+                <controllingFieldValue>BMP</controllingFieldValue>
+                <valueName>Instant</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FCMP</controllingFieldValue>
+                <controllingFieldValue>BMP</controllingFieldValue>
+                <valueName>Regular</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FCMP</controllingFieldValue>
+                <controllingFieldValue>FILLED</controllingFieldValue>
+                <valueName>Retail</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FILLED</controllingFieldValue>
+                <valueName>Adult Nutrition</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FILLED</controllingFieldValue>
+                <valueName>Cheese Powder</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FILLED</controllingFieldValue>
+                <valueName>High Fat</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FILLED</controllingFieldValue>
+                <valueName>Infant Formula</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FILLED</controllingFieldValue>
+                <valueName>Low Protein &lt;8%</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FILLED</controllingFieldValue>
+                <valueName>Low Protein 15-20%</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FILLED</controllingFieldValue>
+                <valueName>Low Protein 8-14%</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FILLED</controllingFieldValue>
+                <valueName>Protein 22-24%</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>LACTOSE</controllingFieldValue>
+                <controllingFieldValue>SMP</controllingFieldValue>
+                <controllingFieldValue>WHEY</controllingFieldValue>
+                <controllingFieldValue>WPC</controllingFieldValue>
+                <valueName>Feed</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>LACTOSE</controllingFieldValue>
+                <valueName>Food</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SMP</controllingFieldValue>
+                <valueName>ADPI HH</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SMP</controllingFieldValue>
+                <valueName>ADPI LH</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SMP</controllingFieldValue>
+                <valueName>ADPI MH</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SMP</controllingFieldValue>
+                <valueName>CODEX HH</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SMP</controllingFieldValue>
+                <valueName>CODEX LH</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SMP</controllingFieldValue>
+                <valueName>CODEX MH</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SMP</controllingFieldValue>
+                <valueName>Partial</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa Butter</controllingFieldValue>
+                <valueName>Bleached</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa Butter</controllingFieldValue>
+                <valueName>Deo</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa Butter</controllingFieldValue>
+                <valueName>Deo De-Gummed</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa Butter</controllingFieldValue>
+                <controllingFieldValue>Cocoa Liquor</controllingFieldValue>
+                <controllingFieldValue>Cocoa Low Fat Powder</controllingFieldValue>
+                <valueName>Natural</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa Liquor</controllingFieldValue>
+                <valueName>Alkalized</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa Low Fat Powder</controllingFieldValue>
+                <valueName>Black Alkalized</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa Low Fat Powder</controllingFieldValue>
+                <valueName>Highly Alkalized</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa Low Fat Powder</controllingFieldValue>
+                <valueName>Lightly Alkalized</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cocoa Low Fat Powder</controllingFieldValue>
+                <controllingFieldValue>Cocoa Mid Fat Powder</controllingFieldValue>
+                <valueName>Medium Alkalized</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>BLEND</controllingFieldValue>
+                <valueName>Brown</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>BLEND</controllingFieldValue>
+                <valueName>White</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>WHEY</controllingFieldValue>
+                <valueName>DWP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>WHEY</controllingFieldValue>
+                <valueName>Permeate</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>WHEY</controllingFieldValue>
+                <valueName>SWP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Tropical</controllingFieldValue>
+                <valueName>Capsicums</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Tropical</controllingFieldValue>
+                <valueName>Chilli</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Tropical</controllingFieldValue>
+                <valueName>Herbs</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Tropical</controllingFieldValue>
+                <valueName>Pepper</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Tropical</controllingFieldValue>
+                <valueName>Root Spices</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Tropical</controllingFieldValue>
+                <valueName>Seed Spices</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Tropical</controllingFieldValue>
+                <valueName>Tropical Spices</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>WPC</controllingFieldValue>
+                <valueName>WPC 34</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>WPC</controllingFieldValue>
+                <valueName>WPC 80</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>WPC</controllingFieldValue>
+                <valueName>WPC other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>WPI</controllingFieldValue>
+                <valueName>WPI</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHERS</controllingFieldValue>
+                <valueName>Oils</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHERS</controllingFieldValue>
+                <valueName>Others</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHERS</controllingFieldValue>
+                <valueName>Rejections/By products</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Blended Product</controllingFieldValue>
+                <valueName>Cocoa Powder &amp; Sugar &amp; Milk</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <valueName>Nibs</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MPC/MPI</controllingFieldValue>
+                <valueName>MPC</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MPC/MPI</controllingFieldValue>
+                <valueName>MPI</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>LIQUIDS</controllingFieldValue>
+                <valueName>BUTTERMLKCONCENTRATE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>LIQUIDS</controllingFieldValue>
+                <valueName>Raw Milk</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>LIQUIDS</controllingFieldValue>
+                <valueName>Skim Milk</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>LIQUIDS</controllingFieldValue>
+                <valueName>SKIMMILKCONCENTRATE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>LIQUIDS</controllingFieldValue>
+                <valueName>Whey Concentrate</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dehy</controllingFieldValue>
+                <valueName>Dehy Vegetable</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dehy</controllingFieldValue>
+                <valueName>Garlic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dehy</controllingFieldValue>
+                <valueName>Onion</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dehy</controllingFieldValue>
+                <valueName>Purees</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Almond</controllingFieldValue>
+                <valueName>Almond Ingredient Blanched</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Almond</controllingFieldValue>
+                <valueName>Almond Ingredient Natural</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Almond</controllingFieldValue>
+                <valueName>Almond InShell</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Almond</controllingFieldValue>
+                <valueName>Almond InShell Organic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Almond</controllingFieldValue>
+                <valueName>Almond Kernel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Almond</controllingFieldValue>
+                <valueName>Almond Kernel Organic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Almond</controllingFieldValue>
+                <valueName>Almond Oil Stock</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Almond</controllingFieldValue>
+                <valueName>Almond Reject</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EN - Almond</controllingFieldValue>
+                <valueName>Almond Waste</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Unit_of_Measure__c</fullName>
+        <externalId>false</externalId>
+        <label>Unit of Measure</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>MT</fullName>
+                    <default>false</default>
+                    <label>MT</label>
+                </value>
+                <value>
+                    <fullName>LBS</fullName>
+                    <default>false</default>
+                    <label>LBS</label>
+                </value>
+                <value>
+                    <fullName>LB</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>LB</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>User_Is_Account_Team_Member__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field is by default unchecked, and will be updated by Flow when user tries to create a new Consumption record</description>
+        <externalId>false</externalId>
+        <label>User Is Account Team Member</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Value_Stream__c</fullName>
+        <externalId>false</externalId>
+        <label>Value Stream</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Value_Stream</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Variety__c</fullName>
+        <externalId>false</externalId>
+        <label>Variety</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Variety</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Volume_MT__c</fullName>
+        <externalId>false</externalId>
+        <label>Annual Consumption Volume</label>
+        <precision>11</precision>
+        <required>true</required>
+        <scale>3</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Year__c</fullName>
+        <externalId>false</externalId>
+        <label>Year</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Year</valueSetName>
+        </valueSet>
+    </fields>
+    <label>Consumption</label>
+    <listViews>
+        <fullName>All_Consumption</fullName>
+        <columns>Account__c</columns>
+        <columns>NAME</columns>
+        <columns>Category__c</columns>
+        <columns>Sub_Category__c</columns>
+        <columns>Sub_Category_2__c</columns>
+        <columns>Volume_MT__c</columns>
+        <columns>Coverage__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>All Consumption</label>
+    </listViews>
+    <nameField>
+        <displayFormat>{00000}</displayFormat>
+        <label>RecordId</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Consumption</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>Private</sharingModel>
+    <sharingReasons>
+        <fullName>Access_Set__c</fullName>
+        <label>Access Set</label>
+    </sharingReasons>
+    <validationRules>
+        <fullName>Primary_Acnt_Owner_To_Create_Consumption</fullName>
+        <active>false</active>
+        <description>This validation rule will restrict only primary respective owner for the respective Account</description>
+        <errorConditionFormula>ISNEW() &amp;&amp;  NOT( ISBLANK( Account__c ) ) &amp;&amp;  
+ (NOT( $Permission.Olam_Validation_Exception )&amp;&amp;( CASESAFEID($User.Id) &lt;&gt;  CASESAFEID( Account__r.Dairy_Owner_Id__c) &amp;&amp; TEXT( Business_Unit__c )= &apos;Dairy&apos;
+) || ( CASESAFEID($User.Id) &lt;&gt;  CASESAFEID(  Account__r.Cocoa_Owner__c ) &amp;&amp; TEXT( Business_Unit__c )= &apos;Cocoa&apos;
+))</errorConditionFormula>
+        <errorMessage>Only Primary Account Owners can create Consumption</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>User_Is_Not_Account_Team_Member</fullName>
+        <active>true</active>
+        <errorConditionFormula>isnew() &amp;&amp;  User_Is_Account_Team_Member__c = FALSE &amp;&amp; not($Permission.Olam_Validation_Exception)</errorConditionFormula>
+        <errorMessage>You cannot create Consumption if you are not part of the Account Team. Add yourself as a Team Member in the Account before creating Consumption.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

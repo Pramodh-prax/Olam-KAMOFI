@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>PRODUCT.NAME</field>
+    </columns>
+    <columns>
+        <field>ASSET.NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Product2.Product_Category__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>BLEND,BMP,BUTTER,CASEIN,CHEESE,CONDENSED,CREAM,OTHER FATS,FCMP,FILLED,LACTOSE,SMP,WHEY,WPC,WPI,LIQUIDS,OTHERS,MPC/MPI,MILK POWDER</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Account_Type__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Global Key Account</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Accounts_Approved_SKUs_Quality_Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountAsset</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,24 @@
+<messaging:emailTemplate subject="Request for Approval" recipientType="User" relatedToType="Quote_Line_Approval__c">
+<!--<messaging:plainTextEmailBody >-->
+
+<messaging:htmlEmailBody >
+       
+        
+        <c:FetchDetailsForVFTemplate currentRecordId="{!relatedTo.Id}" /><br/>
+        
+     <apex:outputLink value="{!LEFT($CurrentPage.URL,FIND('/',$CurrentPage.URL,9))+relatedTo.id}" target="_parent" >Click Here For Approval</apex:outputLink>
+   
+    <br/><br/>
+       You can also reply to this email with one of these words in the first line of the email message: APPROVE, APPROVED, YES, REJECT, REJECTED, NO
+        If replying via email, you can also add comments on the second line. Comments will be stored with the approval request in Salesforce CRM.
+    <br/><br/>
+        Thank You !
+    
+    
+   
+    </messaging:htmlEmailBody>
+
+
+
+
+</messaging:emailTemplate>

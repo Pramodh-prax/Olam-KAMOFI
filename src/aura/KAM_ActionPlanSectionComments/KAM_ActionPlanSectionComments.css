@@ -1,0 +1,73 @@
+.THIS .edit-btn-container{
+    display: grid;
+}
+.THIS .action-btn {
+    text-align: center;
+}
+.THIS .comments{
+    width: 100%;
+    margin-top: .5em;
+    resize: none;
+}
+.THIS .comments-container {
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    align-items: center;
+    grid-gap: 10px;
+}
+
+.THIS .comment-action-btn {
+    z-index: 4;
+    text-align: center;
+    height: 26px;
+    width: 26px;
+    font-size: 14px;
+    background-color: #2196f3;
+    color: #FFF;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    font-weight: 400;
+    font-style: normal;
+    speak: none;
+    text-decoration: inherit;
+    text-transform: none;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 38px;
+    width: 38px;
+    font-size: 18px;
+    line-height: 35px;
+    color: #2196f3;
+    background: #FFF;
+    /* border: solid 1px #2196f3; */
+    /* -webkit-transform: rotate(45deg); */
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+.THIS a:focus {
+    color: #2196f3;
+    text-decoration: none;
+}
+.THIS a:hover {
+    color: #2196f3;
+    text-decoration: none;
+}
+.THIS .comment-action-btn{
+    transform: rotate(0deg);
+}
+.THIS .comment-action-btn-edit::before{
+    content: "\e801";
+    font-family: 'comns';
+}
+.THIS .comment-action-btn-save::before{
+    content: "\e802";
+    font-family: 'comns';
+}
+.THIS .comment-action-btn-cancel::before{
+    content: "\e800";
+    font-family: 'comns';
+}

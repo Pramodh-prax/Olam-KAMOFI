@@ -1,0 +1,28 @@
+.THIS .slds-modal__container{
+	width: 80% !important;
+	max-width: 80% !important;
+    height: 50% !important;
+	max-height: 80% !important;
+    padding-top:20rem;
+   
+}
+.THIS .pillSize{
+ width:100%;
+}
+.THIS .leftPaddingClass {
+    padding-left: 2rem;
+}
+.THIS .access-level-select {
+    display: flex;
+    align-items: center;
+}
+.THIS .access-pill-selector div + div {
+    margin: 0 1em;
+}
+.THIS .pill-container, .THIS .access-leve-container, .THIS .access-btn-container {
+    display: inline-flex;
+    vertical-align: middle;
+}
+.THIS .slds-modal__content{
+     overflow-y: hidden;
+}

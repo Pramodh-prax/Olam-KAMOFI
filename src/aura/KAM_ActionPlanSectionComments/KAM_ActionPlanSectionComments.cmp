@@ -1,0 +1,46 @@
+<aura:component>
+    <aura:attribute name="comments" type="String" default=""/>
+    <aura:attribute name="latestComments" type="String" default=""/>
+    <aura:attribute name="isEditing" type="Boolean" default="false"/>
+
+    <aura:attribute name="identifier" type="String" required="true"/>
+
+    <ltng:require 
+        styles="{!join(',', $Resource.KAM_Resource + '/css/main.min.css',
+                            $Resource.KAM_Action_Plan_Comments_CSS + '/css/comns.css'
+        )}"/>
+    <aura:registerEvent name="saveCommentEvent" type="c:KAM_ActionPlanSectionCommentsSaveEvent"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:method name="updateLocalComments" action="{!c.updateLocalComments}"></aura:method>
+    <div>
+        <div class="comments-container">
+            <div>
+                <label for="{!v.identifier + 'comments' }">{!$Label.c.KAM_Comments_Section_Header}</label>
+                <textarea class="comments" name="{!v.identifier + 'comments' }" disabled="{!!v.isEditing}" readonly="{!!v.isEditing}" value="{!v.latestComments}" onchange="{!c.updateCommentVar}"></textarea>
+                <!-- <lightning:textarea name="comments" disabled="{!!v.isEditing}" readonly="{!!v.isEditing}" value="{!v.latestComments}" label="Comments" /> -->
+            </div>
+            <div>
+                <aura:if isTrue="{!v.isEditing}">
+                    <!-- Show save and cancel -->
+                    <div class="edit-btn-container">
+                        <div class="action-btn">
+                            <a href="javascript:void(0)" onclick="{!c.onSaveBtnClicked}" class="comment-action-btn comment-action-btn-save">
+                            </a>
+                        </div>
+                        <div class="action-btn">
+                            <a href="javascript:void(0)" onclick="{!c.onCancelBtnClicked}" class="comment-action-btn comment-action-btn-cancel">
+                            </a>
+                        </div>
+                    </div>
+                </aura:if>
+                <aura:if isTrue="{!!v.isEditing}">
+                    <!-- show edit btn  -->
+                    <div class="action-btn">
+                        <a href="javascript:void(0)" onclick="{!c.onEditBtnClicked}" class="comment-action-btn comment-action-btn-edit">
+                        </a>
+                    </div>
+                </aura:if>
+            </div>
+        </div>
+    </div>
+</aura:component>

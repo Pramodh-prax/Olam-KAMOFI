@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>TCB</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>TCBs</value>
+    </caseValues>
+    <fields>
+        <label><!-- CBM/ 20DC (PL) --></label>
+        <name>CBM_20DC_PL__c</name>
+    </fields>
+    <fields>
+        <label><!-- CBM/ 20FT (FL) --></label>
+        <name>CBM_20FT_FL__c</name>
+    </fields>
+    <fields>
+        <label><!-- CBM/ 40DC (PL) --></label>
+        <name>CBM_40DC_PL__c</name>
+    </fields>
+    <fields>
+        <label><!-- CBM/ 40FT (FL) --></label>
+        <name>CBM_40FT_FL__c</name>
+    </fields>
+    <fields>
+        <label><!-- CBM/ 40HC (FL) --></label>
+        <name>CBM_40HC_FL__c</name>
+    </fields>
+    <fields>
+        <label><!-- CBM/ 40HC (PL) --></label>
+        <name>CBM_40HC_PL__c</name>
+    </fields>
+    <fields>
+        <label><!-- CBM/ Pallet --></label>
+        <name>CBM_Pallet__c</name>
+    </fields>
+    <fields>
+        <label><!-- CFR LC/ Pack (Floor-Load) --></label>
+        <name>CFR_LC_Pack_Floor_Load__c</name>
+    </fields>
+    <fields>
+        <label><!-- CFR LC/ Pack (Pallet) --></label>
+        <name>CFR_LC_Pack_Pallet__c</name>
+    </fields>
+    <fields>
+        <label><!-- CFR USD/ Pack (Floor-Load) --></label>
+        <name>CFR_USD_Pack_Floor_Load__c</name>
+    </fields>
+    <fields>
+        <label><!-- CFR USD/ Pack (Pallet) --></label>
+        <name>CFR_USD_Pack_Pallet__c</name>
+    </fields>
+    <fields>
+        <label><!-- CFR USD/ lbs (Floor-Load) --></label>
+        <name>CFR_USD_lbs_Floor_Load__c</name>
+    </fields>
+    <fields>
+        <label><!-- CFR USD/ lbs (Pallet) --></label>
+        <name>CFR_USD_lbs_Pallet__c</name>
+    </fields>
+    <fields>
+        <label><!-- CFR USD/ lbs --></label>
+        <name>CFR_USD_lbs__c</name>
+    </fields>
+    <fields>
+        <label><!-- CTN/ 20FT --></label>
+        <name>CTN_20FT__c</name>
+    </fields>
+    <fields>
+        <label><!-- CTN/ 40FT HC --></label>
+        <name>CTN_40FT_HC__c</name>
+    </fields>
+    <fields>
+        <label><!-- CTN/ 40FT --></label>
+        <name>CTN_40FT__c</name>
+    </fields>
+    <fields>
+        <label><!-- CTN/ Layer --></label>
+        <name>CTN_Layer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case CBM (m3) --></label>
+        <name>Case_CBM_m3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Mix (PL) --></label>
+        <name>Case_Mix_PL__c</name>
+    </fields>
+    <fields>
+        <label><!-- - --></label>
+        <name>ChangeSetSpace__c</name>
+    </fields>
+    <fields>
+        <label><!-- Clearance/ Pack (FL) --></label>
+        <name>Clearance_Pack_FL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Container Type --></label>
+        <name>Container_Type__c</name>
+        <picklistValues>
+            <masterLabel>Dry</masterLabel>
+            <translation><!-- Dry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reefer</masterLabel>
+            <translation><!-- Reefer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Conversion Cost (USD/ lbs) --></label>
+        <name>Conversion_Cost_USD_lbs__c</name>
+    </fields>
+    <fields>
+        <label><!-- DDP LC/ Pack (Floor-Load) --></label>
+        <name>DDP_LC_Pack_Floor_Load__c</name>
+    </fields>
+    <fields>
+        <label><!-- DDP LC/ Pack (Pallet) --></label>
+        <name>DDP_LC_Pack_Pallet__c</name>
+    </fields>
+    <fields>
+        <label><!-- DDP (TCB) (FL) --></label>
+        <name>DDP_TCB_FL__c</name>
+    </fields>
+    <fields>
+        <label><!-- DDP (TCB) (PL) --></label>
+        <name>DDP_TCB_PL__c</name>
+    </fields>
+    <fields>
+        <label><!-- DDP USD/ Pack (Floor-Load) --></label>
+        <name>DDP_USD_Pack_Floor_Load__c</name>
+    </fields>
+    <fields>
+        <label><!-- DDP USD/ Pack (Pallet) --></label>
+        <name>DDP_USD_Pack_Pallet__c</name>
+    </fields>
+    <fields>
+        <label><!-- DDP USD/ lbs (Floor-Load) --></label>
+        <name>DDP_USD_lbs_Floor_Load__c</name>
+    </fields>
+    <fields>
+        <label><!-- DDP USD/ lbs (Pallet) --></label>
+        <name>DDP_USD_lbs_Pallet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Depth/ Gusset/ Height (mm) --></label>
+        <name>Depth_Gusset_Height_mm__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dest. Clearance/ Pack (PL) --></label>
+        <name>Dest_Clearance_Pack_PL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dest. Haulage (Port - WH)/ Pack (FL) --></label>
+        <name>Dest_Haulage_Port_WH_Pack_FL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dest.Haulage (Port-WH)/ Pack (PL) --></label>
+        <name>Dest_Haulage_Port_WH_Pack_PL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duty/ Pack (FL) --></label>
+        <name>Duty_Pack_FL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duty/ Pack (PL) --></label>
+        <name>Duty_Pack_PL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duty (%) --></label>
+        <name>Duty__c</name>
+    </fields>
+    <fields>
+        <label><!-- EBITDA (USD/ Pack) --></label>
+        <name>EBITDA_USD_Pack__c</name>
+    </fields>
+    <fields>
+        <label><!-- EBITDA (USD/ lbs) --></label>
+        <name>EBITDA_USD_lbs__c</name>
+    </fields>
+    <fields>
+        <label><!-- FOB LC/ Pack (Floor-Load) --></label>
+        <name>FOB_LC_Pack_Floor_Load__c</name>
+    </fields>
+    <fields>
+        <label><!-- FOB LC/ Pack (Pallet) --></label>
+        <name>FOB_LC_Pack_Pallet__c</name>
+    </fields>
+    <fields>
+        <label><!-- FOB USD/ Pack (Floor-Load) --></label>
+        <name>FOB_USD_Pack_Floor_Load__c</name>
+    </fields>
+    <fields>
+        <label><!-- FOB USD/ Pack (Pallet) --></label>
+        <name>FOB_USD_Pack_Pallet__c</name>
+    </fields>
+    <fields>
+        <label><!-- FOB USD/ lbs (Floor-Load) --></label>
+        <name>FOB_USD_lbs_Floor_Load__c</name>
+    </fields>
+    <fields>
+        <label><!-- FOB USD/ lbs (Pallet) --></label>
+        <name>FOB_USD_lbs_Pallet__c</name>
+    </fields>
+    <fields>
+        <label><!-- FOB to DDP USD/ Pack (Floor-Load) --></label>
+        <name>FOB_to_DDP_USD_Pack_Floor_Load__c</name>
+    </fields>
+    <fields>
+        <label><!-- FOB to DDP USD/ Pack (Pallet) --></label>
+        <name>FOB_to_DDP_USD_Pack_Pallet__c</name>
+    </fields>
+    <fields>
+        <label><!-- FOB to DDP USD/ lbs (Floor-Load) --></label>
+        <name>FOB_to_DDP_USD_lbs_Floor_Load__c</name>
+    </fields>
+    <fields>
+        <label><!-- FOB to DDP USD/ lbs (Pallet) --></label>
+        <name>FOB_to_DDP_USD_lbs_Pallet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fixed Costs (TCB) --></label>
+        <name>Fixed_Costs_TCB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fobbing / Container --></label>
+        <name>Fobbing_Container__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fobbing Fee (TCB) --></label>
+        <name>Fobbing_Fee_TCB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Freight / Container --></label>
+        <name>Freight_Container__c</name>
+    </fields>
+    <fields>
+        <label><!-- Freight/ Pack (FL) --></label>
+        <name>Freight_Pack_FL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Freight/ Pack (PL) --></label>
+        <name>Freight_Pack_PL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gross Case Weight (kg) (2nd) --></label>
+        <name>Gross_Case_Weight_kg_2nd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gross Item Weight (g) (1st) --></label>
+        <name>Gross_Item_Weight_g_1st__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gross MT/20FT (FL) --></label>
+        <name>Gross_MT_20FT_FL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gross MT/20FT (PL) --></label>
+        <name>Gross_MT_20FT_PL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gross MT/40FT (FL) --></label>
+        <name>Gross_MT_40FT_FL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gross MT/40FT HC (FL) --></label>
+        <name>Gross_MT_40FT_HC_FL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gross MT/40FT HC (PL) --></label>
+        <name>Gross_MT_40FT_HC_PL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gross MT/40FT (PL) --></label>
+        <name>Gross_MT_40FT_PL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gross Pallet Weight (kg) --></label>
+        <name>Gross_Pallet_Weight_kg__c</name>
+    </fields>
+    <fields>
+        <label><!-- Height (mm) --></label>
+        <name>Height_mm__c</name>
+    </fields>
+    <fields>
+        <label><!-- IMU% (DDP) - Floor Loading --></label>
+        <name>IMU_DDP_Floor_Loading__c</name>
+    </fields>
+    <fields>
+        <label><!-- IMU% (DDP) - Pallet Loading --></label>
+        <name>IMU_DDP_Pallet_Loading__c</name>
+    </fields>
+    <fields>
+        <label><!-- IMU% (FOB) --></label>
+        <name>IMU_FOB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Import Clearance (USD/Cont) --></label>
+        <name>Import_Clearance_USD_Cont__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial Design (TCB) --></label>
+        <name>Initial_Design_TCB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial Design --></label>
+        <name>Initial_Design__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest Months --></label>
+        <name>Interest_Months__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest (TCB) --></label>
+        <name>Interest_TCB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest (%) --></label>
+        <name>Interest__c</name>
+    </fields>
+    <fields>
+        <label><!-- Layer/ PL 40HC --></label>
+        <name>Layer_PL_40HC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Layer/ PL --></label>
+        <name>Layer_PL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Length/ Depth (mm) --></label>
+        <name>Length_Depth_mm__c</name>
+    </fields>
+    <fields>
+        <label><!-- Length (mm) (1st) --></label>
+        <name>Length_mm_1st__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loss (1st PM) --></label>
+        <name>Loss_1st_PM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loss (2nd PM - Carton) --></label>
+        <name>Loss_2nd_PM_Carton__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loss (Product) --></label>
+        <name>Loss_Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- MOQ Packaging (1st) --></label>
+        <name>MOQ_Packaging_1st__c</name>
+    </fields>
+    <fields>
+        <label><!-- MOQ Packaging (2nd) --></label>
+        <name>MOQ_Packaging_2nd__c</name>
+    </fields>
+    <fields>
+        <label><!-- MT/ 20FT (FL) --></label>
+        <name>MT_20FT_FL__c</name>
+    </fields>
+    <fields>
+        <label><!-- MT/ 20FT (PL) --></label>
+        <name>MT_20FT_PL__c</name>
+    </fields>
+    <fields>
+        <label><!-- MT/ 40FT (FL) --></label>
+        <name>MT_40FT_FL__c</name>
+    </fields>
+    <fields>
+        <label><!-- MT/ 40FT HC (FL) --></label>
+        <name>MT_40FT_HC_FL__c</name>
+    </fields>
+    <fields>
+        <label><!-- MT/ 40FT HC (PL) --></label>
+        <name>MT_40FT_HC_PL__c</name>
+    </fields>
+    <fields>
+        <label><!-- MT/ 40FT (PL) --></label>
+        <name>MT_40FT_PL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Margin (TCB) --></label>
+        <name>Margin_TCB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Margin (%) --></label>
+        <name>Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Markup W/O Margin (USD/ lbs) --></label>
+        <name>Markup_W_O_Margin_USD_lbs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Markup with Margin (USD/ lbs) --></label>
+        <name>Markup_with_Margin_USD_lbs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Height (mm) --></label>
+        <name>Max_Height_mm__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Weight (kg) --></label>
+        <name>Max_Weight_kg__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nut Density(g/ml) --></label>
+        <name>Nut_Density_g_ml__c</name>
+    </fields>
+    <fields>
+        <label><!-- Olam WH&apos;s Cost (USD/Pallet) - Excl. PLT --></label>
+        <name>Olam_WHs_Cost_USD_Pallet_Excl_PLT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Olam WH&apos;s Cost (USD/Pallet) - Incl. PLT --></label>
+        <name>Olam_WHs_Cost_USD_Pallet_Incl_PLT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Processing --></label>
+        <name>Opportunity_Processing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Opportunity Name --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- TCBs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Other Fixed Costs --></label>
+        <name>Other_Fixed_Costs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Est. Annual Profit --></label>
+        <name>PLBS_Est_Annual_Profit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Est. Annual Revenue --></label>
+        <name>PLBS_Est_Annual_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- PL/ 20FT --></label>
+        <name>PL_20FT__c</name>
+    </fields>
+    <fields>
+        <label><!-- PL/ 40FT HC --></label>
+        <name>PL_40FT_HC__c</name>
+    </fields>
+    <fields>
+        <label><!-- PL/ 40FT --></label>
+        <name>PL_40FT__c</name>
+    </fields>
+    <fields>
+        <label><!-- PM Type (1st) --></label>
+        <name>PM_Type_1st__c</name>
+    </fields>
+    <fields>
+        <label><!-- PM Type (2nd) --></label>
+        <name>PM_Type_2nd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pack/ 20FT (FL) --></label>
+        <name>Pack_20FT_FL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pack/ 20FT (PL) --></label>
+        <name>Pack_20FT_PL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pack/ 40FT (FL) --></label>
+        <name>Pack_40FT_FL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pack/ 40FT HC (FL) --></label>
+        <name>Pack_40FT_HC_FL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pack/ 40FT HC (PL) --></label>
+        <name>Pack_40FT_HC_PL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pack/ 40FT (PL) --></label>
+        <name>Pack_40FT_PL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pack/ (40HC) (PL) --></label>
+        <name>Pack_40HC_PL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pack/ PL --></label>
+        <name>Pack_PL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Packing Cost ($/lbs) --></label>
+        <name>Packing_Cost_lbs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Packing (TCB) --></label>
+        <name>Packing_TCB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Packing loss % --></label>
+        <name>Packing_loss__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pallet Cost (USD/EA) --></label>
+        <name>Pallet_Cost_USD_EA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pallet Height (mm) --></label>
+        <name>Pallet_Height_mm__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pallet (TCB) --></label>
+        <name>Pallet_TCB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pallet Type --></label>
+        <name>Pallet_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Opportunity Name --></label>
+        <name>Parent_Opportunity__c</name>
+        <relationshipLabel><!-- TCBs (Opportunity) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Port - Olam WH (USD/Cont) --></label>
+        <name>Port_Olam_WH_USD_Cont__c</name>
+    </fields>
+    <fields>
+        <label><!-- Port of Entry --></label>
+        <name>Port_of_Entry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Printing (2nd) --></label>
+        <name>Printing_2nd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product (TCB) --></label>
+        <name>Product_TCB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quotations Given as Per --></label>
+        <name>Quotations_Given_as_Per__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relative Carton Efficiency % --></label>
+        <name>Relative_Carton_Efficiency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Retail Price (USD) --></label>
+        <name>Retail_Price_USD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Structure (2nd) --></label>
+        <name>Structure_2nd__c</name>
+    </fields>
+    <fields>
+        <label><!-- 1st PM (Pouch/ Jar) (TCB) --></label>
+        <name>TCB_1st_PM_Pouch_Jar__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2nd PM (Outer) (TCB) --></label>
+        <name>TCB_2nd_PM_Outer__c</name>
+    </fields>
+    <fields>
+        <label><!-- FOB (TCB)_ --></label>
+        <name>TCB_FOB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tare Weight (g) (1st) --></label>
+        <name>Tare_Weight_g_1st__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tare Weight (g) (2nd) --></label>
+        <name>Tare_Weight_g_2nd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Term --></label>
+        <name>Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Ingredient Price --></label>
+        <name>Total_Ingredient_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trucking/ Pack (FL) --></label>
+        <name>Trucking_Pack_FL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trucking to Final Dest./ Pack (PL) --></label>
+        <name>Trucking_to_Final_Dest_Pack_PL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit/ CTN --></label>
+        <name>Unit_CTN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Utilization/20DC (FL) --></label>
+        <name>Utilization_20DC_FL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Utilization/20DC (PL) --></label>
+        <name>Utilization_20DC_PL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Utilization/40DC (FL) --></label>
+        <name>Utilization_40DC_FL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Utilization/40DC (PL) --></label>
+        <name>Utilization_40DC_PL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Utilization/40HC (FL) --></label>
+        <name>Utilization_40HC_FL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Utilization/40HC (PL) --></label>
+        <name>Utilization_40HC_PL__c</name>
+    </fields>
+    <fields>
+        <label><!-- WH Cost (Dest.)/ Pack (FL) --></label>
+        <name>WH_Cost_Dest_Pack_FL__c</name>
+    </fields>
+    <fields>
+        <label><!-- WH Cost (Dest.)/ Pack (PL) --></label>
+        <name>WH_Cost_Dest_Pack_PL__c</name>
+    </fields>
+    <fields>
+        <label><!-- WH to Customer&apos;s DC Cost (USD/Pallet) --></label>
+        <name>WH_to_Customers_DC_Cost_USD_Pallet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Width (mm) (1st) --></label>
+        <name>Width_mm_1st__c</name>
+    </fields>
+    <fields>
+        <label><!-- Width (mm) (2nd) --></label>
+        <name>Width_mm_2nd__c</name>
+    </fields>
+    <fields>
+        <label><!-- PM (Pouch/jar) VND/EA (1st) --></label>
+        <name>X1st_PM_Pouch_jar__c</name>
+    </fields>
+    <fields>
+        <label><!-- Printing (1st) --></label>
+        <name>X1st_Printing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Structure (1st) --></label>
+        <name>X1st_Structure__c</name>
+    </fields>
+    <fields>
+        <label><!-- PM (Carton) - VND/EA (2nd) --></label>
+        <name>X2nd_PM_Carton__c</name>
+    </fields>
+    <layouts>
+        <layout>TCB Layout</layout>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- IMU % &amp; Markup --></label>
+            <section>IMU % &amp; Markup</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Details --></label>
+            <section>Opportunity Details</section>
+        </sections>
+        <sections>
+            <label><!-- TCB Pallet - Load &amp; Floor- Load --></label>
+            <section>TCB Pallet - Load &amp; Floor- Load</section>
+        </sections>
+        <sections>
+            <label><!-- TCB(FOB) --></label>
+            <section>TCB(FOB)</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

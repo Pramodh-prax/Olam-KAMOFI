@@ -1,0 +1,12 @@
+.THIS th { 
+	/* background: #3498db;  */
+    background: #f1efeb;
+	color: #000; 
+	font-weight: bold; 
+}
+.THIS  .des {
+     max-width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: initial;  
+}

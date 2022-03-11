@@ -1,0 +1,7 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" controller='PWR_Validate_Controller'>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />    
+    <aura:attribute name="modalContext" type="String" />
+    <lightning:button onclick="{!c.onValidate}" variant="brand">Validate for Packaging and Shipment</lightning:button>
+    <br/>
+    <lightning:formattedText value="{!v.modalContext}" />
+</aura:component>

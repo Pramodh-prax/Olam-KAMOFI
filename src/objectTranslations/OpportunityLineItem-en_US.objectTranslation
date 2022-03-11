@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Unused</value>
+        </caseValues>
+        <name>quantity_opportunitylineitem</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Olam Offer (per Unit)</value>
+        </caseValues>
+        <name>sales_price_opportunitylineitem</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application --></label>
+        <name>Application__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved to Supply --></label>
+        <name>Approved_to_Supply__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Bulk Sample Quantity --></label>
+        <name>Bulk_Sample_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bulk Sample --></label>
+        <name>Bulk_Sample__c</name>
+    </fields>
+    <fields>
+        <label><!-- Combination Key --></label>
+        <name>Combination_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Consumption: Annual Volume (MT) --></label>
+        <name>Consumption_Annual_Volume__c</name>
+    </fields>
+    <fields>
+        <label><!-- Consumption: Application --></label>
+        <name>Consumption_Application__c</name>
+    </fields>
+    <fields>
+        <label><!-- Consumption Brand: Contributed Volume --></label>
+        <name>Consumption_Brand_Contributed_Volume__c</name>
+    </fields>
+    <fields>
+        <label><!-- Consumption: Brand Name --></label>
+        <name>Consumption_Brand_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Consumption Brand: Share % --></label>
+        <name>Consumption_Brand_Share__c</name>
+    </fields>
+    <fields>
+        <label><!-- Consumption Brand --></label>
+        <name>Consumption_Brand__c</name>
+        <relationshipLabel><!-- Opportunity Product --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Consumption: Year --></label>
+        <name>Consumption_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Consumption --></label>
+        <name>Consumption__c</name>
+        <relationshipLabel><!-- Opportunity Product --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contract end date --></label>
+        <name>Contract_end_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract start date --></label>
+        <name>Contract_start_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Value in MT --></label>
+        <name>Converted_Offer_per_MT__c</name>
+    </fields>
+    <fields>
+        <help><!-- Converts the volume based on the unit of measure selected --></help>
+        <label><!-- Converted Volume in MT --></label>
+        <name>Converted_Volume_in_MT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sample Sent cost --></help>
+        <label><!-- Courier Cost (USD) --></label>
+        <name>Courier_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Received to Acceptance Duration --></label>
+        <name>Customer_Acceptance_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Bid --></label>
+        <name>Customer_Bid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Material Code --></label>
+        <name>Customer_Material_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Material Description --></label>
+        <name>Customer_Material_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Material Specification --></label>
+        <name>Customer_Material_Specification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Uploaded? --></label>
+        <name>Data_Uploaded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Develop to Sample Received Duration --></label>
+        <name>Develop_to_Sample_Received_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Due Date --></label>
+        <name>Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Product Code --></label>
+        <name>External_Product_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Followup Date --></label>
+        <name>Followup_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Grade_ --></label>
+        <name>Grade_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Grade --></label>
+        <name>Grade__c</name>
+    </fields>
+    <fields>
+        <label><!-- Integration Message --></label>
+        <name>Integration_Messagee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Integration Status --></label>
+        <name>Integration_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsCommercialisedProduct --></label>
+        <name>IsCommercialisedProduct__c</name>
+    </fields>
+    <fields>
+        <label><!-- Key Incoterm --></label>
+        <name>Key_Incoterm__c</name>
+        <picklistValues>
+            <masterLabel>CFR</masterLabel>
+            <translation><!-- CFR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CIF</masterLabel>
+            <translation><!-- CIF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DAP</masterLabel>
+            <translation><!-- DAP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DDP</masterLabel>
+            <translation><!-- DDP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXW</masterLabel>
+            <translation><!-- EXW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FCA</masterLabel>
+            <translation><!-- FCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FOB</masterLabel>
+            <translation><!-- FOB --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Name --></label>
+        <name>Opportunity_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Owner --></label>
+        <name>Opportunity_Owner__c</name>
+        <relationshipLabel><!-- Opportunity Product (Opportunity Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- OptyProdP1 --></label>
+        <name>OptyProdP1__c</name>
+    </fields>
+    <fields>
+        <label><!-- PD&amp;I User --></label>
+        <name>PD_I_User__c</name>
+        <relationshipLabel><!-- Opportunity Product (PD&amp;I User) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Brand --></label>
+        <name>Product_Brand__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Category --></label>
+        <name>Product_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Configuration --></label>
+        <name>Product_Configuration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product SAP Code --></label>
+        <name>Product_SAP_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Sub Category 2 --></label>
+        <name>Product_Sub_Category_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Sub Category --></label>
+        <name>Product_Sub_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity Dispatched --></label>
+        <name>Quantity_Dispatched__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity of Sample --></label>
+        <name>Quantity_of_Sample_Grams__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ratio --></label>
+        <name>Ratio__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason for Resampling --></label>
+        <name>Reason_for_Resampling__c</name>
+        <picklistValues>
+            <masterLabel>Change in Quantity</masterLabel>
+            <translation><!-- Change in Quantity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change in Quantity &amp; Sample Spec</masterLabel>
+            <translation><!-- Change in Quantity &amp; Sample Spec --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change in Sample Spec</masterLabel>
+            <translation><!-- Change in Sample Spec --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Regions --></label>
+        <name>Regions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resampling Quantity --></label>
+        <name>Resampling_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Acceptance/ Rejection Date --></label>
+        <name>Sample_Acceptance_Rejection_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Helps to capture the feedback received from the customer --></help>
+        <label><!-- Sample Feedback --></label>
+        <name>Sample_Feedback__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Received Date --></label>
+        <name>Sample_Received_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Sent Date --></label>
+        <name>Sample_Sent_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Status --></label>
+        <name>Sample_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample with Billing? --></label>
+        <name>Sample_with_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sampling Status --></label>
+        <name>Sampling_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- ETD --></label>
+        <name>Shipment_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Splits --></label>
+        <name>Splits__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tentative Bid Volumes --></label>
+        <name>Tentative_Bid_Volumes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Offer --></label>
+        <name>Total_Offer__c</name>
+    </fields>
+    <fields>
+        <help><!-- For TCB Process --></help>
+        <label><!-- Total Price (Olam) --></label>
+        <name>Total_Price_Olam__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tracking Number --></label>
+        <name>Tracking_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tracking URL --></label>
+        <name>Tracking_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit of measure --></label>
+        <name>Unit_of_measure__c</name>
+    </fields>
+    <fields>
+        <label><!-- UoM(Sample) --></label>
+        <name>UoM__c</name>
+        <picklistValues>
+            <masterLabel>Gram</masterLabel>
+            <translation><!-- Gram --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kilogram</masterLabel>
+            <translation><!-- Kilogram --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Metric Ton</masterLabel>
+            <translation><!-- Metric Ton --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>US pound</masterLabel>
+            <translation><!-- US pound --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Volume --></label>
+        <name>Volume__c</name>
+    </fields>
+    <layouts>
+        <layout>Olam Sampling Product Layout</layout>
+        <sections>
+            <label><!-- Sample Dispatch Details --></label>
+            <section>Sample Dispatch Details</section>
+        </sections>
+        <sections>
+            <label><!-- Sampling Details --></label>
+            <section>Sampling Details</section>
+        </sections>
+        <sections>
+            <label><!-- Tender Details --></label>
+            <section>Tender Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Opportunity Product Layout</layout>
+        <sections>
+            <label><!-- Tender Details --></label>
+            <section>Tender Details</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- You must first select the project type before adding the sampling details --></errorMessage>
+        <name>Check_if_Project_status_is_Blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not authorised to make this change, Please proceed to submit to PDI --></errorMessage>
+        <name>Dairy_Sales_Project_status_NOT_Sample</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter the Followup Date. --></errorMessage>
+        <name>Followup_date_mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sampling Status should be &apos;New&apos;. --></errorMessage>
+        <name>NewSampleStatusShouldBeNew</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please input the Quantity of Sample sent in grams. --></errorMessage>
+        <name>OPTY011_Sampling_Quantity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Invalid Sample Status --></errorMessage>
+        <name>OPTY011_Sampling_Status_Validation_v2</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please input the Tracking Number or Tracking URL for the sample --></errorMessage>
+        <name>OPTY011_Sampling_Tracking_Number_or_URL</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter Resampling Quantity --></errorMessage>
+        <name>ReasonForResamplingFieldValQuantity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select Reason for Resampling --></errorMessage>
+        <name>ReasonForResamplingValidation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please edit Sample feedback. --></errorMessage>
+        <name>Sample_Feedback_mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This field is mandatory when Sampling Status is &apos;Sample Approved, asking for bulk sample&apos; --></errorMessage>
+        <name>SamplingStatusBulkSampleApp</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill Sampling Status, UOM and Sample Quantity --></errorMessage>
+        <name>SamplingStatusNewOppProdStatusValidation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field can&apos;t be changed to &apos;New&apos; from the current Sampling Status --></errorMessage>
+        <name>SamplingStatusNewSelectionValidation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field can&apos;t be changed to &apos;New&apos; or &apos;Samples Sent&apos; from &apos;Kept on Hold&apos; or &apos;No Response&apos; --></errorMessage>
+        <name>SamplingStatusOnHoldValidation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field can&apos;t be changed to &apos;New&apos; from &apos;Resample sent to customer&apos; --></errorMessage>
+        <name>SamplingStatusResampleSntToCustValidatn</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field can&apos;t be changed to &apos;New&apos; from &apos;Samples Sent&apos; --></errorMessage>
+        <name>SamplingStatusSampleSentValidation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You can only select &quot;Samples Sent&quot; for a Service Opportunity. --></errorMessage>
+        <name>Service_Opportunity_Sampling_Status</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,127 @@
+<!--
+  @description       : 
+  @author            : Bharatesh Shetty
+  @group             : 
+  @last modified on  : 09-06-2021
+  @last modified by  : Bharatesh Shetty
+-->
+<aura:component implements="force:lightningQuickAction" controller="RequestForSamplingController">
+    <!-- on component load, fetch picklist values dynamically from apex controller -->   
+    <!--<aura:handler name="init" value="{!this}" action="{!c.doInit}"/> -->
+    <aura:handler name="oSelectedRecordEvent" event="c:selectedsObjectRecordEvent" action="{!c.handleComponentEvent}"/>
+        
+    <!--declare aura attributes-->
+    <aura:attribute name="showSaveCancelBtn" type="boolean"/>
+    <aura:attribute name="unitofmeasurePicklistOpts" type="string[]" description="store picklist options values"/> 
+    <aura:attribute name="keyDriverToWinProjectPicklistOpts" type="string[]" description="store picklist options values"/> 
+    <aura:attribute name="targetMarginPicklistOpts" type="string[]" description="store picklist options values"/> 
+    <aura:attribute name="showErrorClass" type="boolean" default="false"/>
+    <aura:attribute name="sNo" type="string" />
+    <aura:attribute name="recordId" type="string" />
+    <aura:attribute name="selectedAccountLookUpRecord" type="account" default="{'sobjectType':'account'}"/>
+    <aura:attribute name="selectedUserLookUpRecord" type="user" default="{'sobjectType':'user'}"/>
+    
+    <aura:attribute name="singleRec" type="object" default="{'objOpportunityLineItem.Product2.Name' : '',
+                                                             'objOpportunityLineItem.Region__c' : '',
+                                                             'objOpportunityLineItem.Country__c' : '',
+                                                             'estimatedVolume' :'',
+                                                             'taregtSellingPrice': '',
+                                                             'unitOfMeasure': '',
+                                                             'firstSampleDueDate': '',
+                                                             'keyDriverToWinProject': '',
+                                                             'targetMargin': '',
+                                                             'quantityOfSample':''
+                                                             }"/>
+    <aura:attribute name="Product2IdEditMode" type="boolean" default="false" />
+    
+    <!--Table Row Start--> 
+    
+    <tr>
+        <td class="{! v.showErrorClass == true ? 'slds-cell-edit slds-has-error' : 'slds-cell-edit'}">
+            <lightning:input type="text" aura:id="OppName"
+                          class="field inputFieldWidth"
+                          value="{!v.singleRec.OppName}"
+                          required="true"
+                          />
+        </td>
+        <td>
+            <div class="slds-truncate">{!v.singleRec.objOpportunityLineItem.Product2.Name}</div>
+        </td>
+        <td>
+            <div class="slds-truncate">{!v.singleRec.objOpportunityLineItem.Region__c}</div>
+        </td>
+        <td>
+            <div class="slds-truncate">{!v.singleRec.objOpportunityLineItem.Country__c}</div>
+        </td>
+        
+        <td class="{! v.showErrorClass == true ? 'slds-cell-edit slds-has-error' : 'slds-cell-edit'}">
+                <div class="lookup-container">
+                    <c:customLookupGeneric aura:id="accountName" objectAPIName="account"  IconName="standard:account" selectedRecord="{!v.selectedAccountLookUpRecord}" label="*Required"/>
+                </div>
+        </td>
+  
+        <td class="{! v.showErrorClass == true ? 'slds-cell-edit slds-has-error' : 'slds-cell-edit'}">
+            <lightning:input type="number" aura:id="estimatedVolume"
+                              class="field inputFieldWidth"
+                              value="{!v.singleRec.estimatedVolume}"
+                              required="true"
+                              step=".01"
+                              />
+        </td> 
+        
+        <td class="{! v.showErrorClass == true ? 'slds-cell-edit slds-has-error' : 'slds-cell-edit'}">
+            <lightning:input type="number" aura:id="taregtSellingPrice"
+                              class="field inputFieldWidth"
+                              value="{!v.singleRec.taregtSellingPrice}"
+                              required="true"
+                              step=".01"
+                              />
+        </td> 
+        <td class="{! v.showErrorClass == true ? 'slds-cell-edit slds-has-error' : 'slds-cell-edit'}">
+            <lightning:select name="unitOfMeasure" label="Select an Unit of measure:" variant="label-hidden"  
+                              aura:id="unitOfMeasure" value="{!v.singleRec.unitOfMeasure}" required="true"> 
+                <aura:iteration items="{!v.unitofmeasurePicklistOpts}" var="option">
+                    <option text="{!option.label}" value="{!option.value}" selected="{!option.selected}"/>
+                </aura:iteration>
+            </lightning:select>
+        </td>
+        <td class="{! v.showErrorClass == true ? 'slds-cell-edit slds-has-error' : 'slds-cell-edit'}">
+            <lightning:input type="number" aura:id="quantityOfSample"
+                              class="field inputFieldWidth"
+                              value="{!v.singleRec.quantityOfSample}"
+                              required="true"
+                              step=".01"
+                              />
+        </td>  
+        <td  class="{! v.showErrorClass == true ? 'slds-cell-edit slds-has-error' : 'slds-cell-edit'}">
+            <div class="ship-month-container">
+            	<lightning:input type="date"
+                             class="field inputFieldWidth"
+                             value="{!v.singleRec.firstSampleDueDate}"
+                             required="true"
+                             />
+            </div>
+        </td>
+        <td class="{! v.showErrorClass == true ? 'slds-cell-edit slds-has-error' : 'slds-cell-edit'}">
+            <lightning:select name="keyDriverToWinProject" label="Select an Unit of measure:" variant="label-hidden"  
+                              aura:id="keyDriverToWinProject" value="{!v.singleRec.keyDriverToWinProject}" required="true">
+                <aura:iteration items="{!v.keyDriverToWinProjectPicklistOpts}" var="option">
+                    <option text="{!option.label}" value="{!option.value}" selected="{!option.selected}"/>
+                </aura:iteration>
+            </lightning:select>
+        </td>
+        <td class="{! v.showErrorClass == true ? 'slds-cell-edit slds-has-error' : 'slds-cell-edit'}">
+            <lightning:select name="targetMargin" label="Select an Unit of measure:" variant="label-hidden"  
+                              aura:id="targetMargin" value="{!v.singleRec.targetMargin}" required="true">
+                <aura:iteration items="{!v.targetMarginPicklistOpts}" var="option">
+                    <option text="{!option.label}" value="{!option.value}" selected="{!option.selected}"/>
+                </aura:iteration>
+            </lightning:select>
+        </td>
+        <td class="{! v.showErrorClass == true ? 'slds-cell-edit slds-has-error' : 'slds-cell-edit'}">
+            <div class="lookup-container">
+                <c:customLookupGeneric aura:id="userName" objectAPIName="user"  IconName="standard:user" selectedRecord="{!v.selectedUserLookUpRecord}" label="*Required"/>
+            </div>
+        </td>
+    </tr>
+</aura:component>

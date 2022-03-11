@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_82814980</developerName>
+        <masterLabel>Region</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Account.Consumption__r$Owner</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Hiran Perera</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mohammad Raziul Hassan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Vipan Kumar</sourceValue>
+            </sourceValues>
+            <value>ME</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Karel Keijzer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jean Baptiste Plasma</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Juriaan Piet</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Rutger Schutte</sourceValue>
+            </sourceValues>
+            <value>W EU</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Wadim Pasiczniak</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bartosz Stachowicz</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Piotr C</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Lucas Schmitz</sourceValue>
+            </sourceValues>
+            <value>E EU</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Cindy Ma</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Miranda Ling</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>David Deng</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Owen Zhang</sourceValue>
+            </sourceValues>
+            <value>China</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Angela Ajeng</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Hans Daley</sourceValue>
+            </sourceValues>
+            <value>Indonesia</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Anh Nguyen</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jeffrey Lee</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Karan Dogra</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kate Seng</sourceValue>
+            </sourceValues>
+            <value>SEA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Mihir Mogre</sourceValue>
+            </sourceValues>
+            <value>N Africa</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Vishal Sharma</sourceValue>
+            </sourceValues>
+            <value>W Africa</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Vipin Kukreja</sourceValue>
+            </sourceValues>
+            <value>SAARC</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Marcelino Valdez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Matt Helon</sourceValue>
+            </sourceValues>
+            <value>US</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Manish Khede</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Praveen Paulsamy</sourceValue>
+            </sourceValues>
+            <value>Nigeria</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBarStacked</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_82814980</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <secondaryGroupingColumn>Account.Consumption__r$Category__c</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Consumption__r$Owner</field>
+    </columns>
+    <columns>
+        <field>Account.Consumption__r$Sub_Category__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Consumption__r$Volume_MT__c</field>
+    </columns>
+    <currency>USD</currency>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Consumption__r$Category__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_82814980</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <name>Consumption Records - By Region</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Account_and_Consumption__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>1st PM</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>1st PM</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loss % --></label>
+        <name>Loss__c</name>
+    </fields>
+    <fields>
+        <label><!-- Price Kit --></label>
+        <name>Price_Kit__c</name>
+        <relationshipLabel><!-- 1st PM --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- 1st PM Type --></label>
+        <name>X1st_PM_Type__c</name>
+        <picklistValues>
+            <masterLabel>COMPOSITE CANISTER</masterLabel>
+            <translation><!-- COMPOSITE CANISTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOY</masterLabel>
+            <translation><!-- DOY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOY FLAT BOTTOM</masterLabel>
+            <translation><!-- DOY FLAT BOTTOM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FOUR SIDE SEAL</masterLabel>
+            <translation><!-- FOUR SIDE SEAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GLASS JAR</masterLabel>
+            <translation><!-- GLASS JAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>METAL CANISTER</masterLabel>
+            <translation><!-- METAL CANISTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PAPER MILK BOTTLE</masterLabel>
+            <translation><!-- PAPER MILK BOTTLE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PET CANISTER</masterLabel>
+            <translation><!-- PET CANISTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PET CYLINDER JAR</masterLabel>
+            <translation><!-- PET CYLINDER JAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PET JAR</masterLabel>
+            <translation><!-- PET JAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PILLOW</masterLabel>
+            <translation><!-- PILLOW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PILLOW BLOCK BOTTOM</masterLabel>
+            <translation><!-- PILLOW BLOCK BOTTOM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VACUUM</masterLabel>
+            <translation><!-- VACUUM --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>1st PM Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

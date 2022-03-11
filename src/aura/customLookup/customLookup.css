@@ -1,0 +1,13 @@
+.THIS .leftPaddingClass {
+    padding-left: 2rem;
+}
+.THIS .slds-pill-container {
+    padding: 0 .5em;
+}
+.THIS .pillSize{
+    width:100%;
+    min-height: 40px;
+}
+.THIS .pillSize .slds-pill__label {
+    white-space: pre-wrap !important;
+}

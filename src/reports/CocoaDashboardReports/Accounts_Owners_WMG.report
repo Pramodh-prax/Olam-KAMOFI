@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_15607407</developerName>
+        <masterLabel>Region</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>ACCOUNT_OWNER_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Mike Barrett</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mike Pukansky</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Andrew OH</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bart Bulcke</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bill Pearce</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Diane Stopford</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jason Eberle</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jonathan Tharnstrom</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Samantha Henkel</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tyler Miller</sourceValue>
+            </sourceValues>
+            <value>USA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Amanda Teh</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Charissa Leong</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Damien Lim</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Gaven Low</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Penny Seet</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Reina Wong</sourceValue>
+            </sourceValues>
+            <value>APAC</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Andres Casas</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Andrey Fomin</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bleddyn Young</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Cecile Charroin</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chemsi ayouche</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Christian Laucht</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Darren Spruce</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Evgeniy Zhidkikh</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Hartmut Schnack</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>jesper snorgaard</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>jessica sader</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jose Luis villasante</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>manon faasse</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Milana Davidonyte</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>munish uppal</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nicholas Morss</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Philipp Duering</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Piotr C</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Simon Brayn-Smith</sourceValue>
+            </sourceValues>
+            <value>Europe</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>Account.Commercialised__c</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_15607407</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_COUNTRY_CODE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Commercialised__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_OWNER_NAME</field>
+    </columns>
+    <columns>
+        <field>Account.SAP_Account_ID__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>ACCOUNT_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>umesh kumar</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Cocoa_BD_Status__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_15607407</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Accounts Owners</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountTeam</reportType>
+    <scope>team</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

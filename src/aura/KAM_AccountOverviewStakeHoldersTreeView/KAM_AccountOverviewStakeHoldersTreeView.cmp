@@ -1,0 +1,20 @@
+<aura:component extends="c:KAM_Util" controller="KAM_AccountPlanOverviewCntl">
+
+    <ltng:require scripts="{!join(',',
+    $Resource.jquery) }" afterScriptsLoaded="{!c.scriptLoaded}" />
+    
+    <aura:attribute name="idAttr" type="String" default="tree-view" required="true" />
+    <aura:attribute name="items" type="List" />
+    <!-- default='[{"id":"1","children":{},"reportsTo":""},{"id":"2","reportsTo":"1","children":{}},{"id":"3","reportsTo":"1","children":{}},{"id":"4","children":{},"reportsTo":"1"},{"id":"5","children":{},"reportsTo":"2"},{"id":"5","children":{},"reportsTo":"2"},{"id":"7","children":{},"reportsTo":"3"},{"id":"8","children":{},"reportsTo":"5"},{"id":"9","children":{},"reportsTo":"5"},{"id":"10","children":{},"reportsTo":"5"},{"id":"11","children":{},"reportsTo":"5"},{"id":"12","children":{},"reportsTo":"5"},{"id":"13","children":{},"reportsTo":"5"},{"id":"14","children":{},"reportsTo":"5"},{"id":"15","children":{},"reportsTo":"5"}]' /> -->
+
+    <lightning:layout multipleRows="true" horizontalAlign="center" verticalAlign="center" class="">
+        <lightning:layoutItem size="12" class="" smallDeviceSize="12" mediumDeviceSize="12" largeDeviceSize="12">
+            <aura:if isTrue="{!!v.items}">
+                <div class="empty-tree-container">
+                    <span>{!$Label.c.KAM_Account_Overview_StakeHoldersTree_Empty_Message}</span>
+                </div>
+            </aura:if>
+            <ul id="{!v.idAttr + '-tree-list'}" class="tree"></ul>
+        </lightning:layoutItem>
+    </lightning:layout>
+</aura:component>

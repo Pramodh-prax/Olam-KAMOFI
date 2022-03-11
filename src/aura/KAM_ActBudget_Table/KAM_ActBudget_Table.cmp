@@ -1,0 +1,46 @@
+<aura:component>
+    <ltng:require scripts="{!join(',',$Resource.jquery) }" styles="{!join(',', $Resource.KAM_Resource + '/css/main.min.css')}" afterScriptsLoaded="{!c.scriptLoaded}" />
+
+    <aura:attribute name="items" type="Object"/>
+    <aura:attribute name="accountPlan" type="Object"/>
+    <aura:attribute name="labels" type="Object" />
+
+    <aura:attribute name="years" type="List" />
+    <aura:attribute name="currentYear" type="Integer"/>
+
+    <aura:attribute name="uniqueId" type="String" default="budgetTable"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <div>
+        <table id="{!v.uniqueId + '-act-budget-table'}" class="act-budget-table">
+            <thead>
+                <tr>
+                    <th>{!v.labels.category}</th>
+                    <th>{!v.labels.subcategory}</th>
+                    <th>{!v.labels.subcategory2}</th>
+                    <aura:iteration items="{!v.years}" var="eachYear">
+                        <th colspan="2">{!eachYear}</th>    
+                    </aura:iteration>
+                    <th colspan="2">{!v.currentYear}</th>
+                    <th>{!v.labels.achieved}</th>
+                    <th>{!v.labels.walletShare}</th>
+                </tr>
+            </thead>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <aura:iteration items="{!v.years}" var="eachYear">
+                        <th>{!v.labels.budget}</th>
+                        <th>{!v.labels.actual}</th>
+                    </aura:iteration>
+                    <th>{!v.labels.budget}</th>
+                    <th>{!v.labels.actual}</th>
+                    <th>{!v.currentYear}</th>
+                    <th></th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</aura:component>

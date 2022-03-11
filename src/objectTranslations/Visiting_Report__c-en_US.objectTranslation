@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Visiting Report</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Visiting Reports</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Visiting Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Agenda --></label>
+        <name>Agenda__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Visiting Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Date/Time --></label>
+        <name>Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discussed --></label>
+        <name>Discussed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internal Comments --></label>
+        <name>Internal_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Visiting Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Outcome / Follow-up Points --></label>
+        <name>Outcome_Follow_up_Points__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subject --></label>
+        <name>Subject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Visiting Report Number --></label>
+        <name>Visiting_Report_Number__c</name>
+    </fields>
+    <layouts>
+        <layout>Visiting Report Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Meeting Details --></label>
+            <section>Meeting Details</section>
+        </sections>
+        <sections>
+            <label><!-- Subject --></label>
+            <section>Subject</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

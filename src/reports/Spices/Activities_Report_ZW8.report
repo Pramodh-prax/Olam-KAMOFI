@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity$CreatedBy</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Activities$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Activities$Status</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Account</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Activities$TaskSubtype</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Business_Unit__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity$Destination_Country__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>USA,Canada,Barbados,Costa Rica,Saint Barthélemy,Jamaica,Trinidad and Tobago</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Activities Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunities_with_Activities__c</reportType>
+    <roleHierarchyFilter>Group_CEO</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Opportunity.Activities$CreatedDate</dateColumn>
+        <endDate>2021-11-02</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2021-10-26</startDate>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,52 @@
+<aura:component extends="c:KAM_Util" controller="KAM_EngagementPlanCntl"
+    implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction"
+    access="global">
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="EngagementId" type="String" />
+    <aura:attribute name="EngagementPlan" type="String" />
+    <aura:attribute name="SectionData" type="String" />
+    <aura:attribute name="isLoading" type="boolean" default="true" />
+    <aura:attribute name="engComp" type="Aura.Component" />
+    <aura:attribute name="launchPlanCreation" type="Boolean" default="false" />
+
+    <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+        aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+        <div class="slds-backdrop slds-backdrop_open">
+            <div class="slds-modal__container c-modal-container slds-is-relative">
+
+                <header class="slds-modal__header">
+                    <lightning:buttonIcon iconName="utility:close" onclick="{! c.closeModel }" alternativeText="close"
+                        variant="bare-inverse" class="slds-modal__close" />
+                    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Engagement Plan
+                    </h2>
+                </header>
+
+                <div class="slds-modal__content slds-p-around_medium modal-body" id="modal-content-id-1">
+                    <div class="slds-form--compound">
+                        <div>
+                            <aura:if isTrue="{!!v.isLoading}">
+                                <lightning:layout multipleRows="true" horizontalAlign="center" verticalAlign="center"
+                                    class="">
+                                    <lightning:layoutItem size="12" class="" smallDeviceSize="12" mediumDeviceSize="12"
+                                        largeDeviceSize="12">
+                                        <!--{!v.engComp}-->
+                                        <c:KAM_EngagementPlan showHeader="false" engPlanForAccount='{!v.EngagementPlan}'
+                                            sectionData='{!v.SectionData}'
+                                            launchPlanCreation="{!v.launchPlanCreation}" />
+                                    </lightning:layoutItem>
+                                </lightning:layout>
+                            </aura:if>
+
+                        </div>
+                        <aura:if isTrue="{!v.isLoading}">
+                            <c:KAM_LoadingDots />
+                        </aura:if>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</aura:component>

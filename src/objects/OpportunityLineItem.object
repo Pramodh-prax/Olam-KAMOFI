@@ -1,0 +1,1199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddProduct</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddProduct</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddProduct</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ChoosePricebook</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ChoosePricebook</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ChoosePricebook</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EditAllProduct</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EditAllProduct</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EditAllProduct</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>Olam_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Olam_Compact_Layout</fullName>
+        <fields>Product2Id</fields>
+        <fields>Volume__c</fields>
+        <fields>UnitPrice</fields>
+        <label>Olam Compact Layout</label>
+    </compactLayouts>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Account_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity.Account.Name</formula>
+        <label>Account Name</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Active</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Application__c</fullName>
+        <externalId>false</externalId>
+        <label>Application</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Application</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Approved_to_Supply__c</fullName>
+        <externalId>false</externalId>
+        <label>Approved to Supply</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Bulk_Sample_Quantity__c</fullName>
+        <externalId>false</externalId>
+        <label>Bulk Sample Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bulk_Sample__c</fullName>
+        <externalId>false</externalId>
+        <formula>NOT(ISNULL(Bulk_Sample_Quantity__c)) &amp;&amp; Bulk_Sample_Quantity__c &lt;&gt; 0</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Bulk Sample</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Combination_Key__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Opportunity.Business_Unit__c) + &apos;_&apos; +TEXT(YEAR(Opportunity.CloseDate)) + &apos;_&apos; + TEXT( PricebookEntry.Product2.Product_Category__c) + &apos;_&apos; +TEXT(PricebookEntry.Product2.Product_Sub_Category__c) + &apos;_&apos; + TEXT(PricebookEntry.Product2.Product_Sub_Category_2__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Combination Key</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Consumption_Annual_Volume__c</fullName>
+        <externalId>false</externalId>
+        <formula>Consumption__r.Volume_MT__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Consumption: Annual Volume (MT)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Consumption_Application__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Consumption__r.Application__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Consumption: Application</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Consumption_Brand_Contributed_Volume__c</fullName>
+        <externalId>false</externalId>
+        <formula>Consumption_Brand__r.Contributed_Volume__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Consumption Brand: Contributed Volume</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Consumption_Brand_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( Consumption_Brand__r.Brand__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Consumption: Brand Name</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Consumption_Brand_Share__c</fullName>
+        <externalId>false</externalId>
+        <formula>Consumption_Brand__r.Share__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Consumption Brand: Share %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Consumption_Brand__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Consumption Brand</label>
+        <referenceTo>Brand_n_Comp__c</referenceTo>
+        <relationshipLabel>Opportunity Product</relationshipLabel>
+        <relationshipName>Opportunity_Product</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Consumption_Year__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( Consumption__r.Year__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Consumption: Year</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Consumption__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Consumption</label>
+        <referenceTo>Consumption__c</referenceTo>
+        <relationshipLabel>Opportunity Product</relationshipLabel>
+        <relationshipName>Opportunity_Product</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Contract_end_date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Contract end date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Contract_start_date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Contract start date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Converted_Offer_per_MT__c</fullName>
+        <externalId>false</externalId>
+        <formula>( Total_Offer__c / Converted_Volume_in_MT__c ) * Converted_Volume_in_MT__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Value in MT</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Converted_Volume_in_MT__c</fullName>
+        <description>Converts the volume based on the unit of measure selected</description>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL( Unit_of_measure__c , &quot;MT&quot;) ,  Volume__c * 1, 
+IF(ISPICKVAL( Unit_of_measure__c , &quot;LB&quot;) ,Volume__c * 0.000454,
+IF(ISPICKVAL( Unit_of_measure__c , &quot;KG&quot;) ,Volume__c * 0.001,Volume__c)))</formula>
+        <inlineHelpText>Converts the volume based on the unit of measure selected</inlineHelpText>
+        <label>Converted Volume in MT</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Country__c</fullName>
+        <externalId>false</externalId>
+        <label>Country</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Country</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Courier_Cost__c</fullName>
+        <description>Sample Sent cost</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Sample Sent cost</inlineHelpText>
+        <label>Courier Cost (USD)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Acceptance_Duration__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+Sample_Acceptance_Rejection_Date__c - Sample_Received_Date__c &gt; 0 ,
+TEXT( FLOOR( Sample_Acceptance_Rejection_Date__c - Sample_Received_Date__c ) ) &amp; &quot; days &quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sample Received to Acceptance Duration</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_Bid__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Bid</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Material_Code__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Customer Material Code</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_Material_Description__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Customer Material Description</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_Material_Specification__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Customer Material Specification</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Data_Uploaded__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Data Uploaded?</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+    </fields>
+    <fields>
+        <fullName>Develop_to_Sample_Received_Duration__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+Sample_Received_Date__c -  Opportunity.Development_Stage_Change__c  &gt; 0 ,
+TEXT( FLOOR( Sample_Received_Date__c - Opportunity.Development_Stage_Change__c  ) ) &amp; &quot; days &quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Develop to Sample Received Duration</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Discount</fullName>
+    </fields>
+    <fields>
+        <fullName>Due_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity.First_Sample_Due_Date__c</formula>
+        <label>Due Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>External_Product_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>PricebookEntry.Product2.External_Product_Code__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>External Product Code</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Followup_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Followup Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Grade_1__c</fullName>
+        <externalId>false</externalId>
+        <formula>Grade__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Grade_</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Grade__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Grade</label>
+        <length>40</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Integration_Messagee__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity.Integration_Message__c</formula>
+        <label>Integration Message</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Integration_Status__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Integration Status</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IsCommercialisedProduct__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>IsCommercialisedProduct</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Key_Incoterm__c</fullName>
+        <externalId>false</externalId>
+        <label>Key Incoterm</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CFR</fullName>
+                    <default>false</default>
+                    <label>CFR</label>
+                </value>
+                <value>
+                    <fullName>FOB</fullName>
+                    <default>false</default>
+                    <label>FOB</label>
+                </value>
+                <value>
+                    <fullName>EXW</fullName>
+                    <default>false</default>
+                    <label>EXW</label>
+                </value>
+                <value>
+                    <fullName>CIF</fullName>
+                    <default>false</default>
+                    <label>CIF</label>
+                </value>
+                <value>
+                    <fullName>DAP</fullName>
+                    <default>false</default>
+                    <label>DAP</label>
+                </value>
+                <value>
+                    <fullName>DDP</fullName>
+                    <default>false</default>
+                    <label>DDP</label>
+                </value>
+                <value>
+                    <fullName>FCA</fullName>
+                    <default>false</default>
+                    <label>FCA</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ListPrice</fullName>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+    </fields>
+    <fields>
+        <fullName>OpportunityId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity.Name</formula>
+        <label>Opportunity Name</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Owner__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Opportunity Owner</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Opportunity_Product</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>OptyProdP1__c</fullName>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>OptyProdP1</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PD_I_User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>PD&amp;I User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Opportunity_Product1</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Product2Id</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ProductCode</fullName>
+    </fields>
+    <fields>
+        <fullName>Product_Brand__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( PricebookEntry.Product2.Brand__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Brand</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Category__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( PricebookEntry.Product2.Product_Category__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Category</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Configuration__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Product Configuration</label>
+        <length>131072</length>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Product_SAP_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>PricebookEntry.Product2.External_Product_Code__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product SAP Code</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Sub_Category_2__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( PricebookEntry.Product2.Product_Sub_Category_2__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Sub Category 2</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Sub_Category__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( PricebookEntry.Product2.Product_Sub_Category__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Sub Category</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quantity</fullName>
+    </fields>
+    <fields>
+        <fullName>Quantity_Dispatched__c</fullName>
+        <externalId>false</externalId>
+        <label>Quantity Dispatched</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quantity_of_Sample_Grams__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Quantity of Sample</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ratio__c</fullName>
+        <externalId>false</externalId>
+        <label>Ratio</label>
+        <precision>7</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Reason_for_Resampling__c</fullName>
+        <externalId>false</externalId>
+        <label>Reason for Resampling</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Sampling_Status__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Change in Quantity</fullName>
+                    <default>false</default>
+                    <label>Change in Quantity</label>
+                </value>
+                <value>
+                    <fullName>Change in Sample Spec</fullName>
+                    <default>false</default>
+                    <label>Change in Sample Spec</label>
+                </value>
+                <value>
+                    <fullName>Change in Quantity &amp; Sample Spec</fullName>
+                    <default>false</default>
+                    <label>Change in Quantity &amp; Sample Spec</label>
+                </value>
+                <value>
+                    <fullName>Others</fullName>
+                    <default>false</default>
+                    <label>Others</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>10</controllingFieldValue>
+                <valueName>Change in Quantity</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>10</controllingFieldValue>
+                <valueName>Change in Sample Spec</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>10</controllingFieldValue>
+                <valueName>Change in Quantity &amp; Sample Spec</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>10</controllingFieldValue>
+                <valueName>Others</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Region__c</fullName>
+        <externalId>false</externalId>
+        <label>Region</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Region</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Regions__c</fullName>
+        <externalId>false</externalId>
+        <label>Regions</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Regions</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Resampling_Quantity__c</fullName>
+        <externalId>false</externalId>
+        <label>Resampling Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sample_Acceptance_Rejection_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Sample Acceptance/ Rejection Date</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Sample_Feedback__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Helps to capture the feedback received from the customer</inlineHelpText>
+        <label>Sample Feedback</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Sample_Received_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Sample Received Date</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Sample_Sent_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Sample Sent Date</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Sample_Status__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(  ISPICKVAL(Sampling_Status__c, &apos;1&apos;), &quot;New&quot;,  
+      IF(ISPICKVAL(Sampling_Status__c, &apos;5&apos;), &quot;Samples Sent&quot;, 
+       IF(ISPICKVAL(Sampling_Status__c, &apos;12&apos;), &quot;Pending Feedback&quot;,    
+         IF(ISPICKVAL(Sampling_Status__c, &apos;10&apos;), &quot;Resampling&quot;,
+            IF(ISPICKVAL(Sampling_Status__c, &apos;7&apos;), &quot;Sample Accepted&quot;,
+              IF(ISPICKVAL(Sampling_Status__c, &apos;8&apos;), &quot;Sample Rejected&quot;,
+                 IF(ISPICKVAL(Sampling_Status__c, &apos;6&apos;), &quot;Resample Sent to the Customer&quot;,
+                    IF(ISPICKVAL(Sampling_Status__c, &apos;9&apos;), &quot;Sample Approved, asking for bulk sample&quot;,
+                        IF(ISPICKVAL(Sampling_Status__c, &apos;13&apos;), &quot;Kept on Hold&quot;,
+                              IF(ISPICKVAL(Sampling_Status__c, &apos;14&apos;), &quot;No Response&quot;,
+                                IF(ISPICKVAL(Sampling_Status__c, &apos;16&apos;), &quot;Project Dropped&quot;,&quot;&quot;)))))))))))</formula>
+        <label>Sample Status</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sample_with_Billing__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Sample with Billing?</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Sampling_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Sampling Status</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Sampling_Status</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ServiceDate</fullName>
+    </fields>
+    <fields>
+        <fullName>Shipment_Month__c</fullName>
+        <description>renamed to ETD on 16 June based on UAT feedback</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>ETD</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Splits__c</fullName>
+        <externalId>false</externalId>
+        <label>Splits</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Subtotal</fullName>
+    </fields>
+    <fields>
+        <fullName>Tentative_Bid_Volumes__c</fullName>
+        <externalId>false</externalId>
+        <label>Tentative Bid Volumes</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TotalPrice</fullName>
+    </fields>
+    <fields>
+        <fullName>Total_Offer__c</fullName>
+        <externalId>false</externalId>
+        <formula>Volume__c *  UnitPrice</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Offer</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Price_Olam__c</fullName>
+        <externalId>false</externalId>
+        <formula>UnitPrice * Ratio__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>For TCB Process</inlineHelpText>
+        <label>Total Price (Olam)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>16</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Tracking_Number__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Tracking Number</label>
+        <length>20</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tracking_URL__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Tracking URL</label>
+        <required>false</required>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>UnitPrice</fullName>
+    </fields>
+    <fields>
+        <fullName>Unit_of_measure__c</fullName>
+        <externalId>false</externalId>
+        <label>Unit of measure</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Unit_of_Measure</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>UoM__c</fullName>
+        <externalId>false</externalId>
+        <label>UoM(Sample)</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>KG</fullName>
+                    <default>false</default>
+                    <label>Kilogram</label>
+                </value>
+                <value>
+                    <fullName>MT</fullName>
+                    <default>false</default>
+                    <label>Metric Ton</label>
+                </value>
+                <value>
+                    <fullName>G</fullName>
+                    <default>false</default>
+                    <label>Gram</label>
+                </value>
+                <value>
+                    <fullName>LB</fullName>
+                    <default>false</default>
+                    <label>US pound</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Volume__c</fullName>
+        <externalId>false</externalId>
+        <label>Volume</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <validationRules>
+        <fullName>Check_if_Project_status_is_Blank</fullName>
+        <active>true</active>
+        <description>This validation rule will check if the project status is blank before they add the relevant sampling</description>
+        <errorConditionFormula>ISNEW() &amp;&amp; 
+NOT(ISBLANK(TEXT( Sampling_Status__c ))) &amp;&amp; 
+TEXT( Opportunity.Project_Type__c ) = &apos;&apos; &amp;&amp;   
+NOT(Opportunity.RecordType.DeveloperName = &apos;GAIN_OPPORTUNITY&apos;||
+    Opportunity.RecordType.DeveloperName = &apos;Service&apos; ||
+    Opportunity.RecordType.DeveloperName = &apos;Present&apos;) &amp;&amp; 
+NOT( $Permission.Olam_Validation_Exception )</errorConditionFormula>
+        <errorDisplayField>Sampling_Status__c</errorDisplayField>
+        <errorMessage>You must first select the project type before adding the sampling details</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Dairy_Sales_Project_status_NOT_Sample</fullName>
+        <active>true</active>
+        <description>This validation rule will ensure the project type is chosen by dairy salesperson with the value only as &quot;Sample&quot;</description>
+        <errorConditionFormula>NOT(CONTAINS( TEXT(   Opportunity.Project_Type__c ) , &apos;Sample&apos;)) &amp;&amp;    CONTAINS($UserRole.Name, &apos;Dairy Sales&apos;) &amp;&amp;
+(ISCHANGED (  Quantity_of_Sample_Grams__c  ) || ISCHANGED(  Tracking_Number__c   ) || ISCHANGED(   Tracking_URL__c)  || ISCHANGED ( Sampling_Status__c ))</errorConditionFormula>
+        <errorMessage>You are not authorised to make this change, Please proceed to submit to PDI</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Followup_date_mandatory</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND
+(
+    OR(
+         Opportunity.RecordType.DeveloperName = &apos;Defend_Opportunity&apos;,
+         Opportunity.RecordType.DeveloperName = &apos;Develop_Opportunity&apos;
+     ),
+     OR
+      (
+          ISPICKVAL(Sampling_Status__c , &apos;13&apos;),
+          ISPICKVAL(Sampling_Status__c , &apos;14&apos;)
+      ) ,
+       ISBLANK( Followup_Date__c ) 
+     
+)</errorConditionFormula>
+        <errorDisplayField>Followup_Date__c</errorDisplayField>
+        <errorMessage>Please enter the Followup Date.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>NewSampleStatusShouldBeNew</fullName>
+        <active>true</active>
+        <description>When a new opportunity product is added, the sampling status should be new</description>
+        <errorConditionFormula>ISNEW() &amp;&amp;
+NOT(ISBLANK(TEXT(Sampling_Status__c))) &amp;&amp;
+NOT(ISPICKVAL(Sampling_Status__c,&apos;1&apos;)) &amp;&amp;
+ISPICKVAL(Opportunity.Business_Unit__c, &apos;Spice&apos;) &amp;&amp;
+(
+Opportunity.RecordType.DeveloperName = &quot;Develop_Opportunity&quot; || Opportunity.RecordType.DeveloperName = &quot;Defend_Opportunity&quot;
+)</errorConditionFormula>
+        <errorDisplayField>Sampling_Status__c</errorDisplayField>
+        <errorMessage>Sampling Status should be &apos;New&apos;.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>OPTY011_Sampling_Quantity</fullName>
+        <active>true</active>
+        <errorConditionFormula>(Opportunity.RecordType.DeveloperName = &quot;Develop_Opportunity&quot; ||
+Opportunity.RecordType.DeveloperName = &quot;Defend_Opportunity&quot; ) &amp;&amp;
+
+ISPICKVAL(Sampling_Status__c, &quot;5&quot;) &amp;&amp; OR(ISBLANK( Quantity_of_Sample_Grams__c ), Quantity_of_Sample_Grams__c =0)</errorConditionFormula>
+        <errorDisplayField>Quantity_of_Sample_Grams__c</errorDisplayField>
+        <errorMessage>Please input the Quantity of Sample sent in grams.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>OPTY011_Sampling_Status_Validation_v2</fullName>
+        <active>false</active>
+        <errorConditionFormula>( Opportunity.RecordType.DeveloperName = &quot;Develop_Opportunity&quot; ||
+ Opportunity.RecordType.DeveloperName  = &quot;Defend_Opportunity&quot; )
+&amp;&amp;
+ISCHANGED(Sampling_Status__c)
+&amp;&amp; 
+NOT($Permission.Olam_Validation_Exception)
+&amp;&amp;
+(ISPICKVAL(PRIORVALUE(Sampling_Status__c),&quot;Samples Sent&quot;) &amp;&amp; ISPICKVAL(Sampling_Status__c, &quot;New&quot;)) ||
+
+(ISPICKVAL(PRIORVALUE(Sampling_Status__c),&quot;Pending Feedback&quot;) &amp;&amp; ISPICKVAL(Sampling_Status__c, &quot;Samples Sent&quot;)) ||
+
+(ISPICKVAL(PRIORVALUE(Sampling_Status__c),&quot;Resampling&quot;) &amp;&amp; NOT(ISPICKVAL(Sampling_Status__c, &quot;Resampling&quot;))) ||
+
+(ISPICKVAL(PRIORVALUE(Sampling_Status__c),&quot;Sample Rejected&quot;) &amp;&amp; NOT(ISPICKVAL(Sampling_Status__c, &quot;Sample Rejected&quot;))) ||
+
+(ISPICKVAL(PRIORVALUE(Sampling_Status__c),&quot;Sample Accepted&quot;) &amp;&amp; NOT(ISPICKVAL(Sampling_Status__c , &quot;Sample Accepted&quot;)))</errorConditionFormula>
+        <errorDisplayField>Sampling_Status__c</errorDisplayField>
+        <errorMessage>Invalid Sample Status</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>OPTY011_Sampling_Tracking_Number_or_URL</fullName>
+        <active>false</active>
+        <errorConditionFormula>( Opportunity.RecordType.DeveloperName = &quot;Develop_Opportunity&quot; ||
+Opportunity.RecordType.DeveloperName = &quot;Defend_Opportunity&quot; ) &amp;&amp;
+
+ISPICKVAL(Sampling_Status__c, &quot;5&quot;) &amp;&amp;
+(ISBLANK( Tracking_Number__c )&amp;&amp; ISBLANK( Tracking_URL__c ))</errorConditionFormula>
+        <errorDisplayField>Tracking_Number__c</errorDisplayField>
+        <errorMessage>Please input the Tracking Number or Tracking URL for the sample</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ReasonForResamplingFieldValQuantity</fullName>
+        <active>true</active>
+        <description>when Reason for Resampling is &quot;Change in Quantity&quot; -- make &quot;Resampling Quantity&quot; mandatory</description>
+        <errorConditionFormula>(
+  ISPICKVAL(Reason_for_Resampling__c, &apos;Change in Quantity&apos;) || 
+  ISPICKVAL(Reason_for_Resampling__c, &apos;Change in Quantity &amp; Sample Spec&apos;)
+) &amp;&amp; ISBLANK(Resampling_Quantity__c)</errorConditionFormula>
+        <errorDisplayField>Resampling_Quantity__c</errorDisplayField>
+        <errorMessage>Please enter Resampling Quantity</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ReasonForResamplingValidation</fullName>
+        <active>true</active>
+        <errorConditionFormula>(Opportunity.RecordType.DeveloperName = &quot;Develop_Opportunity&quot; ||
+Opportunity.RecordType.DeveloperName = &quot;Defend_Opportunity&quot; ) &amp;&amp;
+
+ISPICKVAL(Sampling_Status__c, &quot;10&quot;) &amp;&amp; ISBLANK(TEXT((Reason_for_Resampling__c)))</errorConditionFormula>
+        <errorDisplayField>Reason_for_Resampling__c</errorDisplayField>
+        <errorMessage>Please select Reason for Resampling</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Sample_Feedback_mandatory</fullName>
+        <active>true</active>
+        <description>Sample Feedback mandatory if sampling status is sample rejected or resampled</description>
+        <errorConditionFormula>ISCHANGED(Sampling_Status__c) &amp;&amp; 
+OR
+ (
+   AND(ISPICKVAL(Sampling_Status__c , &apos;10&apos;), IF(ISCHANGED(Sample_Feedback__c), ISBLANK(Sample_Feedback__c), TRUE)),
+   AND(ISPICKVAL(Sampling_Status__c , &apos;8&apos;), IF(ISCHANGED(Sample_Feedback__c), ISBLANK(Sample_Feedback__c), TRUE)),
+   AND(ISPICKVAL(Sampling_Status__c , &apos;16&apos;), IF(ISCHANGED( Sample_Feedback__c ), ISBLANK(Sample_Feedback__c), TRUE)),
+   AND(ISPICKVAL(Sampling_Status__c , &apos;13&apos;), IF(ISCHANGED( Sample_Feedback__c ), ISBLANK(Sample_Feedback__c), TRUE)),
+   AND(ISPICKVAL(Sampling_Status__c , &apos;14&apos;), IF(ISCHANGED( Sample_Feedback__c ), ISBLANK(Sample_Feedback__c), TRUE))
+ )</errorConditionFormula>
+        <errorDisplayField>Sample_Feedback__c</errorDisplayField>
+        <errorMessage>Please edit Sample feedback.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SamplingStatusBulkSampleApp</fullName>
+        <active>true</active>
+        <description>when Reason for Resampling is &quot;Change in Volume&quot; -- make &quot;Resampling Volume&quot; mandatory</description>
+        <errorConditionFormula>AND(ISPICKVAL(Sampling_Status__c,&quot;9&quot;), ISBLANK( Bulk_Sample_Quantity__c))</errorConditionFormula>
+        <errorDisplayField>Bulk_Sample_Quantity__c</errorDisplayField>
+        <errorMessage>This field is mandatory when Sampling Status is &apos;Sample Approved, asking for bulk sample&apos;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SamplingStatusNewOppProdStatusValidation</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( OR(Opportunity.RecordType.DeveloperName = &quot;Develop_Opportunity&quot;,Opportunity.RecordType.DeveloperName = &quot;Defend_Opportunity&quot;) ,
+OR(  ISBLANK( Quantity_of_Sample_Grams__c  ), ISBLANK( TEXT(  UoM__c )),  ISBLANK(  TEXT(Sampling_Status__c ))   ))</errorConditionFormula>
+        <errorMessage>Please fill Sampling Status, UOM and Sample Quantity</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SamplingStatusNewSelectionValidation</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND
+(
+NOT(ISPICKVAL(PRIORVALUE(Sampling_Status__c),&quot;1&quot;)),
+NOT(ISBLANK(TEXT(Sampling_Status__c))),
+ISPICKVAL(Sampling_Status__c,&quot;1&quot;)
+) &amp;&amp; not ( $Permission.Olam_Validation_Exception )</errorConditionFormula>
+        <errorDisplayField>Sampling_Status__c</errorDisplayField>
+        <errorMessage>Field can&apos;t be changed to &apos;New&apos; from the current Sampling Status</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SamplingStatusOnHoldValidation</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND
+(
+OR
+(
+ISPICKVAL(PRIORVALUE(Sampling_Status__c),&quot;13&quot;),
+ISPICKVAL(PRIORVALUE(Sampling_Status__c),&quot;14&quot;)),
+OR
+(
+ISPICKVAL(Sampling_Status__c, &quot;1&quot;), ISPICKVAL(Sampling_Status__c, &quot;5&quot;) 
+)
+)</errorConditionFormula>
+        <errorDisplayField>Sampling_Status__c</errorDisplayField>
+        <errorMessage>Field can&apos;t be changed to &apos;New&apos; or &apos;Samples Sent&apos; from &apos;Kept on Hold&apos; or &apos;No Response&apos;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SamplingStatusResampleSntToCustValidatn</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND
+(
+ISPICKVAL(PRIORVALUE(Sampling_Status__c),&quot;6&quot;),
+ISPICKVAL(Sampling_Status__c,&quot;1&quot;) 
+)</errorConditionFormula>
+        <errorDisplayField>Sampling_Status__c</errorDisplayField>
+        <errorMessage>Field can&apos;t be changed to &apos;New&apos; from &apos;Resample sent to customer&apos;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SamplingStatusSampleSentValidation</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND
+( 
+ISPICKVAL(PRIORVALUE(Sampling_Status__c),&quot;5&quot;),
+ISPICKVAL(Sampling_Status__c, &quot;1&quot;)
+)</errorConditionFormula>
+        <errorDisplayField>Sampling_Status__c</errorDisplayField>
+        <errorMessage>Field can&apos;t be changed to &apos;New&apos; from &apos;Samples Sent&apos;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Service_Opportunity_Sampling_Status</fullName>
+        <active>true</active>
+        <errorConditionFormula>Opportunity.RecordType.DeveloperName = &quot;Service&quot; &amp;&amp; 
+not( $Permission.Olam_Validation_Exception ) &amp;&amp;
+NOT(ISPICKVAL( Sampling_Status__c , &quot;5&quot;))</errorConditionFormula>
+        <errorDisplayField>Sampling_Status__c</errorDisplayField>
+        <errorMessage>You can only select &quot;Samples Sent&quot; for a Service Opportunity.</errorMessage>
+    </validationRules>
+</CustomObject>

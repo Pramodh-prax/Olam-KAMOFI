@@ -1,0 +1,92 @@
+<aura:component extends="c:KAM_AccountPlanOverviewBase" access="global" controller="KAM_EngagementPlanCntl">
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <aura:attribute name="items" type="List" default="[]" />
+    <aura:attribute name="engagementPlan" type="Object" />
+    <aura:attribute name="engPlanForAccount" type="String" />
+    <aura:attribute name="labels" type="Object" />
+
+    <aura:attribute name="launchPlanCreation" type="Boolean" default="false"/>
+    <aura:attribute name="showHeader" type="Boolean" default="true"/>
+    <aura:attribute name="addEngagementModal" type="Aura.Component" />
+    <aura:attribute name="isEngagementButtonDisabled" type="Boolean" default="false"/>
+    <aura:attribute name="isEngagementRequestForApprovalBtnDisabled" type="Boolean" default="false"/>
+
+    <aura:handler name="engagementPlanUpdated" event="c:KAM_EngagementPlanUpdated" action="{!c.onEngagementPlanUpdated}"/>
+ 
+
+    <div class="account-over-view-container" aura:id="item-container">
+        <lightning:layout aura:id="item-wrapper" multipleRows="true" horizontalAlign="center" verticalAlign="center"
+            class="accountoverview-detail__closed">
+            <aura:if isTrue="{!v.showHeader}">
+                <lightning:layoutItem size="12"
+                    class="tit-desc-container slds-order_1  slds-small-order_1 slds-medium-order_1 slds-large-order_1"
+                    smallDeviceSize="12" mediumDeviceSize="8" largeDeviceSize="8">
+                    <lightning:layout multipleRows="true" horizontalAlign="center" verticalAlign="center" class="">
+                        <lightning:layoutItem size="12" class="title-text" smallDeviceSize="12" mediumDeviceSize="12"
+                            largeDeviceSize="12">
+                            <span>{!v.sectionData.compDetail.Title__c}</span>
+                        </lightning:layoutItem>
+                        <lightning:layoutItem size="12" class="desc-text" smallDeviceSize="12" mediumDeviceSize="12"
+                            largeDeviceSize="12">
+                            <span>{!v.sectionData.Description__c}</span>
+                        </lightning:layoutItem>
+                    </lightning:layout>
+                </lightning:layoutItem>
+                <lightning:layoutItem size="4"
+                    class="slds-order_3 slds-small-order_3 slds-medium-order_3 slds-large-order_3 account-over-view__header-control-container"
+                    smallDeviceSize="4" mediumDeviceSize="4" largeDeviceSize="4">
+                    <div class="accountoverview-detail__header-control">
+                        <a href="javascript:void(0)" onclick="{!c.toggleDetailContent}"
+                            class="accountoverview-detail__operator-cta"></a>
+                    </div>
+                </lightning:layoutItem>
+            </aura:if>
+            <lightning:layoutItem size="12"
+                class="slds-order_4 slds-small-order_4 slds-medium-order_4 slds-large-order_4 accountoverview__detail-content"
+                smallDeviceSize="12" mediumDeviceSize="12" largeDeviceSize="12">
+                <div class="slds-form--compound">
+                    <div>
+                        <div class="add-eng-btn-container">
+                            <aura:if isTrue="{!v.isEngagementButtonDisabled}">
+                                <lightning:button label="{!v.labels.btnRquestForEdit}" title="{!v.labels.btnRquestForEdit}"  
+                                    onclick="{!c.handleOnRequestEditEngagement}"
+                                    disabled="{!v.isEngagementRequestForApprovalBtnDisabled}"></lightning:button>
+                                <aura:if isTrue="{!v.isEngagementRequestForApprovalBtnDisabled}">
+                                    <div class="add-eng-help-text">
+                                        <span>{!v.labels.waitingForApprovalMsg}</span>
+                                    </div>
+                                </aura:if>
+                            </aura:if>
+                            <aura:if isTrue="{!!v.isEngagementButtonDisabled}">
+                                <lightning:button label="{!v.labels.btnAddOrEditEng}" title="{!v.labels.btnAddOrEditEng}"  onclick="{!c.handleOnAddEngagement}" disabled="{!v.isEngagementButtonDisabled}"></lightning:button>
+                                <div class="add-eng-help-text">
+                                    <span>{!v.labels.draftEngMsg}</span>
+                                </div>
+                            </aura:if>
+                        </div>
+                        <lightning:layout multipleRows="true" horizontalAlign="center" verticalAlign="center"
+                            class="">
+                            <lightning:layoutItem size="12" class="" smallDeviceSize="12" mediumDeviceSize="12"
+                                largeDeviceSize="12">
+                                <c:KAM_EngagementPlanTable items="{!v.items}"/>
+                            </lightning:layoutItem>
+                        </lightning:layout>
+                        <aura:if isTrue="{!!v.isLoading}">
+                            
+                        </aura:if>
+                    </div>
+                    <aura:if isTrue="{!v.isLoading}">
+                        <c:KAM_LoadingDots />
+                    </aura:if>
+                </div>
+            </lightning:layoutItem>
+        </lightning:layout>
+        <lightning:layout multipleRows="true" horizontalAlign="center" verticalAlign="center" class="">
+            <lightning:layoutItem size="12" class="" smallDeviceSize="12" mediumDeviceSize="12" largeDeviceSize="12">
+                {!v.addEngagementModal}
+            </lightning:layoutItem>
+        </lightning:layout>
+    </div>
+</aura:component>
